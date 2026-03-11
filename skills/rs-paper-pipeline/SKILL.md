@@ -12,10 +12,10 @@ Run the RS-PaperClaw paper flow end-to-end and keep output consistent.
 1. Parse input from user:
    - arXiv URL or arXiv ID (e.g. `2603.08582v1`)
    - target issue number (required for update-only mode)
-2. Run:
+2. Run (from repo root):
 
 ```bash
-python3 /home/openclaw/.openclaw/workspace/scripts/paper_processor.py <arxiv_id> <issue_number>
+python3 scripts/paper_processor.py <arxiv_id> <issue_number>
 ```
 
 3. Read terminal logs and report key checkpoints:
@@ -59,5 +59,11 @@ Treat these as blocking requirements unless user explicitly asks to relax:
 
 ## Resources
 
-- Main script: `/home/openclaw/.openclaw/workspace/scripts/paper_processor.py`
-- Prompts: `/home/openclaw/.openclaw/workspace/scripts/prompts/`
+- Main script: `scripts/paper_processor.py`
+- Prompts: `scripts/prompts/`
+
+## Public Release Hygiene
+
+- Do not include personal names, private chat content, or local machine paths.
+- Do not hardcode API keys/tokens in skill files.
+- Keep examples generic and reproducible in any environment.
