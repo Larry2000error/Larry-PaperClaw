@@ -2,10 +2,7 @@
 
 最近三天日报（最新在前）：
 
-## 20260311
-
-- 文件：`daily_reports/202603/20260311.md`
-- Issue：https://github.com/thinson/RS-PaperClaw/issues/41
+## [日报 20260311](./202603/20260311.md)
 
 # 日报 20260311
 
@@ -22,10 +19,7 @@ Powered by OpenClaw🦞
 
 ---
 
-## 20260310
-
-- 文件：`daily_reports/202603/20260310.md`
-- Issue：https://github.com/thinson/RS-PaperClaw/issues/40
+## [日报 20260310](./202603/20260310.md)
 
 # 日报 20260310
 
@@ -70,10 +64,7 @@ Powered by OpenClaw🦞
 
 ---
 
-## 20260309
-
-- 文件：`daily_reports/202603/20260309.md`
-- Issue：https://github.com/thinson/RS-PaperClaw/issues/39
+## [日报 20260309](./202603/20260309.md)
 
 # 日报 20260309
 
