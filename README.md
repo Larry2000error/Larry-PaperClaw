@@ -16,7 +16,7 @@ English version: **[README_EN.md](./README_EN.md)**
 
 ---
 
-> 📌 **近期论文日报**：查看最近三天汇总与归档 → **[进入日报导航](./daily_reports/README.md)**
+> 📌 **近期论文日报**：查看最近三天汇总与归档 → **[进入日报导航](https://thinson.github.io/RS-PaperClaw/)**
 
 ## ✨ 项目定位
 
