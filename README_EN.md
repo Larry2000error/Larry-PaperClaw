@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="./docs/logo-220.png" alt="RS-PaperClaw Logo" width="120" />
 
 # RS-PaperClaw🦞
 
@@ -7,8 +8,9 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](#)
 [![Status](https://img.shields.io/badge/Status-Active-2EA043)](#)
 [![Workflow](https://img.shields.io/badge/Workflow-arXiv%20%E2%86%92%20Issue%20%E2%86%92%20Digest-8A2BE2)](#)
+[![Pages](https://img.shields.io/badge/GitHub%20Pages-Live-b55f34)](https://thinson.github.io/RS-PaperClaw/)
 
-**arXiv → Per-paper Issue Report → Daily Digest**
+**arXiv → Per-paper Issue Report → Daily Digest → Visual Reading Portal**
 
 中文版本：**[README.md](./README.md)**
 
@@ -16,46 +18,59 @@
 
 ---
 
-> 📌 **Recent Daily Digests**: Browse latest summaries and archives → **[Open Digest Navigator](./daily_reports/README.md)**
+## 🌐 Live Portal
 
-## ✨ Project Positioning
+- GitHub Pages: **https://thinson.github.io/RS-PaperClaw/**
+- Digest archive: **[daily_reports/](./daily_reports/README.md)**
 
-RS-PaperClaw automates the daily workflow:
+---
+
+## ✨ What this project does
+
+RS-PaperClaw automates the daily pipeline:
 
 - 🔎 Fetch arXiv candidates (remote-sensing related)
-- 🧠 Cross-filter with keywords + LLM
-- 📝 Generate/update per-paper reading report issues
+- 🧠 Run keyword + LLM cross filtering
+- 📝 Generate / update per-paper reading reports (GitHub Issues)
 - 🗞️ Generate daily digest issues
 - 🗂️ Sync digest markdown to `daily_reports/YYYYMM/YYYYMMDD.md`
-- 📮 Push digest to Feishu
+- 📮 Deliver summaries to Feishu
 
-## 🎯 Why issue-centric?
+---
 
-- 🧭 **Traceable**: one paper, one issue; history and changes are easy to track.
-- 🤝 **Collaborative**: discussion, corrections, and additions happen in-place.
-- ⚙️ **Automation-friendly**: stable create/update target for incremental runs.
-- 🗂️ **Closed-loop archive**: issue for dynamic work + markdown for static records.
+## 🎯 Why issue-centric
 
-## 🧩 Core Capabilities
+- 🧭 **Traceable**: one paper, one issue; full history is preserved
+- 🤝 **Collaborative**: comments become discussion and knowledge capture
+- ⚙️ **Automation-friendly**: stable targets for incremental updates
+- 🗂️ **Closed loop**: dynamic issue workflow + static markdown archive
+
+---
+
+## 🧩 Core capabilities
 
 | Module | Output |
 |---|---|
 | Per-paper report | metadata, TL;DR, Chinese abstract, tags, first-3-page previews, 10-question analysis |
 | Daily digest | numeric overview, highlights, article list, observations |
-| Quality control | blocks placeholders and incomplete structures |
+| Quality control | filters placeholders and incomplete structures |
 | Archive | issue + markdown dual-track sync |
+| Web portal | recent digest browser, mobile cards, issue deep-dive overlay |
 
 ---
 
-## 🗺️ Repository Layout (main)
+## 🗺️ Repository layout (main)
 
 ```text
 RS-PaperClaw/
-├── daily_reports/
+├── docs/                             # GitHub Pages static site
+│   ├── index.html
+│   └── logo-220.png
+├── daily_reports/                    # digest archive by month
 │   ├── README.md
 │   └── YYYYMM/YYYYMMDD.md
-├── papers/previews/
-├── skills/rs-paper-pipeline/
+├── papers/previews/                  # preview images for issue display
+├── skills/rs-paper-pipeline/         # skill and scripts
 │   ├── README.md
 │   ├── SKILL.md
 │   └── scripts/
@@ -64,7 +79,7 @@ RS-PaperClaw/
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick start
 
 ### 1) Requirements
 
@@ -91,7 +106,7 @@ python3 skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py
 
 ---
 
-## ⏰ Scheduler (Weekdays 09:05)
+## ⏰ Scheduler example
 
 ```cron
 CRON_TZ=Asia/Shanghai
@@ -102,19 +117,11 @@ CRON_TZ=Asia/Shanghai
 
 ## 📎 Notes
 
-- Chinese README is the default entry (`README.md`).
-- All scripts are under `skills/rs-paper-pipeline/scripts/`.
+- Chinese README is the default entry: [README.md](./README.md)
+- GitHub Pages deployment source: `main` branch + `/docs`
 
 ---
 
 ## ⭐ Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=thinson/RS-PaperClaw&type=Date)](https://star-history.com/#thinson/RS-PaperClaw&Date)
-
----
-
-<div align="center">
-
-**Powered by OpenClaw🦞**
-
-</div>

@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="./docs/logo-220.png" alt="RS-PaperClaw Logo" width="120" />
 
 # RS-PaperClaw🦞
 
@@ -7,8 +8,9 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](#)
 [![Status](https://img.shields.io/badge/Status-Active-2EA043)](#)
 [![Workflow](https://img.shields.io/badge/Workflow-arXiv%20%E2%86%92%20Issue%20%E2%86%92%20Digest-8A2BE2)](#)
+[![Pages](https://img.shields.io/badge/GitHub%20Pages-Live-b55f34)](https://thinson.github.io/RS-PaperClaw/)
 
-**arXiv → 单篇报告 Issue → 每日汇总日报**
+**arXiv → 单篇报告 Issue → 每日汇总日报 → 可视化阅读页面**
 
 English version: **[README_EN.md](./README_EN.md)**
 
@@ -16,28 +18,34 @@ English version: **[README_EN.md](./README_EN.md)**
 
 ---
 
-📌 **近期论文日报**：查看最近三天汇总与归档 → **[进入日报导航](https://thinson.github.io/RS-PaperClaw/)**
+## 🌐 在线阅读入口
 
-## ✨ 项目定位
+- 项目主页（GitHub Pages）：**https://thinson.github.io/RS-PaperClaw/**
+- 日报归档目录：**[daily_reports/](./daily_reports/README.md)**
+
+---
+
+## ✨ 项目做什么
 
 RS-PaperClaw 每天自动完成：
 
 - 🔎 拉取 arXiv 候选论文（遥感相关）
-- 🧠 关键词 + LLM 交叉筛选
-- 📝 生成/更新单篇阅读报告（GitHub Issue）
+- 🧠 关键词 + LLM 二级筛选
+- 📝 生成 / 更新单篇阅读报告（GitHub Issue）
 - 🗞️ 生成当天日报（GitHub Issue）
 - 🗂️ 同步日报到 `daily_reports/YYYYMM/YYYYMMDD.md`
-- 📮 推送日报到飞书
+- 📮 推送摘要到飞书
 
+---
 
+## 🎯 为什么以 Issue 为核心
 
-## 🎯 为什么以 Issue 为核心？
+- 🧭 **可追踪**：单论文单 Issue，历史与改动可回溯
+- 🤝 **易协作**：评论即讨论，补充即沉淀
+- ⚙️ **自动化友好**：增量流程可稳定更新同一条记录
+- 🗂️ **归档闭环**：Issue 动态协作 + Markdown 静态留档
 
-- 🧭 **可追踪**：单论文单 Issue，历史与改动可回溯。
-- 🤝 **易协作**：评论即讨论，补充即沉淀。
-- ⚙️ **自动化友好**：稳定更新同一条，便于增量执行。
-- 🗂️ **归档闭环**：Issue 动态协作 + 日报静态归档。
-
+---
 
 ## 🧩 核心能力
 
@@ -47,13 +55,17 @@ RS-PaperClaw 每天自动完成：
 | 日报生成 | 今日概况（含数量统计）、亮点、文章列表、观察 |
 | 质量控制 | 过滤占位内容，保障结构完整与可读性 |
 | 结果归档 | Issue + Markdown 双轨同步，便于追踪与回溯 |
+| 可视化页面 | 最近日报浏览、移动端卡片视图、Issue 深读弹层 |
 
 ---
 
-## 🗺️ 目录结构（主分支）
+## 🗺️ 目录结构（main）
 
 ```text
 RS-PaperClaw/
+├── docs/                             # GitHub Pages 静态页面
+│   ├── index.html
+│   └── logo-220.png
 ├── daily_reports/                    # 日报归档（按年月）
 │   ├── README.md
 │   └── YYYYMM/YYYYMMDD.md
@@ -78,7 +90,7 @@ RS-PaperClaw/
 
 - Python 3.10+
 - `pip install PyGithub`
-- 系统工具：`poppler-utils`（含 `pdftoppm`、`pdftotext`）
+- 系统工具：`poppler-utils`（`pdftoppm`、`pdftotext`）
 
 ### 2) 配置环境变量
 
@@ -99,7 +111,7 @@ python3 skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py
 
 ---
 
-## ⏰ 定时任务（工作日 09:05）
+## ⏰ 定时任务（示例）
 
 ```cron
 CRON_TZ=Asia/Shanghai
@@ -108,19 +120,13 @@ CRON_TZ=Asia/Shanghai
 
 ---
 
-## 📎 说明
+## 📎 备注
 
-- 默认文档语言为中文；英文请看 [README_EN.md](./README_EN.md)
-- 所有脚本均位于 `skills/rs-paper-pipeline/scripts/`
+- 默认文档语言为中文；英文请见 [README_EN.md](./README_EN.md)
+- 页面部署方式：`main` 分支 + `/docs`
 
 ---
 
 ## ⭐ Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=thinson/RS-PaperClaw&type=Date)](https://star-history.com/#thinson/RS-PaperClaw&Date)
-
-
-- 入口页面：`docs/index.html`
-- 访问地址（启用 Pages 后）：`https://thinson.github.io/RS-PaperClaw/`
-
-> 在 GitHub 仓库 Settings → Pages 中将 Source 设置为 **Deploy from a branch**，分支选 `main`，目录选 `/docs`。
