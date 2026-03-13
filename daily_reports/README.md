@@ -5,29 +5,31 @@
 # [20260312](./202603/20260312.md)
 ## 📌 今日概况
 
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+今日共检索候选论文 38 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
 
-今日遥感AI研究呈现基础模型与语义通信双轨并进态势。SAR领域推出十亿级参数基础模型CrossEarth-SAR，探索Mixture-of-Experts架构的领域泛化能力；视觉语言模型引入OpenStreetMap地理信息辅助领域适应；多标签分类结合层次标签建模与图神经网络提升精度。语义通信方向，LEO卫星地球观测任务中联合JSCC与资源分配优化QoS，反映遥感数据链路端到端智能化趋势。
+今日遥感AI研究聚焦基础模型与语义通信两大方向。SAR领域推出十亿级基础模型CrossEarth-SAR，提升领域泛化能力；LEO卫星通信结合JSCC技术优化QoS感知。深度学习在多标签分类、显著目标检测、海底地形重建等细分任务持续深化，VLM与OSM数据的结合成为新趋势。
 
 ## ✨ 今日亮点
 
-- CrossEarth-SAR构建十亿级SAR基础模型，融合MoE实现跨域语义分割泛化
-- LEO卫星EO任务引入语义通信，JSCC与资源分配联合优化QoS
-- 遥感VLMs结合OpenStreetMap地理信息突破领域适应瓶颈
+- SAR基础模型CrossEarth-SAR发布，采用MoE架构实现十亿级参数与领域泛化
+- LEO卫星EO任务引入联合JSCC-资源分配框架，提升语义通信QoS
+- 遥感VLM结合OSM数据进行领域适应，图学习与Transformer持续赋能分类与检测
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260312] CrossEarth-SAR: A SAR-Centric and Billion-Scale Geospatial Foundation Model for Domain Generalizable Semantic Segmentation | Ye Ziqi, Gong Ziyang, Liao Ning, Hu Xiaoxing, Wang Di et al. | CrossEarth-SAR提出以SAR为中心的十亿级地理空间基础模型，采用Mixture-of-Experts实现领域可泛化语义分割 | [#58](https://github.com/thinson/RS-PaperClaw/issues/58) |
-| [20260312] A Joint JSCC-Resource Allocation Framework for QoS-Aware Semantic Communication in LEO Satellite-based EO Missions | Nguyen-Kha Hung, Ti Ti Nguyen, Vu Nguyen Ha, Lagunas Eva, Chatzinotas Symeon et al. | 联合JSCC与资源分配框架优化LEO卫星地球观测任务中的语义通信质量，满足QoS需求 | [#59](https://github.com/thinson/RS-PaperClaw/issues/59) |
-| [20260312] OSM-based Domain Adaptation for Remote Sensing VLMs | Stefan Maria Ailuro, Markov Mario, Mahdi Mohammad, Boychev Delyan, Luc Van Gool et al. | OSM-based方法利用OpenStreetMap数据辅助遥感视觉语言模型进行领域适应，提升跨域性能 | [#60](https://github.com/thinson/RS-PaperClaw/issues/60) |
-| [20260312] HELM: Hierarchical and Explicit Label Modeling with Graph Learning for Multi-Label Image Classification | Stoimchev Marjan, Koloski Boshko, Levatić Jurica, Kocev Dragi, Džeroski Sašo | HELM通过层次化显式标签建模与图学习结合，提升多标签遥感图像分类效果 | [#61](https://github.com/thinson/RS-PaperClaw/issues/61) |
+| [20260312] CrossEarth-SAR: A SAR-Centric and Billion-Scale Geospatial Foundation Model for Domain Generalizable Semantic Segmentation | Ye Ziqi, Gong Ziyang, Liao Ning, Hu Xiaoxing, Wang Di et al. | CrossEarth-SAR提出SAR中心化十亿级基础模型，通过MoE架构实现领域可泛化语义分割。 | [#58](https://github.com/thinson/RS-PaperClaw/issues/58) |
+| [20260312] A Joint JSCC-Resource Allocation Framework for QoS-Aware Semantic Communication in LEO Satellite-based EO Missions | Nguyen-Kha Hung, Ti Ti Nguyen, Vu Nguyen Ha, Lagunas Eva, Chatzinotas Symeon et al. | 联合JSCC-资源分配框架针对LEO卫星EO任务，优化语义通信的QoS与资源利用。 | [#59](https://github.com/thinson/RS-PaperClaw/issues/59) |
+| [20260312] OSM-based Domain Adaptation for Remote Sensing VLMs | Stefan Maria Ailuro, Markov Mario, Mahdi Mohammad, Boychev Delyan, Luc Van Gool et al. | OSM数据用于遥感VLM领域适应，提升模型在地理空间理解中的迁移能力。 | [#60](https://github.com/thinson/RS-PaperClaw/issues/60) |
+| [20260312] HELM: Hierarchical and Explicit Label Modeling with Graph Learning for Multi-Label Image Classification | Stoimchev Marjan, Koloski Boshko, Levatić Jurica, Kocev Dragi, Džeroski Sašo | HELM提出层次化显式标签建模方法，结合图学习与自监督提升多标签分类精度。 | [#61](https://github.com/thinson/RS-PaperClaw/issues/61) |
+| [20260312] RDNet: Region Proportion-Aware Dynamic Adaptive Salient Object Detection Network in Optical Remote Sensing Images | Wan Bin, Cong Runmin, Zhou Xiaofei, Fang Hao, Sun Yaoqi et al. | RDNet针对光学遥感显著目标检测，引入区域比例感知与动态自适应机制应对尺度变化。 | [#63](https://github.com/thinson/RS-PaperClaw/issues/63) |
+| [20260312] Bathymetry reconstruction via optimal control in well-balanced finite element methods for the shallow water equations | Ruppenthal Falko, Kuzmin Dmitri | 浅水方程平衡有限元方法结合最优控制，实现高精度海底地形重建与逆问题求解。 | [#64](https://github.com/thinson/RS-PaperClaw/issues/64) |
 
 ## 🔎 观察
 
-- 遥感基础模型向十亿级参数与领域泛化演进，SAR数据处理能力显著提升但部署成本挑战增大
-- 语义通信从传统传输向语义层优化转型，LEO星座场景下的端到端联合设计成为新增长点
+- 基础模型从光学扩展至SAR领域，MoE架构成为提升领域泛化的主流选择，暗示遥感基础模型竞争加剧。
+- 语义通信与卫星任务深度融合，JSCC技术突破传统通信瓶颈，LEO星座部署将加速该方向落地应用。
 
 ---
 
