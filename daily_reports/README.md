@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260312](./202603/20260312.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究呈现基础模型与语义通信双轨并进态势。SAR领域推出十亿级参数基础模型CrossEarth-SAR，探索Mixture-of-Experts架构的领域泛化能力；视觉语言模型引入OpenStreetMap地理信息辅助领域适应；多标签分类结合层次标签建模与图神经网络提升精度。语义通信方向，LEO卫星地球观测任务中联合JSCC与资源分配优化QoS，反映遥感数据链路端到端智能化趋势。
+
+## ✨ 今日亮点
+
+- CrossEarth-SAR构建十亿级SAR基础模型，融合MoE实现跨域语义分割泛化
+- LEO卫星EO任务引入语义通信，JSCC与资源分配联合优化QoS
+- 遥感VLMs结合OpenStreetMap地理信息突破领域适应瓶颈
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260312] CrossEarth-SAR: A SAR-Centric and Billion-Scale Geospatial Foundation Model for Domain Generalizable Semantic Segmentation | Ye Ziqi, Gong Ziyang, Liao Ning, Hu Xiaoxing, Wang Di et al. | CrossEarth-SAR提出以SAR为中心的十亿级地理空间基础模型，采用Mixture-of-Experts实现领域可泛化语义分割 | [#58](https://github.com/thinson/RS-PaperClaw/issues/58) |
+| [20260312] A Joint JSCC-Resource Allocation Framework for QoS-Aware Semantic Communication in LEO Satellite-based EO Missions | Nguyen-Kha Hung, Ti Ti Nguyen, Vu Nguyen Ha, Lagunas Eva, Chatzinotas Symeon et al. | 联合JSCC与资源分配框架优化LEO卫星地球观测任务中的语义通信质量，满足QoS需求 | [#59](https://github.com/thinson/RS-PaperClaw/issues/59) |
+| [20260312] OSM-based Domain Adaptation for Remote Sensing VLMs | Stefan Maria Ailuro, Markov Mario, Mahdi Mohammad, Boychev Delyan, Luc Van Gool et al. | OSM-based方法利用OpenStreetMap数据辅助遥感视觉语言模型进行领域适应，提升跨域性能 | [#60](https://github.com/thinson/RS-PaperClaw/issues/60) |
+| [20260312] HELM: Hierarchical and Explicit Label Modeling with Graph Learning for Multi-Label Image Classification | Stoimchev Marjan, Koloski Boshko, Levatić Jurica, Kocev Dragi, Džeroski Sašo | HELM通过层次化显式标签建模与图学习结合，提升多标签遥感图像分类效果 | [#61](https://github.com/thinson/RS-PaperClaw/issues/61) |
+
+## 🔎 观察
+
+- 遥感基础模型向十亿级参数与领域泛化演进，SAR数据处理能力显著提升但部署成本挑战增大
+- 语义通信从传统传输向语义层优化转型，LEO星座场景下的端到端联合设计成为新增长点
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260311](./202603/20260311.md)
 ## 📌 今日概况
 
@@ -67,40 +100,6 @@ Powered by OpenClaw🦞
 
 - 视觉语言模型正成为遥感领域研究热点，多篇论文从不同角度提升VLMs在遥感场景下的细粒度理解与推理能力。
 - 基础模型与基准数据集的构建持续推进，MAE框架与多光谱融合成为遥感预训练新方向。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260309](./202603/20260309.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感研究聚焦SAR成像优化、跨模态定位、卫星调度与通信技术四大方向。SAR领域实现在线稀疏成像与内存高效处理；跨模态地理定位构建百万级数据集并引入物理一致性学习框架；卫星调度采用混合评估遗传编程应对不确定环境；通信方面关注相干光卫星链路的非线性补偿；ISAC融合单双站感知用于低空环境测绘。技术趋势显示深度学习与传统优化方法结合日益紧密，感知通信一体化成为重要研究方向。
-
-## ✨ 今日亮点
-
-- 在线稀疏SAR成像实现内存高效处理，支持实时自动目标识别能力
-- 百万级跨模态地理定位数据集结合物理一致性学习提升定位精度
-- 混合评估遗传编程优化不确定环境下的敏捷卫星调度问题
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260309] Online Sparse Synthetic Aperture Radar Imaging | Flynn Conor, Ivanov Radoslav, Yazici Birsen | 提出在线稀疏合成孔径雷达成像方法，通过稀疏编码与内存优化实现高效实时重建，支持自动目标识别应用 | [#2](https://github.com/thinson/RS-PaperClaw/issues/2) |
-| [20260309] Global Cross-Modal Geo-Localization: A Million-Scale Dataset and a Physical Consistency Learning Framework | Hu Yutong, Chen Jinhui, Xu Chaoqiang, Kou Yuan, Zhou Sili et al. | 构建全球跨模态地理定位百万级数据集，提出物理一致性学习框架提升航空图像与地面图像匹配精度 | [#7](https://github.com/thinson/RS-PaperClaw/issues/7) |
-| [20260309] Efficient Policy Learning with Hybrid Evaluation-Based Genetic Programming for Uncertain Agile Earth Observation Satellite Scheduling | Xue Junhua, Chen Yuning | 采用混合评估遗传编程方法优化不确定环境下的敏捷地球观测卫星调度问题，提升资源利用效率 | [#8](https://github.com/thinson/RS-PaperClaw/issues/8) |
-| [20260309] Nonlinearity Compensation for Coherent Optical Satellite Communications | Civelli Stella, Potì Luca, Forestieri Enrico, Secondini Marco | 针对相干光卫星通信系统非线性损伤，提出数字信号处理补偿方案改善高功率放大器性能 | [#9](https://github.com/thinson/RS-PaperClaw/issues/9) |
-| [20260309] Fusion of Monostatic and Bistatic Sensing for ISAC-Enabled Low-Altitude Environment Mapping | Meihui Liu, Shu Sun, Ruifeng Gao, jianhua Zhang, meixia Tao | 融合单站与双站感知技术实现ISAC低空环境高精度测绘，提升感知与通信一体化系统效能 | [#11](https://github.com/thinson/RS-PaperClaw/issues/11) |
-
-## 🔎 观察
-
-- 感知通信一体化与多源数据融合正成为遥感领域热点，单双站协同感知为复杂环境测绘提供新思路
-- 深度学习与传统优化算法的混合架构在SAR成像、卫星调度等领域成效显著，显示出较强的工程应用潜力
 
 ---
 
