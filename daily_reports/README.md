@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260315](./202603/20260315.md)
+## 📌 今日概况
+
+今日共检索候选论文 25 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 1 篇。
+
+今日遥感AI研究聚焦泛化性学习范式，零样本全色锐化成为热点。G-ZAP框架通过隐式神经表示实现任意尺度融合，突破传统方法对配对训练数据的依赖，推动遥感图像超分辨率向实用化场景迁移。
+
+## ✨ 今日亮点
+
+- 零样本学习首次系统应用于全色锐化任务，解决跨传感器泛化难题
+- 隐式神经表示实现连续尺度建模，支持任意分辨率提升需求
+- 多尺度融合机制兼顾空间细节与光谱保真，无需重新训练即可适配新数据
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260315] G-ZAP: A Generalizable Zero-Shot Framework for Arbitrary-Scale Pansharpening | Yang Zhiqi, Yin Shan, Liang Jingze, Deng Liang-Jian | G-ZAP提出可泛化的零样本全色锐化框架，利用隐式神经表示实现任意尺度图像融合，摆脱配对数据约束。 | [#82](https://github.com/thinson/RS-PaperClaw/issues/82) |
+
+## 🔎 观察
+
+- 零样本范式正从自然图像向遥感专用任务渗透，数据获取瓶颈驱动方法论革新
+- 隐式神经表示的连续建模能力，或成为下一代多分辨率遥感分析的基础组件
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260314](./202603/20260314.md)
 ## 📌 今日概况
 
@@ -67,41 +97,6 @@ Powered by OpenClaw🦞
 
 - 跨模态与跨视角学习成为今日研究主线，反映遥感数据异构性带来的核心挑战。
 - 无人机与航拍场景理解持续活跃，提示低空经济应用需求正在驱动学术研究。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260312](./202603/20260312.md)
-## 📌 今日概况
-
-今日共检索候选论文 38 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 6 篇。
-
-今日遥感研究聚焦于基础模型与语义通信两大方向。SAR基础模型CrossEarth-SAR探索领域泛化能力，LEO卫星语义通信框架关注QoS保障。视觉语言模型的领域适应、层次化多标签分类、显著目标检测等任务持续推进，同时浅水方程的浴血测量重建等逆问题也有新进展。整体趋势表明，遥感AI正从单一任务向多任务协同、从传统方法向深度学习与物理模型融合的方向发展。
-
-## ✨ 今日亮点
-
-- CrossEarth-SAR通过混合专家机制提升SAR图像语义分割的领域泛化能力
-- LEO卫星地球观测引入联合JSCC与资源分配，提升语义通信质量
-- 浴血测量重建结合最优控制与有限元方法，推动物理驱动深度学习
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260312] CrossEarth-SAR: A SAR-Centric and Billion-Scale Geospatial Foundation Model for Domain Generalizable Semantic Segmentation | Ye Ziqi, Gong Ziyang, Liao Ning, Hu Xiaoxing, Wang Di et al. | CrossEarth-SAR提出面向SAR的十亿级地理空间基础模型，通过Mixture-of-Experts实现领域可泛化的语义分割 | [#58](https://github.com/thinson/RS-PaperClaw/issues/58) |
-| [20260312] A Joint JSCC-Resource Allocation Framework for QoS-Aware Semantic Communication in LEO Satellite-based EO Missions | Nguyen-Kha Hung, Ti Ti Nguyen, Vu Nguyen Ha, Lagunas Eva, Chatzinotas Symeon et al. | 联合JSCC-资源分配框架针对LEO卫星地球观测任务，优化语义通信的服务质量 | [#59](https://github.com/thinson/RS-PaperClaw/issues/59) |
-| [20260312] OSM-based Domain Adaptation for Remote Sensing VLMs | Stefan Maria Ailuro, Markov Mario, Mahdi Mohammad, Boychev Delyan, Luc Van Gool et al. | OSM数据助力遥感视觉语言模型的领域适应迁移 | [#60](https://github.com/thinson/RS-PaperClaw/issues/60) |
-| [20260312] HELM: Hierarchical and Explicit Label Modeling with Graph Learning for Multi-Label Image Classification | Stoimchev Marjan, Koloski Boshko, Levatić Jurica, Kocev Dragi, Džeroski Sašo | HELM通过层次化标签建模与图学习，提升遥感图像多标签分类性能 | [#61](https://github.com/thinson/RS-PaperClaw/issues/61) |
-| [20260312] RDNet: Region Proportion-Aware Dynamic Adaptive Salient Object Detection Network in Optical Remote Sensing Images | Wan Bin, Cong Runmin, Zhou Xiaofei, Fang Hao, Sun Yaoqi et al. | RDNet采用区域比例感知与动态自适应机制，增强光学遥感显著目标检测的尺度变化鲁棒性 | [#63](https://github.com/thinson/RS-PaperClaw/issues/63) |
-| [20260312] Bathymetry reconstruction via optimal control in well-balanced finite element methods for the shallow water equations | Ruppenthal Falko, Kuzmin Dmitri | 浴血测量重建利用浅水方程的最优控制与平衡有限元方法，实现高精度海底地形反演 | [#64](https://github.com/thinson/RS-PaperClaw/issues/64) |
-
-## 🔎 观察
-
-- 基础模型与语义通信的融合成为遥感AI新趋势，跨模态、跨领域泛化能力受关注
-- 物理驱动方法（如浅水方程、最优控制）与深度学习的结合，为逆问题提供新思路
 
 ---
 
