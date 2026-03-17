@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260316](./202603/20260316.md)
+## 📌 今日概况
+
+今日共检索候选论文 40 篇；关键词+LLM 智能匹配遥感交叉论文 11 篇；最终纳入日报 1 篇。
+
+今日仅收录1篇论文，聚焦时间序列分析领域。研究提出弹性相似性度量的新下界范式，通过二分图建模优化相似性搜索效率，为时序数据挖掘提供理论支撑与算法加速思路。
+
+## ✨ 今日亮点
+
+- 提出弹性相似性度量新下界范式，突破传统方法局限
+- 构建二分图模型优化时序相似性搜索计算效率
+- 给出更紧致的下界理论结果，提升算法可扩展性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260316] A New Lower Bounding Paradigm and Tighter Lower Bounds for Elastic Similarity Measures | Chao Zemin, Xiao Boyu, Li Zitong, Qi Zhixin, Liu Xianglong et al. | 提出弹性相似性度量的新下界范式，通过二分图建模获得更紧致下界，优化时序相似性搜索效率。 | [#84](https://github.com/thinson/RS-PaperClaw/issues/84) |
+
+## 🔎 观察
+
+- 时序分析仍是遥感数据处理的底层技术需求，下界优化对大规模卫星时序检索具有潜在价值
+- 理论型工作占比偏低，需关注后续是否开源验证及在遥感场景的实际迁移效果
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260315](./202603/20260315.md)
 ## 📌 今日概况
 
@@ -60,43 +90,6 @@ Powered by OpenClaw🦞
 
 - 量子计算与遥感AI的交叉研究尚处早期探索阶段，其实际算力优势与工程化落地路径仍需验证
 - 零样本学习与视觉基础模型的结合正重塑遥感下游任务范式，数据效率与泛化能力成为核心竞争点
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260313](./202603/20260313.md)
-## 📌 今日概况
-
-今日共检索候选论文 41 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究聚焦多模态与跨视角学习，涵盖视觉语言模型、跨模态匹配及鲁棒性定位等方向。无人机场景理解、船舶重识别与显著目标检测等应用任务持续受到关注，基础模型与表示学习研究亦有新进展。
-
-## ✨ 今日亮点
-
-- TerraFlow提出多模态多时相地球观测表示学习框架
-- AVION通过知识蒸馏实现航拍视觉语言指令微调
-- SDF-Net解决光学-SAR跨模态船舶重识别难题
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260313] VIRD: View-Invariant Representation through Dual-Axis Transformation for Cross-View Pose Estimation | Park Juhye, Lee Wooju, Hong Dasol, Sung Changki, Seo Youngwoo et al. | VIRD通过双轴变换学习视角不变表征，用于跨视角姿态估计。 | [#66](https://github.com/thinson/RS-PaperClaw/issues/66) |
-| [20260313] Hierarchical Dual-Change Collaborative Learning for UAV Scene Change Captioning | Chen Fuhai, Huang Pengpeng, Wu Junwen, Zhang Hehong, Wang Shiping et al. | 提出层次化双变化协同学习框架，解决无人机场景变化描述中的视角变化问题。 | [#67](https://github.com/thinson/RS-PaperClaw/issues/67) |
-| [20260313] Think and Answer ME: Benchmarking and Exploring Multi-Entity Reasoning Grounding in Remote Sensing | Lyu Shuchang, Wen Haiquan, Cheng Guangliang, Li Meng, Zhou Zheng et al. | 构建多实体推理定位基准，探索遥感图像中实体感知视觉定位能力。 | [#68](https://github.com/thinson/RS-PaperClaw/issues/68) |
-| [20260313] TerraFlow: Multimodal, Multitemporal Representation Learning for Earth Observation | Puriy Nazar, Jakubik Johannes, Blumenstiel Benedikt, Schindler Konrad | TerraFlow开发多模态多时相表示学习方法，面向地球观测基础模型。 | [#69](https://github.com/thinson/RS-PaperClaw/issues/69) |
-| [20260313] Bin~Wan,G2HFNet: GeoGran-Aware Hierarchical Feature Fusion Network for Salient Object Detection in Optical Remote Sensing Images | Wan Bin, Cong Runmin, Zhou Xiaofei, Fang Hao, Lv Chengtao et al. | G2HFNet设计地理粒度感知层次特征融合网络，用于光学遥感显著目标检测。 | [#70](https://github.com/thinson/RS-PaperClaw/issues/70) |
-| [20260313] AVION: Aerial Vision-Language Instruction from Offline Teacher to Prompt-Tuned Network | Hu Yu, Gu Jianyang, Liu Hao, Cao Yue, Hamari Jozsef et al. | AVION采用离线教师到提示微调网络的知识蒸馏策略，实现航拍视觉语言指令学习。 | [#71](https://github.com/thinson/RS-PaperClaw/issues/71) |
-| [20260313] SDF-Net: Structure-Aware Disentangled Feature Learning for Opticall-SAR Ship Re-identification | Chen Furui, Wang Han, Sun Yuhan, You Jianing, Lv Yixuan et al. | SDF-Net提出结构感知解耦特征学习方法，用于光学-SAR船舶重识别。 | [#72](https://github.com/thinson/RS-PaperClaw/issues/72) |
-| [20260313] MRGeo: Robust Cross-View Geo-Localization of Corrupted Images via Spatial and Channel Feature Enhancement | Wu Le, Bo Lv, Ouyang Songsong, Zhu Yingying | MRGeo通过空间与通道特征增强，提升损坏图像的跨视角地理定位鲁棒性。 | [#73](https://github.com/thinson/RS-PaperClaw/issues/73) |
-
-## 🔎 观察
-
-- 跨模态与跨视角学习成为今日研究主线，反映遥感数据异构性带来的核心挑战。
-- 无人机与航拍场景理解持续活跃，提示低空经济应用需求正在驱动学术研究。
 
 ---
 
