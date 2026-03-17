@@ -35,26 +35,33 @@ Powered by OpenClaw🦞
 # [20260315](./202603/20260315.md)
 ## 📌 今日概况
 
-今日共检索候选论文 25 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 1 篇。
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
 
-今日遥感AI研究聚焦泛化性学习范式，零样本全色锐化成为热点。G-ZAP框架通过隐式神经表示实现任意尺度融合，突破传统方法对配对训练数据的依赖，推动遥感图像超分辨率向实用化场景迁移。
+今日遥感AI研究呈现两大主线：一是多模态大语言模型在低空无人机视觉理解、农业场景推理及地籍空间认知中的深度渗透；二是端到端自主导航与零样本泛化技术的突破，推动无人机从感知向决策闭环演进。点云实例分割与隐式神经表示等基础技术持续支撑垂直应用创新。
 
 ## ✨ 今日亮点
 
-- 零样本学习首次系统应用于全色锐化任务，解决跨传感器泛化难题
-- 隐式神经表示实现连续尺度建模，支持任意分辨率提升需求
-- 多尺度融合机制兼顾空间细节与光谱保真，无需重新训练即可适配新数据
+- 多模态大模型成为低空遥感理解的核心引擎，UAVBench与AerialVLA分别构建评测基准与端到端导航框架
+- 农业遥感进入感知-推理解耦新范式，AgroNVILA与无标签3D麦穗分割技术降低标注依赖
+- 零样本泛化与结构化提示工程突破，G-ZAP实现任意尺度全色锐化，AeroGen重构无人机编程范式
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260315] G-ZAP: A Generalizable Zero-Shot Framework for Arbitrary-Scale Pansharpening | Yang Zhiqi, Yin Shan, Liang Jingze, Deng Liang-Jian | G-ZAP提出可泛化的零样本全色锐化框架，利用隐式神经表示实现任意尺度图像融合，摆脱配对数据约束。 | [#82](https://github.com/thinson/RS-PaperClaw/issues/82) |
+| [20260315] G-ZAP: A Generalizable Zero-Shot Framework for Arbitrary-Scale Pansharpening | Yang Zhiqi, Yin Shan, Liang Jingze, Deng Liang-Jian | G-ZAP提出可泛化的零样本任意尺度全色锐化框架，基于隐式神经表示实现多尺度融合 | [#82](https://github.com/thinson/RS-PaperClaw/issues/82) |
+| [20260315] Seeing Where to Deploy: Metric RGB-Based Traversability Analysis for Aerial-to-Ground Hidden Space Inspection | Lee Seoyoung, Shaekh Mohammad Shithil, Pushp Durgakant, Liu Lantao, Wang Zhangyang | 基于度量RGB的多视图重建方法，实现无人机-地面机器人协同的隐蔽空间可通行性分析 | [#97](https://github.com/thinson/RS-PaperClaw/issues/97) |
+| [20260315] GroundSet: A Cadastral-Grounded Dataset for Spatial Understanding with Vector Data | Ferrod Roger, Lecene Maël, Sapkota Krishna, Leifman George, Silverman Vered et al. | GroundSet构建首个地籍向量数据 grounding 数据集，支撑空间理解多模态大模型训练 | [#98](https://github.com/thinson/RS-PaperClaw/issues/98) |
+| [20260315] AerialVLA: A Vision-Language-Action Model for UAV Navigation via Minimalist End-to-End Control | Xu Peng, Deng Zhengnan, Deng Jiayan, Gu Zonghua, Wan Shaohua | AerialVLA开发极简端到端控制的无人机视觉-语言-动作模型，推进自主导航实用化 | [#99](https://github.com/thinson/RS-PaperClaw/issues/99) |
+| [20260315] AgroNVILA: Perception-Reasoning Decoupling for Multi-view Agricultural Multimodal Large Language Models | Zhang Jiarui, Hu Junqi, Mai Zurong, Chen Yuhang, Lou Shuohong et al. | AgroNVILA通过感知-推理解耦架构，提升农业多模态大模型的多视图空间拓扑理解能力 | [#100](https://github.com/thinson/RS-PaperClaw/issues/100) |
+| [20260315] UAVBench and UAVIT-1M: Benchmarking and Enhancing MLLMs for Low-Altitude UAV Vision-Language Understanding | Zhan Yang, Yuan Yuan | UAVBench与UAVIT-1M百万级数据集系统性评测低空无人机视觉-语言理解能力瓶颈 | [#101](https://github.com/thinson/RS-PaperClaw/issues/101) |
+| [20260315] In-Field 3D Wheat Head Instance Segmentation From TLS Point Clouds Using Deep Learning Without Manual Labels | Medic Tomislav, Nan Liangliang | 基于地面激光扫描点云与深度学习的无标签3D麦穗实例分割方法，助力田间表型分析 | [#102](https://github.com/thinson/RS-PaperClaw/issues/102) |
+| [20260315] AeroGen: Agentic Drone Autonomy through Single-Shot Structured Prompting &amp; Drone SDK | Astu Kautuk, Simmhan Yogesh | AeroGen以单次结构化提示调用无人机SDK，实现大模型驱动的自主飞行代码生成 | [#103](https://github.com/thinson/RS-PaperClaw/issues/103) |
 
 ## 🔎 观察
 
-- 零样本范式正从自然图像向遥感专用任务渗透，数据获取瓶颈驱动方法论革新
-- 隐式神经表示的连续建模能力，或成为下一代多分辨率遥感分析的基础组件
+- 低空经济基础设施层趋于成熟：评测基准、专用数据集、端到端控制框架同步涌现，MLLM正成为无人机系统的标准感知接口
+- 农业遥感呈现'重推理轻标注'趋势：感知-解耦架构与无监督点云分割并行发展，缓解专业领域标注稀缺瓶颈
 
 ---
 
