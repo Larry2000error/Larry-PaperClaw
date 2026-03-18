@@ -62,6 +62,20 @@ python3 scripts/cli.py filter --dry-run --date 20260317
 python3 scripts/cli.py reconcile --date 20260317 --dry-run
 ```
 
+## Customization
+
+If you want to adapt this project into your own paper system, read:
+
+- `CUSTOMIZATION_GUIDE.md`
+
+That guide covers:
+
+- how to change topic keywords and regex
+- how to change the filter prompt
+- how to point the pipeline to your own GitHub repository
+- what each important `.env` variable does
+- how to validate your customized setup safely
+
 ## Filter configuration
 
 The article-list filtering rules are file-based, not hardcoded in Python:

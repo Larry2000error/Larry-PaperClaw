@@ -133,6 +133,20 @@ python3 scripts/cli.py run --date 20260317 --no-notify
 python3 scripts/cli.py reconcile --date 20260317 --dry-run
 ```
 
+### 5) 想定制成你自己的论文系统
+
+可以直接看：
+
+- `skills/rs-paper-pipeline/CUSTOMIZATION_GUIDE.md`
+
+这份文档专门说明：
+
+- 如何改关键词和 regex
+- 如何改筛选 prompt
+- 如何改 `.env` 配置项
+- 如何把目标仓库切到你自己的 repo
+- 如何用最小风险验证改动
+
 ---
 
 ## ⏰ 定时任务（示例）
