@@ -1,31 +1,41 @@
 ---
 name: rs-paper-pipeline
-description: RS paper pipeline skill bundle. Use when setting up or demonstrating the remote-sensing arXiv→GitHub issue→daily digest workflow without exposing secrets. Includes secure scripts that require environment variables for GitHub, LLM, and Feishu targets.
+description: Use this skill when operating or maintaining the RS-PaperClaw pipeline that fetches remote-sensing arXiv papers, creates per-paper issues, builds daily digests, reconciles issue sets, and syncs daily_reports back to the repository.
 ---
 
-Use bundled scripts in `scripts/` to run the full workflow with env-based credentials.
+Operate this skill from `skills/rs-paper-pipeline/`.
 
-## Required Environment Variables
+## Required environment
 
 - `GITHUB_TOKEN`
-- `GITHUB_REPO` (format: `owner/repo`)
-- `BAILIAN_API_KEY` (for LLM calls in paper processing)
-- `FEISHU_TARGET` (optional for push script; default placeholder)
-- `LLM_MODEL` (optional)
+- `BAILIAN_API_KEY`
 
-## Workflow
+Optional:
 
-1. Process new daily papers:
-   - `python3 scripts/daily_arxiv_cross_filter.py --days 1 --stats-out memory/rs_daily_stats_YYYYMMDD.json`
-2. Build digest for target date:
-   - `python3 scripts/daily_digest_llm_upgrade.py --date YYYYMMDD --stats-json memory/rs_daily_stats_YYYYMMDD.json`
-3. Sync digest markdown to repo:
-   - `python3 scripts/sync_daily_reports_to_repo.py`
-4. Full scheduled run:
-   - `python3 scripts/run_rs_daily_workday.py`
+- `DINGTALK_WEBHOOK`
+- `FEISHU_TARGET`
+- `RS_GITHUB_REPO`
+- `BAILIAN_MODEL`
 
-## Notes
+## Entry points
 
-- All secrets are removed from code.
-- Daily report files are archived by month in `daily_reports/YYYYMM/YYYYMMDD.md`.
-- `daily_reports/README.md` shows latest 3 days (newest first).
+- environment check:
+  - `python3 scripts/cli.py doctor`
+- standard pipeline run:
+  - `python3 scripts/cli.py run`
+- historical replay without notify:
+  - `python3 scripts/cli.py run --date YYYYMMDD --no-notify`
+- filter preview:
+  - `python3 scripts/cli.py filter --dry-run --date YYYYMMDD`
+- reconcile issue set:
+  - `python3 scripts/cli.py reconcile --date YYYYMMDD --dry-run`
+  - `python3 scripts/cli.py reconcile --date YYYYMMDD`
+
+## Filtering rules
+
+Do not hardcode article-list rules in Python.
+
+- remote-sensing query terms and regex live in `scripts/config/filter_keywords.json`
+- the LLM cross-filter prompt lives in `scripts/prompts/filter_cross_prompt.md`
+
+If filtering behavior changes, update those files first, then validate with `filter --dry-run`.

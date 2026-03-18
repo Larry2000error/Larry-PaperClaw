@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
 """
 工作日 09:05 自动执行：
 1) 抓取并筛选“当天”遥感xAI论文，生成/更新单篇 issue
@@ -6,74 +8,302 @@
 3) 推送日报到 Feishu 私聊
 """
 
-import subprocess
-from datetime import datetime
-from github import Github, Auth
 import os
+import json
+import time
+import fcntl
+import subprocess
+from datetime import datetime, timedelta
 
-TOKEN = os.getenv("GITHUB_TOKEN", "")
-REPO = os.getenv("GITHUB_REPO", "owner/repo")
-FEISHU_TARGET = os.getenv("FEISHU_TARGET", "user:your_open_id")
-WORKDIR = "/home/openclaw/.openclaw/workspace"
+from clients.github_ops import daily_report_file_exists, get_today_digest_issue
+from clients.notify_client import has_available_notify_channel, send_dingtalk_markdown, send_feishu_message
+from pipeline_config import build_runtime_env, get_repo, load_config
+
+CONFIG = load_config()
+LOCK_FILE = CONFIG.memory_dir / "rs_daily_workday.lock"
+STATE_DIR = CONFIG.pipeline_state_dir
 
 
-def run(cmd: list[str]):
+def _env_with_proxy() -> dict:
+    return build_runtime_env()
+
+
+def check_github_connectivity() -> bool:
+    cmd = [
+        "curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
+        f"https://api.github.com/repos/{CONFIG.github_repo}",
+    ]
+    try:
+        out = subprocess.check_output(cmd, cwd=CONFIG.root_dir, env=_env_with_proxy(), timeout=20).decode().strip()
+        return out == "200"
+    except Exception:
+        return False
+
+
+def run(cmd: list[str], retries: int = 4):
     print("$", " ".join(cmd))
-    subprocess.run(cmd, cwd=WORKDIR, check=True)
+    env = _env_with_proxy()
+    backoff = [2, 5, 10, 20]
+    for i in range(retries):
+        try:
+            subprocess.run(cmd, cwd=CONFIG.root_dir, check=True, env=env)
+            return
+        except subprocess.CalledProcessError:
+            if i == retries - 1:
+                raise
+            wait_s = backoff[min(i, len(backoff) - 1)]
+            print(f"[retry] attempt={i+1}/{retries} failed, sleep={wait_s}s")
+            time.sleep(wait_s)
 
 
-def get_today_digest(date_str: str):
-    g = Github(auth=Auth.Token(TOKEN))
-    repo = g.get_repo(REPO)
-    title = f"日报 {date_str}"
-    for issue in repo.get_issues(state="open"):
-        if issue.title.strip() == title:
-            return issue
-    return None
+def _get_repo():
+    return get_repo(CONFIG)
 
 
+def _write_state(date_str: str, step: str, status: str, extra: dict | None = None):
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    p = STATE_DIR / f"{date_str}.json"
+    state = {
+        "date": date_str,
+        "step": step,
+        "status": status,
+        "updated_at": datetime.now().isoformat(timespec="seconds"),
+    }
+    if p.exists():
+        try:
+            old = json.loads(p.read_text(encoding="utf-8"))
+            if isinstance(old, dict):
+                state = {**old, **state}
+        except Exception:
+            pass
+    if status != "failed":
+        state.pop("reason", None)
+        state.pop("failed_command", None)
+    if extra:
+        for key, value in extra.items():
+            if value is None:
+                state.pop(key, None)
+            else:
+                state[key] = value
+    p.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
 
-def _require_env():
-    required = ["GITHUB_TOKEN", "GITHUB_REPO"]
-    missing = [k for k in required if not os.getenv(k)]
-    if missing:
-        raise RuntimeError(f"Missing env: {', '.join(missing)}")
 
-def main():
-    _require_env()
-    date_str = datetime.now().strftime("%Y%m%d")
+def _format_exc(exc: Exception) -> str:
+    text = str(exc).strip()
+    return text or exc.__class__.__name__
 
-    stats_path = f"memory/rs_daily_stats_{date_str}.json"
 
-    # 1) 当天论文筛选+处理
-    run(["python3", "scripts/daily_arxiv_cross_filter.py", "--days", "1", "--stats-out", stats_path])
+def _load_stats(stats_path: str) -> dict:
+    try:
+        with open(stats_path, "r", encoding="utf-8") as fh:
+            data = json.load(fh)
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
 
-    # 2) 仅生成当天日报（包含筛选统计数字）
-    run(["python3", "scripts/daily_digest_llm_upgrade.py", "--date", date_str, "--stats-json", stats_path])
 
-    # 3) 同步日报 markdown 到仓库 daily_reports（按年月归档 + README）
-    run(["python3", "scripts/sync_daily_reports_to_repo.py"])
+def _short_title(title: str, limit: int = 88) -> str:
+    text = " ".join((title or "").split())
+    if len(text) <= limit:
+        return text
+    return text[: limit - 3].rstrip() + "..."
 
-    # 4) 推送到 Feishu
-    issue = get_today_digest(date_str)
+
+def _build_notify_message(date_str: str, stats_path: str, issue) -> tuple[str, str]:
+    title = f"遥感AI日报 {date_str}"
+    stats = _load_stats(stats_path)
+    selected_items = stats.get("selected_items") or []
+    selected_count = stats.get("llm_selected_count")
+    candidate_count = stats.get("candidate_count")
+    included_count = len(selected_items) if selected_items else selected_count
+
     if not issue:
-        text = f"📭 今日（{date_str}）未生成日报：没有命中当天论文或生成失败。"
+        lines = [f"RS {title}", "", f"日期: {date_str}"]
+        if candidate_count is not None and selected_count is not None:
+            lines.append(f"统计: 候选 {candidate_count} 篇 / 筛中 {selected_count} 篇")
+        lines.append("结果: 未生成日报 issue，可能当天没有命中论文或生成失败。")
+        return title, "\n".join(lines)
+
+    lines = [
+        f"RS {title}",
+        "",
+        f"Issue: {issue.html_url}",
+        f"日期: {date_str}",
+    ]
+    if candidate_count is not None and selected_count is not None:
+        lines.append(f"统计: 候选 {candidate_count} 篇 / 筛中 {selected_count} 篇 / 纳入 {included_count} 篇")
+
+    if selected_items:
+        lines.append("")
+        lines.append("今日文章列表:")
+        for idx, item in enumerate(selected_items, 1):
+            lines.append(f"{idx}. {_short_title(item.get('title', ''))}")
     else:
         body = (issue.body or "").strip()
         preview = body[:1200] + ("\n..." if len(body) > 1200 else "")
-        text = (
-            f"📌 遥感AI日报 {date_str}\n"
-            f"Issue: {issue.html_url}\n\n"
-            f"{preview}"
-        )
+        lines.extend(["", preview])
 
-    run([
-        "openclaw", "message", "send",
-        "--channel", "feishu",
-        "--target", FEISHU_TARGET,
-        "--message", text,
-    ])
+    return title, "\n".join(lines)
+
+
+def _run_step(date_str: str, step: str, cmd: list[str], ok_extra: dict | None = None, running_extra: dict | None = None):
+    _write_state(date_str, step, "running", running_extra)
+    try:
+        run(cmd)
+    except Exception as exc:
+        _write_state(
+            date_str,
+            step,
+            "failed",
+            {
+                "reason": _format_exc(exc),
+                "failed_command": " ".join(cmd),
+            },
+        )
+        raise
+    _write_state(date_str, step, "ok", ok_extra)
+
+
+def resolve_target_dates(today: datetime | None = None) -> list[str]:
+    now = today or datetime.now()
+    weekday = now.weekday()  # Monday=0
+
+    # 默认按北京时间日期回溯抓取：
+    # - 周一：回溯到上周五（-3天）
+    # - 周二：顺序补跑周六、周日、周一（-3/-2/-1天）
+    # - 其他日期：回溯昨日（-1天）
+    # 说明：arXiv published 为 UTC 时间，这里用“工作日日报”的业务口径。
+    if weekday == 0:
+        deltas = [3]
+    elif weekday == 1:
+        deltas = [3, 2, 1]
+    else:
+        deltas = [1]
+    return [(now - timedelta(days=delta)).strftime("%Y%m%d") for delta in deltas]
+
+
+def _process_date(date_str: str, notify: bool):
+    stats_path = f"memory/rs_daily_stats_{date_str}.json"
+
+    _run_step(
+        date_str,
+        "filter",
+        ["python3", "scripts/daily_arxiv_cross_filter.py", "--date", date_str, "--stats-out", stats_path],
+        ok_extra={"stats_path": stats_path},
+        running_extra={"notify": notify},
+    )
+
+    _run_step(
+        date_str,
+        "digest",
+        ["python3", "scripts/daily_digest_llm_upgrade.py", "--date", date_str, "--stats-json", stats_path],
+    )
+
+    _write_state(date_str, "sync", "running")
+    max_sync_attempts = 3
+    try:
+        for attempt in range(1, max_sync_attempts + 1):
+            run(["python3", "scripts/sync_daily_reports_to_repo.py"])
+            if daily_report_file_exists(_get_repo(), date_str):
+                break
+            if attempt < max_sync_attempts:
+                time.sleep(6)
+    except Exception as exc:
+        _write_state(
+            date_str,
+            "sync",
+            "failed",
+            {
+                "reason": _format_exc(exc),
+                "failed_command": "python3 scripts/sync_daily_reports_to_repo.py",
+            },
+        )
+        raise
+    _write_state(date_str, "sync", "ok", {"sync_attempts": attempt, "daily_report_file": daily_report_file_exists(_get_repo(), date_str)})
+
+    if notify:
+        sent_channels: list[str] = []
+        issue = get_today_digest_issue(_get_repo(), date_str)
+        title, text = _build_notify_message(date_str, stats_path, issue)
+
+        _write_state(date_str, "notify", "running")
+        try:
+            if send_feishu_message(text):
+                sent_channels.append("feishu")
+            if send_dingtalk_markdown(title, text):
+                sent_channels.append("dingtalk")
+        except Exception as exc:
+            _write_state(
+                date_str,
+                "notify",
+                "failed",
+                {"reason": _format_exc(exc), "channels_sent": sent_channels or None},
+            )
+            raise
+        if not sent_channels:
+            _write_state(
+                date_str,
+                "notify",
+                "failed",
+                {"reason": "No available notify channel (feishu or dingtalk)"},
+            )
+            raise RuntimeError("通知已启用，但没有可用的飞书或钉钉通道")
+        _write_state(date_str, "notify", "ok", {"channels_sent": sent_channels})
+
+    _write_state(date_str, "done", "ok")
+
+
+def main(target_date: str | None = None, notify: bool | None = None):
+    if not CONFIG.github_token:
+        raise RuntimeError("Missing required environment variable: GITHUB_TOKEN")
+    if not CONFIG.bailian_api_key:
+        raise RuntimeError("Missing required environment variable: BAILIAN_API_KEY")
+
+    if target_date:
+        target_dates = [target_date]
+    else:
+        target_dates = resolve_target_dates()
+
+    # 默认仅“自动定时模式”发送通知；手动回放/追跑默认不通知
+    if notify is None:
+        notify = (target_date is None)
+
+    LOCK_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(LOCK_FILE, "w", encoding="utf-8") as lf:
+        try:
+            fcntl.flock(lf.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except BlockingIOError:
+            raise RuntimeError("另一个 pipeline 正在运行，请稍后重试")
+
+        # 前置网络检查
+        if not check_github_connectivity():
+            for date_str in target_dates:
+                _write_state(
+                    date_str,
+                    "precheck",
+                    "failed",
+                    {"reason": "GitHub connectivity check failed"},
+                )
+            raise RuntimeError("GitHub 连通性检查失败，请切换代理节点后重试")
+        for date_str in target_dates:
+            _process_date(date_str, notify)
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--date", dest="date", help="指定日期，格式 YYYYMMDD，默认为今天")
+    parser.add_argument("--notify", action="store_true", help="强制发送通知")
+    parser.add_argument("--no-notify", action="store_true", help="禁止发送Feishu通知")
+    args = parser.parse_args()
+
+    notify = None
+    if args.notify:
+        notify = True
+    if args.no_notify:
+        notify = False
+
+    if notify and not has_available_notify_channel():
+        raise RuntimeError("No available notify channel. Configure DINGTALK_WEBHOOK or FEISHU_TARGET with a working openclaw binary.")
+
+    main(target_date=args.date, notify=notify)

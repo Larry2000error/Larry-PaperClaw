@@ -40,7 +40,7 @@ RS-PaperClaw automates the daily pipeline:
 - 📝 Generate / update per-paper reading reports (GitHub Issues)
 - 🗞️ Generate daily digest issues
 - 🗂️ Sync digest markdown to `daily_reports/YYYYMM/YYYYMMDD.md`
-- 📮 Deliver summaries to Feishu
+- 📮 Deliver summaries to DingTalk / Feishu
 
 ---
 
@@ -69,6 +69,7 @@ RS-PaperClaw automates the daily pipeline:
 
 ```text
 RS-PaperClaw/
+├── .github/workflows/                 # GitHub Actions for scheduled and manual ops
 ├── docs/                             # GitHub Pages static site
 │   ├── index.html
 │   └── logo-220.png
@@ -79,7 +80,15 @@ RS-PaperClaw/
 ├── skills/rs-paper-pipeline/         # skill and scripts
 │   ├── README.md
 │   ├── SKILL.md
+│   ├── .env.example
+│   ├── RUNBOOK_RS_PIPELINE.md
+│   ├── AGENT_GUIDE_RS_PIPELINE.md
 │   └── scripts/
+│       ├── cli.py
+│       ├── clients/
+│       ├── services/
+│       ├── config/filter_keywords.json
+│       └── prompts/filter_cross_prompt.md
 └── README.md
 ```
 
@@ -87,27 +96,41 @@ RS-PaperClaw/
 
 ## 🚀 Quick start
 
-### 1) Requirements
-
-- Python 3.10+
-- `pip install PyGithub`
-- `poppler-utils` (`pdftoppm`, `pdftotext`)
-
-### 2) Environment variables
+### 1) Bootstrap
 
 ```bash
-export GITHUB_TOKEN="..."
-export GITHUB_REPO="owner/repo"
-export BAILIAN_API_KEY="..."
-# optional
-export FEISHU_TARGET="user:xxx"
-export LLM_MODEL="MiniMax-M2.5"
+cd skills/rs-paper-pipeline
+./bootstrap.sh
 ```
+
+### 2) Configure `.env`
+
+Required:
+
+- `GITHUB_TOKEN`
+- `BAILIAN_API_KEY`
+
+Optional:
+
+- `DINGTALK_WEBHOOK`
+- `FEISHU_TARGET`
+- `RS_GITHUB_REPO`
 
 ### 3) Run today's workflow
 
 ```bash
-python3 skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py
+cd skills/rs-paper-pipeline
+python3 scripts/cli.py run
+```
+
+### 4) Common commands
+
+```bash
+cd skills/rs-paper-pipeline
+python3 scripts/cli.py doctor
+python3 scripts/cli.py filter --dry-run --date 20260317
+python3 scripts/cli.py run --date 20260317 --no-notify
+python3 scripts/cli.py reconcile --date 20260317 --dry-run
 ```
 
 ---
@@ -115,8 +138,12 @@ python3 skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py
 ## ⏰ Scheduler example
 
 ```cron
-CRON_TZ=Asia/Shanghai
-5 9 * * 1-5 /usr/bin/python3 /path/to/skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py >> /path/to/logs/rs_daily_workday.log 2>&1
+Prefer the repository workflows:
+
+- `.github/workflows/rs-pipeline-schedule.yml`
+- `.github/workflows/rs-pipeline-manual.yml`
+
+Both workflows execute `skills/rs-paper-pipeline/scripts/cli.py` and read the filter config files from the repository.
 ```
 
 ---
@@ -125,6 +152,9 @@ CRON_TZ=Asia/Shanghai
 
 - Chinese README is the default entry: [README.md](./README.md)
 - GitHub Pages deployment source: `main` branch + `/docs`
+- Article-list filtering rules come from:
+  - `skills/rs-paper-pipeline/scripts/config/filter_keywords.json`
+  - `skills/rs-paper-pipeline/scripts/prompts/filter_cross_prompt.md`
 
 ---
 

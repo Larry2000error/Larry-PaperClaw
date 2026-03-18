@@ -1,0 +1,43 @@
+{
+  "rs_query_terms": [
+    "remote sensing",
+    "satellite image",
+    "satellite imagery",
+    "earth observation",
+    "hyperspectral",
+    "multispectral",
+    "synthetic aperture radar",
+    "SAR",
+    "UAV",
+    "geolocalization",
+    "change detection",
+    "land cover"
+  ],
+  "rs_signal_patterns": [
+    "(?i)\\bremote sensing\\b",
+    "(?i)\\bsatellite images?\\b",
+    "(?i)\\bsatellite imagery\\b",
+    "(?i)\\bearth observation\\b",
+    "(?i)\\bhyperspectral\\b",
+    "(?i)\\bmultispectral\\b",
+    "(?i)\\bsynthetic aperture radar\\b",
+    "\\bSAR\\b",
+    "\\bUAV\\b",
+    "(?i)\\bgeolocalization\\b",
+    "(?i)\\bchange detection\\b",
+    "(?i)\\bland cover\\b"
+  ],
+  "ai_signal_patterns": [
+    "(?i)\\bfoundation model(s)?\\b",
+    "(?i)\\bpretrain(ed|ing)?\\b",
+    "(?i)\\bvision-language\\b",
+    "(?i)\\bcomputer vision\\b",
+    "(?i)\\bartificial intelligence\\b",
+    "\\bAI\\b",
+    "\\bCV\\b",
+    "(?i)\\bmamba\\b",
+    "(?i)\\btransformer(s)?\\b",
+    "(?i)\\bmultimodal\\b",
+    "(?i)\\bagent(ic)?\\b"
+  ]
+}

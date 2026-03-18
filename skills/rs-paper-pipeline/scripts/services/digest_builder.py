@@ -1,0 +1,120 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import json
+import re
+
+from clients.llm_client import call_llm
+
+
+def extract_author(body: str) -> str:
+    match = re.search(r"\| \*\*作者\*\* \|([^|]+)\|", body or "")
+    return match.group(1).strip() if match else "-"
+
+
+def extract_report_title(issue: dict) -> str:
+    body = issue.get("body") or ""
+    match = re.search(r"^#\s*\[(\d{8})\]\s+(.+)$", body, re.MULTILINE)
+    if match:
+        return f"[{match.group(1)}] {match.group(2).strip()}"
+    return issue.get("title") or ""
+
+
+def extract_paper_date(issue: dict) -> str | None:
+    for label in issue.get("labels", []):
+        name = label.get("name", "") if isinstance(label, dict) else ""
+        if re.fullmatch(r"\d{8}", name):
+            return name
+
+    body = issue.get("body") or ""
+    body_match = re.search(r"\[(\d{8})\]", body)
+    if body_match:
+        return body_match.group(1)
+
+    title_match = re.match(r"^\[(\d{8})\]\s+", issue.get("title") or "")
+    return title_match.group(1) if title_match else None
+
+
+def build_digest_with_llm(date: str, papers: list, stats: dict | None = None) -> str:
+    items = []
+    for i, paper in enumerate(papers, 1):
+        labels = [label["name"] for label in paper.get("labels", []) if label["name"] not in [date, "日报"]]
+        items.append(
+            {
+                "idx": i,
+                "issue": paper["number"],
+                "title": extract_report_title(paper),
+                "authors": extract_author(paper.get("body") or ""),
+                "labels": labels,
+                "url": paper["html_url"],
+            }
+        )
+
+    prompt = (
+        "你是遥感AI日报编辑。请基于给定论文列表输出严格JSON：\n"
+        "{\n"
+        '  "overview": "120-180字，概述今日研究趋势",\n'
+        '  "highlights": ["3条，每条20-40字"],\n'
+        '  "one_liners": [{"idx":1,"summary":"每篇一句话，25-45字"}],\n'
+        '  "observations": ["2条，偏分析判断，每条24-48字"]\n'
+        "}\n"
+        "要求：中文、客观、不要编造细节。\n\n"
+        f"日期: {date}\n候选: {json.dumps(items, ensure_ascii=False)}"
+    )
+    output = call_llm(prompt, max_tokens=1800, timeout=240)
+    match = re.search(r"\{[\s\S]*\}", output)
+    data = {"overview": "", "highlights": [], "one_liners": []}
+    if match:
+        try:
+            data = json.loads(match.group(0))
+        except Exception:
+            pass
+
+    one_liners = {
+        item.get("idx"): item.get("summary", "")
+        for item in data.get("one_liners", [])
+        if isinstance(item, dict)
+    }
+
+    overview_text = data.get("overview") or "今日论文总体呈现出遥感与AI交叉深化趋势。"
+    candidate_count = (stats or {}).get("candidate_count")
+    llm_selected_count = (stats or {}).get("llm_selected_count")
+    included_count = len(items)
+
+    if candidate_count is None:
+        candidate_count = included_count
+    if llm_selected_count is None:
+        llm_selected_count = included_count
+
+    overview_text = (
+        f"今日共检索候选论文 {candidate_count} 篇；"
+        f"关键词+LLM 智能匹配遥感交叉论文 {llm_selected_count} 篇；"
+        f"最终纳入日报 {included_count} 篇。\n\n{overview_text}"
+    )
+
+    lines = [f"# 日报 {date}", "", "## 📌 今日概况", "", overview_text, ""]
+
+    highlights = data.get("highlights") or []
+    if highlights:
+        lines += ["## ✨ 今日亮点", ""]
+        for highlight in highlights[:3]:
+            lines.append(f"- {highlight}")
+        lines.append("")
+
+    lines += ["## 🗂 今日文章列表", "", "| 标题 | 作者 | 一句话概括 | Issue |", "|---|---|---|---|"]
+    for i, paper in enumerate(items, 1):
+        summary = one_liners.get(i) or (
+            f"聚焦{('、'.join(paper['labels'][:2]) if paper['labels'] else '遥感AI方法')}，给出可复现的模型与评测方案。"
+        )
+        lines.append(f"| {paper['title']} | {paper['authors']} | {summary} | [#{paper['issue']}]({paper['url']}) |")
+
+    observations = data.get("observations") or [
+        "基础模型与遥感任务结合持续增强，评测与推理能力成为关键。",
+        "多数工作关注算法有效性与泛化，而非硬件实现。",
+    ]
+    lines += ["", "## 🔎 观察", ""]
+    for observation in observations[:2]:
+        lines.append(f"- {observation}")
+
+    lines += ["", "---", "", "Powered by OpenClaw🦞"]
+    return "\n".join(lines)

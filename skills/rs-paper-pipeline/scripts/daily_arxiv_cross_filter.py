@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+from __future__ import annotations
+
 """
 从 arXiv 拉取今天+昨天提交的论文，先按遥感关键词 OR 初筛，
 再用 LLM 筛选“遥感 x 基础模型/计算机视觉/人工智能交叉”论文，
@@ -7,72 +9,22 @@
 
 import re
 import json
-import urllib.parse
-import urllib.request
-import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
-from github import Github, Auth
 
-from paper_processor import process_paper, call_llm
-import os
+from clients.arxiv_client import fetch_recent_candidates, has_remote_sensing_signal
+from clients.github_ops import load_existing_arxiv_ids
+from clients.llm_client import call_llm
+from paper_processor import process_paper
+from pipeline_config import get_repo, load_config
+from services.filter_assets import load_ai_signal_patterns, render_filter_prompt
 
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
-REPO_NAME = os.getenv("GITHUB_REPO", "owner/repo")
-ARXIV_API = "https://export.arxiv.org/api/query"
-
-RS_KEYWORDS = [
-    "remote sensing", "satellite image", "satellite imagery", "earth observation",
-    "hyperspectral", "multispectral", "synthetic aperture radar", "sar",
-    "uav", "geolocalization", "change detection", "land cover",
-]
+CONFIG = load_config()
+AI_MATCH_PATTERNS = load_ai_signal_patterns()
 
 
-def fetch_recent_candidates(max_results=150, days_back=2):
-    query = " OR ".join([f"all:{k}" for k in RS_KEYWORDS])
-    params = {
-        "search_query": query,
-        "start": 0,
-        "max_results": max_results,
-        "sortBy": "submittedDate",
-        "sortOrder": "descending",
-    }
-    url = f"{ARXIV_API}?{urllib.parse.urlencode(params)}"
-    with urllib.request.urlopen(url, timeout=90) as r:
-        xml_text = r.read().decode("utf-8", errors="ignore")
-
-    ns = {"atom": "http://www.w3.org/2005/Atom"}
-    root = ET.fromstring(xml_text)
-    items = []
-
-    today = datetime.now().date()
-    valid_days = {today - timedelta(days=i) for i in range(days_back)}
-
-    for e in root.findall("atom:entry", ns):
-        aid = (e.find("atom:id", ns).text or "").strip().split("/")[-1]
-        title = (e.find("atom:title", ns).text or "").strip().replace("\n", " ")
-        abs_text = (e.find("atom:summary", ns).text or "").strip().replace("\n", " ")
-        published = (e.find("atom:published", ns).text or "").strip()
-        pdate = None
-        try:
-            pdate = datetime.strptime(published[:10], "%Y-%m-%d").date()
-        except Exception:
-            pass
-
-        if pdate not in valid_days:
-            continue
-
-        text = f"{title} {abs_text}".lower()
-        if not any(k in text for k in RS_KEYWORDS):
-            continue
-
-        items.append({
-            "arxiv_id": aid,
-            "title": title,
-            "abstract": abs_text,
-            "published": published[:10],
-        })
-    return items
+def has_ai_signal(text: str) -> bool:
+    return any(pattern.search(text) for pattern in AI_MATCH_PATTERNS)
 
 
 def llm_cross_filter(candidates):
@@ -83,54 +35,65 @@ def llm_cross_filter(candidates):
     for i, c in enumerate(candidates, 1):
         payload.append(f"[{i}] id={c['arxiv_id']} | title={c['title']} | abstract={c['abstract'][:500]}")
 
-    prompt = (
-        "你是论文筛选助手。请从候选中筛选出同时满足："
-        "(1) 与遥感相关；(2) 与基础模型/计算机视觉/人工智能有明确交叉。\n"
-        "返回严格 JSON 数组，只包含保留论文的 arxiv_id 字符串，例如: [\"2603.12345\",\"2603.54321\"]。\n\n"
-        + "\n".join(payload)
-    )
+    prompt = render_filter_prompt(payload)
     out = call_llm(prompt, max_tokens=1200, timeout=180).strip()
 
     try:
-        m = re.search(r"\[[\s\S]*\]", out)
-        arr = json.loads(m.group(0) if m else out)
+        # 先尝试提取 ```json 代码块中的内容
+        code_block = re.search(r"```(?:json)?\s*([\s\S]*?)\s*```", out)
+        if code_block:
+            json_str = code_block.group(1).strip()
+        else:
+            # 否则直接提取 JSON 数组
+            json_str = re.search(r"\[[\s\S]*\]", out)
+            json_str = json_str.group(0) if json_str else out
+        arr = json.loads(json_str)
         keep = set(x.strip() for x in arr if isinstance(x, str))
-        return [c for c in candidates if c["arxiv_id"] in keep]
+        # 支持 LLM 返回的 ID 可能缺少 v1 后缀的情况
+        def match_id(cid, keep_set):
+            if cid in keep_set:
+                return True
+            # 尝试匹配无前缀版本
+            cid_base = cid.replace("v1", "").replace("v2", "").rstrip("v")
+            for k in keep_set:
+                k_base = k.replace("v1", "").replace("v2", "").rstrip("v")
+                if cid_base == k_base:
+                    return True
+            return False
+        selected = [c for c in candidates if match_id(c["arxiv_id"], keep)]
+        return [c for c in selected if has_remote_sensing_signal(f"{c['title']}\n{c['abstract']}")]
     except Exception:
         # LLM 解析失败时，保守降级：关键词交叉筛选
-        hard_kw = ["foundation model", "pretrain", "vision-language", "cv", "computer vision", "ai", "artificial intelligence", "mamba", "transformer"]
         out_items = []
         for c in candidates:
-            t = (c["title"] + " " + c["abstract"]).lower()
-            if any(k in t for k in hard_kw):
+            text = f"{c['title']}\n{c['abstract']}"
+            if has_remote_sensing_signal(text) and has_ai_signal(text):
                 out_items.append(c)
         return out_items
 
 
-def load_existing_arxiv_ids(repo):
-    ids = set()
-    for issue in repo.get_issues(state="all"):
-        body = issue.body or ""
-        m = re.search(r"arxiv\.org/abs/([^\)\s]+)", body)
-        if m:
-            ids.add(m.group(1).strip())
-    return ids
+def compact_item(item: dict[str, str]) -> dict[str, str]:
+    return {
+        "arxiv_id": item["arxiv_id"],
+        "published": item["published"],
+        "title": item["title"],
+    }
 
 
+def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: str | None = None):
+    if not CONFIG.github_token:
+        raise RuntimeError("Missing required environment variable: GITHUB_TOKEN")
+    if not CONFIG.bailian_api_key:
+        raise RuntimeError("Missing required environment variable: BAILIAN_API_KEY")
 
-def _require_env():
-    required = ["GITHUB_TOKEN", "GITHUB_REPO"]
-    missing = [k for k in required if not os.getenv(k)]
-    if missing:
-        raise RuntimeError(f"Missing env: {', '.join(missing)}")
+    repo = get_repo(CONFIG)
 
-def main(dry_run=False, days_back=2, stats_out: str | None = None):
-    _require_env()
-    g = Github(auth=Auth.Token(GITHUB_TOKEN))
-    repo = g.get_repo(REPO_NAME)
-
-    print("[1/5] 拉取今天+昨天候选...")
-    cands = fetch_recent_candidates(max_results=180, days_back=days_back)
+    if target_date:
+        print(f"[1/5] 拉取指定日期 {target_date} 候选...")
+        cands = fetch_recent_candidates(max_results=180, days_back=days_back, target_date=target_date)
+    else:
+        print(f"[1/5] 拉取最近 {days_back} 天候选...")
+        cands = fetch_recent_candidates(max_results=180, days_back=days_back)
     cand_count = len(cands)
     print(f"  候选数: {cand_count}")
 
@@ -147,11 +110,18 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None):
     print(f"  已存在: {existing_count}，待处理: {todo_count}")
 
     stats = {
-        "date": datetime.now().strftime("%Y%m%d"),
+        "date": target_date or datetime.now().strftime("%Y%m%d"),
         "candidate_count": cand_count,
         "llm_selected_count": selected_count,
         "existing_count": existing_count,
         "todo_count": todo_count,
+        "candidate_arxiv_ids": [x["arxiv_id"] for x in cands],
+        "selected_arxiv_ids": [x["arxiv_id"] for x in selected],
+        "existing_arxiv_ids": [x["arxiv_id"] for x in selected if x["arxiv_id"] in existing],
+        "todo_arxiv_ids": [x["arxiv_id"] for x in todo],
+        "candidate_items": [compact_item(x) for x in cands],
+        "selected_items": [compact_item(x) for x in selected],
+        "todo_items": [compact_item(x) for x in todo],
     }
     if stats_out:
         Path(stats_out).parent.mkdir(parents=True, exist_ok=True)
@@ -178,8 +148,9 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--days", type=int, default=2)
+    parser.add_argument("--days", type=int, default=2, help="抓取最近 N 天的论文（默认2天）")
+    parser.add_argument("--date", dest="date", help="抓取指定日期（YYYYMMDD）")
     parser.add_argument("--stats-out", dest="stats_out", help="输出统计 JSON 文件路径")
     args = parser.parse_args()
 
-    main(dry_run=args.dry_run, days_back=args.days, stats_out=args.stats_out)
+    main(dry_run=args.dry_run, days_back=args.days, stats_out=args.stats_out, target_date=args.date)

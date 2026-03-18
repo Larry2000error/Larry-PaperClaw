@@ -40,7 +40,7 @@ RS-PaperClaw 每天自动完成：
 - 📝 生成 / 更新单篇阅读报告（GitHub Issue）
 - 🗞️ 生成当天日报（GitHub Issue）
 - 🗂️ 同步日报到 `daily_reports/YYYYMM/YYYYMMDD.md`
-- 📮 推送摘要到飞书
+- 📮 推送摘要到钉钉/飞书
 
 ---
 
@@ -69,6 +69,7 @@ RS-PaperClaw 每天自动完成：
 
 ```text
 RS-PaperClaw/
+├── .github/workflows/                 # GitHub Actions（定时主跑 + 手动运维）
 ├── docs/                             # GitHub Pages 静态页面
 │   ├── index.html
 │   └── logo-220.png
@@ -79,12 +80,15 @@ RS-PaperClaw/
 ├── skills/rs-paper-pipeline/         # 技能与脚本
 │   ├── README.md
 │   ├── SKILL.md
+│   ├── .env.example
+│   ├── RUNBOOK_RS_PIPELINE.md
+│   ├── AGENT_GUIDE_RS_PIPELINE.md
 │   └── scripts/
-│       ├── paper_processor.py
-│       ├── daily_arxiv_cross_filter.py
-│       ├── daily_digest_llm_upgrade.py
-│       ├── run_rs_daily_workday.py
-│       └── sync_daily_reports_to_repo.py
+│       ├── cli.py
+│       ├── clients/
+│       ├── services/
+│       ├── config/filter_keywords.json
+│       └── prompts/filter_cross_prompt.md
 └── README_EN.md
 ```
 
@@ -92,27 +96,41 @@ RS-PaperClaw/
 
 ## 🚀 快速开始
 
-### 1) 环境准备
-
-- Python 3.10+
-- `pip install PyGithub`
-- 系统工具：`poppler-utils`（`pdftoppm`、`pdftotext`）
-
-### 2) 配置环境变量
+### 1) 初始化
 
 ```bash
-export GITHUB_TOKEN="..."
-export GITHUB_REPO="owner/repo"
-export BAILIAN_API_KEY="..."
-# 可选
-export FEISHU_TARGET="user:xxx"
-export LLM_MODEL="MiniMax-M2.5"
+cd skills/rs-paper-pipeline
+./bootstrap.sh
 ```
+
+### 2) 配置 `.env`
+
+至少填写：
+
+- `GITHUB_TOKEN`
+- `BAILIAN_API_KEY`
+
+可选：
+
+- `DINGTALK_WEBHOOK`
+- `FEISHU_TARGET`
+- `RS_GITHUB_REPO`
 
 ### 3) 运行当天流程
 
 ```bash
-python3 skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py
+cd skills/rs-paper-pipeline
+python3 scripts/cli.py run
+```
+
+### 4) 常用命令
+
+```bash
+cd skills/rs-paper-pipeline
+python3 scripts/cli.py doctor
+python3 scripts/cli.py filter --dry-run --date 20260317
+python3 scripts/cli.py run --date 20260317 --no-notify
+python3 scripts/cli.py reconcile --date 20260317 --dry-run
 ```
 
 ---
@@ -120,8 +138,12 @@ python3 skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py
 ## ⏰ 定时任务（示例）
 
 ```cron
-CRON_TZ=Asia/Shanghai
-5 9 * * 1-5 /usr/bin/python3 /path/to/skills/rs-paper-pipeline/scripts/run_rs_daily_workday.py >> /path/to/logs/rs_daily_workday.log 2>&1
+推荐直接使用仓库内工作流：
+
+- `.github/workflows/rs-pipeline-schedule.yml`
+- `.github/workflows/rs-pipeline-manual.yml`
+
+它们会调用 `skills/rs-paper-pipeline/scripts/cli.py`，并使用仓库内的筛选配置文件。
 ```
 
 ---
@@ -130,6 +152,9 @@ CRON_TZ=Asia/Shanghai
 
 - 默认文档语言为中文；英文请见 [README_EN.md](./README_EN.md)
 - 页面部署方式：`main` 分支 + `/docs`
+- 文章 list 筛选规则来自：
+  - `skills/rs-paper-pipeline/scripts/config/filter_keywords.json`
+  - `skills/rs-paper-pipeline/scripts/prompts/filter_cross_prompt.md`
 
 ---
 

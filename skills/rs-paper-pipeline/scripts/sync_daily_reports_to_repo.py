@@ -6,54 +6,16 @@
 """
 
 import re
-from datetime import datetime
-from github import Github, Auth
-import os
 
-TOKEN = os.getenv("GITHUB_TOKEN", "")
-REPO = os.getenv("GITHUB_REPO", "owner/repo")
+from clients.github_ops import cleanup_legacy_daily_reports, upsert_repo_file
+from pipeline_config import get_repo, load_config
+
+CONFIG = load_config()
 BASE_DIR = "daily_reports"
 
 
-def upsert_file(repo, path: str, content: str, message: str):
-    data = content.encode("utf-8")
-    try:
-        old = repo.get_contents(path)
-        repo.update_file(path=path, message=message, content=data, sha=old.sha)
-        print(f"UPDATED {path}")
-    except Exception:
-        repo.create_file(path=path, message=message, content=data)
-        print(f"CREATED {path}")
-
-
-def cleanup_legacy_files(repo):
-    # 删除 daily_reports 根目录下旧的扁平日报文件（如 20260311.md）
-    try:
-        entries = repo.get_contents(BASE_DIR)
-    except Exception:
-        return
-
-    for e in entries:
-        if e.type == "file" and re.fullmatch(r"\d{8}\.md", e.name):
-            repo.delete_file(
-                path=e.path,
-                message=f"cleanup legacy daily report file {e.name}",
-                sha=e.sha,
-            )
-            print(f"DELETED {e.path}")
-
-
-
-def _require_env():
-    required = ["GITHUB_TOKEN", "GITHUB_REPO"]
-    missing = [k for k in required if not os.getenv(k)]
-    if missing:
-        raise RuntimeError(f"Missing env: {', '.join(missing)}")
-
 def main():
-    _require_env()
-    g = Github(auth=Auth.Token(TOKEN))
-    repo = g.get_repo(REPO)
+    repo = get_repo(CONFIG)
 
     digest_issues = []
     for it in repo.get_issues(state="open"):
@@ -71,7 +33,7 @@ def main():
         ym = date[:6]
         path = f"{BASE_DIR}/{ym}/{date}.md"
         body = (issue.body or "").strip() + "\n"
-        upsert_file(repo, path, body, f"sync daily report {date}")
+        upsert_repo_file(repo, path, body, f"sync daily report {date}")
 
     # 根目录 README 仅展示最近三天（最新在前）
     top3 = sorted(digest_issues, key=lambda x: x[0], reverse=True)[:3]
@@ -92,9 +54,9 @@ def main():
         lines.append("")
 
     readme = "\n".join(lines).rstrip() + "\n"
-    upsert_file(repo, f"{BASE_DIR}/README.md", readme, f"update daily_reports README top3")
+    upsert_repo_file(repo, f"{BASE_DIR}/README.md", readme, f"update daily_reports README top3")
 
-    cleanup_legacy_files(repo)
+    cleanup_legacy_daily_reports(repo, BASE_DIR)
 
     print(f"DONE latest={top3[0][0]}")
 

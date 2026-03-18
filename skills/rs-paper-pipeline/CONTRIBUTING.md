@@ -14,8 +14,9 @@ Thanks for your interest in improving this project.
 1. Fork and create a feature branch.
 2. Make your changes.
 3. Run a local sanity check:
-   - `python3 scripts/daily_arxiv_cross_filter.py --dry-run --days 1`
-   - `python3 scripts/daily_digest_llm_upgrade.py --date YYYYMMDD`
+   - `python3 scripts/cli.py doctor`
+   - `python3 scripts/cli.py filter --dry-run --date YYYYMMDD`
+   - `python3 scripts/cli.py digest --date YYYYMMDD --stats-json memory/rs_daily_stats_YYYYMMDD.json`
 4. Update docs if behavior changed.
 5. Open a PR with:
    - What changed
@@ -25,6 +26,7 @@ Thanks for your interest in improving this project.
 ## Suggested areas
 
 - Better filtering quality
+- Better filter configuration and prompt assets
 - More robust LLM parsing/retries
 - Digest quality checks
 - Better observability/logging

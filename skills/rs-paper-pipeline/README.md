@@ -1,104 +1,81 @@
-# RS Paper Pipeline (Public, Sanitized)
+# RS Paper Pipeline
 
-A publish-ready pipeline for:
+This directory contains the operational pipeline behind `RS-PaperClaw`.
 
-1. Fetching daily arXiv candidates (remote sensing related)
-2. LLM-based cross filtering (RS × AI/CV/Foundation Models)
-3. Generating/updating per-paper GitHub issues
-4. Generating daily digest issues
-5. Syncing digest markdown to `daily_reports/YYYYMM/YYYYMMDD.md`
-6. Pushing daily digest to Feishu
+It is responsible for:
 
-## 0) Prerequisites
+1. fetching remote-sensing related arXiv candidates
+2. filtering `remote sensing x AI/CV/foundation model` papers
+3. generating or updating per-paper GitHub issues
+4. generating daily digest issues
+5. syncing digest markdown back to the repository
+6. optionally sending notifications
 
-- Python 3.10+
-- `pip install PyGithub`
-- System tools (for PDF/images):
-  - `pdftoppm`
-  - `pdftotext`
-- OpenClaw CLI available if you want Feishu push via `openclaw message send`
+## Structure
 
-## 1) Setup
-
-Copy and edit env file:
-
-```bash
-cp .env.example .env
+```text
+skills/rs-paper-pipeline/
+├── .env.example
+├── .gitignore
+├── AGENT_GUIDE_RS_PIPELINE.md
+├── PROJECT_OVERVIEW.md
+├── RUNBOOK_RS_PIPELINE.md
+├── bootstrap.sh
+├── requirements.txt
+├── scripts/
+│   ├── cli.py
+│   ├── pipeline_config.py
+│   ├── clients/
+│   ├── services/
+│   ├── config/filter_keywords.json
+│   └── prompts/
+└── SKILL.md
 ```
 
-Required environment variables:
+## Setup
 
-- `GITHUB_TOKEN=...`
-- `GITHUB_REPO=owner/repo`
-- `BAILIAN_API_KEY=...`
+```bash
+cd skills/rs-paper-pipeline
+./bootstrap.sh
+```
+
+Fill `.env` with at least:
+
+- `GITHUB_TOKEN`
+- `BAILIAN_API_KEY`
 
 Optional:
 
-- `LLM_MODEL=MiniMax-M2.5`
-- `FEISHU_TARGET=user:your_open_id`
+- `DINGTALK_WEBHOOK`
+- `FEISHU_TARGET`
+- `RS_GITHUB_REPO`
+- `BAILIAN_MODEL`
 
-Load env in shell:
-
-```bash
-set -a
-source .env
-set +a
-```
-
-## 2) Quick Start (One-shot for today)
+## Main commands
 
 ```bash
-python3 scripts/run_rs_daily_workday.py
+cd skills/rs-paper-pipeline
+python3 scripts/cli.py doctor
+python3 scripts/cli.py run
+python3 scripts/cli.py run --date 20260317 --no-notify
+python3 scripts/cli.py filter --dry-run --date 20260317
+python3 scripts/cli.py reconcile --date 20260317 --dry-run
 ```
 
-This runs:
+## Filter configuration
 
-- daily candidate filtering (`--days 1`)
-- digest generation for today
-- markdown sync to `daily_reports/`
-- Feishu message push
+The article-list filtering rules are file-based, not hardcoded in Python:
 
-## 3) Step-by-step Commands
+- keywords and regex: `scripts/config/filter_keywords.json`
+- LLM filter prompt: `scripts/prompts/filter_cross_prompt.md`
 
-### A. Filter and process today's papers
+Both local runs and GitHub Actions read the same files.
 
-```bash
-python3 scripts/daily_arxiv_cross_filter.py \
-  --days 1 \
-  --stats-out memory/rs_daily_stats_$(date +%Y%m%d).json
-```
+## Automation
 
-### B. Build digest for a date
+Repository-level workflows live at:
 
-```bash
-python3 scripts/daily_digest_llm_upgrade.py \
-  --date 20260312 \
-  --stats-json memory/rs_daily_stats_20260312.json
-```
+- `.github/workflows/rs-pipeline-schedule.yml`
+- `.github/workflows/rs-pipeline-manual.yml`
 
-### C. Sync digest markdown to repo
-
-```bash
-python3 scripts/sync_daily_reports_to_repo.py
-```
-
-## 4) Output Structure
-
-- Per-paper issues in your GitHub repo
-- Digest issues titled: `日报 YYYYMMDD`
-- Synced files:
-  - `daily_reports/YYYYMM/YYYYMMDD.md`
-  - `daily_reports/README.md` (latest 3 days, newest first)
-
-## 5) Cron Example (Weekdays 09:05, Asia/Shanghai)
-
-```cron
-CRON_TZ=Asia/Shanghai
-5 9 * * 1-5 /usr/bin/python3 /path/to/scripts/run_rs_daily_workday.py >> /path/to/logs/rs_daily_workday.log 2>&1
-```
-
-## 6) Notes
-
-- No hardcoded secrets in code; use environment variables.
-- If no papers match on a day, digest may be skipped and a notification is sent.
-- `paper_processor.py` includes TL;DR generation in the basic info table.
+Both workflows execute this skill project via the unified CLI.
