@@ -6,21 +6,17 @@ on:
       command:
         description: "Command to run"
         required: true
-        default: "run"
+        default: "run_no_notify"
         type: choice
         options:
-          - run
+          - run_no_notify
+          - run_notify
           - reconcile
           - doctor
       date:
         description: "Optional target date in YYYYMMDD"
         required: false
         type: string
-      notify:
-        description: "Only used by manual run"
-        required: false
-        default: false
-        type: boolean
 
 concurrency:
   group: rs-pipeline-manual
@@ -78,11 +74,10 @@ jobs:
         env:
           DISPATCH_COMMAND: ${{ github.event.inputs.command }}
           DISPATCH_DATE: ${{ github.event.inputs.date }}
-          DISPATCH_NOTIFY: ${{ github.event.inputs.notify }}
         run: |
           set -euo pipefail
 
-          case "${DISPATCH_COMMAND:-run}" in
+          case "${DISPATCH_COMMAND:-run_no_notify}" in
             doctor)
               python3 scripts/cli.py doctor
               ;;
@@ -93,19 +88,18 @@ jobs:
               fi
               python3 scripts/cli.py reconcile --date "${DISPATCH_DATE}"
               ;;
-            run)
+            run_notify)
               if [[ -n "${DISPATCH_DATE:-}" ]]; then
-                if [[ "${DISPATCH_NOTIFY:-false}" == "true" ]]; then
-                  python3 scripts/cli.py run --date "${DISPATCH_DATE}" --notify
-                else
-                  python3 scripts/cli.py run --date "${DISPATCH_DATE}" --no-notify
-                fi
+                python3 scripts/cli.py run --date "${DISPATCH_DATE}" --notify
               else
-                if [[ "${DISPATCH_NOTIFY:-false}" == "true" ]]; then
-                  python3 scripts/cli.py run --notify
-                else
-                  python3 scripts/cli.py run --no-notify
-                fi
+                python3 scripts/cli.py run --notify
+              fi
+              ;;
+            run_no_notify)
+              if [[ -n "${DISPATCH_DATE:-}" ]]; then
+                python3 scripts/cli.py run --date "${DISPATCH_DATE}" --no-notify
+              else
+                python3 scripts/cli.py run --no-notify
               fi
               ;;
             *)
