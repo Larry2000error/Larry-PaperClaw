@@ -158,6 +158,12 @@ Both workflows execute `skills/rs-paper-pipeline/scripts/cli.py` and read the fi
 
 ---
 
+## ✅ TODO
+
+- Add journal sources: RSE (Remote Sensing of Environment), ISPRS JPRS, and IEEE journals (as complements beyond arXiv, including ingestion and filtering).
+
+---
+
 ## ⭐ Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=thinson/RS-PaperClaw&type=Date)](https://star-history.com/#thinson/RS-PaperClaw&Date)

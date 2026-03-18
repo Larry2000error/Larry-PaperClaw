@@ -172,6 +172,12 @@ python3 scripts/cli.py reconcile --date 20260317 --dry-run
 
 ---
 
+## ✅ TODO
+
+- 增加期刊来源：RSE（Remote Sensing of Environment）、ISPRS JPRS、以及 IEEE 旗下相关期刊（除 arXiv 外的补充抓取与筛选）。
+
+---
+
 ## ⭐ Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=thinson/RS-PaperClaw&type=Date)](https://star-history.com/#thinson/RS-PaperClaw&Date)
