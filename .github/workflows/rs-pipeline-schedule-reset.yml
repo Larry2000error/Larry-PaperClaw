@@ -3,7 +3,7 @@ name: RS Pipeline Schedule Reset
 on:
   workflow_dispatch:
   schedule:
-    - cron: "49 3 * * 1-5"
+    - cron: "1 4 * * 1-5"
 
 concurrency:
   group: rs-pipeline-schedule
