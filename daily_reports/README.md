@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260321](./202603/20260321.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究呈现多模态融合与智能应用的深化趋势。研究涵盖AI数据中心热环境效应量化、光学-SAR异构数据高效融合、神经辐射场辅助无人机定位、跨模态文本-航拍行人检索，以及生成式模型驱动的灾后街景合成，体现遥感技术向精细化、智能化和跨域协同方向发展。
+
+## ✨ 今日亮点
+
+- AI数据中心热岛效应首次被量化研究，揭示数字基础设施的气候影响
+- 光学-SAR融合突破云层遮挡瓶颈，实现轻量化语义分割
+- 神经渲染赋能无人机像素级三维定位，提升 ego-目标协同定位精度
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260321] The data heat island effect: quantifying the impact of AI data centers in a warming world | Marinoni Andrea, Lio&#39; Pietro, Cambria Erik, Luca Dal Zilio, Lin Weisi et al. | 研究量化AI数据中心引发的'数据热岛'效应，为数字基础设施热环境管理提供遥感监测依据。 | [#165](https://github.com/thinson/RS-PaperClaw/issues/165) |
+| [20260321] Lean Learning Beyond Clouds: Efficient Discrepancy-Conditioned Optical-SAR Fusion for Semantic Segmentation | Meng Chenxing, Quan Wuzhou, Cai Yingjie, Cao Liqun, Zhang Liyan et al. | 提出差异条件驱动的光学-SAR融合网络，以精简学习策略解决云遮挡下的高效语义分割难题。 | [#166](https://github.com/thinson/RS-PaperClaw/issues/166) |
+| [20260321] PiLoT: Neural Pixel-to-3D Registration for UAV-based Ego and Target Geo-localization | Cheng Xiaoya, Wang Long, Liu Yan, Liu Xinyi, Tan Hanlin et al. | PiLoT框架通过神经像素-三维配准，实现无人机自定位与目标地理定位的联合优化。 | [#167](https://github.com/thinson/RS-PaperClaw/issues/167) |
+| [20260321] Cross-modal Fuzzy Alignment Network for Text-Aerial Person Retrieval and A Large-scale Benchmark | Deng Yifei, Li Chenglong, Zhang Yuyang, Hu Guyue, Tang Jin | 构建跨模态模糊对齐网络及大规模基准，缓解文本描述与航拍图像间的粒度失配问题。 | [#168](https://github.com/thinson/RS-PaperClaw/issues/168) |
+| [20260321] Satellite-to-Street: Synthesizing Post-Disaster Views from Satellite Imagery via Generative Vision Models | Yang Yifan, Zou Lei, Jepson Wendy | 利用生成式视觉模型将卫星影像转换为灾后街景视角，辅助灾害应急响应决策。 | [#169](https://github.com/thinson/RS-PaperClaw/issues/169) |
+
+## 🔎 观察
+
+- 生成式AI正加速渗透遥感下游任务，从数据增强走向视角合成与场景重建，应用边界持续拓展
+- 多模态对齐技术从粗粒度向token级精细化演进，模糊逻辑与神经网络的结合或成为跨模态检索新范式
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260320](./202603/20260320.md)
 ## 📌 今日概况
 
@@ -66,41 +100,6 @@ Powered by OpenClaw🦞
 
 - 视觉语言模型向像素级 grounding 演进，遥感图像理解正从场景级分类迈向细粒度空间推理新阶段
 - 星上智能成为卫星遥感新赛道，图神经网络与强化学习结合为低轨星座实时数据处理提供新范式
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260318](./202603/20260318.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究呈现多模态融合与低空智能两大主线。视觉-语言模型向遥感开放词汇分割延伸，参数高效学习成为多模态语义分割新方向。同时，无人机检测、机群通信与柔性飞行器控制等低空技术密集涌现，频域特征提取与多智能体系统成为解决复杂场景的关键手段。
-
-## ✨ 今日亮点
-
-- MM-OVSeg实现光学-SAR跨模态开放词汇分割，突破遥感语义类别受限瓶颈
-- Local Frequency Bridge网络引入频域桥接机制，应对复杂背景无人机伪装检测
-- 多智能体系统首次用于建筑年代队列映射，支撑城市级能源规划决策
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260318] UAV-CB: A Complex-Background RGB-T Dataset and Local Frequency Bridge Network for UAV Detection | Huang Shenghui, Hu Menghao, Zou Longkun, Chi Hongyu, Li Zekai et al. | UAV-CB数据集与频域桥接网络协同，解决复杂背景下RGB-T无人机检测的伪装与背景干扰难题。 | [#138](https://github.com/thinson/RS-PaperClaw/issues/138) |
-| [20260318] Parameter-Efficient Modality-Balanced Symmetric Fusion for Multimodal Remote Sensing Semantic Segmentation | Li Haocheng, Zheng Juepeng, Miao Shuangxi, Lu Ruibo, Cai Guosheng et al. | 参数高效模态平衡对称融合方法，以可学习提示微调视觉基础模型实现遥感多模态语义分割。 | [#139](https://github.com/thinson/RS-PaperClaw/issues/139) |
-| [20260318] A Multi-Agent System for Building-Age Cohort Mapping to Support Urban Energy Planning | Thota Kundan, Schlachter Thorsten, Hagenmeyer Veit | 多智能体系统整合遥感与深度学习，完成建筑年代队列自动映射以支持城市能源规划。 | [#140](https://github.com/thinson/RS-PaperClaw/issues/140) |
-| [20260318] MM-OVSeg:Multimodal Optical-SAR Fusion for Open-Vocabulary Segmentation in Remote Sensing | Wei Yimin, Xiao Aoran, Chen Hongruixuan, Xia Junshi, Yokoya Naoto | MM-OVSeg融合光学-SAR与视觉-语言模型，实现遥感图像的开放词汇语义分割。 | [#141](https://github.com/thinson/RS-PaperClaw/issues/141) |
-| [20260318] 3D Spherical Directly-Connected Antenna Array for Low-Altitude UAV Swarm ISAC | Jiang Haoyu, Dong Zhenjun, Zhou Zhiwen, Zeng Yong | 3D球面直连天线阵列支持低空无人机群通感一体化，实现三维波束赋形。 | [#143](https://github.com/thinson/RS-PaperClaw/issues/143) |
-| [20260318] H Infinity Robust Control for Gust Load Alleviation of Geometrically Nonlinear Flexible Aircraft | Nikolaos D. Tantaroudas, Andrea Da Ronch, Karachalios Ilias, Kenneth J. Badcock | H无穷鲁棒控制结合模型降阶，解决几何非线性柔性飞行器的阵风载荷减缓问题。 | [#144](https://github.com/thinson/RS-PaperClaw/issues/144) |
-
-## 🔎 观察
-
-- 低空经济驱动遥感技术向实时感知-通信-控制闭环演进，ISAC与AI检测形成技术簇
-- 视觉-语言模型正从自然图像向遥感专属架构适配，模态对齐与参数效率成为落地关键
 
 ---
 
