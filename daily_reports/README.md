@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260322](./202603/20260322.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦视觉语言模型与空间智能的深度融合。道路提取任务引入细粒度层级分类与VLM技术，无人机导航则探索几何引导的跨模态表征对齐，体现从静态地物识别向动态环境理解的范式演进。
+
+## ✨ 今日亮点
+
+- 大规模道路数据集支撑VLM细粒度层级分类，提升路网语义理解能力
+- 几何引导的表征对齐机制优化无人机视觉语言导航性能
+- 跨模态空间推理成为城市环境智能体研究的核心方向
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260322] A Large-Scale Remote Sensing Dataset and VLM-based Algorithm for Fine-Grained Road Hierarchy Classification | Han Ting, Xie Xiangyi, Chen Yiping, Du Yumeng, Ma Jin et al. | 论文构建大规模遥感数据集，提出基于视觉语言模型的道路细粒度层级分类方法，实现路网语义层次化解析。 | [#171](https://github.com/thinson/RS-PaperClaw/issues/171) |
+| [20260322] SpatialFly: Geometry-Guided Representation Alignment for UAV Vision-and-Language Navigation in Urban Environments | Jiang Wen, Huang Kangyao, Wang Li, Xu Wang, Fan Wei et al. | 论文提出SpatialFly框架，通过几何引导的表征对齐机制，增强无人机在城市环境中的视觉语言导航能力。 | [#172](https://github.com/thinson/RS-PaperClaw/issues/172) |
+
+## 🔎 观察
+
+- VLM正从通用视觉任务向遥感垂直领域渗透，层级化语义标注或成为下一代道路数据集标配
+- 无人机导航研究从端到端感知转向显式空间推理，几何先验与语言指令的联合建模值得持续关注
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260321](./202603/20260321.md)
 ## 📌 今日概况
 
@@ -66,40 +97,6 @@ Powered by OpenClaw🦞
 
 - 模型压缩与边缘部署成为核心趋势，8篇中4篇直接涉及轻量化或星载处理，反映遥感AI从云端向端侧迁移的迫切需求
 - RWKV等新型架构开始挑战Transformer在遥感时序建模中的主导地位，线性复杂度或重塑长序列分析范式
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260319](./202603/20260319.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究呈现多模态融合与智能推理并进的态势。建筑变化检测、视觉语言模型、3D重建等方向持续深化，同时低轨卫星星上计算与数据路由成为新兴热点。研究从地面应用向星上智能延伸，体现空天地一体化发展趋势。
-
-## ✨ 今日亮点
-
-- 多模态建筑变化检测新基准发布，聚焦大规模微小变化识别难题
-- TerraScope实现像素级视觉推理，推动遥感图像理解迈向细粒度分析
-- SwiftGS将高斯溅射引入卫星影像，实现快速表面三维重建
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260319] Multi-Modal Building Change Detection for Large-Scale Small Changes: Benchmark and Baseline | Wang Ye, Lu Wei, You Zhihui, Chen Keyan, Liu Tongfei et al. | Wang等构建RGB-NIR多模态建筑变化检测基准数据集，针对大场景微小变化提出基线方法。 | [#147](https://github.com/thinson/RS-PaperClaw/issues/147) |
-| [20260319] TerraScope: Pixel-Grounded Visual Reasoning for Earth Observation | Shu Yan, Ren Bin, Xiong Zhitong, Xiao Xiang Zhu, Demir Begüm et al. | Shu等提出TerraScope框架，实现地球观测图像的像素级 grounding 视觉推理与多时空分析。 | [#148](https://github.com/thinson/RS-PaperClaw/issues/148) |
-| [20260319] SwiftGS: Episodic Priors for Immediate Satellite Surface Recovery | Fu Rong, Wu Jiekai, Wei Haiyun, Ma Xiaowen, Lin Shiyin et al. | Fu等开发SwiftGS方法，利用元学习 episodic 先验实现卫星影像即时表面高斯溅射重建。 | [#150](https://github.com/thinson/RS-PaperClaw/issues/150) |
-| [20260319] iSatCR: Graph-Empowered Joint Onboard Computing and Routing for LEO Data Delivery | Luo Jiangtao, Xu Bingbing, Xia Shaohua, Ran Yongyi | Luo等设计iSatCR系统，基于图神经网络与深度强化学习联合优化低轨卫星星上计算与数据路由。 | [#153](https://github.com/thinson/RS-PaperClaw/issues/153) |
-| [20260319] &#34;You&#39;ve got a friend in me&#34;: Co-Designing a Peer Social Robot for Young Newcomers&#39; Language and Cultural Learning | Fernandes Neil, Tang Cheng, Shahbaz Tehniyat, Hauschildt Alex, Davies-Robinson Emily et al. | Fernandes等通过协同设计开发同伴社交机器人，辅助新移民儿童语言文化学习。（非遥感主题） | [#155](https://github.com/thinson/RS-PaperClaw/issues/155) |
-
-## 🔎 观察
-
-- 视觉语言模型向像素级 grounding 演进，遥感图像理解正从场景级分类迈向细粒度空间推理新阶段
-- 星上智能成为卫星遥感新赛道，图神经网络与强化学习结合为低轨星座实时数据处理提供新范式
 
 ---
 
