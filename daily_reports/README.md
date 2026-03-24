@@ -2,6 +2,48 @@
 
 最近三天日报（最新在前）：
 
+# [20260323](./202603/20260323.md)
+## 📌 今日概况
+
+今日共检索候选论文 19 篇；关键词+LLM 智能匹配遥感交叉论文 13 篇；最终纳入日报 13 篇。
+
+今日遥感AI研究呈现三大趋势：一是跨视角地理定位与无人机导航技术持续深化，多篇论文聚焦实时定位与无GPS环境应用；二是基础模型可信性与自监督学习受到关注，光谱掩码与物理约束方法涌现；三是三维重建与立体匹配技术融合深度学习，NeRF与立体视觉在卫星影像处理中加速落地。
+
+## ✨ 今日亮点
+
+- 跨视角地理定位两篇论文分别提出迭代流预测与瓦片外匹配，推动无人机实时导航
+- OpenEarth-Agent实现从工具调用到工具创建的跃迁，拓展开放环境地球观测智能体能力
+- SpecTM提出光谱靶向掩码策略，为遥感基础模型注入物理可信性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260323] Riverine Land Cover Mapping through Semantic Segmentation of Multispectral Point Clouds | Thurachen Sopitta, Taher Josef, Lehtomäki Matti, Matikainen Leena, Blåfield Linnea et al. | 提出多光谱点云语义分割方法，实现河流环境土地覆盖精细制图 | [#174](https://github.com/thinson/RS-PaperClaw/issues/174) |
+| [20260323] Beyond Matching to Tiles: Bridging Unaligned Aerial and Satellite Views for Vision-Only UAV Navigation | Liu Kejia, Zhou Haoyang, Xu Ruoyu, Wang Peicheng, Song Mingli et al. | 突破航拍与卫星影像瓦片对齐限制，构建纯视觉无人机跨视角导航新范式 | [#175](https://github.com/thinson/RS-PaperClaw/issues/175) |
+| [20260323] OpenEarth-Agent: From Tool Calling to Tool Creation for Open-Environment Earth Observation | Zhao Sijie, Liu Feng, Zhang Xueliang, Chen Hao, Gu Xinyu et al. | OpenEarth-Agent实现工具创建能力，推动开放环境地球观测智能体自主进化 | [#176](https://github.com/thinson/RS-PaperClaw/issues/176) |
+| [20260323] SpecTM: Spectral Targeted Masking for Trustworthy Foundation Models | Syed Usama Imtiaz, Mitra Nasr Azadani, Alamdari Nasrin | SpecTM以光谱靶向掩码增强基础模型可信性，融合物理信息自监督学习 | [#177](https://github.com/thinson/RS-PaperClaw/issues/177) |
+| [20260323] GeoFlow: Real-Time Fine-Grained Cross-View Geolocalization via Iterative Flow Prediction | Ayesh Abu Lehyeh, Zhang Xiaohan, Arrabi Ahmad, Sultani Waqas, Chen Chen et al. | GeoFlow通过迭代流预测实现实时细粒度跨视角地理定位，服务无GPS环境 | [#178](https://github.com/thinson/RS-PaperClaw/issues/178) |
+| [20260323] SatGeo-NeRF: Geometrically Regularized NeRF for Satellite Imagery | Wagner Valentin, Bullinger Sebastian, Arens Michael, Stiefelhagen Rainer | SatGeo-NeRF引入几何正则化约束，提升卫星影像神经辐射场三维重建精度 | [#179](https://github.com/thinson/RS-PaperClaw/issues/179) |
+| [20260323] A Latent Representation Learning Framework for Hyperspectral Image Emulation in Remote Sensing | Chedly Ben Azizi, Guilloteau Claire, Roussel Gilles, Puigt Matthieu | 基于变分自编码器的潜表示学习框架，实现高光谱图像仿真与合成数据生成 | [#180](https://github.com/thinson/RS-PaperClaw/issues/180) |
+| [20260323] Deep S2P: Integrating Learning Based Stereo Matching Into the Satellite Stereo Pipeline | Masquil Elías, Ehret Thibaud, Musé Pablo, Facciolo Gabriele | Deep S2P将深度学习立体匹配集成卫星立体处理管线，优化数字表面模型生产 | [#181](https://github.com/thinson/RS-PaperClaw/issues/181) |
+| [20260323] SHARP: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis | Zhao Bingxuan, Zhou Qing, Yang Chuang, Wang Qi | SHARP提出频谱感知动态适配机制，结合旋转位置编码提升遥感图像分辨率增强 | [#182](https://github.com/thinson/RS-PaperClaw/issues/182) |
+| [20260323] Rethinking SAR ATR: A Target-Aware Frequency-Spatial Enhancement Framework with Noise-Resilient Knowledge Guidance | Lin Yansong, Cheng Zihan, Wang Jielei, Lua Guoming, Cui Zongyong | 面向SAR目标识别的频域-空域增强框架，以噪声鲁棒知识蒸馏提升识别性能 | [#183](https://github.com/thinson/RS-PaperClaw/issues/183) |
+| [20260323] Evolutionary Biparty Multiobjective UAV Path Planning: Problems and Empirical Comparisons | Chen Kesheng, Luo Wenjian, Lin Xin, Song Zhen, Chang Yatong | 进化双目标多目标优化框架，为无人机路径规划问题提供系统性实证对比 | [#184](https://github.com/thinson/RS-PaperClaw/issues/184) |
+| [20260323] Unregistered Spectral Image Fusion: Unmixing, Adversarial Learning, and Recoverability | Song Jiahui, Shrestha Sagar, Fu Xiao | 融合解混与对抗学习的非配准光谱图像融合方法，实现高-多光谱协同超分辨 | [#185](https://github.com/thinson/RS-PaperClaw/issues/185) |
+| [20260323] EpiMask: Leveraging Epipolar Distance Based Masks in Cross-Attention for Satellite Image Matching | Deshmukh Rahul, Chauhan Aditya, Kak Avinash | EpiMask利用极线距离掩码引导交叉注意力，提升卫星影像深度匹配精度 | [#186](https://github.com/thinson/RS-PaperClaw/issues/186) |
+
+## 🔎 观察
+
+- 跨视角地理定位研究从静态匹配向动态实时预测演进，流估计与注意力机制成为技术主航道
+- 智能体与基础模型工具化能力快速迭代，遥感AI正从专用模型向通用地球观测智能体跃迁
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260322](./202603/20260322.md)
 ## 📌 今日概况
 
@@ -60,43 +102,6 @@ Powered by OpenClaw🦞
 
 - 生成式AI正加速渗透遥感下游任务，从数据增强走向视角合成与场景重建，应用边界持续拓展
 - 多模态对齐技术从粗粒度向token级精细化演进，模糊逻辑与神经网络的结合或成为跨模态检索新范式
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260320](./202603/20260320.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究聚焦模型轻量化与边缘部署，涵盖TinyML卫星应用、Transformer层剪枝及线性复杂度算法。同时，多智能体协同推理、物理引导深度学习等方向推动星上实时处理与灾害应急响应能力升级，无人机视觉-语言-动作任务基准亦获关注。
-
-## ✨ 今日亮点
-
-- SIMPLER提出相似性引导层剪枝，实现基础模型高效适配地球观测任务
-- RWKV线性复杂度变革检测算法突破二次计算瓶颈，适配长时序分析
-- 多智能体协同推理架构将视觉-语言模型部署于星载平台，加速危机响应
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260320] TinyML Enhances CubeSat Mission Capabilities | Capogrosso Luigi, Magno Michele | TinyML技术赋能立方星任务，通过模型优化在资源受限平台实现地球观测能力。 | [#156](https://github.com/thinson/RS-PaperClaw/issues/156) |
-| [20260320] SIMPLER: Efficient Foundation Model Adaptation via Similarity-Guided Layer Pruning for Earth Observation | Barreiro Víctor, Jakubik Johannes, Argüello Francisco, Dora B. Heras | SIMPLER方法以相似性引导层剪枝压缩视觉Transformer，提升基础模型在遥感任务的部署效率。 | [#157](https://github.com/thinson/RS-PaperClaw/issues/157) |
-| [20260320] Beyond detection: cooperative multi-agent reasoning for rapid onboard EO crisis response | Alejandro D. Mousist, Pedro Delgado de Robles Martín, Raquel Lladró Climent, Julian Cobos Aparicio | 多智能体协同推理框架将视觉-语言模型用于星上处理，支持灾害应急响应的快速决策。 | [#158](https://github.com/thinson/RS-PaperClaw/issues/158) |
-| [20260320] HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks | Guo Jingyu, Chen Ziye, Li Ziwen, Gao Zhengqing, Huang Jiaxin et al. | HUGE-Bench构建无人机高层视觉-语言-动作任务基准，涵盖导航与3D高斯溅射场景。 | [#159](https://github.com/thinson/RS-PaperClaw/issues/159) |
-| [20260320] Offshore oil and gas platform dynamics in the North Sea, Gulf of Mexico, and Persian Gulf: Exploiting the Sentinel-1 archive | Spanier Robin, Hoeser Thorsten, Truckenbrodt John, Bachofer Felix, Kuenzer Claudia | 基于Sentinel-1时序档案与深度学习，实现北海、墨西哥湾及波斯湾海上油气平台动态监测。 | [#160](https://github.com/thinson/RS-PaperClaw/issues/160) |
-| [20260320] Dual Prompt-Driven Feature Encoding for Nighttime UAV Tracking | Wang Yiheng, Fu Changhong, Yao Liangliang, Zuo Haobo, Zhang Zijie | 双提示驱动特征编码方法增强夜间无人机跟踪的照明适应能力。 | [#161](https://github.com/thinson/RS-PaperClaw/issues/161) |
-| [20260320] Beyond Quadratic: Linear-Time Change Detection with RWKV | Yang Zhenyu, Pei Gensheng, Chen Tao, Yuan Xia, Zhang Haofeng et al. | RWKV架构将变化检测复杂度降至线性，突破长序列遥感时序分析的计算瓶颈。 | [#162](https://github.com/thinson/RS-PaperClaw/issues/162) |
-| [20260320] PhyUnfold-Net: Advancing Remote Sensing Change Detection with Physics-Guided Deep Unfolding | Lei Zelin, Ren Yaoxing, Chang Jiaming | PhyUnfold-Net融合物理先验与深度展开网络，提升遥感变化检测的可解释性与精度。 | [#163](https://github.com/thinson/RS-PaperClaw/issues/163) |
-
-## 🔎 观察
-
-- 模型压缩与边缘部署成为核心趋势，8篇中4篇直接涉及轻量化或星载处理，反映遥感AI从云端向端侧迁移的迫切需求
-- RWKV等新型架构开始挑战Transformer在遥感时序建模中的主导地位，线性复杂度或重塑长序列分析范式
 
 ---
 
