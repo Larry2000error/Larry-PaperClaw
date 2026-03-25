@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260324](./202603/20260324.md)
+## 📌 今日概况
+
+今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究呈现多技术路线并进态势：基础模型层面探索模型权重融合而非数据驱动学习；应用层面覆盖光伏设施普查、雪崩灾害监测等垂直场景；方法层面持续深化对比学习、LSTM时序建模与不确定性量化等核心技术。
+
+## ✨ 今日亮点
+
+- GeoSANE开创性地从神经网络权重空间学习地理表征，突破传统数据驱动范式
+- 检索增强生成技术首次应用于卫星影像光伏设施清单估算，支撑配电网规划
+- SAR影像深度学习变化检测实现大规模雪崩制图，拓展灾害遥感监测能力
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260324] GeoSANE: Learning Geospatial Representations from Models, Not Data | Hanna Joelle, Falk Damian, Stella X. Yu, Borth Damian | GeoSANE提出从模型权重而非原始数据学习地理空间表征的新范式，为地理基础模型训练开辟替代路径。 | [#188](https://github.com/thinson/RS-PaperClaw/issues/188) |
+| [20260324] Dual Contrastive Network for Few-Shot Remote Sensing Image Scene Classification | Ji Zhong, Hou Liyuan, Wang Xuan, Wang Gang, Pang Yanwei | 双对比网络通过全局-局部特征协同对比学习，提升小样本遥感场景分类的泛化性能。 | [#189](https://github.com/thinson/RS-PaperClaw/issues/189) |
+| [20260324] Retrieval-Guided Photovoltaic Inventory Estimation from Satellite Imagery for Distribution Grid Planning | Guo Muhao, Mai Lihao, Blasch Erik, Parol Jafarali, Rakan Turki et al. | 检索增强生成框架结合卫星影像与外部知识库，实现分布式光伏设施的精准清估算。 | [#190](https://github.com/thinson/RS-PaperClaw/issues/190) |
+| [20260324] L-UNet: An LSTM Network for Remote Sensing Image Change Detection | Sun Shuting, Mu Lin, Wang Lizhe, Liu Peng | L-UNet将LSTM嵌入UNet架构，强化遥感影像变化检测的时序特征建模能力。 | [#191](https://github.com/thinson/RS-PaperClaw/issues/191) |
+| [20260324] Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis | Chamuditha Jayanga Galappaththige, Gottwald Thomas, Stehr Peter, Heinert Edgar, Suenderhauf Niko et al. | 高斯溅射光度不确定性预测方法，为神经辐射场新视角合成提供可靠性量化。 | [#192](https://github.com/thinson/RS-PaperClaw/issues/192) |
+| [20260324] Large-Scale Avalanche Mapping from SAR Images with Deep Learning-based Change Detection | Gatti Mattia, Mariani Alberto, Gallo Ignazio, Monti Fabiano | 基于SAR影像与深度学习的多时相变化检测，实现山区大范围雪崩事件的自动化制图。 | [#193](https://github.com/thinson/RS-PaperClaw/issues/193) |
+
+## 🔎 观察
+
+- 模型权重空间学习（GeoSANE）代表基础模型训练的新方向，可能降低对海量标注数据的依赖
+- 检索增强生成与遥感结合尚处早期，光伏设施估算案例显示其在结构化知识融合方面的潜力
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260323](./202603/20260323.md)
 ## 📌 今日概况
 
@@ -68,40 +103,6 @@ Powered by OpenClaw🦞
 
 - VLM正从通用视觉任务向遥感垂直领域渗透，层级化语义标注或成为下一代道路数据集标配
 - 无人机导航研究从端到端感知转向显式空间推理，几何先验与语言指令的联合建模值得持续关注
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260321](./202603/20260321.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究呈现多模态融合与智能应用的深化趋势。研究涵盖AI数据中心热岛效应量化、光学-SAR高效融合、无人机神经定位、跨模态行人检索及灾后街景生成等方向，体现遥感技术向精细化、实时化及灾害应急响应领域的拓展。
-
-## ✨ 今日亮点
-
-- AI数据中心热岛效应研究揭示数字基础设施对城市热环境的量化影响
-- 光学-SAR融合实现云遮挡条件下的轻量化语义分割
-- 跨模态模糊对齐网络推动无人机视角下行人检索精度提升
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260321] The data heat island effect: quantifying the impact of AI data centers in a warming world | Marinoni Andrea, Lio&#39; Pietro, Cambria Erik, Luca Dal Zilio, Lin Weisi et al. | 研究量化AI数据中心引发的'数据热岛'效应，拓展传统城市热岛理论至数字基础设施领域。 | [#165](https://github.com/thinson/RS-PaperClaw/issues/165) |
-| [20260321] Lean Learning Beyond Clouds: Efficient Discrepancy-Conditioned Optical-SAR Fusion for Semantic Segmentation | Meng Chenxing, Quan Wuzhou, Cai Yingjie, Cao Liqun, Zhang Liyan et al. | 提出差异条件驱动的光学-SAR融合框架，以精简学习策略解决云遮挡下的高效语义分割问题。 | [#166](https://github.com/thinson/RS-PaperClaw/issues/166) |
-| [20260321] PiLoT: Neural Pixel-to-3D Registration for UAV-based Ego and Target Geo-localization | Cheng Xiaoya, Wang Long, Liu Yan, Liu Xinyi, Tan Hanlin et al. | PiLoT方法通过神经像素到三维配准，实现无人机自身与目标的同时地理定位。 | [#167](https://github.com/thinson/RS-PaperClaw/issues/167) |
-| [20260321] Cross-modal Fuzzy Alignment Network for Text-Aerial Person Retrieval and A Large-scale Benchmark | Deng Yifei, Li Chenglong, Zhang Yuyang, Hu Guyue, Tang Jin | 构建跨模态模糊对齐网络及大规模基准，处理文本与无人机图像间细粒度语义对齐难题。 | [#168](https://github.com/thinson/RS-PaperClaw/issues/168) |
-| [20260321] Satellite-to-Street: Synthesizing Post-Disaster Views from Satellite Imagery via Generative Vision Models | Yang Yifan, Zou Lei, Jepson Wendy | 利用生成式视觉模型从卫星影像合成灾后街景视图，辅助灾害响应决策。 | [#169](https://github.com/thinson/RS-PaperClaw/issues/169) |
-
-## 🔎 观察
-
-- 遥感AI正从单一模态分析转向多源数据协同，SAR与光学融合、卫星到街景生成等方向凸显数据互补价值
-- 无人机平台成为研究热点，定位精度与跨模态检索能力提升将推动低空经济应用场景落地
 
 ---
 
