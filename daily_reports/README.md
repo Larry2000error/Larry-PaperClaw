@@ -2,6 +2,42 @@
 
 最近三天日报（最新在前）：
 
+# [20260326](./202603/20260326.md)
+## 📌 今日概况
+
+今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日遥感AI研究呈现多维度技术突破：轻量化海洋语义分割、跨视角地理定位与自回归缩放、高程感知多模态推理等方向并进。神经隐式表示、量子深度学习与车机协同感知等前沿方法持续拓展遥感应用边界，体现算法效率与场景落地的双重追求。
+
+## ✨ 今日亮点
+
+- LEMMA提出拉普拉斯金字塔轻量架构，实现海洋环境高效边缘感知分割
+- GeoHeight-Bench构建首个高程感知多模态基准，填补垂直维度推理空白
+- V2U4Real发布大规模真实车机协同感知数据集，支撑空地联合3D检测
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260326] LEMMA: Laplacian pyramids for Efficient Marine SeMAntic Segmentation | Gakhar Ishaan, Srivastava Laven, Sagaram Sankarshanaa, Kasliwal Aditya, Verma Ujjwal | LEMMA利用拉普拉斯金字塔分解与轻量编码器，在海洋语义分割中平衡边缘检测精度与计算效率。 | [#203](https://github.com/thinson/RS-PaperClaw/issues/203) |
+| [20260326] Just Zoom In: Cross-View Geo-Localization via Autoregressive Zooming | Yunus Talha Erzurumlu, Kwag Jiyong, Yilmaz Alper | Just Zoom In通过自回归渐进缩放机制，实现卫星图像与无人机视角的跨视图地理定位匹配。 | [#204](https://github.com/thinson/RS-PaperClaw/issues/204) |
+| [20260326] GeoHeight-Bench: Towards Height-Aware Multimodal Reasoning in Remote Sensing | Hu Xuran, Xiong Zhitong, Hong Zhongcheng, Ban Yifang, Zhu Xiaoxiang et al. | GeoHeight-Bench建立高程感知多模态推理基准，评估大模型对遥感场景垂直维度的理解能力。 | [#205](https://github.com/thinson/RS-PaperClaw/issues/205) |
+| [20260326] Underdetermined Blind Source Separation via Weighted Simplex Shrinkage Regularization and Quantum Deep Image Prior | Lin Chia-Hsiang, Young Si-Sheng | 该方法融合加权单纯形收缩正则化与量子深度图像先验，解决高光谱欠定盲源分离问题。 | [#206](https://github.com/thinson/RS-PaperClaw/issues/206) |
+| [20260326] V2U4Real: A Real-world Large-scale Dataset for Vehicle-to-UAV Cooperative Perception | Li Weijia, Xiang Haoen, Wang Tianxu, Wu Shuaibing, Xia Qiming et al. | V2U4Real提供真实世界大规模车机协同感知数据，支持多模态3D目标检测与空地联合感知研究。 | [#207](https://github.com/thinson/RS-PaperClaw/issues/207) |
+| [20260326] Robust Principal Component Completion | Wang Yinjian, Li Wei, Gui Yuanyuan, James E. Fowler, Vivone Gemine | 鲁棒主成分补全方法结合变分贝叶斯推断，实现张量数据的前景提取与稀疏恢复。 | [#208](https://github.com/thinson/RS-PaperClaw/issues/208) |
+| [20260326] GeoNDC: A Queryable Neural Data Cube for Planetary-Scale Earth Observation | Qi Jianbo, Li Mengyao, Jiang Baogui, Chen Yidan, Wang Qiao | GeoNDC构建可查询神经数据立方体，以隐式神经表示支持行星尺度地球观测时空建模。 | [#209](https://github.com/thinson/RS-PaperClaw/issues/209) |
+
+## 🔎 观察
+
+- 神经隐式表示正从三维重建向行星尺度时空数据管理延伸，GeoNDC与GeoHeight-Bench共同指向垂直维度建模成为新焦点
+- 轻量化设计与边缘感知需求驱动海洋、无人机等场景专用架构创新，LEMMA的拉普拉斯金字塔策略或成低算力部署范式
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260325](./202603/20260325.md)
 ## 📌 今日概况
 
@@ -66,48 +102,6 @@ Powered by OpenClaw🦞
 
 - 模型权重空间学习（GeoSANE）代表基础模型训练的新方向，可能降低对海量标注数据的依赖
 - 检索增强生成与遥感结合尚处早期，光伏设施估算案例显示其在结构化知识融合方面的潜力
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260323](./202603/20260323.md)
-## 📌 今日概况
-
-今日共检索候选论文 19 篇；关键词+LLM 智能匹配遥感交叉论文 13 篇；最终纳入日报 13 篇。
-
-今日遥感AI研究呈现三大趋势：一是跨视角地理定位与UAV导航技术持续升温，多篇论文聚焦实时定位与无GPS环境应用；二是基础模型可信度与自监督学习成为热点，光谱掩码与物理约束方法受关注；三是三维重建与立体匹配技术深化，NeRF与深度学习融合卫星影像处理流程。智能体工具创建与扩散模型分辨率增强亦具亮点。
-
-## ✨ 今日亮点
-
-- 跨视角地理定位技术突破：两篇论文分别从迭代流预测与视觉导航角度推进实时精确定位
-- 遥感智能体进化：OpenEarth-Agent实现从工具调用到工具创建的自主能力跃迁
-- 光谱可信学习：SpecTM提出光谱靶向掩码策略，增强基础模型物理可信度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260323] Riverine Land Cover Mapping through Semantic Segmentation of Multispectral Point Clouds | Thurachen Sopitta, Taher Josef, Lehtomäki Matti, Matikainen Leena, Blåfield Linnea et al. | 提出多光谱点云语义分割方法，实现河流沿岸土地覆盖精细制图 | [#174](https://github.com/thinson/RS-PaperClaw/issues/174) |
-| [20260323] Beyond Matching to Tiles: Bridging Unaligned Aerial and Satellite Views for Vision-Only UAV Navigation | Liu Kejia, Zhou Haoyang, Xu Ruoyu, Wang Peicheng, Song Mingli et al. | 构建无需GPS的无人机视觉导航框架，桥接航拍与卫星影像视角差异 | [#175](https://github.com/thinson/RS-PaperClaw/issues/175) |
-| [20260323] OpenEarth-Agent: From Tool Calling to Tool Creation for Open-Environment Earth Observation | Zhao Sijie, Liu Feng, Zhang Xueliang, Chen Hao, Gu Xinyu et al. | 开发开放环境地球观测智能体，支持自主工具创建与调用 | [#176](https://github.com/thinson/RS-PaperClaw/issues/176) |
-| [20260323] SpecTM: Spectral Targeted Masking for Trustworthy Foundation Models | Syed Usama Imtiaz, Mitra Nasr Azadani, Alamdari Nasrin | 设计光谱靶向掩码策略，提升遥感基础模型可信度与物理一致性 | [#177](https://github.com/thinson/RS-PaperClaw/issues/177) |
-| [20260323] GeoFlow: Real-Time Fine-Grained Cross-View Geolocalization via Iterative Flow Prediction | Ayesh Abu Lehyeh, Zhang Xiaohan, Arrabi Ahmad, Sultani Waqas, Chen Chen et al. | 通过迭代流预测实现实时细粒度跨视角地理定位，适用于拒止环境 | [#178](https://github.com/thinson/RS-PaperClaw/issues/178) |
-| [20260323] SatGeo-NeRF: Geometrically Regularized NeRF for Satellite Imagery | Wagner Valentin, Bullinger Sebastian, Arens Michael, Stiefelhagen Rainer | 引入几何正则化约束，改进卫星影像NeRF三维重建与深度估计 | [#179](https://github.com/thinson/RS-PaperClaw/issues/179) |
-| [20260323] A Latent Representation Learning Framework for Hyperspectral Image Emulation in Remote Sensing | Chedly Ben Azizi, Guilloteau Claire, Roussel Gilles, Puigt Matthieu | 基于变分自编码器学习潜层表示，实现高光谱图像仿真生成 | [#180](https://github.com/thinson/RS-PaperClaw/issues/180) |
-| [20260323] Deep S2P: Integrating Learning Based Stereo Matching Into the Satellite Stereo Pipeline | Masquil Elías, Ehret Thibaud, Musé Pablo, Facciolo Gabriele | 将深度学习立体匹配集成至卫星立体处理流程，优化数字表面模型生产 | [#181](https://github.com/thinson/RS-PaperClaw/issues/181) |
-| [20260323] SHARP: Spectrum-aware Highly-dynamic Adaptation for Resolution Promotion in Remote Sensing Synthesis | Zhao Bingxuan, Zhou Qing, Yang Chuang, Wang Qi | 提出频谱感知动态适配机制，结合旋转位置编码提升遥感图像分辨率 | [#182](https://github.com/thinson/RS-PaperClaw/issues/182) |
-| [20260323] Rethinking SAR ATR: A Target-Aware Frequency-Spatial Enhancement Framework with Noise-Resilient Knowledge Guidance | Lin Yansong, Cheng Zihan, Wang Jielei, Lua Guoming, Cui Zongyong | 构建频域-空域联合增强框架，引入噪声鲁棒知识蒸馏改进SAR目标识别 | [#183](https://github.com/thinson/RS-PaperClaw/issues/183) |
-| [20260323] Evolutionary Biparty Multiobjective UAV Path Planning: Problems and Empirical Comparisons | Chen Kesheng, Luo Wenjian, Lin Xin, Song Zhen, Chang Yatong | 设计进化双目标优化算法，解决多目标无人机路径规划问题 | [#184](https://github.com/thinson/RS-PaperClaw/issues/184) |
-| [20260323] Unregistered Spectral Image Fusion: Unmixing, Adversarial Learning, and Recoverability | Song Jiahui, Shrestha Sagar, Fu Xiao | 融合解混与对抗学习，实现未配准多光谱与高光谱图像融合超分 | [#185](https://github.com/thinson/RS-PaperClaw/issues/185) |
-| [20260323] EpiMask: Leveraging Epipolar Distance Based Masks in Cross-Attention for Satellite Image Matching | Deshmukh Rahul, Chauhan Aditya, Kak Avinash | 利用极线距离掩码改进交叉注意力机制，提升卫星影像匹配精度 | [#186](https://github.com/thinson/RS-PaperClaw/issues/186) |
-
-## 🔎 观察
-
-- 跨视角地理定位研究密集涌现，反映无人机自主导航与拒止环境应用的迫切需求，技术路线从特征匹配向端到端流预测演进
-- 基础模型研究开始关注光谱物理约束与可信度问题，标志着遥感AI从性能优先向可解释、可信赖方向转型
 
 ---
 
