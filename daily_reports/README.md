@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260328](./202603/20260328.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦多模态感知与智能决策的融合创新。无透镜偏振成像通过RGB引导实现计算重建，零样本视觉语言模型推动跨视角地理定位，事件-深度融合则为高速无人机避障提供端到端解决方案。三项工作均体现传感器融合与深度学习在遥感及自主系统中的关键作用。
+
+## ✨ 今日亮点
+
+- 无透镜偏振成像突破传统光学限制，RGB引导重建降低硬件复杂度
+- 零样本VL模型LLaVA实现跨视角地理定位，无需训练即可重排序
+- 事件相机与深度融合赋能高速UAV，端到端模仿学习提升避障实时性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260328] Guided Lensless Polarization Imaging | Kraicer Noa, Yosef Erez, Giryes Raja | 提出RGB引导的无透镜偏振成像方法，利用计算重建替代传统光学透镜，实现轻量化偏振信息获取。 | [#215](https://github.com/thinson/RS-PaperClaw/issues/215) |
+| [20260328] Zero-shot Vision-Language Reranking for Cross-View Geolocalization | Yunus Talha Erzurumlu, John E. Anderson, William J. Shuart, Toth Charles, Yilmaz Alper | 基于LLaVA的零样本视觉语言重排序框架，无需微调即可完成跨视角图像地理定位任务。 | [#216](https://github.com/thinson/RS-PaperClaw/issues/216) |
+| [20260328] An End-to-end Flight Control Network for High-speed UAV Obstacle Avoidance based on Event-Depth Fusion | Shang Dikai, Zhao Jingyue, Xu Shi, Ye Nanyang, Wang Lei | 端到端事件-深度融合网络，通过模仿学习实现高速无人机实时障碍物规避飞行控制。 | [#217](https://github.com/thinson/RS-PaperClaw/issues/217) |
+
+## 🔎 观察
+
+- 计算成像与AI的交叉持续深化，无透镜设计有望推动遥感载荷小型化与低成本化
+- 视觉语言模型的零样本迁移能力为地理空间智能开辟新路径，但鲁棒性仍需验证
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260327](./202603/20260327.md)
 ## 📌 今日概况
 
@@ -63,42 +95,6 @@ Powered by OpenClaw🦞
 
 - 神经隐式表示（INR）正从计算机视觉向行星尺度地球观测扩展，GeoNDC代表数据存储范式的潜在变革
 - 高度/垂直维度成为遥感多模态大模型新焦点，反映社区对三维地理空间认知的迫切需求
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260325](./202603/20260325.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日遥感AI研究呈现多模态融合与可解释性并重的趋势。时序分析方面，Sentinel-2数据在农业监测与土地利用中的应用持续深化，Transformer架构及其变体（Swin、线性注意力）成为主流。高光谱成像在月球矿物制图与端元分解领域取得进展，不确定性量化和可解释AI方法受到关注。
-
-## ✨ 今日亮点
-
-- 多任务学习结合空间上下文提升有机/常规农田识别精度
-- Aitchison几何引入贝叶斯高光谱解混实现不确定性量化
-- 动态空间-光谱专家路由机制优化高光谱图像分类性能
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260325] The role of spatial context and multitask learning in the detection of organic and conventional farming systems based on Sentinel-2 time series | Hemmerling Jan, Schwieder Marcel, Rufin Philippe, Thomas Leon-Friedrich, Tulbure Mirela et al. | 利用Sentinel-2时序数据，通过空间上下文建模与多任务学习区分有机与常规农业系统。 | [#195](https://github.com/thinson/RS-PaperClaw/issues/195) |
-| [20260325] Connecting Meteorite Spectra to Lunar Surface Composition Using Hyperspectral Imaging and Machine Learning | Fatemeh Fazel Hesar, Raouf Mojtaba, Chegeni Amirmohammad, Soltani Peyman, Foing Bernard et al. | 基于高光谱成像与机器学习建立陨石光谱与月球表面成分的关联映射。 | [#196](https://github.com/thinson/RS-PaperClaw/issues/196) |
-| [20260325] Combi-CAM: A Novel Multi-Layer Approach for Explainable Image Geolocalization | Faget David, José Luis Lisani, Colom Miguel | 提出Combi-CAM多层可解释方法，增强卷积神经网络图像地理定位的透明度。 | [#197](https://github.com/thinson/RS-PaperClaw/issues/197) |
-| [20260325] Comparative analysis of dual-form networks for live land monitoring using multi-modal satellite image time series | Dumeur Iris, Anger Jérémy, Facciolo Gabriele | 对比分析双形式网络架构，用于多模态卫星图像时序的实时土地监测。 | [#198](https://github.com/thinson/RS-PaperClaw/issues/198) |
-| [20260325] LGEST: Dynamic Spatial-Spectral Expert Routing for Hyperspectral Image Classification | Wen Jiawen, Qiu Suixuan, Luo Zihang, Yang Xiaofei, Shi Haotian | 设计动态空间-光谱专家路由机制LGEST，提升高光谱图像分类效率与精度。 | [#199](https://github.com/thinson/RS-PaperClaw/issues/199) |
-| [20260325] DB SwinT: A Dual-Branch Swin Transformer Network for Road Extraction in Optical Remote Sensing Imagery | He Zongyang, Yang Xiangli, Gao Xian, Wang Zhiguo | 构建双分支Swin Transformer网络DB SwinT，优化光学遥感影像道路提取任务。 | [#200](https://github.com/thinson/RS-PaperClaw/issues/200) |
-| [20260325] Aitchison Geometry on the Simplex for Uncertainty Quantification in Bayesian Hyperspectral Image Unmixing | Blondel Hector, Drumetz Lucas, Chonavel Thierry | 将Aitchison单形几何引入贝叶斯框架，实现高光谱图像解混的不确定性量化。 | [#201](https://github.com/thinson/RS-PaperClaw/issues/201) |
-
-## 🔎 观察
-
-- Transformer架构持续主导遥感时序与空间建模，但线性注意力等效率优化方案开始涌现
-- 可解释AI与不确定性量化方法逐步从辅助工具转向核心研究议题，反映领域对模型可信度的需求提升
 
 ---
 
