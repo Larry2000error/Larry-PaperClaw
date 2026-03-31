@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260329](./202603/20260329.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究呈现多模态融合与智能体应用趋势。大语言模型成为核心驱动力，赋能地理定位、变化检测、语义分割及无人机导航等任务。物理知识嵌入与开放词汇学习成为新方向，同时深度学习结合卫星影像持续支撑社会经济分析应用。
+
+## ✨ 今日亮点
+
+- RHO提出基于OSM的全景图像度量级跨视角地理定位方法
+- OpenDPR通过扩散引导原型检索实现遥感开放词汇变化检测
+- LLM驱动无人机自然语言导航，结合时序逻辑规范翻译与修复
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260329] RHO: Robust Holistic OSM-Based Metric Cross-View Geo-Localization | Zheng Junwei, Dai Ruize, Liu Ruiping, Zeng Zichao, Chen Yufan et al. | RHO利用OpenStreetMap数据实现鲁棒的全景图像跨视角度量地理定位，提升视觉定位精度。 | [#219](https://github.com/thinson/RS-PaperClaw/issues/219) |
+| [20260329] OpenDPR: Open-Vocabulary Change Detection via Vision-Centric Diffusion-Guided Prototype Retrieval for Remote Sensing Imagery | Guo Qi, Wang Jue, Liu Yinhe, Zhong Yanfei | OpenDPR提出以视觉为中心的扩散引导原型检索框架，支持遥感影像的开放词汇变化检测。 | [#220](https://github.com/thinson/RS-PaperClaw/issues/220) |
+| [20260329] LLM-Enabled Low-Altitude UAV Natural Language Navigation via Signal Temporal Logic Specification Translation and Repair | Ping Yuqi, Ding Huahao, Liang Tianhao, Zhou Longyu, Lei Guangyu et al. | 该方法将大语言模型用于低空无人机自然语言导航指令的时序逻辑规范翻译与自动修复。 | [#221](https://github.com/thinson/RS-PaperClaw/issues/221) |
+| [20260329] Transferring Physical Priors into Remote Sensing Segmentation via Large Language Models | Lu Yuxi, Li Kunqi, Li Zhidong, Su Xiaohan, Wu Biao et al. | 通过大语言模型将物理先验知识转化为知识图谱，增强遥感语义分割的物理可解释性。 | [#222](https://github.com/thinson/RS-PaperClaw/issues/222) |
+| [20260329] Estimating the Impact of COVID-19 on Travel Demand in Houston Area Using Deep Learning and Satellite Imagery | Pachika Alekhya, Gao Lu, Song Lingguang, Lu Pan, Wang Xingju | 结合深度学习与卫星影像，量化评估COVID-19对休斯顿地区出行需求的影响。 | [#223](https://github.com/thinson/RS-PaperClaw/issues/223) |
+
+## 🔎 观察
+
+- 大语言模型正从通用工具向遥感专用智能体演进，覆盖感知-认知-决策全链条。
+- 开放词汇与物理先验的结合，反映出遥感AI从数据驱动向知识增强的范式转变。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260328](./202603/20260328.md)
 ## 📌 今日概况
 
@@ -59,42 +93,6 @@ Powered by OpenClaw🦞
 
 - 高光谱成像研究正从单一任务处理转向降维-分析-压缩的联合优化范式，量子效率等物理可解释模块受关注
 - 农业机器人实时感知需求推动轻量立体匹配网络向边缘设备迁移，仿真到真实部署的系统性验证成为趋势
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260326](./202603/20260326.md)
-## 📌 今日概况
-
-今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日遥感AI研究呈现多维度技术突破：轻量化海洋语义分割、跨视角地理定位、高度感知多模态推理等方向并进。神经隐式表示与量子计算等新兴技术开始渗透遥感领域，车机协同感知数据集推动应用落地，整体趋向高效化、三维化与多模态融合。
-
-## ✨ 今日亮点
-
-- LEMMA提出拉普拉斯金字塔轻量网络，实现海洋环境高效语义分割与边缘检测
-- GeoHeight-Bench构建首个高度感知遥感多模态基准，填补垂直维度推理空白
-- GeoNDC打造行星尺度神经数据立方体，支持隐式时空查询与压缩存储
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260326] LEMMA: Laplacian pyramids for Efficient Marine SeMAntic Segmentation | Gakhar Ishaan, Srivastava Laven, Sagaram Sankarshanaa, Kasliwal Aditya, Verma Ujjwal | LEMMA利用拉普拉斯金字塔分解设计轻量编码器，在海洋语义分割任务中平衡精度与计算效率。 | [#203](https://github.com/thinson/RS-PaperClaw/issues/203) |
-| [20260326] Just Zoom In: Cross-View Geo-Localization via Autoregressive Zooming | Yunus Talha Erzurumlu, Kwag Jiyong, Yilmaz Alper | 提出自回归渐进缩放机制，通过迭代放大卫星图像实现无人机视角与卫星图像的跨视图地理定位。 | [#204](https://github.com/thinson/RS-PaperClaw/issues/204) |
-| [20260326] GeoHeight-Bench: Towards Height-Aware Multimodal Reasoning in Remote Sensing | Hu Xuran, Xiong Zhitong, Hong Zhongcheng, Ban Yifang, Zhu Xiaoxiang et al. | 构建高度感知多模态推理基准GeoHeight-Bench，评估大模型对遥感影像垂直维度的理解能力。 | [#205](https://github.com/thinson/RS-PaperClaw/issues/205) |
-| [20260326] Underdetermined Blind Source Separation via Weighted Simplex Shrinkage Regularization and Quantum Deep Image Prior | Lin Chia-Hsiang, Young Si-Sheng | 结合加权单纯形收缩正则化与量子深度图像先验，解决遥感高光谱/多光谱欠定盲源分离问题。 | [#206](https://github.com/thinson/RS-PaperClaw/issues/206) |
-| [20260326] V2U4Real: A Real-world Large-scale Dataset for Vehicle-to-UAV Cooperative Perception | Li Weijia, Xiang Haoen, Wang Tianxu, Wu Shuaibing, Xia Qiming et al. | 发布真实场景大规模车机协同感知数据集V2U4Real，支持车辆与无人机多模态3D目标检测研究。 | [#207](https://github.com/thinson/RS-PaperClaw/issues/207) |
-| [20260326] Robust Principal Component Completion | Wang Yinjian, Li Wei, Gui Yuanyuan, James E. Fowler, Vivone Gemine | 提出变分贝叶斯鲁棒主成分补全方法，用于遥感张量数据的前景提取与稀疏恢复。 | [#208](https://github.com/thinson/RS-PaperClaw/issues/208) |
-| [20260326] GeoNDC: A Queryable Neural Data Cube for Planetary-Scale Earth Observation | Qi Jianbo, Li Mengyao, Jiang Baogui, Chen Yidan, Wang Qiao | GeoNDC采用隐式神经表示构建可查询数据立方体，实现行星尺度遥感数据的高效存储与时空建模。 | [#209](https://github.com/thinson/RS-PaperClaw/issues/209) |
-
-## 🔎 观察
-
-- 神经隐式表示（INR）正从计算机视觉向行星尺度地球观测扩展，GeoNDC代表数据存储范式的潜在变革
-- 高度/垂直维度成为遥感多模态大模型新焦点，反映社区对三维地理空间认知的迫切需求
 
 ---
 
