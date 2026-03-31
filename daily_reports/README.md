@@ -7,28 +7,28 @@
 
 今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
 
-今日遥感AI研究呈现多模态融合与生成模型深化趋势。显著性检测引入矫正流生成框架，多模态检索聚焦噪声对应学习，合成数据与物理模型结合推动高光谱模拟发展，同时遥感数据向通信领域跨界应用拓展。
+今日遥感AI研究呈现多模态融合与生成模型深化趋势。显著性检测引入矫正流与扩散模型，图像-文本检索聚焦噪声鲁棒性，合成数据集构建与物理模型结合更紧密。同时，无人机平台创新与跨域应用（无线通信信道推断）拓展了遥感技术的边界。
 
 ## ✨ 今日亮点
 
-- ORSIFlow将矫正流生成模型引入光学遥感显著性检测，实现隐空间引导生成
-- 自旋转三旋翼无人机通过非线性动态逆与模型预测控制扩展视场范围
-- SVH-BD基于PROSAIL模型构建植被高光谱合成基准数据集
+- ORSIFlow将矫正流与显著性引导结合，提升光学遥感显著目标检测精度
+- 自旋三旋翼无人机通过模型预测控制实现视场扩展与自主飞行
+- SVH-BD基于PROSAIL模型构建合成植被高光谱基准数据集
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 一句话概括 | Issue |
 |---|---|---|---|
-| [20260330] ORSIFlow: Saliency-Guided Rectified Flow for Optical Remote Sensing Salient Object Detection | Chen Haojing, Li Yutong, Liu Zhihang, Tan Tao, Bian Haoyu et al. | ORSIFlow提出显著性引导的矫正流框架，在隐扩散空间中实现光学遥感图像显著目标检测。 | [#225](https://github.com/thinson/RS-PaperClaw/issues/225) |
-| [20260330] A Self-Rotating Tri-Rotor UAV for Field of View Expansion and Autonomous Flight | Zhou Xiaobin, Zheng Zihao, Jin Aoxu, Qiang Lei, Zhu Bo | 自旋转三旋翼无人机采用非线性动态逆与模型预测控制，实现视场扩展与自主飞行。 | [#226](https://github.com/thinson/RS-PaperClaw/issues/226) |
-| [20260330] SVH-BD : Synthetic Vegetation Hyperspectral Benchmark Dataset for Emulation of Remote Sensing Images | Chedly Ben Azizi, Guilloteau Claire, Roussel Gilles, Puigt Matthieu | SVH-BD基于PROSAIL辐射传输模型构建合成植被高光谱数据集，用于遥感图像仿真。 | [#227](https://github.com/thinson/RS-PaperClaw/issues/227) |
-| [20260330] Robust Remote Sensing Image-Text Retrieval with Noisy Correspondence | Song Qiya, Xie Yiqiang, Sun Yuan, Dian Renwei, Kang Xudong | 针对噪声对应问题，提出自步学习策略提升遥感图像-文本检索的鲁棒性。 | [#228](https://github.com/thinson/RS-PaperClaw/issues/228) |
-| [20260330] Deep Learning Based Site-Specific Channel Inference Using Satellite Images | Song Junzhe, He Ruisi, Yang Mi, Zhang Zhengyu, Gao Shuaiqi et al. | 利用卫星图像与深度学习实现站点级无线信道推断，支持抽头延迟线建模。 | [#229](https://github.com/thinson/RS-PaperClaw/issues/229) |
+| [20260330] ORSIFlow: Saliency-Guided Rectified Flow for Optical Remote Sensing Salient Object Detection | Chen Haojing, Li Yutong, Liu Zhihang, Tan Tao, Bian Haoyu et al. | ORSIFlow提出显著性引导的矫正流框架，将潜在扩散模型引入光学遥感显著目标检测任务。 | [#225](https://github.com/thinson/RS-PaperClaw/issues/225) |
+| [20260330] A Self-Rotating Tri-Rotor UAV for Field of View Expansion and Autonomous Flight | Zhou Xiaobin, Zheng Zihao, Jin Aoxu, Qiang Lei, Zhu Bo | 自旋三旋翼无人机采用非线性动态逆与模型预测控制，实现360度视场扩展与稳定自主飞行。 | [#226](https://github.com/thinson/RS-PaperClaw/issues/226) |
+| [20260330] SVH-BD : Synthetic Vegetation Hyperspectral Benchmark Dataset for Emulation of Remote Sensing Images | Chedly Ben Azizi, Guilloteau Claire, Roussel Gilles, Puigt Matthieu | SVH-BD基于PROSAIL辐射传输模型合成植被高光谱数据，为遥感反演算法提供可控基准。 | [#227](https://github.com/thinson/RS-PaperClaw/issues/227) |
+| [20260330] Robust Remote Sensing Image-Text Retrieval with Noisy Correspondence | Song Qiya, Xie Yiqiang, Sun Yuan, Dian Renwei, Kang Xudong | 针对遥感图文检索中的噪声对应问题，提出自步学习策略提升跨模态检索鲁棒性。 | [#228](https://github.com/thinson/RS-PaperClaw/issues/228) |
+| [20260330] Deep Learning Based Site-Specific Channel Inference Using Satellite Images | Song Junzhe, He Ruisi, Yang Mi, Zhang Zhengyu, Gao Shuaiqi et al. | 利用卫星图像与深度学习进行站点级无线信道推断，支撑通信网络规划。 | [#229](https://github.com/thinson/RS-PaperClaw/issues/229) |
 
 ## 🔎 观察
 
-- 生成式AI正从图像合成向判别任务渗透，矫正流等新型扩散变体开始应用于遥感检测领域。
-- 遥感数据与无线通信的交叉研究显现，卫星图像作为先验信息支撑信道建模成为新方向。
+- 生成式模型正从数据增强工具转向遥感解译核心架构，矫正流等新型扩散变体开始落地
+- 遥感与垂直领域交叉加速，无线通信信道推断表明卫星图像正成为新型地理信息基础设施
 
 ---
 
