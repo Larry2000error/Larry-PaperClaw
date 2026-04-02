@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260401](./202604/20260401.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究呈现多模态融合与基础模型适配两大主线。高光谱非线性解混、作物产量预测、视觉-语言持续学习等方向均有新进展，同时对抗攻击与无人机SLAM等应用研究保持活跃，SAM在遥感细分场景的定制化改进仍是热点。
+
+## ✨ 今日亮点
+
+- YieldSAT构建多模态高分辨率作物产量预测基准数据集
+- PC-SAM提出补丁约束机制实现高分辨率遥感道路交互式分割
+- 首个遥感视觉-语言持续学习基准测试揭示灾难性遗忘问题
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260401] Looking into a Pixel by Nonlinear Unmixing -- A Generative Approach | Tang Maofeng, Qi Hairong | 提出基于生成对抗网络与循环一致性的非线性光谱解混方法，通过生成式建模实现像素内部端元丰度估计。 | [#240](https://github.com/thinson/RS-PaperClaw/issues/240) |
+| [20260401] YieldSAT: A Multimodal Benchmark Dataset for High-Resolution Crop Yield Prediction | Miranda Miro, Pathak Deepak, Helber Patrick, Bischke Benjamin, Najjar Hiba et al. | 发布YieldSAT多模态基准数据集，整合卫星影像与农艺数据支持高分辨率作物产量预测研究。 | [#241](https://github.com/thinson/RS-PaperClaw/issues/241) |
+| [20260401] Adversarial Attenuation Patch Attack for SAR Object Detection | Zhang Yiming, Qin Weibo, Wang Feng | 针对SAR目标检测设计对抗衰减贴片攻击，通过电子干扰实现物理场景下的隐身攻击效果。 | [#242](https://github.com/thinson/RS-PaperClaw/issues/242) |
+| [20260401] PanoAir: A Panoramic Visual-Inertial SLAM with Cross-Time Real-World UAV Dataset | Wu Yiyang, Zhang Xiaohu, Du Yanjin, Zhang Tongsu, Li Chujun et al. | 构建PanoAir全景视觉-惯性SLAM数据集，支持无人机跨时间真实环境下的全向感知与位姿估计。 | [#243](https://github.com/thinson/RS-PaperClaw/issues/243) |
+| [20260401] Continual Vision-Language Learning for Remote Sensing: Benchmarking and Analysis | Weng Xingxing, Ni Ruifeng, Pang Chao, Hao XiangYu, Wang Yishan et al. | 建立遥感视觉-语言持续学习基准，系统评估多模态大模型在增量任务中的灾难性遗忘现象。 | [#244](https://github.com/thinson/RS-PaperClaw/issues/244) |
+| [20260401] PC-SAM: Patch-Constrained Fine-Grained Interactive Road Segmentation in High-Resolution Remote Sensing Images | Lv Chengcheng, Li Rushi, Wu Mincheng, Shi Xiufang, Wen Zhenyu et al. | PC-SAM在SAM基础上引入补丁约束策略，优化高分辨率遥感图像中道路目标的细粒度交互分割性能。 | [#245](https://github.com/thinson/RS-PaperClaw/issues/245) |
+
+## 🔎 观察
+
+- SAM及其变体持续渗透遥感细分任务，但高分辨率场景下的计算效率与细节保持仍需平衡。
+- 多模态基准数据集建设加速，反映遥感AI从算法创新向可复现、可比较的系统化研究转型。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260331](./202603/20260331.md)
 ## 📌 今日概况
 
@@ -64,40 +99,6 @@ Powered by OpenClaw🦞
 
 - 生成式AI正从图像合成向判别任务回流，矫正流等高效生成模型开始服务于检测任务的特征增强与边界精细化
 - 遥感硬件创新与算法研究呈现并行态势，无人机平台动力学控制与上层视觉任务形成系统级闭环，但跨层协同优化尚待深入
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260329](./202603/20260329.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究呈现多模态融合与智能体应用趋势。大语言模型成为核心驱动力，赋能地理定位、变化检测、语义分割及无人机导航等任务。物理知识嵌入与开放词汇学习成为新方向，同时深度学习结合卫星影像持续支撑社会经济分析应用。
-
-## ✨ 今日亮点
-
-- RHO提出基于OSM的全景图像度量级跨视角地理定位方法
-- OpenDPR通过扩散引导原型检索实现遥感开放词汇变化检测
-- LLM驱动无人机自然语言导航，结合时序逻辑规范翻译与修复
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260329] RHO: Robust Holistic OSM-Based Metric Cross-View Geo-Localization | Zheng Junwei, Dai Ruize, Liu Ruiping, Zeng Zichao, Chen Yufan et al. | RHO利用OpenStreetMap数据实现鲁棒的全景图像跨视角度量地理定位，提升视觉定位精度。 | [#219](https://github.com/thinson/RS-PaperClaw/issues/219) |
-| [20260329] OpenDPR: Open-Vocabulary Change Detection via Vision-Centric Diffusion-Guided Prototype Retrieval for Remote Sensing Imagery | Guo Qi, Wang Jue, Liu Yinhe, Zhong Yanfei | OpenDPR提出以视觉为中心的扩散引导原型检索框架，支持遥感影像的开放词汇变化检测。 | [#220](https://github.com/thinson/RS-PaperClaw/issues/220) |
-| [20260329] LLM-Enabled Low-Altitude UAV Natural Language Navigation via Signal Temporal Logic Specification Translation and Repair | Ping Yuqi, Ding Huahao, Liang Tianhao, Zhou Longyu, Lei Guangyu et al. | 该方法将大语言模型用于低空无人机自然语言导航指令的时序逻辑规范翻译与自动修复。 | [#221](https://github.com/thinson/RS-PaperClaw/issues/221) |
-| [20260329] Transferring Physical Priors into Remote Sensing Segmentation via Large Language Models | Lu Yuxi, Li Kunqi, Li Zhidong, Su Xiaohan, Wu Biao et al. | 通过大语言模型将物理先验知识转化为知识图谱，增强遥感语义分割的物理可解释性。 | [#222](https://github.com/thinson/RS-PaperClaw/issues/222) |
-| [20260329] Estimating the Impact of COVID-19 on Travel Demand in Houston Area Using Deep Learning and Satellite Imagery | Pachika Alekhya, Gao Lu, Song Lingguang, Lu Pan, Wang Xingju | 结合深度学习与卫星影像，量化评估COVID-19对休斯顿地区出行需求的影响。 | [#223](https://github.com/thinson/RS-PaperClaw/issues/223) |
-
-## 🔎 观察
-
-- 大语言模型正从通用工具向遥感专用智能体演进，覆盖感知-认知-决策全链条。
-- 开放词汇与物理先验的结合，反映出遥感AI从数据驱动向知识增强的范式转变。
 
 ---
 
