@@ -2,6 +2,45 @@
 
 最近三天日报（最新在前）：
 
+# [20260407](./202604/20260407.md)
+## 📌 今日概况
+
+今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 10 篇。
+
+今日遥感AI研究呈现多模态融合与基础模型双主线并进态势。SAR-光学异构数据融合持续深化，Vision Transformers与Mamba架构在滑坡检测、变化检测等任务中广泛应用。边缘智能与近实时监测推动星上处理落地，3D Gaussian Splatting与视觉语言模型拓展UAV应用边界，大语言模型开始介入遥感任务评估环节。
+
+## ✨ 今日亮点
+
+- 多模态基础模型统一框架：单模型实现遥感图像修复、融合等多任务，支持语言提示引导
+- Mamba架构入侵高光谱领域：物理对齐频谱Mamba实现小样本目标检测，解耦语义与动态信息
+- LLM-as-Judge范式落地：大语言模型首次用于无人机电力线分割的语义质量评判
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260407] Multi-Modal Landslide Detection from Sentinel-1 SAR and Sentinel-2 Optical Imagery Using Multi-Encoder Vision Transformers and Ensemble Learning | Nasios Ioannis | 提出多编码器Vision Transformers融合Sentinel-1 SAR与Sentinel-2光学影像，集成学习提升滑坡检测精度。 | [#286](https://github.com/thinson/RS-PaperClaw/issues/286) |
+| [20260407] Edge Intelligence for Satellite-based Earth Observation: Scheduling Image Acquisition and Processing | Soret Beatriz, Antonio M. Mercado-Martínez, Jurado-Navas Antonio, Nicolai D. Lyholm, Moretti Marco et al. | 构建卫星对地观测边缘智能框架，联合优化星上图像获取调度与在轨处理资源分配。 | [#287](https://github.com/thinson/RS-PaperClaw/issues/287) |
+| [20260407] ASSR-Net: Anisotropic Structure-Aware and Spectrally Recalibrated Network for Hyperspectral Image Fusion | Song Qiya, Zhou Hongzhi, Tan Lishan, Dian Renwei, Li Shutao | ASSR-Net通过各向异性结构感知与光谱重校准模块，增强高光谱图像融合的空间-光谱一致性。 | [#288](https://github.com/thinson/RS-PaperClaw/issues/288) |
+| [20260407] A Unified Foundation Model for All-in-One Multi-Modal Remote Sensing Image Restoration and Fusion with Language Prompting | Cui Yongchuan, Liu Peng | 统一基础模型以语言提示驱动，实现多模态遥感图像修复与融合的全任务覆盖。 | [#289](https://github.com/thinson/RS-PaperClaw/issues/289) |
+| [20260407] Physics-Aligned Spectral Mamba: Decoupling Semantics and Dynamics for Few-Shot Hyperspectral Target Detection | Gong Luqi, Xie Qixin, Chen Yue, Chen Ziqiang, Fan Fanda et al. | 物理对齐频谱Mamba解耦语义与动态特征，支撑高光谱小样本目标检测的元学习范式。 | [#290](https://github.com/thinson/RS-PaperClaw/issues/290) |
+| [20260407] Prior-guided Fusion of Multimodal Features for Change Detection from Optical-SAR Images | Liu Xuanguang, Ding Lei, Li Yujie, Dai Chenguang, Zhang Zhenchao et al. | 先验引导的多模态特征融合网络，挖掘光学-SAR影像的模态特异性与时序变化信息。 | [#291](https://github.com/thinson/RS-PaperClaw/issues/291) |
+| [20260407] LSGS-Loc: Towards Robust 3DGS-Based Visual Localization for Large-Scale UAV Scenarios | Zhang Xiang, Wang Tengfei, Xu Fang, Wang Xin, Zhan Zongqian | LSGS-Loc面向大规模无人机场景，基于3D高斯溅射实现尺度感知的鲁棒视觉定位。 | [#292](https://github.com/thinson/RS-PaperClaw/issues/292) |
+| [20260407] Near real-time monitoring of global land-ocean cover dynamics | Wang Lixing, Li Tao, Dou Xinyu, Liu Zhu | 全球陆海覆盖近实时监测系统，同步追踪陆地覆盖与海冰动态变化。 | [#293](https://github.com/thinson/RS-PaperClaw/issues/293) |
+| [20260407] UAVReason: A Unified, Large-Scale Benchmark for Multimodal Aerial Scene Reasoning and Generation | Sun Jintao, Zhang Hu, Di Donglin, Ding Gangyi, Zheng Zhedong | UAVReason构建首个大规模无人机多模态场景推理与生成基准，覆盖视觉问答与图像生成任务。 | [#294](https://github.com/thinson/RS-PaperClaw/issues/294) |
+| [20260407] LLM-as-Judge for Semantic Judging of Powerline Segmentation in UAV Inspection | Hossain Akram, Abdelfattah Rabab, Wang Xiaofeng, Abdelfatah Kareem | LLM-as-Judge框架替代传统指标，对无人机巡检中的电力线分割结果进行语义级质量评估。 | [#295](https://github.com/thinson/RS-PaperClaw/issues/295) |
+
+## 🔎 观察
+
+- Mamba与Transformer形成架构竞争：Mamba凭借线性复杂度优势开始渗透高光谱时序建模，但Transformer在多模态融合中仍占主导。
+- 遥感评估范式面临变革：LLM-as-Judge的出现暗示像素级指标可能向语义级评判演进，但计算开销与可解释性仍是落地瓶颈。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260406](./202604/20260406.md)
 ## 📌 今日概况
 
@@ -61,38 +100,6 @@ Powered by OpenClaw🦞
 
 - 遥感基础模型正从静态图像向高频时序数据演进，时序分辨率成为新的技术竞争维度
 - 视觉语言模型的跨域迁移能力使其成为连接遥感数据与专业应用（如能源、交通）的桥梁
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260404](./202604/20260404.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦三大方向：表征学习、高效计算与物理驱动成像。多任务表征学习通过互信息优化提升泛化能力；SAR成像借助Apple Silicon架构实现数量级加速；物理约束的无监督网络为单像素高光谱超分辨开辟新路径。
-
-## ✨ 今日亮点
-
-- 多标注三元组学习框架，以任务导向互信息最大化实现遥感表征自适应优化
-- Apple Silicon单调度FFT流水线，将SAR成像从8秒压缩至370毫秒
-- 物理信息无训练网络，RGB引导实现单像素高光谱超分辨重建
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260404] Task-Guided Multi-Annotation Triplet Learning for Remote Sensing Representations | Zhou Meilun, Zare Alina | 提出任务引导多标注三元组学习，通过互信息最大化优化遥感表征的多任务适应性。 | [#272](https://github.com/thinson/RS-PaperClaw/issues/272) |
-| [20260404] From 8 Seconds to 370ms: Kernel-Fused SAR Imaging on Apple Silicon via Single-Dispatch FFT Pipelines | Mohamed Amine Bergach | 设计核融合SAR成像方案，利用Apple Silicon统一内存架构与单调度FFT流水线实现22倍加速。 | [#273](https://github.com/thinson/RS-PaperClaw/issues/273) |
-| [20260404] Physics-Informed Untrained Learning for RGB-Guided Superresolution Single-Pixel Hyperspectral Imaging | Zhang Hao, Xu Bilige, Wei Lichen, Ma Xu, Ren Wenyi | 构建物理信息无训练神经网络，以RGB先验引导单像素高光谱成像的超分辨重建。 | [#274](https://github.com/thinson/RS-PaperClaw/issues/274) |
-
-## 🔎 观察
-
-- 边缘计算硬件优化正成为遥感实时处理的关键突破口，Apple Silicon等异构架构值得持续关注
-- 物理约束与无训练学习的结合，为数据稀缺场景下的高光谱成像提供了可解释性新范式
 
 ---
 
