@@ -2,6 +2,42 @@
 
 最近三天日报（最新在前）：
 
+# [20260408](./202604/20260408.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日遥感AI研究呈现三大趋势：一是神经表征技术向时空连续建模延伸，NeRF类方法加速渗透地球观测领域；二是边缘计算与星上处理架构受关注，IRIDE任务验证在轨服务能力；三是量子-经典混合计算、物理信息神经网络等新型计算范式开始落地遥感任务。不确定性量化和多目标跟踪等经典问题亦有新进展。
+
+## ✨ 今日亮点
+
+- OpenSpatial构建空间智能数据引擎，系统化提升3D空间理解能力
+- Location Is All You Need提出连续时空神经表征，推动地理空间基础模型发展
+- HQF-Net首次将混合量子-经典架构引入遥感图像分割，探索量子机器学习应用边界
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260408] OpenSpatial: A Principled Data Engine for Empowering Spatial Intelligence | Liu Jianhui, Sun Haoze, Li Wenbo, Zhang Yanbing, Yang Rui et al. | OpenSpatial提出原则性数据引擎，通过程序化生成3D边界框标注赋能空间智能模型训练。 | [#297](https://github.com/thinson/RS-PaperClaw/issues/297) |
+| [20260408] Assessing the Added Value of Onboard Earth Observation Processing with the IRIDE HEO Service Segment | Parampuneet Kaur Thind, Mwangi Charles, Varetto Giovanni, Sarti Lorenzo, Papa Andrea et al. | IRIDE HEO任务段评估星上地球观测处理架构，验证服务导向架构在高分遥感中的增值效应。 | [#298](https://github.com/thinson/RS-PaperClaw/issues/298) |
+| [20260408] Location Is All You Need: Continuous Spatiotemporal Neural Representations of Earth Observation Data | Madadikhaljan Mojgan, Prexl Jonathan, Wittmann Isabelle, Conrad M Albrecht, Schmitt Michael | 该研究以位置编码为核心，构建连续时空神经辐射场表征地球观测数据，支持任意时空分辨率重建。 | [#299](https://github.com/thinson/RS-PaperClaw/issues/299) |
+| [20260408] Canopy Tree Height Estimation Using Quantile Regression: Modeling and Evaluating Uncertainty in Remote Sensing | Schrödter Karsten, Pauls Jan, Gieseke Fabian | 研究采用分位数回归建模树冠高度估计的不确定性，为森林碳汇评估提供可靠性度量。 | [#300](https://github.com/thinson/RS-PaperClaw/issues/300) |
+| [20260408] SCT-MOT: Enhancing Air-to-Air Multiple UAVs Tracking with Swarm-Coupled Motion and Trajectory Guidance | Chu Zhaochen, Song Tao, Jin Ren, He Shaoming, Lin Defu et al. | SCT-MOT引入群体耦合运动建模与轨迹引导机制，提升空对空无人机集群多目标跟踪精度。 | [#301](https://github.com/thinson/RS-PaperClaw/issues/301) |
+| [20260408] HQF-Net: A Hybrid Quantum-Classical Multi-Scale Fusion Network for Remote Sensing Image Segmentation | Md Aminur Hossain, Ayush V. Patel, Gole Siddhant, Sanjay K. Singh, Banerjee Biplab | HQF-Net设计混合量子-经典多尺度融合网络，利用量子线路增强遥感图像分割特征表达能力。 | [#302](https://github.com/thinson/RS-PaperClaw/issues/302) |
+| [20260408] Accelerating 4D Hyperspectral Imaging through Physics-Informed Neural Representation and Adaptive Sampling | Ho Chi-Jui, Bhakta Harsh, Xiong Wei, Antipa Nicholas | 研究结合物理信息神经表征与自适应采样策略，实现高光谱4D成像的高效加速重建。 | [#303](https://github.com/thinson/RS-PaperClaw/issues/303) |
+
+## 🔎 观察
+
+- 神经辐射场(NeRF)技术正从计算机视觉向遥感时空建模快速迁移，或重塑地理空间数据表示范式
+- 量子机器学习在遥感领域的应用尚处探索期，HQF-Net等初步尝试显示其在特征融合层面的潜在优势，但实用化仍需突破硬件约束
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260407](./202604/20260407.md)
 ## 📌 今日概况
 
@@ -66,40 +102,6 @@ Powered by OpenClaw🦞
 
 - 星载智能计算成为热点，LLM推理与深度估计等重型任务正向卫星边缘迁移，需平衡算力与能耗约束
 - 卫星网络研究从静态拓扑转向动态移动性利用，轨道预测驱动的数据路由或成下一代天基基础设施关键
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260405](./202604/20260405.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究呈现多模态融合与专业化模型并进的趋势。基础模型建设向高频时序数据延伸，视觉语言模型拓展至能源预测领域，SAR目标检测引入稀疏专家混合架构，同时低空经济基础设施研究关注通信控制协同设计。不确定性量化与跨域泛化成为时空融合任务的关键技术方向。
-
-## ✨ 今日亮点
-
-- HighFM构建面向高频地球观测数据的基础模型，强化时空表征学习能力
-- Solar-VLM将多模态视觉语言模型引入光伏功率预测，实现跨模态能源时序建模
-- SARES-DEIM在SAR舰船检测中融合稀疏混合专家与DETR架构，提升复杂场景鲁棒性
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260405] HighFM: Towards a Foundation Model for Learning Representations from High-Frequency Earth Observation Data | Girtsou Stella, Alexis Konstantinos, Giannopoulos Giorgos, Kontoes Harris | HighFM针对高频卫星观测数据设计基础模型，学习细粒度时空表征以支撑下游遥感任务。 | [#276](https://github.com/thinson/RS-PaperClaw/issues/276) |
-| [20260405] Uncertainty-Aware Test-Time Adaptation for Cross-Region Spatio-Temporal Fusion of Land Surface Temperature | Bouaziz Sofiane, Hafiane Adel, Canals Raphael, Nedjai Rachid | 该研究提出不确定性感知的测试时自适应方法，解决地表温度跨区域时空融合中的域迁移问题。 | [#277](https://github.com/thinson/RS-PaperClaw/issues/277) |
-| [20260405] Solar-VLM: Multimodal Vision-Language Models for Augmented Solar Power Forecasting | Fan Hang, Pei Haoran, Liang Runze, Liu Weican, Cheng Long et al. | Solar-VLM整合视觉语言模型与多模态学习，增强光伏发电预测对气象条件的语义理解能力。 | [#278](https://github.com/thinson/RS-PaperClaw/issues/278) |
-| [20260405] SARES-DEIM: Sparse Mixture-of-Experts Meets DETR for Robust SAR Ship Detection | Song Fenghao, Yang Shaojing, Zhou Xi | SARES-DEIM将稀疏混合专家机制嵌入DETR检测框架，优化SAR图像舰船目标的复杂背景识别。 | [#279](https://github.com/thinson/RS-PaperClaw/issues/279) |
-| [20260405] UAV Control and Communication Enabled Low-Altitude Economy: Challenges, Resilient Architecture and Co-design Strategies | Liang Tianhao, Su Nanchi, Ping Yuqi, Lei Guangyu, Chen Xinglin et al. | 该综述探讨低空经济中无人机通信控制协同设计，提出韧性架构应对城市复杂环境挑战。 | [#280](https://github.com/thinson/RS-PaperClaw/issues/280) |
-
-## 🔎 观察
-
-- 遥感基础模型正从静态图像向高频时序数据演进，时序分辨率成为新的技术竞争维度
-- 视觉语言模型的跨域迁移能力使其成为连接遥感数据与专业应用（如能源、交通）的桥梁
 
 ---
 
