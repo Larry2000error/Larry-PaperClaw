@@ -2,6 +2,43 @@
 
 最近三天日报（最新在前）：
 
+# [20260410](./202604/20260410.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+
+今日遥感AI研究呈现三大趋势：一是多模态大模型基准测试成为热点，GeoMMBench与HM-Bench分别聚焦地学综合智能与高光谱理解；二是物理驱动与不确定性量化方法兴起，量子机器学习与物理信息神经网络进入水文建模；三是面向实际应用的自适应与轻量化技术持续发展，涵盖云分割域适应、无人机图像复原及全色锐化等方向。
+
+## ✨ 今日亮点
+
+- 量子物理信息神经网络实现水文PDE约束学习与固有不确定性量化
+- 多模态大模型基准双发：GeoMMBench覆盖地学综合任务，HM-Bench专攻高光谱理解
+- 低数据监督适应策略在域迁移云分割中超越提示学习方法
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260410] Variational Quantum Physics-Informed Neural Networks for Hydrological PDE-Constrained Learning with Inherent Uncertainty Quantification | Prasad Nimantha Madusanka Ukwatta Hewage, Chakkravarthy Midhun, Ruvan Kumara Abeysekara | 变分量子物理信息神经网络将量子电路与PINN结合，实现水文PDE约束学习并内嵌不确定性量化能力。 | [#311](https://github.com/thinson/RS-PaperClaw/issues/311) |
+| [20260410] GreenScatter: Through-Canopy Soil Moisture Sensing with UAV-Mounted Radar | Jacobs Luke, Aziz Ishfaq, Lu Benhao, Tabatabaeenejad Alireza, Alipour Mohamad et al. | GreenScatter利用无人机载雷达穿透植被冠层，基于辐射传输模型实现土壤湿度遥感反演。 | [#312](https://github.com/thinson/RS-PaperClaw/issues/312) |
+| [20260410] Compositional-Degradation UAV Image Restoration: Conditional Decoupled MoE Network and A Benchmark | Yan Jinquan, Zhao Zhicheng, Tu Zhengzheng, Li Chenglong, Tang Jin et al. | 提出条件解耦混合专家网络，针对无人机图像复合退化建立新基准与复原框架。 | [#313](https://github.com/thinson/RS-PaperClaw/issues/313) |
+| [20260410] Dynamic Class-Aware Active Learning for Unbiased Satellite Image Segmentation | Gadi Hemanth Kumar, Nambiar Athira, Bodani Pankaj | 动态类别感知主动学习策略，缓解卫星图像分割中的类别不平衡与标注偏差问题。 | [#314](https://github.com/thinson/RS-PaperClaw/issues/314) |
+| [20260410] Low-Data Supervised Adaptation Outperforms Prompting for Cloud Segmentation Under Domain Shift | Kethavath Harshith, Hu Weiming | 低数据量监督适应在域迁移云分割任务中表现优于视觉-语言模型提示工程。 | [#315](https://github.com/thinson/RS-PaperClaw/issues/315) |
+| [20260410] Fast Model-guided Instance-wise Adaptation Framework for Real-world Pansharpening with Fidelity Constraints | Yang Zhiqi, Xiao Jin-Liang, Yin Shan, Deng Liang-Jian, Vivone Gemine | 快速模型引导实例自适应框架，在保真约束下实现真实场景全色锐化零样本学习。 | [#316](https://github.com/thinson/RS-PaperClaw/issues/316) |
+| [20260410] GeoMMBench and GeoMMAgent: Toward Expert-Level Multimodal Intelligence in Geoscience and Remote Sensing | Xiao Aoran, Cheng Shihao, Xu Yonghao, Ren Yexian, Chen Hongruixuan et al. | GeoMMBench与GeoMMAgent构建地学遥感多模态大模型评测体系与专家级智能体。 | [#317](https://github.com/thinson/RS-PaperClaw/issues/317) |
+| [20260410] HM-Bench: A Comprehensive Benchmark for Multimodal Large Language Models in Hyperspectral Remote Sensing | Zhang Xinyu, Mai Zurong, Li Qingmei, Liao Zjin, Wen Yibin et al. | HM-Bench建立高光谱遥感多模态大语言模型综合评测基准，覆盖光谱-空间联合分析任务。 | [#318](https://github.com/thinson/RS-PaperClaw/issues/318) |
+
+## 🔎 观察
+
+- 多模态大模型基准建设呈现细分化趋势，从通用地学向高光谱等专业模态纵深发展，评测体系成熟度成为领域关键基础设施。
+- 物理约束与不确定性量化方法重新受到重视，量子计算与神经网络的交叉探索为水文等复杂系统建模提供新范式。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260408](./202604/20260408.md)
 ## 📌 今日概况
 
@@ -70,38 +107,6 @@ Powered by OpenClaw🦞
 
 - Mamba架构正快速渗透高光谱分析领域，其线性复杂度优势或重塑长序列光谱建模范式，但物理可解释性仍需验证。
 - LLM-as-Judge从NLP评估迁移至遥感分割质量判断，标志着遥感评价指标从像素精度向语义一致性跃迁，轻量化部署是关键瓶颈。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260406](./202604/20260406.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦空天信息智能处理与传输优化。三篇论文分别覆盖无人机实时深度估计、低轨卫星协同大模型推理及卫星移动性驱动的遥感数据分发，体现遥感AI向边缘智能、星上计算与高效通信融合发展的趋势。
-
-## ✨ 今日亮点
-
-- ZeD-MAP实现零样本深度估计与光束法平差结合，支撑无人机实时三维重建
-- 面向LEO星座的LLM协同推理框架，通过模型分割与流水线并行降低通信开销
-- OrbitTransit利用卫星轨道移动性优化遥感数据扩散，提升全球观测覆盖效率
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260406] ZeD-MAP: Bundle Adjustment Guided Zero-Shot Depth Maps for Real-Time Aerial Imaging | Selim Ahmet Iz, Nex Francesco, Kerle Norman, Meissner Henry, Berger Ralf | ZeD-MAP提出光束法平差引导的零样本深度估计方法，无需训练数据即可实现无人机实时 aerial imaging 三维建图。 | [#282](https://github.com/thinson/RS-PaperClaw/issues/282) |
-| [20260406] Communication-Efficient Collaborative LLM Inference over LEO Satellite Networks | Zhang Songge, Wu Wen, Li Liang, Wang Ye, Xuemin et al. | 该研究设计通信高效的协同LLM推理架构，通过模型切分与流水线并行适配低轨卫星网络带宽受限场景。 | [#283](https://github.com/thinson/RS-PaperClaw/issues/283) |
-| [20260406] OrbitTransit: Traffic Delivery and Diffusion for Earth Observation via Satellite Mobility | Zhao Haoyuan, Chen Long, Yi Ching Chou, Fang Hao, Liu Jiangchuan | OrbitTransit利用低轨卫星轨道移动性构建动态流量交付网络，优化地球观测数据的全球扩散与时效性。 | [#284](https://github.com/thinson/RS-PaperClaw/issues/284) |
-
-## 🔎 观察
-
-- 星载智能计算成为热点，LLM推理与深度估计等重型任务正向卫星边缘迁移，需平衡算力与能耗约束
-- 卫星网络研究从静态拓扑转向动态移动性利用，轨道预测驱动的数据路由或成下一代天基基础设施关键
 
 ---
 
