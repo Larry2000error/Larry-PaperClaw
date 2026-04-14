@@ -2,6 +2,45 @@
 
 最近三天日报（最新在前）：
 
+# [20260413](./202604/20260413.md)
+## 📌 今日概况
+
+今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 10 篇。
+
+今日遥感AI研究呈现多模态融合与效率优化双主线。Mamba架构、扩散模型与联邦学习等新兴技术持续渗透，视觉语言模型在变化检测与跨模态任务中表现活跃。同时，成本感知学习、无训练压缩及低空经济基础设施等应用导向研究凸显行业对实用化部署的迫切需求。
+
+## ✨ 今日亮点
+
+- Mamba多模态网络实现爆炸载荷下结构损伤快速评估，兼顾多尺度特征融合
+- HuiYanEarth-SAR基础模型以地理先验驱动高保真SAR图像低成本生成
+- 语义-几何双压缩策略实现超高分辨率遥感图像的无训练视觉令牌精简
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260413] A Mamba-Based Multimodal Network for Multiscale Blast-Induced Rapid Structural Damage Assessment | Ma Wanli, Selvakumaran Sivasakthy, Dain G. Farrimond, Adam A. Dennis, Samuel E. Rigby | 基于Mamba的多模态网络融合多源数据，实现爆炸载荷下结构损伤的快速多尺度评估。 | [#331](https://github.com/thinson/RS-PaperClaw/issues/331) |
+| [20260413] The Impact of Federated Learning on Distributed Remote Sensing Archives | Umashankar Anand, Tomotaki-Dawoud Karam, Schneider Nicolai | 探讨联邦学习在分布式遥感档案中的应用，针对Non-IID数据优化FedAvg与FedProx策略。 | [#332](https://github.com/thinson/RS-PaperClaw/issues/332) |
+| [20260413] HuiYanEarth-SAR: A Foundation Model for High-Fidelity and Low-Cost Global Remote Sensing Imagery Generation | Liu Yongxiang, Zhou Jie, Song Yafei, Liu Tianpeng, Liu Li | HuiYanEarth-SAR基础模型整合地理先验与散射机制，实现高保真低成本全球SAR图像生成。 | [#333](https://github.com/thinson/RS-PaperClaw/issues/333) |
+| [20260413] Observe Less, Understand More: Cost-aware Cross-scale Observation for Remote Sensing Understanding | Xie Zhenghao, Xiao Jing, Wang Zhenqi, Ma Kexin, Liao Liang et al. | 提出成本感知的跨尺度观测框架，以更少观测实现遥感理解任务的高效推理。 | [#334](https://github.com/thinson/RS-PaperClaw/issues/334) |
+| [20260413] Beyond Reconstruction: Reconstruction-to-Vector Diffusion for Hyperspectral Anomaly Detection | Xiang Jijun, Wang Jiayi, Wang Pengxiang, Chen Cheng, Wang Nian et al. | 重构至向量扩散模型突破传统重建范式，通过流形净化提升高光谱亚像素异常检测精度。 | [#335](https://github.com/thinson/RS-PaperClaw/issues/335) |
+| [20260413] Toward Environment-Aware LAE: SAR as a Shared Sensing Infrastructure | Zhang Xue, Huang Bang, Alouini Mohamed-Slim | 探讨SAR作为低空经济共享感知基础设施的环境感知潜力与应用架构。 | [#336](https://github.com/thinson/RS-PaperClaw/issues/336) |
+| [20260413] A Deep Equilibrium Network for Hyperspectral Unmixing | Wang Chentong, Gao Jincheng, Zhu Fei, Chen Jie | 深度均衡网络以隐式微分求解高光谱解混，联合光谱-空间特征实现丰度估计。 | [#337](https://github.com/thinson/RS-PaperClaw/issues/337) |
+| [20260413] Bridging the RGB-IR Gap: Consensus and Discrepancy Modeling for Text-Guided Multispectral Detection | Wu Jiaqi, Wang Zhen, Huang Enhao, Shen Kangqing, Wang Yulin et al. | 文本引导的多光谱检测框架建模RGB-IR共识与差异，弥合跨模态语义鸿沟。 | [#338](https://github.com/thinson/RS-PaperClaw/issues/338) |
+| [20260413] Seg2Change: Adapting Open-Vocabulary Semantic Segmentation Model for Remote Sensing Change Detection | Su You, Song Yonghong, Chen Jingqi, Wen Zehan | Seg2Change将开放词汇语义分割模型适配至遥感变化检测，拓展视觉语言模型应用边界。 | [#339](https://github.com/thinson/RS-PaperClaw/issues/339) |
+| [20260413] Semantic-Geometric Dual Compression: Training-Free Visual Token Reduction for Ultra-High-Resolution Remote Sensing Understanding | Li Yueying, Wang Fengxiang, Li Yan, Chen Mingshuo, Zhao Mengying et al. | 语义-几何双压缩策略无需训练即可削减超高分辨率遥感图像的视觉令牌，适配多模态大模型。 | [#340](https://github.com/thinson/RS-PaperClaw/issues/340) |
+
+## 🔎 观察
+
+- 视觉语言模型正从通用领域向遥感专用任务纵深渗透，开放词汇与变化检测的结合或成新范式。
+- 效率优化研究呈现分层态势：既有数据层面的成本感知采样，也有模型层面的令牌压缩与隐式网络设计。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260412](./202604/20260412.md)
 ## 📌 今日概况
 
@@ -61,43 +100,6 @@ Powered by OpenClaw🦞
 
 - 位置编码技术（ALiBi）正成为优化卫星影像多尺度处理的新切入点，或替代传统插值与金字塔结构。
 - 轻量化NAS与知识蒸馏的组合范式，反映出遥感模型从云端向边缘端部署的产业化需求加速显现。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260410](./202604/20260410.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
-
-今日遥感AI研究呈现三大趋势：一是多模态大模型基准测试成为热点，GeoMMBench与HM-Bench分别聚焦地理科学与高光谱领域；二是物理驱动与不确定性量化方法兴起，量子机器学习与物理信息神经网络进入水文建模；三是实用化技术持续深化，涵盖无人机图像修复、主动学习分割及域适应云检测等方向。
-
-## ✨ 今日亮点
-
-- 量子物理信息神经网络首次用于水文PDE约束学习，实现内嵌不确定性量化
-- GreenScatter突破植被覆盖区土壤水分探测难题，无人机雷达微波遥感新进展
-- 多模态大模型基准双发：GeoMMBench覆盖地理科学全领域，HM-Bench专攻高光谱
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260410] Variational Quantum Physics-Informed Neural Networks for Hydrological PDE-Constrained Learning with Inherent Uncertainty Quantification | Prasad Nimantha Madusanka Ukwatta Hewage, Chakkravarthy Midhun, Ruvan Kumara Abeysekara | 变分量子物理信息神经网络将量子机器学习引入水文偏微分方程约束学习，实现不确定性内嵌量化。 | [#311](https://github.com/thinson/RS-PaperClaw/issues/311) |
-| [20260410] GreenScatter: Through-Canopy Soil Moisture Sensing with UAV-Mounted Radar | Jacobs Luke, Aziz Ishfaq, Lu Benhao, Tabatabaeenejad Alireza, Alipour Mohamad et al. | GreenScatter利用无人机载雷达穿透植被冠层，创新解决覆盖区土壤水分微波遥感探测难题。 | [#312](https://github.com/thinson/RS-PaperClaw/issues/312) |
-| [20260410] Compositional-Degradation UAV Image Restoration: Conditional Decoupled MoE Network and A Benchmark | Yan Jinquan, Zhao Zhicheng, Tu Zhengzheng, Li Chenglong, Tang Jin et al. | 条件解耦混合专家网络针对无人机图像复合退化问题，构建多退化去除新基准。 | [#313](https://github.com/thinson/RS-PaperClaw/issues/313) |
-| [20260410] Dynamic Class-Aware Active Learning for Unbiased Satellite Image Segmentation | Gadi Hemanth Kumar, Nambiar Athira, Bodani Pankaj | 动态类别感知主动学习策略优化卫星图像分割标注效率，缓解类别不平衡与标注偏差。 | [#314](https://github.com/thinson/RS-PaperClaw/issues/314) |
-| [20260410] Low-Data Supervised Adaptation Outperforms Prompting for Cloud Segmentation Under Domain Shift | Kethavath Harshith, Hu Weiming | 低数据监督适应方法在域迁移云分割任务中超越提示工程，验证CLIP视觉语言模型微调潜力。 | [#315](https://github.com/thinson/RS-PaperClaw/issues/315) |
-| [20260410] Fast Model-guided Instance-wise Adaptation Framework for Real-world Pansharpening with Fidelity Constraints | Yang Zhiqi, Xiao Jin-Liang, Yin Shan, Deng Liang-Jian, Vivone Gemine | 模型引导的实例级快速适应框架实现零样本真实世界全色锐化，兼顾保真度约束与实时性。 | [#316](https://github.com/thinson/RS-PaperClaw/issues/316) |
-| [20260410] GeoMMBench and GeoMMAgent: Toward Expert-Level Multimodal Intelligence in Geoscience and Remote Sensing | Xiao Aoran, Cheng Shihao, Xu Yonghao, Ren Yexian, Chen Hongruixuan et al. | GeoMMBench与GeoMMAgent构建地理科学多模态大模型评测体系，推动专家级地学智能发展。 | [#317](https://github.com/thinson/RS-PaperClaw/issues/317) |
-| [20260410] HM-Bench: A Comprehensive Benchmark for Multimodal Large Language Models in Hyperspectral Remote Sensing | Zhang Xinyu, Mai Zurong, Li Qingmei, Liao Zjin, Wen Yibin et al. | HM-Bench建立高光谱遥感多模态大模型综合基准，系统评估光谱-空间联合理解能力。 | [#318](https://github.com/thinson/RS-PaperClaw/issues/318) |
-
-## 🔎 观察
-
-- 基准建设进入细分垂直领域：从通用遥感转向高光谱、地理科学等专业模态，评测维度更贴近实际应用需求
-- 物理约束与数据驱动融合加速：量子计算、物理信息神经网络等新型计算范式开始解决传统遥感反演中的不确定性难题
 
 ---
 
