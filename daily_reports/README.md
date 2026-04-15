@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260414](./202604/20260414.md)
+## 📌 今日概况
+
+今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究聚焦轻量化部署与智能系统协同。卫星图像在轨处理、多智能体事件检测、高光谱去噪等方向持续推进，同时农业遥感数据集建设与无人机应急通信网络成为应用热点，体现从算法优化到系统集成的全链条创新趋势。
+
+## ✨ 今日亮点
+
+- 轻量化学习网络实现卫星图像在轨实时修复，突破星载AI算力约束
+- 多智能体反馈系统融合时序变化检测与事件描述，提升遥感新闻自动化能力
+- 全球梯田地块多模态数据集发布，填补复杂地形农业遥感标注空白
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260414] Rethinking Satellite Image Restoration for Onboard AI: A Lightweight Learning-Based Approach | Dorise Adrien, Bellizzi Marjorie, Hlimi Omar | 提出轻量卷积网络架构，针对星载AI算力受限场景优化卫星图像复原任务。 | [#343](https://github.com/thinson/RS-PaperClaw/issues/343) |
+| [20260414] A Multi-Agent Feedback System for Detecting and Describing News Events in Satellite Imagery | Anderson Madeline, Klassen Mikhail, Hoover Ash, Cahoy Kerri | 构建多智能体协作框架，实现卫星影像新闻事件的自动检测与文本描述生成。 | [#344](https://github.com/thinson/RS-PaperClaw/issues/344) |
+| [20260414] Spatial-Spectral Adaptive Fidelity and Noise Prior Reduction Guided Hyperspectral Image Denoising | Xie Xuelin, Lu Xiliang, Wang Zhengshan, Zhang Yang, Chen Long | 设计空间-光谱自适应保真项与噪声先验降维机制，提升高光谱图像混合噪声去除效果。 | [#345](https://github.com/thinson/RS-PaperClaw/issues/345) |
+| [20260414] A Heterogeneous Dual-Network Framework for Emergency Delivery UAVs: Communication Assurance and Path Planning Coordination | Huang Ping, Duo Bin, Godfred Ziedor, Huo Liuwei, Ning Jin et al. | 开发异构双网络架构，协调应急物流无人机的通信保障与路径规划任务。 | [#346](https://github.com/thinson/RS-PaperClaw/issues/346) |
+| [20260414] GTPBD-MM: A Global Terraced Parcel and Boundary Dataset with Multi-Modality | Zhang Zhiwei, Zeng Xingyuan, Kong Xinkai, Zhang Kunquan, Liang Haoyuan et al. | 发布全球梯田地块边界多模态数据集，整合遥感影像与高程模型支持农业提取研究。 | [#347](https://github.com/thinson/RS-PaperClaw/issues/347) |
+
+## 🔎 观察
+
+- 星载AI轻量化与多智能体系统成为今日双主线，反映遥感智能从地面向在轨、从单模态向协同演进
+- 农业遥感数据集建设持续细化至梯田等特殊地形，显示下游应用场景对精细化标注的需求升级
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260413](./202604/20260413.md)
 ## 📌 今日概况
 
@@ -66,40 +100,6 @@ Powered by OpenClaw🦞
 
 - 视觉语言模型正从通用领域向遥感专用场景深度渗透，生成-检索范式转换或重塑跨模态检索技术路线
 - 主动感知与人机协同成为无人机导航新趋势，传统被动式状态估计向交互式智能控制演进
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260411](./202604/20260411.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究聚焦多模态融合与轻量化部署两大方向。Vision Transformer持续渗透卫星影像分析领域，涵盖多尺度表征、SAR-光学配准及高光谱甲烷检测等场景。同时，神经架构搜索与知识蒸馏推动边缘计算应用，红外超分辨率与跨模态匹配技术亦获关注。
-
-## ✨ 今日亮点
-
-- ALiBi位置编码优化多模态多尺度卫星影像表征学习
-- SatReg以回归驱动NAS实现轻量化卫星图像分割
-- EMIT高光谱数据结合深度学习实现全球甲烷点源监测
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260411] Multi-modal, multi-scale representation learning for satellite imagery analysis just needs a good ALiBi | Kage Patrick, Andreadis Pavlos | 提出基于ALiBi位置编码的多模态多尺度卫星影像表征学习方法，优化Vision Transformer处理多分辨率遥感数据的能力。 | [#321](https://github.com/thinson/RS-PaperClaw/issues/321) |
-| [20260411] SatReg: Regression-based Neural Architecture Search for Lightweight Satellite Image Segmentation | Humes Edward, Mohsenin Tinoosh | SatReg采用回归策略引导神经架构搜索，结合知识蒸馏构建轻量化卫星图像分割模型，适配边缘计算场景。 | [#322](https://github.com/thinson/RS-PaperClaw/issues/322) |
-| [20260411] Are Pretrained Image Matchers Good Enough for SAR-Optical Satellite Registration? | Corley Isaac, Stoken Alex, Berton Gabriele | 系统评估预训练图像匹配器在SAR-光学卫星配准中的零样本迁移能力，探讨跨模态遥感数据对齐的适用边界。 | [#323](https://github.com/thinson/RS-PaperClaw/issues/323) |
-| [20260411] Dual-Branch Remote Sensing Infrared Image Super-Resolution | Ge Xining, Chang Gengjia, Yuan Weijun, Li Zhan, Chen Zhanglu et al. | 设计双分支网络架构针对遥感红外图像超分辨率任务，强化热成像细节重建与空间信息恢复。 | [#324](https://github.com/thinson/RS-PaperClaw/issues/324) |
-| [20260411] Global monitoring of methane point sources using deep learning on hyperspectral radiance measurements from EMIT | Vishal V. Batchu, Conserva Michelangelo, Wilson Alex, Anna M. Michalak, Gulshan Varun et al. | 基于EMIT高光谱辐亮度测量数据，利用深度学习与Vision Transformer实现全球尺度甲烷点源排放的自动化监测。 | [#325](https://github.com/thinson/RS-PaperClaw/issues/325) |
-
-## 🔎 观察
-
-- 位置编码技术正成为提升遥感Transformer多尺度处理能力的关键切入点，ALiBi等方案或逐步替代传统方法。
-- 轻量化与边缘部署需求驱动NAS-知识蒸馏联合优化范式兴起，模型效率与任务精度的平衡设计趋于精细化。
 
 ---
 
