@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260415](./202604/20260415.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究呈现两大主线：一是多模态大语言模型与视觉-语言模型的深度融合，覆盖无人机导航、变化检测理解及超高分辨率图像分析；二是面向实际部署的效率优化，包括扩散模型纹理感知超分与早期退出机制的轻量化网络。研究趋势显示，领域正从单一任务优化转向复杂场景理解与边缘计算适配并重。
+
+## ✨ 今日亮点
+
+- 视觉-语言导航为无人机具身智能开辟新路径，需统筹感知-推理-行动闭环
+- 多模态大模型统一遥感变化检测与理解，推动时序推理向开放式问答演进
+- 预算感知令牌压缩技术破解超高分辨率遥感图像的视觉-语言建模瓶颈
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260415] Vision-and-Language Navigation for UAVs: Progress, Challenges, and a Research Roadmap | Chen Hanxuan, Zheng Jie, Yang Siqi, Zeng Tianle, Feng Siwei et al. | 系统综述无人机视觉-语言导航进展，提出融合视觉-语言-动作模型的研究路线图。 | [#172](https://github.com/thinson/RS-PaperClaw/issues/172) |
+| [20260415] Decoding the Delta: Unifying Remote Sensing Change Detection and Understanding with Multimodal Large Language Models | Li Xiaohe, Li Jiahao, Zhang Kaixin, Fang Yuqiang, Lin Leilei et al. | 构建多模态大语言模型统一框架，实现遥感变化检测与高层语义理解的联合推理。 | [#350](https://github.com/thinson/RS-PaperClaw/issues/350) |
+| [20260415] Remote Sensing Image Super-Resolution for Imbalanced Textures: A Texture-Aware Diffusion Framework | Zhang Enzhuo, Zhao Sijie, Muhtar Dilxat, Li Zhenshi, Zhang Xueliang et al. | 提出纹理感知扩散框架，针对遥感图像超分辨率中的纹理不平衡问题优化生成质量。 | [#351](https://github.com/thinson/RS-PaperClaw/issues/351) |
+| [20260415] Early Exiting U-Net for Efficient Processing on UAVs: A Case Study in Environmental Monitoring | Luca Sartori Boni, Moursi Mohamed, Wehn Norbert, Hammoud Bilal | 设计早期退出U-Net架构，在溢油检测等环境监测任务中平衡无人机端侧精度与效率。 | [#352](https://github.com/thinson/RS-PaperClaw/issues/352) |
+| [20260415] UHR-BAT: Budget-Aware Token Compression Vision-Language model for Ultra-High-Resolution Remote Sensing | Dang Yunkai, Dai Minxin, Yang Yuekun, Li Zhangnan, Li Wenbin et al. | 开发预算感知令牌压缩视觉-语言模型，降低超高分辨率遥感图像的计算与存储开销。 | [#353](https://github.com/thinson/RS-PaperClaw/issues/353) |
+
+## 🔎 观察
+
+- 视觉-语言模型正从静态图像理解向动态环境交互延伸，无人机导航成为具身智能落地遥感的关键场景。
+- 令牌压缩与早期退出等技术密集涌现，反映遥感AI研究重心逐步从实验室精度竞赛转向真实部署成本约束。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260414](./202604/20260414.md)
 ## 📌 今日概况
 
@@ -67,39 +101,6 @@ Powered by OpenClaw🦞
 
 - 视觉-语言模型正从通用分割向遥感专属任务（变化检测、多光谱对齐）纵深渗透，零样本能力成为关键诉求。
 - 高分辨率遥感数据的计算瓶颈催生效率导向研究，成本感知采样与令牌压缩或成未来部署标配。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260412](./202604/20260412.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦多模态大模型与基础模型创新。视觉语言模型在地理定位任务中实现生成器向检索器的范式转换，遥感基础模型探索语义 grounding 新路径。同时，多光谱融合与主动式激光雷达-惯性里程计等方向亦有进展，体现从数据融合到智能交互的技术纵深。
-
-## ✨ 今日亮点
-
-- MLLM解锁自然语言引导的地理定位，通过参数高效微调实现生成到检索的范式跃迁
-- GeoMeld构建语义 grounded 的遥感基础模型，推进多模态对比学习与地理空间AI融合
-- CoFusion提出光谱坐标注意力机制，实现多光谱与高光谱图像的高效融合
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260412] Turning Generators into Retrievers: Unlocking MLLMs for Natural Language-Guided Geo-Localization | Chen Yuqi, Zhang Xiaohan, Arrabi Ahmad, Sultani Waqas, Chen Chen et al. | Chen等提出将多模态大语言模型从生成器转化为检索器，通过参数高效微调实现自然语言引导的地理定位。 | [#327](https://github.com/thinson/RS-PaperClaw/issues/327) |
-| [20260412] GeoMeld: Toward Semantically Grounded Foundation Models for Remote Sensing | Hasan Maram, Md Aminur Hossain, Roy Savitra, Bhowmik Souparna, Ayush V. Patel et al. | Hasan等构建GeoMeld框架，通过语义 grounding 与对比学习增强遥感基础模型的多模态表征能力。 | [#328](https://github.com/thinson/RS-PaperClaw/issues/328) |
-| [20260412] CoFusion: Multispectral and Hyperspectral Image Fusion via Spectral Coordinate Attention | Li Baisong | Li提出CoFusion方法，利用光谱坐标注意力机制实现多光谱与高光谱图像的多尺度空谱协同融合。 | [#329](https://github.com/thinson/RS-PaperClaw/issues/329) |
-| [20260412] AWARE: Adaptive Whole-body Active Rotating Control for Enhanced LiDAR-Inertial Odometry under Human-in-the-Loop Interaction | Zhang Yizhe, Li Jianping, Yin Liangliang, Dong Zhen, Yang Bisheng | Zhang等设计AWARE系统，通过人在回路交互实现无人机全身体主动旋转控制以增强激光雷达-惯性里程计。 | [#342](https://github.com/thinson/RS-PaperClaw/issues/342) |
-
-## 🔎 观察
-
-- 视觉语言模型正从通用领域向遥感专用场景深度渗透，生成-检索范式转换或重塑跨模态检索技术路线
-- 主动感知与人机协同成为无人机导航新趋势，传统被动式状态估计向交互式智能控制演进
 
 ---
 
