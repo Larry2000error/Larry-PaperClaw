@@ -2,6 +2,42 @@
 
 最近三天日报（最新在前）：
 
+# [20260416](./202604/20260416.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日遥感AI研究呈现多模态融合与基础模型适配两大主线。视觉-音频跨模态生成、SAM架构专家化改造、以及物理可解释对抗攻击成为亮点，同时低光照/雾霾等恶劣条件下的鲁棒性研究持续受到关注，数据集建设向标准化森林 inventory 拓展。
+
+## ✨ 今日亮点
+
+- Geo2Sound首次实现卫星影像到地理对齐声景的跨模态生成
+- WILD-SAM将SAM适配至InSAR相位数据，专家混合架构提升滑坡检测
+- Physically-Induced攻击方法融合大气物理模型增强迁移性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 一句话概括 | Issue |
+|---|---|---|---|
+| [20260416] Building Extraction from Remote Sensing Imagery under Hazy and Low-light Conditions: Benchmark and Baseline | Sang Feifei, Lu Wei, Chen Hongruixuan, Chen Sibao, Luo Bin | 构建雾霾与低光照条件下的建筑提取基准数据集，填补恶劣环境遥感解译评估空白。 | [#355](https://github.com/thinson/RS-PaperClaw/issues/355) |
+| [20260416] OmniGCD: Abstracting Generalized Category Discovery for Modality Agnosticism | Shipard Jordan, Wiliem Arnold, Kien Nguyen Thanh, Xiang Wei, Fookes Clinton | 提出模态无关的广义类别发现框架，统一处理图像、文本、点云等多模态零样本识别。 | [#356](https://github.com/thinson/RS-PaperClaw/issues/356) |
+| [20260416] Geo2Sound: A Scalable Geo-Aligned Framework for Soundscape Generation from Satellite Imagery | Wu Kunlin, Wang Yanning, Tan Haofeng, Chen Boyi, Fei Teng et al. | Geo2Sound建立卫星影像-声景地理对齐生成框架，实现可扩展的跨模态环境声学合成。 | [#357](https://github.com/thinson/RS-PaperClaw/issues/357) |
+| [20260416] Physically-Induced Atmospheric Adversarial Perturbations: Enhancing Transferability and Robustness in Remote Sensing Image Classification | Zhuang Weiwei, Xie Wangze, Zhang Qi, Du Xia, Lin Zihan et al. | 基于大气散射物理模型生成对抗扰动，提升遥感图像分类攻击的迁移性与鲁棒性。 | [#358](https://github.com/thinson/RS-PaperClaw/issues/358) |
+| [20260416] A multi-platform LiDAR dataset for standardized forest inventory measurement at long term ecological monitoring sites | Michael R. Chang, Candotti Anna, Karl von Ellenrieder, Tomelleri Enrico, Camurri Marco | 发布多平台激光雷达标准化数据集，覆盖无人机、地面与移动扫描的森林长期生态监测。 | [#359](https://github.com/thinson/RS-PaperClaw/issues/359) |
+| [20260416] MapSR: Prompt-Driven Land Cover Map Super-Resolution via Vision Foundation Models | Wang Ruiqi, Yu Qi, Ma Jie, Wu Hanlin | MapSR利用视觉基础模型与文本提示驱动，实现弱监督条件下的土地覆盖图超分辨率重建。 | [#360](https://github.com/thinson/RS-PaperClaw/issues/360) |
+| [20260416] WILD-SAM: Phase-Aware Expert Adaptation of SAM for Landslide Detection in Wrapped InSAR Interferograms | Pan Yucheng, Li Heping, Liu Zhangle, Hussain Sajid, Pan Bin | WILD-SAM设计相位感知专家适配机制，将SAM扩展至缠绕InSAR干涉图的滑坡检测任务。 | [#361](https://github.com/thinson/RS-PaperClaw/issues/361) |
+
+## 🔎 观察
+
+- SAM架构正从通用分割向垂直领域深度适配，相位感知专家化改造显示基础模型专业化趋势。
+- 物理可解释性与对抗安全性的结合成为新方向，大气模型驱动的攻击方法兼顾真实性与迁移性。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260415](./202604/20260415.md)
 ## 📌 今日概况
 
@@ -63,44 +99,6 @@ Powered by OpenClaw🦞
 
 - 星载边缘智能成为新焦点，轻量化设计从模型压缩转向任务特定的网络架构重构。
 - 多智能体架构开始渗透遥感解译流程，人机协作范式或重塑卫星影像信息提取模式。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260413](./202604/20260413.md)
-## 📌 今日概况
-
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 9 篇；最终纳入日报 9 篇。
-
-今日遥感AI研究呈现多模态融合与效率优化双主线。Mamba架构、扩散模型与联邦学习等新兴技术持续渗透，视觉-语言模型向变化检测、多光谱理解等任务延伸。同时，成本感知采样、无训练视觉令牌压缩等方向凸显对高分辨率数据高效处理的迫切需求。
-
-## ✨ 今日亮点
-
-- Mamba架构首次应用于爆炸冲击多尺度结构损伤评估，融合多模态数据实现快速诊断
-- HuiYanEarth-SAR构建SAR基础模型，利用地理先验与散射机制实现高保真低成本影像生成
-- Seg2Change将开放词汇语义分割适配于遥感变化检测，拓展视觉-语言模型应用边界
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260413] A Mamba-Based Multimodal Network for Multiscale Blast-Induced Rapid Structural Damage Assessment | Ma Wanli, Selvakumaran Sivasakthy, Dain G. Farrimond, Adam A. Dennis, Samuel E. Rigby | 提出基于Mamba的多模态网络，融合多源数据实现爆炸荷载下结构损伤的多尺度快速评估。 | [#331](https://github.com/thinson/RS-PaperClaw/issues/331) |
-| [20260413] The Impact of Federated Learning on Distributed Remote Sensing Archives | Umashankar Anand, Tomotaki-Dawoud Karam, Schneider Nicolai | 探讨联邦学习在非独立同分布遥感数据上的应用，对比FedAvg与FedProx的分布式归档性能。 | [#332](https://github.com/thinson/RS-PaperClaw/issues/332) |
-| [20260413] HuiYanEarth-SAR: A Foundation Model for High-Fidelity and Low-Cost Global Remote Sensing Imagery Generation | Liu Yongxiang, Zhou Jie, Song Yafei, Liu Tianpeng, Liu Li | 构建HuiYanEarth-SAR基础模型，结合地理先验与散射机制实现全球高保真低成本SAR影像生成。 | [#333](https://github.com/thinson/RS-PaperClaw/issues/333) |
-| [20260413] Observe Less, Understand More: Cost-aware Cross-scale Observation for Remote Sensing Understanding | Xie Zhenghao, Xiao Jing, Wang Zhenqi, Ma Kexin, Liao Liang et al. | 提出成本感知的跨尺度观测框架，以更少观测实现高分辨率遥感理解，优化采样效率。 | [#334](https://github.com/thinson/RS-PaperClaw/issues/334) |
-| [20260413] Beyond Reconstruction: Reconstruction-to-Vector Diffusion for Hyperspectral Anomaly Detection | Xiang Jijun, Wang Jiayi, Wang Pengxiang, Chen Cheng, Wang Nian et al. | 设计重建到向量的扩散范式，通过流形净化提升高光谱异常检测的亚像元识别能力。 | [#335](https://github.com/thinson/RS-PaperClaw/issues/335) |
-| [20260413] A Deep Equilibrium Network for Hyperspectral Unmixing | Wang Chentong, Gao Jincheng, Zhu Fei, Chen Jie | 构建深度均衡网络用于高光谱解混，以隐式微分联合建模光谱-空间特征与丰度估计。 | [#337](https://github.com/thinson/RS-PaperClaw/issues/337) |
-| [20260413] Bridging the RGB-IR Gap: Consensus and Discrepancy Modeling for Text-Guided Multispectral Detection | Wu Jiaqi, Wang Zhen, Huang Enhao, Shen Kangqing, Wang Yulin et al. | 建立RGB-IR共识与差异建模框架，以文本引导弥合跨模态语义鸿沟实现多光谱检测。 | [#338](https://github.com/thinson/RS-PaperClaw/issues/338) |
-| [20260413] Seg2Change: Adapting Open-Vocabulary Semantic Segmentation Model for Remote Sensing Change Detection | Su You, Song Yonghong, Chen Jingqi, Wen Zehan | 将开放词汇语义分割模型适配于遥感变化检测，实现无需特定训练的灵活语义迁移。 | [#339](https://github.com/thinson/RS-PaperClaw/issues/339) |
-| [20260413] Semantic-Geometric Dual Compression: Training-Free Visual Token Reduction for Ultra-High-Resolution Remote Sensing Understanding | Li Yueying, Wang Fengxiang, Li Yan, Chen Mingshuo, Zhao Mengying et al. | 提出语义-几何双重压缩策略，无训练减少视觉令牌以支撑超高分辨率遥感理解。 | [#340](https://github.com/thinson/RS-PaperClaw/issues/340) |
-
-## 🔎 观察
-
-- 视觉-语言模型正从通用分割向遥感专属任务（变化检测、多光谱对齐）纵深渗透，零样本能力成为关键诉求。
-- 高分辨率遥感数据的计算瓶颈催生效率导向研究，成本感知采样与令牌压缩或成未来部署标配。
 
 ---
 
