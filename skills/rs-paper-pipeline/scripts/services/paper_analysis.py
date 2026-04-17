@@ -177,6 +177,77 @@ def extract_institutions_from_first_page(title: str, authors: str, first_page_te
     return "；".join(institutions)
 
 
+def extract_abstract_from_pdf_text(pdf_text: str) -> str:
+    text = (pdf_text or "").replace("\r\n", "\n")
+    match = re.search(
+        r"(?is)\babstract\b[:\s]*([\s\S]*?)(?=\n\s*(?:keywords?|index terms|1[\.\s]+introduction|introduction)\b)",
+        text,
+    )
+    if not match:
+        return ""
+    abstract = re.sub(r"\s+", " ", match.group(1)).strip(" -")
+    return abstract
+
+
+def recover_metadata_from_pdf(title: str, authors: str, abstract_en: str, first_page_text: str, pdf_text: str) -> dict[str, str]:
+    safe_title = "" if has_bad_placeholder(title) else (title or "").strip()
+    safe_authors = "" if has_bad_placeholder(authors) else (authors or "").strip()
+    safe_abstract = "" if has_bad_placeholder(abstract_en) else (abstract_en or "").strip()
+    recovered = {
+        "title": safe_title,
+        "authors": safe_authors,
+        "abstract_en": safe_abstract,
+    }
+    first_page_compact = "\n".join(
+        re.sub(r"\s+", " ", line).strip()
+        for line in (first_page_text or "").splitlines()
+        if re.sub(r"\s+", " ", line).strip()
+    )
+
+    if not recovered["abstract_en"]:
+        recovered["abstract_en"] = extract_abstract_from_pdf_text(pdf_text)
+
+    if recovered["title"] and recovered["authors"] and recovered["abstract_en"]:
+        return recovered
+
+    prompt = (
+        "你是学术论文元信息抽取助手。请根据论文首页文本和正文片段，提取标题、作者、英文摘要。\n"
+        "要求：\n"
+        "1. 返回严格 JSON：{\"title\":\"...\",\"authors\":[\"...\"],\"abstract_en\":\"...\"}\n"
+        "2. authors 必须是作者姓名数组，不要单位、邮箱、脚注编号；\n"
+        "3. 如果某项无法可靠提取，对应值返回空字符串或空数组，不要猜测；\n"
+        "4. 不要输出 JSON 以外的内容。\n\n"
+        f"首页文本：\n{first_page_compact[:4000]}\n\n"
+        f"正文片段：\n{(pdf_text or '')[:6000]}"
+    )
+    output = (call_llm(prompt, max_tokens=800, timeout=120) or "").strip()
+    match = re.search(r"\{[\s\S]*\}", output)
+    if not match:
+        return recovered
+
+    try:
+        data = json.loads(match.group(0))
+    except Exception:
+        return recovered
+
+    title_candidate = str(data.get("title", "")).strip()
+    authors_candidate = data.get("authors", [])
+    abstract_candidate = str(data.get("abstract_en", "")).strip()
+
+    if not recovered["title"] and title_candidate and title_candidate.lower() != "unknown":
+        recovered["title"] = title_candidate
+    if not recovered["authors"] and isinstance(authors_candidate, list):
+        from clients.arxiv_client import format_authors
+
+        formatted_authors = format_authors([str(item) for item in authors_candidate if isinstance(item, str)])
+        if formatted_authors and not has_bad_placeholder(formatted_authors):
+            recovered["authors"] = formatted_authors
+    if not recovered["abstract_en"] and abstract_candidate:
+        recovered["abstract_en"] = abstract_candidate
+
+    return recovered
+
+
 def summarize_paper(title: str, authors: str, abstract_en: str, pdf_text: str, retry_logger=None) -> dict:
     template = load_prompt("summarize_prompt.md")
     base_prompt = template.replace("{title}", title).replace("{authors}", authors)

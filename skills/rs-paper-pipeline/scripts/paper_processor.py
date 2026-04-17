@@ -22,6 +22,7 @@ from services.paper_analysis import (
     format_answer_md,
     generate_tldr,
     quality_gate,
+    recover_metadata_from_pdf,
     summarize_paper,
     translate_text,
 )
@@ -107,6 +108,31 @@ def process_paper(arxiv_id: str, issue_number: int | None = None, dry_run: bool 
         except Exception:
             pass
 
+    pdf_text = ""
+    if pdf_path and pdf_path.exists():
+        try:
+            result = subprocess.run(
+                ["pdftotext", "-layout", "-f", "1", "-l", "30", str(pdf_path), "-"],
+                capture_output=True,
+                text=True,
+                timeout=60,
+            )
+            pdf_text = result.stdout if result.returncode == 0 else ""
+        except Exception:
+            pass
+
+    recovered = recover_metadata_from_pdf(
+        info.get("title", ""),
+        info.get("authors", ""),
+        info.get("abstract_en", ""),
+        first_page_text,
+        pdf_text,
+    )
+    info["title"] = recovered["title"] or info.get("title", "")
+    info["authors"] = recovered["authors"] or info.get("authors", "")
+    info["abstract_en"] = recovered["abstract_en"] or info.get("abstract_en", "")
+    log_step("STEP-1", "OK", f"recovered_title={info['title'][:40]} | recovered_authors={info['authors'][:30]}")
+
     info["institutions"] = extract_institutions_from_first_page(info["title"], info["authors"], first_page_text)
     log_step("STEP-1", "OK", f"institutions={info['institutions'][:60] if info['institutions'] else 'EMPTY'}")
 
@@ -123,16 +149,6 @@ def process_paper(arxiv_id: str, issue_number: int | None = None, dry_run: bool 
     log_step("STEP-3", "OK", f"top5_tags={tags}")
 
     log_step("STEP-4", "RUNNING", "LLM 总结")
-    
-    # 提取 PDF 文本
-    pdf_text = ""
-    if pdf_path and pdf_path.exists():
-        try:
-            result = subprocess.run(["pdftotext", "-layout", "-f", "1", "-l", "30", str(pdf_path), "-"], 
-                                   capture_output=True, text=True, timeout=60)
-            pdf_text = result.stdout if result.returncode == 0 else ""
-        except:
-            pass
     
     # 调用 LLM 总结
     analysis = summarize_paper(info['title'], info['authors'], info['abstract_en'], pdf_text, retry_logger=log_step)
