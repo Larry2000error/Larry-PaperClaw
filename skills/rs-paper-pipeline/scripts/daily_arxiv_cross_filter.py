@@ -13,11 +13,11 @@ from datetime import datetime
 from pathlib import Path
 
 from clients.arxiv_client import fetch_recent_candidates, has_remote_sensing_signal
-from clients.github_ops import load_existing_arxiv_ids
 from clients.llm_client import call_llm
 from paper_processor import process_paper
 from pipeline_config import get_repo, load_config
 from services.filter_assets import load_ai_signal_patterns, render_filter_prompt
+from services.digest_builder import extract_author, extract_institution, is_invalid_digest_field
 
 CONFIG = load_config()
 AI_MATCH_PATTERNS = load_ai_signal_patterns()
@@ -80,6 +80,28 @@ def compact_item(item: dict[str, str]) -> dict[str, str]:
     }
 
 
+def issue_has_valid_metadata(issue) -> bool:
+    body = issue.body or ""
+    authors = extract_author(body)
+    institution = extract_institution(body)
+    return (
+        not is_invalid_digest_field(authors)
+        and "et al." not in authors
+        and not is_invalid_digest_field(institution)
+    )
+
+
+def load_existing_issue_map(repo) -> dict[str, object]:
+    issue_map: dict[str, object] = {}
+    for issue in repo.get_issues(state="all"):
+        body = issue.body or ""
+        match = re.search(r"arxiv\.org/abs/([^\)\s]+)", body)
+        if not match:
+            continue
+        issue_map[match.group(1).strip()] = issue
+    return issue_map
+
+
 def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: str | None = None):
     if not CONFIG.github_token:
         raise RuntimeError("Missing required environment variable: GITHUB_TOKEN")
@@ -103,25 +125,48 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
     print(f"  入选数: {selected_count}")
 
     print("[3/5] 读取 issue 去重...")
-    existing = load_existing_arxiv_ids(repo)
-    todo = [x for x in selected if x["arxiv_id"] not in existing]
-    existing_count = len(selected) - len(todo)
+    existing_issue_map = load_existing_issue_map(repo)
+    todo = []
+    keep = []
+    refresh = []
+    for item in selected:
+        issue = existing_issue_map.get(item["arxiv_id"])
+        if issue is None:
+            todo.append({"candidate": item, "issue_number": None, "reason": "missing"})
+            continue
+        if issue_has_valid_metadata(issue):
+            keep.append(item)
+        else:
+            refresh.append(item)
+            todo.append({"candidate": item, "issue_number": issue.number, "reason": "stale_metadata"})
+
+    existing_count = len(keep)
+    refresh_count = len(refresh)
     todo_count = len(todo)
-    print(f"  已存在: {existing_count}，待处理: {todo_count}")
+    print(f"  已合格: {existing_count}，待刷新: {refresh_count}，待处理总数: {todo_count}")
 
     stats = {
         "date": target_date or datetime.now().strftime("%Y%m%d"),
         "candidate_count": cand_count,
         "llm_selected_count": selected_count,
         "existing_count": existing_count,
+        "refresh_count": refresh_count,
         "todo_count": todo_count,
         "candidate_arxiv_ids": [x["arxiv_id"] for x in cands],
         "selected_arxiv_ids": [x["arxiv_id"] for x in selected],
-        "existing_arxiv_ids": [x["arxiv_id"] for x in selected if x["arxiv_id"] in existing],
-        "todo_arxiv_ids": [x["arxiv_id"] for x in todo],
+        "existing_arxiv_ids": [x["arxiv_id"] for x in keep],
+        "refresh_arxiv_ids": [x["arxiv_id"] for x in refresh],
+        "todo_arxiv_ids": [x["candidate"]["arxiv_id"] for x in todo],
         "candidate_items": [compact_item(x) for x in cands],
         "selected_items": [compact_item(x) for x in selected],
-        "todo_items": [compact_item(x) for x in todo],
+        "todo_items": [
+            {
+                **compact_item(x["candidate"]),
+                "issue_number": x["issue_number"],
+                "reason": x["reason"],
+            }
+            for x in todo
+        ],
     }
     if stats_out:
         Path(stats_out).parent.mkdir(parents=True, exist_ok=True)
@@ -130,15 +175,19 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
     if dry_run:
         print("[DRY RUN] 列表如下:")
         for x in todo:
-            print(f"  - {x['arxiv_id']} | {x['published']} | {x['title'][:90]}")
+            item = x["candidate"]
+            print(
+                f"  - {item['arxiv_id']} | {item['published']} | issue={x['issue_number'] or '-'} | "
+                f"reason={x['reason']} | {item['title'][:90]}"
+            )
         return
 
     print("[4/5] 提交 issue（不重复）...")
-    for x in todo:
-        aid = x["arxiv_id"]
-        print(f"  -> 处理 {aid}")
-        # 未指定 issue_number 时，process_paper 会按标题匹配更新；匹配不到则失败（当前 Phase1 策略）
-        process_paper(aid, issue_number=None)
+    for task in todo:
+        aid = task["candidate"]["arxiv_id"]
+        issue_number = task["issue_number"]
+        print(f"  -> 处理 {aid} | issue={issue_number or '-'} | reason={task['reason']}")
+        process_paper(aid, issue_number=issue_number)
 
     print("[5/5] 完成")
 
