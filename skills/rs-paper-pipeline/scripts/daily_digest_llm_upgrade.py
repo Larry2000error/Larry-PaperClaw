@@ -8,19 +8,29 @@ from collections import defaultdict
 from pathlib import Path
 
 from pipeline_config import get_repo, load_config
-from services.digest_builder import build_digest_with_llm, extract_paper_date
+from services.digest_builder import build_digest_with_llm, extract_paper_date, validate_papers_for_digest
 
 CONFIG = load_config()
 
 
+def issue_data(issue) -> dict:
+    return getattr(issue, "_rawData", None) or {}
+
+
 def extract_arxiv_id(issue: dict) -> str | None:
-    body = issue.get("body") or ""
+    body = (issue or {}).get("body") or ""
     match = re.search(r"arxiv\.org/abs/([^\)\s]+)", body)
     return match.group(1).strip() if match else None
 
 
 def load_open_issues(repo):
-    return [i for i in repo.get_issues(state="open") if "pull_request" not in i.raw_data]
+    issues = []
+    for issue in repo.get_issues(state="open"):
+        raw_data = getattr(issue, "_rawData", None) or {}
+        if "pull_request" in raw_data:
+            continue
+        issues.append(issue)
+    return issues
 
 
 def collect_papers_by_date(issues):
@@ -28,11 +38,12 @@ def collect_papers_by_date(issues):
     digest_issue_by_date = {}
 
     for it in issues:
-        t = it.title
+        raw = issue_data(it)
+        t = raw.get("title") or it.title
         if "日报" not in t:
-            paper_date = extract_paper_date(it.raw_data)
+            paper_date = extract_paper_date(raw)
             if paper_date:
-                paper_by_date[paper_date].append(it.raw_data)
+                paper_by_date[paper_date].append(raw)
         dm = re.search(r"日报\s*(\d{8})", t)
         if dm:
             digest_issue_by_date[dm.group(1)] = it
@@ -53,11 +64,13 @@ def collect_expected_papers(repo, date: str, expected_arxiv_ids: list[str], retr
         matched = []
         found_ids = set()
         for issue in issues:
-            if "日报" in issue.title:
+            raw = issue_data(issue)
+            title = raw.get("title") or issue.title
+            if "日报" in title:
                 continue
-            aid = extract_arxiv_id(issue.raw_data)
+            aid = extract_arxiv_id(raw)
             if aid in expected:
-                matched.append(issue.raw_data)
+                matched.append(raw)
                 found_ids.add(aid)
         if found_ids == expected:
             return sorted(matched, key=lambda x: x["number"])
@@ -105,6 +118,11 @@ def main(target_date: str | None = None, stats_json: str | None = None):
         if stats_map.get(date):
             expected_ids = stats_map[date].get("selected_arxiv_ids") or []
         papers = collect_expected_papers(repo, date, expected_ids) if expected_ids else sorted(paper_by_date[date], key=lambda x: x["number"])
+        validation_errors = validate_papers_for_digest(papers)
+        if validation_errors:
+            raise RuntimeError(
+                f"digest paper validation failed for {date}: " + " | ".join(validation_errors[:8])
+            )
         md = build_digest_with_llm(
             date,
             papers,

@@ -12,6 +12,29 @@ def extract_author(body: str) -> str:
     return match.group(1).strip() if match else "-"
 
 
+def extract_institution(body: str) -> str:
+    match = re.search(r"\| \*\*(?:单位|机构)\*\* \|([^|]+)\|", body or "")
+    return match.group(1).strip() if match else "-"
+
+
+def is_invalid_digest_field(value: str) -> bool:
+    normalized = (value or "").strip()
+    return normalized in {"", "-", "待提取", "未知", "Unknown", "N/A"}
+
+
+def validate_papers_for_digest(papers: list[dict]) -> list[str]:
+    errors: list[str] = []
+    for paper in papers:
+        title = extract_report_title(paper)
+        authors = extract_author(paper.get("body") or "")
+        institution = extract_institution(paper.get("body") or "")
+        if is_invalid_digest_field(authors) or "et al." in authors:
+            errors.append(f"{title}: 作者信息不合格")
+        if is_invalid_digest_field(institution):
+            errors.append(f"{title}: 单位信息不合格")
+    return errors
+
+
 def extract_report_title(issue: dict) -> str:
     body = issue.get("body") or ""
     match = re.search(r"^#\s*\[(\d{8})\]\s+(.+)$", body, re.MULTILINE)
@@ -45,6 +68,7 @@ def build_digest_with_llm(date: str, papers: list, stats: dict | None = None) ->
                 "issue": paper["number"],
                 "title": extract_report_title(paper),
                 "authors": extract_author(paper.get("body") or ""),
+                "institution": extract_institution(paper.get("body") or ""),
                 "labels": labels,
                 "url": paper["html_url"],
             }
@@ -101,12 +125,14 @@ def build_digest_with_llm(date: str, papers: list, stats: dict | None = None) ->
             lines.append(f"- {highlight}")
         lines.append("")
 
-    lines += ["## 🗂 今日文章列表", "", "| 标题 | 作者 | 一句话概括 | Issue |", "|---|---|---|---|"]
+    lines += ["## 🗂 今日文章列表", "", "| 标题 | 作者 | 单位 | 一句话概括 | Issue |", "|---|---|---|---|---|"]
     for i, paper in enumerate(items, 1):
         summary = one_liners.get(i) or (
             f"聚焦{('、'.join(paper['labels'][:2]) if paper['labels'] else '遥感AI方法')}，给出可复现的模型与评测方案。"
         )
-        lines.append(f"| {paper['title']} | {paper['authors']} | {summary} | [#{paper['issue']}]({paper['url']}) |")
+        lines.append(
+            f"| {paper['title']} | {paper['authors']} | {paper['institution']} | {summary} | [#{paper['issue']}]({paper['url']}) |"
+        )
 
     observations = data.get("observations") or [
         "基础模型与遥感任务结合持续增强，评测与推理能力成为关键。",

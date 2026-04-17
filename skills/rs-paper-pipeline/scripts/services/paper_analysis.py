@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import json
 import re
 
 from clients.llm_client import call_llm, load_prompt
@@ -47,6 +48,8 @@ def quality_gate(info: dict, analysis: dict, abstract_zh: str, uploaded_images: 
         errors.append("标题为空或无效")
     if not info.get("authors") or has_bad_placeholder(info.get("authors")):
         errors.append("作者为空或无效")
+    if not info.get("institutions") or has_bad_placeholder(info.get("institutions")):
+        errors.append("单位为空或无效")
     if not info.get("date"):
         errors.append("日期为空")
     if not abstract_zh or len(abstract_zh.strip()) < 20:
@@ -90,6 +93,88 @@ def generate_tldr(title: str, abstract_en: str) -> str:
     output = re.sub(r"\s+", " ", output)
     output = re.sub(r"^(TL;DR[:：]?\s*)", "", output, flags=re.IGNORECASE)
     return output or "面向遥感任务，提出可扩展的推理框架并验证有效性。"
+
+
+def _dedupe_institutions(institutions: list[str]) -> list[str]:
+    cleaned: list[str] = []
+    seen: set[str] = set()
+    for item in institutions:
+        text = re.sub(r"\s+", " ", item or "").strip(" ,;:，；：")
+        if not text:
+            continue
+        if re.search(r"@", text):
+            continue
+        lowered = text.casefold()
+        if lowered in seen:
+            continue
+        seen.add(lowered)
+        cleaned.append(text)
+    return cleaned
+
+
+def _heuristic_institutions(first_page_text: str) -> list[str]:
+    keyword_pattern = re.compile(
+        r"(universit|college|school|institut|academy|laborator|centre|center|department|hospital|faculty|research|laboratory|lab\b|国家|大学|学院|研究所|实验室|中心|医院)",
+        re.IGNORECASE,
+    )
+    lines = []
+    for raw_line in (first_page_text or "").splitlines():
+        line = re.sub(r"\s+", " ", raw_line).strip()
+        if not line or len(line) < 6:
+            continue
+        if re.search(r"^(abstract|摘要|keywords?|index terms|introduction)\b", line, re.IGNORECASE):
+            break
+        if keyword_pattern.search(line) and not re.search(r"@", line):
+            parts = re.split(r"\s+(?=\d+\s+[A-Z])", line)
+            for part in parts:
+                cleaned = re.sub(r"^\d+\s*", "", part).strip()
+                if keyword_pattern.search(cleaned):
+                    lines.append(cleaned)
+    return _dedupe_institutions(lines)
+
+
+def extract_institutions_from_first_page(title: str, authors: str, first_page_text: str) -> str:
+    if not first_page_text.strip():
+        return ""
+
+    candidate_lines = []
+    for raw_line in first_page_text.splitlines():
+        line = re.sub(r"\s+", " ", raw_line).strip()
+        if not line:
+            continue
+        candidate_lines.append(line)
+        if re.search(r"^(abstract|摘要|keywords?|index terms)\b", line, re.IGNORECASE):
+            break
+    context = "\n".join(candidate_lines[:80])[:5000]
+
+    prompt = (
+        "你是学术论文信息抽取助手。请根据论文首页文本，提取作者所属单位名称。\n"
+        "要求：\n"
+        "1. 只输出单位名称，不输出作者名、邮箱、国家、脚注编号；\n"
+        "2. 去重；\n"
+        "3. 若首页无法可靠判断，返回严格 JSON []，不要猜测；\n"
+        "4. 返回严格 JSON 数组，例如 [\"Tsinghua University\", \"Chinese Academy of Sciences\"]。\n\n"
+        f"标题：{title}\n"
+        f"作者：{authors}\n"
+        f"首页文本：\n{context}"
+    )
+    output = (call_llm(prompt, max_tokens=300, timeout=120) or "").strip()
+
+    institutions: list[str] = []
+    match = re.search(r"\[[\s\S]*\]", output)
+    if match:
+        try:
+            data = json.loads(match.group(0))
+            if isinstance(data, list):
+                institutions = [str(item) for item in data if isinstance(item, str)]
+        except Exception:
+            institutions = []
+
+    if not institutions:
+        institutions = _heuristic_institutions(context)
+
+    institutions = _dedupe_institutions(institutions)
+    return "；".join(institutions)
 
 
 def summarize_paper(title: str, authors: str, abstract_en: str, pdf_text: str, retry_logger=None) -> dict:
@@ -161,4 +246,3 @@ A10: <回答>
         analysis["abstract_zh"] = translate_text(abstract_en)
 
     return analysis
-

@@ -51,6 +51,8 @@ def build_parser() -> argparse.ArgumentParser:
     paper_parser = subparsers.add_parser("paper", help="处理单篇论文")
     paper_parser.add_argument("arxiv_id", help="论文 arXiv ID")
     paper_parser.add_argument("issue_number", nargs="?", type=int, help="可选，指定更新的 issue 编号")
+    paper_parser.add_argument("--dry-run", action="store_true", help="仅在本地生成结果，不更新 GitHub issue")
+    paper_parser.add_argument("--output-dir", dest="output_dir", help="dry-run 输出目录")
     paper_parser.set_defaults(func=paper_command)
 
     return parser
@@ -90,7 +92,7 @@ def reconcile_command(args) -> None:
 
 
 def paper_command(args) -> None:
-    paper_processor.process_paper(args.arxiv_id, args.issue_number)
+    paper_processor.process_paper(args.arxiv_id, args.issue_number, dry_run=args.dry_run, output_dir=args.output_dir)
 
 
 def main() -> int:

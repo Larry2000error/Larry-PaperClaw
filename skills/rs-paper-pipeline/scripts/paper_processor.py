@@ -12,10 +12,12 @@ import subprocess
 import glob
 from pathlib import Path
 from datetime import datetime
+import json
 
 from clients.arxiv_client import download_pdf, extract_abs_info
 from pipeline_config import get_repo, load_config
 from services.paper_analysis import (
+    extract_institutions_from_first_page,
     extract_tags,
     format_answer_md,
     generate_tldr,
@@ -35,7 +37,7 @@ def log_step(step: str, status: str, reason: str = ""):
         msg += f" | {reason}"
     print(msg)
 
-def handle_figures(arxiv_id: str, pdf_path: Path, repo) -> list:
+def handle_figures(arxiv_id: str, pdf_path: Path, repo=None) -> list:
     """将 PDF 前三页转 JPG 并上传，返回已上传页码列表"""
     arxiv_dir = FIGURES_DIR / arxiv_id
     arxiv_dir.mkdir(parents=True, exist_ok=True)
@@ -57,13 +59,14 @@ def handle_figures(arxiv_id: str, pdf_path: Path, repo) -> list:
                 continue
 
             dest = f"papers/previews/{arxiv_id}/page_{page}.jpg"
-            with open(jpg_path, 'rb') as f:
-                content = f.read()
-            try:
-                existing = repo.get_contents(dest)
-                repo.update_file(dest, f"Update {arxiv_id} page_{page}.jpg", content, existing.sha)
-            except:
-                repo.create_file(dest, f"Add {arxiv_id} page_{page}.jpg", content)
+            if repo is not None:
+                with open(jpg_path, 'rb') as f:
+                    content = f.read()
+                try:
+                    existing = repo.get_contents(dest)
+                    repo.update_file(dest, f"Update {arxiv_id} page_{page}.jpg", content, existing.sha)
+                except:
+                    repo.create_file(dest, f"Add {arxiv_id} page_{page}.jpg", content)
             uploaded.append(page)
         except Exception:
             continue
@@ -72,12 +75,12 @@ def handle_figures(arxiv_id: str, pdf_path: Path, repo) -> list:
 
 # ============ 主流程 ============
 
-def process_paper(arxiv_id: str, issue_number: int | None = None):
+def process_paper(arxiv_id: str, issue_number: int | None = None, dry_run: bool = False, output_dir: str | None = None):
     print(f"\n{'='*60}")
     print(f"处理论文: {arxiv_id}")
     print(f"{'='*60}")
 
-    repo = get_repo(CONFIG)
+    repo = None if dry_run else get_repo(CONFIG)
 
     log_step("STEP-1", "RUNNING", "信息获取")
     
@@ -90,6 +93,22 @@ def process_paper(arxiv_id: str, issue_number: int | None = None):
     # 1.2 提取 abs 信息
     info = extract_abs_info(arxiv_id)
     log_step("STEP-1", "OK", f"title={info['title'][:40]} | authors={info['authors'][:30]}")
+
+    first_page_text = ""
+    if pdf_path and pdf_path.exists():
+        try:
+            result = subprocess.run(
+                ["pdftotext", "-layout", "-f", "1", "-l", "1", str(pdf_path), "-"],
+                capture_output=True,
+                text=True,
+                timeout=30,
+            )
+            first_page_text = result.stdout if result.returncode == 0 else ""
+        except Exception:
+            pass
+
+    info["institutions"] = extract_institutions_from_first_page(info["title"], info["authors"], first_page_text)
+    log_step("STEP-1", "OK", f"institutions={info['institutions'][:60] if info['institutions'] else 'EMPTY'}")
 
     # 1.3 处理图片（PDF前三页转JPG并上传）
     uploaded = handle_figures(arxiv_id, pdf_path, repo)
@@ -160,6 +179,7 @@ def process_paper(arxiv_id: str, issue_number: int | None = None):
 |------|------|
 | **标题** | {info['title']} |
 | **作者** | {info['authors']} |
+| **单位** | {info['institutions']} |
 | **日期** | {info['date']} |
 | **arXiv** | [abs](https://arxiv.org/abs/{arxiv_id}) \\| [pdf](https://arxiv.org/pdf/{arxiv_id}) |
 | **TL;DR** | {tldr} |
@@ -217,6 +237,26 @@ def process_paper(arxiv_id: str, issue_number: int | None = None):
 Powered by OpenClaw🦞
 """
     
+    if dry_run:
+        target_dir = Path(output_dir) if output_dir else (CONFIG.temp_dir / "RS-PaperClaw" / "paper_reports")
+        target_dir.mkdir(parents=True, exist_ok=True)
+        payload = {
+            "arxiv_id": arxiv_id,
+            "issue_number": issue_number,
+            "title": info["title"],
+            "authors": info["authors"],
+            "institutions": info["institutions"],
+            "date": title_date,
+            "labels": [title_date] + tags,
+            "body": report,
+            "html_url": f"https://github.com/{CONFIG.github_repo}/issues/{issue_number}" if issue_number else "",
+            "number": issue_number or 0,
+        }
+        out_path = target_dir / f"{title_date}_{arxiv_id.replace('/', '_')}.json"
+        out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+        log_step("ISSUE", "DRY_RUN", str(out_path))
+        return payload
+
     # 更新策略：指定 issue_number 时仅更新；未指定时仅匹配更新，不创建
     target_issue = None
     if issue_number is not None:

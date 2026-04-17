@@ -280,7 +280,7 @@
       }
 
       .table-wrap table {
-        min-width: 760px;
+        min-width: 980px;
       }
 
       .papers-mobile {
@@ -322,6 +322,7 @@
         border-bottom: 1px solid var(--line);
         vertical-align: top;
         font-size: 0.95rem;
+        overflow-wrap: anywhere;
       }
 
       th {
@@ -357,6 +358,7 @@
       .paper-title strong {
         font-size: 0.98rem;
         line-height: 1.45;
+        overflow-wrap: anywhere;
       }
 
       .paper-hint {
@@ -1001,6 +1003,10 @@
           padding: 16px 10px 26px;
         }
 
+        .report-list {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
         .hero,
         .sidebar,
         .content {
@@ -1284,17 +1290,30 @@
 
         if (lines.length < 3) return [];
 
+        const headers = splitTableRow(lines[0]).map((cell) => stripMarkdown(cell));
         const rows = lines.slice(2).map(splitTableRow);
         return rows
-          .map((cells) => ({
-            title: parseInlineMarkdown(cells[0] || ""),
-            titleText: stripMarkdown(cells[0] || ""),
-            authors: cells[1] || "",
-            summary: cells[2] || "",
-            issue: parseInlineMarkdown(cells[3] || ""),
-            issueText: stripMarkdown(cells[3] || ""),
-            issueUrl: extractFirstLink(cells[3] || ""),
-          }))
+          .map((cells) => {
+            const row = Object.fromEntries(headers.map((header, index) => [header, cells[index] || ""]));
+            const titleCell = row["标题"] || row["Title"] || cells[0] || "";
+            const authorsCell = row["作者"] || row["Authors"] || cells[1] || "";
+            const institutionCell =
+              row["单位"] || row["机构"] || row["Institution"] || row["Affiliation"] || "";
+            const summaryCell =
+              row["一句话概括"] || row["摘要"] || row["Summary"] || cells[Math.min(cells.length - 2, 3)] || "";
+            const issueCell = row["Issue"] || cells[cells.length - 1] || "";
+
+            return {
+              title: parseInlineMarkdown(titleCell),
+              titleText: stripMarkdown(titleCell),
+              authors: authorsCell,
+              institution: institutionCell,
+              summary: summaryCell,
+              issue: parseInlineMarkdown(issueCell),
+              issueText: stripMarkdown(issueCell),
+              issueUrl: extractFirstLink(issueCell),
+            };
+          })
           .filter(
             (item) =>
               !(
@@ -1809,12 +1828,13 @@
                       </div>
                     </td>
                     <td>${escapeHtml(item.authors || "-")}</td>
+                    <td>${escapeHtml(item.institution || "-")}</td>
                     <td>${escapeHtml(item.summary || "-")}</td>
                   </tr>
                 `
               )
               .join("")
-          : '<tr><td colspan="3">暂无文章列表。</td></tr>';
+          : '<tr><td colspan="4">暂无文章列表。</td></tr>';
         const articleCards = report.articles.length
           ? report.articles
               .map(
@@ -1839,6 +1859,10 @@
                     <div class="paper-card-row">
                       <span class="paper-card-label">作者</span>
                       <div class="paper-card-value">${escapeHtml(item.authors || "-")}</div>
+                    </div>
+                    <div class="paper-card-row">
+                      <span class="paper-card-label">单位</span>
+                      <div class="paper-card-value">${escapeHtml(item.institution || "-")}</div>
                     </div>
                     <div class="paper-card-row">
                       <span class="paper-card-label">一句话概括</span>
@@ -1894,6 +1918,7 @@
                   <tr>
                     <th>标题</th>
                     <th>作者</th>
+                    <th>单位</th>
                     <th>一句话概括</th>
                   </tr>
                 </thead>

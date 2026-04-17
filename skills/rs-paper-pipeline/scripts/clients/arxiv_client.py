@@ -20,6 +20,10 @@ install_urllib_proxy()
 RS_QUERY_TERMS = load_rs_query_terms()
 RS_KEYWORDS = RS_QUERY_TERMS
 RS_MATCH_PATTERNS = load_rs_signal_patterns()
+ATOM_NAMESPACE = {
+    "atom": "http://www.w3.org/2005/Atom",
+    "arxiv": "http://arxiv.org/schemas/atom",
+}
 
 
 def has_remote_sensing_signal(text: str) -> bool:
@@ -197,52 +201,94 @@ def download_pdf(arxiv_id: str) -> tuple[Path | None, bool]:
     return None, False
 
 
+def normalize_author_name(name: str) -> str:
+    normalized = re.sub(r"\s+", " ", name or "").strip()
+    if not normalized:
+        return ""
+
+    parts = normalized.split()
+    if len(parts) == 2:
+        return f"{parts[1]} {parts[0]}"
+    return normalized
+
+
+def format_authors(authors: list[str]) -> str:
+    clean_authors = [author for author in (normalize_author_name(name) for name in authors) if author]
+    if not clean_authors:
+        return "待提取"
+    if len(clean_authors) <= 20:
+        return ", ".join(clean_authors)
+    return ", ".join(clean_authors[:19] + ["..."] + [clean_authors[-1]])
+
+
+def format_affiliations(affiliations: list[str]) -> str:
+    unique_affiliations: list[str] = []
+    seen: set[str] = set()
+
+    for affiliation in affiliations:
+        normalized = re.sub(r"\s+", " ", affiliation or "").strip(" ,;")
+        if not normalized:
+            continue
+        dedupe_key = normalized.casefold()
+        if dedupe_key in seen:
+            continue
+        seen.add(dedupe_key)
+        unique_affiliations.append(normalized)
+
+    if not unique_affiliations:
+        return "待提取"
+    if len(unique_affiliations) <= 10:
+        return "；".join(unique_affiliations)
+    return "；".join(unique_affiliations[:9] + ["..."] + [unique_affiliations[-1]])
+
+
+def fetch_paper_metadata(arxiv_id: str) -> tuple[list[str], list[str], str, str, str] | None:
+    params = {"id_list": arxiv_id}
+    url = f"{CONFIG.arxiv_api}?{urllib.parse.urlencode(params)}"
+    xml_text = fetch_url_with_retry(url, retries=4, timeout=90)
+    root = ET.fromstring(xml_text)
+    entry = root.find("atom:entry", ATOM_NAMESPACE)
+    if entry is None:
+        return None
+
+    title = (entry.findtext("atom:title", default="", namespaces=ATOM_NAMESPACE) or "").replace("\n", " ").strip()
+    abstract_en = (
+        (entry.findtext("atom:summary", default="", namespaces=ATOM_NAMESPACE) or "")
+        .replace("\n", " ")
+        .strip()
+    )
+    published = (entry.findtext("atom:published", default="", namespaces=ATOM_NAMESPACE) or "").strip()
+
+    authors: list[str] = []
+    affiliations: list[str] = []
+    for author_node in entry.findall("atom:author", ATOM_NAMESPACE):
+        name = author_node.findtext("atom:name", default="", namespaces=ATOM_NAMESPACE)
+        if name and name.strip():
+            authors.append(name.strip())
+
+        affiliation = author_node.findtext("arxiv:affiliation", default="", namespaces=ATOM_NAMESPACE)
+        if affiliation and affiliation.strip():
+            affiliations.append(affiliation.strip())
+
+    return authors, affiliations, title, abstract_en, published
+
+
 def extract_abs_info(arxiv_id: str) -> dict[str, str]:
-    url = f"https://arxiv.org/abs/{arxiv_id}"
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": CONFIG.arxiv_user_agent})
-        with urllib.request.urlopen(req, timeout=30) as response:
-            html = response.read().decode("utf-8")
+        api_metadata = fetch_paper_metadata(arxiv_id)
+        if api_metadata is None:
+            raise RuntimeError("arXiv API entry not found")
 
-        title_match = re.search(r'<h1[^>]*class="title[^"]*"[^>]*>(.*?)</h1>', html, re.DOTALL)
-        title = re.sub(r"<.*?>", "", title_match.group(1)).strip() if title_match else "Unknown"
-        title = re.sub(r"^Title:\s*", "", title)
-
-        authors = []
-        author_div = re.search(r'<div[^>]*class="authors"[^>]*>(.*?)</div>', html, re.DOTALL)
-        if author_div:
-            for name in re.findall(r"<a[^>]*>([^<]+)</a>", author_div.group(1)):
-                name = name.strip()
-                if name and len(name) > 2:
-                    parts = name.split()
-                    if len(parts) == 2:
-                        name = f"{parts[1]} {parts[0]}"
-                    authors.append(name)
-
-        authors_str = ", ".join(authors[:5]) if authors else "待提取"
-        if len(authors) > 5:
-            authors_str += " et al."
-
-        abstract_match = re.search(
-            r'<blockquote[^>]*class="abstract[^"]*"[^>]*>.*?<span[^>]*>.*?</span>(.*?)</blockquote>',
-            html,
-            re.DOTALL,
-        )
-        abstract_en = re.sub(r"<.*?>", "", abstract_match.group(1)).strip() if abstract_match else ""
-
-        date_match = re.search(r"\[Submitted on ([^\]]+)\]", html)
-        if date_match:
-            raw_date = date_match.group(1).strip()
-            try:
-                date = datetime.strptime(raw_date, "%d %b %Y").strftime("%Y-%m-%d")
-            except Exception:
-                date = datetime.now().strftime("%Y-%m-%d")
-        else:
+        authors, affiliations, title, abstract_en, published = api_metadata
+        try:
+            date = datetime.strptime(published[:10], "%Y-%m-%d").strftime("%Y-%m-%d")
+        except Exception:
             date = datetime.now().strftime("%Y-%m-%d")
 
         return {
-            "title": title,
-            "authors": authors_str,
+            "title": title or "Unknown",
+            "authors": format_authors(authors),
+            "institutions": format_affiliations(affiliations),
             "abstract_en": abstract_en,
             "date": date,
         }
@@ -251,6 +297,7 @@ def extract_abs_info(arxiv_id: str) -> dict[str, str]:
         return {
             "title": "Unknown",
             "authors": "待提取",
+            "institutions": "待提取",
             "abstract_en": "",
             "date": datetime.now().strftime("%Y-%m-%d"),
         }
