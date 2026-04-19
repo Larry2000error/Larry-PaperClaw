@@ -287,6 +287,7 @@
 
       .table-wrap table {
         min-width: 1120px;
+        table-layout: fixed;
       }
 
       .papers-mobile {
@@ -336,10 +337,12 @@
       }
 
       .col-title {
+        width: 320px;
         min-width: 320px;
       }
 
       .col-authors {
+        width: 220px;
         min-width: 220px;
       }
 
@@ -350,6 +353,7 @@
       }
 
       .col-summary {
+        width: 360px;
         min-width: 360px;
       }
 
@@ -361,9 +365,12 @@
       }
 
       .paper-col-institution {
+        display: table-cell;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        overflow-wrap: normal;
+        word-break: keep-all;
       }
 
       a {
