@@ -286,8 +286,7 @@
       }
 
       .table-wrap table {
-        min-width: 980px;
-        table-layout: fixed;
+        min-width: 1120px;
       }
 
       .papers-mobile {
@@ -337,19 +336,21 @@
       }
 
       .col-title {
-        width: 29%;
+        min-width: 320px;
       }
 
       .col-authors {
-        width: 22%;
+        min-width: 220px;
       }
 
       .col-institution {
-        width: 18%;
+        width: 180px;
+        min-width: 180px;
+        max-width: 180px;
       }
 
       .col-summary {
-        width: 31%;
+        min-width: 360px;
       }
 
       .paper-col-institution,
@@ -357,6 +358,12 @@
         color: var(--muted);
         font-size: 0.92rem;
         line-height: 1.55;
+      }
+
+      .paper-col-institution {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       a {
@@ -1976,7 +1983,9 @@
                       </div>
                     </td>
                     <td class="paper-col-authors">${escapeHtml(item.authors || "-")}</td>
-                    <td class="paper-col-institution">${escapeHtml(item.institution || "-")}</td>
+                    <td class="paper-col-institution" title="${escapeHtml(
+                      item.institution || "-"
+                    )}">${escapeHtml(item.institution || "-")}</td>
                     <td class="paper-col-summary">${escapeHtml(item.summary || "-")}</td>
                   </tr>
                 `
