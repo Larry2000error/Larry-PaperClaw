@@ -23,10 +23,6 @@
 - GitHub Pages: **https://thinson.github.io/RS-PaperClaw/**
 - Digest archive: **[daily_reports/](./daily_reports/README.md)**
 
-## 🔗 Related Projects
-
-- **papers.cool**: https://papers.cool/
-
 ## 🖼️ UI Preview
 
 | Desktop UI | Mobile UI |
@@ -165,6 +161,12 @@ Both workflows execute `skills/rs-paper-pipeline/scripts/cli.py` and read the fi
 ## ✅ TODO
 
 - Add journal sources: RSE (Remote Sensing of Environment), ISPRS JPRS, and IEEE journals (as complements beyond arXiv, including ingestion and filtering).
+
+---
+
+## 🔗 Related Projects
+
+- **papers.cool**: https://papers.cool/
 
 ---
 
