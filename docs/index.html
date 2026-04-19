@@ -365,7 +365,7 @@
         line-height: 1.55;
       }
 
-      .paper-col-institution {
+      .institution-text {
         display: -webkit-box;
         white-space: normal;
         overflow: hidden;
@@ -1995,7 +1995,9 @@
                     <td class="paper-col-authors">${escapeHtml(item.authors || "-")}</td>
                     <td class="paper-col-institution" title="${escapeHtml(
                       item.institution || "-"
-                    )}">${escapeHtml(item.institution || "-")}</td>
+                    )}"><div class="institution-text">${escapeHtml(
+                      item.institution || "-"
+                    )}</div></td>
                     <td class="paper-col-summary">${escapeHtml(item.summary || "-")}</td>
                   </tr>
                 `
