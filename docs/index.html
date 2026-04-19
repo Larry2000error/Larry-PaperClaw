@@ -1187,7 +1187,12 @@
       const DEFAULT_REPORT_BASE =
         "https://raw.githubusercontent.com/thinson/RS-PaperClaw/main/daily_reports";
       const LOOKBACK_DAYS = 8;
+      const REPORT_BATCH_SIZE = 15;
       const issueCache = new Map();
+      let allReports = [];
+      let currentReportDate = "";
+      let currentSummaryText = "";
+      let visibleReportCount = REPORT_BATCH_SIZE;
       let overlayHistoryActive = false;
       const REPO_API_URL = "https://api.github.com/repos/thinson/RS-PaperClaw";
       const TREE_API_URL =
@@ -1383,6 +1388,36 @@
 
       function buildReportUrl(basePath, date) {
         return `${basePath}/${date.slice(0, 6)}/${date}.md`;
+      }
+
+      function parseRequestedReportDate() {
+        const date = new URLSearchParams(window.location.search).get("date") || "";
+        return /^\d{8}$/.test(date) ? date : "";
+      }
+
+      function updateReportUrl(date, options = {}) {
+        const { replace = false } = options;
+        const url = new URL(window.location.href);
+        if (date) {
+          url.searchParams.set("date", date);
+        } else {
+          url.searchParams.delete("date");
+        }
+        const state = {
+          ...(history.state || {}),
+          paperOverlay: Boolean(history.state && history.state.paperOverlay),
+          reportDate: date || "",
+        };
+        const target = `${url.pathname}${url.search}${url.hash}`;
+        history[replace ? "replaceState" : "pushState"](state, "", target);
+      }
+
+      function ensureVisibleForDate(reports, date) {
+        const index = reports.findIndex((item) => item.date === date);
+        if (index < 0) return;
+        const requiredCount =
+          Math.ceil((index + 1) / REPORT_BATCH_SIZE) * REPORT_BATCH_SIZE;
+        visibleReportCount = Math.max(visibleReportCount, requiredCount);
       }
 
       async function fetchAvailableReportDates() {
@@ -1718,7 +1753,11 @@
       function clearOverlayHistoryState() {
         if (history.state && history.state.paperOverlay) {
           history.replaceState(
-            { paperOverlay: false },
+            {
+              ...(history.state || {}),
+              paperOverlay: false,
+              reportDate: currentReportDate || parseRequestedReportDate(),
+            },
             "",
             `${window.location.pathname}${window.location.search}`
           );
@@ -1758,10 +1797,28 @@
             : "#paper";
 
           if (!overlayHistoryActive) {
-            history.pushState({ paperOverlay: true, issueUrl }, "", targetHash);
+            history.pushState(
+              {
+                ...(history.state || {}),
+                paperOverlay: true,
+                issueUrl,
+                reportDate: currentReportDate,
+              },
+              "",
+              targetHash
+            );
             overlayHistoryActive = true;
           } else {
-            history.replaceState({ paperOverlay: true, issueUrl }, "", targetHash);
+            history.replaceState(
+              {
+                ...(history.state || {}),
+                paperOverlay: true,
+                issueUrl,
+                reportDate: currentReportDate,
+              },
+              "",
+              targetHash
+            );
           }
         } else {
           overlayHistoryActive = true;
@@ -1815,7 +1872,10 @@
           return;
         }
 
-        reportList.innerHTML = reports
+        const visibleReports = reports.slice(0, visibleReportCount);
+        const canLoadMore = visibleReportCount < reports.length;
+
+        reportList.innerHTML = visibleReports
           .map(
             (report) => `
               <button class="report-item ${
@@ -1837,21 +1897,47 @@
               <strong>More</strong>
               <span>View all reports</span>
             </a>
-          `;
+          ` +
+          (canLoadMore
+            ? `
+              <button class="report-item more" id="loadMoreReports" type="button">
+                <strong>Load More</strong>
+                <span>继续加载更早 15 天</span>
+              </button>
+            `
+            : "");
 
         reportList.querySelectorAll(".report-item").forEach((button) => {
-          if (button.tagName === "A") return;
+          if (button.tagName === "A" || button.id === "loadMoreReports") return;
           button.addEventListener("click", () =>
             renderReport(reports, button.dataset.date, summaryText)
           );
         });
+
+        const loadMoreButton = document.getElementById("loadMoreReports");
+        if (loadMoreButton) {
+          loadMoreButton.addEventListener("click", () => {
+            visibleReportCount = Math.min(
+              reports.length,
+              visibleReportCount + REPORT_BATCH_SIZE
+            );
+            renderList(reports, activeDate, summaryText);
+          });
+        }
       }
 
-      function renderReport(reports, date, summaryText) {
+      function renderReport(reports, date, summaryText, options = {}) {
+        const { skipUrlUpdate = false, replaceUrl = false } = options;
         const report = reports.find((item) => item.date === date) || reports[0];
         if (!report) {
           reportDetail.innerHTML = '<div class="empty">没有可展示的日报。</div>';
           return;
+        }
+        ensureVisibleForDate(reports, report.date);
+        currentReportDate = report.date;
+        currentSummaryText = summaryText;
+        if (!skipUrlUpdate) {
+          updateReportUrl(report.date, { replace: replaceUrl });
         }
         renderList(reports, report.date, summaryText);
 
@@ -2033,6 +2119,8 @@
       async function loadReports() {
         const basePath = DEFAULT_REPORT_BASE;
         const dates = await fetchAvailableReportDates();
+        const requestedDate = parseRequestedReportDate();
+        visibleReportCount = REPORT_BATCH_SIZE;
         closePaperOverlay({ fromHistory: true, resetHistory: true });
         loadSummary.textContent = `正在读取 ${dates.length} 天日报...`;
         reportList.innerHTML = '<div class="status">正在读取内容...</div>';
@@ -2061,7 +2149,11 @@
             return;
           }
 
-          renderReport(reports, reports[0].date, summaryText);
+          allReports = reports;
+          const initialDate = reports.some((item) => item.date === requestedDate)
+            ? requestedDate
+            : reports[0].date;
+          renderReport(reports, initialDate, summaryText, { replaceUrl: true });
         } catch (error) {
           loadSummary.textContent = "加载失败";
           reportList.innerHTML =
@@ -2124,6 +2216,20 @@
         }
       });
       window.addEventListener("popstate", (event) => {
+        const targetDate = parseRequestedReportDate();
+        if (allReports.length) {
+          const fallbackDate = allReports[0]?.date || "";
+          const resolvedDate =
+            targetDate && allReports.some((item) => item.date === targetDate)
+              ? targetDate
+              : fallbackDate;
+          if (resolvedDate && resolvedDate !== currentReportDate) {
+            renderReport(allReports, resolvedDate, currentSummaryText, {
+              skipUrlUpdate: true,
+            });
+          }
+        }
+
         if (event.state && event.state.paperOverlay) {
           openPaperDetail(event.state.issueUrl, "论文详情", { skipHistory: true });
           return;
@@ -2135,7 +2241,14 @@
       });
 
       if (!history.state || typeof history.state.paperOverlay === "undefined") {
-        history.replaceState({ paperOverlay: false }, "", window.location.href);
+        history.replaceState(
+          {
+            paperOverlay: false,
+            reportDate: parseRequestedReportDate(),
+          },
+          "",
+          window.location.href
+        );
       }
 
       loadRepoStars();
