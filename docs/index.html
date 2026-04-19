@@ -366,12 +366,16 @@
       }
 
       .paper-col-institution {
-        display: table-cell;
-        white-space: nowrap;
+        display: -webkit-box;
+        white-space: normal;
         overflow: hidden;
         text-overflow: ellipsis;
-        overflow-wrap: normal;
-        word-break: keep-all;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-height: 1.5;
+        max-height: calc(1.5em * 3);
       }
 
       a {
