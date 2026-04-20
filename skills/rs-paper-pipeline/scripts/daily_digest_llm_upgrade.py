@@ -116,7 +116,11 @@ def main(target_date: str | None = None, stats_json: str | None = None):
     for date in dates:
         expected_ids = []
         if stats_map.get(date):
-            expected_ids = stats_map[date].get("selected_arxiv_ids") or []
+            expected_ids = (
+                stats_map[date].get("successful_selected_arxiv_ids")
+                or stats_map[date].get("selected_arxiv_ids")
+                or []
+            )
         papers = collect_expected_papers(repo, date, expected_ids) if expected_ids else sorted(paper_by_date[date], key=lambda x: x["number"])
         validation_errors = validate_papers_for_digest(papers)
         if validation_errors:

@@ -159,6 +159,10 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
         "todo_arxiv_ids": [x["candidate"]["arxiv_id"] for x in todo],
         "candidate_items": [compact_item(x) for x in cands],
         "selected_items": [compact_item(x) for x in selected],
+        "successful_selected_arxiv_ids": [x["arxiv_id"] for x in keep],
+        "successful_selected_items": [compact_item(x) for x in keep],
+        "failed_arxiv_ids": [],
+        "failed_items": [],
         "todo_items": [
             {
                 **compact_item(x["candidate"]),
@@ -187,7 +191,22 @@ def main(dry_run=False, days_back=2, stats_out: str | None = None, target_date: 
         aid = task["candidate"]["arxiv_id"]
         issue_number = task["issue_number"]
         print(f"  -> 处理 {aid} | issue={issue_number or '-'} | reason={task['reason']}")
-        process_paper(aid, issue_number=issue_number)
+        result = process_paper(aid, issue_number=issue_number)
+        if result is None:
+            stats["failed_arxiv_ids"].append(aid)
+            stats["failed_items"].append(
+                {
+                    **compact_item(task["candidate"]),
+                    "issue_number": issue_number,
+                    "reason": task["reason"],
+                }
+            )
+        else:
+            stats["successful_selected_arxiv_ids"].append(aid)
+            stats["successful_selected_items"].append(compact_item(task["candidate"]))
+
+        if stats_out:
+            Path(stats_out).write_text(json.dumps(stats, ensure_ascii=False), encoding="utf-8")
 
     print("[5/5] 完成")
 
