@@ -2,6 +2,41 @@
 
 最近三天日报（最新在前）：
 
+# [20260417](./202604/20260417.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 6 篇。
+
+今日遥感AI研究聚焦多模态大模型与无人机智能应用，涵盖零样本导航、视觉定位、推理分割等任务。高光谱分类持续轻量化发展，知识驱动与LLM专家系统成为标注瓶颈新解法。开源基准建设推动开放词汇分割向真实场景迈进。
+
+## ✨ 今日亮点
+
+- 零样本无人机导航引入细粒度认知模块，提升多模态决策可解释性
+- 全球尺度分析揭示视觉语言模型在图像地理定位中的失效模式
+- LLM专家知识驱动伪标签生成，突破树种分类标注稀缺难题
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260417] FineCog-Nav: Integrating Fine-grained Cognitive Modules for Zero-shot Multimodal UAV Navigation | Shao Dian, Xu Zhengzheng, Wang Peiyang, Liu Like, Wang Yule, Shi Jieqi, Huo Jing | Northwestern Polytechnical University；Nanjing University | FineCog-Nav通过细粒度认知架构集成，实现零样本多模态无人机导航，无需任务特定训练即可适应复杂环境。 | [#364](https://github.com/thinson/RS-PaperClaw/issues/364) |
+| [20260417] Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization | Bharadwaj Siddhant, Vashist Ashish, Aleem Fahimul, Vyas Shruti | University of Central Florida | 该研究在全球尺度系统分析视觉语言模型的图像地理定位失效模式，为地理推理模型改进提供诊断依据。 | [#365](https://github.com/thinson/RS-PaperClaw/issues/365) |
+| [20260417] From Articles to Canopies: Knowledge-Driven Pseudo-Labelling for Tree Species Classification using LLM Experts | Romaszewski Michał, Kopeć Dominik, Cholewa Michał, Kołodziej Katarzyna, Głomb Przemysław, Niedzielko Jan, Charyton Jakub, Wylazłowska Justyna, Jarocińska Anna | Institute of Theoretical and Applied Informatics, Polish Academy of Sciences；University of Lodz；MGGP Aero；University of Warsaw, Faculty of Geography and Regional Studies, Department of Geoinformatics, Cartography and Remote Sensing | 利用LLM专家从科学文献提取知识生成伪标签，解决高光谱树种分类中专业标注稀缺的核心瓶颈。 | [#366](https://github.com/thinson/RS-PaperClaw/issues/366) |
+| [20260417] SSFT: A Lightweight Spectral-Spatial Fusion Transformer for Generic Hyperspectral Classification | Musiat Alexander, Ebert Nikolas, Wasenmüller Oliver | Mannheim University of Applied Sciences | SSFT提出轻量谱空融合Transformer，以显著降低的参数量实现通用高光谱分类性能。 | [#367](https://github.com/thinson/RS-PaperClaw/issues/367) |
+| [20260417] PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation | Ke Shuyan, Mei Yifan, Wu Changli, Zheng Yonghan, Ji Jiayi, Cao Liujuan, Ji Rongrong | Key Laboratory of Multimedia Trusted Perception and Efficient Computing, Ministry of Education of China, Xiamen University；Shanghai Innovation Institute | PixDLM构建双路径多模态语言模型，支持无人机航拍图像的推理式分割与复杂场景理解。 | [#368](https://github.com/thinson/RS-PaperClaw/issues/368) |
+| [20260417] Towards Realistic Open-Vocabulary Remote Sensing Segmentation: Benchmark and Baseline | Li Bingyu, Huo Tao, Dong Haocheng, Zhang Da, Zhao Zhiyuan, Gao Junyu, Li Xuelong | University of Science and Technology of China | 该工作建立面向真实场景的开放词汇遥感分割基准，填补现有数据集域差距与类别覆盖不足。 | [#369](https://github.com/thinson/RS-PaperClaw/issues/369) |
+
+## 🔎 观察
+
+- 无人机与多模态大模型结合成为今日热点，导航、分割、推理任务全面覆盖，显示低空遥感智能化加速趋势
+- LLM知识蒸馏与伪标签策略正从NLP向遥感垂直领域迁移，或重塑高价值地物样本标注范式
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260416](./202604/20260416.md)
 ## 📌 今日概况
 
@@ -65,40 +100,6 @@ Powered by OpenClaw🦞
 
 - 视觉-语言模型正从通用领域向遥感专用场景深度渗透，但超高分辨率带来的Token爆炸仍需硬件协同优化
 - 早期退出与动态计算机制成为无人机等边缘设备部署的关键技术，效率与精度的帕累托前沿尚待突破
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260414](./202604/20260414.md)
-## 📌 今日概况
-
-今日共检索候选论文 12 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究聚焦轻量化部署与多模态融合两大主线。星载边缘计算需求推动轻量图像修复网络发展，多智能体系统赋能卫星影像事件理解与描述。高光谱去噪、梯田地块提取及全色锐化等任务持续深化，数学物理方法（欧拉公式、全变分）与深度学习结合趋势明显。
-
-## ✨ 今日亮点
-
-- 星载AI轻量化：面向卫星在轨处理的轻量学习图像修复方法
-- 多智能体事件感知：卫星影像新闻事件检测与描述的反馈协作系统
-- 多模态农业数据：全球梯田地块边界数据集融合光学与高程信息
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 一句话概括 | Issue |
-|---|---|---|---|
-| [20260414] Rethinking Satellite Image Restoration for Onboard AI: A Lightweight Learning-Based Approach | Dorise Adrien, Bellizzi Marjorie, Hlimi Omar | 提出轻量学习网络实现卫星图像在轨修复，降低星载AI计算资源消耗。 | [#343](https://github.com/thinson/RS-PaperClaw/issues/343) |
-| [20260414] A Multi-Agent Feedback System for Detecting and Describing News Events in Satellite Imagery | Anderson Madeline, Klassen Mikhail, Hoover Ash, Cahoy Kerri | 构建多智能体反馈系统，实现卫星影像多时相变化检测与事件自动描述。 | [#344](https://github.com/thinson/RS-PaperClaw/issues/344) |
-| [20260414] Spatial-Spectral Adaptive Fidelity and Noise Prior Reduction Guided Hyperspectral Image Denoising | Xie Xuelin, Lu Xiliang, Wang Zhengshan, Zhang Yang, Chen Long | 设计空间-光谱自适应保真与噪声先验降维方法，提升高光谱混合噪声去除效果。 | [#345](https://github.com/thinson/RS-PaperClaw/issues/345) |
-| [20260414] GTPBD-MM: A Global Terraced Parcel and Boundary Dataset with Multi-Modality | Zhang Zhiwei, Zeng Xingyuan, Kong Xinkai, Zhang Kunquan, Liang Haoyuan et al. | 发布全球多模态梯田地块边界数据集，融合遥感影像与数字高程模型信息。 | [#347](https://github.com/thinson/RS-PaperClaw/issues/347) |
-| [20260414] Euler-inspired Decoupling Neural Operator for Efficient Pansharpening | Zhu Anqi, Ma Mengting, Jiang Yizhen, Li Xiangdong, Zheng Kai et al. | 基于欧拉公式解耦神经算子，实现高效全色锐化频率域处理。 | [#349](https://github.com/thinson/RS-PaperClaw/issues/349) |
-
-## 🔎 观察
-
-- 星载边缘智能成为新焦点，轻量化设计从模型压缩转向任务特定的网络架构重构。
-- 多智能体架构开始渗透遥感解译流程，人机协作范式或重塑卫星影像信息提取模式。
 
 ---
 
