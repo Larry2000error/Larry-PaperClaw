@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260420](./202604/20260420.md)
+## 📌 今日概况
+
+今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦多模态大模型与零样本学习两大方向。视觉语言模型在变化检测问答任务中持续优化，扩散模型与SAM基础模型分别推动零样本目标定位与SAR舰船分割。高光谱超分辨率引入高斯溅射新范式，显示生成式技术向遥感各任务渗透的趋势。
+
+## ✨ 今日亮点
+
+- 结构化多模态Qwen模型革新遥感变化VQA任务，LoRA微调提升效率
+- DiffuSAM首创扩散引导零样本目标定位，突破遥感图像分割泛化瓶颈
+- SAM基础模型经提示工程适配SAR舰船实例分割，实现零样本迁移
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260420] Revisiting Change VQA in Remote Sensing with Structured and Native Multimodal Qwen Models | Bazi Yakoub, Mohamad M. Al Rahhal, Zuair Mansour, Mohamed Faroun | King Saud University；Saudi Data and Artificial Intelligence Authority | 基于Qwen多模态大模型与LoRA微调，构建结构化遥感变化检测视觉问答框架，提升复杂场景推理能力。 | [#380](https://github.com/thinson/RS-PaperClaw/issues/380) |
+| [20260420] DiffuSAM: Diffusion Guided Zero-Shot Object Grounding for Remote Sensing Imagery | Sethi Geet, Shah Panav, Gandhe Ashutosh, Soumitra Darshan Nayak | Indian Institute of Technology Bombay | 提出DiffuSAM架构，以扩散模型引导SAM实现遥感图像零样本目标定位，无需训练数据即可分割新类别。 | [#381](https://github.com/thinson/RS-PaperClaw/issues/381) |
+| [20260420] Prompting Foundation Models for Zero-Shot Ship Instance Segmentation in SAR Imagery | Mansour Islam, Sica Francescopaolo, Schmitt Michael | Department of Aerospace Engineering, University of the Bundeswehr Munich | 通过提示工程将SAM适配至SAR图像，实现零样本舰船实例分割，验证基础模型在雷达遥感中的迁移潜力。 | [#382](https://github.com/thinson/RS-PaperClaw/issues/382) |
+| [20260421] Voronoi-guided Bilateral 2D Gaussian Splatting for Arbitrary-Scale Hyperspectral Image Super-Resolution | Zhang Jie, You Jinkun, Chen Shi, Zhou Yicong | University of Macau | 结合Voronoi图与双向2D高斯溅射，实现任意尺度高光谱图像超分辨率，突破固定放大倍数限制。 | [#383](https://github.com/thinson/RS-PaperClaw/issues/383) |
+
+## 🔎 观察
+
+- 零样本学习成为遥感热点，DiffuSAM与SAM提示工程两条技术路线并行，降低对新领域标注数据的依赖。
+- 生成式技术扩散明显，扩散模型与高斯溅射分别从判别与生成角度重塑遥感任务，多模态大模型成为基础设施。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260419](./202604/20260419.md)
 ## 📌 今日概况
 
@@ -59,41 +92,6 @@ Powered by OpenClaw🦞
 
 - InSAR与深度学习结合正成为积雪遥感的新兴方向，有望解决干雪穿透导致的信号衰减难题
 - SAR平台任务规划从规则驱动转向数据驱动，强化学习为复杂监视场景提供可扩展决策方案
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260417](./202604/20260417.md)
-## 📌 今日概况
-
-今日共检索候选论文 11 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 6 篇。
-
-今日遥感AI研究呈现多模态融合与轻量化并重的趋势。无人机导航与分割任务持续引入大语言模型能力，高光谱分类探索高效Transformer架构，知识驱动方法借助LLM实现伪标签生成。同时，开放词汇分割基准建设与阴影去除等底层视觉任务亦有新进展。
-
-## ✨ 今日亮点
-
-- FineCog-Nav将细粒度认知模块融入零样本多模态无人机导航，提升复杂环境决策能力
-- 波兰团队利用LLM专家知识驱动伪标签生成，实现高光谱树种分类的知识增强
-- SSFT提出轻量光谱-空间融合Transformer，兼顾高光谱分类精度与计算效率
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260417] FineCog-Nav: Integrating Fine-grained Cognitive Modules for Zero-shot Multimodal UAV Navigation | Shao Dian, Xu Zhengzheng, Wang Peiyang, Liu Like, Wang Yule, Shi Jieqi, Huo Jing | Northwestern Polytechnical University；Nanjing University | FineCog-Nav通过整合细粒度认知模块，实现零样本多模态无人机视觉语言导航。 | [#364](https://github.com/thinson/RS-PaperClaw/issues/364) |
-| [20260417] From Articles to Canopies: Knowledge-Driven Pseudo-Labelling for Tree Species Classification using LLM Experts | Romaszewski Michał, Kopeć Dominik, Cholewa Michał, Kołodziej Katarzyna, Głomb Przemysław, Niedzielko Jan, Charyton Jakub, Wylazłowska Justyna, Jarocińska Anna | Institute of Theoretical and Applied Informatics, Polish Academy of Sciences；University of Lodz；MGGP Aero；University of Warsaw, Faculty of Geography and Regional Studies, Department of Geoinformatics, Cartography and Remote Sensing | 该研究借助大语言模型专家从文献中提取知识，驱动高光谱树种分类的伪标签生成。 | [#366](https://github.com/thinson/RS-PaperClaw/issues/366) |
-| [20260417] SSFT: A Lightweight Spectral-Spatial Fusion Transformer for Generic Hyperspectral Classification | Musiat Alexander, Ebert Nikolas, Wasenmüller Oliver | Mannheim University of Applied Sciences | SSFT以轻量化设计实现光谱-空间特征融合，面向通用高光谱分类任务。 | [#367](https://github.com/thinson/RS-PaperClaw/issues/367) |
-| [20260417] PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation | Ke Shuyan, Mei Yifan, Wu Changli, Zheng Yonghan, Ji Jiayi, Cao Liujuan, Ji Rongrong | Key Laboratory of Multimedia Trusted Perception and Efficient Computing, Ministry of Education of China, Xiamen University；Shanghai Innovation Institute | PixDLM构建双路径多模态语言模型，专门处理无人机推理分割任务。 | [#368](https://github.com/thinson/RS-PaperClaw/issues/368) |
-| [20260417] Towards Realistic Open-Vocabulary Remote Sensing Segmentation: Benchmark and Baseline | Li Bingyu, Huo Tao, Dong Haocheng, Zhang Da, Zhao Zhiyuan, Gao Junyu, Li Xuelong | University of Science and Technology of China | 该工作建立真实场景开放词汇遥感分割基准，并提供基线方法。 | [#369](https://github.com/thinson/RS-PaperClaw/issues/369) |
-| [20260417] Winner of CVPR2026 NTIRE Challenge on Image Shadow Removal: Semantic and Geometric Guidance for Shadow Removal via Cascaded Refinement | Beltrame Lorenzo, Salzinger Jules, Svoboda Filip, Lampert Jasmin, Fanta-Jende Phillipp, Timofte Radu, Koerner Marco | Austrian Institute of Technology；Technical University of Munich；University of Cambridge；University of Würzburg | NTIRE2026阴影去除冠军方案采用语义与几何引导的级联精修策略。 | [#371](https://github.com/thinson/RS-PaperClaw/issues/371) |
-
-## 🔎 观察
-
-- 无人机智能体正快速吸收大语言模型的推理与泛化能力，导航与分割任务边界趋于融合
-- 高光谱领域同时涌现知识驱动与轻量化架构两条技术路线，反映应用落地对效率与精度的双重诉求
 
 ---
 
