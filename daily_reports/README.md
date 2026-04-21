@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260419](./202604/20260419.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦模型可靠性与效率提升。超分辨率、强化学习奖励机制、多模态大模型鲁棒性及无人机集群控制成为热点，涵盖大气监测、视觉语言理解、地球观测等应用场景，体现从算法创新到系统部署的完整链条。
+
+## ✨ 今日亮点
+
+- 自监督超分辨率技术突破Sentinel-5P高光谱数据分辨率瓶颈
+- 混合奖励机制解决遥感图像理解中的感知惯性难题
+- 多模态大模型鲁棒性增强方案应对地球观测视觉扰动
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260419] Self-Supervised Super-Resolution for Sentinel-5P Hyperspectral Images | Hyam Omar Ali, Crosnier Antoine, Abraham Romain, Combelles Baptiste, Jégou Fabrice, Galerne Bruno | Université Paris-Saclay, CNRS, ENS Paris-Saclay, Centre Borelli, Gif-sur-Yvette, France；Université d'Orléans, CNRS, PRISME, Orléans, France；VITO, Remote Sensing, Boeretang, Mol, Belgium | 提出自监督超分辨率方法，针对Sentinel-5P高光谱图像实现无配对训练下的分辨率增强，服务大气监测应用。 | [#375](https://github.com/thinson/RS-PaperClaw/issues/375) |
+| [20260419] RS-HyRe-R1: A Hybrid Reward Mechanism to Overcome Perceptual Inertia for Remote Sensing Images Understanding | Zhou Gaozhi, He Hu, Shen Peng, Zhang Jipeng, Zhang Liujue, Xu Linrui, Wang Zeyuan, Li Ziyu, Cui Xuezhi, Guo Wang, Li Haifeng | Chinese Academy of Sciences | 设计RS-HyRe-R1混合奖励机制，通过视觉-语言模型强化学习克服遥感图像理解中的感知惯性问题。 | [#376](https://github.com/thinson/RS-PaperClaw/issues/376) |
+| [20260419] RemoteShield: Enable Robust Multimodal Large Language Models for Earth Observation | Min Rui, Yao Liang, Miao Shiyu, Xu Shengxiang, Liu Yuxuan, Zhang Chuanyi, Di Shimin, Liu Fan | Hohai University；Nanjing University；Southeast University | 构建RemoteShield框架，提升多模态大语言模型在地球观测任务中对视觉扰动的鲁棒性。 | [#377](https://github.com/thinson/RS-PaperClaw/issues/377) |
+| [20260419] Shepherding UAV Swarm with Action Prediction Based on Movement Constraints | Tsunoda Yusuke, Goto Yusuke, Sato Takao | Graduate School of Engineering, University of Hyogo | 基于牧羊犬行为启发，利用运动约束动作预测实现无人机集群协同控制。 | [#378](https://github.com/thinson/RS-PaperClaw/issues/378) |
+
+## 🔎 观察
+
+- 遥感大模型研究正从性能优化转向可靠性保障，鲁棒性成为部署关键指标。
+- 自监督与强化学习在遥感领域渗透率提升，降低标注依赖的同时增强模型适应性。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260418](./202604/20260418.md)
 ## 📌 今日概况
 
@@ -61,42 +94,6 @@ Powered by OpenClaw🦞
 
 - 无人机智能体正快速吸收大语言模型的推理与泛化能力，导航与分割任务边界趋于融合
 - 高光谱领域同时涌现知识驱动与轻量化架构两条技术路线，反映应用落地对效率与精度的双重诉求
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260416](./202604/20260416.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
-
-今日遥感AI研究呈现多模态融合与极端条件鲁棒性两大主线。视觉基础模型持续向垂直领域渗透，SAM适配、超分辨率重建等任务涌现新范式；同时，大气扰动、低光照等真实场景下的模型可靠性受到关注。跨模态创新显著，卫星图像驱动声景生成开辟地理-声学对齐新方向。
-
-## ✨ 今日亮点
-
-- Geo2Sound构建首个地理对齐声景生成框架，实现卫星影像到环境音频的跨模态合成
-- MapSR利用视觉基础模型与提示工程，以弱监督方式实现土地覆盖图超分辨率重建
-- WILD-SAM针对InSAR干涉图相位特性，设计专家混合机制适配SAM进行滑坡检测
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260416] Building Extraction from Remote Sensing Imagery under Hazy and Low-light Conditions: Benchmark and Baseline | Sang Feifei, Lu Wei, Chen Hongruixuan, Chen Sibao, Luo Bin | Wuhan University | 构建雾霾与低光照条件下的建筑提取基准数据集，为极端天气场景下的遥感目标识别提供评估基准与基线方法。 | [#355](https://github.com/thinson/RS-PaperClaw/issues/355) |
-| [20260416] OmniGCD: Abstracting Generalized Category Discovery for Modality Agnosticism | Shipard Jordan, Wiliem Arnold, Kien Nguyen Thanh, Xiang Wei, Fookes Clinton | SAIVT, QUT；Shield AI；La Trobe University | 提出OmniGCD框架，通过模态无关学习抽象广义类别发现任务，实现跨模态零样本类别识别能力。 | [#356](https://github.com/thinson/RS-PaperClaw/issues/356) |
-| [20260416] Geo2Sound: A Scalable Geo-Aligned Framework for Soundscape Generation from Satellite Imagery | Wu Kunlin, Wang Yanning, Tan Haofeng, Chen Boyi, Fei Teng, Ma Xianping, Yue Yang, Zhou Zan, Liu Xiaofeng | The Hong Kong University of Science and Technology (Guangzhou)；University of South Carolina；University of Canterbury；Southwest Jiaotong University；Beijing University of Posts and Telecommunications | Geo2Sound建立可扩展的地理对齐框架，首次实现从卫星影像到对应地理位置声景的自动化生成。 | [#357](https://github.com/thinson/RS-PaperClaw/issues/357) |
-| [20260416] Physically-Induced Atmospheric Adversarial Perturbations: Enhancing Transferability and Robustness in Remote Sensing Image Classification | Zhuang Weiwei, Xie Wangze, Zhang Qi, Du Xia, Lin Zihan, Lin Zheng, Cai Hanlin, Zhou Jizhe, Fang Zihan, Pun Chi-man, Ni Wei, Luo Jun | Tsinghua University；Chinese Academy of Sciences | 设计物理诱导的大气对抗扰动攻击方法，利用雾模拟增强遥感图像分类对抗样本的迁移性与鲁棒性。 | [#358](https://github.com/thinson/RS-PaperClaw/issues/358) |
-| [20260416] A multi-platform LiDAR dataset for standardized forest inventory measurement at long term ecological monitoring sites | Michael R. Chang, Candotti Anna, Karl von Ellenrieder, Tomelleri Enrico, Camurri Marco | Faculty of Engineering, Free University of Bozen-Bolzano；Department of Industrial Engineering, University of Trento；Faculty of Agricultural, Environmental and Food Sciences, Free University of Bozen-Bolzano；Competence Centre for Mountain Innovation Ecosystems, Free University of Bozen-Bolzano | 发布多平台激光雷达数据集，整合地基、移动与无人机LiDAR系统，支撑长期生态监测站的标准化森林清查。 | [#359](https://github.com/thinson/RS-PaperClaw/issues/359) |
-| [20260416] MapSR: Prompt-Driven Land Cover Map Super-Resolution via Vision Foundation Models | Wang Ruiqi, Yu Qi, Ma Jie, Wu Hanlin | Chinese Academy of Sciences | MapSR基于视觉基础模型与提示驱动策略，以弱监督学习实现土地覆盖图的超分辨率重建。 | [#360](https://github.com/thinson/RS-PaperClaw/issues/360) |
-| [20260416] WILD-SAM: Phase-Aware Expert Adaptation of SAM for Landslide Detection in Wrapped InSAR Interferograms | Pan Yucheng, Li Heping, Liu Zhangle, Hussain Sajid, Pan Bin | China University of Geosciences (Wuhan)；China University of Geosciences；Wuhan University；National University of Sciences and Technology (NUST) | WILD-SAM针对缠绕InSAR干涉图的相位特性，采用混合专家自适应机制扩展SAM用于滑坡检测。 | [#361](https://github.com/thinson/RS-PaperClaw/issues/361) |
-
-## 🔎 观察
-
-- 视觉基础模型正从通用分割向遥感专用任务深度适配，相位感知、提示工程等细粒度机制成为关键创新点
-- 跨模态研究从视觉-文本向视觉-音频拓展，地理空间数据与多感官信息的联合建模或成新增长极
 
 ---
 
