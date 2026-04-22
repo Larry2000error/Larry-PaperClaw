@@ -2,6 +2,43 @@
 
 最近三天日报（最新在前）：
 
+# [20260421](./202604/20260421.md)
+## 📌 今日概况
+
+今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+
+今日遥感AI研究呈现多模态融合与高效推理两大主线。高分辨率影像处理持续深化，涵盖语义分割、小目标检测与超分辨率重建；SAR任务规划与图像合成技术取得进展；农业遥感与光谱成像应用拓展。扩散模型、注意力机制与深度学习优化方法成为主要技术支撑。
+
+## ✨ 今日亮点
+
+- 无训练扩散模型实现卫星图像协调合成，降低域适应成本
+- 结构-语义解耦调制提升地理空间基础模型高分辨率制图能力
+- 自适应切片辅助超推理优化高分辨率影像小目标检测效率
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260421] Structure-Semantic Decoupled Modulation of Global Geospatial Embeddings for High-Resolution Remote Sensing Mapping | Lyu Jienan, Yang Miao, Cai Jinchen, Hu Yiwen, Lu Guanyi, Qiu Junhao, Dong Runmin | Sun Yat-Sen University；Tsinghua University | 提出结构-语义解耦调制方法，优化全球地理空间嵌入在高分辨率遥感制图中的应用。 | [#386](https://github.com/thinson/RS-PaperClaw/issues/386) |
+| [20260421] An effective window framework for closed-Loop regional SAR reconnaissance with hybrid direct-relay downlink scheduling | Li Linhong, Feng Qi, Li Kebo, Liang Yangang | College of Aerospace Science and Engineering, National University of Defense Technology；State Key Laboratory of Space System Operation and Control | 构建闭环区域SAR侦察窗口框架，实现混合直传中继下行链路调度与成像质量协同优化。 | [#387](https://github.com/thinson/RS-PaperClaw/issues/387) |
+| [20260421] Optimal Multispectral Imaging using RGB Cameras | Matulić Tomislav, Škrabo Ivan, Babić Dubravko, Seršić Damir | Faculty of Electrical Engineering and Computing University of Zagreb | 基于帧理论与条件数优化，开发RGB相机最优多光谱成像方法，实现光谱波段选择。 | [#388](https://github.com/thinson/RS-PaperClaw/issues/388) |
+| [20260421] HarmoniDiff-RS: Training-Free Diffusion Harmonization for Satellite Image Composition | Zhuang Xiaoqi, Jefersson A. Dos Santos, Han Jungong | The University of Sheffield；Tsinghua University | 提出HarmoniDiff-RS无训练扩散协调方法，用于卫星图像合成中的域适应与图像协调。 | [#389](https://github.com/thinson/RS-PaperClaw/issues/389) |
+| [20260421] Adaptive Slicing-Assisted Hyper Inference for Enhanced Small Object Detection in High-Resolution Imagery | Moretti Francesco, Jin Yi, Mario Guiqin | College of Educational Science and Technology, Polytechnic University of Turin | 设计自适应切片辅助超推理机制，提升高分辨率航空影像小目标检测性能。 | [#390](https://github.com/thinson/RS-PaperClaw/issues/390) |
+| [20260421] Attention-based Multi-modal Deep Learning Model of Spatio-temporal Crop Yield Prediction with Satellite, Soil and Climate Data | Gopal Krishna Shyam, Chandrakar Ila | Presidency University；University of Europe for Applied Sciences | 构建注意力驱动多模态深度学习模型，融合卫星、土壤与气候数据实现时空作物产量预测。 | [#391](https://github.com/thinson/RS-PaperClaw/issues/391) |
+| [20260421] DUSG-Tomo-Net: A Deep Unfolded Neural Network for Super-Resolving Gridless Spaceborne SAR Tomography via Learned Toeplitz-Structured Covariance Representation | Qian Kun, Xia Zhuge, Ma Qian, Zhang Qi, Liu Weijian, He Xiufeng | Wuhan Electronic Information Institute；School of Earth Sciences and Engineering, Hohai University；School of Medical Information Engineering, Guangzhou University of Chinese Medicine；Chair of Data Science in Earth Observation, Technical University of Munich | 开发深度展开神经网络DUSG-Tomo-Net，通过学习Toeplitz结构协方差表示实现无网格星载SAR层析超分辨率。 | [#392](https://github.com/thinson/RS-PaperClaw/issues/392) |
+| [20260421] ExplainS2A: Explainable Spectral-Spatial Duality Model for Fast Transforming Sentinel-2 Image to AVIRIS-Level Hyperspectral Image | Lin Chia-Hsiang, Leng Zi-Chao | IEEE | 提出可解释光谱-空间对偶模型ExplainS2A，实现Sentinel-2多光谱向AVIRIS级高光谱图像快速转换。 | [#393](https://github.com/thinson/RS-PaperClaw/issues/393) |
+
+## 🔎 观察
+
+- 高分辨率遥感处理呈现'切片-推理'精细化趋势，自适应策略成为平衡精度与效率的关键路径
+- 扩散模型在遥感域适应中向无训练方向发展，或推动实时卫星图像合成应用落地
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260420](./202604/20260420.md)
 ## 📌 今日概况
 
@@ -61,38 +98,6 @@ Powered by OpenClaw🦞
 
 - 遥感大模型研究正从性能优化转向可靠性保障，鲁棒性成为部署关键指标。
 - 自监督与强化学习在遥感领域渗透率提升，降低标注依赖的同时增强模型适应性。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260418](./202604/20260418.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦SAR数据智能处理与多模态融合。深度学习在积雪深度反演、多目标监视轨迹规划及异构多模态预训练三大方向取得进展，体现从单一任务优化向多源协同与高效表征学习的演进趋势。
-
-## ✨ 今日亮点
-
-- InSAR深度学习反演积雪深度，突破传统相位解缠限制
-- DRL驱动SAR载机多目标监视轨迹规划，兼顾目标可见性约束
-- 条件退化MAE实现异构多模态高效联合预训练，降低数据依赖
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260418] Deep Learning-Based Snow Depth Retrieval Using Sentinel-1 Repeat-Pass InSAR | Yadav Nayan, Oveisgharan Shadi, Jalali Shirin | Rutgers University；California Institute of Technology | 提出基于Sentinel-1重复轨道InSAR的深度学习积雪深度反演方法，利用神经网络直接学习干涉相位与雪深映射关系。 | [#372](https://github.com/thinson/RS-PaperClaw/issues/372) |
-| [20260418] Multi-stage Planning for Multi-target Surveillance using Aircrafts Equipped with Synthetic Aperture Radars Aware of Target Visibility | Fuertes Daniel, Carlos R. del-Blanco, Jaureguizar Fernando, Juan José Navarro-Corcuera, García Narciso | Universidad Politécnica de Madrid | 构建多阶段深度强化学习框架，为SAR载机规划多目标监视轨迹，显式建模目标可见性以提升监视效率。 | [#373](https://github.com/thinson/RS-PaperClaw/issues/373) |
-| [20260418] Better with Less: Tackling Heterogeneous Multi-Modal Image Joint Pretraining via Conditioned and Degraded Masked Autoencoder | Peng Bowen, Liu Yongxiang, Zhou Jie, Chen Xiaodong, Liu Tianpeng, Yu Xiaogang, Liu Li | National University of Defense Technology | 设计条件退化掩码自编码器，通过模态条件掩码策略实现光学与SAR异构数据的高效联合预训练。 | [#385](https://github.com/thinson/RS-PaperClaw/issues/385) |
-
-## 🔎 观察
-
-- SAR智能应用从静态图像分析向动态任务规划延伸，强化学习成为连接感知与决策的关键桥梁。
-- 多模态预训练正从数据堆砌转向结构化掩码设计，'更少数据、更好表征'成为遥感基础模型新范式。
 
 ---
 
