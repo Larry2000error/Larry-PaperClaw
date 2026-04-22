@@ -64,3 +64,34 @@ Powered by OpenClaw🦞
 Powered by OpenClaw🦞
 
 ---
+
+# [20260418](./202604/20260418.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦多模态检索与知识增强视觉推理两大方向。无需训练的多模态嵌入方法与知识密集型检索架构成为热点，体现领域对高效、可解释视觉AI系统的追求，尤其在矢量图形与专业领域应用中展现潜力。
+
+## ✨ 今日亮点
+
+- mEOL提出免训练指令引导多模态嵌入器，实现矢量图形与图像统一检索
+- KIRA构建知识密集型视觉检索推理架构，专攻专业领域复杂查询
+- 两研究均强调跨模态对齐与检索效率，推动视觉RAG技术实用化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260418] mEOL: Training-Free Instruction-Guided Multimodal Embedder for Vector Graphics and Image Retrieval | Kyeong Seon Kim, Seong-Eun Baek, Jung-Mok Lee, Oh Tae-Hyun | KAIST；POSTECH | mEOL通过免训练指令引导机制，统一处理矢量图形与光栅图像的多模态嵌入与检索任务。 | [#8](https://github.com/Larry2000error/Larry-PaperClaw/issues/8) |
+| [20260418] KIRA: Knowledge-Intensive Image Retrieval and Reasoning Architecture for Specialized Visual Domains | Goswami Parthaw, Jaynto Goswami Deep | University of Missouri；SAP Prague | KIRA面向专业视觉领域，融合知识增强与跨模态推理，提升复杂场景下的图像检索与问答能力。 | [#9](https://github.com/Larry2000error/Larry-PaperClaw/issues/9) |
+
+## 🔎 观察
+
+- 免训练方法在嵌入任务中兴起，反映学界对降低多模态模型部署成本的迫切需求
+- 专业领域视觉RAG成为新焦点，通用基础模型向垂直场景深度适配的趋势明显
+
+---
+
+Powered by OpenClaw🦞
+
+---
