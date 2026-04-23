@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260422](./202604/20260422.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦跨模态检索与组合式视觉检索两大方向。武汉大学与BIGAI团队提出两阶段跨模态检索框架，山东大学与哈工深则针对噪声问题与零样本场景展开攻关，显示该领域正从单一模态对齐向复杂场景鲁棒性演进。
+
+## ✨ 今日亮点
+
+- Fast-then-Fine框架实现粗到细的多粒度跨模态对齐
+- ConeSep网络通过锥形结构解决硬噪声对应学习难题
+- UniCVR首次统一零样本组合图像与视频检索任务
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260422] Fast-then-Fine: A Two-Stage Framework with Multi-Granular Representation for Cross-Modal Retrieval in Remote Sensing | Chen Xi, Chen Xu, Jia Xiangyang, Zhang Xu, Wei Shuquan, Wang Wei | Wuhan University；Beijing Institute for General Artificial Intelligence (BIGAI) | Fast-then-Fine采用快速粗筛与精细对齐两阶段策略，提升遥感图像-文本检索效率与精度。 | [#18](https://github.com/Larry2000error/Larry-PaperClaw/issues/18) |
+| [20260422] ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval | Li Zixu, Hu Yupeng, Chen Zhiwei, Zhang Mingyu, Fu Zhiheng, Nie Liqiang | Shandong University；Harbin Institute of Technology (Shenzhen) | ConeSep提出锥形噪声遗忘网络，专门处理组合图像检索中的噪声三元组对应问题。 | [#19](https://github.com/Larry2000error/Larry-PaperClaw/issues/19) |
+| [20260422] UniCVR: From Alignment to Reranking for Unified Zero-Shot Composed Visual Retrieval | Wen Haokun, Song Xuemeng, Zhang Haoyu, Zhao Xiangyu, Guan Weili, Nie Liqiang | Harbin Institute of Technology (Shenzhen)；Southern University of Science and Technology；City University of Hong Kong；Pengcheng Laboratory | UniCVR基于多模态大语言模型，实现零样本组合视觉检索从对齐到重排序的统一框架。 | [#20](https://github.com/Larry2000error/Larry-PaperClaw/issues/20) |
+
+## 🔎 观察
+
+- 组合式检索成为热点，三篇中有两篇聚焦该任务，反映用户对精细化视觉搜索需求上升。
+- 噪声鲁棒性与零样本能力成关键挑战，显示实际部署中数据质量与泛化性瓶颈亟待突破。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260421](./202604/20260421.md)
 ## 📌 今日概况
 
@@ -58,37 +90,6 @@ Powered by OpenClaw🦞
 
 - 同一团队同日三连发，显示组合检索已成为跨模态学习的热点攻坚方向，噪声鲁棒性成关键瓶颈。
 - 从图像到视频的范式延伸表明，动态时序建模与静态空间对齐的技术融合需求正在凸显。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260418](./202604/20260418.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦多模态检索与知识增强视觉推理两大方向。无需训练的多模态嵌入方法与知识密集型检索架构成为热点，体现领域对高效、可解释视觉AI系统的追求，尤其在矢量图形与专业领域应用中展现潜力。
-
-## ✨ 今日亮点
-
-- mEOL提出免训练指令引导多模态嵌入器，实现矢量图形与图像统一检索
-- KIRA构建知识密集型视觉检索推理架构，专攻专业领域复杂查询
-- 两研究均强调跨模态对齐与检索效率，推动视觉RAG技术实用化
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260418] mEOL: Training-Free Instruction-Guided Multimodal Embedder for Vector Graphics and Image Retrieval | Kyeong Seon Kim, Seong-Eun Baek, Jung-Mok Lee, Oh Tae-Hyun | KAIST；POSTECH | mEOL通过免训练指令引导机制，统一处理矢量图形与光栅图像的多模态嵌入与检索任务。 | [#8](https://github.com/Larry2000error/Larry-PaperClaw/issues/8) |
-| [20260418] KIRA: Knowledge-Intensive Image Retrieval and Reasoning Architecture for Specialized Visual Domains | Goswami Parthaw, Jaynto Goswami Deep | University of Missouri；SAP Prague | KIRA面向专业视觉领域，融合知识增强与跨模态推理，提升复杂场景下的图像检索与问答能力。 | [#9](https://github.com/Larry2000error/Larry-PaperClaw/issues/9) |
-
-## 🔎 观察
-
-- 免训练方法在嵌入任务中兴起，反映学界对降低多模态模型部署成本的迫切需求
-- 专业领域视觉RAG成为新焦点，通用基础模型向垂直场景深度适配的趋势明显
 
 ---
 
