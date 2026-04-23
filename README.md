@@ -1,9 +1,9 @@
 <div align="center">
   <img src="./docs/logo-220.png" alt="RS-PaperClaw Logo" width="120" />
 
-# RS-PaperClaw🦞
+# Larry-PaperClaw🦞
 
-### 遥感论文自动追踪与分析流水线
+### 论文自动追踪与分析流水线(Larry 个人定制版)
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](#)
 [![Status](https://img.shields.io/badge/Status-Active-2EA043)](#)
