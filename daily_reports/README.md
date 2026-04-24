@@ -39,6 +39,38 @@ Powered by OpenClaw🦞
 
 ---
 
+# [20260423](./202604/20260423.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦多模态检索的鲁棒性与对齐问题。三篇论文分别针对组合图像检索中的多修改场景、通用多模态检索的视觉模态坍缩，以及跨模态视频行人重识别的时序建模，核心共性在于通过新型对齐机制提升跨模态表征的稳定性与语义一致性。
+
+## ✨ 今日亮点
+
+- TEMA提出锚定图像-跟随文本策略，解决多修改组合检索中的实体映射难题
+- MiMIC设计模态交互机制，在缓解视觉坍缩的同时避免语义错位
+- 时序原型与层级对齐框架实现无监督跨模态视频行人重识别
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260423] TEMA: Anchor the Image, Follow the Text for Multi-Modification Composed Image Retrieval | Li Zixu, Hu Yupeng, Fu Zhiheng, Chen Zhiwei, Li Yongqi, Nie Liqiang | School of Software, Shandong University；Department of Computing, Hong Kong Polytechnic University；School of Computer Science and Technology, Harbin Institute of Technology (Shenzhen) | TEMA通过图像锚定与文本跟随的双流设计，处理组合图像检索中多属性修改的复杂查询对齐问题。 | [#152](https://github.com/Larry2000error/Larry-PaperClaw/issues/152) |
+| [20260423] MiMIC: Mitigating Visual Modality Collapse in Universal Multimodal Retrieval While Avoiding Semantic Misalignment | Li Juan, Ding Chuanghao, Zhang Xujie, Nguyen Cam-Tu | State Key Laboratory for Novel Software Technology, Nanjing University；School of Artificial Intelligence, Nanjing University | MiMIC提出模态交互约束与语义保持损失，在通用多模态检索中同时抑制视觉模态坍缩和跨模态语义偏移。 | [#153](https://github.com/Larry2000error/Larry-PaperClaw/issues/153) |
+| [20260423] Temporal Prototyping and Hierarchical Alignment for Unsupervised Video-based Visible-Infrared Person Re-Identification | Li Zhiyong, Jiang Wei, Liu Haojie, Wang Mingyu, Xu Wanchong, Mao Weijie | Harbin Institute of Technology | 基于时序原型构建与层级特征对齐，实现无监督场景下可见光-红外视频行人重识别的跨模态身份关联。 | [#154](https://github.com/Larry2000error/Larry-PaperClaw/issues/154) |
+
+## 🔎 观察
+
+- 多模态检索正从单一查询向复杂组合查询演进，对细粒度语义对齐提出更高要求
+- 视觉模态坍缩与语义错位成为通用多模态系统的关键瓶颈，需联合优化表征空间结构
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260422](./202604/20260422.md)
 ## 📌 今日概况
 
@@ -64,37 +96,6 @@ Powered by OpenClaw🦞
 
 - 组合式检索成为热点，三篇中有两篇聚焦该任务，反映用户对精细化视觉搜索需求上升。
 - 噪声鲁棒性与零样本能力成关键挑战，显示实际部署中数据质量与泛化性瓶颈亟待突破。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260421](./202604/20260421.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦多模态智能与推理增强范式。组合图像检索领域探索知识内化与噪声标签鲁棒性，行人重识别引入强化推理与思维链机制，体现视觉任务向认知推理深度演进趋势。
-
-## ✨ 今日亮点
-
-- Air-Know提出仲裁校准知识内化网络，解决组合图像检索中噪声标签与知识融合难题
-- Thinking Before Matching首创强化推理范式，以思维链机制提升行人重识别泛化能力
-- 多模态大模型与强化学习成为视觉理解任务的关键赋能技术
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260421] Air-Know: Arbiter-Calibrated Knowledge-Internalizing Robust Network for Composed Image Retrieval | Fu Zhiheng, Hu Yupeng, Yang Qianyun, Zhang Shiqi, Chen Zhiwei, Li Zixu | Shandong University | Air-Know通过仲裁器校准机制实现知识内化，构建噪声鲁棒的组合图像检索网络。 | [#1](https://github.com/Larry2000error/Larry-PaperClaw/issues/1) |
-| [20260421] Thinking Before Matching: A Reinforcement Reasoning Paradigm Towards General Person Re-Identification | Zhang Quan, Wu Jingze, Wang Jialong, Xie Xiaohua, Lai Jianhuang, Chen Hongbo | Sun Yat-sen University；Alibaba Cloud Computing | Thinking Before Matching将强化学习与思维链结合，使模型在匹配前进行身份推理。 | [#2](https://github.com/Larry2000error/Larry-PaperClaw/issues/2) |
-
-## 🔎 观察
-
-- 视觉检索任务正从特征匹配向认知推理跃迁，思维链与强化学习成为新范式
-- 噪声标签学习与知识内化结合，反映实际应用场景对模型鲁棒性的迫切需求
 
 ---
 
