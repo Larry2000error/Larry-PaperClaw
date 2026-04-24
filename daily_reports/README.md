@@ -2,6 +2,43 @@
 
 最近三天日报（最新在前）：
 
+# [20260424](./202604/20260424.md)
+## 📌 今日概况
+
+今日共检索候选论文 0 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 8 篇。
+
+今日遥感AI研究聚焦跨模态地理定位技术突破，涵盖无人机视角定位、图像-文本匹配、可见光-红外配准等方向。多篇工作探索大视觉语言模型赋能、三维几何感知及无卫星训练等新范式，数据集规模与物理一致性学习成为关键创新点。
+
+## ✨ 今日亮点
+
+- 武汉大学发布百万级全球跨模态地理定位数据集，提出物理一致性学习框架
+- 港城大与浙工大联合提出LVLM驱动的无人机跨视角关系建模定位方法
+- 清华与中科院构建可见光-红外跨模态特征匹配综合基准CM-Bench
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260424] Global Cross-Modal Geo-Localization: A Million-Scale Dataset and a Physical Consistency Learning Framework | Hu Yutong, Chen Jinhui, Xu Chaoqiang, Kou Yuan, Zhou Sili, Yan Shaocheng, Shi Pengcheng, Hu Qingwu, Li Jiayuan | Wuhan University | 武汉大学构建百万级全球跨模态地理定位数据集，提出物理一致性学习框架实现图像-文本匹配。 | [#37](https://github.com/Larry2000error/Larry-PaperClaw/issues/37) |
+| [20260424] Enhancing Cross-View UAV Geolocalization via LVLM-Driven Relational Modeling | Liu Bowen, Jia Pengyue, Wang Wanyu, Xu Derong, Cheng Jiawei, Dong Jiancheng, Han Xiao, Zhao Zimo, Zhang Chao, Yu Bowen, Hong Fangyu, Zhao Xiangyu | Department of Data Science, City University of Hong Kong；Information Systems, City University of Hong Kong；College of Computer Science and Technology, Zhejiang University of Technology | 港城大团队利用大视觉语言模型驱动关系建模，增强无人机跨视角地理定位性能。 | [#38](https://github.com/Larry2000error/Larry-PaperClaw/issues/38) |
+| [20260424] CM-Bench: A Comprehensive Cross-Modal Feature Matching Benchmark Bridging Visible and Infrared Images | Sun Liangzheng, He Mengfan, Shao Xingyu, Li Binbin, Yan Zhiqiang, Li Chunyu, Meng Ziyang, Xing Fei | Tsinghua University；Chinese Academy of Sciences | 清华与中科院联合发布CM-Bench基准，系统评估可见光与红外图像跨模态特征匹配方法。 | [#49](https://github.com/Larry2000error/Larry-PaperClaw/issues/49) |
+| [20260424] SDF-Net: Structure-Aware Disentangled Feature Learning for Optical–SAR Ship Re-Identification | Chen Furui, Wang Han, Sun Yuhan, You Jianing, Lv Yixuan, Zhou Zhuang, Tan Hong, Li Shengyang | Institution unavailable | SDF-Net提出结构感知解耦特征学习，解决光学-SAR图像舰船再识别难题。 | [#50](https://github.com/Larry2000error/Larry-PaperClaw/issues/50) |
+| [20260424] MOGeo: Beyond One-to-One Cross-View Object Geo-localization | Lv Bo, Zhang Qingwang, Wu Le, Li Yuanyuan, Zhu Yingying | College of Computer Science and Software Engineering, Shenzhen University | 深圳大学MOGeo突破传统一对一匹配范式，实现多目标跨视角地理定位。 | [#57](https://github.com/Larry2000error/Larry-PaperClaw/issues/57) |
+| [20260424] MELT: Improve Composed Image Retrieval via the Modification Frequentation-Rarity Balance Network | Qiu Guozhi, Chen Zhiwei, Li Zixu, Huang Qinlei, Fu Zhiheng, Song Xuemeng, Hu Yupeng | School of Software, Shandong University；Southern University of Science and Technology | 山东大学MELT网络通过修正频率-稀有度平衡，优化组合图像检索中的难样本问题。 | [#106](https://github.com/Larry2000error/Larry-PaperClaw/issues/106) |
+| [20260424] Unifying UAV Cross-View Geo-Localization via 3D Geometric Perception | Li Haoyuan, Yang Wen, Xu Fang, Tan Hong, Zhang Haijian, Li Shengyang, Xia Gui-Song | School of Electronic Information, Wuhan University；School of Artificial Intelligence, Wuhan University；Technology and Engineering Center for Space Utilization and the Key Laboratory of Space Utilization, Chinese Academy of Sciences；School of Aeronautics and Astronautics, University of Chinese Academy of Sciences | 武大团队统一三维几何感知，提出视觉几何Transformer实现无人机跨视角定位。 | [#108](https://github.com/Larry2000error/Larry-PaperClaw/issues/108) |
+| [20260424] Satellite-Free Training for Drone-View Geo-Localization | Liu Tao, Zhang Yingzhi, Ren Kan, Zhao Xiaoqi | Nanjing University of Science and Technology；University of Tsukuba；Nanyang Technological University | 南理工等提出无卫星训练策略，通过三维场景重建实现无人机视角地理定位。 | [#109](https://github.com/Larry2000error/Larry-PaperClaw/issues/109) |
+
+## 🔎 观察
+
+- 跨模态地理定位呈现从单一图像匹配向视觉-语言融合、三维几何感知演进的技术趋势。
+- 无人机定位研究密集涌现，无卫星训练与多目标定位成为突破数据瓶颈与场景限制的新方向。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260422](./202604/20260422.md)
 ## 📌 今日概况
 
@@ -58,38 +95,6 @@ Powered by OpenClaw🦞
 
 - 视觉检索任务正从特征匹配向认知推理跃迁，思维链与强化学习成为新范式
 - 噪声标签学习与知识内化结合，反映实际应用场景对模型鲁棒性的迫切需求
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260420](./202604/20260420.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦于组合检索任务的鲁棒性提升，山东大学团队连续贡献三项工作，覆盖图像与视频跨模态场景。核心趋势为噪声抑制与渐进学习：通过不变表示学习、证据驱动校准等机制，解决查询-目标对齐中的干扰问题，推动检索系统向复杂真实场景适配。
-
-## ✨ 今日亮点
-
-- 组合检索噪声抑制：INTENT提出不变性与判别性联合优化框架
-- 渐进学习新范式：HABIT构建时序协同的鲁棒训练机制
-- 视频检索突破：ReTrack以证据驱动实现双流方向锚点校准
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260420] INTENT: Invariance and Discrimination-aware Noise Mitigation for Robust Composed Image Retrieval | Chen Zhiwei, Hu Yupeng, Fu Zhiheng, Li Zixu, Huang Jiale, Huang Qinlei, Wei Yinwei | School of Software, Shandong University | INTENT针对组合图像检索中的噪声干扰，联合优化不变表示与判别性学习以增强鲁棒性。 | [#4](https://github.com/Larry2000error/Larry-PaperClaw/issues/4) |
-| [20260420] HABIT: Chrono-Synergia Robust Progressive Learning Framework for Composed Image Retrieval | Li Zixu, Hu Yupeng, Chen Zhiwei, Zhang Shiqi, Huang Qinlei, Fu Zhiheng, Wei Yinwei | School of Software, Shandong University | HABIT提出时序协同的渐进学习框架，提升组合图像检索在多模态噪声下的训练稳定性。 | [#5](https://github.com/Larry2000error/Larry-PaperClaw/issues/5) |
-| [20260420] ReTrack: Evidence-Driven Dual-Stream Directional Anchor Calibration Network for Composed Video Retrieval | Li Zixu, Hu Yupeng, Chen Zhiwei, Huang Qinlei, Qiu Guozhi, Fu Zhiheng, Liu Meng | School of Software, Shandong University；School of Computer Science and Technology, Shandong Jianzhu University | ReTrack面向组合视频检索，以证据驱动双网络流实现方向锚点动态校准。 | [#6](https://github.com/Larry2000error/Larry-PaperClaw/issues/6) |
-
-## 🔎 观察
-
-- 同一团队同日三连发，显示组合检索已成为跨模态学习的热点攻坚方向，噪声鲁棒性成关键瓶颈。
-- 从图像到视频的范式延伸表明，动态时序建模与静态空间对齐的技术融合需求正在凸显。
 
 ---
 
