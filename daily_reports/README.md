@@ -71,31 +71,29 @@ Powered by OpenClaw🦞
 
 ---
 
-# [20260422](./202604/20260422.md)
+# [20260415](./202604/20260415.md)
 ## 📌 今日概况
 
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+今日共检索候选论文 1 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
 
-今日研究聚焦跨模态检索与组合式视觉检索两大方向。武汉大学与BIGAI团队提出两阶段跨模态检索框架，山东大学与哈工深则针对噪声问题与零样本场景展开攻关，显示该领域正从单一模态对齐向复杂场景鲁棒性演进。
+今日仅收录1篇文档智能领域研究，聚焦多页文档视觉问答。该工作提出粗到细的交互式视觉推理框架，实现无需OCR的文档理解，体现Agentic AI在复杂文档处理中的技术演进趋势。
 
 ## ✨ 今日亮点
 
-- Fast-then-Fine框架实现粗到细的多粒度跨模态对齐
-- ConeSep网络通过锥形结构解决硬噪声对应学习难题
-- UniCVR首次统一零样本组合图像与视频检索任务
+- 提出Doc-V*框架，支持多页文档的粗到细交互式视觉推理
+- 实现OCR-Free文档理解，降低对文本提取模块的依赖
+- 融合Agentic AI范式，通过迭代推理提升复杂文档问答能力
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260422] Fast-then-Fine: A Two-Stage Framework with Multi-Granular Representation for Cross-Modal Retrieval in Remote Sensing | Chen Xi, Chen Xu, Jia Xiangyang, Zhang Xu, Wei Shuquan, Wang Wei | Wuhan University；Beijing Institute for General Artificial Intelligence (BIGAI) | Fast-then-Fine采用快速粗筛与精细对齐两阶段策略，提升遥感图像-文本检索效率与精度。 | [#18](https://github.com/Larry2000error/Larry-PaperClaw/issues/18) |
-| [20260422] ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval | Li Zixu, Hu Yupeng, Chen Zhiwei, Zhang Mingyu, Fu Zhiheng, Nie Liqiang | Shandong University；Harbin Institute of Technology (Shenzhen) | ConeSep提出锥形噪声遗忘网络，专门处理组合图像检索中的噪声三元组对应问题。 | [#19](https://github.com/Larry2000error/Larry-PaperClaw/issues/19) |
-| [20260422] UniCVR: From Alignment to Reranking for Unified Zero-Shot Composed Visual Retrieval | Wen Haokun, Song Xuemeng, Zhang Haoyu, Zhao Xiangyu, Guan Weili, Nie Liqiang | Harbin Institute of Technology (Shenzhen)；Southern University of Science and Technology；City University of Hong Kong；Pengcheng Laboratory | UniCVR基于多模态大语言模型，实现零样本组合视觉检索从对齐到重排序的统一框架。 | [#20](https://github.com/Larry2000error/Larry-PaperClaw/issues/20) |
+| [20260415] Doc-V*:Coarse-to-Fine Interactive Visual Reasoning for Multi-Page Document VQA | Zheng Yuanlei, Fu Pei, Li Hang, Wang Ziyang, Zhang Yuyi, Ruan Wenyu, Zhang Xiaojin, Wei Zhongyu, Luo Zhenbo, Luan Jian, Chen Wei, Bai Xiang | School of Software Engineering, Huazhong University of Science and Technology；MiLM Plus, Xiaomi Inc.；School of Computer Science and Technology, Huazhong University of Science and Technology；School of Data Science, Fudan University | 华中科技大学与小米联合提出Doc-V*，通过粗到细交互式视觉推理实现多页文档VQA，无需OCR即可处理复杂文档结构。 | [#140](https://github.com/Larry2000error/Larry-PaperClaw/issues/140) |
 
 ## 🔎 观察
 
-- 组合式检索成为热点，三篇中有两篇聚焦该任务，反映用户对精细化视觉搜索需求上升。
-- 噪声鲁棒性与零样本能力成关键挑战，显示实际部署中数据质量与泛化性瓶颈亟待突破。
+- OCR-Free路线成为文档智能新方向，或重塑传统文档处理流水线架构
+- 产学研合作特征明显，高校与科技企业协同推动Agentic AI技术落地
 
 ---
 
