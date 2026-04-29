@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260427](./202604/20260427.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日仅收录1篇论文，聚焦自监督视觉表征的几何分析及其在语义图像检索中的应用。研究趋势显示，遥感领域对自监督学习与向量检索技术的结合关注度上升，但今日候选文献数量有限，整体研究活跃度偏低。
+
+## ✨ 今日亮点
+
+- 自监督视觉表征的几何特性分析为语义图像检索提供新视角
+- 向量搜索与最近邻检索技术优化视觉表征匹配效率
+- 哥斯达黎加大学在遥感AI基础理论方向贡献新成果
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260427] Geometric Analysis of Self-Supervised Vision Representations for Semantic Image Retrieval | Rodríguez-Betancourt Esteban, Casasola-Murillo Edgar | Universidad de Costa Rica | 该研究从几何视角分析自监督视觉表征，探索其在语义图像检索中的向量搜索与最近邻检索优化机制。 | [#158](https://github.com/Larry2000error/Larry-PaperClaw/issues/158) |
+
+## 🔎 观察
+
+- 今日候选论文仅1篇，反映遥感AI领域当日高质量产出相对稀缺，或存在收录覆盖偏差。
+- 研究主题偏向基础理论而非遥感专用模型，提示领域可能处于技术沉淀期或方法迁移阶段。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260424](./202604/20260424.md)
 ## 📌 今日概况
 
@@ -58,38 +88,6 @@ Powered by OpenClaw🦞
 
 - 多模态检索正从单一查询向复杂组合查询演进，对细粒度语义对齐提出更高要求
 - 视觉模态坍缩与语义错位成为通用多模态系统的关键瓶颈，需联合优化表征空间结构
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260422](./202604/20260422.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦跨模态检索与组合式视觉检索两大方向。武汉大学与BIGAI团队提出两阶段跨模态检索框架，山东大学与哈工深则针对噪声问题与零样本场景展开攻关，显示该领域正从单一模态对齐向复杂场景鲁棒性演进。
-
-## ✨ 今日亮点
-
-- Fast-then-Fine框架实现粗到细的多粒度跨模态对齐
-- ConeSep网络通过锥形结构解决硬噪声对应学习难题
-- UniCVR首次统一零样本组合图像与视频检索任务
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260422] Fast-then-Fine: A Two-Stage Framework with Multi-Granular Representation for Cross-Modal Retrieval in Remote Sensing | Chen Xi, Chen Xu, Jia Xiangyang, Zhang Xu, Wei Shuquan, Wang Wei | Wuhan University；Beijing Institute for General Artificial Intelligence (BIGAI) | Fast-then-Fine采用快速粗筛与精细对齐两阶段策略，提升遥感图像-文本检索效率与精度。 | [#18](https://github.com/Larry2000error/Larry-PaperClaw/issues/18) |
-| [20260422] ConeSep: Cone-based Robust Noise-Unlearning Compositional Network for Composed Image Retrieval | Li Zixu, Hu Yupeng, Chen Zhiwei, Zhang Mingyu, Fu Zhiheng, Nie Liqiang | Shandong University；Harbin Institute of Technology (Shenzhen) | ConeSep提出锥形噪声遗忘网络，专门处理组合图像检索中的噪声三元组对应问题。 | [#19](https://github.com/Larry2000error/Larry-PaperClaw/issues/19) |
-| [20260422] UniCVR: From Alignment to Reranking for Unified Zero-Shot Composed Visual Retrieval | Wen Haokun, Song Xuemeng, Zhang Haoyu, Zhao Xiangyu, Guan Weili, Nie Liqiang | Harbin Institute of Technology (Shenzhen)；Southern University of Science and Technology；City University of Hong Kong；Pengcheng Laboratory | UniCVR基于多模态大语言模型，实现零样本组合视觉检索从对齐到重排序的统一框架。 | [#20](https://github.com/Larry2000error/Larry-PaperClaw/issues/20) |
-
-## 🔎 观察
-
-- 组合式检索成为热点，三篇中有两篇聚焦该任务，反映用户对精细化视觉搜索需求上升。
-- 噪声鲁棒性与零样本能力成关键挑战，显示实际部署中数据质量与泛化性瓶颈亟待突破。
 
 ---
 
