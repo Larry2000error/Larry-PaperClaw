@@ -69,25 +69,25 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
 
-今日研究聚焦多模态学习与视觉-语言模型的优化应用。联邦学习框架下的跨模态检索解决数据孤岛与模态缺失问题，CLIP特征聚合策略的重新设计则提升行人重识别在遮挡场景下的鲁棒性，体现从全局表征向局部细粒度建模的演进趋势。
+今日研究聚焦多模态学习与视觉-语言模型的优化应用。联邦学习框架下的跨模态检索解决数据孤岛与模态缺失问题，CLIP特征聚合策略的重新设计则提升行人重识别在遮挡场景下的鲁棒性。两项工作均体现从全局表征向局部精细化建模的演进趋势。
 
 ## ✨ 今日亮点
 
 - 联邦跨模态检索通过语义路由与个性化适配器解决模态缺失难题
-- CLIP特征聚合从全局平均转向局部感知，增强遮挡行人识别能力
-- 视觉-语言模型在检索与重识别任务中的特征工程持续深化
+- CLIP特征聚合从全局平均转向局部感知，增强遮挡行人重识别性能
+- 视觉-语言预训练模型在下游任务的特征提取策略持续优化
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260424] Federated Cross-Modal Retrieval with Missing Modalities via Semantic Routing and Adapter Personalization | Zhou Hefeng, Liu Xuan, Chen Sicheng, Zhang Wutong, Yan Wu, Lou Jiong, Wu Chentao, Xue Guangtao, Zhao Wei, Li Jie | Shanghai Jiao Tong University；Shenzhen Univ of Advanced Technology；Hohai University | 提出语义路由与适配器个性化机制，实现联邦环境下缺失模态的跨模态检索，平衡全局知识共享与本地数据隐私。 | [#156](https://github.com/Larry2000error/Larry-PaperClaw/issues/156) |
-| [20260424] From Global to Local: Rethinking CLIP Feature Aggregation for Person Re-Identification | Zheng Aotian, Sun Winston, Alattar Bahaa, Ablavsky Vitaly, Hwang Jenq-Neng | Department of Electrical and Computer Engineering, University of Washington；Applied Physics Laboratory, University of Washington | 重新设计CLIP特征聚合策略，从全局平均池化转向局部细粒度建模，显著提升遮挡场景下的行人重识别性能。 | [#157](https://github.com/Larry2000error/Larry-PaperClaw/issues/157) |
+| [20260424] Federated Cross-Modal Retrieval with Missing Modalities via Semantic Routing and Adapter Personalization | Zhou Hefeng, Liu Xuan, Chen Sicheng, Zhang Wutong, Yan Wu, Lou Jiong, Wu Chentao, Xue Guangtao, Zhao Wei, Li Jie | Shanghai Jiao Tong University；Shenzhen Univ of Advanced Technology；Hohai University | 提出语义路由与适配器个性化方法，实现联邦场景下缺失模态的跨模态检索，平衡全局知识共享与本地数据异质性。 | [#156](https://github.com/Larry2000error/Larry-PaperClaw/issues/156) |
+| [20260424] From Global to Local: Rethinking CLIP Feature Aggregation for Person Re-Identification | Zheng Aotian, Sun Winston, Alattar Bahaa, Ablavsky Vitaly, Hwang Jenq-Neng | Department of Electrical and Computer Engineering, University of Washington；Applied Physics Laboratory, University of Washington | 重新设计CLIP特征聚合策略，从全局平均池化转向局部细粒度建模，提升遮挡条件下行人重识别的判别能力。 | [#157](https://github.com/Larry2000error/Larry-PaperClaw/issues/157) |
 
 ## 🔎 观察
 
-- 跨模态检索正从集中式训练向联邦范式迁移，数据隐私与异构性成为核心挑战
-- CLIP等视觉-语言模型的下游适配研究，正从直接应用转向特征聚合机制的精细化改造
+- 多模态联邦学习正从模态对齐走向模态缺失的容错机制设计，实际落地价值显著提升
+- CLIP等视觉-语言模型的下游适配研究，正从直接迁移进入结构层面的针对性改造阶段
 
 ---
 
