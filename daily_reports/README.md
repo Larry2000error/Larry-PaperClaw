@@ -7,26 +7,26 @@
 
 今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日研究聚焦图像地理定位与多模态检索两大方向。图像地理定位领域出现双视角框架与网络规模检索增强两种技术路线；多模态学习则关注视觉注意力缺失与语义漂移问题。三篇论文均涉及大模型应用，体现遥感AI与基础模型深度融合趋势。
+今日研究聚焦图像地理定位与多模态检索两大方向。三篇论文均涉及大模型应用，其中两篇直接针对全球图像地理定位任务，分别提出双视角框架与网络规模检索增强方案；另一篇关注跨模态检索中的视觉注意力与语义对齐问题。整体呈现多模态大模型与具体遥感任务深度结合的趋势。
 
 ## ✨ 今日亮点
 
 - DualGeo提出双视角框架，结合对比学习与地理聚类实现全球图像定位
-- GeoSearch整合网络规模反向图像搜索与检索增强生成技术提升地理定位精度
-- 百度团队针对大模型视觉忽略与语义漂移问题优化跨模态检索性能
+- GeoSearch整合网络规模反向图像搜索与检索增强生成技术提升定位精度
+- 百度团队针对大模型视觉忽略与语义漂移问题提出跨模态检索优化方案
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260428] DualGeo: A Dual-View Framework for Worldwide Image Geo-localization | Cui Junchao, Shi Wenqi, Du Shaoyong, He Hang, Ma Xuanzi, Tang Hao, Luo Xiangyang | Henan Key Laboratory of Cyberspace Situation Awareness；Information Engineering University | DualGeo构建双视角框架，通过跨视角对比学习与地理感知聚类实现全球图像地理定位。 | [#160](https://github.com/Larry2000error/Larry-PaperClaw/issues/160) |
-| [20260428] GeoSearch: Augmenting Worldwide Geolocalization with Web-Scale Reverse Image Search and Image Matching | Le-Duc Tung-Duong, Nguyen-Son Hoang-Quoc, Dao Minh-Son | University of Science, VNU-HCM；National Institute of Information and Communications Technology | GeoSearch融合网络规模反向图像搜索、图像匹配与检索增强生成技术增强全球地理定位能力。 | [#161](https://github.com/Larry2000error/Larry-PaperClaw/issues/161) |
-| [20260428] Combating Visual Neglect and Semantic Drift in Large Multimodal Models for Enhanced Cross-Modal Retrieval | Zhang Guosheng, Liu Linkai, Wang Keyao, Yue Haixiao, Tan Zhiwen, Tan Xiao | Baidu Inc. | 针对大模型视觉忽略与语义漂移问题，提出增强跨模态检索的新方法。 | [#162](https://github.com/Larry2000error/Larry-PaperClaw/issues/162) |
+| [20260428] DualGeo: A Dual-View Framework for Worldwide Image Geo-localization | Cui Junchao, Shi Wenqi, Du Shaoyong, He Hang, Ma Xuanzi, Tang Hao, Luo Xiangyang | Henan Key Laboratory of Cyberspace Situation Awareness；Information Engineering University | DualGeo通过双视角框架融合对比学习与地理聚类，并引入跨注意力机制实现全球图像地理定位。 | [#160](https://github.com/Larry2000error/Larry-PaperClaw/issues/160) |
+| [20260428] GeoSearch: Augmenting Worldwide Geolocalization with Web-Scale Reverse Image Search and Image Matching | Le-Duc Tung-Duong, Nguyen-Son Hoang-Quoc, Dao Minh-Son | University of Science, VNU-HCM；National Institute of Information and Communications Technology | GeoSearch将网络规模反向图像搜索与图像匹配相结合，以检索增强生成范式提升全球地理定位能力。 | [#161](https://github.com/Larry2000error/Larry-PaperClaw/issues/161) |
+| [20260428] Combating Visual Neglect and Semantic Drift in Large Multimodal Models for Enhanced Cross-Modal Retrieval | Zhang Guosheng, Liu Linkai, Wang Keyao, Yue Haixiao, Tan Zhiwen, Tan Xiao | Baidu Inc. | 该研究针对大模型视觉忽略与语义漂移问题，提出增强视觉显著性与语义对齐的跨模态检索方法。 | [#162](https://github.com/Larry2000error/Larry-PaperClaw/issues/162) |
 
 ## 🔎 观察
 
-- 图像地理定位正从单一技术路线向多源融合演进，检索增强生成成为新范式
-- 多模态大模型的视觉-语义对齐问题获得产业界关注，百度等头部企业持续投入
+- 图像地理定位任务正加速引入大模型技术，从单一视觉匹配向多源信息融合演进
+- 跨模态检索研究开始关注大模型的固有缺陷，视觉-语义对齐成为关键优化方向
 
 ---
 
