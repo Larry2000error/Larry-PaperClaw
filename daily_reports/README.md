@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260429](./202604/20260429.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦行人重识别(Re-ID)技术突破，涵盖属性表达量化、文本引导部件匹配、三维视角合成及联邦域泛化四大方向。研究呈现多模态融合与可解释性增强趋势，特别关注跨视角、跨域场景下的模型鲁棒性与公平性问题。
+
+## ✨ 今日亮点
+
+- AttriBE首次量化属性表达性，提升Re-ID公平性与识别精度
+- InterPartAbility引入文本引导部件匹配，增强模型可解释性
+- 3D-LENS实现单视图三维提升合成，解决空中-地面跨视角难题
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260429] AttriBE: Quantifying Attribute Expressivity in Body Embeddings for Recognition and Identification | Pal Basudha, Huang Siyuan, Nanduri Anirudh, Wang Zhaoyang, Chellappa Rama | Institution unavailable | AttriBE通过量化身体嵌入中的属性表达性，优化行人重识别的公平性与识别性能。 | [#164](https://github.com/Larry2000error/Larry-PaperClaw/issues/164) |
+| [20260429] InterPartAbility: Text-Guided Part Matching for Interpretable Person Re-Identification | Murtaza Shakeeb, Shukla Aryan, Bhattacharya Rajarshi, Heritier Maguelonne, Granger Eric | LIVIA, Dept. of Systems Engineering, ETS Montreal；Genetec Inc. | InterPartAbility利用视觉-语言模型实现文本引导的部件匹配，提升Re-ID可解释性与检索精度。 | [#165](https://github.com/Larry2000error/Larry-PaperClaw/issues/165) |
+| [20260429] 3D-LENS: A 3D Lifting-based Elevated Novel-view Synthesis method for Single-View Aerial-Ground Re-Identification | Grolleau William, Sabourin Astrid, Lapouge Guillaume, Achard Catherine | Université Paris-Saclay, CEA, List；Sorbonne University, CNRS, Institute of Intelligent Systems and Robotics (ISIR) | 3D-LENS基于三维提升合成新视角，解决单视图空中-地面行人重识别的跨域泛化问题。 | [#166](https://github.com/Larry2000error/Larry-PaperClaw/issues/166) |
+| [20260429] CO-EVO: Co-evolving Semantic Anchoring and Style Diversification for Federated DG-ReID | Zhang Fengchun, Ma Qiang, Xiang Liuyu, Lai Jinshan, Huang Tingxuan, Hu Jianwei | School of Information and Software Engineering, University of Electronic Science and Technology of China；QiYuan Lab；School of Artificial Intelligence, Beijing University of Posts and Telecommunications；School of Software, Tsinghua University | CO-EVO通过语义锚定与风格多样化协同进化，实现联邦学习场景下的域泛化Re-ID。 | [#167](https://github.com/Larry2000error/Larry-PaperClaw/issues/167) |
+
+## 🔎 观察
+
+- 多模态融合成为Re-ID主流范式，文本与三维几何信息正逐步替代单一视觉特征
+- 联邦学习与域泛化结合反映隐私保护需求上升，实际部署场景的技术适配性成为研究焦点
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260428](./202604/20260428.md)
 ## 📌 今日概况
 
@@ -57,37 +90,6 @@ Powered by OpenClaw🦞
 
 - 当日候选论文数量偏少，可能反映遥感AI领域投稿或收录的周期性波动。
 - 研究主题偏向基础表征学习，未见典型遥感数据源（卫星/无人机影像）的明确标注，需关注其跨领域迁移价值。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260424](./202604/20260424.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦多模态学习与视觉-语言模型的优化应用。联邦学习框架下的跨模态检索解决数据孤岛与模态缺失问题，CLIP特征聚合策略的重新设计则提升行人重识别在遮挡场景下的鲁棒性。两项工作均体现从全局表征向局部精细化建模的演进趋势。
-
-## ✨ 今日亮点
-
-- 联邦跨模态检索通过语义路由与个性化适配器解决模态缺失难题
-- CLIP特征聚合从全局平均转向局部感知，增强遮挡行人重识别性能
-- 视觉-语言预训练模型在下游任务的特征提取策略持续优化
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260424] Federated Cross-Modal Retrieval with Missing Modalities via Semantic Routing and Adapter Personalization | Zhou Hefeng, Liu Xuan, Chen Sicheng, Zhang Wutong, Yan Wu, Lou Jiong, Wu Chentao, Xue Guangtao, Zhao Wei, Li Jie | Shanghai Jiao Tong University；Shenzhen Univ of Advanced Technology；Hohai University | 提出语义路由与适配器个性化方法，实现联邦场景下缺失模态的跨模态检索，平衡全局知识共享与本地数据异质性。 | [#156](https://github.com/Larry2000error/Larry-PaperClaw/issues/156) |
-| [20260424] From Global to Local: Rethinking CLIP Feature Aggregation for Person Re-Identification | Zheng Aotian, Sun Winston, Alattar Bahaa, Ablavsky Vitaly, Hwang Jenq-Neng | Department of Electrical and Computer Engineering, University of Washington；Applied Physics Laboratory, University of Washington | 重新设计CLIP特征聚合策略，从全局平均池化转向局部细粒度建模，提升遮挡条件下行人重识别的判别能力。 | [#157](https://github.com/Larry2000error/Larry-PaperClaw/issues/157) |
-
-## 🔎 观察
-
-- 多模态联邦学习正从模态对齐走向模态缺失的容错机制设计，实际落地价值显著提升
-- CLIP等视觉-语言模型的下游适配研究，正从直接迁移进入结构层面的针对性改造阶段
 
 ---
 
