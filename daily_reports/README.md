@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260430](./202604/20260430.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日仅收录1篇论文，聚焦医学视觉语言模型的检索增强生成技术。该研究来自清华与中科院团队，探索多模态迭代检索机制在医学问答中的应用，体现大模型时代医学AI对知识可靠性与多模态融合的持续追求。
+
+## ✨ 今日亮点
+
+- 提出迭代式多模态检索增强生成框架，提升医学问答准确性
+- 融合视觉-语言模型与生物医学文献检索，实现跨模态知识对齐
+- 由清华、中科院联合完成，推动医学AI的可解释性与可信度
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260430] Iterative Multimodal Retrieval-Augmented Generation for Medical Question Answering | Chen Xupeng, Shi Binbin, Le Chenqian, Zhang Jiaqi, Wang Kewen, Gong Ran, Zhang Jinhan, Wang Chihang | Tsinghua University；Chinese Academy of Sciences | 该论文提出迭代多模态检索增强生成方法，通过循环检索视觉与文本知识提升医学问答的准确性与可解释性。 | [#169](https://github.com/Larry2000error/Larry-PaperClaw/issues/169) |
+
+## 🔎 观察
+
+- 医学AI领域正从纯生成模型向'检索+生成'混合架构演进，以缓解幻觉问题并增强临床可信度
+- 多模态迭代检索机制或成为垂直领域大模型落地的关键范式，但计算开销与实时性仍需权衡
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260429](./202604/20260429.md)
 ## 📌 今日概况
 
@@ -60,36 +90,6 @@ Powered by OpenClaw🦞
 
 - 图像地理定位正从单一模型预测转向'检索+匹配+生成'的混合增强架构，数据规模成为关键变量
 - 多模态大模型的视觉感知短板日益凸显，工业界开始系统性研究跨模态对齐的失效模式
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260427](./202604/20260427.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日仅收录1篇论文，聚焦自监督视觉表征的几何分析及其在语义图像检索中的应用。研究趋势显示，遥感领域对自监督学习与向量检索技术的结合持续保持关注，但当日新成果产出有限。
-
-## ✨ 今日亮点
-
-- 自监督视觉表征的几何特性分析
-- 语义图像检索的向量搜索优化
-- 最近邻搜索在遥感检索中的应用
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260427] Geometric Analysis of Self-Supervised Vision Representations for Semantic Image Retrieval | Rodríguez-Betancourt Esteban, Casasola-Murillo Edgar | Universidad de Costa Rica | 该研究从几何视角分析自监督视觉表征，为语义图像检索中的向量搜索与最近邻检索提供理论支撑。 | [#158](https://github.com/Larry2000error/Larry-PaperClaw/issues/158) |
-
-## 🔎 观察
-
-- 当日候选论文数量偏少，可能反映遥感AI领域投稿或收录的周期性波动。
-- 研究主题偏向基础表征学习，未见典型遥感数据源（卫星/无人机影像）的明确标注，需关注其跨领域迁移价值。
 
 ---
 
