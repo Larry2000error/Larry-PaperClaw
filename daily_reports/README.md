@@ -5,26 +5,26 @@
 # [20260430](./202604/20260430.md)
 ## 📌 今日概况
 
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
 
-今日仅收录1篇论文，聚焦医学视觉语言模型的检索增强生成技术。该研究来自清华与中科院团队，探索多模态迭代检索机制在医学问答中的应用，体现大模型时代医学AI对知识可靠性与多模态融合的持续追求。
+今日仅收录1篇论文，聚焦行人重识别领域的域适应技术。研究提出自适应中间域适应方法，解决源数据缺失场景下的模型泛化问题，体现无源学习在隐私敏感应用中的发展趋势。
 
 ## ✨ 今日亮点
 
-- 提出迭代式多模态检索增强生成框架，提升医学问答准确性
-- 融合视觉-语言模型与生物医学文献检索，实现跨模态知识对齐
-- 由清华、中科院联合完成，推动医学AI的可解释性与可信度
+- 提出AIDA-ReID框架，实现无源数据下的域适应
+- 构建自适应中间域，桥接多源域与目标域差异
+- 面向隐私保护场景，推动Re-ID实用化部署
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260430] Iterative Multimodal Retrieval-Augmented Generation for Medical Question Answering | Chen Xupeng, Shi Binbin, Le Chenqian, Zhang Jiaqi, Wang Kewen, Gong Ran, Zhang Jinhan, Wang Chihang | Tsinghua University；Chinese Academy of Sciences | 该论文提出迭代多模态检索增强生成方法，通过循环检索视觉与文本知识提升医学问答的准确性与可解释性。 | [#169](https://github.com/Larry2000error/Larry-PaperClaw/issues/169) |
+| [20260430] AIDA-ReID: Adaptive Intermediate Domain Adaptation for Generalizable and Source-Free Person Re-Identification | Iqbal Sundas, Tian Qing, Ali Danish, Gou Jianping, Oue Weihua | School of Software, Nanjing University of Information Science and Technology；Wuxi Institute of Technology, Nanjing University of Information Science and Technology；School of Computer Science, Wuhan University；School of Computer and Information Science, Southwest University；School of Big Data and Computer Science, Guizhou Normal University | AIDA-ReID提出自适应中间域适应方法，在无需源数据条件下实现可泛化的行人重识别，解决多源域适应中的隐私与迁移难题。 | [#171](https://github.com/Larry2000error/Larry-PaperClaw/issues/171) |
 
 ## 🔎 观察
 
-- 医学AI领域正从纯生成模型向'检索+生成'混合架构演进，以缓解幻觉问题并增强临床可信度
-- 多模态迭代检索机制或成为垂直领域大模型落地的关键范式，但计算开销与实时性仍需权衡
+- 无源学习成为Re-ID领域重要方向，反映数据隐私合规需求对技术路线的直接影响
+- 中间域构建策略或可为其他跨域遥感任务（如跨传感器场景识别）提供迁移思路
 
 ---
 
