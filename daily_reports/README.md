@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260503](./202605/20260503.md)
+## 📌 今日概况
+
+今日共检索候选论文 1 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日仅收录1篇论文，聚焦硬件安全与AI治理交叉领域。研究提出利用GPU指纹技术进行位置验证，为芯片级监控和AI算力溯源提供新思路，反映学界对AI基础设施安全管控的关注升温。
+
+## ✨ 今日亮点
+
+- GPU指纹技术首次用于地理位置验证，拓展硬件安全边界
+- 芯片级监控与AI治理结合，回应算力溯源监管需求
+- 跨机构合作研究，融合硬件指纹与位置认证双重机制
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260503] GPU Fingerprinting for Location Verification | Tee Wayne, Happel Jonathan | 1；2 | 该研究提出GPU指纹定位验证方法，通过硬件特征识别实现芯片地理位置认证，为AI算力监管提供技术支撑。 | [#173](https://github.com/Larry2000error/Larry-PaperClaw/issues/173) |
+
+## 🔎 观察
+
+- 单一论文入选显示当日遥感AI领域产出清淡，或反映节假日效应
+- 硬件安全研究切入AI治理赛道，预示技术监管正下沉至芯片物理层
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260430](./202604/20260430.md)
 ## 📌 今日概况
 
@@ -58,38 +88,6 @@ Powered by OpenClaw🦞
 
 - 多模态融合成为Re-ID主流范式，文本与三维几何信息正逐步替代单一视觉特征
 - 联邦学习与域泛化结合反映隐私保护需求上升，实际部署场景的技术适配性成为研究焦点
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260428](./202604/20260428.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦图像地理定位与多模态检索两大方向。图像地理定位领域呈现双路径演进：DualGeo提出双视图对比学习框架，GeoSearch探索网络规模检索增强；多模态领域则关注大模型的视觉注意力缺失与语义漂移问题，三篇均涉及大语言模型技术融合。
-
-## ✨ 今日亮点
-
-- DualGeo构建双视图地理定位框架，结合对比学习与地理聚类提升全球定位精度
-- GeoSearch首创网络规模反向图像检索增强，突破传统地理定位数据瓶颈
-- 百度团队针对大模型视觉忽略与语义漂移，提出跨模态检索优化新策略
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260428] DualGeo: A Dual-View Framework for Worldwide Image Geo-localization | Cui Junchao, Shi Wenqi, Du Shaoyong, He Hang, Ma Xuanzi, Tang Hao, Luo Xiangyang | Henan Key Laboratory of Cyberspace Situation Awareness；Information Engineering University | DualGeo通过双视图对比学习与跨注意力机制，实现粗到细粒度的全球图像地理定位。 | [#160](https://github.com/Larry2000error/Larry-PaperClaw/issues/160) |
-| [20260428] GeoSearch: Augmenting Worldwide Geolocalization with Web-Scale Reverse Image Search and Image Matching | Le-Duc Tung-Duong, Nguyen-Son Hoang-Quoc, Dao Minh-Son | University of Science, VNU-HCM；National Institute of Information and Communications Technology | GeoSearch融合网络规模反向图像搜索与图像匹配，构建检索增强的地理定位新范式。 | [#161](https://github.com/Larry2000error/Larry-PaperClaw/issues/161) |
-| [20260428] Combating Visual Neglect and Semantic Drift in Large Multimodal Models for Enhanced Cross-Modal Retrieval | Zhang Guosheng, Liu Linkai, Wang Keyao, Yue Haixiao, Tan Zhiwen, Tan Xiao | Baidu Inc. | 该工作诊断大模型视觉忽略与语义漂移缺陷，提出增强跨模态检索的对齐方法。 | [#162](https://github.com/Larry2000error/Larry-PaperClaw/issues/162) |
-
-## 🔎 观察
-
-- 图像地理定位正从单一模型预测转向'检索+匹配+生成'的混合增强架构，数据规模成为关键变量
-- 多模态大模型的视觉感知短板日益凸显，工业界开始系统性研究跨模态对齐的失效模式
 
 ---
 
