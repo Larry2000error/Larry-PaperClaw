@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260504](./202605/20260504.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日候选论文聚焦视觉基础模型在特定领域的适配研究。一篇探讨个性化图像补全的相册引导推理方法，另一篇则针对遥感领域重新评估光电视觉基础模型的检索性能，体现领域专用模型与通用模型的对比分析趋势。
+
+## ✨ 今日亮点
+
+- 遥感检索领域首次系统对比光电VFM与通用视觉基础模型的跨场景泛化能力
+- 提出相册引导推理框架，解决个性化图像补全中的身份一致性与参考检索难题
+- KAIST团队针对遥感数据特性，重新审视EO-VFM的表征有效性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260504] AlbumFill: Album-Guided Reasoning and Retrieval for Personalized Image Completion | Tsai Yu-Ju, Price Brian, Liu Qing, Figueroa Luis, Pakhomov Daniil, Ding Zhihong, Cohen Scott, Yang Ming-Hsuan | University of California, Merced；Adobe Research | 提出AlbumFill框架，通过相册级推理与检索实现个性化图像补全，保持身份一致性。 | [#175](https://github.com/Larry2000error/Larry-PaperClaw/issues/175) |
+| [20260504] Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM | Park Hyobin, Seo Minseok, Choi Dong-Geol | Korea Advanced Institute of Science and Technology (KAIST)；Hanbat National University | 系统对比光电视觉基础模型与通用VFM在遥感图像检索中的受控表现，揭示领域适配关键。 | [#176](https://github.com/Larry2000error/Larry-PaperClaw/issues/176) |
+
+## 🔎 观察
+
+- 遥感AI研究正从直接套用通用VFM转向审慎评估领域适配性，强调数据特性与模型设计的匹配。
+- 个性化生成任务开始引入结构化先验（相册关系），反映从单图生成向上下文感知生成的演进。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260503](./202605/20260503.md)
 ## 📌 今日概况
 
@@ -55,39 +86,6 @@ Powered by OpenClaw🦞
 
 - 无源学习成为Re-ID领域重要方向，反映数据隐私合规需求对技术路线的直接影响
 - 中间域构建策略或可为其他跨域遥感任务（如跨传感器场景识别）提供迁移思路
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260429](./202604/20260429.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦行人重识别(Re-ID)技术突破，涵盖属性表达量化、文本引导部件匹配、三维视角合成及联邦域泛化四大方向。研究呈现多模态融合与可解释性增强趋势，特别关注跨视角、跨域场景下的模型鲁棒性与公平性问题。
-
-## ✨ 今日亮点
-
-- AttriBE首次量化属性表达性，提升Re-ID公平性与识别精度
-- InterPartAbility引入文本引导部件匹配，增强模型可解释性
-- 3D-LENS实现单视图三维提升合成，解决空中-地面跨视角难题
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260429] AttriBE: Quantifying Attribute Expressivity in Body Embeddings for Recognition and Identification | Pal Basudha, Huang Siyuan, Nanduri Anirudh, Wang Zhaoyang, Chellappa Rama | Institution unavailable | AttriBE通过量化身体嵌入中的属性表达性，优化行人重识别的公平性与识别性能。 | [#164](https://github.com/Larry2000error/Larry-PaperClaw/issues/164) |
-| [20260429] InterPartAbility: Text-Guided Part Matching for Interpretable Person Re-Identification | Murtaza Shakeeb, Shukla Aryan, Bhattacharya Rajarshi, Heritier Maguelonne, Granger Eric | LIVIA, Dept. of Systems Engineering, ETS Montreal；Genetec Inc. | InterPartAbility利用视觉-语言模型实现文本引导的部件匹配，提升Re-ID可解释性与检索精度。 | [#165](https://github.com/Larry2000error/Larry-PaperClaw/issues/165) |
-| [20260429] 3D-LENS: A 3D Lifting-based Elevated Novel-view Synthesis method for Single-View Aerial-Ground Re-Identification | Grolleau William, Sabourin Astrid, Lapouge Guillaume, Achard Catherine | Université Paris-Saclay, CEA, List；Sorbonne University, CNRS, Institute of Intelligent Systems and Robotics (ISIR) | 3D-LENS基于三维提升合成新视角，解决单视图空中-地面行人重识别的跨域泛化问题。 | [#166](https://github.com/Larry2000error/Larry-PaperClaw/issues/166) |
-| [20260429] CO-EVO: Co-evolving Semantic Anchoring and Style Diversification for Federated DG-ReID | Zhang Fengchun, Ma Qiang, Xiang Liuyu, Lai Jinshan, Huang Tingxuan, Hu Jianwei | School of Information and Software Engineering, University of Electronic Science and Technology of China；QiYuan Lab；School of Artificial Intelligence, Beijing University of Posts and Telecommunications；School of Software, Tsinghua University | CO-EVO通过语义锚定与风格多样化协同进化，实现联邦学习场景下的域泛化Re-ID。 | [#167](https://github.com/Larry2000error/Larry-PaperClaw/issues/167) |
-
-## 🔎 观察
-
-- 多模态融合成为Re-ID主流范式，文本与三维几何信息正逐步替代单一视觉特征
-- 联邦学习与域泛化结合反映隐私保护需求上升，实际部署场景的技术适配性成为研究焦点
 
 ---
 
