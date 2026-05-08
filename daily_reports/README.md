@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260507](./202605/20260507.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦视觉检索中的细粒度感知与遮挡鲁棒性问题。两篇论文分别探索行人重识别中的动态掩码度量学习，以及文本-图像车辆检索中的部件级对齐，体现了跨模态理解与局部特征建模的研究趋势。
+
+## ✨ 今日亮点
+
+- DPM++提出动态掩码度量学习，解决遮挡行人重识别难题
+- T2I-VeRW实现部件级细粒度感知，提升文本到图像车辆检索精度
+- 两篇工作均强调局部特征与全局语义的联合建模
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260507] DPM++: Dynamic Masked Metric Learning for Occluded Person Re-identification | Tan Lei, Luan Yingshi, Zou Pincong, Dai Pingyang, Cao Liujuan | Institution unavailable | DPM++通过动态掩码度量学习机制，有效缓解遮挡对行人重识别特征的干扰，提升匹配鲁棒性。 | [#184](https://github.com/Larry2000error/Larry-PaperClaw/issues/184) |
+| [20260507] T2I-VeRW: Part-level Fine-grained Perception for Text-to-Image Vehicle Retrieval | Wang Xiao, Wang Ziwen, Kong Weizhe, Wu Wentao, Li Yuehang, Zheng Aihua, Li Chenglong, Tang Jin | Institution unavailable | T2I-VeRW构建部件级细粒度感知框架，实现文本描述与车辆图像的跨模态精准对齐与检索。 | [#185](https://github.com/Larry2000error/Larry-PaperClaw/issues/185) |
+
+## 🔎 观察
+
+- 遮挡处理与细粒度感知成为视觉检索的核心技术方向，反映实际应用场景的复杂需求
+- 跨模态对齐从全局向局部深化，部件级特征匹配或成提升检索精度的关键路径
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260506](./202605/20260506.md)
 ## 📌 今日概况
 
@@ -59,36 +90,6 @@ Powered by OpenClaw🦞
 
 - 遥感领域正从'专用模型开发'转向'基础模型适配评估'的研究范式
 - 跨场景泛化能力或成为衡量遥感视觉模型实用性的关键指标
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260503](./202605/20260503.md)
-## 📌 今日概况
-
-今日共检索候选论文 1 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日仅收录1篇论文，聚焦GPU硬件指纹与位置验证技术，属于AI治理与芯片安全交叉领域。该研究通过硬件特征识别实现GPU地理位置追踪，为算力监管和出口管制合规提供技术路径，反映当前AI基础设施安全管控的研究热点。
-
-## ✨ 今日亮点
-
-- GPU硬件指纹技术实现算力设备精准定位追踪
-- 芯片级安全监控与AI治理政策的技术结合
-- 为跨境算力流动监管提供硬件层面验证手段
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260503] GPU Fingerprinting for Location Verification | Tee Wayne, Happel Jonathan | 1；2 | 该研究提出GPU指纹识别方法，通过硬件特征提取实现服务器地理位置验证，服务于AI芯片出口管制与算力合规监管。 | [#173](https://github.com/Larry2000error/Larry-PaperClaw/issues/173) |
-
-## 🔎 观察
-
-- 单一论文收录量显示该细分领域尚处早期，技术成熟度与规模化应用待观察
-- 硬件指纹与位置验证的结合，标志着AI治理正从软件层面向物理基础设施层延伸
 
 ---
 
