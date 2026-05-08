@@ -5,27 +5,26 @@
 # [20260504](./202605/20260504.md)
 ## 📌 今日概况
 
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
 
-今日候选论文聚焦视觉基础模型在特定领域的适配研究。一篇探讨个性化图像补全的相册引导推理方法，另一篇则针对遥感领域重新评估光电视觉基础模型的检索性能，体现领域专用模型与通用模型的对比分析趋势。
+今日研究聚焦遥感视觉基础模型的专业化评估。KAIST团队系统对比了通用视觉基础模型与遥感专用模型在光电图像检索任务中的性能差异，揭示了跨场景泛化能力的关键瓶颈，为遥感领域模型选型提供了实证依据。
 
 ## ✨ 今日亮点
 
-- 遥感检索领域首次系统对比光电VFM与通用视觉基础模型的跨场景泛化能力
-- 提出相册引导推理框架，解决个性化图像补全中的身份一致性与参考检索难题
-- KAIST团队针对遥感数据特性，重新审视EO-VFM的表征有效性
+- 首次在受控条件下对比通用VFM与遥感专用模型的检索性能
+- 揭示光电遥感图像跨场景泛化的核心挑战与模型局限
+- 为遥感检索任务的基础模型选择提供系统性参考框架
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260504] AlbumFill: Album-Guided Reasoning and Retrieval for Personalized Image Completion | Tsai Yu-Ju, Price Brian, Liu Qing, Figueroa Luis, Pakhomov Daniil, Ding Zhihong, Cohen Scott, Yang Ming-Hsuan | University of California, Merced；Adobe Research | 提出AlbumFill框架，通过相册级推理与检索实现个性化图像补全，保持身份一致性。 | [#175](https://github.com/Larry2000error/Larry-PaperClaw/issues/175) |
-| [20260504] Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM | Park Hyobin, Seo Minseok, Choi Dong-Geol | Korea Advanced Institute of Science and Technology (KAIST)；Hanbat National University | 系统对比光电视觉基础模型与通用VFM在遥感图像检索中的受控表现，揭示领域适配关键。 | [#176](https://github.com/Larry2000error/Larry-PaperClaw/issues/176) |
+| [20260504] Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM | Park Hyobin, Seo Minseok, Choi Dong-Geol | Korea Advanced Institute of Science and Technology (KAIST)；Hanbat National University | KAIST等团队通过受控实验重新评估通用视觉基础模型与遥感专用模型在光电图像检索中的性能差距，发现通用模型在跨场景泛化上存在显著局限。 | [#176](https://github.com/Larry2000error/Larry-PaperClaw/issues/176) |
 
 ## 🔎 观察
 
-- 遥感AI研究正从直接套用通用VFM转向审慎评估领域适配性，强调数据特性与模型设计的匹配。
-- 个性化生成任务开始引入结构化先验（相册关系），反映从单图生成向上下文感知生成的演进。
+- 遥感领域正从'专用模型开发'转向'基础模型适配评估'的研究范式
+- 跨场景泛化能力或成为衡量遥感视觉模型实用性的关键指标
 
 ---
 
