@@ -7,25 +7,25 @@
 
 今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
 
-今日研究聚焦视觉检索中的细粒度感知与遮挡鲁棒性问题。两篇论文分别探索行人重识别中的动态掩码度量学习，以及文本-图像车辆检索中的部件级对齐，体现了跨模态理解与局部特征建模的研究趋势。
+今日研究聚焦视觉识别中的细粒度感知与遮挡鲁棒性问题。两篇论文分别针对行人重识别中的遮挡挑战和车辆跨模态检索中的部件级对齐，体现了从粗粒度到细粒度、从单模态到跨模态的技术演进趋势，核心方法均涉及动态掩码学习与局部特征增强。
 
 ## ✨ 今日亮点
 
-- DPM++提出动态掩码度量学习，解决遮挡行人重识别难题
-- T2I-VeRW实现部件级细粒度感知，提升文本到图像车辆检索精度
-- 两篇工作均强调局部特征与全局语义的联合建模
+- DPM++提出动态掩码度量学习，解决遮挡行人重识别中的特征对齐难题
+- T2I-VeRW构建部件级细粒度感知框架，实现文本到图像的车辆精准检索
+- 两篇工作均强调局部部件建模，反映视觉识别向精细化理解发展
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260507] DPM++: Dynamic Masked Metric Learning for Occluded Person Re-identification | Tan Lei, Luan Yingshi, Zou Pincong, Dai Pingyang, Cao Liujuan | Institution unavailable | DPM++通过动态掩码度量学习机制，有效缓解遮挡对行人重识别特征的干扰，提升匹配鲁棒性。 | [#184](https://github.com/Larry2000error/Larry-PaperClaw/issues/184) |
-| [20260507] T2I-VeRW: Part-level Fine-grained Perception for Text-to-Image Vehicle Retrieval | Wang Xiao, Wang Ziwen, Kong Weizhe, Wu Wentao, Li Yuehang, Zheng Aihua, Li Chenglong, Tang Jin | Institution unavailable | T2I-VeRW构建部件级细粒度感知框架，实现文本描述与车辆图像的跨模态精准对齐与检索。 | [#185](https://github.com/Larry2000error/Larry-PaperClaw/issues/185) |
+| [20260507] DPM++: Dynamic Masked Metric Learning for Occluded Person Re-identification | Tan Lei, Luan Yingshi, Zou Pincong, Dai Pingyang, Cao Liujuan | Institution unavailable | DPM++通过动态掩码度量学习，在遮挡场景下实现行人重识别的鲁棒特征匹配。 | [#184](https://github.com/Larry2000error/Larry-PaperClaw/issues/184) |
+| [20260507] T2I-VeRW: Part-level Fine-grained Perception for Text-to-Image Vehicle Retrieval | Wang Xiao, Wang Ziwen, Kong Weizhe, Wu Wentao, Li Yuehang, Zheng Aihua, Li Chenglong, Tang Jin | Institution unavailable | T2I-VeRW提出部件级细粒度感知方法，提升文本到图像车辆跨模态检索精度。 | [#185](https://github.com/Larry2000error/Larry-PaperClaw/issues/185) |
 
 ## 🔎 观察
 
-- 遮挡处理与细粒度感知成为视觉检索的核心技术方向，反映实际应用场景的复杂需求
-- 跨模态对齐从全局向局部深化，部件级特征匹配或成提升检索精度的关键路径
+- 遮挡处理与细粒度对齐成为重识别领域的关键技术方向，掩码学习策略应用日趋深入
+- 跨模态检索正从全局特征向局部部件级对齐演进，文本描述与视觉区域的细粒度关联成为研究重点
 
 ---
 
