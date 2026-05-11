@@ -38,28 +38,28 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
 
-今日研究聚焦视觉-语言模型在遥感与监控场景的检索应用。卫星图像零样本检索与开放词汇检索成为热点，结合对比学习与LLM引导的查询优化；同时，多模态重识别技术向终身学习、隐私保护及热成像等方向延伸，体现跨域泛化与实用部署的双重诉求。
+今日遥感AI研究聚焦视觉-语言模型在卫星图像检索中的创新应用，两篇论文分别探索零样本检索与开放词汇检索。同时，目标重识别领域持续活跃，涵盖行人终身学习、隐私保护及热成像车辆识别等方向，跨模态与跨域泛化成为共性技术诉求。
 
 ## ✨ 今日亮点
 
-- 零样本卫星图像检索通过联合嵌入实现危机响应场景的快速图像定位
-- LLM引导的查询嵌入优化支持卫星影像开放词汇目标检索
-- 热成像车辆重识别引入视角条件特征选择以应对跨视角挑战
+- 零样本卫星图像检索：联合嵌入与对比学习实现危机响应场景下的无需训练检索
+- LLM引导的查询嵌入优化：Open-SAT框架突破卫星图像开放词汇对象检索瓶颈
+- 提示锚定视觉-文本蒸馏：终身行人重识别的新范式，缓解跨域遗忘问题
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260506] Zero-Shot Satellite Image Retrieval through Joint Embeddings: Application to Crisis Response | Walsh James, Fawcett William, Colvard Grace, Ramos-Pollán Raúl | University of Cambridge；Universidad de Antioquia | 提出零样本卫星图像检索方法，通过联合嵌入与对比学习实现危机响应场景下的快速图像定位。 | [#178](https://github.com/Larry2000error/Larry-PaperClaw/issues/178) |
-| [20260506] Open-SAT: LLM-Guided Query Embedding Refinement for Open-Vocabulary Object Retrieval in Satellite Imagery | Md Adnan Arefeen, Debnath Biplob, Ravi K. Rajendran, Sankaradas Murugan, Srimat T. Chakradhar | North South University；NEC Laboratories America | 设计LLM引导的查询嵌入精化框架，提升卫星影像开放词汇目标检索的语义对齐能力。 | [#179](https://github.com/Larry2000error/Larry-PaperClaw/issues/179) |
-| [20260506] Prompt-Anchored Vision-Text Distillation for Lifelong Person Re-identification | Wen Wen, Chen Hao, Zhang Shiliang | University of Electronic Science and Technology of China；Harbin Institute of Technology, Shenzhen；Peking University | 提出提示锚定的视觉-文本蒸馏方法，解决终身行人重识别中的跨域泛化与知识迁移问题。 | [#180](https://github.com/Larry2000error/Larry-PaperClaw/issues/180) |
-| [20260506] ICPR 2026 Competition on Privacy-Preserving Person Re-Identification from Top-View RGB-Depth Camera (TVRID) | Delécluse Raphaël, Wannous Hazem, Guimas Laurent | IMT Nord Europe, University of Lille, CNRS UMR 9189 - CRIStAL；Explain | 发起顶视RGB-深度相机的隐私保护行人重识别竞赛，推动多模态隐私感知识别技术发展。 | [#181](https://github.com/Larry2000error/Larry-PaperClaw/issues/181) |
-| [20260506] VC-FeS: Viewpoint-Conditioned Feature Selection for Vehicle Re-identification in Thermal Vision | Ginige Yasod, Gunasekara Ransika, Hewavitharana Darsha, Ariyarathne Manjula, Jayasekara Peshala, Rodrigo Ranga | School of Computer Science, University of Sydney；Department of Electronics and Telecommunication Engineering, University of Moratuwa | 针对热成像车辆重识别任务，引入视角条件特征选择机制以增强跨视角特征判别性。 | [#182](https://github.com/Larry2000error/Larry-PaperClaw/issues/182) |
+| [20260506] Zero-Shot Satellite Image Retrieval through Joint Embeddings: Application to Crisis Response | Walsh James, Fawcett William, Colvard Grace, Ramos-Pollán Raúl | University of Cambridge；Universidad de Antioquia | 剑桥大学团队提出零样本卫星图像检索方法，通过联合嵌入与对比学习实现危机响应场景下无需训练的图像检索。 | [#178](https://github.com/Larry2000error/Larry-PaperClaw/issues/178) |
+| [20260506] Open-SAT: LLM-Guided Query Embedding Refinement for Open-Vocabulary Object Retrieval in Satellite Imagery | Md Adnan Arefeen, Debnath Biplob, Ravi K. Rajendran, Sankaradas Murugan, Srimat T. Chakradhar | North South University；NEC Laboratories America | Open-SAT框架利用大语言模型引导查询嵌入优化，解决卫星图像开放词汇对象检索中的语义对齐难题。 | [#179](https://github.com/Larry2000error/Larry-PaperClaw/issues/179) |
+| [20260506] Prompt-Anchored Vision-Text Distillation for Lifelong Person Re-identification | Wen Wen, Chen Hao, Zhang Shiliang | University of Electronic Science and Technology of China；Harbin Institute of Technology, Shenzhen；Peking University | 提示锚定视觉-文本蒸馏方法用于终身行人重识别，通过知识蒸馏缓解跨域场景下的模型遗忘问题。 | [#180](https://github.com/Larry2000error/Larry-PaperClaw/issues/180) |
+| [20260506] ICPR 2026 Competition on Privacy-Preserving Person Re-Identification from Top-View RGB-Depth Camera (TVRID) | Delécluse Raphaël, Wannous Hazem, Guimas Laurent | IMT Nord Europe, University of Lille, CNRS UMR 9189 - CRIStAL；Explain | ICPR 2026竞赛发布顶视RGB-D相机隐私保护行人重识别基准，推动跨模态检索与隐私计算技术融合。 | [#181](https://github.com/Larry2000error/Larry-PaperClaw/issues/181) |
+| [20260506] VC-FeS: Viewpoint-Conditioned Feature Selection for Vehicle Re-identification in Thermal Vision | Ginige Yasod, Gunasekara Ransika, Hewavitharana Darsha, Ariyarathne Manjula, Jayasekara Peshala, Rodrigo Ranga | School of Computer Science, University of Sydney；Department of Electronics and Telecommunication Engineering, University of Moratuwa | VC-FeS方法引入视角条件特征选择机制，提升热成像车辆重识别在复杂视角变化下的鲁棒性。 | [#182](https://github.com/Larry2000error/Larry-PaperClaw/issues/182) |
 
 ## 🔎 观察
 
-- 遥感检索正从封闭集向开放词汇演进，LLM与视觉-语言模型的融合成为突破语义鸿沟的关键路径
-- 重识别研究呈现多模态扩展趋势，热成像、深度图与隐私保护技术的引入反映真实部署场景的复杂需求
+- 视觉-语言模型正加速渗透遥感领域，从预训练对齐走向查询端动态优化，LLM的语义推理能力成为检索精度提升的新变量
+- 重识别研究呈现多模态扩展态势：热成像、RGB-D、顶视视角等非常规传感数据的技术适配需求显著增长
 
 ---
 
