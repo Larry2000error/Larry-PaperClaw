@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260511](./202605/20260511.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦视觉基础模型在跨视角地理定位与图像检索任务的适配优化。西电团队主导两项工作，分别探索DINOv2的几何桥接与超网络驱动的风格自适应检索；昆士兰大学团队则关注生成式外观先验在无监督细粒度检索中的应用。
+
+## ✨ 今日亮点
+
+- BGG利用DINOv2实现跨视角图像几何对齐，突破传统地理定位瓶颈
+- HYSTAR创新引入超网络动态调制SVD，实现风格自适应图像检索
+- 生成式外观先验结合标准化流，推动无监督细粒度检索性能提升
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260511] BGG: Bridging the Geometric Gap between Cross-View images by Vision Foundation Model Adaptation for Geo-Localization | Wang Wei, Quan Dou, Huyan Ning, Wang Shuang, Li Yi, He Pei, Jiao Licheng | Xidian University | BGG通过视觉基础模型参数高效适配与多粒度特征增强，弥合跨视角地理定位中的几何差异。 | [#187](https://github.com/Larry2000error/Larry-PaperClaw/issues/187) |
+| [20260513] HYSTAR: HYPERNETWORK-DRIVEN STYLE-ADAPTIVE RETRIEVAL VIA DYNAMIC SVD MODULATION | Cai Yujia, Li Boxuan, Xu Chenghao, Yan Jiexi | School of Computer Science and Technology, Xidian University；School of Electronic Engineering, Xidian University | HYSTAR提出超网络驱动框架，借助动态奇异值分解调制实现视觉-语言模型的风格自适应图像检索。 | [#188](https://github.com/Larry2000error/Larry-PaperClaw/issues/188) |
+| [20260511] Learning to Align Generative Appearance Priors for Fine-grained Image Retrieval | Wang Shijie, Luo Yadan, Wang Zijian, Yu Xin, Huang Zi | The University of Queensland；The University of Adelaide | 该研究利用标准化流学习生成式外观先验对齐，解决无监督细粒度图像检索中的外观变化难题。 | [#189](https://github.com/Larry2000error/Larry-PaperClaw/issues/189) |
+
+## 🔎 观察
+
+- 视觉基础模型正成为遥感跨视角任务的新基座，参数高效适配技术降低迁移成本
+- 生成式先验与动态网络架构的结合，反映检索任务从判别式向生成-判别融合范式的演进
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260507](./202605/20260507.md)
 ## 📌 今日概况
 
@@ -60,37 +92,6 @@ Powered by OpenClaw🦞
 
 - 视觉-语言模型正加速渗透遥感领域，从预训练对齐走向查询端动态优化，LLM的语义推理能力成为检索精度提升的新变量
 - 重识别研究呈现多模态扩展态势：热成像、RGB-D、顶视视角等非常规传感数据的技术适配需求显著增长
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260504](./202605/20260504.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦视觉基础模型的专业化适配。KAIST团队系统对比了电光遥感专用模型与通用视觉基础模型的检索性能，为遥感领域模型选型提供实证依据。同时，个性化图像生成领域出现相册引导的推理检索新方法，强调身份一致性保持。
-
-## ✨ 今日亮点
-
-- 遥感检索领域首次开展专用VFM与通用VFM的受控对比实验
-- 电光遥感视觉基础模型的跨场景泛化能力成为评估焦点
-- 个性化图像补全引入相册级推理检索机制增强身份一致性
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260504] AlbumFill: Album-Guided Reasoning and Retrieval for Personalized Image Completion | Tsai Yu-Ju, Price Brian, Liu Qing, Figueroa Luis, Pakhomov Daniil, Ding Zhihong, Cohen Scott, Yang Ming-Hsuan | University of California, Merced；Adobe Research | 提出AlbumFill框架，通过相册引导推理与检索实现个性化图像补全，解决参考图像选择与身份一致性问题。 | [#175](https://github.com/Larry2000error/Larry-PaperClaw/issues/175) |
-| [20260504] Rethinking Electro-Optical Vision Foundation Models for Remote Sensing Retrieval: A Controlled Comparison with Generalist VFM | Park Hyobin, Seo Minseok, Choi Dong-Geol | Korea Advanced Institute of Science and Technology (KAIST)；Hanbat National University | 系统比较电光遥感专用视觉基础模型与通用VFM在遥感检索任务中的性能差异，揭示领域适配的关键设计选择。 | [#176](https://github.com/Larry2000error/Larry-PaperClaw/issues/176) |
-
-## 🔎 观察
-
-- 遥感领域正从'自研专用模型'向'评估适配通用模型'转变，反映基础模型生态成熟。
-- 个性化生成任务中'参考检索+推理'的范式可能迁移至遥感目标识别等需先验引导的任务。
 
 ---
 
