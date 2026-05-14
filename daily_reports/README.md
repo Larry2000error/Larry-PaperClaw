@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260513](./202605/20260513.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日仅收录1篇论文，聚焦图像检索领域的新挑战——上下文依赖语义理解。该研究由东京都立大学与CyberAgent合作完成，探索如何让图像检索系统理解同一图像在不同叙事语境中的差异化语义，代表了多模态表征学习向更高层次语义抽象演进的方向。
+
+## ✨ 今日亮点
+
+- 突破传统图像检索的静态语义假设，引入动态语境建模
+- 探索叙事上下文对图像语义表征的重塑机制
+- 推动多模态嵌入向情境感知型语义理解升级
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260513] Same Image, Different Meanings: Toward Retrieval of Context-Dependent Meanings | Tsutsumi Ayuto, Kohita Ryosuke | Tokyo Metropolitan University；CyberAgent | 该研究提出上下文依赖的图像检索框架，使同一图像能根据叙事语境生成差异化语义表征，突破传统检索中语义静态固定的局限。 | [#195](https://github.com/Larry2000error/Larry-PaperClaw/issues/195) |
+
+## 🔎 观察
+
+- 单篇收录反映该方向尚处早期探索阶段，但语义动态化是检索技术的重要演进方向
+- 产学研合作模式（高校+CyberAgent）显示该研究具备较强的应用转化潜力
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260512](./202605/20260512.md)
 ## 📌 今日概况
 
@@ -59,37 +89,6 @@ Powered by OpenClaw🦞
 
 - 西电大学单日贡献两篇论文，显示其在视觉基础模型适配领域的集中布局与技术积累优势。
 - 参数高效微调与超网络动态调制成为当前平衡模型性能与计算成本的主流技术路径。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260507](./202605/20260507.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI领域聚焦智能视觉识别技术，两篇论文分别针对遮挡行人重识别与文本-图像车辆检索任务，核心趋势为细粒度特征学习与跨模态对齐，通过动态掩码学习和部件级感知提升复杂场景下的检索鲁棒性。
-
-## ✨ 今日亮点
-
-- DPM++提出动态掩码度量学习，解决遮挡行人重识别中的特征对齐难题
-- T2I-VeRW实现部件级细粒度感知，推动文本到图像车辆检索精度提升
-- 两篇工作均强调局部特征与全局语义的联合建模，反映当前研究热点
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260507] DPM++: Dynamic Masked Metric Learning for Occluded Person Re-identification | Tan Lei, Luan Yingshi, Zou Pincong, Dai Pingyang, Cao Liujuan | Institution unavailable | DPM++通过动态掩码度量学习策略，有效缓解遮挡干扰，提升行人重识别在复杂场景下的准确性。 | [#184](https://github.com/Larry2000error/Larry-PaperClaw/issues/184) |
-| [20260507] T2I-VeRW: Part-level Fine-grained Perception for Text-to-Image Vehicle Retrieval | Wang Xiao, Wang Ziwen, Kong Weizhe, Wu Wentao, Li Yuehang, Zheng Aihua, Li Chenglong, Tang Jin | Institution unavailable | T2I-VeRW构建部件级细粒度跨模态对齐框架，实现文本描述与车辆图像的精准检索匹配。 | [#185](https://github.com/Larry2000error/Larry-PaperClaw/issues/185) |
-
-## 🔎 观察
-
-- 遮挡处理与细粒度感知成为视觉检索的关键技术方向，局部特征学习的重要性持续凸显
-- 跨模态检索任务从粗粒度向部件级演进，对多源数据对齐精度提出更高要求
 
 ---
 
