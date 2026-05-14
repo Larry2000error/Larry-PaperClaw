@@ -7,26 +7,26 @@
 
 今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日遥感AI研究聚焦视觉基础模型在跨视角地理定位与图像检索任务的适配优化。西电团队主导两项工作，分别探索DINOv2的几何桥接与超网络驱动的风格自适应检索；昆士兰大学团队则关注生成式外观先验在无监督细粒度检索中的应用。
+今日遥感AI研究聚焦视觉基础模型在跨视角地理定位与图像检索中的高效适配。西电团队主导两项工作，分别探索DINOv2参数高效微调与超网络动态风格调制；昆士兰大学团队则关注生成式外观先验的无监督细粒度检索，整体呈现基础模型轻量化适配与生成式表征学习的双重趋势。
 
 ## ✨ 今日亮点
 
-- BGG利用DINOv2实现跨视角图像几何对齐，突破传统地理定位瓶颈
-- HYSTAR创新引入超网络动态调制SVD，实现风格自适应图像检索
-- 生成式外观先验结合标准化流，推动无监督细粒度检索性能提升
+- BGG提出DINOv2参数高效适配框架，弥合跨视角图像几何差异
+- HYSTAR以超网络驱动动态SVD调制，实现风格自适应图像检索
+- 生成式外观先验对齐方法推进无监督细粒度图像检索性能
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260511] BGG: Bridging the Geometric Gap between Cross-View images by Vision Foundation Model Adaptation for Geo-Localization | Wang Wei, Quan Dou, Huyan Ning, Wang Shuang, Li Yi, He Pei, Jiao Licheng | Xidian University | BGG通过视觉基础模型参数高效适配与多粒度特征增强，弥合跨视角地理定位中的几何差异。 | [#187](https://github.com/Larry2000error/Larry-PaperClaw/issues/187) |
-| [20260513] HYSTAR: HYPERNETWORK-DRIVEN STYLE-ADAPTIVE RETRIEVAL VIA DYNAMIC SVD MODULATION | Cai Yujia, Li Boxuan, Xu Chenghao, Yan Jiexi | School of Computer Science and Technology, Xidian University；School of Electronic Engineering, Xidian University | HYSTAR提出超网络驱动框架，借助动态奇异值分解调制实现视觉-语言模型的风格自适应图像检索。 | [#188](https://github.com/Larry2000error/Larry-PaperClaw/issues/188) |
-| [20260511] Learning to Align Generative Appearance Priors for Fine-grained Image Retrieval | Wang Shijie, Luo Yadan, Wang Zijian, Yu Xin, Huang Zi | The University of Queensland；The University of Adelaide | 该研究利用标准化流学习生成式外观先验对齐，解决无监督细粒度图像检索中的外观变化难题。 | [#189](https://github.com/Larry2000error/Larry-PaperClaw/issues/189) |
+| [20260511] BGG: Bridging the Geometric Gap between Cross-View images by Vision Foundation Model Adaptation for Geo-Localization | Wang Wei, Quan Dou, Huyan Ning, Wang Shuang, Li Yi, He Pei, Jiao Licheng | Xidian University | BGG通过适配DINOv2并设计多粒度特征增强模块，以参数高效方式解决跨视角地理定位中的几何差距问题。 | [#187](https://github.com/Larry2000error/Larry-PaperClaw/issues/187) |
+| [20260513] HYSTAR: HYPERNETWORK-DRIVEN STYLE-ADAPTIVE RETRIEVAL VIA DYNAMIC SVD MODULATION | Cai Yujia, Li Boxuan, Xu Chenghao, Yan Jiexi | School of Computer Science and Technology, Xidian University；School of Electronic Engineering, Xidian University | HYSTAR利用超网络预测动态SVD调制参数，使视觉-语言模型能够自适应不同风格，提升图像检索泛化能力。 | [#188](https://github.com/Larry2000error/Larry-PaperClaw/issues/188) |
+| [20260511] Learning to Align Generative Appearance Priors for Fine-grained Image Retrieval | Wang Shijie, Luo Yadan, Wang Zijian, Yu Xin, Huang Zi | The University of Queensland；The University of Adelaide | 该方法通过归一化流学习生成式外观先验，并在无监督设定下对齐先验分布以实现细粒度图像检索。 | [#189](https://github.com/Larry2000error/Larry-PaperClaw/issues/189) |
 
 ## 🔎 观察
 
-- 视觉基础模型正成为遥感跨视角任务的新基座，参数高效适配技术降低迁移成本
-- 生成式先验与动态网络架构的结合，反映检索任务从判别式向生成-判别融合范式的演进
+- 西电大学单日贡献两篇论文，显示其在视觉基础模型适配领域的集中布局与技术积累优势。
+- 参数高效微调与超网络动态调制成为当前平衡模型性能与计算成本的主流技术路径。
 
 ---
 
