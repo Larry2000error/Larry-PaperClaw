@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260512](./202605/20260512.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦多模态模型的鲁棒性与泛化能力。三篇论文分别针对视觉语言模型的持续学习、跨视角地理定位的天气鲁棒性，以及多图像检索中的位置偏置问题，体现出遥感与视觉AI领域对真实场景适应性的高度关注。
+
+## ✨ 今日亮点
+
+- 提出增强型EWC方法，实现视觉语言模型的跨模态知识保持与终身学习
+- 基于原型学习的语义部件发现，提升跨视角地理定位的天气鲁棒性
+- 设计Logit-注意力散度校准机制，缓解多图像检索中的位置偏置
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260512] Lifelong Learning in Vision-Language Models: Enhanced EWC with Cross-Modal Knowledge Retention | Hamza Ahmed Durrani, Rafay Suleman Durrani | Sejong University；Technische Universität Ilmenau | 提出增强弹性权重整合方法，通过跨模态知识保持机制缓解视觉语言模型持续学习中的灾难性遗忘问题。 | [#191](https://github.com/Larry2000error/Larry-PaperClaw/issues/191) |
+| [20260512] Weather-Robust Cross-View Geo-Localization via Prototype-Based Semantic Part Discovery | Tran Chi-Nguyen, Dao Sy Duy Minh, Huynh Trung Kiet, Nguyen Lam Phu Quy, Pham Phu-Hoa, Tran-Thanh Long | University of Warwick | 基于原型学习与语义部件发现，构建天气鲁棒的跨视角地理定位框架，提升恶劣天气条件下的定位精度。 | [#192](https://github.com/Larry2000error/Larry-PaperClaw/issues/192) |
+| [20260512] Logit-Attention Divergence: Mitigating Position Bias in Multi-Image Retrieval via Attention-Guided Calibration | Xian Mingtao, Yang Yifeng, Gu Qinying, Wang Xinbing, Ye Nanyang | Tsinghua University；Chinese Academy of Sciences | 揭示多图像检索中的位置偏置现象，提出Logit-注意力散度校准方法，通过注意力引导优化检索排序。 | [#193](https://github.com/Larry2000error/Larry-PaperClaw/issues/193) |
+
+## 🔎 观察
+
+- 跨模态对齐与鲁棒性成为核心议题，三篇论文均涉及模态间交互机制的优化设计
+- 注意力机制的分析与干预持续受到关注，从可解释性角度切入解决实际任务偏置
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260511](./202605/20260511.md)
 ## 📌 今日概况
 
@@ -58,40 +90,6 @@ Powered by OpenClaw🦞
 
 - 遮挡处理与细粒度感知成为视觉检索的关键技术方向，局部特征学习的重要性持续凸显
 - 跨模态检索任务从粗粒度向部件级演进，对多源数据对齐精度提出更高要求
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260506](./202605/20260506.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究聚焦视觉-语言模型在卫星图像检索中的创新应用，两篇论文分别探索零样本检索与开放词汇检索。同时，目标重识别领域持续活跃，涵盖行人终身学习、隐私保护及热成像车辆识别等方向，跨模态与跨域泛化成为共性技术诉求。
-
-## ✨ 今日亮点
-
-- 零样本卫星图像检索：联合嵌入与对比学习实现危机响应场景下的无需训练检索
-- LLM引导的查询嵌入优化：Open-SAT框架突破卫星图像开放词汇对象检索瓶颈
-- 提示锚定视觉-文本蒸馏：终身行人重识别的新范式，缓解跨域遗忘问题
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260506] Zero-Shot Satellite Image Retrieval through Joint Embeddings: Application to Crisis Response | Walsh James, Fawcett William, Colvard Grace, Ramos-Pollán Raúl | University of Cambridge；Universidad de Antioquia | 剑桥大学团队提出零样本卫星图像检索方法，通过联合嵌入与对比学习实现危机响应场景下无需训练的图像检索。 | [#178](https://github.com/Larry2000error/Larry-PaperClaw/issues/178) |
-| [20260506] Open-SAT: LLM-Guided Query Embedding Refinement for Open-Vocabulary Object Retrieval in Satellite Imagery | Md Adnan Arefeen, Debnath Biplob, Ravi K. Rajendran, Sankaradas Murugan, Srimat T. Chakradhar | North South University；NEC Laboratories America | Open-SAT框架利用大语言模型引导查询嵌入优化，解决卫星图像开放词汇对象检索中的语义对齐难题。 | [#179](https://github.com/Larry2000error/Larry-PaperClaw/issues/179) |
-| [20260506] Prompt-Anchored Vision-Text Distillation for Lifelong Person Re-identification | Wen Wen, Chen Hao, Zhang Shiliang | University of Electronic Science and Technology of China；Harbin Institute of Technology, Shenzhen；Peking University | 提示锚定视觉-文本蒸馏方法用于终身行人重识别，通过知识蒸馏缓解跨域场景下的模型遗忘问题。 | [#180](https://github.com/Larry2000error/Larry-PaperClaw/issues/180) |
-| [20260506] ICPR 2026 Competition on Privacy-Preserving Person Re-Identification from Top-View RGB-Depth Camera (TVRID) | Delécluse Raphaël, Wannous Hazem, Guimas Laurent | IMT Nord Europe, University of Lille, CNRS UMR 9189 - CRIStAL；Explain | ICPR 2026竞赛发布顶视RGB-D相机隐私保护行人重识别基准，推动跨模态检索与隐私计算技术融合。 | [#181](https://github.com/Larry2000error/Larry-PaperClaw/issues/181) |
-| [20260506] VC-FeS: Viewpoint-Conditioned Feature Selection for Vehicle Re-identification in Thermal Vision | Ginige Yasod, Gunasekara Ransika, Hewavitharana Darsha, Ariyarathne Manjula, Jayasekara Peshala, Rodrigo Ranga | School of Computer Science, University of Sydney；Department of Electronics and Telecommunication Engineering, University of Moratuwa | VC-FeS方法引入视角条件特征选择机制，提升热成像车辆重识别在复杂视角变化下的鲁棒性。 | [#182](https://github.com/Larry2000error/Larry-PaperClaw/issues/182) |
-
-## 🔎 观察
-
-- 视觉-语言模型正加速渗透遥感领域，从预训练对齐走向查询端动态优化，LLM的语义推理能力成为检索精度提升的新变量
-- 重识别研究呈现多模态扩展态势：热成像、RGB-D、顶视视角等非常规传感数据的技术适配需求显著增长
 
 ---
 
