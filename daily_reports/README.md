@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260514](./202605/20260514.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦跨模态学习的基础性问题。无人机地理定位领域探索利用免费道路地图作为几何先验，提升天气不变性定位能力；图像检索领域则对多模态组合基准测试提出质疑，揭示单模态捷径可能削弱评估有效性。两项研究均关注模型设计的本质合理性与实际可靠性。
+
+## ✨ 今日亮点
+
+- GeoFuse框架融合道路地图几何先验，实现天气鲁棒的无人机跨视角定位
+- CIR基准测试分析发现多模态组合非必需，单模态捷径普遍存在
+- 跨模态学习研究趋向审视方法本质，而非单纯追求性能提升
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260514] Road Maps as Free Geometric Priors: Weather-Invariant Drone Geo-Localization with GeoFuse | Fang Yunsong, Wang Tingyu, Zheng Zhedong | University of Macau；Hangzhou Dianzi University | GeoFuse提出利用免费道路地图作为几何先验，通过跨模态融合实现天气不变的无人机地理定位，降低对卫星图的依赖。 | [#197](https://github.com/Larry2000error/Larry-PaperClaw/issues/197) |
+| [20260514] Do Composed Image Retrieval Benchmarks Require Multimodal Composition? | Attimonelli Matteo, Alessandro De Bellis, Aryo Pradipta Gema, Saxena Rohit, Sekoyan Monica, Kwan Wai-Chung, Pomo Claudio, Suglia Alessandro, Jannach Dietmar, Tommaso Di Noia, Minervini Pasquale | Politecnico di Bari；Sapienza University of Rome；University of Edinburgh；University of Klagenfurt；Miniml.AI | 研究质疑组合图像检索基准的必要性，发现现有数据集存在单模态捷径，多模态组合未必提升检索效果。 | [#198](https://github.com/Larry2000error/Larry-PaperClaw/issues/198) |
+
+## 🔎 观察
+
+- 遥感定位研究正从'数据驱动'转向'知识引导'，利用开放地理数据降低标注成本值得持续关注
+- 多模态学习领域出现反思浪潮，基准测试的严谨性设计将直接影响方法创新的方向与价值
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260513](./202605/20260513.md)
 ## 📌 今日概况
 
@@ -57,38 +88,6 @@ Powered by OpenClaw🦞
 
 - 位置偏置与灾难性遗忘等模型固有缺陷正获得针对性技术回应，显示领域从性能优化向可靠性深化的转型趋势。
 - 天气鲁棒性与跨视角任务结合，反映遥感应用对复杂环境适应性的迫切需求，语义级部件建模成为关键突破口。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260511](./202605/20260511.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦视觉基础模型在跨域图像任务中的适配与检索应用。西电团队主导两项工作：跨视角地理定位的几何差距弥合，以及超网络驱动的风格自适应检索；昆士兰大学团队则探索生成式外观先验在细粒度检索中的对齐学习。整体趋势显示参数高效适应与动态特征调制成为关键技术方向。
-
-## ✨ 今日亮点
-
-- BGG利用DINOv2适配实现跨视角地理定位的几何对齐，采用多粒度特征增强策略
-- HYSTAR提出超网络驱动的SVD动态调制机制，解决图像检索中的风格适应难题
-- 生成式外观先验结合标准化流，为无监督细粒度图像检索提供新范式
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260511] BGG: Bridging the Geometric Gap between Cross-View images by Vision Foundation Model Adaptation for Geo-Localization | Wang Wei, Quan Dou, Huyan Ning, Wang Shuang, Li Yi, He Pei, Jiao Licheng | Xidian University | BGG通过视觉基础模型参数高效适配，弥合跨视角图像几何差距以提升地理定位精度。 | [#187](https://github.com/Larry2000error/Larry-PaperClaw/issues/187) |
-| [20260513] HYSTAR: HYPERNETWORK-DRIVEN STYLE-ADAPTIVE RETRIEVAL VIA DYNAMIC SVD MODULATION | Cai Yujia, Li Boxuan, Xu Chenghao, Yan Jiexi | School of Computer Science and Technology, Xidian University；School of Electronic Engineering, Xidian University | HYSTAR以超网络驱动奇异值分解动态调制，实现视觉-语言模型在风格变化场景下的自适应检索。 | [#188](https://github.com/Larry2000error/Larry-PaperClaw/issues/188) |
-| [20260511] Learning to Align Generative Appearance Priors for Fine-grained Image Retrieval | Wang Shijie, Luo Yadan, Wang Zijian, Yu Xin, Huang Zi | The University of Queensland；The University of Adelaide | 该方法学习对齐生成式外观先验，借助标准化流建模无监督细粒度图像检索的嵌入空间。 | [#189](https://github.com/Larry2000error/Larry-PaperClaw/issues/189) |
-
-## 🔎 观察
-
-- 西电大学单日贡献两篇高质量工作，显示其在视觉-语言跨模态研究领域的集中布局与产出能力。
-- 参数高效微调（PEFT）与超网络动态调制成为当前视觉任务的主流技术路线，基础模型适配范式趋于成熟。
 
 ---
 
