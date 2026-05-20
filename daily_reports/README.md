@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260519](./202605/20260519.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日遥感AI领域研究聚焦于视觉-语言模型的跨模态应用，特别是CLIP架构在遮挡场景下的行人重识别任务。研究者通过双提示学习与混合视觉编码器设计，探索提升模型对遮挡目标的鲁棒性表征能力，推动开放世界场景下的智能感知技术发展。
+
+## ✨ 今日亮点
+
+- 提出双提示CLIP架构，增强遮挡行人特征判别能力
+- 混合视觉编码器设计，融合多尺度语义信息
+- 提示学习机制优化，实现视觉-语言空间对齐
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260519] Dual-Prompt CLIP with Hybrid Visual Encoders for Occluded Person Re-Identification | Ji Zhangjian, Qiao Shaotong, Feng Kai, Wei Wei | School of Computer & Information Technology, Shanxi University；Key Laboratory of Computational Intelligence and Chinese Information Processing of Ministry of Education | 该研究提出双提示CLIP框架，结合混合视觉编码器解决遮挡行人重识别中的特征对齐与判别难题。 | [#207](https://github.com/Larry2000error/Larry-PaperClaw/issues/207) |
+
+## 🔎 观察
+
+- CLIP类预训练模型正加速向细粒度识别任务渗透，提示学习成为适配下游任务的关键技术路径
+- 遮挡处理仍是行人重识别的核心挑战，混合编码器设计反映多尺度特征融合的持续演进趋势
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260518](./202605/20260518.md)
 ## 📌 今日概况
 
@@ -57,37 +87,6 @@ Powered by OpenClaw🦞
 
 - 自监督学习正成为降低遥感数据标注成本的主流技术路径
 - 多模态检索的对称性设计或成提升跨模态一致性的关键方向
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260514](./202605/20260514.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦于跨模态视觉定位与多模态检索的基准反思。无人机地理定位领域探索道路图作为免费几何先验，以提升天气不变性；图像检索领域则质疑组合式基准是否真正需要多模态融合，揭示单模态捷径问题。两研究均体现对现有范式的方法论审视。
-
-## ✨ 今日亮点
-
-- GeoFuse利用道路图几何先验实现天气不变无人机定位，降低跨视角匹配成本
-- 组合图像检索基准存在单模态捷径，多模态融合必要性遭系统质疑
-- 跨模态学习研究从追求性能转向审视基准有效性，方法论趋于严谨
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260514] Road Maps as Free Geometric Priors: Weather-Invariant Drone Geo-Localization with GeoFuse | Fang Yunsong, Wang Tingyu, Zheng Zhedong | University of Macau；Hangzhou Dianzi University | GeoFuse提出道路图作为免费几何先验，通过跨模态融合实现天气不变的无人机地理定位，缓解卫星-无人机视角匹配中的外观退化问题。 | [#197](https://github.com/Larry2000error/Larry-PaperClaw/issues/197) |
-| [20260514] Do Composed Image Retrieval Benchmarks Require Multimodal Composition? | Attimonelli Matteo, Alessandro De Bellis, Aryo Pradipta Gema, Saxena Rohit, Sekoyan Monica, Kwan Wai-Chung, Pomo Claudio, Suglia Alessandro, Jannach Dietmar, Tommaso Di Noia, Minervini Pasquale | Politecnico di Bari；Sapienza University of Rome；University of Edinburgh；University of Klagenfurt；Miniml.AI | 研究系统分析组合图像检索基准，发现单模态捷径可达成强性能，质疑多模态组合在该任务中的必要性假设。 | [#198](https://github.com/Larry2000error/Larry-PaperClaw/issues/198) |
-
-## 🔎 观察
-
-- 地理定位研究正从纯视觉匹配转向利用结构化地图先验，体现先验知识注入的趋势
-- 多模态基准的捷径分析揭示评估体系漏洞，提示领域需重建更鲁棒的测试协议
 
 ---
 
