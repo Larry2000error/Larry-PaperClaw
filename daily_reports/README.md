@@ -7,26 +7,26 @@
 
 今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日研究聚焦于跨域视觉检索与细粒度识别。电商场景下文本引导的隐式定位、空地跨视角行人重识别、以及水产养殖中基于弱监督的鱼类个体追踪成为三大方向，体现视觉AI向垂直领域精细化发展的趋势。
+今日研究聚焦于跨域视觉匹配与细粒度检索。电商场景下文本引导的隐式定位、空-地视角行人重识别、以及水产养殖中基于弱监督的鱼类再识别成为热点，体现视觉理解向实际应用落地的趋势。
 
 ## ✨ 今日亮点
 
-- 快手提出文本引导隐式细粒度定位方法，提升电商多模态检索精度
-- 中山大学团队解决空地视角行人重识别难题，实现跨视角语义对齐
-- 挪威团队利用补丁集成与弱轨迹标签，实现鲑鱼个体稳健重识别
+- 快手提出TIGER-FG框架，实现电商图像的文本引导隐式细粒度定位检索
+- 中山大学团队解决空-地跨视角行人重识别难题，提出视角感知语义对齐方法
+- 挪威团队利用Patch集成与弱轨迹标签，实现养殖三文鱼的鲁棒再识别
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260518] TIGER-FG: Text-Guided Implicit Fine-Grained Grounding for E-commerce Retrieval | Sun Xinyu, Dai Huangyu, Mao Lingtao, Zheng Zexin, Liang Zihan, Chen Ben, Lei Chenyi, Ou Wenwu | Kuaishou Technology | 快手提出TIGER-FG框架，通过文本引导隐式细粒度定位实现电商图像到多模态检索，无需显式边界框标注。 | [#203](https://github.com/Larry2000error/Larry-PaperClaw/issues/203) |
-| [20260518] View-Aware Semantic Alignment for Aerial-Ground Person Re-Identification | Zhang Quan, Cai Zeqiang, Zhao Peiming, Wu Jingze, Wu Cailun, Chen Hongbo, Lai Jianhuang | Sun Yat-sen University；Pazhou Lab (HuangPu)；Guangdong Province Key Laboratory of Information Security Technology；Key Laboratory of Machine Intelligence and Advanced Computing, Ministry of Education | 中山大学联合琶洲实验室提出视角感知语义对齐网络，解决无人机与地面摄像头间的行人跨视角重识别问题。 | [#204](https://github.com/Larry2000error/Larry-PaperClaw/issues/204) |
-| [20260518] Patch Ensembles for Robust Salmon Re-Identification with Weak Trajectory Labels | Espen Uri Høgstedt, Schellewald Christian, Stahl Annette, Mester Rudolf | Department of Computer Science, Norwegian University of Science and Technology；SINTEF Ocean；Department of Engineering Cybernetics, Norwegian University of Science and Technology | 挪威科技大学团队设计补丁集成方法，利用弱轨迹标签训练模型，实现水下环境中鲑鱼个体的稳健重识别。 | [#205](https://github.com/Larry2000error/Larry-PaperClaw/issues/205) |
+| [20260518] TIGER-FG: Text-Guided Implicit Fine-Grained Grounding for E-commerce Retrieval | Sun Xinyu, Dai Huangyu, Mao Lingtao, Zheng Zexin, Liang Zihan, Chen Ben, Lei Chenyi, Ou Wenwu | Kuaishou Technology | TIGER-FG通过文本引导隐式学习，无需显式边界框即可实现电商图像的细粒度语义定位与检索。 | [#203](https://github.com/Larry2000error/Larry-PaperClaw/issues/203) |
+| [20260518] View-Aware Semantic Alignment for Aerial-Ground Person Re-Identification | Zhang Quan, Cai Zeqiang, Zhao Peiming, Wu Jingze, Wu Cailun, Chen Hongbo, Lai Jianhuang | Sun Yat-sen University；Pazhou Lab (HuangPu)；Guangdong Province Key Laboratory of Information Security Technology；Key Laboratory of Machine Intelligence and Advanced Computing, Ministry of Education | View-Aware Semantic Alignment方法有效对齐无人机航拍与地面监控视角下的行人语义特征。 | [#204](https://github.com/Larry2000error/Larry-PaperClaw/issues/204) |
+| [20260518] Patch Ensembles for Robust Salmon Re-Identification with Weak Trajectory Labels | Espen Uri Høgstedt, Schellewald Christian, Stahl Annette, Mester Rudolf | Department of Computer Science, Norwegian University of Science and Technology；SINTEF Ocean；Department of Engineering Cybernetics, Norwegian University of Science and Technology | Patch Ensembles结合弱轨迹监督，在标注受限条件下实现养殖环境中三文鱼的个体再识别。 | [#205](https://github.com/Larry2000error/Larry-PaperClaw/issues/205) |
 
 ## 🔎 观察
 
-- 重识别任务正从传统安防向农业水产等新兴垂直领域扩展，弱监督技术降低标注成本成为关键。
-- 跨模态与跨视角对齐仍是核心挑战，文本引导与语义对齐策略显示出较强的任务适配性。
+- 细粒度视觉理解正从显式标注向隐式学习演进，降低人工标注成本成为关键诉求。
+- 农业水产等垂直场景的智能化需求推动计算机视觉技术向弱监督、低成本方向迁移。
 
 ---
 
