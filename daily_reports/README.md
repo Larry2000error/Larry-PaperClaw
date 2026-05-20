@@ -68,26 +68,26 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日研究聚焦多模态模型的鲁棒性与可靠性提升。视觉-语言模型持续学习、跨视角地理定位的天气鲁棒性、多图像检索中的位置偏置缓解成为核心议题，体现领域对实际部署场景适应性的高度关注。
+今日遥感AI研究聚焦多模态模型的鲁棒性与泛化能力。视觉语言模型的持续学习、跨视角地理定位的天气鲁棒性，以及多图像检索中的位置偏置问题成为核心议题，体现领域对复杂场景适应性与可信度的关注。
 
 ## ✨ 今日亮点
 
-- 跨模态知识保留机制增强弹性权重巩固，缓解灾难性遗忘
-- 原型学习驱动语义部件发现，提升恶劣天气下跨视角定位精度
-- 注意力引导的logit校准策略，有效抑制多图像检索中的位置偏置
+- 弹性权重整合增强跨模态知识保持，缓解视觉语言模型灾难性遗忘
+- 原型学习驱动的语义部件发现提升天气鲁棒跨视角地理定位性能
+- 注意力引导的Logit校准策略有效抑制多图像检索中的位置偏置
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260512] Lifelong Learning in Vision-Language Models: Enhanced EWC with Cross-Modal Knowledge Retention | Hamza Ahmed Durrani, Rafay Suleman Durrani | Sejong University；Technische Universität Ilmenau | 提出增强型弹性权重巩固方法，通过跨模态知识保留机制解决视觉-语言模型终身学习中的灾难性遗忘问题。 | [#191](https://github.com/Larry2000error/Larry-PaperClaw/issues/191) |
-| [20260512] Weather-Robust Cross-View Geo-Localization via Prototype-Based Semantic Part Discovery | Tran Chi-Nguyen, Dao Sy Duy Minh, Huynh Trung Kiet, Nguyen Lam Phu Quy, Pham Phu-Hoa, Tran-Thanh Long | University of Warwick | 基于原型学习的语义部件发现框架，实现天气鲁棒的跨视角地理定位，增强模型对恶劣条件的适应能力。 | [#192](https://github.com/Larry2000error/Larry-PaperClaw/issues/192) |
-| [20260512] Logit-Attention Divergence: Mitigating Position Bias in Multi-Image Retrieval via Attention-Guided Calibration | Xian Mingtao, Yang Yifeng, Gu Qinying, Wang Xinbing, Ye Nanyang | Tsinghua University；Chinese Academy of Sciences | 设计Logit-注意力散度校准方法，利用注意力机制引导缓解多图像检索任务中多模态大语言模型的位置偏置。 | [#193](https://github.com/Larry2000error/Larry-PaperClaw/issues/193) |
+| [20260512] Lifelong Learning in Vision-Language Models: Enhanced EWC with Cross-Modal Knowledge Retention | Hamza Ahmed Durrani, Rafay Suleman Durrani | Sejong University；Technische Universität Ilmenau | 提出增强型EWC方法，通过跨模态知识保持机制实现视觉语言模型的终身学习，缓解灾难性遗忘问题。 | [#191](https://github.com/Larry2000error/Larry-PaperClaw/issues/191) |
+| [20260512] Weather-Robust Cross-View Geo-Localization via Prototype-Based Semantic Part Discovery | Tran Chi-Nguyen, Dao Sy Duy Minh, Huynh Trung Kiet, Nguyen Lam Phu Quy, Pham Phu-Hoa, Tran-Thanh Long | University of Warwick | 基于原型学习的语义部件发现框架，增强跨视角地理定位模型在恶劣天气条件下的鲁棒性表现。 | [#192](https://github.com/Larry2000error/Larry-PaperClaw/issues/192) |
+| [20260512] Logit-Attention Divergence: Mitigating Position Bias in Multi-Image Retrieval via Attention-Guided Calibration | Xian Mingtao, Yang Yifeng, Gu Qinying, Wang Xinbing, Ye Nanyang | Tsinghua University；Chinese Academy of Sciences | 揭示多图像检索中的位置偏置现象，设计Logit-注意力散度校准方法提升跨模态检索公平性。 | [#193](https://github.com/Larry2000error/Larry-PaperClaw/issues/193) |
 
 ## 🔎 观察
 
-- 位置偏置与灾难性遗忘等模型固有缺陷正获得针对性技术回应，显示领域从性能优化向可靠性深化的转型趋势。
-- 天气鲁棒性与跨视角任务结合，反映遥感应用对复杂环境适应性的迫切需求，语义级部件建模成为关键突破口。
+- 多模态大模型的实际部署需求推动终身学习与鲁棒性研究并行发展，技术路线从单一性能优化转向可持续演进。
+- 注意力机制的可解释性正被转化为显式优化目标，位置偏置等隐蔽问题开始获得系统性关注与矫正。
 
 ---
 
