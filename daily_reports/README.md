@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260518](./202605/20260518.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦于跨域视觉检索与细粒度识别。电商场景下文本引导的隐式定位、空地跨视角行人重识别、以及水产养殖中基于弱监督的鱼类个体追踪成为三大方向，体现视觉AI向垂直领域精细化发展的趋势。
+
+## ✨ 今日亮点
+
+- 快手提出文本引导隐式细粒度定位方法，提升电商多模态检索精度
+- 中山大学团队解决空地视角行人重识别难题，实现跨视角语义对齐
+- 挪威团队利用补丁集成与弱轨迹标签，实现鲑鱼个体稳健重识别
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260518] TIGER-FG: Text-Guided Implicit Fine-Grained Grounding for E-commerce Retrieval | Sun Xinyu, Dai Huangyu, Mao Lingtao, Zheng Zexin, Liang Zihan, Chen Ben, Lei Chenyi, Ou Wenwu | Kuaishou Technology | 快手提出TIGER-FG框架，通过文本引导隐式细粒度定位实现电商图像到多模态检索，无需显式边界框标注。 | [#203](https://github.com/Larry2000error/Larry-PaperClaw/issues/203) |
+| [20260518] View-Aware Semantic Alignment for Aerial-Ground Person Re-Identification | Zhang Quan, Cai Zeqiang, Zhao Peiming, Wu Jingze, Wu Cailun, Chen Hongbo, Lai Jianhuang | Sun Yat-sen University；Pazhou Lab (HuangPu)；Guangdong Province Key Laboratory of Information Security Technology；Key Laboratory of Machine Intelligence and Advanced Computing, Ministry of Education | 中山大学联合琶洲实验室提出视角感知语义对齐网络，解决无人机与地面摄像头间的行人跨视角重识别问题。 | [#204](https://github.com/Larry2000error/Larry-PaperClaw/issues/204) |
+| [20260518] Patch Ensembles for Robust Salmon Re-Identification with Weak Trajectory Labels | Espen Uri Høgstedt, Schellewald Christian, Stahl Annette, Mester Rudolf | Department of Computer Science, Norwegian University of Science and Technology；SINTEF Ocean；Department of Engineering Cybernetics, Norwegian University of Science and Technology | 挪威科技大学团队设计补丁集成方法，利用弱轨迹标签训练模型，实现水下环境中鲑鱼个体的稳健重识别。 | [#205](https://github.com/Larry2000error/Larry-PaperClaw/issues/205) |
+
+## 🔎 观察
+
+- 重识别任务正从传统安防向农业水产等新兴垂直领域扩展，弱监督技术降低标注成本成为关键。
+- 跨模态与跨视角对齐仍是核心挑战，文本引导与语义对齐策略显示出较强的任务适配性。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260515](./202605/20260515.md)
 ## 📌 今日概况
 
@@ -56,36 +88,6 @@ Powered by OpenClaw🦞
 
 - 地理定位研究正从纯视觉匹配转向利用结构化地图先验，体现先验知识注入的趋势
 - 多模态基准的捷径分析揭示评估体系漏洞，提示领域需重建更鲁棒的测试协议
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260513](./202605/20260513.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI领域研究聚焦于图像语义理解的上下文依赖性，东京都立大学与CyberAgent合作探索图像检索中语义抽象与叙事语境的关联，推动多模态嵌入技术向更精细的语义层次发展。
-
-## ✨ 今日亮点
-
-- 上下文依赖图像检索突破传统语义匹配局限
-- 多模态嵌入融合叙事语境实现动态语义抽象
-- 同一图像多义性研究拓展视觉理解新维度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260513] Same Image, Different Meanings: Toward Retrieval of Context-Dependent Meanings | Tsutsumi Ayuto, Kohita Ryosuke | Tokyo Metropolitan University；CyberAgent | 该研究提出上下文依赖的图像检索框架，通过语义抽象与叙事语境建模，解决同一图像在不同场景下的多义性表达问题。 | [#195](https://github.com/Larry2000error/Larry-PaperClaw/issues/195) |
-
-## 🔎 观察
-
-- 图像多义性研究标志着视觉AI从静态识别向动态语境理解的范式转变
-- 产学研合作模式加速多模态技术从实验室向内容推荐等场景落地
 
 ---
 
