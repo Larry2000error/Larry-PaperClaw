@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260523](./202605/20260523.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦组合图像检索（CIR）技术，涵盖不确定性量化与地球观测应用两大方向。清华团队引入共形预测解决检索歧义问题，希腊-捷克联合团队则首次系统评估CIR在卫星影像中的实际表现，推动视觉语言模型向遥感专用场景落地。
+
+## ✨ 今日亮点
+
+- 共形预测校准交互不确定性，提升零样本组合图像检索可靠性
+- 首份遥感CIR基准测试揭示视觉语言模型在卫星影像应用中的性能差距
+- 多机构跨国合作推动组合检索技术从通用视觉向地球观测迁移
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260523] Resolving Ambiguity in Composed Image Retrieval via Calibrated Interaction | Tran Amsisan, Le Baogh, Tuan Kiet Pham, Sui Yang Guang | Tsinghua University；Chinese Academy of Sciences | 提出基于共形预测的校准交互框架，通过量化不确定性解决组合图像检索中的意图歧义问题。 | [#217](https://github.com/Larry2000error/Larry-PaperClaw/issues/217) |
+| [20260523] Benchmarking Composed Image Retrieval for Applied Earth Observation | Psomas Bill, Christopoulos Dionysis, Petropoulos Thanasis, Efthymiadis Nikos, Kakogeorgiou Ioannis, Chum Ondřej, Avrithis Yannis, Tolias Giorgos, Karantzalos Konstantinos | Visual Recognition Group, Department of Cybernetics, Czech Technical University in Prague；Remote Sensing Laboratory, School of Rural, Surveying and Geoinformatics Engineering, National Technical University of Athens；Institute of Informatics & Telecommunications, National Centre for Scientific Research "Demokritos"；Department of Informatics and Telecommunications, National and Kapodistrian University of Athens | 构建首个面向地球观测的组合图像检索基准，系统评估CLIP等视觉语言模型在卫星影像检索任务中的适用性。 | [#218](https://github.com/Larry2000error/Larry-PaperClaw/issues/218) |
+
+## 🔎 观察
+
+- 组合图像检索正从通用视觉向垂直领域渗透，遥感场景的特殊性（如光谱特征、地理尺度）对现有VLMs构成挑战
+- 不确定性量化方法（如共形预测）与检索任务的结合，反映出社区对模型可靠性而非单纯精度的关注转向
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260521](./202605/20260521.md)
 ## 📌 今日概况
 
@@ -57,37 +88,6 @@ Powered by OpenClaw🦞
 
 - 训练自由范式显著降低计算成本，但语义对齐精度仍是开放挑战
 - 大语言模型先验的引入或成为视觉-语言任务的新标准配置
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260519](./202605/20260519.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI领域研究聚焦于视觉-语言模型与3D点云理解两大方向。CLIP架构持续演进，通过双提示学习与混合编码器提升遮挡场景下的行人重识别性能；同时，2D-3D跨模态对齐取得进展，Tango3D在全局检索与局部密集匹配上实现统一，为3D基础模型发展提供新思路。
-
-## ✨ 今日亮点
-
-- CLIP双提示机制结合混合视觉编码器，有效缓解遮挡行人重识别中的特征混淆问题
-- Tango3D提出全局-局部联合对齐框架，突破2D-3D对应关系中尺度不一致的瓶颈
-- 高校与产业界协同创新，腾讯混元团队参与3D基础模型关键技术攻关
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260519] Dual-Prompt CLIP with Hybrid Visual Encoders for Occluded Person Re-Identification | Ji Zhangjian, Qiao Shaotong, Feng Kai, Wei Wei | School of Computer & Information Technology, Shanxi University；Key Laboratory of Computational Intelligence and Chinese Information Processing of Ministry of Education | 山西大学团队提出双提示CLIP架构，以混合视觉编码器与可学习提示优化遮挡行人重识别，实现视觉-语言特征协同对齐。 | [#207](https://github.com/Larry2000error/Larry-PaperClaw/issues/207) |
-| [20260519] Tango3D: Towards Alignment for Global and Local 2D-3D Correspondence | He Zebin, Yang Mingxin, Yang Shuhui, Sun Hanxiao, Han Xintong, Guo Chunchao, Luo Wenhan | HKUST；Tencent Hunyuan | 港科大与腾讯混元联合发布Tango3D，通过全局-局部联合对齐机制统一2D-3D对应任务，提升点云理解与跨模态检索性能。 | [#209](https://github.com/Larry2000error/Larry-PaperClaw/issues/209) |
-
-## 🔎 观察
-
-- 提示学习正成为CLIP下游适配的主流范式，但双提示设计对计算开销的影响需进一步验证
-- 2D-3D对齐从分离式走向统一框架，或加速3D基础模型在开放场景中的实用化部署
 
 ---
 
