@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260520](./202605/20260520.md)
+## 📌 今日概况
+
+今日共检索候选论文 1 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日遥感AI领域研究聚焦于视觉-语言模型的零样本推理能力，无需训练的组合图像检索成为热点。学者探索通过语义迁移与运输机制，实现文本-图像-图像三元组的高效对齐，降低模型部署成本。
+
+## ✨ 今日亮点
+
+- 提出训练自由的零样本组合图像检索框架，突破传统微调范式
+- 创新语义迁移与运输机制，强化三元组间的细粒度语义对齐
+- 融合大语言模型先验知识，提升复杂视觉概念的推理能力
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260520] STiTch: Semantic Transition and Transportation in Collaboration for Training-Free Zero-Shot Composed Image Retrieval | Li Miaoge, Wang Dongsheng, Sun Zening, Zhang Jinsen, Luo Wenhan, Guo Jingcai | The Hong Kong Polytechnic University；Shenzhen University；The Hong Kong University of Science and Technology | STiTch提出训练自由的零样本组合图像检索方法，通过语义迁移与运输机制实现文本-参考图像-目标图像的高效对齐。 | [#210](https://github.com/Larry2000error/Larry-PaperClaw/issues/210) |
+
+## 🔎 观察
+
+- 训练自由范式显著降低计算成本，但语义对齐精度仍是开放挑战
+- 大语言模型先验的引入或成为视觉-语言任务的新标准配置
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260519](./202605/20260519.md)
 ## 📌 今日概况
 
@@ -58,36 +88,6 @@ Powered by OpenClaw🦞
 
 - 细粒度视觉理解正从显式标注向隐式学习演进，降低人工标注成本成为关键诉求。
 - 农业水产等垂直场景的智能化需求推动计算机视觉技术向弱监督、低成本方向迁移。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260515](./202605/20260515.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI研究聚焦自监督多模态表示学习，SOLAR框架通过联合学习优化对称多模态检索任务，采用对比学习实现图像-文本对齐，为遥感数据跨模态检索提供新思路。
-
-## ✨ 今日亮点
-
-- SOLAR提出自监督联合学习框架，统一处理对称多模态检索任务
-- 采用对比学习机制优化图像-文本表征对齐效果
-- 无需标注数据，降低遥感多模态应用的数据依赖门槛
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260515] SOLAR: Self-supervised Joint Learning for Symmetric Multimodal Retrieval | Yang Wenjie, Yu Hang, Guo Yuyu, Di Peng | Asymmetric Symmetric | SOLAR提出自监督联合学习框架，通过对称多模态检索优化图像-文本表征对齐，实现无需标注的遥感跨模态检索。 | [#200](https://github.com/Larry2000error/Larry-PaperClaw/issues/200) |
-
-## 🔎 观察
-
-- 自监督学习正成为降低遥感数据标注成本的主流技术路径
-- 多模态检索的对称性设计或成提升跨模态一致性的关键方向
 
 ---
 
