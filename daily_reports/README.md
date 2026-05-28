@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260521](./202605/20260521.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦视觉-语言模型的跨模态对齐与检索优化。FashionLens探索任务自适应学习在时尚电商检索中的应用；Supervised Classification Heads提出权重回收机制实现语义原型对齐；DeliCIR则引入多智能体 deliberative 推理提升组合图像检索性能。整体趋势显示测试时扩展与模块化设计成为提升检索精度的关键路径。
+
+## ✨ 今日亮点
+
+- FashionLens构建任务自适应框架，缓解时尚检索中多任务冲突问题
+- 权重回收策略将分类头转化为语义原型，实现零样本视觉-语言对齐
+- DeliCIR采用分层多智能体 deliberative 进化，优化组合图像检索推理
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260521] FashionLens: Toward Versatile Fashion Image Retrieval via Task-Adaptive Learning | Wen Haokun, Song Xuemeng, Xie Xinghao, Chen Xiaolin, Zhao Xiangyu, Guan Weili | Institution unavailable | FashionLens提出任务自适应学习框架，通过动态路由与专用编码器解决时尚图像检索中的多任务干扰问题。 | [#212](https://github.com/Larry2000error/Larry-PaperClaw/issues/212) |
+| [20260521] Supervised Classification Heads as Semantic Prototypes: Unlocking Vision-Language Alignment via Weight Recycling | Méndez David, Confalonieri Roberto, Natalia Díaz Rodríguez | Universidad de Granada；Università degli Studi di Milano | 该研究将预训练分类头的权重回收为语义原型，无需额外训练即可解锁视觉-语言模型的跨模态对齐能力。 | [#213](https://github.com/Larry2000error/Larry-PaperClaw/issues/213) |
+| [20260521] DeliCIR: Deliberative Test-Time Evolutionary Hierarchical Multi-Agents for Composed Image Retrieval | Pei Xingtian, Song Yukun, Wang Changwei, Chen Shunpeng, Xu Rongtao, Xu Shengpeng, Xu Shibiao | Institution unavailable | DeliCIR设计 deliberative 测试时进化机制，利用分层多智能体协作优化组合图像检索的复杂推理过程。 | [#214](https://github.com/Larry2000error/Larry-PaperClaw/issues/214) |
+
+## 🔎 观察
+
+- 测试时计算扩展（Test-Time Scaling）正从语言模型向视觉-语言检索任务迁移，DeliCIR的进化推理机制印证了这一趋势
+- 权重回收与参数重用成为高效对齐的新范式，或降低视觉-语言模型对大规模对比训练的依赖
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260520](./202605/20260520.md)
 ## 📌 今日概况
 
@@ -56,38 +88,6 @@ Powered by OpenClaw🦞
 
 - 提示学习正成为CLIP下游适配的主流范式，但双提示设计对计算开销的影响需进一步验证
 - 2D-3D对齐从分离式走向统一框架，或加速3D基础模型在开放场景中的实用化部署
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260518](./202605/20260518.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦于跨域视觉匹配与细粒度检索。电商场景下文本引导的隐式定位、空-地视角行人重识别、以及水产养殖中基于弱监督的鱼类再识别成为热点，体现视觉理解向实际应用落地的趋势。
-
-## ✨ 今日亮点
-
-- 快手提出TIGER-FG框架，实现电商图像的文本引导隐式细粒度定位检索
-- 中山大学团队解决空-地跨视角行人重识别难题，提出视角感知语义对齐方法
-- 挪威团队利用Patch集成与弱轨迹标签，实现养殖三文鱼的鲁棒再识别
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260518] TIGER-FG: Text-Guided Implicit Fine-Grained Grounding for E-commerce Retrieval | Sun Xinyu, Dai Huangyu, Mao Lingtao, Zheng Zexin, Liang Zihan, Chen Ben, Lei Chenyi, Ou Wenwu | Kuaishou Technology | TIGER-FG通过文本引导隐式学习，无需显式边界框即可实现电商图像的细粒度语义定位与检索。 | [#203](https://github.com/Larry2000error/Larry-PaperClaw/issues/203) |
-| [20260518] View-Aware Semantic Alignment for Aerial-Ground Person Re-Identification | Zhang Quan, Cai Zeqiang, Zhao Peiming, Wu Jingze, Wu Cailun, Chen Hongbo, Lai Jianhuang | Sun Yat-sen University；Pazhou Lab (HuangPu)；Guangdong Province Key Laboratory of Information Security Technology；Key Laboratory of Machine Intelligence and Advanced Computing, Ministry of Education | View-Aware Semantic Alignment方法有效对齐无人机航拍与地面监控视角下的行人语义特征。 | [#204](https://github.com/Larry2000error/Larry-PaperClaw/issues/204) |
-| [20260518] Patch Ensembles for Robust Salmon Re-Identification with Weak Trajectory Labels | Espen Uri Høgstedt, Schellewald Christian, Stahl Annette, Mester Rudolf | Department of Computer Science, Norwegian University of Science and Technology；SINTEF Ocean；Department of Engineering Cybernetics, Norwegian University of Science and Technology | Patch Ensembles结合弱轨迹监督，在标注受限条件下实现养殖环境中三文鱼的个体再识别。 | [#205](https://github.com/Larry2000error/Larry-PaperClaw/issues/205) |
-
-## 🔎 观察
-
-- 细粒度视觉理解正从显式标注向隐式学习演进，降低人工标注成本成为关键诉求。
-- 农业水产等垂直场景的智能化需求推动计算机视觉技术向弱监督、低成本方向迁移。
 
 ---
 
