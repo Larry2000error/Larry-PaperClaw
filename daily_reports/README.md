@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260528](./202605/20260528.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 4 篇。
+
+今日研究聚焦视觉-语言模型的检索与推理能力提升。多模态检索领域探索单向量模型的潜力重估，第一人称视角视频分析关注零样本物体再识别，地理定位任务引入智能体推理与证据验证机制，同时多轮对话式图像检索获得新的基准数据集支持。
+
+## ✨ 今日亮点
+
+- 单向量嵌入模型通过后期交互机制挑战多向量检索范式
+- SAM3特征融合实现厨房场景零样本物体再识别
+- 智能体推理框架强化图像地理定位的证据验证能力
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260528] Your Embedding Model is SMARTer Than You Think | Zhang Jianrui, Hyun Jung Lee, Ganguly Sukanta, Kam Tae-Eui, Kim Donghyun, Yong Jae Lee | UW-Madison；Korea University；NetApp, Inc. | 该研究提出SMART方法，通过后期交互机制激活单向量模型的多向量检索能力，无需训练即可匹敌专用多向量模型。 | [#220](https://github.com/Larry2000error/Larry-PaperClaw/issues/220) |
+| [20260528] Zero-Shot Object Re-Identification in Egocentric Kitchen Videos via Multi-Stage SAM3 Feature Fusion | Klepachevskyi Dmytro, Wong Alexander, Rambhatla Sirisha, Chen Yuhao | University of Waterloo | 论文提出多阶段SAM3特征融合框架，在 egocentric 厨房视频中实现零样本物体再识别，无需目标域训练数据。 | [#221](https://github.com/Larry2000error/Larry-PaperClaw/issues/221) |
+| [20260528] REVERSE: Reinforcing Evidence Verification and Search for Agentic Image geo-localization | Li Yong, Jia Furong, Yin Dacheng, Rong Kang, Rao Fengyun, LYU Jing, Zhang Fan | Peking University；The Hong Kong University of Science and Technology；WeChat Vision, Tencent Inc | REVERSE框架引入智能体推理机制，通过多轮证据验证与搜索迭代提升图像地理定位的准确性与可解释性。 | [#222](https://github.com/Larry2000error/Larry-PaperClaw/issues/222) |
+| [20260528] CIRCLED: A Multi-turn CIR Dataset with Consistent Dialogues across Domains | Takeda Tomohisa, Lin Yu-Chieh, Nozawa Yuji, Ng Youyang, Torii Osamu, Matsui Yusuke | Graduate School of Information Science and Technology, The University of Tokyo；Kioxia Corporation | CIRCLED数据集构建跨领域一致的多轮对话式图像检索基准，支持时尚域的组合图像检索研究。 | [#223](https://github.com/Larry2000error/Larry-PaperClaw/issues/223) |
+
+## 🔎 观察
+
+- 检索架构呈现'轻量单向量+复杂交互'新趋势，平衡效率与表达能力
+- 第一人称视觉与地理定位任务加速融入大模型智能体范式，推理可解释性成为关键诉求
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260523](./202605/20260523.md)
 ## 📌 今日概况
 
@@ -58,36 +91,6 @@ Powered by OpenClaw🦞
 
 - 测试时计算扩展（Test-Time Scaling）正从语言模型向视觉-语言检索任务迁移，DeliCIR的进化推理机制印证了这一趋势
 - 权重回收与参数重用成为高效对齐的新范式，或降低视觉-语言模型对大规模对比训练的依赖
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260520](./202605/20260520.md)
-## 📌 今日概况
-
-今日共检索候选论文 1 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI领域研究聚焦于视觉-语言模型的零样本推理能力，无需训练的组合图像检索成为热点。学者探索通过语义迁移与运输机制，实现文本-图像-图像三元组的高效对齐，降低模型部署成本。
-
-## ✨ 今日亮点
-
-- 提出训练自由的零样本组合图像检索框架，突破传统微调范式
-- 创新语义迁移与运输机制，强化三元组间的细粒度语义对齐
-- 融合大语言模型先验知识，提升复杂视觉概念的推理能力
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260520] STiTch: Semantic Transition and Transportation in Collaboration for Training-Free Zero-Shot Composed Image Retrieval | Li Miaoge, Wang Dongsheng, Sun Zening, Zhang Jinsen, Luo Wenhan, Guo Jingcai | The Hong Kong Polytechnic University；Shenzhen University；The Hong Kong University of Science and Technology | STiTch提出训练自由的零样本组合图像检索方法，通过语义迁移与运输机制实现文本-参考图像-目标图像的高效对齐。 | [#210](https://github.com/Larry2000error/Larry-PaperClaw/issues/210) |
-
-## 🔎 观察
-
-- 训练自由范式显著降低计算成本，但语义对齐精度仍是开放挑战
-- 大语言模型先验的引入或成为视觉-语言任务的新标准配置
 
 ---
 
