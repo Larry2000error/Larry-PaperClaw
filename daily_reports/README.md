@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260529](./202605/20260529.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日研究聚焦多模态大模型与地理空间智能的交叉领域。视觉语言模型的概念绑定、持续学习与跨模态检索成为核心议题，同时具身地理定位与密集城区视觉定位研究凸显空间感知能力的重要性。不确定性量化与动态适配机制受到关注。
+
+## ✨ 今日亮点
+
+- ERGeoBench构建具身推理与地理定位综合评测基准，推动多模态大模型空间认知能力评估
+- 动态适配器路由机制解决多模态检索的持续学习难题，实现任务自适应模型合并
+- 变分适配器引入不确定性量化，提升跨模态相似性表示的可靠性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260602] How can embedding models bind concepts? | Uselis Arnas, Koishigarina Darina, Seong Joon Oh | 1；2 | 提出CLIP嵌入模型的概念绑定机制分析方法，揭示多目标场景下的表征对齐特性。 | [#225](https://github.com/Larry2000error/Larry-PaperClaw/issues/225) |
+| [20260529] ERGeoBench:A Comprehensive Benchmark for Embodied Reasoning and Geo-localization in Multimodal Large Language Models | Xue Kaiwen, Wei Tao, Zhang Guoxin, Ou Zhonghong, Lu Kaoyan, Feng Yu, Zhu Yifan, Luo Haoran | Institution unavailable | 发布ERGeoBench基准，系统评估多模态大模型在具身推理与地理定位任务中的表现。 | [#226](https://github.com/Larry2000error/Larry-PaperClaw/issues/226) |
+| [20260602] Beyond Classification: Dynamic Adapter Routing for Continual Multimodal Retrieval | Dobrzeniecka Alicja, Szatkowski Filip, Cygert Sebastian, Łukasik Szymon, Twardowski Bartłomiej | NASK National Research Institute；IDEAS Research Institute；Warsaw University of Technology；Universitat Autonoma de Barcelona | 设计动态适配器路由策略，通过任务特定适配器选择与合并实现持续多模态检索。 | [#227](https://github.com/Larry2000error/Larry-PaperClaw/issues/227) |
+| [20260602] Variational Adapter for Cross-modal Similarity Representation | Wei WenZhang, Gui Zhipeng, Peng Dehua, Ye Tiandi, Wu Huayi | Institution unavailable | 构建变分适配器网络，利用变分推断建模跨模态相似性的不确定性分布。 | [#228](https://github.com/Larry2000error/Larry-PaperClaw/issues/228) |
+| [20260602] Vision-Based Localization in Dense Urban Environments: A Case Study of an Urban Village in China | Wu Menglin, Cao Rui | The Hong Kong University of Science and Technology (Guangzhou) | 基于全景相机实现密集城区GPS拒止环境下的视觉定位，以中国城中村为案例验证。 | [#229](https://github.com/Larry2000error/Larry-PaperClaw/issues/229) |
+
+## 🔎 观察
+
+- 地理空间智能正从传统遥感解译向具身交互与开放环境推理延伸，评测基准建设成为关键瓶颈
+- 适配器架构与动态路由机制成为持续学习的主流技术路径，模型合并策略直接影响跨任务泛化性能
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260528](./202605/20260528.md)
 ## 📌 今日概况
 
@@ -59,38 +93,6 @@ Powered by OpenClaw🦞
 
 - 组合图像检索正从通用视觉向垂直领域渗透，遥感场景的特殊性（如光谱特征、地理尺度）对现有VLMs构成挑战
 - 不确定性量化方法（如共形预测）与检索任务的结合，反映出社区对模型可靠性而非单纯精度的关注转向
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260521](./202605/20260521.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦视觉-语言模型的跨模态对齐与检索优化。FashionLens探索任务自适应学习在时尚电商检索中的应用；Supervised Classification Heads提出权重回收机制实现语义原型对齐；DeliCIR则引入多智能体 deliberative 推理提升组合图像检索性能。整体趋势显示测试时扩展与模块化设计成为提升检索精度的关键路径。
-
-## ✨ 今日亮点
-
-- FashionLens构建任务自适应框架，缓解时尚检索中多任务冲突问题
-- 权重回收策略将分类头转化为语义原型，实现零样本视觉-语言对齐
-- DeliCIR采用分层多智能体 deliberative 进化，优化组合图像检索推理
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260521] FashionLens: Toward Versatile Fashion Image Retrieval via Task-Adaptive Learning | Wen Haokun, Song Xuemeng, Xie Xinghao, Chen Xiaolin, Zhao Xiangyu, Guan Weili | Institution unavailable | FashionLens提出任务自适应学习框架，通过动态路由与专用编码器解决时尚图像检索中的多任务干扰问题。 | [#212](https://github.com/Larry2000error/Larry-PaperClaw/issues/212) |
-| [20260521] Supervised Classification Heads as Semantic Prototypes: Unlocking Vision-Language Alignment via Weight Recycling | Méndez David, Confalonieri Roberto, Natalia Díaz Rodríguez | Universidad de Granada；Università degli Studi di Milano | 该研究将预训练分类头的权重回收为语义原型，无需额外训练即可解锁视觉-语言模型的跨模态对齐能力。 | [#213](https://github.com/Larry2000error/Larry-PaperClaw/issues/213) |
-| [20260521] DeliCIR: Deliberative Test-Time Evolutionary Hierarchical Multi-Agents for Composed Image Retrieval | Pei Xingtian, Song Yukun, Wang Changwei, Chen Shunpeng, Xu Rongtao, Xu Shengpeng, Xu Shibiao | Institution unavailable | DeliCIR设计 deliberative 测试时进化机制，利用分层多智能体协作优化组合图像检索的复杂推理过程。 | [#214](https://github.com/Larry2000error/Larry-PaperClaw/issues/214) |
-
-## 🔎 观察
-
-- 测试时计算扩展（Test-Time Scaling）正从语言模型向视觉-语言检索任务迁移，DeliCIR的进化推理机制印证了这一趋势
-- 权重回收与参数重用成为高效对齐的新范式，或降低视觉-语言模型对大规模对比训练的依赖
 
 ---
 
