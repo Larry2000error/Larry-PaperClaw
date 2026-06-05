@@ -41,27 +41,27 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 4 篇。
 
-今日研究聚焦视觉-语言模型的检索与推理能力提升。多模态检索领域探索单向量模型的潜力重估，第一人称视角视频分析关注零样本物体再识别，地理定位任务引入智能体推理与证据验证机制，同时多轮对话式图像检索获得新的基准数据集支持。
+今日研究聚焦多模态检索与智能体推理两大方向。单向量模型通过晚期交互实现多向量级性能，SAM3特征融合推动零样本第一人称视频理解，而检索增强的智能体框架则为图像地理定位引入证据验证机制。数据集构建与跨域一致性亦受关注。
 
 ## ✨ 今日亮点
 
-- 单向量嵌入模型通过后期交互机制挑战多向量检索范式
-- SAM3特征融合实现厨房场景零样本物体再识别
-- 智能体推理框架强化图像地理定位的证据验证能力
+- 单向量嵌入模型通过晚期交互策略逼近多向量检索性能，降低部署成本
+- SAM3多阶段特征融合实现厨房场景零样本物体重识别，无需标注训练
+- REVERSE框架以多轮证据验证强化智能体图像地理定位的可解释性
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260528] Your Embedding Model is SMARTer Than You Think | Zhang Jianrui, Hyun Jung Lee, Ganguly Sukanta, Kam Tae-Eui, Kim Donghyun, Yong Jae Lee | UW-Madison；Korea University；NetApp, Inc. | 该研究提出SMART方法，通过后期交互机制激活单向量模型的多向量检索能力，无需训练即可匹敌专用多向量模型。 | [#220](https://github.com/Larry2000error/Larry-PaperClaw/issues/220) |
-| [20260528] Zero-Shot Object Re-Identification in Egocentric Kitchen Videos via Multi-Stage SAM3 Feature Fusion | Klepachevskyi Dmytro, Wong Alexander, Rambhatla Sirisha, Chen Yuhao | University of Waterloo | 论文提出多阶段SAM3特征融合框架，在 egocentric 厨房视频中实现零样本物体再识别，无需目标域训练数据。 | [#221](https://github.com/Larry2000error/Larry-PaperClaw/issues/221) |
-| [20260528] REVERSE: Reinforcing Evidence Verification and Search for Agentic Image geo-localization | Li Yong, Jia Furong, Yin Dacheng, Rong Kang, Rao Fengyun, LYU Jing, Zhang Fan | Peking University；The Hong Kong University of Science and Technology；WeChat Vision, Tencent Inc | REVERSE框架引入智能体推理机制，通过多轮证据验证与搜索迭代提升图像地理定位的准确性与可解释性。 | [#222](https://github.com/Larry2000error/Larry-PaperClaw/issues/222) |
-| [20260528] CIRCLED: A Multi-turn CIR Dataset with Consistent Dialogues across Domains | Takeda Tomohisa, Lin Yu-Chieh, Nozawa Yuji, Ng Youyang, Torii Osamu, Matsui Yusuke | Graduate School of Information Science and Technology, The University of Tokyo；Kioxia Corporation | CIRCLED数据集构建跨领域一致的多轮对话式图像检索基准，支持时尚域的组合图像检索研究。 | [#223](https://github.com/Larry2000error/Larry-PaperClaw/issues/223) |
+| [20260528] Your Embedding Model is SMARTer Than You Think | Zhang Jianrui, Hyun Jung Lee, Ganguly Sukanta, Kam Tae-Eui, Kim Donghyun, Yong Jae Lee | UW-Madison；Korea University；NetApp, Inc. | 提出SMART方法，以单向量模型实现晚期交互，在保持效率的同时达到多向量检索精度。 | [#220](https://github.com/Larry2000error/Larry-PaperClaw/issues/220) |
+| [20260528] Zero-Shot Object Re-Identification in Egocentric Kitchen Videos via Multi-Stage SAM3 Feature Fusion | Klepachevskyi Dmytro, Wong Alexander, Rambhatla Sirisha, Chen Yuhao | University of Waterloo | 利用SAM3分割模型的多阶段特征融合，解决第一人称厨房视频中零样本物体重识别难题。 | [#221](https://github.com/Larry2000error/Larry-PaperClaw/issues/221) |
+| [20260528] REVERSE: Reinforcing Evidence Verification and Search for Agentic Image geo-localization | Li Yong, Jia Furong, Yin Dacheng, Rong Kang, Rao Fengyun, LYU Jing, Zhang Fan | Peking University；The Hong Kong University of Science and Technology；WeChat Vision, Tencent Inc | 构建REVERSE智能体框架，通过多轮证据检索与验证提升图像地理定位的准确性与可靠性。 | [#222](https://github.com/Larry2000error/Larry-PaperClaw/issues/222) |
+| [20260528] CIRCLED: A Multi-turn CIR Dataset with Consistent Dialogues across Domains | Takeda Tomohisa, Lin Yu-Chieh, Nozawa Yuji, Ng Youyang, Torii Osamu, Matsui Yusuke | Graduate School of Information Science and Technology, The University of Tokyo；Kioxia Corporation | 发布CIRCLED多轮组合图像检索数据集，确保时尚等跨域对话的一致性与连贯性。 | [#223](https://github.com/Larry2000error/Larry-PaperClaw/issues/223) |
 
 ## 🔎 观察
 
-- 检索架构呈现'轻量单向量+复杂交互'新趋势，平衡效率与表达能力
-- 第一人称视觉与地理定位任务加速融入大模型智能体范式，推理可解释性成为关键诉求
+- 晚期交互与单向量模型的结合可能成为检索系统轻量化部署的新范式，平衡精度与效率。
+- SAM系列模型正从分割工具向通用视觉特征提取器演进，跨任务迁移价值持续显现。
 
 ---
 
