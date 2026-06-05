@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260604](./202606/20260604.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦两大方向：一是跨视角地理定位技术突破城市限制，通过度量-语义基元匹配实现GNSS拒止环境下的空地协同定位；二是多模态大语言模型可解释性研究，揭示跨模态检索中功能稀疏性的注意力机制本质。两项工作分别从应用系统与理论机制层面推进遥感智能发展。
+
+## ✨ 今日亮点
+
+- Meridian提出度量-语义基元匹配框架，将跨视角定位扩展至非城市场景
+- CoRe Heads识别多模态LLM中功能稀疏的关键注意力头，提升跨模态检索可解释性
+- MIT团队联合丰田研究院，推动空地机器人协同定位技术实用化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260604] Meridian: Metric-Semantic Primitive Matching for Cross-View Geo-Localization Beyond Urban Environments | Peterson Mason, Li Qingyuan, Jia Yixuan, Cladera Fernando, Nieto-Granda Carlos, Camillo Jose Taylor, Jonathan P. How | Massachusetts Institute of Technology；University of Pennsylvania；Toyota Research Institute | Meridian通过度量-语义基元匹配，突破城市环境限制，实现GNSS拒止场景下的空地跨视角定位。 | [#247](https://github.com/Larry2000error/Larry-PaperClaw/issues/247) |
+| [20260604] Mechanistic Insights into Functional Sparsity in Multimodal LLMs via CoRe Heads | Sun Ruoxi, Qiu Quantong, Li Juntao, Tang Zecheng, Lou Yihang, Zhang Min | Soochow University；Peking University | CoRe Heads从机制层面揭示多模态LLM功能稀疏性，为跨模态检索的注意力可解释性提供新视角。 | [#248](https://github.com/Larry2000error/Larry-PaperClaw/issues/248) |
+
+## 🔎 观察
+
+- 跨视角定位正从城市场景向野外环境扩展，语义-几何联合表征成为技术关键
+- 多模态大模型可解释性研究深入注意力机制层面，或推动遥感视觉-语言模型的可信应用
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260603](./202606/20260603.md)
 ## 📌 今日概况
 
@@ -59,37 +90,6 @@ Powered by OpenClaw🦞
 
 - 工业界主导企业级RAG实用化研究，学术机构聚焦基础理论突破，形成互补格局
 - 噪声鲁棒性与细粒度对齐成为跨模态检索核心挑战，图方法展现强建模潜力
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260601](./202606/20260601.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦重识别任务的核心挑战：跨模态优化冲突与泛化瓶颈。两篇论文分别从行人Re-ID的图像-文本多任务优化矛盾，以及车辆Re-ID的域泛化极限评估切入，体现该领域对模型鲁棒性与实际部署可靠性的深度关注。
-
-## ✨ 今日亮点
-
-- 行人Re-ID中图像与文本模态的优化目标冲突首次被系统分析
-- 车辆重识别泛化性能存在显著瓶颈，现有评估方法暴露局限性
-- 跨模态学习与域泛化成为Re-ID领域两大关键研究方向
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260601] Towards Resolving Optimization Conflicts Between Image- and Text-Based Person Re-Identification | Kvanchiani Karina, Mamedov Timur | Tevian；Lomonosov Moscow State University | 提出解决行人Re-ID中基于图像与文本模态的优化冲突方法，提升跨模态表征学习一致性。 | [#236](https://github.com/Larry2000error/Larry-PaperClaw/issues/236) |
-| [20260601] Generalization Limits in Vehicle Re-Identification | Anis Yassine Ben Mabrouk, Tadros Antoine, Rafael Grompone von Gioi, Facciolo Gabriele, Davy Axel, Verschae Rodrigo | Université Paris-Saclay, ENS Paris-Saclay, CNRS, Centre Borelli；HGH Infrared Systems；Institut Universitaire de France；Universidad Técnica Federico Santa María | 系统评估车辆Re-ID方法的泛化极限，揭示现有模型在跨场景部署时的性能衰减问题。 | [#237](https://github.com/Larry2000error/Larry-PaperClaw/issues/237) |
-
-## 🔎 观察
-
-- Re-ID研究正从追求单一指标提升转向关注多任务协同与真实场景鲁棒性，反映领域成熟度提升。
-- 跨模态与泛化问题的并置出现，暗示智能监控系统的实际部署需求正在驱动基础研究范式转变。
 
 ---
 
