@@ -5,30 +5,28 @@
 # [20260529](./202605/20260529.md)
 ## 📌 今日概况
 
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日研究聚焦多模态大模型与地理空间智能的交叉领域。视觉语言模型的概念绑定、持续学习与跨模态检索成为核心议题，同时具身地理定位与密集城区视觉定位研究凸显空间感知能力的重要性。不确定性量化与动态适配机制受到关注。
+今日研究聚焦多模态大模型的空间推理与地理定位能力，涵盖具身智能基准测试、持续学习检索及密集城市场景视觉定位。学界正推动MLLM从分类任务向动态推理与真实环境适应演进，同时关注GPS拒止条件下的鲁棒定位方案。
 
 ## ✨ 今日亮点
 
-- ERGeoBench构建具身推理与地理定位综合评测基准，推动多模态大模型空间认知能力评估
-- 动态适配器路由机制解决多模态检索的持续学习难题，实现任务自适应模型合并
-- 变分适配器引入不确定性量化，提升跨模态相似性表示的可靠性
+- ERGeoBench构建具身推理与地理定位综合评测体系，填补MLLM空间认知能力评估空白
+- 动态适配器路由机制解决多模态检索中的持续学习难题，实现任务自适应模型融合
+- 中国城中村案例验证视觉定位在密集城市环境的可行性，为GPS拒止导航提供新思路
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260602] How can embedding models bind concepts? | Uselis Arnas, Koishigarina Darina, Seong Joon Oh | 1；2 | 提出CLIP嵌入模型的概念绑定机制分析方法，揭示多目标场景下的表征对齐特性。 | [#225](https://github.com/Larry2000error/Larry-PaperClaw/issues/225) |
-| [20260529] ERGeoBench:A Comprehensive Benchmark for Embodied Reasoning and Geo-localization in Multimodal Large Language Models | Xue Kaiwen, Wei Tao, Zhang Guoxin, Ou Zhonghong, Lu Kaoyan, Feng Yu, Zhu Yifan, Luo Haoran | Institution unavailable | 发布ERGeoBench基准，系统评估多模态大模型在具身推理与地理定位任务中的表现。 | [#226](https://github.com/Larry2000error/Larry-PaperClaw/issues/226) |
-| [20260602] Beyond Classification: Dynamic Adapter Routing for Continual Multimodal Retrieval | Dobrzeniecka Alicja, Szatkowski Filip, Cygert Sebastian, Łukasik Szymon, Twardowski Bartłomiej | NASK National Research Institute；IDEAS Research Institute；Warsaw University of Technology；Universitat Autonoma de Barcelona | 设计动态适配器路由策略，通过任务特定适配器选择与合并实现持续多模态检索。 | [#227](https://github.com/Larry2000error/Larry-PaperClaw/issues/227) |
-| [20260602] Variational Adapter for Cross-modal Similarity Representation | Wei WenZhang, Gui Zhipeng, Peng Dehua, Ye Tiandi, Wu Huayi | Institution unavailable | 构建变分适配器网络，利用变分推断建模跨模态相似性的不确定性分布。 | [#228](https://github.com/Larry2000error/Larry-PaperClaw/issues/228) |
-| [20260602] Vision-Based Localization in Dense Urban Environments: A Case Study of an Urban Village in China | Wu Menglin, Cao Rui | The Hong Kong University of Science and Technology (Guangzhou) | 基于全景相机实现密集城区GPS拒止环境下的视觉定位，以中国城中村为案例验证。 | [#229](https://github.com/Larry2000error/Larry-PaperClaw/issues/229) |
+| [20260529] ERGeoBench:A Comprehensive Benchmark for Embodied Reasoning and Geo-localization in Multimodal Large Language Models | Xue Kaiwen, Wei Tao, Zhang Guoxin, Ou Zhonghong, Lu Kaoyan, Feng Yu, Zhu Yifan, Luo Haoran | Institution unavailable | ERGeoBench建立多模态大模型具身推理与地理定位基准，系统评估视觉感知与空间推理能力。 | [#226](https://github.com/Larry2000error/Larry-PaperClaw/issues/226) |
+| [20260602] Beyond Classification: Dynamic Adapter Routing for Continual Multimodal Retrieval | Dobrzeniecka Alicja, Szatkowski Filip, Cygert Sebastian, Łukasik Szymon, Twardowski Bartłomiej | NASK National Research Institute；IDEAS Research Institute；Warsaw University of Technology；Universitat Autonoma de Barcelona | 提出动态适配器路由方法，通过任务特定适配器选择与模型合并实现持续多模态检索。 | [#227](https://github.com/Larry2000error/Larry-PaperClaw/issues/227) |
+| [20260602] Vision-Based Localization in Dense Urban Environments: A Case Study of an Urban Village in China | Wu Menglin, Cao Rui | The Hong Kong University of Science and Technology (Guangzhou) | 以中国城中村为案例，验证全景视觉定位在密集城市GPS拒止环境中的有效性。 | [#229](https://github.com/Larry2000error/Larry-PaperClaw/issues/229) |
 
 ## 🔎 观察
 
-- 地理空间智能正从传统遥感解译向具身交互与开放环境推理延伸，评测基准建设成为关键瓶颈
-- 适配器架构与动态路由机制成为持续学习的主流技术路径，模型合并策略直接影响跨任务泛化性能
+- 具身智能与地理定位交叉成为新热点，但现有MLLM空间推理能力缺乏标准化评测，ERGeoBench或推动该领域规范化发展
+- 持续学习与模型合并技术向多模态检索渗透，动态路由机制可能缓解视觉-语言模型任务增量时的灾难性遗忘问题
 
 ---
 
