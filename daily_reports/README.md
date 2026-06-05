@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260530](./202605/20260530.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦跨模态理解与定位技术。三篇论文分别探索跨视角地理定位、遥感图像检索及热成像视觉语言模型，体现多模态融合与自监督学习成为核心趋势，Mamba架构与JEPA框架等新兴方法开始渗透遥感领域。
+
+## ✨ 今日亮点
+
+- DINO-GFSA将Mamba序列聚合引入无人机自定位，结合语义门控融合提升跨视角匹配精度
+- CR-JEPA首次将联合嵌入预测架构应用于遥感跨模态检索，推动自监督表征学习
+- T-CLIP突破可见光限制，实现热成像与语言的对齐预训练，拓展低光环境感知能力
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260530] DINO-GFSA: Geo-Localization via Semantic Gated Fusion and Mamba-based Sequential Aggregation | Hu Beier, Guo Yuanshen, Cai Jialu, Li Chengwei, Wang Yong, Wu Shunan, Wu Zhigang | Sun Yat-sen University | DINO-GFSA提出基于DINOv3特征与Mamba序列聚合的跨视角地理定位方法，通过语义门控融合模块优化无人机自定位性能。 | [#231](https://github.com/Larry2000error/Larry-PaperClaw/issues/231) |
+| [20260530] CR-JEPA: Cross-Modal Joint-Embedding Predictive Learning for Remote Sensing Image Retrieval | Md Aminur Hossain, Ayush V. Patel, Dube Nitant, Banerjee Biplab | Space Applications Centre, Indian Space Research Organisation；Centre of Studies in Resources Engineering, Indian Institute of Technology Bombay | CR-JEPA构建跨模态联合嵌入预测架构，以自监督方式学习遥感图像与文本的共享表征，提升检索任务效率。 | [#232](https://github.com/Larry2000error/Larry-PaperClaw/issues/232) |
+| [20260530] T-CLIP: Enabling Thermal Perception for Contrastive Language-Image Pretraining | Qazi Tayeba, Maheshwari Ayush, Mukherjee Prerana, Lall Brejesh | Indian Institute of Technology Delhi；NVIDIA AI Technology Center；Jawaharlal Nehru University | T-CLIP扩展CLIP框架至热成像域，建立热图像-文本对比预训练范式，增强模型在低光照条件下的视觉理解能力。 | [#233](https://github.com/Larry2000error/Larry-PaperClaw/issues/233) |
+
+## 🔎 观察
+
+- Mamba架构正从NLP向遥感视觉任务迁移，其线性复杂度特性对高分辨率卫星影像处理具有潜在优势
+- 跨模态检索技术路线分化：JEPA类生成式表征与CLIP类对比学习并存，遥感领域尚未形成统一范式
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260529](./202605/20260529.md)
 ## 📌 今日概况
 
@@ -60,37 +92,6 @@ Powered by OpenClaw🦞
 
 - 晚期交互与单向量模型的结合可能成为检索系统轻量化部署的新范式，平衡精度与效率。
 - SAM系列模型正从分割工具向通用视觉特征提取器演进，跨任务迁移价值持续显现。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260523](./202605/20260523.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦组合图像检索（CIR）技术，涵盖不确定性量化与地球观测应用两大方向。清华团队引入共形预测解决检索歧义问题，希腊-捷克联合团队则首次系统评估CIR在卫星影像中的实际表现，推动视觉语言模型向遥感专用场景落地。
-
-## ✨ 今日亮点
-
-- 共形预测校准交互不确定性，提升零样本组合图像检索可靠性
-- 首份遥感CIR基准测试揭示视觉语言模型在卫星影像应用中的性能差距
-- 多机构跨国合作推动组合检索技术从通用视觉向地球观测迁移
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260523] Resolving Ambiguity in Composed Image Retrieval via Calibrated Interaction | Tran Amsisan, Le Baogh, Tuan Kiet Pham, Sui Yang Guang | Tsinghua University；Chinese Academy of Sciences | 提出基于共形预测的校准交互框架，通过量化不确定性解决组合图像检索中的意图歧义问题。 | [#217](https://github.com/Larry2000error/Larry-PaperClaw/issues/217) |
-| [20260523] Benchmarking Composed Image Retrieval for Applied Earth Observation | Psomas Bill, Christopoulos Dionysis, Petropoulos Thanasis, Efthymiadis Nikos, Kakogeorgiou Ioannis, Chum Ondřej, Avrithis Yannis, Tolias Giorgos, Karantzalos Konstantinos | Visual Recognition Group, Department of Cybernetics, Czech Technical University in Prague；Remote Sensing Laboratory, School of Rural, Surveying and Geoinformatics Engineering, National Technical University of Athens；Institute of Informatics & Telecommunications, National Centre for Scientific Research "Demokritos"；Department of Informatics and Telecommunications, National and Kapodistrian University of Athens | 构建首个面向地球观测的组合图像检索基准，系统评估CLIP等视觉语言模型在卫星影像检索任务中的适用性。 | [#218](https://github.com/Larry2000error/Larry-PaperClaw/issues/218) |
-
-## 🔎 观察
-
-- 组合图像检索正从通用视觉向垂直领域渗透，遥感场景的特殊性（如光谱特征、地理尺度）对现有VLMs构成挑战
-- 不确定性量化方法（如共形预测）与检索任务的结合，反映出社区对模型可靠性而非单纯精度的关注转向
 
 ---
 
