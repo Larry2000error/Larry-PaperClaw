@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260601](./202606/20260601.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦重识别任务的核心挑战：跨模态优化冲突与泛化瓶颈。两篇论文分别从行人Re-ID的图像-文本多任务优化矛盾，以及车辆Re-ID的域泛化极限评估切入，体现该领域对模型鲁棒性与实际部署可靠性的深度关注。
+
+## ✨ 今日亮点
+
+- 行人Re-ID中图像与文本模态的优化目标冲突首次被系统分析
+- 车辆重识别泛化性能存在显著瓶颈，现有评估方法暴露局限性
+- 跨模态学习与域泛化成为Re-ID领域两大关键研究方向
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260601] Towards Resolving Optimization Conflicts Between Image- and Text-Based Person Re-Identification | Kvanchiani Karina, Mamedov Timur | Tevian；Lomonosov Moscow State University | 提出解决行人Re-ID中基于图像与文本模态的优化冲突方法，提升跨模态表征学习一致性。 | [#236](https://github.com/Larry2000error/Larry-PaperClaw/issues/236) |
+| [20260601] Generalization Limits in Vehicle Re-Identification | Anis Yassine Ben Mabrouk, Tadros Antoine, Rafael Grompone von Gioi, Facciolo Gabriele, Davy Axel, Verschae Rodrigo | Université Paris-Saclay, ENS Paris-Saclay, CNRS, Centre Borelli；HGH Infrared Systems；Institut Universitaire de France；Universidad Técnica Federico Santa María | 系统评估车辆Re-ID方法的泛化极限，揭示现有模型在跨场景部署时的性能衰减问题。 | [#237](https://github.com/Larry2000error/Larry-PaperClaw/issues/237) |
+
+## 🔎 观察
+
+- Re-ID研究正从追求单一指标提升转向关注多任务协同与真实场景鲁棒性，反映领域成熟度提升。
+- 跨模态与泛化问题的并置出现，暗示智能监控系统的实际部署需求正在驱动基础研究范式转变。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260530](./202605/20260530.md)
 ## 📌 今日概况
 
@@ -59,39 +90,6 @@ Powered by OpenClaw🦞
 
 - 具身智能与地理定位交叉成为新热点，但现有MLLM空间推理能力缺乏标准化评测，ERGeoBench或推动该领域规范化发展
 - 持续学习与模型合并技术向多模态检索渗透，动态路由机制可能缓解视觉-语言模型任务增量时的灾难性遗忘问题
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260528](./202605/20260528.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 4 篇。
-
-今日研究聚焦多模态检索与智能体推理两大方向。单向量模型通过晚期交互实现多向量级性能，SAM3特征融合推动零样本第一人称视频理解，而检索增强的智能体框架则为图像地理定位引入证据验证机制。数据集构建与跨域一致性亦受关注。
-
-## ✨ 今日亮点
-
-- 单向量嵌入模型通过晚期交互策略逼近多向量检索性能，降低部署成本
-- SAM3多阶段特征融合实现厨房场景零样本物体重识别，无需标注训练
-- REVERSE框架以多轮证据验证强化智能体图像地理定位的可解释性
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260528] Your Embedding Model is SMARTer Than You Think | Zhang Jianrui, Hyun Jung Lee, Ganguly Sukanta, Kam Tae-Eui, Kim Donghyun, Yong Jae Lee | UW-Madison；Korea University；NetApp, Inc. | 提出SMART方法，以单向量模型实现晚期交互，在保持效率的同时达到多向量检索精度。 | [#220](https://github.com/Larry2000error/Larry-PaperClaw/issues/220) |
-| [20260528] Zero-Shot Object Re-Identification in Egocentric Kitchen Videos via Multi-Stage SAM3 Feature Fusion | Klepachevskyi Dmytro, Wong Alexander, Rambhatla Sirisha, Chen Yuhao | University of Waterloo | 利用SAM3分割模型的多阶段特征融合，解决第一人称厨房视频中零样本物体重识别难题。 | [#221](https://github.com/Larry2000error/Larry-PaperClaw/issues/221) |
-| [20260528] REVERSE: Reinforcing Evidence Verification and Search for Agentic Image geo-localization | Li Yong, Jia Furong, Yin Dacheng, Rong Kang, Rao Fengyun, LYU Jing, Zhang Fan | Peking University；The Hong Kong University of Science and Technology；WeChat Vision, Tencent Inc | 构建REVERSE智能体框架，通过多轮证据检索与验证提升图像地理定位的准确性与可靠性。 | [#222](https://github.com/Larry2000error/Larry-PaperClaw/issues/222) |
-| [20260528] CIRCLED: A Multi-turn CIR Dataset with Consistent Dialogues across Domains | Takeda Tomohisa, Lin Yu-Chieh, Nozawa Yuji, Ng Youyang, Torii Osamu, Matsui Yusuke | Graduate School of Information Science and Technology, The University of Tokyo；Kioxia Corporation | 发布CIRCLED多轮组合图像检索数据集，确保时尚等跨域对话的一致性与连贯性。 | [#223](https://github.com/Larry2000error/Larry-PaperClaw/issues/223) |
-
-## 🔎 观察
-
-- 晚期交互与单向量模型的结合可能成为检索系统轻量化部署的新范式，平衡精度与效率。
-- SAM系列模型正从分割工具向通用视觉特征提取器演进，跨任务迁移价值持续显现。
 
 ---
 
