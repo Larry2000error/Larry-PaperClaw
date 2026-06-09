@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260605](./202606/20260605.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI相关研究聚焦于视觉感知与智能检索两大方向。多目标跟踪领域探索外观特征与3D点云融合的新范式；零样本图像检索则致力于构建更真实的跨模态基准测试体系，推动视觉语言模型的泛化能力评估。
+
+## ✨ 今日亮点
+
+- 3D多行人跟踪中系统验证外观特征对重识别任务的增益效果
+- 构建首个真实零样本组合图像检索基准，解决训练-测试数据泄露问题
+- 基于视频源的一致性数据集设计，提升跨模态检索评估可靠性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260605] Does Appearance Help? A Systematic Study of Image-Based Re-Identification in Online 3D Multi-Pedestrian Tracking | Borges Eduardo, Garrote Luís, Urbano J. Nunes | Institution unavailable | 该研究系统评估了图像外观特征在在线3D多行人跟踪重识别任务中的作用，为LiDAR与视觉融合策略提供实证依据。 | [#250](https://github.com/Larry2000error/Larry-PaperClaw/issues/250) |
+| [20260605] Never Seen Before: Benchmarking Genuine Zero-Shot Composed Image Retrieval with Consistent Video-Sourced Datasets | Yang Zhenyu, Du Zemin, Qian Shengsheng, Xu Changsheng | Institution unavailable | 论文提出全新零样本组合图像检索基准，通过视频源数据集构建避免训练测试重叠，更真实反映模型泛化性能。 | [#251](https://github.com/Larry2000error/Larry-PaperClaw/issues/251) |
+
+## 🔎 观察
+
+- 多模态融合正从简单特征拼接转向系统性的增益量化分析，方法论趋于严谨
+- 零样本学习领域开始正视基准测试的数据泄露隐患，数据集构建范式面临革新
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260604](./202606/20260604.md)
 ## 📌 今日概况
 
@@ -57,39 +88,6 @@ Powered by OpenClaw🦞
 
 - 跨视角地理定位正从独立任务走向联合优化，检索与位姿估计的协同设计或成新范式
 - 属性解耦与邻居关系建模为组合检索提供新思路，但机构信息缺失提示需关注研究透明度
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260602](./202606/20260602.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日多模态检索研究呈现三大趋势：企业级RAG系统优化、噪声对应关系修正及跨模态检索新场景拓展。学术界与工业界协同推进文档理解与视觉-语言对齐技术，图神经网络与布局感知方法成为关键创新点。
-
-## ✨ 今日亮点
-
-- 企业级多模态RAG系统MM-BizRAG提出布局感知解析新范式
-- 清华团队利用图神经网络修正跨模态噪声对应关系
-- 越南学者探索人脸-发型混合模态检索新任务
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260602] Overview of the EReL@MIR 2025 Multimodal Document Retrieval Challenge (Track 1) | Mei Jingbiao | University of Cambridge | 剑桥大学主办的多模态文档检索挑战赛综述，聚焦视觉丰富文档的文本-图像检索基准建设。 | [#239](https://github.com/Larry2000error/Larry-PaperClaw/issues/239) |
-| [20260602] MM-BizRAG: Rethinking Multimodal Retrieval-Augmented Generation for General Purpose Enterprise Q&A | Bhathena Hanoz, Parin Rajesh Jhaveri, Mittal Rohan, Singh Prateek, Kallala Aymen, Kaur Rachneet, Jin Yiqiao, Zeng Zhen, Ratnaparkhi Adwait, Kochedykov Denis | JPMorgan Chase & Co.；Georgia Institute of Technology | 摩根大通联合佐治亚理工提出企业问答多模态RAG框架，强调文档结构理解与布局感知解析。 | [#240](https://github.com/Larry2000error/Larry-PaperClaw/issues/240) |
-| [20260602] Intra-Modal Neighbors Never Lie: Rectifying Inter-Modal Noisy Correspondence via Graph-Based Intra-Modal Reasoning | Liu Yang, Feng Wentao, Huang Shu-Dong, Ye Yalan, Lv Jiancheng | Tsinghua University；Chinese Academy of Sciences | 清华与中科院提出基于图神经网络的模态内推理方法，解决跨模态检索中的噪声对应问题。 | [#241](https://github.com/Larry2000error/Larry-PaperClaw/issues/241) |
-| [20260602] Mixed-Modality Dual Face-Hair Retrieval | Bui-Huynh Quoc-Anh, Lam Mai-Tuyen, Nguyen Dai-Anh-Tuan, Thanh Duc Ngo | Vietnam National University, Ho Chi Minh City；University of Information Technology, VNU-HCM, Ho Chi Minh City | 越南国立大学团队提出人脸-发型混合模态双重检索任务，探索图像跨模态学习新场景。 | [#242](https://github.com/Larry2000error/Larry-PaperClaw/issues/242) |
-
-## 🔎 观察
-
-- 工业界主导企业级RAG实用化研究，学术机构聚焦基础理论突破，形成互补格局
-- 噪声鲁棒性与细粒度对齐成为跨模态检索核心挑战，图方法展现强建模潜力
 
 ---
 
