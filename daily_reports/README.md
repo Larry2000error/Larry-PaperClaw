@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260608](./202606/20260608.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦视觉-语言模型在遥感与地理空间任务中的创新应用。三项工作分别探索零样本语义重识别、多模态生成式检索优化及全球图像地理定位，体现大模型时代下语义理解与空间推理的深度融合趋势。
+
+## ✨ 今日亮点
+
+- VLM首次用于自动驾驶零样本语义重识别，突破传统监督学习局限
+- 提出前缀保留优化策略，显著缩小多模态生成检索的索引-解码差距
+- 结合位置注意力机制与大模型，实现全球范围图像地理定位
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260608] Zero-Shot Semantic Re-Identification for Autonomous Driving: A VLM Baseline Study | Borges Eduardo, Abreu Manuel, Garrote Luís, Urbano J. Nunes | Institute of Systems and Robotics, University of Coimbra | 提出VLM基线方法，通过语义匹配实现自动驾驶场景零样本行人车辆重识别。 | [#256](https://github.com/Larry2000error/Larry-PaperClaw/issues/256) |
+| [20260608] Closing the Indexing-Decoding Gap in Multimodal Generative Retrieval via Prefix Retention Optimization | Chen Yufei, Wang Zihan, Tang Yubao, Zhao Yukun, Maarten de Rijke, Ren Zhaochun | Shandong University；CISPA Helmholtz Center for Information Security；University of Amsterdam；Leiden University | 针对多模态生成检索，设计前缀保留优化机制改进残差量化与束搜索过程。 | [#257](https://github.com/Larry2000error/Larry-PaperClaw/issues/257) |
+| [20260608] When Vision Misleads, Let Location Speak: A Worldwide Image Geo-Localization Method via Location Attention Mechanism and Large Multimodal Models | Cui Junchao, Shi Wenqi, Ma Xuanzi, Wu Nan, Du Shaoyong, Luo Xiangyang | Institution unavailable | 构建位置注意力机制，融合CLIP与大模型解决视觉歧义下的全球图像地理定位。 | [#258](https://github.com/Larry2000error/Larry-PaperClaw/issues/258) |
+
+## 🔎 观察
+
+- 地理定位任务正从纯视觉判别转向视觉-地理语义联合推理，位置编码成为关键创新点
+- 生成式检索的瓶颈已从表征学习转向索引-解码协同优化，量化策略研究价值凸显
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260606](./202606/20260606.md)
 ## 📌 今日概况
 
@@ -57,37 +89,6 @@ Powered by OpenClaw🦞
 
 - 多模态融合正从简单特征拼接转向系统性的增益量化分析，方法论趋于严谨
 - 零样本学习领域开始正视基准测试的数据泄露隐患，数据集构建范式面临革新
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260604](./202606/20260604.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究呈现两大趋势：一是跨视角地理定位向非城市环境拓展，融合度量-语义原语匹配实现无GNSS导航；二是多模态大语言模型的可解释性研究，通过识别核心注意力头揭示功能稀疏性机制。两项工作分别从机器人定位鲁棒性与模型内部机理层面推进技术边界。
-
-## ✨ 今日亮点
-
-- Meridian提出度量-语义原语匹配框架，突破城市环境限制实现空地跨视角定位
-- CoRe Heads机制揭示多模态LLM功能稀疏性，为模型压缩与效率优化提供新思路
-- MIT与丰田研究院合作推动无GNSS导航技术，拓展地面机器人野外作业能力
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260604] Meridian: Metric-Semantic Primitive Matching for Cross-View Geo-Localization Beyond Urban Environments | Peterson Mason, Li Qingyuan, Jia Yixuan, Cladera Fernando, Nieto-Granda Carlos, Camillo Jose Taylor, Jonathan P. How | Massachusetts Institute of Technology；University of Pennsylvania；Toyota Research Institute | Meridian通过度量-语义原语匹配，将跨视角地理定位从城市拓展至野外等非结构化环境，支持无GNSS条件下的地面机器人定位。 | [#247](https://github.com/Larry2000error/Larry-PaperClaw/issues/247) |
-| [20260604] Mechanistic Insights into Functional Sparsity in Multimodal LLMs via CoRe Heads | Sun Ruoxi, Qiu Quantong, Li Juntao, Tang Zecheng, Lou Yihang, Zhang Min | Soochow University；Peking University | 该研究提出CoRe Heads识别多模态LLM中承担跨模态检索的核心注意力头，揭示功能稀疏性机制并验证其可解释性价值。 | [#248](https://github.com/Larry2000error/Larry-PaperClaw/issues/248) |
-
-## 🔎 观察
-
-- 跨视角定位从城市向野外延伸，反映自动驾驶与野外机器人对无GNSS导航的迫切需求，语义-几何联合表征成为关键突破口。
-- 多模态LLM可解释性研究从现象描述走向机制定位，核心子结构识别为模型轻量化与可信部署提供工程化路径。
 
 ---
 
