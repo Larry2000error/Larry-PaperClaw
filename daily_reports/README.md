@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260606](./202606/20260606.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究呈现跨模态智能与时空图神经网络两大主线。GeoGNN聚焦时序地理定位，通过双塔图神经网络融合时空表征；IMAGINE则探索自适应图式-意象增强的组合视频检索，推动跨模态语义对齐技术发展。
+
+## ✨ 今日亮点
+
+- GeoGNN提出双塔图神经网络架构，实现时序数据与地理空间的联合嵌入学习
+- IMAGINE创新引入图式-意象增强机制，提升组合视频检索的语义理解能力
+- 两研究分别来自Emory-橡树岭-南加大联盟与山东大学团队，体现产学研协同
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260606] GeoGNN: Time Series Geo-Localization using Two-Tower Graph Neural Networks | Tran Toan, Abebe Waqwoya, Potnis Abhishek, Chinthavali Supriya, Shahabi Cyrus, Xiong Li, Lunga Dalton | Emory University；Oak Ridge National Laboratory；University of Southern California | GeoGNN构建双塔图神经网络，联合学习时序数据的空间嵌入与时间表示，用于精确地理定位任务。 | [#253](https://github.com/Larry2000error/Larry-PaperClaw/issues/253) |
+| [20260606] IMAGINE: Adaptive Schema-Imagery Enhanced Composition for Composed Video Retrieval | Huang Jiale, Li Zixu, Chen Zhiwei, Fu Zhiheng, Wang Chunxiao, Hu Yupeng | Shandong University；Qilu University of Technology (Shandong Academy of Sciences) | IMAGINE提出自适应图式-意象增强组合框架，通过多模态原型学习实现复杂视频语义检索。 | [#254](https://github.com/Larry2000error/Larry-PaperClaw/issues/254) |
+
+## 🔎 观察
+
+- 图神经网络正成为遥感时空建模的核心工具，双塔架构设计或成地理定位新范式
+- 跨模态检索从简单对齐迈向深层语义组合，图式认知理论的引入值得关注
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260605](./202606/20260605.md)
 ## 📌 今日概况
 
@@ -57,37 +88,6 @@ Powered by OpenClaw🦞
 
 - 跨视角定位从城市向野外延伸，反映自动驾驶与野外机器人对无GNSS导航的迫切需求，语义-几何联合表征成为关键突破口。
 - 多模态LLM可解释性研究从现象描述走向机制定位，核心子结构识别为模型轻量化与可信部署提供工程化路径。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260603](./202606/20260603.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦于跨视角图像检索与位姿估计的融合框架，以及基于属性关系的组合式图像检索。两项工作均致力于提升复杂场景下的视觉定位精度，体现了从单一模态向多模态协同、从粗粒度匹配向细粒度属性解耦的发展趋势。
-
-## ✨ 今日亮点
-
-- CIPER统一框架实现跨视角检索与位姿估计联合优化，提升 aerial-ground 匹配精度
-- COMBINER引入属性邻居关系引导组合检索，强化多模态表征解耦能力
-- 两项研究均来自亚洲团队，反映该区域在视觉定位领域的技术积累
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260603] CIPER: A Unified Framework for Cross-view Image-retrieval and Pose-estimation | Jeon Yurim, Seo Dongseong, Seo Seung-Woo | Seoul National University | CIPER提出统一框架，将跨视角图像检索与相机位姿估计联合建模，实现 aerial-ground 图像的端到端匹配与定位。 | [#244](https://github.com/Larry2000error/Larry-PaperClaw/issues/244) |
-| [20260603] COMBINER: Composed Image Retrieval Guided by Attribute-based Neighbor Relations | Li Zixu, Hu Yupeng, Chen Zhiwei, Wen Haokun, Song Xuemeng, Nie Liqiang | Institution unavailable | COMBINER通过属性邻居关系引导组合式图像检索，解决参考图像与目标描述之间的细粒度对齐问题。 | [#245](https://github.com/Larry2000error/Larry-PaperClaw/issues/245) |
-
-## 🔎 观察
-
-- 跨视角地理定位正从独立任务走向联合优化，检索与位姿估计的协同设计或成新范式
-- 属性解耦与邻居关系建模为组合检索提供新思路，但机构信息缺失提示需关注研究透明度
 
 ---
 
