@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260613](./202606/20260613.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日研究聚焦多模态大语言模型（MLLM）的视觉表征学习。伊利诺伊大学团队提出从冻结MLLM中提取语义属性梯度的新方法，突破传统标量距离对比学习的局限，结合群体相对策略优化（GRPO）优化视觉嵌入，为遥感图像的细粒度语义理解提供新思路。
+
+## ✨ 今日亮点
+
+- 突破标量距离限制，引入语义属性梯度丰富视觉嵌入
+- 利用冻结MLLM的隐式知识，无需昂贵微调即可提取高层语义
+- GRPO优化策略使视觉编码器对齐人类偏好的语义结构
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260613] Beyond Scalar Distances: Semantic Attribute Gradients from Frozen MLLMs for Visual Embeddings | Bhatnagar Shubhang, Baiju Dheeraj, Ahuja Narendra | University of Illinois Urbana-Champaign | 该研究提出从冻结MLLM提取语义属性梯度，以GRPO优化视觉嵌入，超越传统对比学习的标量距离限制。 | [#268](https://github.com/Larry2000error/Larry-PaperClaw/issues/268) |
+
+## 🔎 观察
+
+- 冻结MLLM知识蒸馏或成视觉表征学习新范式，降低算力门槛
+- 语义属性梯度方法对遥感地物细粒度区分具有潜在应用价值
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260610](./202606/20260610.md)
 ## 📌 今日概况
 
@@ -61,37 +91,6 @@ Powered by OpenClaw🦞
 
 - 地理定位任务正从纯视觉判别转向视觉-地理语义联合推理，位置编码成为关键创新点
 - 生成式检索的瓶颈已从表征学习转向索引-解码协同优化，量化策略研究价值凸显
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260606](./202606/20260606.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究呈现跨模态智能与时空图神经网络两大主线。GeoGNN聚焦时序地理定位，通过双塔图神经网络融合时空表征；IMAGINE则探索自适应图式-意象增强的组合视频检索，推动跨模态语义对齐技术发展。
-
-## ✨ 今日亮点
-
-- GeoGNN提出双塔图神经网络架构，实现时序数据与地理空间的联合嵌入学习
-- IMAGINE创新引入图式-意象增强机制，提升组合视频检索的语义理解能力
-- 两研究分别来自Emory-橡树岭-南加大联盟与山东大学团队，体现产学研协同
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260606] GeoGNN: Time Series Geo-Localization using Two-Tower Graph Neural Networks | Tran Toan, Abebe Waqwoya, Potnis Abhishek, Chinthavali Supriya, Shahabi Cyrus, Xiong Li, Lunga Dalton | Emory University；Oak Ridge National Laboratory；University of Southern California | GeoGNN构建双塔图神经网络，联合学习时序数据的空间嵌入与时间表示，用于精确地理定位任务。 | [#253](https://github.com/Larry2000error/Larry-PaperClaw/issues/253) |
-| [20260606] IMAGINE: Adaptive Schema-Imagery Enhanced Composition for Composed Video Retrieval | Huang Jiale, Li Zixu, Chen Zhiwei, Fu Zhiheng, Wang Chunxiao, Hu Yupeng | Shandong University；Qilu University of Technology (Shandong Academy of Sciences) | IMAGINE提出自适应图式-意象增强组合框架，通过多模态原型学习实现复杂视频语义检索。 | [#254](https://github.com/Larry2000error/Larry-PaperClaw/issues/254) |
-
-## 🔎 观察
-
-- 图神经网络正成为遥感时空建模的核心工具，双塔架构设计或成地理定位新范式
-- 跨模态检索从简单对齐迈向深层语义组合，图式认知理论的引入值得关注
 
 ---
 
