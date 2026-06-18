@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260617](./202606/20260617.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦跨模态检索的精细化与交互式创新。三篇论文分别从双目标编码、生成式视觉消歧、低注意力区域编码三个维度，探索如何突破传统视觉-语言模型的检索瓶颈，提升复杂场景下的检索精度与用户体验。
+
+## ✨ 今日亮点
+
+- DREAM提出双目标编码框架，强化视频-文本跨模态时序建模能力
+- 生成式视觉消歧方法通过交互式生成替代文本查询，优化组合图像检索
+- LARE针对显著性偏差问题，显式编码低注意力区域以改善密集场景检索
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260617] DREAM: Extending Vision-Language Models with Dual-Objective Encoding for Cross-Modal Retrieval | Ullah Kaleem, Hussain Altaf, Munsif Muhammad, Sung Wook Baik | Institution unavailable | DREAM通过双目标编码扩展视觉-语言模型，实现视频-文本跨模态检索中的时序对齐与语义匹配联合优化。 | [#271](https://github.com/Larry2000error/Larry-PaperClaw/issues/271) |
+| [20260617] Show, Don't Ask: Generative Visual Disambiguation for Composed Image Retrieval with Turn-Valid Coverage | Tran Amsisan, Le Baogh, Tuan Kiet Pham, Sui Yang Guang | Institution unavailable | 提出生成式视觉消歧框架，利用共形预测保证交互式组合图像检索的覆盖有效性，以视觉生成替代文本歧义。 | [#272](https://github.com/Larry2000error/Larry-PaperClaw/issues/272) |
+| [20260617] LARE: Low-Attention Region Encoding for Text-Image Retrieval | Alquwayfili Abdulmalik, Almeshal Faisal, Almajnouni Jumanah, Alotaibi Leena, Alhajari Faisal, Alkhrashi Mohammed, Almuhrij Alreem, Aldwyish Abdullah, Aljadaany Raied, Alamri Huda, Muhammad Kamran J. Khan | Institution unavailable | LARE显式编码图像低注意力区域，缓解显著性偏差，提升密集场景下细粒度文本-图像检索性能。 | [#273](https://github.com/Larry2000error/Larry-PaperClaw/issues/273) |
+
+## 🔎 观察
+
+- 跨模态检索正从单一模态对齐转向多粒度、交互式的精细化建模，时序与空间注意力成为关键突破口
+- 生成式方法开始渗透检索任务，视觉生成与判别式检索的融合可能重塑查询交互范式
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260613](./202606/20260613.md)
 ## 📌 今日概况
 
@@ -59,38 +91,6 @@ Powered by OpenClaw🦞
 
 - 低秩表示学习成为本日最突出技术趋势，在检索与重识别两类任务中均获应用，反映领域对高效降维表征的共识
 - 视觉-语言模型向 specialized 下游任务渗透加速，提示学习与原型学习结合成为跨域迁移的标准范式
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260608](./202606/20260608.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦视觉-语言模型在遥感与地理空间任务中的创新应用。三项工作分别探索零样本语义重识别、多模态生成式检索优化及全球图像地理定位，体现大模型时代下语义理解与空间推理的深度融合趋势。
-
-## ✨ 今日亮点
-
-- VLM首次用于自动驾驶零样本语义重识别，突破传统监督学习局限
-- 提出前缀保留优化策略，显著缩小多模态生成检索的索引-解码差距
-- 结合位置注意力机制与大模型，实现全球范围图像地理定位
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260608] Zero-Shot Semantic Re-Identification for Autonomous Driving: A VLM Baseline Study | Borges Eduardo, Abreu Manuel, Garrote Luís, Urbano J. Nunes | Institute of Systems and Robotics, University of Coimbra | 提出VLM基线方法，通过语义匹配实现自动驾驶场景零样本行人车辆重识别。 | [#256](https://github.com/Larry2000error/Larry-PaperClaw/issues/256) |
-| [20260608] Closing the Indexing-Decoding Gap in Multimodal Generative Retrieval via Prefix Retention Optimization | Chen Yufei, Wang Zihan, Tang Yubao, Zhao Yukun, Maarten de Rijke, Ren Zhaochun | Shandong University；CISPA Helmholtz Center for Information Security；University of Amsterdam；Leiden University | 针对多模态生成检索，设计前缀保留优化机制改进残差量化与束搜索过程。 | [#257](https://github.com/Larry2000error/Larry-PaperClaw/issues/257) |
-| [20260608] When Vision Misleads, Let Location Speak: A Worldwide Image Geo-Localization Method via Location Attention Mechanism and Large Multimodal Models | Cui Junchao, Shi Wenqi, Ma Xuanzi, Wu Nan, Du Shaoyong, Luo Xiangyang | Institution unavailable | 构建位置注意力机制，融合CLIP与大模型解决视觉歧义下的全球图像地理定位。 | [#258](https://github.com/Larry2000error/Larry-PaperClaw/issues/258) |
-
-## 🔎 观察
-
-- 地理定位任务正从纯视觉判别转向视觉-地理语义联合推理，位置编码成为关键创新点
-- 生成式检索的瓶颈已从表征学习转向索引-解码协同优化，量化策略研究价值凸显
 
 ---
 
