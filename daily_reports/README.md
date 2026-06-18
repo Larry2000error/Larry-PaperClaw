@@ -2,6 +2,40 @@
 
 最近三天日报（最新在前）：
 
+# [20260610](./202606/20260610.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+
+今日遥感AI研究聚焦跨模态检索与重识别技术，涵盖法医图像、昼夜场景、可见光-红外及换装场景等复杂应用。低秩结构学习与提示学习成为主流技术路线，多专家网络与正交子空间方法受到关注，显示领域对鲁棒特征表示的持续探索。
+
+## ✨ 今日亮点
+
+- 跨域重识别研究活跃，昼夜场景与换装问题各有一篇工作
+- 低秩结构学习成为热点，两篇论文分别应用于组合检索与换装重识别
+- 多专家网络架构首次引入可见光-红外行人重识别任务
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260610] Bridging the Modality Gap in Forensic Image Retrieval | González-Gazapo Ricardo, Morales-González Annette, Martínez-Díaz Yoanna, Méndez-Vázquez Heydi, García-Borroto Milton | Advanced Technologies Application Center (CENATAV)；Centro de Sistemas Complejos, Facultad de Física, Universidad de La Habana | 提出跨模态法医图像检索框架，整合纹身与素描检索任务，探索大语言模型在取证场景的应用潜力。 | [#261](https://github.com/Larry2000error/Larry-PaperClaw/issues/261) |
+| [20260610] Bridging Day and Night: Unsupervised Cross-Domain Re-Identification with Synergistic Prompt and Prototype Learning | Xu Jiyang, Liu Rui, Dai Hang | School of Computer Science, Wuhan University | 设计协同提示与原型学习机制，实现无监督昼夜跨域行人重识别，缓解域间分布差异。 | [#262](https://github.com/Larry2000error/Larry-PaperClaw/issues/262) |
+| [20260610] MFEN:Multi-Frequency Expert Network for Visible-Infrared Person Re-ID | Li Xulin, Lu Yan, Liu Bin, Yang Qinhong, Chu Qi, Gong Tao, Yu Nenghai | University of Science and Technology of China；Anhui Province Key Laboratory of Digital Security；The Chinese University of Hong Kong | 构建多频率专家网络，通过频域学习与混合专家架构，有效缩小可见光-红外模态差异。 | [#263](https://github.com/Larry2000error/Larry-PaperClaw/issues/263) |
+| [20260610] RankVR: Low-Rank Structure Perception and Value Recalibration for Robust Composed Image Retrieval | Huang Jiale, Li Zixu, Fu Zhiheng, Chen Zhiwei, Huang Qinlei, Hu Yupeng | Shandong University | 提出低秩结构感知与价值重校准方法，增强组合图像检索的全局结构一致性与噪声鲁棒性。 | [#264](https://github.com/Larry2000error/Larry-PaperClaw/issues/264) |
+| [20260610] Learning Instance-Adaptive Low-Rank Orthogonal Subspaces for Clothes-Changing Person Re-Identification | Kim Dong-Woo, Kim Tae-Kyun | Imperial College London | 学习实例自适应低秩正交子空间，利用视觉-语言模型解决换装场景下行人重识别的表观变化难题。 | [#265](https://github.com/Larry2000error/Larry-PaperClaw/issues/265) |
+
+## 🔎 观察
+
+- 低秩表示学习成为本日最突出技术趋势，在检索与重识别两类任务中均获应用，反映领域对高效降维表征的共识
+- 视觉-语言模型向 specialized 下游任务渗透加速，提示学习与原型学习结合成为跨域迁移的标准范式
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260608](./202606/20260608.md)
 ## 📌 今日概况
 
@@ -58,37 +92,6 @@ Powered by OpenClaw🦞
 
 - 图神经网络正成为遥感时空建模的核心工具，双塔架构设计或成地理定位新范式
 - 跨模态检索从简单对齐迈向深层语义组合，图式认知理论的引入值得关注
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260605](./202606/20260605.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI相关研究聚焦于视觉感知与智能检索两大方向。多目标跟踪领域探索外观特征与3D点云融合的新范式；零样本图像检索则致力于构建更真实的跨模态基准测试体系，推动视觉语言模型的泛化能力评估。
-
-## ✨ 今日亮点
-
-- 3D多行人跟踪中系统验证外观特征对重识别任务的增益效果
-- 构建首个真实零样本组合图像检索基准，解决训练-测试数据泄露问题
-- 基于视频源的一致性数据集设计，提升跨模态检索评估可靠性
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260605] Does Appearance Help? A Systematic Study of Image-Based Re-Identification in Online 3D Multi-Pedestrian Tracking | Borges Eduardo, Garrote Luís, Urbano J. Nunes | Institution unavailable | 该研究系统评估了图像外观特征在在线3D多行人跟踪重识别任务中的作用，为LiDAR与视觉融合策略提供实证依据。 | [#250](https://github.com/Larry2000error/Larry-PaperClaw/issues/250) |
-| [20260605] Never Seen Before: Benchmarking Genuine Zero-Shot Composed Image Retrieval with Consistent Video-Sourced Datasets | Yang Zhenyu, Du Zemin, Qian Shengsheng, Xu Changsheng | Institution unavailable | 论文提出全新零样本组合图像检索基准，通过视频源数据集构建避免训练测试重叠，更真实反映模型泛化性能。 | [#251](https://github.com/Larry2000error/Larry-PaperClaw/issues/251) |
-
-## 🔎 观察
-
-- 多模态融合正从简单特征拼接转向系统性的增益量化分析，方法论趋于严谨
-- 零样本学习领域开始正视基准测试的数据泄露隐患，数据集构建范式面临革新
 
 ---
 
