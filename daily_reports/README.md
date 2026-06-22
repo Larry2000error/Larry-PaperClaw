@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260618](./202606/20260618.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦多模态检索与对齐技术，涵盖通用多模态检索、跨模态目标重识别及时尚图像检索三大方向。强化学习驱动的排序优化、频域特征统一与两阶段微调成为主要技术路径，显示多模态大模型在细粒度检索任务中的深化应用趋势。
+
+## ✨ 今日亮点
+
+- ELVA提出排序驱动的通用多模态检索框架，结合强化学习优化检索排序质量
+- FUSE通过频域统一与谱能量对齐实现跨模态目标重识别，解决模态间特征差异
+- 两阶段微调策略结合MLLM探索时尚图像检索，提升组合式检索精度
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260618] ELVA: Exploring Ranking-Driven Universal Multimodal Retrieval | Liu Yuhan, Fu Pei, Li Hang, Qi Yukun, Jiang Chao, Fu Jingwen, Liu Zhen, Qin Bin, Luo Zhenbo, Luan Jian, Xin Jingmin | National Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Institute of Artificial Intelligence and Robotics, Xi'an Jiaotong University；MiLM Plus, Xiaomi Inc；Zhongguancun Academy | ELVA以排序优化为核心，通过强化学习训练通用多模态检索模型，突破传统对比学习的排序局限。 | [#276](https://github.com/Larry2000error/Larry-PaperClaw/issues/276) |
+| [20260618] FUSE: Frequency-domain Unification and Spectral Energy Alignment for Multi-modal Object Re-Identification | Qi Xuanhao, Tom H. Luan, Zhang Yukang, Zheng Jinkai, Su Zhou, Li Shuwei, Tan Lei | Tsinghua University；Chinese Academy of Sciences | FUSE在频域实现跨模态特征统一，利用谱能量对齐机制提升多模态目标重识别的判别能力。 | [#277](https://github.com/Larry2000error/Larry-PaperClaw/issues/277) |
+| [20260618] Exploring Multi-Modal Large Language Models and Two-Stage Fine-Tuning for Fashion Image Retrieval | Nguyen Cao Hoang, Hoang Bui Le, Nam Vo Hoang, Le Trung-Nghia | University of Science, VNU-HCM；Vietnam National University | 基于MLLM的两阶段微调方法，针对时尚领域组合式图像检索任务实现检索性能提升。 | [#278](https://github.com/Larry2000error/Larry-PaperClaw/issues/278) |
+
+## 🔎 观察
+
+- 排序优化正成为多模态检索的新焦点，从表征学习向决策层优化延伸
+- 频域分析与谱分解技术为跨模态对齐提供了新的特征解耦视角
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260617](./202606/20260617.md)
 ## 📌 今日概况
 
@@ -58,40 +90,6 @@ Powered by OpenClaw🦞
 
 - 冻结MLLM知识蒸馏或成视觉表征学习新范式，降低算力门槛
 - 语义属性梯度方法对遥感地物细粒度区分具有潜在应用价值
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260610](./202606/20260610.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究聚焦跨模态检索与重识别技术，涵盖法医图像、昼夜场景、可见光-红外及换装场景等复杂应用。低秩结构学习与提示学习成为主流技术路线，多专家网络与正交子空间方法受到关注，显示领域对鲁棒特征表示的持续探索。
-
-## ✨ 今日亮点
-
-- 跨域重识别研究活跃，昼夜场景与换装问题各有一篇工作
-- 低秩结构学习成为热点，两篇论文分别应用于组合检索与换装重识别
-- 多专家网络架构首次引入可见光-红外行人重识别任务
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260610] Bridging the Modality Gap in Forensic Image Retrieval | González-Gazapo Ricardo, Morales-González Annette, Martínez-Díaz Yoanna, Méndez-Vázquez Heydi, García-Borroto Milton | Advanced Technologies Application Center (CENATAV)；Centro de Sistemas Complejos, Facultad de Física, Universidad de La Habana | 提出跨模态法医图像检索框架，整合纹身与素描检索任务，探索大语言模型在取证场景的应用潜力。 | [#261](https://github.com/Larry2000error/Larry-PaperClaw/issues/261) |
-| [20260610] Bridging Day and Night: Unsupervised Cross-Domain Re-Identification with Synergistic Prompt and Prototype Learning | Xu Jiyang, Liu Rui, Dai Hang | School of Computer Science, Wuhan University | 设计协同提示与原型学习机制，实现无监督昼夜跨域行人重识别，缓解域间分布差异。 | [#262](https://github.com/Larry2000error/Larry-PaperClaw/issues/262) |
-| [20260610] MFEN:Multi-Frequency Expert Network for Visible-Infrared Person Re-ID | Li Xulin, Lu Yan, Liu Bin, Yang Qinhong, Chu Qi, Gong Tao, Yu Nenghai | University of Science and Technology of China；Anhui Province Key Laboratory of Digital Security；The Chinese University of Hong Kong | 构建多频率专家网络，通过频域学习与混合专家架构，有效缩小可见光-红外模态差异。 | [#263](https://github.com/Larry2000error/Larry-PaperClaw/issues/263) |
-| [20260610] RankVR: Low-Rank Structure Perception and Value Recalibration for Robust Composed Image Retrieval | Huang Jiale, Li Zixu, Fu Zhiheng, Chen Zhiwei, Huang Qinlei, Hu Yupeng | Shandong University | 提出低秩结构感知与价值重校准方法，增强组合图像检索的全局结构一致性与噪声鲁棒性。 | [#264](https://github.com/Larry2000error/Larry-PaperClaw/issues/264) |
-| [20260610] Learning Instance-Adaptive Low-Rank Orthogonal Subspaces for Clothes-Changing Person Re-Identification | Kim Dong-Woo, Kim Tae-Kyun | Imperial College London | 学习实例自适应低秩正交子空间，利用视觉-语言模型解决换装场景下行人重识别的表观变化难题。 | [#265](https://github.com/Larry2000error/Larry-PaperClaw/issues/265) |
-
-## 🔎 观察
-
-- 低秩表示学习成为本日最突出技术趋势，在检索与重识别两类任务中均获应用，反映领域对高效降维表征的共识
-- 视觉-语言模型向 specialized 下游任务渗透加速，提示学习与原型学习结合成为跨域迁移的标准范式
 
 ---
 
