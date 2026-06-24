@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260623](./202606/20260623.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日研究聚焦跨场景视觉定位技术，上海交大联合航运机构提出ProteusVPR框架，实现开放水域到封闭舱室的视觉位置识别，融合几何与视觉特征，服务于海事机器人自主巡检与船舶智能运维，体现遥感AI向垂直行业场景深度渗透趋势。
+
+## ✨ 今日亮点
+
+- ProteusVPR实现水域-舱室跨场景视觉定位，突破环境差异瓶颈
+- 几何-视觉融合架构适配海事机器人自主感知与舱室检测任务
+- 产学研协同：高校联合中远海运、上海船研所推动航运智能化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260623] From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection | Chena Zexi, Huang Zitai, Gu Qiwen, Li Zhiqi, Dong Shengli, Wang Chenlei, Zhao Junqiao, Wang Hongdong, Han Bing | Shanghai Jiaotong University；COSCO SHIPPING Advanced Technology Institute；Shanghai Ship and Shipping Research Institute Co.LTD；Tongji University；Dalian Maritime University | ProteusVPR提出跨场景视觉位置识别框架，融合几何与视觉特征，支撑海事机器人从开放水域到封闭舱室的自主定位与巡检。 | [#285](https://github.com/Larry2000error/Larry-PaperClaw/issues/285) |
+
+## 🔎 观察
+
+- 视觉位置识别技术正从城市环境向船舶、舱室等封闭工业场景迁移，场景适应性成为关键挑战
+- 航运巨头与高校联合研发加速，海事智能运维或成遥感AI落地新赛道
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260622](./202606/20260622.md)
 ## 📌 今日概况
 
@@ -58,39 +88,6 @@ Powered by OpenClaw🦞
 
 - 排序优化正成为多模态检索的新焦点，从传统对比学习向强化学习驱动的显式排序建模演进
 - 频域分析工具向跨模态任务渗透，谱分解技术为特征解耦与对齐提供了可解释的几何视角
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260617](./202606/20260617.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日研究聚焦跨模态检索的精细化与实用化。视觉-语言模型持续演进，学者从注意力机制优化、生成式消歧、冷启动应对等多维度突破，电商视频、复杂场景等应用导向明显，交互式检索与不确定性量化成为新关注点。
-
-## ✨ 今日亮点
-
-- DREAM提出双目标编码扩展视觉-语言模型，强化视频时序建模与跨模态检索能力
-- 生成式视觉消歧结合共形预测，实现交互式组合图像检索的覆盖验证
-- LARE针对低注意力区域编码，缓解显著性偏置以提升密集场景图文检索精度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260617] DREAM: Extending Vision-Language Models with Dual-Objective Encoding for Cross-Modal Retrieval | Ullah Kaleem, Hussain Altaf, Munsif Muhammad, Sung Wook Baik | Institution unavailable | DREAM通过双目标编码扩展视觉-语言模型，优化视频时序建模以提升跨模态检索性能。 | [#271](https://github.com/Larry2000error/Larry-PaperClaw/issues/271) |
-| [20260617] Show, Don't Ask: Generative Visual Disambiguation for Composed Image Retrieval with Turn-Valid Coverage | Tran Amsisan, Le Baogh, Tuan Kiet Pham, Sui Yang Guang | Institution unavailable | 该研究以生成式视觉消歧替代显式询问，结合共形预测实现组合图像检索的交互优化。 | [#272](https://github.com/Larry2000error/Larry-PaperClaw/issues/272) |
-| [20260617] LARE: Low-Attention Region Encoding for Text-Image Retrieval | Alquwayfili Abdulmalik, Almeshal Faisal, Almajnouni Jumanah, Alotaibi Leena, Alhajari Faisal, Alkhrashi Mohammed, Almuhrij Alreem, Aldwyish Abdullah, Aljadaany Raied, Alamri Huda, Muhammad Kamran J. Khan | Institution unavailable | LARE聚焦低注意力区域编码，旨在解决显著性偏置问题以改善密集场景下的图文检索。 | [#273](https://github.com/Larry2000error/Larry-PaperClaw/issues/273) |
-| [20260617] VCG: A Multimodal Retrieval Framework for E-Commerce Video Feeds under Extreme Cold-Start Conditions | Mirylenka Katya, Malykh Egor, Ravanbakhsh Mahdyar, Gygli Michael, Buchmann Marco-Andrea, Dzhoha Andrew, Borzenko Svitlana, Catino Francesca, Gaafar Mohamed, Versteegh Maarten, Kober Thomas, d'Andrea Dario, Langhans Ellie | TU Wien；Zalando SE；Zalando Switzerland AG | VCG构建多模态检索框架，针对电商视频推荐的极端冷启动场景进行优化设计。 | [#275](https://github.com/Larry2000error/Larry-PaperClaw/issues/275) |
-
-## 🔎 观察
-
-- 检索任务正从粗粒度匹配转向细粒度理解，注意力机制与区域编码成为关键切入点
-- 电商场景驱动明显，冷启动与交互式检索反映学术界对工业落地痛点的回应
 
 ---
 
