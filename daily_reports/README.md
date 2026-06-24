@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260622](./202606/20260622.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦视觉语言模型与隐私保护行人重识别两大方向。前者探索双曲几何与对比学习结合以提升否定语义理解，后者关注深度图像与Transformer架构在隐私敏感场景下的应用，体现AI系统对安全性与可解释性的双重追求。
+
+## ✨ 今日亮点
+
+- HANCLIP首次将双曲几何引入视觉语言对比学习，突破欧氏空间对层次化语义建模的局限
+- 隐私保护行人重识别采用深度图像替代RGB，结合匈牙利算法优化时序匹配
+- 两篇工作均体现从纯性能优化向语义理解与隐私安全的范式转移
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260622] HANCLIP: A Family of Hyperbolic Angular Negation Vision Language Models | Le Hoang-Bao, Durrant Aiden, Thai Son Mai, Binh T. Nguyen, Zhou Liting, Gurrin Cathal | ADAPT Centre；Dublin City University；University of East Anglia；Queen's University Belfast；University of Science；Vietnam National University | HANCLIP提出双曲角否定视觉语言模型家族，利用双曲空间层次特性增强对比学习中的否定语义理解能力。 | [#282](https://github.com/Larry2000error/Larry-PaperClaw/issues/282) |
+| [20260622] Privacy-Preserving Person Re-Identification from Temporal Sequences with Transformer and Hungarian Optimization | Delécluse Raphaël, Wannous Hazem, Guimas Laurent | IMT Nord Europe, University of Lille, CNRS UMR 9189 - CRIStAL；Explain | 该工作基于Transformer处理深度图像时序序列，结合匈牙利优化实现隐私保护场景下的行人重识别。 | [#283](https://github.com/Larry2000error/Larry-PaperClaw/issues/283) |
+
+## 🔎 观察
+
+- 双曲几何在嵌入空间的应用或成为视觉语言模型的新技术路线，但需验证跨数据集泛化能力
+- 隐私保护研究从数据脱敏向原生隐私设计演进，深度传感器与优化算法的结合值得跟踪
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260618](./202606/20260618.md)
 ## 📌 今日概况
 
@@ -60,36 +91,6 @@ Powered by OpenClaw🦞
 
 - 检索任务正从粗粒度匹配转向细粒度理解，注意力机制与区域编码成为关键切入点
 - 电商场景驱动明显，冷启动与交互式检索反映学术界对工业落地痛点的回应
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260613](./202606/20260613.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日研究聚焦多模态大语言模型（MLLM）的视觉表征学习。伊利诺伊大学团队提出从冻结MLLM中提取语义属性梯度的新方法，突破传统标量距离对比学习的局限，结合群体相对策略优化（GRPO）优化视觉嵌入，为遥感图像的细粒度语义理解提供新思路。
-
-## ✨ 今日亮点
-
-- 突破标量距离限制，引入语义属性梯度丰富视觉嵌入
-- 利用冻结MLLM的隐式知识，无需昂贵微调即可提取高层语义
-- GRPO优化策略使视觉编码器对齐人类偏好的语义结构
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260613] Beyond Scalar Distances: Semantic Attribute Gradients from Frozen MLLMs for Visual Embeddings | Bhatnagar Shubhang, Baiju Dheeraj, Ahuja Narendra | University of Illinois Urbana-Champaign | 该研究提出从冻结MLLM提取语义属性梯度，以GRPO优化视觉嵌入，超越传统对比学习的标量距离限制。 | [#268](https://github.com/Larry2000error/Larry-PaperClaw/issues/268) |
-
-## 🔎 观察
-
-- 冻结MLLM知识蒸馏或成视觉表征学习新范式，降低算力门槛
-- 语义属性梯度方法对遥感地物细粒度区分具有潜在应用价值
 
 ---
 
