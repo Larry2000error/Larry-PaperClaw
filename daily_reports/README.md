@@ -7,26 +7,26 @@
 
 今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日研究聚焦多模态检索与对齐技术，涵盖通用多模态检索、跨模态目标重识别及时尚图像检索三大方向。强化学习驱动的排序优化、频域特征统一与两阶段微调成为主要技术路径，显示多模态大模型在细粒度检索任务中的深化应用趋势。
+今日研究聚焦多模态检索与对齐技术，涵盖通用多模态检索、跨模态目标重识别及时尚图像检索三大方向。核心趋势表现为：强化学习与排序优化驱动检索性能提升，频域分析与特征解耦成为跨模态对齐新范式，两阶段微调策略推动MLLM在垂直领域落地。
 
 ## ✨ 今日亮点
 
-- ELVA提出排序驱动的通用多模态检索框架，结合强化学习优化检索排序质量
-- FUSE通过频域统一与谱能量对齐实现跨模态目标重识别，解决模态间特征差异
-- 两阶段微调策略结合MLLM探索时尚图像检索，提升组合式检索精度
+- ELVA提出排序驱动的通用多模态检索框架，融合强化学习与对比学习优化检索质量
+- FUSE创新频域统一与谱能量对齐机制，解决跨模态目标重识别中的特征失配难题
+- 时尚图像检索探索MLLM两阶段微调，验证领域适配对组合式检索的关键作用
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260618] ELVA: Exploring Ranking-Driven Universal Multimodal Retrieval | Liu Yuhan, Fu Pei, Li Hang, Qi Yukun, Jiang Chao, Fu Jingwen, Liu Zhen, Qin Bin, Luo Zhenbo, Luan Jian, Xin Jingmin | National Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Institute of Artificial Intelligence and Robotics, Xi'an Jiaotong University；MiLM Plus, Xiaomi Inc；Zhongguancun Academy | ELVA以排序优化为核心，通过强化学习训练通用多模态检索模型，突破传统对比学习的排序局限。 | [#276](https://github.com/Larry2000error/Larry-PaperClaw/issues/276) |
-| [20260618] FUSE: Frequency-domain Unification and Spectral Energy Alignment for Multi-modal Object Re-Identification | Qi Xuanhao, Tom H. Luan, Zhang Yukang, Zheng Jinkai, Su Zhou, Li Shuwei, Tan Lei | Tsinghua University；Chinese Academy of Sciences | FUSE在频域实现跨模态特征统一，利用谱能量对齐机制提升多模态目标重识别的判别能力。 | [#277](https://github.com/Larry2000error/Larry-PaperClaw/issues/277) |
-| [20260618] Exploring Multi-Modal Large Language Models and Two-Stage Fine-Tuning for Fashion Image Retrieval | Nguyen Cao Hoang, Hoang Bui Le, Nam Vo Hoang, Le Trung-Nghia | University of Science, VNU-HCM；Vietnam National University | 基于MLLM的两阶段微调方法，针对时尚领域组合式图像检索任务实现检索性能提升。 | [#278](https://github.com/Larry2000error/Larry-PaperClaw/issues/278) |
+| [20260618] ELVA: Exploring Ranking-Driven Universal Multimodal Retrieval | Liu Yuhan, Fu Pei, Li Hang, Qi Yukun, Jiang Chao, Fu Jingwen, Liu Zhen, Qin Bin, Luo Zhenbo, Luan Jian, Xin Jingmin | National Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Institute of Artificial Intelligence and Robotics, Xi'an Jiaotong University；MiLM Plus, Xiaomi Inc；Zhongguancun Academy | ELVA构建基于排序优化的通用多模态检索系统，通过强化学习显式建模排序目标，突破传统对比学习在检索任务中的性能瓶颈。 | [#276](https://github.com/Larry2000error/Larry-PaperClaw/issues/276) |
+| [20260618] FUSE: Frequency-domain Unification and Spectral Energy Alignment for Multi-modal Object Re-Identification | Qi Xuanhao, Tom H. Luan, Zhang Yukang, Zheng Jinkai, Su Zhou, Li Shuwei, Tan Lei | Tsinghua University；Chinese Academy of Sciences | FUSE提出频域统一与谱能量对齐框架，利用频域分解实现跨模态特征解耦与对齐，提升多模态目标重识别的鲁棒性。 | [#277](https://github.com/Larry2000error/Larry-PaperClaw/issues/277) |
+| [20260618] Exploring Multi-Modal Large Language Models and Two-Stage Fine-Tuning for Fashion Image Retrieval | Nguyen Cao Hoang, Hoang Bui Le, Nam Vo Hoang, Le Trung-Nghia | University of Science, VNU-HCM；Vietnam National University | 该研究探索多模态大语言模型在时尚图像检索中的应用，设计两阶段微调策略优化组合式图像检索的语义理解能力。 | [#278](https://github.com/Larry2000error/Larry-PaperClaw/issues/278) |
 
 ## 🔎 观察
 
-- 排序优化正成为多模态检索的新焦点，从表征学习向决策层优化延伸
-- 频域分析与谱分解技术为跨模态对齐提供了新的特征解耦视角
+- 排序优化正成为多模态检索的新焦点，从传统对比学习向强化学习驱动的显式排序建模演进
+- 频域分析工具向跨模态任务渗透，谱分解技术为特征解耦与对齐提供了可解释的几何视角
 
 ---
 
