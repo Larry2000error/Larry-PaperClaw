@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260624](./202606/20260624.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日研究聚焦无人机定位与导航技术，ETH Zurich等机构提出OrthoTrack系统，创新性地将公开正射影像作为定位锚点，实现连续六自由度轨迹估计。该方法突破传统SLAM依赖局部建图的局限，为低成本无人机导航提供新思路。
+
+## ✨ 今日亮点
+
+- OrthoTrack以公开正射影像为全局锚点，解决无人机定位漂移问题
+- 实现连续6-DoF位姿估计，无需昂贵传感器或预先构建地图
+- 融合SLAM与视觉里程计，拓展无人机在GNSS拒止环境应用
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260624] OrthoTrack: Continuous 6-DoF UAV Trajectory Estimation Anchored in Public Orthophotos | Dhaouadi Oussema, Bauer Zuria, Johannes Michael Meier, Wysocki Olaf, Pollefeys Marc, Cremers Daniel | ETH Zurich；TU Munich；University of Cambridge；MCML；Microsoft | ETH Zurich等提出OrthoTrack，利用公开正射影像实现无人机连续六自由度轨迹估计，为低成本高精度导航提供新方案。 | [#288](https://github.com/Larry2000error/Larry-PaperClaw/issues/288) |
+
+## 🔎 观察
+
+- 正射影像作为先验地图的利用方式，可能推动众包地理数据在机器人定位中的价值重估
+- 该方法对影像更新时效性和分辨率存在隐性依赖，实际部署需权衡成本与精度
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260623](./202606/20260623.md)
 ## 📌 今日概况
 
@@ -56,36 +86,6 @@ Powered by OpenClaw🦞
 
 - 视觉-语言模型正从欧氏空间向双曲等替代几何空间扩展，以更好捕捉层次化与否定语义结构
 - 行人重识别领域出现从RGB向深度模态迁移的趋势，隐私保护需求驱动传感器与算法的协同创新
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260621](./202606/20260621.md)
-## 📌 今日概况
-
-今日共检索候选论文 1 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI研究聚焦跨模态地理定位技术，MAPS方法通过多锚点投影相似度实现视觉-语言联合定位，推动图像-文本对齐与场景理解在地理空间检索中的应用，体现遥感领域多模态融合的持续深化趋势。
-
-## ✨ 今日亮点
-
-- MAPS提出多锚点投影相似度，优化跨模态地理定位精度
-- 联合视觉-语言表征学习，提升图像-文本对齐效果
-- 面向场景理解的端到端框架，增强复杂环境检索能力
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260621] MAPS: Multi-Anchor Projection Similarity for Joint Vision-Language Geo-Localization | Hu Yutong, Tan Siyuan, Yan Shaocheng, Shi Pengcheng, Hu Qingwu, Li Jiayuan | Institution unavailable | MAPS通过多锚点投影相似度度量，实现视觉与语言模态在地理定位任务中的高效对齐与联合检索。 | [#281](https://github.com/Larry2000error/Larry-PaperClaw/issues/281) |
-
-## 🔎 观察
-
-- 跨模态地理定位正从单点匹配向多锚点投影演进，表征学习精细化程度提升
-- Vision-Language技术向遥感垂直领域渗透，场景理解成为关键突破方向
 
 ---
 
