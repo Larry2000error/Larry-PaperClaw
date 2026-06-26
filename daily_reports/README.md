@@ -5,26 +5,26 @@
 # [20260623](./202606/20260623.md)
 ## 📌 今日概况
 
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
 
-今日研究聚焦跨场景视觉定位技术，上海交大联合航运机构提出ProteusVPR框架，实现开放水域到封闭舱室的视觉位置识别，融合几何与视觉特征，服务于海事机器人自主巡检与船舶智能运维，体现遥感AI向垂直行业场景深度渗透趋势。
+今日遥感AI研究聚焦跨场景视觉定位技术，上海交大等团队提出ProteusVPR框架，针对海事感知与舱室检测中的开放水域到封闭舱室场景迁移问题，融合几何-视觉特征实现鲁棒视觉位置识别，推动自主船舶与机器人巡检应用。
 
 ## ✨ 今日亮点
 
-- ProteusVPR实现水域-舱室跨场景视觉定位，突破环境差异瓶颈
-- 几何-视觉融合架构适配海事机器人自主感知与舱室检测任务
-- 产学研协同：高校联合中远海运、上海船研所推动航运智能化
+- ProteusVPR实现开放水域至封闭舱室的跨场景视觉定位
+- 几何-视觉融合架构应对海事环境剧烈外观变化
+- 产学研合作覆盖船舶航运研究与海事大学
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260623] From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection | Chena Zexi, Huang Zitai, Gu Qiwen, Li Zhiqi, Dong Shengli, Wang Chenlei, Zhao Junqiao, Wang Hongdong, Han Bing | Shanghai Jiaotong University；COSCO SHIPPING Advanced Technology Institute；Shanghai Ship and Shipping Research Institute Co.LTD；Tongji University；Dalian Maritime University | ProteusVPR提出跨场景视觉位置识别框架，融合几何与视觉特征，支撑海事机器人从开放水域到封闭舱室的自主定位与巡检。 | [#285](https://github.com/Larry2000error/Larry-PaperClaw/issues/285) |
+| [20260623] From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection | Chena Zexi, Huang Zitai, Gu Qiwen, Li Zhiqi, Dong Shengli, Wang Chenlei, Zhao Junqiao, Wang Hongdong, Han Bing | Shanghai Jiaotong University；COSCO SHIPPING Advanced Technology Institute；Shanghai Ship and Shipping Research Institute Co.LTD；Tongji University；Dalian Maritime University | ProteusVPR提出跨场景视觉位置识别框架，解决海事机器人从开放水域到封闭舱室的环境迁移难题，融合几何与视觉特征增强定位鲁棒性。 | [#285](https://github.com/Larry2000error/Larry-PaperClaw/issues/285) |
 
 ## 🔎 观察
 
-- 视觉位置识别技术正从城市环境向船舶、舱室等封闭工业场景迁移，场景适应性成为关键挑战
-- 航运巨头与高校联合研发加速，海事智能运维或成遥感AI落地新赛道
+- 海事场景的视觉定位长期受水面反光、结构重复性困扰，跨场景迁移是实用化关键瓶颈
+- 中远海运等实体参与表明该研究具备明确的产业落地路径与船舶自主巡检需求牵引
 
 ---
 
