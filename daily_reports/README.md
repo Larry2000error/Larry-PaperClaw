@@ -68,24 +68,24 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 1 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
 
-今日遥感AI研究聚焦于跨模态地理定位技术，特别是视觉-语言联合定位方法。MAPS提出多锚点投影相似性框架，通过优化图像-文本对齐机制提升地理定位精度，反映了该领域向多模态融合与细粒度场景理解发展的趋势。
+今日遥感AI研究聚焦跨模态地理定位技术，MAPS方法通过多锚点投影相似度实现视觉-语言联合定位，推动图像-文本对齐与场景理解在地理空间检索中的应用，体现遥感领域多模态融合的持续深化趋势。
 
 ## ✨ 今日亮点
 
-- MAPS提出多锚点投影相似性，革新跨模态地理定位对齐机制
-- 联合视觉-语言表示学习，突破传统单模态检索局限
-- 面向开放场景理解，增强复杂环境下的定位鲁棒性
+- MAPS提出多锚点投影相似度，优化跨模态地理定位精度
+- 联合视觉-语言表征学习，提升图像-文本对齐效果
+- 面向场景理解的端到端框架，增强复杂环境检索能力
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260621] MAPS: Multi-Anchor Projection Similarity for Joint Vision-Language Geo-Localization | Hu Yutong, Tan Siyuan, Yan Shaocheng, Shi Pengcheng, Hu Qingwu, Li Jiayuan | Institution unavailable | MAPS通过多锚点投影相似性框架，实现视觉-语言联合地理定位中的高效图像-文本对齐与检索。 | [#281](https://github.com/Larry2000error/Larry-PaperClaw/issues/281) |
+| [20260621] MAPS: Multi-Anchor Projection Similarity for Joint Vision-Language Geo-Localization | Hu Yutong, Tan Siyuan, Yan Shaocheng, Shi Pengcheng, Hu Qingwu, Li Jiayuan | Institution unavailable | MAPS通过多锚点投影相似度度量，实现视觉与语言模态在地理定位任务中的高效对齐与联合检索。 | [#281](https://github.com/Larry2000error/Larry-PaperClaw/issues/281) |
 
 ## 🔎 观察
 
-- 跨模态地理定位正从粗粒度匹配向细粒度投影对齐演进，MAPS的多锚点设计体现了对几何一致性的重视
-- Vision-Language Geo-Localization成为遥感AI热点，但机构信息缺失提示该领域预印本传播仍较分散
+- 跨模态地理定位正从单点匹配向多锚点投影演进，表征学习精细化程度提升
+- Vision-Language技术向遥感垂直领域渗透，场景理解成为关键突破方向
 
 ---
 
