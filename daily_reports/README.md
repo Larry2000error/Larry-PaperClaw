@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260629](./202606/20260629.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦跨视角地理定位与低分辨率视觉理解两大方向。跨视角技术从2D匹配向3D几何感知演进，并拓展至行星表面探索场景；同时，跨分辨率语义迁移方法为监控场景下的文本-图像检索提供新思路，体现遥感AI向复杂环境适应的趋势。
+
+## ✨ 今日亮点
+
+- 单阶段几何感知框架统一跨视角目标定位，融合3D基础模型与多模态提示
+- 跨分辨率语义迁移解决低分辨率监控场景下的文本-图像检索难题
+- 行星表面跨视角定位方法将技术边界拓展至月球等地外环境
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260629] Beyond 2D Matching: A Unified Single-Stage Framework for Geometry-Aware Cross-View Object Geo-Localization | Wang Liyao, Wu Ruipu, Xu Haojun, Shi Lei, Huang Linjiang, Liu Si | Beihang University；Meituan | 提出统一单阶段框架，通过3D基础模型与几何感知机制实现跨视角目标地理定位，支持多模态提示输入。 | [#299](https://github.com/Larry2000error/Larry-PaperClaw/issues/299) |
+| [20260629] Cross-Resolution Semantic Transfer for Robust Text-to-Image Retrieval in Low-Resolution Surveillance | Qian Wenjie, Yang Bin, Wang Xiao, Huang Wenke, Mei Ling, Xu Xin, Ye Mang | School of Computer Science and Technology, Wuhan University of Science and Technology；School of Computer Science, National Engineering Research Center for Multimedia Software, Wuhan University；Hubei Province Key Laboratory of Intelligent Information Processing and Real-time Industrial System, Wuhan University of Science and Technology | 设计跨分辨率语义迁移策略，增强低分辨率监控视频中文本到图像检索的鲁棒性。 | [#300](https://github.com/Larry2000error/Larry-PaperClaw/issues/300) |
+| [20260629] Learning Cross-view Correspondences for Geo-localization on Planetary Surfaces | Hong Minh Nguyen, Märtens Marcus, Chin Tat-Jun | Adelaide University | 面向行星表面探索场景，学习跨视角对应关系以实现月球等地外环境的视觉地理定位。 | [#301](https://github.com/Larry2000error/Larry-PaperClaw/issues/301) |
+
+## 🔎 观察
+
+- 跨视角定位技术正从地球场景向行星探测延伸，反映空间智能需求的增长
+- 低分辨率与跨模态检索的结合显示监控AI对实际成像质量退化问题的关注
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260624](./202606/20260624.md)
 ## 📌 今日概况
 
@@ -55,37 +87,6 @@ Powered by OpenClaw🦞
 
 - 海事场景视觉定位长期受限于环境剧烈变化，该工作通过多模态融合为行业提供可迁移的技术范式
 - 产学研链条完整，体现国内智能船舶领域从算法创新到产业应用的加速闭环
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260622](./202606/20260622.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦视觉-语言模型的几何表征优化与隐私保护行人重识别。双曲几何被引入CLIP架构以改善否定语义理解，而Transformer结合匈牙利算法则在深度时序序列中实现隐私感知的人员匹配，体现多模态学习与隐私计算的交叉趋势。
-
-## ✨ 今日亮点
-
-- HANCLIP将双曲几何引入CLIP，通过角否定机制提升视觉-语言模型的否定理解能力
-- 基于Transformer与匈牙利优化的隐私保护行人重识别，利用深度时序序列避免敏感生物特征暴露
-- 两项研究均关注表征空间的结构优化，分别从几何性质与隐私约束角度拓展基础模型能力
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260622] HANCLIP: A Family of Hyperbolic Angular Negation Vision Language Models | Le Hoang-Bao, Durrant Aiden, Thai Son Mai, Binh T. Nguyen, Zhou Liting, Gurrin Cathal | ADAPT Centre；Dublin City University；University of East Anglia；Queen's University Belfast；University of Science；Vietnam National University | HANCLIP提出双曲角否定视觉-语言模型家族，通过双曲空间中的角否定机制改进CLIP的否定语义理解能力。 | [#282](https://github.com/Larry2000error/Larry-PaperClaw/issues/282) |
-| [20260622] Privacy-Preserving Person Re-Identification from Temporal Sequences with Transformer and Hungarian Optimization | Delécluse Raphaël, Wannous Hazem, Guimas Laurent | IMT Nord Europe, University of Lille, CNRS UMR 9189 - CRIStAL；Explain | 该研究结合Transformer与匈牙利算法，从深度时序序列中实现隐私保护的人员重识别，避免使用可识别的RGB图像。 | [#283](https://github.com/Larry2000error/Larry-PaperClaw/issues/283) |
-
-## 🔎 观察
-
-- 视觉-语言模型正从欧氏空间向双曲等替代几何空间扩展，以更好捕捉层次化与否定语义结构
-- 行人重识别领域出现从RGB向深度模态迁移的趋势，隐私保护需求驱动传感器与算法的协同创新
 
 ---
 
