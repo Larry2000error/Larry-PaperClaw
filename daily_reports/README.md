@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260630](./202606/20260630.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日研究聚焦无人机智能应用与跨模态视觉理解两大方向。UAV技术涵盖野生动物追踪与地理定位，体现从感知到决策的自主化升级；视觉-语言模型研究则关注检索效率与零样本推理能力，通过哈希对齐与策略规划降低数据依赖。
+
+## ✨ 今日亮点
+
+- 无人机自主导航实现野生动物个体重识别，结合YOLOv11提升追踪精度
+- 无监督跨模态哈希检索通过全局-邻域对齐降低标注需求
+- 零样本组合图像检索引入策略规划与自我批评机制增强鲁棒性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260630] Autonomous UAV Navigation for Individual Wildlife Re-Identification | Sun Claire, Berger-Wolf Tanya, Kline Jenna | The Ohio State University | 提出自主无人机导航系统，基于YOLOv11实现野生动物个体重识别，支持野外动态追踪任务。 | [#304](https://github.com/Larry2000error/Larry-PaperClaw/issues/304) |
+| [20260630] Unsupervised Data-Efficient Cross-Modal Retrieval with Global-Neighborhood Alignment Hashing | Li Runhao, Ma Xiaoxu, Weng Zhenyu, Zhang Yue, Luo Guibo, Zhuang Huiping, Lin Zhiping, Tan Yap-Peng | School of Electrical and Electronic Engineering, Nanyang Technological University；Shien-Ming Wu School of Intelligent Engineering, South China University of Technology；College of Computer and Information Engineering, Henan Normal University；Guangdong Provincial Key Laboratory of Ultra High Definition Immersive Media Technology, Peking University Shenzhen Graduate School；VinUniversity | 设计无监督全局-邻域对齐哈希方法，以少量数据实现高效跨模态检索，无需配对标注。 | [#305](https://github.com/Larry2000error/Larry-PaperClaw/issues/305) |
+| [20260630] Thinking Before Retrieving: Robust Zero-Shot Composed Image Retrieval via Strategic Planning and Self-Criticism | Jung Gunho, Park Jeong-Woo, Seon Bin Kim, Lee Seong-Whan | Department of Artificial Intelligence, Korea University | 引入策略规划与自我批评机制，通过多阶段推理提升零样本组合图像检索的鲁棒性。 | [#307](https://github.com/Larry2000error/Larry-PaperClaw/issues/307) |
+| [20260630] PiLoT v2: Pixel-to-Orthogonal Map Alignment for Free-view UAV Geo-localization | Liu Xinyi, Cheng Xiaoya, Wu Rouwan, Wang Zhaochen, Yan Shen, Zhang Maojun, Liu Yu | National University of Defense Technology | PiLoT v2实现像素到正射影像对齐，利用神经配准解决无人机自由视角地理定位问题。 | [#308](https://github.com/Larry2000error/Larry-PaperClaw/issues/308) |
+
+## 🔎 观察
+
+- 无人机研究从单一遥感感知向自主决策闭环演进，野生动物保护场景成为技术验证热点
+- 视觉-语言检索研究呈现效率与泛化并重趋势，无监督与零样本方法持续压缩人工标注成本
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260629](./202606/20260629.md)
 ## 📌 今日概况
 
@@ -57,36 +90,6 @@ Powered by OpenClaw🦞
 
 - 正射影像作为先验地图的利用方式，可能降低无人机测绘对GNSS的依赖，拓展拒止环境应用
 - 单一论文收录反映当日遥感AI领域产出稀疏，或存在预印本平台数据抓取延迟
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260623](./202606/20260623.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日研究聚焦跨场景视觉定位技术，上海交大联合多家机构提出ProteusVPR框架，针对船舶自主巡检中开放水域与封闭舱室的极端环境差异，融合几何-视觉特征实现鲁棒场景识别，推动海事机器人感知技术向实用化迈进。
-
-## ✨ 今日亮点
-
-- ProteusVPR实现水域到舱室的跨场景视觉定位，突破海事环境感知瓶颈
-- 融合几何与视觉特征，解决开放与封闭空间的表征差异难题
-- 产学研深度合作，上海交大联合中远海运等机构推动技术落地
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260623] From Open Waters to Enclosed Cabins: ProteusVPR for Cross-Scene Visual Place Recognition in Maritime Perception and Cabin Inspection | Chena Zexi, Huang Zitai, Gu Qiwen, Li Zhiqi, Dong Shengli, Wang Chenlei, Zhao Junqiao, Wang Hongdong, Han Bing | Shanghai Jiaotong University；COSCO SHIPPING Advanced Technology Institute；Shanghai Ship and Shipping Research Institute Co.LTD；Tongji University；Dalian Maritime University | ProteusVPR提出几何-视觉融合框架，实现开放水域至封闭舱室的跨场景视觉定位，支撑船舶自主巡检应用。 | [#285](https://github.com/Larry2000error/Larry-PaperClaw/issues/285) |
-
-## 🔎 观察
-
-- 海事场景视觉定位长期受限于环境剧烈变化，该工作通过多模态融合为行业提供可迁移的技术范式
-- 产学研链条完整，体现国内智能船舶领域从算法创新到产业应用的加速闭环
 
 ---
 
