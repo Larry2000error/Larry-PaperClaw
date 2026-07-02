@@ -7,24 +7,24 @@
 
 今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
 
-今日研究聚焦于无人机位姿估计与视觉定位技术。ETH Zurich等机构提出OrthoTrack框架，利用公开正射影像实现连续六自由度轨迹估计，将传统SLAM与地理参考正射影像结合，为低成本无人机导航提供新思路，体现了视觉里程计向大规模、低成本方向发展的趋势。
+今日仅收录一篇研究，聚焦无人机轨迹估计与正射影像融合。该工作将SLAM/视觉里程计与公开正射影像结合，实现6自由度连续位姿估计，体现遥感与机器人导航交叉趋势，强调低成本高精度定位方案。
 
 ## ✨ 今日亮点
 
-- OrthoTrack首创以公开正射影像为锚点的6-DoF无人机轨迹估计框架
-- 融合视觉里程计与地理参考影像，无需昂贵GNSS设备即可实现连续定位
-- ETH Zurich、TUM、剑桥等多机构合作，代码已开源
+- 正射影像锚定：利用公开正射影像作为全局参考，解决无人机定位漂移问题
+- 6-DoF连续估计：实现完整位姿轨迹重建，兼顾精度与计算效率
+- 跨机构合作：ETH、TUM、剑桥、微软等多单位联合，产学研结合
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260624] OrthoTrack: Continuous 6-DoF UAV Trajectory Estimation Anchored in Public Orthophotos | Dhaouadi Oussema, Bauer Zuria, Johannes Michael Meier, Wysocki Olaf, Pollefeys Marc, Cremers Daniel | ETH Zurich；TU Munich；University of Cambridge；MCML；Microsoft | OrthoTrack提出以公开正射影像为锚点的连续6-DoF无人机轨迹估计方法，实现低成本高精度视觉定位。 | [#288](https://github.com/Larry2000error/Larry-PaperClaw/issues/288) |
+| [20260624] OrthoTrack: Continuous 6-DoF UAV Trajectory Estimation Anchored in Public Orthophotos | Dhaouadi Oussema, Bauer Zuria, Johannes Michael Meier, Wysocki Olaf, Pollefeys Marc, Cremers Daniel | ETH Zurich；TU Munich；University of Cambridge；MCML；Microsoft | OrthoTrack提出以公开正射影像为锚点的无人机6-DoF连续轨迹估计方法，融合视觉里程计与地理参考影像实现全局一致定位。 | [#288](https://github.com/Larry2000error/Larry-PaperClaw/issues/288) |
 
 ## 🔎 观察
 
-- 正射影像作为先验地图的利用方式，可能降低无人机导航对RTK-GNSS的依赖
-- SLAM与地理空间数据融合正成为视觉定位领域的重要技术路线
+- 正射影像作为先验地图的利用方式，可能降低无人机测绘对GNSS的依赖，拓展拒止环境应用
+- 单一论文收录反映当日遥感AI领域产出稀疏，或存在预印本平台数据抓取延迟
 
 ---
 
