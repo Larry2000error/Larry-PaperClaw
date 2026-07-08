@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260706](./202607/20260706.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦视觉-语言多模态检索的效率优化。两篇论文分别探索零样本组合图像检索的直接学习方法，以及视觉令牌压缩中的对象感知合并策略，均致力于在保持精度的同时降低计算开销，体现多模态检索向高效化、精细化发展的趋势。
+
+## ✨ 今日亮点
+
+- DiCE-CIR提出直接组合学习框架，无需显式特征分解即可实现高效零样本组合图像检索
+- OPTMeR方法通过对象证据保留的令牌合并，解决视觉-语言检索中的令牌冗余问题
+- 两项研究均针对多模态检索的计算瓶颈，分别从学习范式与表示压缩角度优化效率
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260706] DiCE-CIR: Direct Composition Learning for Efficient Zero-Shot Composed Image Retrieval | Na Gwang-Ho, Kim Ho-Joong, Lee Seong-Whan | Korea University | DiCE-CIR通过直接组合学习替代传统显式分解，在零样本组合图像检索中实现效率与精度的平衡。 | [#318](https://github.com/Larry2000error/Larry-PaperClaw/issues/318) |
+| [20260706] Do All Visual Tokens Matter Equally? Object-Evidence Preserving Token Merging for Vision-Language Retrieval | Park Suhyeong, Jung Junha, Park Jungwoo, Kang Jaewoo | The Catholic University of Korea；Korea University；AIGEN Sciences Inc. | OPTMeR提出对象证据感知的令牌合并策略，在视觉-语言检索中保留关键对象信息的同时压缩视觉表示。 | [#320](https://github.com/Larry2000error/Larry-PaperClaw/issues/320) |
+
+## 🔎 观察
+
+- 视觉-语言检索正从追求精度转向效率-精度联合优化，令牌压缩与轻量化学习成为关键方向。
+- 零样本组合检索与细粒度对象感知结合，反映多模态模型对可解释性与可控性的需求提升。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260705](./202607/20260705.md)
 ## 📌 今日概况
 
@@ -56,40 +87,6 @@ Powered by OpenClaw🦞
 
 - 双曲学习正成为突破Transformer长度外推瓶颈的新方向，但计算开销与可扩展性仍需验证
 - 无监督跨模态检索从对比学习向属性语义引导演进，提示机制或成数据高效学习关键
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260701](./202607/20260701.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 5 篇。
-
-今日研究聚焦视觉-语言模型的持续学习与检索增强，涵盖野生动物监测、多模态推理及跨模态检索等方向。学界关注如何通过检索机制与错误学习提升模型泛化能力，同时探索双曲几何等数学工具优化长上下文理解。
-
-## ✨ 今日亮点
-
-- M2Note提出错误笔记本学习机制，实现视觉语言模型的持续进化
-- 美团团队将检索图像作为视觉思维，弥合开放集与封闭集识别差距
-- 牛津团队开发位置感知重识别系统，用于鬣狗与豹的相机陷阱监测
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260701] Spotted: Location-informed Reidentification of Hyenas and Leopards in Camera Trap Surveys | Halil Sina Kelebek, Hindel Julia, Hoffman Kobus, Hoffman Lauren, Loveridge Andrew, Mandinyenya Bob, Ncube Kudakwashe, Seymour-Smith Justin, Sibanda Andrea, Valada Abhinav, Wijers Matthew, Daniele De Martini | Oxford Robotics Institute, University of Oxford；Department of Computer Science, University of Freiburg；Wildlife Conservation Research Unit, Department of Biology, University of Oxford；Oxford e-Research Centre, University of Oxford；Bubye Valley Conservancy；Gonarezhou National Park | 牛津等机构提出位置感知的鬣狗与豹重识别方法，结合时空分析与人机协同提升野生动物相机陷阱监测效率。 | [#310](https://github.com/Larry2000error/Larry-PaperClaw/issues/310) |
-| [20260701] M2Note: Continual Evolution of Vision Language Models via Mistake Notebook Learning | Li Haiwen, Tang Jing, Chen Rui, Sun Lei, Chu Xiangxiang | AMAP, Alibaba Group | 阿里团队提出M2Note框架，通过检索增强生成与错误笔记本学习实现视觉语言模型的持续演进。 | [#311](https://github.com/Larry2000error/Larry-PaperClaw/issues/311) |
-| [20260701] Retrieved Images as Visual Thought: Training-Free Multimodal In-Context Learning for the Open-vs-Closed Gap | Huang Bingchen, Wang Zhiling, Chen Yifu, Du Yuanchao | Meituan | 美团团队提出无需训练的多模态上下文学习方法，将检索图像作为视觉思维以提升开放集识别性能。 | [#312](https://github.com/Larry2000error/Larry-PaperClaw/issues/312) |
-| [20260703] HyFL-CLIP: Hyperbolic Fine-Tuning of CLIP for Robust Long-Context Understanding | Ji Ha Jang, Kim Hayeon, Lee Chulwon, Junghun James Kim, Se Young Chun | Dept. of Electrical and Computer Engineering；IPAI；INMC & AIIS；Seoul National University | 首尔国立大学团队采用双曲几何对CLIP进行微调，增强模型对长上下文图像-文本对齐的鲁棒性。 | [#313](https://github.com/Larry2000error/Larry-PaperClaw/issues/313) |
-| [20260703] Attribute-Prompted Kernel Hashing for Unsupervised Data-Efficient Cross-Modal Retrieval | Li Runhao, Ma Xiaoxu, Weng Zhenyu, Zhang Yue, Luo Guibo, Zhuang Huiping, Lin Zhiping, Tan Yap-Peng | Nanyang Technological University；Chinese Academy of Sciences；Guangdong University of Technology；University of Electronic Science and Technology of China | 南洋理工等机构提出属性提示核哈希方法，在无监督设置下实现数据高效的跨模态检索。 | [#314](https://github.com/Larry2000error/Larry-PaperClaw/issues/314) |
-
-## 🔎 观察
-
-- 检索增强生成（RAG）已成为视觉语言模型演进的核心技术路径，今日三篇论文均涉及此方向。
-- 野生动物智能监测研究正从单纯识别向时空关联与人机协同的系统性方案升级。
 
 ---
 
