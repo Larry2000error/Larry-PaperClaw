@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260707](./202607/20260707.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦跨模态检索与不确定性建模。遥感领域出现基于证据学习的图像-文本检索新方法；同时可见细粒度图像哈希、多模态视频音乐推荐等方向进展，体现多模态融合与可信赖AI的技术趋势。
+
+## ✨ 今日亮点
+
+- 遥感跨模态检索引入证据学习，显式量化不确定性以提升可靠性
+- 细粒度食品图像检索结合关系建模与频域感知，优化哈希表示
+- 视频到音乐推荐采用语义检索与时序重排，增强音视频对齐效果
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260707] RFHNet: Relational and Frequency-Aware Hashing Network for Large-Scale Fine-Grained Food Image Retrieval | Wang Junsong, Min Weiqing, Sheng Guorui, Yao Tao, Wang Lili, Jiang Shuqiang | College of Computer Science and Artificial Intelligence, Ludong University；Institute of Computing Technology, Chinese Academy of Sciences；University of Chinese Academy of Sciences | RFHNet提出关系与频域感知哈希网络，通过挖掘细粒度食品图像的语义关系与频率特征，实现大规模高效检索。 | [#322](https://github.com/Larry2000error/Larry-PaperClaw/issues/322) |
+| [20260707] Uncertainty-Aware Cross-Modal Remote Sensing Image-Text Retrieval via Evidential Learning | Wang Zhuoyue, Wang Xueqian, Li Gang, Li Chengxi, Liu Yongpan, Ban Yifang | Institution unavailable | 该工作将证据学习引入遥感跨模态检索，显式建模预测不确定性，缓解图像-文本匹配中的置信度校准问题。 | [#323](https://github.com/Larry2000error/Larry-PaperClaw/issues/323) |
+| [20260707] Multimodal Video-to-Music Recommendation via Semantic Retrieval and Temporal Reranking | Doh Seungheon, Lee Minhee, Lee Sangmoon, Ben Sangbae Chon, Nam Juhan | Korea Advanced Institute of Science and Technology；Kakao Entertainment Corp. | 研究提出语义检索联合时序重排框架，利用多模态线索实现视频到音乐的精准推荐，强化时序一致性约束。 | [#324](https://github.com/Larry2000error/Larry-PaperClaw/issues/324) |
+
+## 🔎 观察
+
+- 证据学习在遥感跨模态任务中的应用表明，不确定性量化正成为提升模型可靠性的关键方向
+- 细粒度检索与多模态推荐均强调语义关系建模，反映表示学习从单一特征向结构化理解的演进
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260706](./202607/20260706.md)
 ## 📌 今日概况
 
@@ -56,37 +88,6 @@ Powered by OpenClaw🦞
 
 - 施工区动态场景感知成为自动驾驶落地关键瓶颈，多模态融合是主流技术路线
 - 学术机构主导数据基础设施建设，但工程化部署与车端实时性仍是待验证环节
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260703](./202607/20260703.md)
-## 📌 今日概况
-
-今日共检索候选论文 0 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 2 篇。
-
-今日研究聚焦多模态学习优化与高效检索。CLIP模型向双曲空间扩展以提升长文本理解能力，同时无监督跨模态哈希通过属性提示与核方法实现数据高效检索，体现几何深度学习与轻量化表示学习的发展趋势。
-
-## ✨ 今日亮点
-
-- 双曲空间微调CLIP突破欧氏几何限制，增强长上下文图像-文本对齐能力
-- 属性提示核哈希实现无监督跨模态检索，显著降低标注数据依赖
-- 多机构国际合作凸显产学研融合，覆盖新加坡、韩国及中国顶尖高校
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260703] HyFL-CLIP: Hyperbolic Fine-Tuning of CLIP for Robust Long-Context Understanding | Ji Ha Jang, Kim Hayeon, Lee Chulwon, Junghun James Kim, Se Young Chun | Dept. of Electrical and Computer Engineering；IPAI；INMC & AIIS；Seoul National University | HyFL-CLIP将CLIP微调至双曲空间，利用双曲几何特性提升长上下文图像-文本理解鲁棒性。 | [#313](https://github.com/Larry2000error/Larry-PaperClaw/issues/313) |
-| [20260703] Attribute-Prompted Kernel Hashing for Unsupervised Data-Efficient Cross-Modal Retrieval | Li Runhao, Ma Xiaoxu, Weng Zhenyu, Zhang Yue, Luo Guibo, Zhuang Huiping, Lin Zhiping, Tan Yap-Peng | Nanyang Technological University；Chinese Academy of Sciences；Guangdong University of Technology；University of Electronic Science and Technology of China | 提出属性提示核哈希方法，以无监督方式学习判别性跨模态哈希码，实现数据高效检索。 | [#314](https://github.com/Larry2000error/Larry-PaperClaw/issues/314) |
-
-## 🔎 观察
-
-- 双曲学习正成为突破Transformer长度外推瓶颈的新方向，但计算开销与可扩展性仍需验证
-- 无监督跨模态检索从对比学习向属性语义引导演进，提示机制或成数据高效学习关键
 
 ---
 
