@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260705](./202607/20260705.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日聚焦自动驾驶场景下的道路施工区智能感知。清华与中科院团队发布多模态数据集，融合高精度地图与多源传感器数据，推动施工区检测与地理定位的协同研究，体现遥感与自动驾驶交叉领域的数据基础设施建设趋势。
+
+## ✨ 今日亮点
+
+- 多模态数据融合：整合视觉、LiDAR与HD Maps实现施工区精准感知
+- 地理定位闭环：检测与定位联合框架服务自动驾驶导航安全
+- 开源数据集建设：填补道路施工场景标准化数据空白
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260705] Framework and Multi-modal Dataset for Roadwork Zone Detection and Geo-localization | Yan Zhiran, Xin Yutong, S Shyam Shenoi, Song Rui, Elger Gordon | Tsinghua University；Chinese Academy of Sciences | 清华-中科院团队构建道路施工区检测与地理定位多模态数据集，融合高精度地图支撑自动驾驶安全。 | [#317](https://github.com/Larry2000error/Larry-PaperClaw/issues/317) |
+
+## 🔎 观察
+
+- 施工区动态场景感知成为自动驾驶落地关键瓶颈，多模态融合是主流技术路线
+- 学术机构主导数据基础设施建设，但工程化部署与车端实时性仍是待验证环节
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260703](./202607/20260703.md)
 ## 📌 今日概况
 
@@ -60,39 +90,6 @@ Powered by OpenClaw🦞
 
 - 检索增强生成（RAG）已成为视觉语言模型演进的核心技术路径，今日三篇论文均涉及此方向。
 - 野生动物智能监测研究正从单纯识别向时空关联与人机协同的系统性方案升级。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260630](./202606/20260630.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日研究聚焦无人机智能应用与跨模态视觉理解两大方向。UAV技术涵盖野生动物追踪与地理定位，体现从感知到决策的自主化升级；视觉-语言模型研究则关注检索效率与零样本推理能力，通过哈希对齐与策略规划降低数据依赖。
-
-## ✨ 今日亮点
-
-- 无人机自主导航实现野生动物个体重识别，结合YOLOv11提升追踪精度
-- 无监督跨模态哈希检索通过全局-邻域对齐降低标注需求
-- 零样本组合图像检索引入策略规划与自我批评机制增强鲁棒性
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260630] Autonomous UAV Navigation for Individual Wildlife Re-Identification | Sun Claire, Berger-Wolf Tanya, Kline Jenna | The Ohio State University | 提出自主无人机导航系统，基于YOLOv11实现野生动物个体重识别，支持野外动态追踪任务。 | [#304](https://github.com/Larry2000error/Larry-PaperClaw/issues/304) |
-| [20260630] Unsupervised Data-Efficient Cross-Modal Retrieval with Global-Neighborhood Alignment Hashing | Li Runhao, Ma Xiaoxu, Weng Zhenyu, Zhang Yue, Luo Guibo, Zhuang Huiping, Lin Zhiping, Tan Yap-Peng | School of Electrical and Electronic Engineering, Nanyang Technological University；Shien-Ming Wu School of Intelligent Engineering, South China University of Technology；College of Computer and Information Engineering, Henan Normal University；Guangdong Provincial Key Laboratory of Ultra High Definition Immersive Media Technology, Peking University Shenzhen Graduate School；VinUniversity | 设计无监督全局-邻域对齐哈希方法，以少量数据实现高效跨模态检索，无需配对标注。 | [#305](https://github.com/Larry2000error/Larry-PaperClaw/issues/305) |
-| [20260630] Thinking Before Retrieving: Robust Zero-Shot Composed Image Retrieval via Strategic Planning and Self-Criticism | Jung Gunho, Park Jeong-Woo, Seon Bin Kim, Lee Seong-Whan | Department of Artificial Intelligence, Korea University | 引入策略规划与自我批评机制，通过多阶段推理提升零样本组合图像检索的鲁棒性。 | [#307](https://github.com/Larry2000error/Larry-PaperClaw/issues/307) |
-| [20260630] PiLoT v2: Pixel-to-Orthogonal Map Alignment for Free-view UAV Geo-localization | Liu Xinyi, Cheng Xiaoya, Wu Rouwan, Wang Zhaochen, Yan Shen, Zhang Maojun, Liu Yu | National University of Defense Technology | PiLoT v2实现像素到正射影像对齐，利用神经配准解决无人机自由视角地理定位问题。 | [#308](https://github.com/Larry2000error/Larry-PaperClaw/issues/308) |
-
-## 🔎 观察
-
-- 无人机研究从单一遥感感知向自主决策闭环演进，野生动物保护场景成为技术验证热点
-- 视觉-语言检索研究呈现效率与泛化并重趋势，无监督与零样本方法持续压缩人工标注成本
 
 ---
 
