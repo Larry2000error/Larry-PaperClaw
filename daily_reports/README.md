@@ -5,28 +5,28 @@
 # [20260707](./202607/20260707.md)
 ## 📌 今日概况
 
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 3 篇。
 
-今日研究聚焦跨模态检索与不确定性建模。遥感领域出现基于证据学习的图像-文本检索新方法；同时可见细粒度图像哈希、多模态视频音乐推荐等方向进展，体现多模态融合与可信赖AI的技术趋势。
+今日研究聚焦跨模态检索与不确定性量化。遥感领域出现证据学习驱动的图文检索新方法；细粒度图像检索引入关系建模与频域感知；多模态推荐系统探索视频到音乐的语义对齐。整体趋势显示检索任务正向不确定性量化与细粒度语义理解深化。
 
 ## ✨ 今日亮点
 
-- 遥感跨模态检索引入证据学习，显式量化不确定性以提升可靠性
-- 细粒度食品图像检索结合关系建模与频域感知，优化哈希表示
-- 视频到音乐推荐采用语义检索与时序重排，增强音视频对齐效果
+- 证据学习首次系统应用于遥感跨模态检索，实现不确定性显式建模
+- RFHNet融合关系推理与频域特征，突破细粒度食品图像哈希检索瓶颈
+- 时序重排序机制创新性地桥接视频语义与音乐推荐的时间动态性
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260707] RFHNet: Relational and Frequency-Aware Hashing Network for Large-Scale Fine-Grained Food Image Retrieval | Wang Junsong, Min Weiqing, Sheng Guorui, Yao Tao, Wang Lili, Jiang Shuqiang | College of Computer Science and Artificial Intelligence, Ludong University；Institute of Computing Technology, Chinese Academy of Sciences；University of Chinese Academy of Sciences | RFHNet提出关系与频域感知哈希网络，通过挖掘细粒度食品图像的语义关系与频率特征，实现大规模高效检索。 | [#322](https://github.com/Larry2000error/Larry-PaperClaw/issues/322) |
-| [20260707] Uncertainty-Aware Cross-Modal Remote Sensing Image-Text Retrieval via Evidential Learning | Wang Zhuoyue, Wang Xueqian, Li Gang, Li Chengxi, Liu Yongpan, Ban Yifang | Institution unavailable | 该工作将证据学习引入遥感跨模态检索，显式建模预测不确定性，缓解图像-文本匹配中的置信度校准问题。 | [#323](https://github.com/Larry2000error/Larry-PaperClaw/issues/323) |
-| [20260707] Multimodal Video-to-Music Recommendation via Semantic Retrieval and Temporal Reranking | Doh Seungheon, Lee Minhee, Lee Sangmoon, Ben Sangbae Chon, Nam Juhan | Korea Advanced Institute of Science and Technology；Kakao Entertainment Corp. | 研究提出语义检索联合时序重排框架，利用多模态线索实现视频到音乐的精准推荐，强化时序一致性约束。 | [#324](https://github.com/Larry2000error/Larry-PaperClaw/issues/324) |
+| [20260707] RFHNet: Relational and Frequency-Aware Hashing Network for Large-Scale Fine-Grained Food Image Retrieval | Wang Junsong, Min Weiqing, Sheng Guorui, Yao Tao, Wang Lili, Jiang Shuqiang | College of Computer Science and Artificial Intelligence, Ludong University；Institute of Computing Technology, Chinese Academy of Sciences；University of Chinese Academy of Sciences | RFHNet提出关系与频域感知哈希网络，通过图关系建模与离散余弦变换增强，解决大规模细粒度食品图像检索中的语义鸿沟与效率问题。 | [#322](https://github.com/Larry2000error/Larry-PaperClaw/issues/322) |
+| [20260707] Uncertainty-Aware Cross-Modal Remote Sensing Image-Text Retrieval via Evidential Learning | Wang Zhuoyue, Wang Xueqian, Li Gang, Li Chengxi, Liu Yongpan, Ban Yifang | Institution unavailable | 该研究将证据学习引入遥感图文检索，构建不确定性感知跨模态框架，有效量化预测置信度以提升检索可靠性。 | [#323](https://github.com/Larry2000error/Larry-PaperClaw/issues/323) |
+| [20260707] Multimodal Video-to-Music Recommendation via Semantic Retrieval and Temporal Reranking | Doh Seungheon, Lee Minhee, Lee Sangmoon, Ben Sangbae Chon, Nam Juhan | Korea Advanced Institute of Science and Technology；Kakao Entertainment Corp. | 研究提出语义检索与时序重排序两阶段框架，利用多模态Transformer编码视频-音乐语义关联，并通过时序对齐优化推荐时序连贯性。 | [#324](https://github.com/Larry2000error/Larry-PaperClaw/issues/324) |
 
 ## 🔎 观察
 
-- 证据学习在遥感跨模态任务中的应用表明，不确定性量化正成为提升模型可靠性的关键方向
-- 细粒度检索与多模态推荐均强调语义关系建模，反映表示学习从单一特征向结构化理解的演进
+- 证据学习在遥感多模态任务中的应用尚处早期，其不确定性量化能力对高 stakes 地理决策具有潜在价值，但计算开销需权衡
+- 细粒度食品检索与视频-音乐推荐均显示：领域特定语义（食材纹理、节拍情绪）需超越通用视觉表征的专用架构设计
 
 ---
 
