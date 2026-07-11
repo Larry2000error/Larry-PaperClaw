@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260709](./202607/20260709.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日仅收录1篇论文，聚焦车辆重识别（Vehicle ReID）领域。研究提出多查询场景下的增强视图专家混合模型，结合对比学习与跨视图融合技术，并发布大规模基准数据集，推动智能交通监控系统的实用化发展。
+
+## ✨ 今日亮点
+
+- 提出增强视图专家混合架构，解决多查询车辆重识别难题
+- 构建大规模基准数据集，填补该场景下公开数据空白
+- 融合对比学习与跨视图特征融合，提升复杂场景识别鲁棒性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260709] Mixture of Enhanced-View Experts for Multi-Query Vehicle ReID and A Large-Scale Benchmark | Zheng Aihua, Zhen Jie, Li Chenglong, Wang Jiaxiang, Tang Jin | Institution unavailable | 该文提出增强视图专家混合模型，实现多查询车辆重识别，并发布大规模基准数据集。 | [#326](https://github.com/Larry2000error/Larry-PaperClaw/issues/326) |
+
+## 🔎 观察
+
+- 多查询学习正成为ReID领域新方向，反映实际监控场景中连续帧利用需求增长
+- Mixture of Experts架构在遥感与视觉任务中持续渗透，或成高效模型设计新范式
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260707](./202607/20260707.md)
 ## 📌 今日概况
 
@@ -58,36 +88,6 @@ Powered by OpenClaw🦞
 
 - 组合图像检索正从显式特征解耦转向端到端直接学习，简化流程的同时可能重塑多模态表征空间设计
 - 视觉令牌压缩技术从均匀采样演进至对象感知选择，反映视觉-语言任务对语义一致性的刚性需求
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260705](./202607/20260705.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI研究聚焦自动驾驶场景下的道路施工区域感知，清华大学与中科院团队提出多模态数据集与地理定位框架，融合高清地图与多源传感器数据，推动复杂交通场景下的高精度环境理解技术发展。
-
-## ✨ 今日亮点
-
-- 多模态数据集支撑道路施工区智能检测与定位
-- 融合高清地图实现施工区域精准地理定位
-- 面向自动驾驶的复杂场景感知框架创新
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260705] Framework and Multi-modal Dataset for Roadwork Zone Detection and Geo-localization | Yan Zhiran, Xin Yutong, S Shyam Shenoi, Song Rui, Elger Gordon | Tsinghua University；Chinese Academy of Sciences | 清华与中科院团队构建道路施工区检测与地理定位的多模态数据集及框架，服务自动驾驶高清地图应用。 | [#317](https://github.com/Larry2000error/Larry-PaperClaw/issues/317) |
-
-## 🔎 观察
-
-- 自动驾驶感知正从标准场景向施工等长尾场景延伸，数据稀缺性成为关键瓶颈
-- 多模态融合与高清地图结合成为提升定位精度的主流技术路线
 
 ---
 
