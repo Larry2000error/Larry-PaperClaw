@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260710](./202607/20260710.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦跨视角匹配与重识别技术，涵盖动物、行人及室内导航场景。研究趋势显示：一是视觉-语言模型与参数高效微调结合，利用元数据增强泛化能力；二是双曲空间表征与自训练策略成为解决跨域、跨视角对齐问题的新方向。
+
+## ✨ 今日亮点
+
+- CLIP参数高效适配结合连续元数据条件，提升动物重识别泛化性
+- 双曲层级表征融合多粒度特征，解决航拍-地面行人跨视角匹配难题
+- 弹性匹配与自适应净化机制稳定自训练，优化无监督跨视角地理定位
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260710] Parameter-Efficient Vision-Language Adaptation with Continuous Metadata Conditioning for Animal Re-Identification | Anil Osman Tur, Tonje Knutsen Sordalen, Kim Tallaksen Halvorsen, Beyan Cigdem | Department of Computer Science, University of Verona；Institute of Marine Research；University of Agder, Centre for Coastal Research | 提出连续元数据条件化的参数高效视觉-语言适配方法，用于动物重识别任务。 | [#328](https://github.com/Larry2000error/Larry-PaperClaw/issues/328) |
+| [20260710] REMIND: RE-Identification with Memory for INDoor Navigation | Diaz-Pereda Pablo, Rodriguez-Ramos Alejandro, Perez-Saura David, Campoy Pascual | Institution unavailable | REMIND框架融合视觉记忆与DINOv3特征，支持室内导航中的多目标跟踪与重识别。 | [#329](https://github.com/Larry2000error/Larry-PaperClaw/issues/329) |
+| [20260710] HiHR: Hierarchical Hyperbolic Representation for Aerial-Ground Person Re-Identification | Yang Qiwei, Zhang Pingping | Dalian University of Technology | HiHR构建层级双曲表征空间，实现航拍与地面视角下行人的跨视图精准匹配。 | [#330](https://github.com/Larry2000error/Larry-PaperClaw/issues/330) |
+| [20260710] STEAM: Stable Self-Training with Elastic Matching and Adaptive Purification | Wang Shaoxiang, Zhang Kejia, Pan Haiwei, Zhang Lan | Harbin Engineering University, School of Computer Science and Technology；Northeast Forestry University, School of Computer and Artificial Intelligence | STEAM通过弹性匹配与自适应净化稳定自训练过程，提升无监督跨视图地理定位性能。 | [#331](https://github.com/Larry2000error/Larry-PaperClaw/issues/331) |
+
+## 🔎 观察
+
+- 重识别任务正从单一模态向视觉-语言融合演进，元数据驱动成为提升域泛化的关键路径。
+- 双曲几何与自训练技术的引入，反映领域对复杂跨视角几何关系建模与标签噪声鲁棒性的双重关注。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260709](./202607/20260709.md)
 ## 📌 今日概况
 
@@ -57,37 +90,6 @@ Powered by OpenClaw🦞
 
 - 证据学习从计算机视觉基础任务向遥感专用场景渗透，反映领域对模型可信度评估的迫切需求
 - 细粒度检索与跨模态任务持续涌现频率域与时序维度创新，表明特征空间扩展成为提升性能的关键方向
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260706](./202607/20260706.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦视觉-语言多模态检索的效率优化。两篇论文分别探索零样本组合图像检索的直接学习方法，以及视觉令牌压缩中的对象感知策略，均致力于在保持精度的同时降低计算开销，体现多模态模型轻量化与实用化的发展趋势。
-
-## ✨ 今日亮点
-
-- DiCE-CIR提出直接组合学习框架，实现高效零样本组合图像检索
-- Object-Evidence Preserving Token Merging通过对象感知合并优化视觉-语言检索
-- 两篇工作均关注多模态检索中的效率-精度平衡问题
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260706] DiCE-CIR: Direct Composition Learning for Efficient Zero-Shot Composed Image Retrieval | Na Gwang-Ho, Kim Ho-Joong, Lee Seong-Whan | Korea University | DiCE-CIR通过直接组合学习替代传统多阶段训练，提升零样本组合图像检索效率。 | [#318](https://github.com/Larry2000error/Larry-PaperClaw/issues/318) |
-| [20260706] Do All Visual Tokens Matter Equally? Object-Evidence Preserving Token Merging for Vision-Language Retrieval | Park Suhyeong, Jung Junha, Park Jungwoo, Kang Jaewoo | The Catholic University of Korea；Korea University；AIGEN Sciences Inc. | 该研究提出对象证据保留的令牌合并方法，解决视觉-语言检索中视觉令牌冗余问题。 | [#320](https://github.com/Larry2000error/Larry-PaperClaw/issues/320) |
-
-## 🔎 观察
-
-- 韩国高校在视觉-语言多模态检索领域形成研究集群，两所机构合作紧密。
-- 令牌压缩与直接学习范式正成为多模态检索效率优化的主流技术路线。
 
 ---
 
