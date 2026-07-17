@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260716](./202607/20260716.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日研究聚焦跨模态学习与视觉推理两大方向。地理定位领域关注地标偏见缓解，通过证据驱动推理提升定位鲁棒性；行人重识别方向涌现多篇工作，涵盖可见光-红外跨模态匹配、无监督学习及多模态融合统一框架；持续学习领域探索自适应权重插值以解决多模态表征的连续学习难题。
+
+## ✨ 今日亮点
+
+- HoloGeo提出证据驱动推理框架，缓解地理定位中的地标偏见问题
+- AlphaWiSE设计自适应权重插值策略，实现持续多模态表征学习
+- 武汉科技大学团队连发两篇行人重识别工作，覆盖无监督学习与统一综述
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260716] HoloGeo: Mitigating Landmark Bias in Geo-localization via Evidence-Driven Reasoning | Zhou Pengcheng, Liu Xuanyu, Yin Yanchen, Li Bobo, Wu Shengqiong, Lee Mong-Li, Hsu Wynne | National University of Singapore；Shandong University of Science and Technology；University of Oxford | HoloGeo通过证据驱动推理机制，有效缓解视觉语言模型在地理定位任务中对显著地标的过度依赖偏见。 | [#337](https://github.com/Larry2000error/Larry-PaperClaw/issues/337) |
+| [20260716] Structural-Semantic Reciprocal Learning for Unsupervised Visible-Infrared Person Re-Identification | Tian Moyao, Liu Shijia, Yang Yan, Yuan Xin, Chen Minshi, Wang Wei, Wang Xiao | School of Computer Science and Technology, Wuhan University of Science and Technology；Hubei Province Key Laboratory of Intelligent Information Processing and Real-Time Industrial System, Wuhan University of Science and Technology；State Key Laboratory of Robotics and Intelligent Systems, Shenyang Institute of Automation, Chinese Academy of Sciences；China University of Chinese Academy of Sciences | 提出结构-语义互惠学习框架，在无监督设定下实现可见光与红外图像的跨模态行人重识别。 | [#338](https://github.com/Larry2000error/Larry-PaperClaw/issues/338) |
+| [20260716] AlphaWiSE: Adaptive Weight Interpolation for Continual Multimodal Representation Learning | Jain Sarthak, Hu Qiran, Zhu Zhen, Liu Yaoyao | University of Illinois Urbana-Champaign；Google DeepMind | AlphaWiSE采用自适应权重插值技术，解决CLIP模型在多模态持续学习中的表征漂移与遗忘问题。 | [#339](https://github.com/Larry2000error/Larry-PaperClaw/issues/339) |
+| [20260716] Blurring Modal Boundaries: A Unified Survey from Single- to Multi-Modal Person Re-ldentification | Wang Xiao, Wang Bing, Yang Bin, Chen Cuiqun, Xu Xin, Ye Mang | School of Computer Science and Technology, Wuhan University of Science and Technology；Hubei Province Key Laboratory of Intelligent Information Processing and Real-time Industrial System, Wuhan University of Science and Technology；School of Computer, Wuhan University；School of Computer, Anhui University | 系统综述单模态到多模态行人重识别技术演进，统一分析可见光-红外匹配与文本-图像检索方法。 | [#340](https://github.com/Larry2000error/Larry-PaperClaw/issues/340) |
+
+## 🔎 观察
+
+- 行人重识别领域呈现多模态融合趋势，可见光-红外跨模态匹配与文本-图像检索成为研究热点。
+- 持续学习与基础模型结合成为新方向，权重插值技术为CLIP等多模态模型的增量更新提供可行路径。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260714](./202607/20260714.md)
 ## 📌 今日概况
 
@@ -55,39 +88,6 @@ Powered by OpenClaw🦞
 
 - 单一论文收录反映当日遥感AI领域发文活跃度较低，或存在期刊会议截稿周期影响
 - 合成数据驱动天气鲁棒性研究成为低成本验证极端场景的有效路径，但模拟与真实域差距仍需关注
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260710](./202607/20260710.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦于跨视角重识别与自监督学习。四项工作涵盖动物重识别、室内导航、空地行人匹配及无监督地理定位，核心趋势为：利用视觉语言模型、超几何空间表征与弹性自训练机制，解决跨域、跨视角场景下的身份关联难题，参数高效适配与伪标签净化成为关键技术路径。
-
-## ✨ 今日亮点
-
-- 超几何学习引入空地行人重识别，缓解欧氏空间嵌入失真
-- 视觉语言模型结合连续元数据条件，实现动物重识别参数高效适配
-- 弹性匹配与自适应净化机制，支撑无监督跨视角地理定位稳定训练
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260710] Parameter-Efficient Vision-Language Adaptation with Continuous Metadata Conditioning for Animal Re-Identification | Anil Osman Tur, Tonje Knutsen Sordalen, Kim Tallaksen Halvorsen, Beyan Cigdem | Department of Computer Science, University of Verona；Institute of Marine Research；University of Agder, Centre for Coastal Research | 提出连续元数据条件化的参数高效视觉语言适配方法，用于动物重识别任务。 | [#328](https://github.com/Larry2000error/Larry-PaperClaw/issues/328) |
-| [20260710] REMIND: RE-Identification with Memory for INDoor Navigation | Diaz-Pereda Pablo, Rodriguez-Ramos Alejandro, Perez-Saura David, Campoy Pascual | Institution unavailable | REMIND框架融合DINOv3特征与视觉记忆机制，服务室内导航场景的多目标重识别。 | [#329](https://github.com/Larry2000error/Larry-PaperClaw/issues/329) |
-| [20260710] HiHR: Hierarchical Hyperbolic Representation for Aerial-Ground Person Re-Identification | Yang Qiwei, Zhang Pingping | Dalian University of Technology | HiHR构建层次化双曲表征空间，解决无人机与地面监控跨视角行人匹配的几何失真问题。 | [#330](https://github.com/Larry2000error/Larry-PaperClaw/issues/330) |
-| [20260710] STEAM: Stable Self-Training with Elastic Matching and Adaptive Purification | Wang Shaoxiang, Zhang Kejia, Pan Haiwei, Zhang Lan | Harbin Engineering University, School of Computer Science and Technology；Northeast Forestry University, School of Computer and Artificial Intelligence | STEAM通过弹性匹配与自适应净化实现稳定自训练，用于无监督跨视角地理定位。 | [#331](https://github.com/Larry2000error/Larry-PaperClaw/issues/331) |
-
-## 🔎 观察
-
-- 重识别任务正从单一模态向视觉语言融合演进，元数据条件化成为提升泛化性的新范式
-- 超几何空间与自训练净化技术的引入，反映领域对表征几何结构与噪声鲁棒性的双重关注
 
 ---
 
