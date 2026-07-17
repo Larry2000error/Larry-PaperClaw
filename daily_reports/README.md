@@ -7,27 +7,27 @@
 
 今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
 
-今日遥感AI研究聚焦跨视角匹配与重识别技术，涵盖动物、行人及室内导航场景。研究趋势显示：一是视觉-语言模型与参数高效微调结合，利用元数据增强泛化能力；二是双曲空间表征与自训练策略成为解决跨域、跨视角对齐问题的新方向。
+今日遥感AI研究聚焦于跨视角重识别与自监督学习。四项工作涵盖动物重识别、室内导航、空地行人匹配及无监督地理定位，核心趋势为：利用视觉语言模型、超几何空间表征与弹性自训练机制，解决跨域、跨视角场景下的身份关联难题，参数高效适配与伪标签净化成为关键技术路径。
 
 ## ✨ 今日亮点
 
-- CLIP参数高效适配结合连续元数据条件，提升动物重识别泛化性
-- 双曲层级表征融合多粒度特征，解决航拍-地面行人跨视角匹配难题
-- 弹性匹配与自适应净化机制稳定自训练，优化无监督跨视角地理定位
+- 超几何学习引入空地行人重识别，缓解欧氏空间嵌入失真
+- 视觉语言模型结合连续元数据条件，实现动物重识别参数高效适配
+- 弹性匹配与自适应净化机制，支撑无监督跨视角地理定位稳定训练
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260710] Parameter-Efficient Vision-Language Adaptation with Continuous Metadata Conditioning for Animal Re-Identification | Anil Osman Tur, Tonje Knutsen Sordalen, Kim Tallaksen Halvorsen, Beyan Cigdem | Department of Computer Science, University of Verona；Institute of Marine Research；University of Agder, Centre for Coastal Research | 提出连续元数据条件化的参数高效视觉-语言适配方法，用于动物重识别任务。 | [#328](https://github.com/Larry2000error/Larry-PaperClaw/issues/328) |
-| [20260710] REMIND: RE-Identification with Memory for INDoor Navigation | Diaz-Pereda Pablo, Rodriguez-Ramos Alejandro, Perez-Saura David, Campoy Pascual | Institution unavailable | REMIND框架融合视觉记忆与DINOv3特征，支持室内导航中的多目标跟踪与重识别。 | [#329](https://github.com/Larry2000error/Larry-PaperClaw/issues/329) |
-| [20260710] HiHR: Hierarchical Hyperbolic Representation for Aerial-Ground Person Re-Identification | Yang Qiwei, Zhang Pingping | Dalian University of Technology | HiHR构建层级双曲表征空间，实现航拍与地面视角下行人的跨视图精准匹配。 | [#330](https://github.com/Larry2000error/Larry-PaperClaw/issues/330) |
-| [20260710] STEAM: Stable Self-Training with Elastic Matching and Adaptive Purification | Wang Shaoxiang, Zhang Kejia, Pan Haiwei, Zhang Lan | Harbin Engineering University, School of Computer Science and Technology；Northeast Forestry University, School of Computer and Artificial Intelligence | STEAM通过弹性匹配与自适应净化稳定自训练过程，提升无监督跨视图地理定位性能。 | [#331](https://github.com/Larry2000error/Larry-PaperClaw/issues/331) |
+| [20260710] Parameter-Efficient Vision-Language Adaptation with Continuous Metadata Conditioning for Animal Re-Identification | Anil Osman Tur, Tonje Knutsen Sordalen, Kim Tallaksen Halvorsen, Beyan Cigdem | Department of Computer Science, University of Verona；Institute of Marine Research；University of Agder, Centre for Coastal Research | 提出连续元数据条件化的参数高效视觉语言适配方法，用于动物重识别任务。 | [#328](https://github.com/Larry2000error/Larry-PaperClaw/issues/328) |
+| [20260710] REMIND: RE-Identification with Memory for INDoor Navigation | Diaz-Pereda Pablo, Rodriguez-Ramos Alejandro, Perez-Saura David, Campoy Pascual | Institution unavailable | REMIND框架融合DINOv3特征与视觉记忆机制，服务室内导航场景的多目标重识别。 | [#329](https://github.com/Larry2000error/Larry-PaperClaw/issues/329) |
+| [20260710] HiHR: Hierarchical Hyperbolic Representation for Aerial-Ground Person Re-Identification | Yang Qiwei, Zhang Pingping | Dalian University of Technology | HiHR构建层次化双曲表征空间，解决无人机与地面监控跨视角行人匹配的几何失真问题。 | [#330](https://github.com/Larry2000error/Larry-PaperClaw/issues/330) |
+| [20260710] STEAM: Stable Self-Training with Elastic Matching and Adaptive Purification | Wang Shaoxiang, Zhang Kejia, Pan Haiwei, Zhang Lan | Harbin Engineering University, School of Computer Science and Technology；Northeast Forestry University, School of Computer and Artificial Intelligence | STEAM通过弹性匹配与自适应净化实现稳定自训练，用于无监督跨视角地理定位。 | [#331](https://github.com/Larry2000error/Larry-PaperClaw/issues/331) |
 
 ## 🔎 观察
 
-- 重识别任务正从单一模态向视觉-语言融合演进，元数据驱动成为提升域泛化的关键路径。
-- 双曲几何与自训练技术的引入，反映领域对复杂跨视角几何关系建模与标签噪声鲁棒性的双重关注。
+- 重识别任务正从单一模态向视觉语言融合演进，元数据条件化成为提升泛化性的新范式
+- 超几何空间与自训练净化技术的引入，反映领域对表征几何结构与噪声鲁棒性的双重关注
 
 ---
 
