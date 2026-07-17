@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260714](./202607/20260714.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日研究聚焦多模态图像检索新范式，东京大学与铠侠公司联合提出无视觉特征的组合图像检索框架。该工作突破传统依赖视觉编码器的局限，通过属性增强评分与大语言模型重排序实现零样本检索，为资源受限场景下的跨模态检索提供新思路。
+
+## ✨ 今日亮点
+
+- 首创Vision-Free CIR框架，摆脱视觉编码器依赖
+- 属性增强评分机制实现细粒度语义对齐
+- LLM重排序优化零样本场景下的检索精度
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260714] Towards Vision-Free CIR: Attribute-Augmented Scoring and LLM-Based Reranking for Zero-Shot Composed Image Retrieval | Shimada Ryotaro, Lin Yu-Chieh, Nozawa Yuji, Ng Youyang, Torii Osamu, Matsui Yusuke | The University of Tokyo；Kioxia Corporation | 该研究提出无需视觉特征的组合图像检索方法，通过属性文本增强与大语言模型重排序实现零样本跨模态检索。 | [#334](https://github.com/Larry2000error/Larry-PaperClaw/issues/334) |
+
+## 🔎 观察
+
+- 视觉-语言模型轻量化趋势明显，纯文本驱动的图像检索或成边缘计算新方向
+- LLM重排序在检索任务中的增益机制值得进一步量化分析
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260712](./202607/20260712.md)
 ## 📌 今日概况
 
@@ -58,36 +88,6 @@ Powered by OpenClaw🦞
 
 - 重识别任务正从单一模态向视觉语言融合演进，元数据条件化成为提升泛化性的新范式
 - 超几何空间与自训练净化技术的引入，反映领域对表征几何结构与噪声鲁棒性的双重关注
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260709](./202607/20260709.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日研究聚焦多查询车辆重识别领域，提出增强视图专家混合架构。该工作通过对比学习与跨视图融合技术，结合大规模基准数据集构建，推动智能交通监控系统中车辆身份匹配技术的实用化进展。
-
-## ✨ 今日亮点
-
-- 提出增强视图专家混合网络，实现多查询条件下的鲁棒车辆重识别
-- 构建大规模多查询车辆重识别基准数据集，填补领域数据空白
-- 融合对比学习与跨视图特征融合，提升复杂场景下的识别精度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260709] Mixture of Enhanced-View Experts for Multi-Query Vehicle ReID and A Large-Scale Benchmark | Zheng Aihua, Zhen Jie, Li Chenglong, Wang Jiaxiang, Tang Jin | Institution unavailable | 该研究提出增强视图专家混合架构，结合多查询学习与跨视图融合，解决车辆重识别中视角变化与遮挡难题，并发布大规模基准数据集。 | [#326](https://github.com/Larry2000error/Larry-PaperClaw/issues/326) |
-
-## 🔎 观察
-
-- 多查询学习范式正成为车辆重识别的新方向，反映实际监控场景对非理想输入的适应性需求
-- 专家混合架构与对比学习的结合显示，模块化设计在跨域视觉任务中仍具显著潜力
 
 ---
 
