@@ -7,24 +7,24 @@
 
 今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
 
-今日研究聚焦多模态图像检索新范式，东京大学与铠侠公司联合提出无视觉特征的组合图像检索框架。该工作突破传统依赖视觉编码器的局限，通过属性增强评分与大语言模型重排序实现零样本检索，为资源受限场景下的跨模态检索提供新思路。
+今日仅收录一篇论文，聚焦组合图像检索（CIR）领域的前沿探索。该研究提出无需视觉输入的CIR新范式，通过属性增强评分与大语言模型重排序实现零样本检索，标志着CIR技术向轻量化、语义驱动方向演进，对降低计算成本与拓展应用场景具有潜在价值。
 
 ## ✨ 今日亮点
 
-- 首创Vision-Free CIR框架，摆脱视觉编码器依赖
-- 属性增强评分机制实现细粒度语义对齐
-- LLM重排序优化零样本场景下的检索精度
+- 提出Vision-Free CIR新框架，摆脱对视觉特征的依赖
+- 融合属性增强评分与LLM重排序，实现零样本检索能力
+- 东京大学与铠侠公司合作，产学研结合推动技术落地
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260714] Towards Vision-Free CIR: Attribute-Augmented Scoring and LLM-Based Reranking for Zero-Shot Composed Image Retrieval | Shimada Ryotaro, Lin Yu-Chieh, Nozawa Yuji, Ng Youyang, Torii Osamu, Matsui Yusuke | The University of Tokyo；Kioxia Corporation | 该研究提出无需视觉特征的组合图像检索方法，通过属性文本增强与大语言模型重排序实现零样本跨模态检索。 | [#334](https://github.com/Larry2000error/Larry-PaperClaw/issues/334) |
+| [20260714] Towards Vision-Free CIR: Attribute-Augmented Scoring and LLM-Based Reranking for Zero-Shot Composed Image Retrieval | Shimada Ryotaro, Lin Yu-Chieh, Nozawa Yuji, Ng Youyang, Torii Osamu, Matsui Yusuke | The University of Tokyo；Kioxia Corporation | 该研究提出无需视觉输入的组合图像检索方法，通过属性增强评分与LLM重排序实现零样本检索，为CIR轻量化部署提供新思路。 | [#334](https://github.com/Larry2000error/Larry-PaperClaw/issues/334) |
 
 ## 🔎 观察
 
-- 视觉-语言模型轻量化趋势明显，纯文本驱动的图像检索或成边缘计算新方向
-- LLM重排序在检索任务中的增益机制值得进一步量化分析
+- Vision-Free范式或成CIR新趋势，但属性描述的完备性与准确性将直接影响检索效果
+- LLM重排序引入推理开销，需在精度提升与实时性之间权衡取舍
 
 ---
 
