@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260712](./202607/20260712.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日研究聚焦无人机视角下的车辆重识别技术，特别关注恶劣天气条件下的模型鲁棒性。越南研究团队通过合成数据模拟多种气象场景，为低空遥感智能交通应用提供了基准测试框架，反映出无人机交通监控向复杂环境适应的发展趋势。
+
+## ✨ 今日亮点
+
+- 无人机航拍车辆重识别任务面临天气干扰挑战
+- 合成数据模拟为恶劣天气鲁棒性测试提供新路径
+- 低空遥感与智能交通交叉应用持续深化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260712] Benchmarking UAV-based Vehicle Re-Identification under Simulated Weather Conditions | Vu Minh Tran, Nguyen Khang | University of Information Technology；Vietnam National University Ho Chi Minh City | 越南学者构建无人机车辆重识别基准，系统评估模型在模拟雨雾等恶劣天气下的识别性能。 | [#333](https://github.com/Larry2000error/Larry-PaperClaw/issues/333) |
+
+## 🔎 观察
+
+- 合成天气数据成为解决真实场景标注稀缺的有效替代方案
+- 无人机交通监控正从理想环境向复杂气象条件拓展
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260710](./202607/20260710.md)
 ## 📌 今日概况
 
@@ -58,38 +88,6 @@ Powered by OpenClaw🦞
 
 - 多查询学习范式正成为车辆重识别的新方向，反映实际监控场景对非理想输入的适应性需求
 - 专家混合架构与对比学习的结合显示，模块化设计在跨域视觉任务中仍具显著潜力
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260707](./202607/20260707.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 3 篇。
-
-今日遥感AI相关研究聚焦跨模态检索与不确定性量化，涵盖遥感图像-文本检索、细粒度图像哈希及多模态推荐。证据学习、频率感知与关系建模成为关键技术路径，显示领域对检索精度与可靠性的双重追求。
-
-## ✨ 今日亮点
-
-- 证据学习首次引入遥感跨模态检索，实现不确定性显式建模
-- RFHNet融合关系建模与频率感知，突破细粒度食品图像哈希瓶颈
-- 时序重排机制优化视频-音乐推荐，强化语义-时序联合对齐
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260707] RFHNet: Relational and Frequency-Aware Hashing Network for Large-Scale Fine-Grained Food Image Retrieval | Wang Junsong, Min Weiqing, Sheng Guorui, Yao Tao, Wang Lili, Jiang Shuqiang | College of Computer Science and Artificial Intelligence, Ludong University；Institute of Computing Technology, Chinese Academy of Sciences；University of Chinese Academy of Sciences | RFHNet通过关系与频率感知哈希网络，解决大规模细粒度食品图像检索中的特征判别性不足问题。 | [#322](https://github.com/Larry2000error/Larry-PaperClaw/issues/322) |
-| [20260707] Uncertainty-Aware Cross-Modal Remote Sensing Image-Text Retrieval via Evidential Learning | Wang Zhuoyue, Wang Xueqian, Li Gang, Li Chengxi, Liu Yongpan, Ban Yifang | Institution unavailable | 基于证据学习的遥感图像-文本检索方法，首次在跨模态匹配中引入不确定性量化，提升检索可靠性。 | [#323](https://github.com/Larry2000error/Larry-PaperClaw/issues/323) |
-| [20260707] Multimodal Video-to-Music Recommendation via Semantic Retrieval and Temporal Reranking | Doh Seungheon, Lee Minhee, Lee Sangmoon, Ben Sangbae Chon, Nam Juhan | Korea Advanced Institute of Science and Technology；Kakao Entertainment Corp. | 多模态视频-音乐推荐系统采用语义检索与时序重排两阶段策略，实现音视频内容精准对齐。 | [#324](https://github.com/Larry2000error/Larry-PaperClaw/issues/324) |
-
-## 🔎 观察
-
-- 证据学习从计算机视觉基础任务向遥感专用场景渗透，反映领域对模型可信度评估的迫切需求
-- 细粒度检索与跨模态任务持续涌现频率域与时序维度创新，表明特征空间扩展成为提升性能的关键方向
 
 ---
 
