@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260717](./202607/20260717.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦视觉Transformer效率优化与跨物种生物识别两大方向。前者探索视觉地点识别中的Token剪枝策略，以降低推理成本；后者针对多物种动物重识别任务，提出物种感知的图构建方法。两工作均体现领域对计算效率与任务特异性的双重关注。
+
+## ✨ 今日亮点
+
+- Token剪枝实证研究揭示视觉地点识别中冗余Token的识别规律
+- 物种感知图构建方法突破多物种动物重识别的跨类干扰难题
+- LightGlue与LightGBM组合实现高效特征匹配与分类
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260717] Are All Tokens Necessary for Visual Place Recognition? An Empirical Study of Token Reduction for Efficient Inference | Jin Tong, Liu Yunpeng, Hu Shuyu, Zhang Qinghua, Han Ruize, Wang Song, Lu Feng | Shenyang Institute of Automation, Chinese Academy of Sciences；University of Chinese Academy of Sciences；Shenzhen University of Advanced Technology | 该研究系统评估Token剪枝策略在视觉地点识别中的有效性，为高效推理提供实证依据。 | [#343](https://github.com/Larry2000error/Larry-PaperClaw/issues/343) |
+| [20260717] DS@GT ARC at AnimalCLEF 2026: Species-Aware Graph Construction for Multi-Species Animal Re-Identification | Evan Sinclair Smith, Miyaguchi Anthony, Palamari Snigdha, Evangelista Danté | Georgia Institute of Technology | DS@GT团队提出物种感知的图构建方法，结合LightGlue与LightGBM实现多物种动物重识别。 | [#345](https://github.com/Larry2000error/Larry-PaperClaw/issues/345) |
+
+## 🔎 观察
+
+- Token剪枝正从通用视觉任务向地理定位等垂直领域渗透，效率优化进入精细化阶段
+- 动物重识别任务呈现多物种联合建模趋势，物种先验知识的显式引入成为关键设计
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260716](./202607/20260716.md)
 ## 📌 今日概况
 
@@ -59,36 +90,6 @@ Powered by OpenClaw🦞
 
 - 视觉-语言模型'去视觉化'趋势显现，文本模态或成跨模态检索新主导
 - LLM重排序介入检索流程可能增加推理延迟，需权衡精度与效率
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260712](./202607/20260712.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日仅收录一篇论文，聚焦无人机视角下的车辆重识别技术。该研究针对模拟天气条件下的模型鲁棒性进行基准测试，体现了遥感AI领域对复杂环境适应性与合成数据应用的关注趋势，为低空遥感智能监控的可靠性评估提供参考。
-
-## ✨ 今日亮点
-
-- 构建无人机车辆重识别天气鲁棒性基准测试框架
-- 利用合成数据模拟多样化气象干扰场景
-- 填补航拍视角下恶劣天气识别性能评估空白
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260712] Benchmarking UAV-based Vehicle Re-Identification under Simulated Weather Conditions | Vu Minh Tran, Nguyen Khang | University of Information Technology；Vietnam National University Ho Chi Minh City | 该论文提出无人机车辆重识别在模拟天气条件下的基准测试方法，评估模型对合成气象干扰的鲁棒性。 | [#333](https://github.com/Larry2000error/Larry-PaperClaw/issues/333) |
-
-## 🔎 观察
-
-- 单一论文收录反映当日遥感AI领域发文活跃度较低，或存在期刊会议截稿周期影响
-- 合成数据驱动天气鲁棒性研究成为低成本验证极端场景的有效路径，但模拟与真实域差距仍需关注
 
 ---
 
