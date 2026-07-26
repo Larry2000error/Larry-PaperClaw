@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260722](./202607/20260722.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日研究聚焦跨模态检索与异构视觉对齐，涵盖边缘计算优化、多轮交互检索及跨视角地理定位。可见光-红外预训练采样策略与无人机-卫星大偏角定位成为遥感感知关键方向，体现多传感器融合与极端视角鲁棒性的技术趋势。
+
+## ✨ 今日亮点
+
+- PolySim提出确定性多项式替代方案，解决边缘设备概率嵌入计算瓶颈
+- OffNadirLoc构建大偏角无人机-卫星定位基准，应对透视畸变挑战
+- 可见光-红外预训练引入重要性采样，突破跨模态表征对齐效率
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260722] PolySim: Deterministic Polynomial Surrogates for Cross-Modal Retrieval on CiM | Li Xinzhao, Power Charles, Ren Pengyu, Won Jongun, Pei Likai, Hu Yuting, Xiong Jinjun, Vardar Alptekin, Cao Ningyuan, Xiaobo Sharon Hu, Kämpfe Thomas, Ni Kai, Qin Ruiyang | Villanova University；University of Notre Dame；University at Buffalo；Fraunhofer IPMS；TU Braunschweig | PolySim设计确定性多项式代理模型，在存内计算架构上实现高效跨模态检索，规避概率嵌入的硬件开销。 | [#357](https://github.com/Larry2000error/Larry-PaperClaw/issues/357) |
+| [20260722] Diverse-Intent Multi-Turn Fashion Image Retrieval | Tang Mingqiang, Wen Haokun, Liu Meng, Hu Yupeng, Guan Weili, Song Xuemeng | Southern University of Science and Technology；Harbin Institute of Technology (Shenzhen)；Shandong University；Shenzhen Loop Area Institute | Diverse-Intent框架支持多轮时尚图像检索，通过视觉-语言预训练捕捉用户意图演化，提升交互式搜索体验。 | [#358](https://github.com/Larry2000error/Larry-PaperClaw/issues/358) |
+| [20260722] Not All Patches are Equal: Sampling Matters for Visible-Infrared Pre-Training | Ma Qiwei, Deng Bin, Zhu Junjie, Huang Qiangjuan, Duan Puhong, Yang Ke, Kang Xudong, Li Shutao | School of Artificial Intelligence and Robotics, Hunan University；Yuelushan Center for Industrial Innovation；Intelligent Game and Decision Lab | 提出非均匀 patch 采样策略用于可见光-红外预训练，依据信息重要性加权优化跨模态表征学习效率。 | [#359](https://github.com/Larry2000error/Larry-PaperClaw/issues/359) |
+| [20260722] OffNadirLoc: Benchmark and Framework for Challenging UAV-to-Satellite Geo-Localization under Large Off-Nadir Views | Qiao Qian, Liu Wenye, Liu Ting, Shu Jiuhe, Wang Peng | Northwestern Polytechnical University | OffNadirLoc建立大偏角无人机-卫星地理定位基准，结合结构感知学习缓解极端视角下的透视畸变问题。 | [#360](https://github.com/Larry2000error/Larry-PaperClaw/issues/360) |
+
+## 🔎 观察
+
+- 跨模态检索正向边缘端迁移，存内计算与确定性近似成为硬件协同设计新焦点
+- 遥感定位从正射视角扩展至大偏角场景，透视畸变建模能力或成下一代算法核心竞争力
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260721](./202607/20260721.md)
 ## 📌 今日概况
 
@@ -62,40 +95,6 @@ Powered by OpenClaw🦞
 
 - Token剪枝正从通用视觉任务向地理定位等垂直领域渗透，效率优化进入精细化阶段
 - 动物重识别任务呈现多物种联合建模趋势，物种先验知识的显式引入成为关键设计
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260716](./202607/20260716.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日遥感AI研究聚焦跨模态定位与行人重识别两大方向。地理定位领域关注证据推理与轨迹序列建模，以缓解地标偏差并提升连续观测下的定位精度。行人重识别研究呈现多模态融合趋势，可见光-红外跨模态学习与无监督方法成为热点，同时出现系统性综述梳理单模态到多模态的技术演进。
-
-## ✨ 今日亮点
-
-- HoloGeo提出证据驱动推理框架，缓解视觉地理定位中的地标偏差问题
-- AlphaWiSE设计自适应权重插值策略，实现持续多模态表征学习
-- 轨迹感知跨视角地理定位利用序列观测，提升视频-文本-卫星匹配精度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260716] HoloGeo: Mitigating Landmark Bias in Geo-localization via Evidence-Driven Reasoning | Zhou Pengcheng, Liu Xuanyu, Yin Yanchen, Li Bobo, Wu Shengqiong, Lee Mong-Li, Hsu Wynne | National University of Singapore；Shandong University of Science and Technology；University of Oxford | HoloGeo通过证据驱动推理机制识别并抑制地标偏差，提升视觉地理定位的泛化能力。 | [#337](https://github.com/Larry2000error/Larry-PaperClaw/issues/337) |
-| [20260716] Structural-Semantic Reciprocal Learning for Unsupervised Visible-Infrared Person Re-Identification | Tian Moyao, Liu Shijia, Yang Yan, Yuan Xin, Chen Minshi, Wang Wei, Wang Xiao | School of Computer Science and Technology, Wuhan University of Science and Technology；Hubei Province Key Laboratory of Intelligent Information Processing and Real-Time Industrial System, Wuhan University of Science and Technology；State Key Laboratory of Robotics and Intelligent Systems, Shenyang Institute of Automation, Chinese Academy of Sciences；China University of Chinese Academy of Sciences | 提出结构-语义互惠学习框架，在无监督设定下实现可见光-红外行人重识别。 | [#338](https://github.com/Larry2000error/Larry-PaperClaw/issues/338) |
-| [20260716] AlphaWiSE: Adaptive Weight Interpolation for Continual Multimodal Representation Learning | Jain Sarthak, Hu Qiran, Zhu Zhen, Liu Yaoyao | University of Illinois Urbana-Champaign；Google DeepMind | AlphaWiSE采用自适应权重插值实现持续多模态学习，缓解跨模态检索中的灾难性遗忘。 | [#339](https://github.com/Larry2000error/Larry-PaperClaw/issues/339) |
-| [20260716] Blurring Modal Boundaries: A Unified Survey from Single- to Multi-Modal Person Re-ldentification | Wang Xiao, Wang Bing, Yang Bin, Chen Cuiqun, Xu Xin, Ye Mang | School of Computer Science and Technology, Wuhan University of Science and Technology；Hubei Province Key Laboratory of Intelligent Information Processing and Real-time Industrial System, Wuhan University of Science and Technology；School of Computer, Wuhan University；School of Computer, Anhui University | 系统综述单模态到多模态行人重识别技术，涵盖文本-图像检索与可见光-红外匹配方法。 | [#340](https://github.com/Larry2000error/Larry-PaperClaw/issues/340) |
-| [20260716] Trajectory-aware Cross-view Geo-localization with Sequential Observations | Gao Tianyi, Lin Jiayu, Beaulieu Danielle, Jacobs Nathan | Washington University in St. Louis | 利用轨迹序列建模实现跨视角地理定位，整合视频、文本描述与卫星图像进行路径匹配。 | [#342](https://github.com/Larry2000error/Larry-PaperClaw/issues/342) |
-
-## 🔎 观察
-
-- 地理定位研究正从静态图像匹配向动态序列推理演进，轨迹感知与证据推理成为提升鲁棒性的关键路径。
-- 行人重识别领域多模态融合趋势显著，武汉科技大学团队在同日贡献两篇相关成果，显示该机构在此方向的集中布局。
 
 ---
 
