@@ -2,6 +2,42 @@
 
 最近三天日报（最新在前）：
 
+# [20260721](./202607/20260721.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 7 篇；最终纳入日报 7 篇。
+
+今日研究呈现多模态对齐与跨模态检索的集中趋势。视觉-语言模型在病理学基准测试、大规模稳定对齐及统一嵌入空间构建方面取得进展；同时，3D场景检索、无人机拒止环境定位及行人重识别等应用方向亦有新成果，体现出从基础模型优化到垂直场景落地的完整链条。
+
+## ✨ 今日亮点
+
+- PathAgentBench构建病理全切片图像证据检索基准，推动医学VLM临床可用性评估
+- KALE提出核对齐与损失均衡方法，解决CLIP-DINOv2网络规模对齐稳定性问题
+- NGPS融合深度卫星匹配与多速率传感，实现GPS拒止环境下无人机地理定位
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260721] PathAgentBench: Benchmarking Evidence-Seeking Vision-Language Models on Whole-Slide Pathology Image | Liao Dankai, Zhang Tianyi, Wu Yufeng, Zhang Xinyue, Xue Qiaochu, Liu Zeyu, Zhao Dachun, Cai Linghan, Jin Yueming | National University of Singapore；National University Hospital；Singapore | PathAgentBench针对全切片病理图像构建证据检索基准，系统评估视觉-语言模型的临床推理能力。 | [#349](https://github.com/Larry2000error/Larry-PaperClaw/issues/349) |
+| [20260721] CR-Refiner: An Object-Centric Optimal Transport Reranker for Edit-Conditioned 3D Scene Retrieval | Wu Hao, Zhu Jinjing, Wu Nanyu, Cai Qianyi, Lin Heyi, Wang Hao, Xiong Hui | Hong Kong University of Science and Technology；Hong Kong University of Science and Technology (Guangzhou) | CR-Refiner以对象为中心的最优传输重排序框架，提升编辑条件3D场景检索的精确性。 | [#350](https://github.com/Larry2000error/Larry-PaperClaw/issues/350) |
+| [20260721] NGPS: GPS-Denied Aerial Geo-Localization and 2.5D Reconstruction via Deep Satellite Image Matching and Multi-Rate Sensor Fusion | Sharma Sanket | Institution unavailable | NGPS通过深度卫星图像匹配与多速率传感器融合，实现无GPS环境下的无人机地理定位与2.5D重建。 | [#351](https://github.com/Larry2000error/Larry-PaperClaw/issues/351) |
+| [20260721] KALE: Kernel Alignment with Loss Equilibration for Stable CLIP-DINOv2 Alignment at Web Scale | Pawłowicz Michał | Institution unavailable | KALE采用核对齐与损失均衡策略，稳定CLIP-DINOv2在网页规模数据上的联合训练。 | [#352](https://github.com/Larry2000error/Larry-PaperClaw/issues/352) |
+| [20260721] Reliability-Aware 3D Geometric Injection for Universal Person Re-identification | Su Bohan, Wang Jiashuo, Liu Fangyi, Ye Mang | National Engineering Research Center for Multimedia Software, School of Computer Science, Wuhan University | 可靠性感知3D几何注入方法增强单目深度估计，提升跨模态行人重识别的泛化性能。 | [#353](https://github.com/Larry2000error/Larry-PaperClaw/issues/353) |
+| [20260727] Dual-Edged Homogeneous-Modality Similarity: Towards Visible-Infrared Modality-Incomplete Person Re-Identification with Modality Adaptive Matching | Xu Xin, Zhan Shuhao, Liu Wei, Wang Zheng, Jiang Kui, Lin Chia-Wen | School of Computer Science and Technology, Wuhan University of Science and Technology；Hubei Province Key Laboratory of Intelligent Information Processing and Real-time Industrial System, Wuhan University of Science and Technology；School of Computer Science, Wuhan University；Faculty of Computing, Harbin Institute of Technology；Department of Electrical Engineering and the Institute of Communications Engineering, National Tsing Hua University | 模态自适应匹配框架利用同质模态相似性，解决可见光-红外模态缺失场景下的行人重识别。 | [#354](https://github.com/Larry2000error/Larry-PaperClaw/issues/354) |
+| [20260721] Fusion Embedding: A Unified Embedding Space for Text, Image, Video, and Audio | Abdul Basit Tonmoy, Kazi Fardinul Hoque, Md. Shahrier Islam Arham, Luthra Arman | Eximius Labs；Wabash College；Skop Intelligence Co. | Fusion Embedding构建统一嵌入空间，支持文本、图像、视频与音频的跨模态检索与表示。 | [#355](https://github.com/Larry2000error/Larry-PaperClaw/issues/355) |
+
+## 🔎 观察
+
+- 行人重识别领域同日出现两篇独立工作，分别聚焦3D几何注入与模态缺失问题，显示该方向研究热度持续攀升。
+- 多模态统一嵌入成为新兴趋势，但病理、遥感等专业领域仍依赖领域特定基准，通用模型与垂直应用的鸿沟尚未弥合。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260717](./202607/20260717.md)
 ## 📌 今日概况
 
@@ -60,36 +96,6 @@ Powered by OpenClaw🦞
 
 - 地理定位研究正从静态图像匹配向动态序列推理演进，轨迹感知与证据推理成为提升鲁棒性的关键路径。
 - 行人重识别领域多模态融合趋势显著，武汉科技大学团队在同日贡献两篇相关成果，显示该机构在此方向的集中布局。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260714](./202607/20260714.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI领域研究聚焦于视觉-语言融合技术，东京大学与Kioxia联合团队提出零样本组合图像检索新范式，通过属性增强评分与LLM重排序摆脱视觉特征依赖，推动跨模态检索向轻量化、可解释方向发展。
-
-## ✨ 今日亮点
-
-- 零样本组合图像检索实现无需视觉编码器
-- LLM重排序机制提升检索语义对齐精度
-- 属性增强评分桥接文本与图像语义鸿沟
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260714] Towards Vision-Free CIR: Attribute-Augmented Scoring and LLM-Based Reranking for Zero-Shot Composed Image Retrieval | Shimada Ryotaro, Lin Yu-Chieh, Nozawa Yuji, Ng Youyang, Torii Osamu, Matsui Yusuke | The University of Tokyo；Kioxia Corporation | 该研究提出Vision-Free CIR框架，以属性增强评分结合LLM重排序实现零样本组合图像检索，摆脱传统视觉编码器依赖。 | [#334](https://github.com/Larry2000error/Larry-PaperClaw/issues/334) |
-
-## 🔎 观察
-
-- 视觉-语言模型'去视觉化'趋势显现，文本模态或成跨模态检索新主导
-- LLM重排序介入检索流程可能增加推理延迟，需权衡精度与效率
 
 ---
 
