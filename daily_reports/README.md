@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260726](./202607/20260726.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦多模态智能分析，涵盖目标重识别与灾害地名消歧两大方向。前者探索Mamba架构与语义知识引导的高效表征学习，后者融合多模态大语言模型与跨视角地理定位技术，体现遥感AI向多源异构数据融合与开放场景理解演进。
+
+## ✨ 今日亮点
+
+- Prompt-S6架构实现多模态目标重识别的高效Token剪枝与语义对齐
+- 多模态LLM结合跨视角地理定位解决灾害场景地名歧义难题
+- Mamba与Transformer混合设计成为视觉表征学习新趋势
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260726] Multi-Modal Object Re-Identification with Prompt-S6 and Semantic-Aware Knowledge Guidance | Zhou Weixiang, Zuo Jiabei, Wang Yuhao, Wang Cong, Lu Huchuan, Su Zhixun | Dalian University of Technology | 大连理工团队提出Prompt-S6与语义感知知识引导，实现多模态目标重识别的高效Token剪枝与跨模态对齐。 | [#366](https://github.com/Larry2000error/Larry-PaperClaw/issues/366) |
+| [20260726] DisasterTD: Disaster Toponym Disambiguation Using Multimodal LLMs and Cross-View Geolocalization | Yin Wenping, Liu Ziqi, Mou Naixia, Li Weijia, Hong Danfeng, Li Hao | Institution unavailable | DisasterTD融合多模态大语言模型与跨视角地理定位，完成社交媒体与遥感影像的灾害地名消歧任务。 | [#367](https://github.com/Larry2000error/Larry-PaperClaw/issues/367) |
+
+## 🔎 观察
+
+- Mamba架构正从NLP向视觉任务渗透，Token剪枝与线性复杂度优势契合遥感大数据处理需求
+- 跨模态大模型与地理定位的耦合反映灾害应急领域对开放知识整合的迫切需求
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260722](./202607/20260722.md)
 ## 📌 今日概况
 
@@ -64,36 +95,6 @@ Powered by OpenClaw🦞
 
 - 行人重识别领域同日出现两篇工作，分别聚焦3D几何可靠性与模态缺失自适应匹配，显示该方向正从特征对齐向鲁棒性建模深化。
 - 多模态统一表征成为热点，Fusion Embedding与PathAgentBench分别从通用嵌入与垂直领域基准切入，反映基础模型与评测体系并行发展。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260719](./202607/20260719.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日仅收录1篇论文，聚焦多目标跟踪中的重识别问题。研究针对高度相似物体的身份保持难题，提出视频级关联方法VLA-ReID，属于计算机视觉与遥感交叉领域的目标跟踪技术方向。
-
-## ✨ 今日亮点
-
-- VLA-ReID提出视频级关联框架，解决高度相似物体的重识别难题
-- 针对多目标跟踪中身份漂移问题，强化时序一致性约束
-- 方法适用于密集场景下的细粒度目标区分与长期跟踪
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260719] VLA-ReID: Video-Level Association for Re-Identification in Multi-Object Tracking with Highly Similar Objects | Qin Yanrong, Cao Xiaoyan, Yao Yao | Institution unavailable | VLA-ReID通过视频级关联机制，提升多目标跟踪中高度相似物体的重识别精度与身份保持能力。 | [#348](https://github.com/Larry2000error/Larry-PaperClaw/issues/348) |
-
-## 🔎 观察
-
-- 该研究关注细粒度重识别，对遥感视频中的密集小目标跟踪具有潜在借鉴价值
-- 单篇收录反映该细分方向近期产出有限，或需关注更广泛的遥感智能解译进展
 
 ---
 
