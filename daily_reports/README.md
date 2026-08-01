@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260730](./202607/20260730.md)
+## 📌 今日概况
+
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日研究聚焦于视觉-语言模型在检索任务中的优化，涵盖稀疏Token选择、细粒度上下文学习及医学影像检索等方向。多模态大语言模型与视觉检索的融合成为核心趋势，同时人脸超分辨率与重识别技术取得进展。
+
+## ✨ 今日亮点
+
+- ReToken提出单Token稀疏选择策略，有效压缩长上下文KV缓存
+- FiRE引入细粒度上下文学习，提升MLLM复杂图像检索能力
+- CXR-Retrieve针对胸部X光片构建组合式文本-图像检索框架
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260730] ReToken: One Token to Improve Vision-Language Models for Visual Retrieval | Xiao Yao, Tan Reuben, Zhu Zhen, Wu Yuqun, Gao Jianfeng, Hoiem Derek | University of Illinois at Urbana-Champaign；Microsoft Research；Google DeepMind | ReToken通过稀疏Token选择机制，以单Token优化视觉-语言模型的长上下文视觉检索效率。 | [#376](https://github.com/Larry2000error/Larry-PaperClaw/issues/376) |
+| [20260730] Collaborative Feature Aggregation for Face Super-Resolution and Robust Re-Identification | Hwang Juheon, Kim Taewan, Kang Jiwoo | Yonsei University；Dongduk Women's University；Sookmyung Women's University | 该研究提出协作特征聚合方法，联合优化人脸超分辨率与鲁棒重识别任务性能。 | [#377](https://github.com/Larry2000error/Larry-PaperClaw/issues/377) |
+| [20260730] FiRE: Enhancing MLLMs with Fine-Grained Context Learning for Complex Image Retrieval | Hou Bohan, Lin Haoqiang, Song Xuemeng, Wen Haokun, Liu Meng, Hu Yupeng, Zhao Xiangyu | Shandong University；City University of Hong Kong；Harbin Institute of Technology (Shenzhen)；Shandong Jianzhu University | FiRE为MLLM设计细粒度上下文学习模块，增强复杂组合图像检索的语义对齐能力。 | [#378](https://github.com/Larry2000error/Larry-PaperClaw/issues/378) |
+| [20260730] CXR-Retrieve: Compositional Text-to-Image Retrieval in Chest Radiography | Erez Tomer, Kimhi Moshe, Baskin Chaim, Rivlin Ehud | Technion – Israel Institute of Technology；Ben-Gurion University of the Negev | CXR-Retrieve构建胸部X光片组合式检索基准，推动医学视觉-语言模型的临床适用性。 | [#379](https://github.com/Larry2000error/Larry-PaperClaw/issues/379) |
+
+## 🔎 观察
+
+- 视觉检索研究正从通用场景向医学等专业领域纵深发展，组合式推理成为关键能力。
+- Token效率优化与细粒度学习形成技术张力，反映多模态模型规模化与精准化的双重诉求。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260728](./202607/20260728.md)
 ## 📌 今日概况
 
@@ -58,37 +91,6 @@ Powered by OpenClaw🦞
 
 - 跨模态行人重识别正从模态对齐向模态缺失容错演进，反映实际安防场景的复杂需求
 - 可信AI标签的出现表明该领域开始关注模型可靠性与部署安全性问题
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260726](./202607/20260726.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦多模态智能分析，涵盖目标重识别与灾害地名消歧两大方向。前者探索Mamba架构与语义知识引导的高效表征学习，后者融合多模态大语言模型与跨视角地理定位技术，体现遥感AI向多源异构数据融合与开放场景理解演进。
-
-## ✨ 今日亮点
-
-- Prompt-S6架构实现多模态目标重识别的高效Token剪枝与语义对齐
-- 多模态LLM结合跨视角地理定位解决灾害场景地名歧义难题
-- Mamba与Transformer混合设计成为视觉表征学习新趋势
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260726] Multi-Modal Object Re-Identification with Prompt-S6 and Semantic-Aware Knowledge Guidance | Zhou Weixiang, Zuo Jiabei, Wang Yuhao, Wang Cong, Lu Huchuan, Su Zhixun | Dalian University of Technology | 大连理工团队提出Prompt-S6与语义感知知识引导，实现多模态目标重识别的高效Token剪枝与跨模态对齐。 | [#366](https://github.com/Larry2000error/Larry-PaperClaw/issues/366) |
-| [20260726] DisasterTD: Disaster Toponym Disambiguation Using Multimodal LLMs and Cross-View Geolocalization | Yin Wenping, Liu Ziqi, Mou Naixia, Li Weijia, Hong Danfeng, Li Hao | Institution unavailable | DisasterTD融合多模态大语言模型与跨视角地理定位，完成社交媒体与遥感影像的灾害地名消歧任务。 | [#367](https://github.com/Larry2000error/Larry-PaperClaw/issues/367) |
-
-## 🔎 观察
-
-- Mamba架构正从NLP向视觉任务渗透，Token剪枝与线性复杂度优势契合遥感大数据处理需求
-- 跨模态大模型与地理定位的耦合反映灾害应急领域对开放知识整合的迫切需求
 
 ---
 
