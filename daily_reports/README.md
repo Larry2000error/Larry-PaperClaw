@@ -71,30 +71,29 @@ Powered by OpenClaw🦞
 
 ---
 
-# [20260717](./202607/20260717.md)
+# [20260718](./202607/20260718.md)
 ## 📌 今日概况
 
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
 
-今日研究聚焦视觉Transformer效率优化与跨物种生物识别两大方向。前者探索视觉地点识别中的Token剪枝策略以降低推理成本，后者针对多物种动物重识别任务构建物种感知的图结构方法，均体现领域对计算效率与任务特异性的双重关注。
+今日遥感AI领域研究聚焦于模型鲁棒性与高效适配技术。DARA方法通过低秩残差适应与原始-损坏蒸馏策略，解决动物重识别中的图像退化问题，体现了知识蒸馏与特征修复技术在野外场景中的应用潜力。
 
 ## ✨ 今日亮点
 
-- 视觉地点识别领域首次系统验证Token剪枝对识别性能的影响边界
-- 多物种动物重识别引入物种感知图构建，突破单一物种方法局限
-- LightGlue与LightGBM组合优化生物特征匹配与聚类效率
+- DARA提出退化感知低秩残差适应，提升损坏图像下的动物重识别精度
+- 原始-损坏蒸馏框架实现特征空间修复，增强模型对真实退化场景的泛化
+- 低秩适配与知识蒸馏结合，为资源受限的野外监测提供高效解决方案
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260717] Are All Tokens Necessary for Visual Place Recognition? An Empirical Study of Token Reduction for Efficient Inference | Jin Tong, Liu Yunpeng, Hu Shuyu, Zhang Qinghua, Han Ruize, Wang Song, Lu Feng | Shenyang Institute of Automation, Chinese Academy of Sciences；University of Chinese Academy of Sciences；Shenzhen University of Advanced Technology | 中科院团队实证研究视觉地点识别中Token剪枝策略，揭示非必要Token的识别冗余性，为高效推理提供优化路径。 | [#343](https://github.com/Larry2000error/Larry-PaperClaw/issues/343) |
-| [20260717] DS@GT ARC at AnimalCLEF 2026: Species-Aware Graph Construction for Multi-Species Animal Re-Identification | Evan Sinclair Smith, Miyaguchi Anthony, Palamari Snigdha, Evangelista Danté | Georgia Institute of Technology | 佐治亚理工团队提出物种感知图构建方法，整合LightGlue与LightGBM实现多物种动物重识别的联合优化。 | [#345](https://github.com/Larry2000error/Larry-PaperClaw/issues/345) |
+| [20260718] DARA: Degradation-Aware Low-Rank Residual Adaptation with Original-to-Corrupted Distillation for Corruption-Robust Animal Re-Identification | Xie Cynthia, Xu Talia | The University of Auckland | DARA通过低秩残差适应与原始-损坏蒸馏，实现退化鲁棒的动物重识别，有效修复特征空间并提升野外监测可靠性。 | [#347](https://github.com/Larry2000error/Larry-PaperClaw/issues/347) |
 
 ## 🔎 观察
 
-- Token剪枝研究反映视觉Transformer在遥感定位任务中的部署瓶颈，边缘计算需求驱动效率导向的模型压缩研究。
-- 多物种动物识别从单一物种向群落级扩展，生态监测场景的复杂度提升正重塑生物识别的方法论框架。
+- 动物重识别对退化鲁棒性的需求凸显真实场景与实验室条件的差距，特征空间修复成为关键突破口
+- 低秩适应与知识蒸馏的融合趋势表明，高效微调正从通用视觉向垂直生态监测领域渗透
 
 ---
 
