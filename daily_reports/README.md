@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260727](./202607/20260727.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 1 篇。
+
+今日遥感AI领域聚焦跨模态行人重识别技术，针对可见光-红外模态缺失场景提出模态自适应匹配方法。研究关注模态不完整条件下的可信AI设计，通过同质模态相似性建模提升跨模态检索鲁棒性，体现多模态融合与智能安防应用的前沿探索。
+
+## ✨ 今日亮点
+
+- 提出模态自适应匹配框架，解决可见光-红外模态缺失难题
+- 构建同质模态相似性机制，增强跨模态特征对齐能力
+- 面向可信AI设计，提升复杂场景下行人重识别可靠性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260727] Dual-Edged Homogeneous-Modality Similarity: Towards Visible-Infrared Modality-Incomplete Person Re-Identification with Modality Adaptive Matching | Xu Xin, Zhan Shuhao, Liu Wei, Wang Zheng, Jiang Kui, Lin Chia-Wen | School of Computer Science and Technology, Wuhan University of Science and Technology；Hubei Province Key Laboratory of Intelligent Information Processing and Real-time Industrial System, Wuhan University of Science and Technology；School of Computer Science, Wuhan University；Faculty of Computing, Harbin Institute of Technology；Department of Electrical Engineering and the Institute of Communications Engineering, National Tsing Hua University | 该研究针对可见光-红外模态不完整行人重识别问题，提出模态自适应匹配方法，通过同质模态相似性建模实现跨模态鲁棒检索。 | [#354](https://github.com/Larry2000error/Larry-PaperClaw/issues/354) |
+
+## 🔎 观察
+
+- 跨模态行人重识别正从模态对齐向模态缺失容错演进，反映实际安防场景的复杂需求
+- 可信AI标签的出现表明该领域开始关注模型可靠性与部署安全性问题
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260726](./202607/20260726.md)
 ## 📌 今日概况
 
@@ -60,41 +90,6 @@ Powered by OpenClaw🦞
 
 - 边缘智能与遥感交叉加速：存内计算(CiM)与无人机-卫星定位同步涌现，反映低功耗与极端场景的双重需求
 - 预训练采样策略精细化：从均匀采样转向重要性感知，显示跨模态表征学习进入数据效率优化深水区
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260721](./202607/20260721.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日研究聚焦跨模态检索与多模态表征学习，涵盖病理图像视觉语言模型基准测试、3D场景检索优化、无GPS无人机定位、行人重识别几何可靠性建模及统一多模态嵌入空间构建，体现遥感与计算机视觉深度融合趋势。
-
-## ✨ 今日亮点
-
-- PathAgentBench发布病理全切片图像视觉语言模型基准，推动医学影像证据检索能力评估
-- NGPS提出无GPS环境下卫星图像匹配与多速率传感器融合的无人机定位重建方案
-- Fusion Embedding构建文本、图像、视频、音频的统一嵌入空间，实现跨模态检索
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260721] PathAgentBench: Benchmarking Evidence-Seeking Vision-Language Models on Whole-Slide Pathology Image | Liao Dankai, Zhang Tianyi, Wu Yufeng, Zhang Xinyue, Xue Qiaochu, Liu Zeyu, Zhao Dachun, Cai Linghan, Jin Yueming | National University of Singapore；National University Hospital；Singapore | PathAgentBench针对全切片病理图像构建证据搜寻型视觉语言模型基准测试框架。 | [#349](https://github.com/Larry2000error/Larry-PaperClaw/issues/349) |
-| [20260721] CR-Refiner: An Object-Centric Optimal Transport Reranker for Edit-Conditioned 3D Scene Retrieval | Wu Hao, Zhu Jinjing, Wu Nanyu, Cai Qianyi, Lin Heyi, Wang Hao, Xiong Hui | Hong Kong University of Science and Technology；Hong Kong University of Science and Technology (Guangzhou) | CR-Refiner基于最优传输理论提出以对象为中心的编辑条件3D场景重排序方法。 | [#350](https://github.com/Larry2000error/Larry-PaperClaw/issues/350) |
-| [20260721] NGPS: GPS-Denied Aerial Geo-Localization and 2.5D Reconstruction via Deep Satellite Image Matching and Multi-Rate Sensor Fusion | Sharma Sanket | Institution unavailable | NGPS通过深度卫星图像匹配与多速率传感器融合实现无GPS无人机地理定位与2.5D重建。 | [#351](https://github.com/Larry2000error/Larry-PaperClaw/issues/351) |
-| [20260721] Reliability-Aware 3D Geometric Injection for Universal Person Re-identification | Su Bohan, Wang Jiashuo, Liu Fangyi, Ye Mang | National Engineering Research Center for Multimedia Software, School of Computer Science, Wuhan University | Reliability-Aware 3D Geometric Injection引入可靠性感知学习增强通用行人重识别的3D几何注入。 | [#353](https://github.com/Larry2000error/Larry-PaperClaw/issues/353) |
-| [20260727] Dual-Edged Homogeneous-Modality Similarity: Towards Visible-Infrared Modality-Incomplete Person Re-Identification with Modality Adaptive Matching | Xu Xin, Zhan Shuhao, Liu Wei, Wang Zheng, Jiang Kui, Lin Chia-Wen | School of Computer Science and Technology, Wuhan University of Science and Technology；Hubei Province Key Laboratory of Intelligent Information Processing and Real-time Industrial System, Wuhan University of Science and Technology；School of Computer Science, Wuhan University；Faculty of Computing, Harbin Institute of Technology；Department of Electrical Engineering and the Institute of Communications Engineering, National Tsing Hua University | Dual-Edged Homogeneous-Modality Similarity针对模态缺失场景提出可见光-红外自适应匹配行人重识别。 | [#354](https://github.com/Larry2000error/Larry-PaperClaw/issues/354) |
-| [20260721] Fusion Embedding: A Unified Embedding Space for Text, Image, Video, and Audio | Abdul Basit Tonmoy, Kazi Fardinul Hoque, Md. Shahrier Islam Arham, Luthra Arman | Eximius Labs；Wabash College；Skop Intelligence Co. | Fusion Embedding构建统一嵌入空间实现文本、图像、视频、音频的跨模态表征与检索。 | [#355](https://github.com/Larry2000error/Larry-PaperClaw/issues/355) |
-
-## 🔎 观察
-
-- 行人重识别领域同日出现两篇工作，分别聚焦3D几何可靠性与模态缺失自适应匹配，显示该方向正从特征对齐向鲁棒性建模深化。
-- 多模态统一表征成为热点，Fusion Embedding与PathAgentBench分别从通用嵌入与垂直领域基准切入，反映基础模型与评测体系并行发展。
 
 ---
 
