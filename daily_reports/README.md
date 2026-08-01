@@ -5,29 +5,30 @@
 # [20260722](./202607/20260722.md)
 ## 📌 今日概况
 
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
 
-今日研究聚焦跨模态检索与异构视觉对齐，涵盖边缘计算优化、多轮交互检索及跨视角地理定位。可见光-红外预训练采样策略与无人机-卫星大偏角定位成为遥感感知关键方向，体现多传感器融合与极端视角鲁棒性的技术趋势。
+今日研究聚焦跨模态检索与边缘智能，涵盖多项技术路线：从存内计算优化到多轮对话式时尚检索，从可见光-红外预训练采样策略到大倾角无人机-卫星地理定位，体现遥感与视觉AI在效率、精度与场景适配上的多维探索。
 
 ## ✨ 今日亮点
 
-- PolySim提出确定性多项式替代方案，解决边缘设备概率嵌入计算瓶颈
-- OffNadirLoc构建大偏角无人机-卫星定位基准，应对透视畸变挑战
-- 可见光-红外预训练引入重要性采样，突破跨模态表征对齐效率
+- PolySim提出确定性多项式代理，解决存内计算架构下的跨模态检索概率嵌入瓶颈
+- OffNadirLoc构建大倾角无人机-卫星定位基准，针对透视畸变设计结构感知学习框架
+- Ma等揭示可见光-红外预训练中补丁采样不均问题，提出重要性采样优化策略
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260722] PolySim: Deterministic Polynomial Surrogates for Cross-Modal Retrieval on CiM | Li Xinzhao, Power Charles, Ren Pengyu, Won Jongun, Pei Likai, Hu Yuting, Xiong Jinjun, Vardar Alptekin, Cao Ningyuan, Xiaobo Sharon Hu, Kämpfe Thomas, Ni Kai, Qin Ruiyang | Villanova University；University of Notre Dame；University at Buffalo；Fraunhofer IPMS；TU Braunschweig | PolySim设计确定性多项式代理模型，在存内计算架构上实现高效跨模态检索，规避概率嵌入的硬件开销。 | [#357](https://github.com/Larry2000error/Larry-PaperClaw/issues/357) |
-| [20260722] Diverse-Intent Multi-Turn Fashion Image Retrieval | Tang Mingqiang, Wen Haokun, Liu Meng, Hu Yupeng, Guan Weili, Song Xuemeng | Southern University of Science and Technology；Harbin Institute of Technology (Shenzhen)；Shandong University；Shenzhen Loop Area Institute | Diverse-Intent框架支持多轮时尚图像检索，通过视觉-语言预训练捕捉用户意图演化，提升交互式搜索体验。 | [#358](https://github.com/Larry2000error/Larry-PaperClaw/issues/358) |
-| [20260722] Not All Patches are Equal: Sampling Matters for Visible-Infrared Pre-Training | Ma Qiwei, Deng Bin, Zhu Junjie, Huang Qiangjuan, Duan Puhong, Yang Ke, Kang Xudong, Li Shutao | School of Artificial Intelligence and Robotics, Hunan University；Yuelushan Center for Industrial Innovation；Intelligent Game and Decision Lab | 提出非均匀 patch 采样策略用于可见光-红外预训练，依据信息重要性加权优化跨模态表征学习效率。 | [#359](https://github.com/Larry2000error/Larry-PaperClaw/issues/359) |
-| [20260722] OffNadirLoc: Benchmark and Framework for Challenging UAV-to-Satellite Geo-Localization under Large Off-Nadir Views | Qiao Qian, Liu Wenye, Liu Ting, Shu Jiuhe, Wang Peng | Northwestern Polytechnical University | OffNadirLoc建立大偏角无人机-卫星地理定位基准，结合结构感知学习缓解极端视角下的透视畸变问题。 | [#360](https://github.com/Larry2000error/Larry-PaperClaw/issues/360) |
+| [20260722] PolySim: Deterministic Polynomial Surrogates for Cross-Modal Retrieval on CiM | Li Xinzhao, Power Charles, Ren Pengyu, Won Jongun, Pei Likai, Hu Yuting, Xiong Jinjun, Vardar Alptekin, Cao Ningyuan, Xiaobo Sharon Hu, Kämpfe Thomas, Ni Kai, Qin Ruiyang | Villanova University；University of Notre Dame；University at Buffalo；Fraunhofer IPMS；TU Braunschweig | PolySim为存内计算架构设计确定性多项式代理，替代概率嵌入实现高效跨模态检索。 | [#357](https://github.com/Larry2000error/Larry-PaperClaw/issues/357) |
+| [20260722] Diverse-Intent Multi-Turn Fashion Image Retrieval | Tang Mingqiang, Wen Haokun, Liu Meng, Hu Yupeng, Guan Weili, Song Xuemeng | Southern University of Science and Technology；Harbin Institute of Technology (Shenzhen)；Shandong University；Shenzhen Loop Area Institute | 提出多轮时尚图像检索框架FashionAM，支持多样化意图的连续对话式视觉搜索。 | [#358](https://github.com/Larry2000error/Larry-PaperClaw/issues/358) |
+| [20260722] Not All Patches are Equal: Sampling Matters for Visible-Infrared Pre-Training | Ma Qiwei, Deng Bin, Zhu Junjie, Huang Qiangjuan, Duan Puhong, Yang Ke, Kang Xudong, Li Shutao | School of Artificial Intelligence and Robotics, Hunan University；Yuelushan Center for Industrial Innovation；Intelligent Game and Decision Lab | 针对可见光-红外预训练，提出基于补丁重要性的采样策略，提升跨模态表征学习效率。 | [#359](https://github.com/Larry2000error/Larry-PaperClaw/issues/359) |
+| [20260722] OffNadirLoc: Benchmark and Framework for Challenging UAV-to-Satellite Geo-Localization under Large Off-Nadir Views | Qiao Qian, Liu Wenye, Liu Ting, Shu Jiuhe, Wang Peng | Northwestern Polytechnical University | OffNadirLoc建立大倾角无人机-卫星定位基准，缓解极端视角下的透视畸变与匹配难题。 | [#360](https://github.com/Larry2000error/Larry-PaperClaw/issues/360) |
+| [20260722] Using Hierarchical Controlled Vocabularies to Understand CLIP Retrieval Failures in Historical Photo Collections | Sebastian Ratan, Hoppe Anett, Rippe Christoph, Ewerth Ralph | TIB – Leibniz Information Centre for Science and Technology；L3S Research Center, Leibniz University Hannover；Marburg University；Hessian Center for Artificial Intelligence (hessian.AI)；Goethe University Frankfurt, University Library Frankfurt | 利用分层受控词表分析CLIP在历史照片检索中的失效模式，揭示语义鸿沟与改进路径。 | [#364](https://github.com/Larry2000error/Larry-PaperClaw/issues/364) |
 
 ## 🔎 观察
 
-- 跨模态检索正向边缘端迁移，存内计算与确定性近似成为硬件协同设计新焦点
-- 遥感定位从正射视角扩展至大偏角场景，透视畸变建模能力或成下一代算法核心竞争力
+- 边缘智能与遥感交叉加速：存内计算(CiM)与无人机-卫星定位同步涌现，反映低功耗与极端场景的双重需求
+- 预训练采样策略精细化：从均匀采样转向重要性感知，显示跨模态表征学习进入数据效率优化深水区
 
 ---
 
