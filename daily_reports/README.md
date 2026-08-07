@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260804](./202608/20260804.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦于多模态检索技术的创新，涵盖工业级生成-判别统一框架与零样本草图检索。快手团队提出UniGD解决梯度干扰问题，越南学者探索语义一致的提示学习，均体现跨模态表示学习向实用化与高效化演进。
+
+## ✨ 今日亮点
+
+- UniGD统一生成与判别检索，缓解工业场景梯度干扰难题
+- SeCo-SBIR设计语义一致提示学习，提升零样本草图检索精度
+- 两研究均聚焦CLIP多模态架构的工业适配与零样本泛化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260804] UniGD: A Unified Generative-Discriminative Framework for Industrial Retrieval | Ji Shujie, Kong Yawei, Zhao Yilin, Wang Li, Liu Xialong, Jiang Peng | Kuaishou Technology | UniGD提出统一生成-判别框架，通过梯度解耦策略解决工业搜索广告中两类模型的训练冲突。 | [#392](https://github.com/Larry2000error/Larry-PaperClaw/issues/392) |
+| [20260804] SeCo-SBIR: Semantically Consistent Prompt Learning for Zero-Shot Sketch-Based Image Retrieval | Long Hoang Dang, Tuan Nguyen Huu, Nguyen Minh Hieu, Tu Minh Phuong | Posts and Telecommunications Institute of Technology | SeCo-SBIR引入语义一致性约束的提示学习，使CLIP在零样本草图图像检索中保持类别语义对齐。 | [#393](https://github.com/Larry2000error/Larry-PaperClaw/issues/393) |
+
+## 🔎 观察
+
+- 生成-判别联合优化成为工业检索系统新方向，但梯度管理复杂度将随规模显著上升
+- 提示学习正从NLP向视觉-语言任务迁移，语义一致性约束或成零样本性能关键
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260803](./202608/20260803.md)
 ## 📌 今日概况
 
@@ -61,36 +92,6 @@ Powered by OpenClaw🦞
 
 - 视觉检索领域呈现'大模型轻量化'与'细粒度理解'并行的技术路线分化
 - 脑电-视觉跨模态研究从概念验证迈向标准化基准建设，临床转化潜力值得关注
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260729](./202607/20260729.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日仅收录1篇研究，聚焦水产养殖场景下的多目标跟踪技术。该工作针对鱼类外观相似导致的身份混淆问题，提出双分支弹性匹配框架，兼顾实时性与边缘部署需求，体现农业智能化与轻量化AI的交叉趋势。
-
-## ✨ 今日亮点
-
-- 双分支架构解决鱼类外观相似导致的身份切换难题
-- 弹性几何对应机制提升遮挡场景下的跟踪稳定性
-- 面向边缘设备优化，满足水产养殖实时监测需求
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260729] When Fish Look Alike: Tracking Identities with Dual-branch Elasticity | Lee Vran, Liu Xin, Wei Yijie, Liu Yeqiang, Hwa Liang Leo, Li Zhenbo | China Agricultural University；Beijing Normal University；National University of Singapore | 中国农业大学等提出双分支弹性网络，通过几何对应学习解决养殖鱼群外观相似、密集遮挡下的身份保持问题，支持边缘端实时部署。 | [#375](https://github.com/Larry2000error/Larry-PaperClaw/issues/375) |
-
-## 🔎 观察
-
-- 农业垂直场景的跟踪任务正从通用模型向物种特异性设计演进，对领域知识嵌入提出更高要求
-- 边缘部署与实时性约束成为水产养殖AI落地的关键瓶颈，轻量化架构创新空间显著
 
 ---
 
