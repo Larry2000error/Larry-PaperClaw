@@ -40,27 +40,27 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
 
-今日研究聚焦无人机视角地理定位技术，涵盖持续学习、跨模态检索与鲁棒性增强三大方向。西安交大团队提出几何感知适配器解决增量学习遗忘问题，中国海洋大学构建昼夜统一基准，哈工大则针对退化场景设计可靠性引导的证据融合机制。
+今日研究聚焦无人机视角地理定位技术，涵盖持续学习、跨模态检索与鲁棒性增强三大方向。西安交大团队提出几何感知适配器解决增量学习遗忘问题；中国海洋大学构建昼夜统一基准；哈工大联合团队针对退化场景设计可靠性引导的证据融合机制。行人重识别领域亦有邻域特征交互新进展。
 
 ## ✨ 今日亮点
 
 - GeoMFD引入边缘场蒸馏，缓解无人机地理定位中的灾难性遗忘
-- 首个昼夜无人机地理定位统一基准，弥合可见光与红外模态鸿沟
-- ReLATE构建图像退化鲁棒性基准，提升复杂环境下的定位可靠性
+- 首个昼夜跨模态无人机定位基准，统一处理可见光与红外影像
+- ReLATE构建可靠性引导框架，提升退化场景下的跨视图匹配鲁棒性
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260728] GeoMFD: Continual Drone-View Geo-Localization with Geometry-Aware Adapter and Margin-Field Distillation | Chen Zhongwei, Rong Hai-jun, Zhang Tao, Nie Xianfeng, Zhang Xiangbao, Li Guoqi, Yang Zhao-Xu | School of Aerospace Engineering, Xi'an Jiaotong University；Institute of Automation, Chinese Academy of Sciences | GeoMFD通过几何感知适配器与边缘场蒸馏，实现无人机视角地理定位的持续学习，抑制旧任务性能退化。 | [#370](https://github.com/Larry2000error/Larry-PaperClaw/issues/370) |
-| [20260728] A Unified Benchmark and Modality-Adaptive Network for Day-and-Night Drone-View Geo-Localization | Xu Songtianhao, Chen Zhongwei, Yang Zhao-Xu, Wang Weifeng | Ocean University of China | 该研究建立首个昼夜无人机地理定位统一基准，提出模态自适应网络对齐可见光与红外影像的跨模态检索。 | [#371](https://github.com/Larry2000error/Larry-PaperClaw/issues/371) |
-| [20260728] ReLATE: Reliability-Guided Evidence Fusion for Robust UAV--Satellite cross-view Geo-Localization | Jiang Haochen, Pan Jialei, Sun Yuzhe, Dong Zhe, Ren Lecheng, Gu Yanfeng, Liu Tianzhu | School of Electronics and Information Engineering, Harbin Institute of Technology；National Key Laboratory of Radar Detection and Sensing, Nanjing Research Institute of Electronics Technology；School of Electrical and Electronic Engineering, University of Manchester | ReLATE设计可靠性引导的证据融合框架，针对模糊、噪声等退化场景提升无人机-卫星跨视角定位鲁棒性。 | [#372](https://github.com/Larry2000error/Larry-PaperClaw/issues/372) |
-| [20260728] ANFI: Rethinking Neighbor Feature Interaction in Person Re-ID | Li Xulin, Lu Yan, Liu Bin, Li Jiaze, Yang Qinhong, Gong Tao, Chu Qi, Yu Nenghai | University of Science and Technology of China；Anhui Province Key Laboratory of Digital Security；The Chinese University of Hong Kong | ANFI重新思考行人重识别中的邻域特征交互，通过自适应加权机制抑制噪声邻居干扰。 | [#373](https://github.com/Larry2000error/Larry-PaperClaw/issues/373) |
+| [20260728] GeoMFD: Continual Drone-View Geo-Localization with Geometry-Aware Adapter and Margin-Field Distillation | Chen Zhongwei, Rong Hai-jun, Zhang Tao, Nie Xianfeng, Zhang Xiangbao, Li Guoqi, Yang Zhao-Xu | School of Aerospace Engineering, Xi'an Jiaotong University；Institute of Automation, Chinese Academy of Sciences | GeoMFD通过几何感知适配器与边缘场蒸馏，实现无人机视角地理定位的持续学习，缓解域增量场景下的知识遗忘。 | [#370](https://github.com/Larry2000error/Larry-PaperClaw/issues/370) |
+| [20260728] A Unified Benchmark and Modality-Adaptive Network for Day-and-Night Drone-View Geo-Localization | Xu Songtianhao, Chen Zhongwei, Yang Zhao-Xu, Wang Weifeng | Ocean University of China | 提出昼夜无人机定位统一基准与模态自适应网络，首次系统解决可见光-红外跨模态检索中的光照变化挑战。 | [#371](https://github.com/Larry2000error/Larry-PaperClaw/issues/371) |
+| [20260728] ReLATE: Reliability-Guided Evidence Fusion for Robust UAV--Satellite cross-view Geo-Localization | Jiang Haochen, Pan Jialei, Sun Yuzhe, Dong Zhe, Ren Lecheng, Gu Yanfeng, Liu Tianzhu | School of Electronics and Information Engineering, Harbin Institute of Technology；National Key Laboratory of Radar Detection and Sensing, Nanjing Research Institute of Electronics Technology；School of Electrical and Electronic Engineering, University of Manchester | ReLATE设计可靠性引导的证据融合机制，针对模糊、噪声等退化场景提升UAV-卫星跨视图定位的鲁棒性。 | [#372](https://github.com/Larry2000error/Larry-PaperClaw/issues/372) |
+| [20260728] ANFI: Rethinking Neighbor Feature Interaction in Person Re-ID | Li Xulin, Lu Yan, Liu Bin, Li Jiaze, Yang Qinhong, Gong Tao, Chu Qi, Yu Nenghai | University of Science and Technology of China；Anhui Province Key Laboratory of Digital Security；The Chinese University of Hong Kong | ANFI重新思考行人重识别中的邻域特征交互，通过自适应加权抑制噪声邻居干扰，优化亲和关系建模。 | [#373](https://github.com/Larry2000error/Larry-PaperClaw/issues/373) |
 
 ## 🔎 观察
 
-- 无人机地理定位正从单一任务优化转向终身学习与全天候适应，技术路线趋于实用化部署需求。
-- 跨模态与跨视角融合成为核心挑战，证据可靠性建模与几何一致性约束或成下一代方法关键。
+- 无人机地理定位正从单一模态向持续学习、跨模态统一、退化鲁棒性多维度演进，技术栈日趋复杂
+- 中国高校在该领域形成显著集群优势，西交大、哈工大、中国海洋大学等机构贡献核心方法论创新
 
 ---
 
