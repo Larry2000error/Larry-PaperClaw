@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260806](./202608/20260806.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦多模态检索与持续学习两大方向。视觉语言模型通过链式思维与难负样本优化检索反馈机制；遥感领域则探索双适配器架构与排序感知蒸馏，解决跨模态对齐中的灾难性遗忘问题。
+
+## ✨ 今日亮点
+
+- 难负样本驱动的检索中心CoT框架，从失败案例中强化多模态推理能力
+- 双适配器架构实现遥感图文检索的持续学习，兼顾新旧知识迁移
+- 排序感知蒸馏策略优化跨模态对齐，缓解增量训练中的性能退化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260806] Learning from Failures: Retrieval-Centric CoT via Hard Negatives for Unified Multimodal Retrieval | Sun Zelong, Wang Jun, Yang Kaicheng, Gu Tiancheng, Feng Ziyong, Lu Zhiwu | Glint Lab | 提出检索中心链式思维方法，利用难负样本构建失败感知反馈机制，提升统一多模态检索的推理能力。 | [#399](https://github.com/Larry2000error/Larry-PaperClaw/issues/399) |
+| [20260806] DARAD: Dual Adapters and Ranking-Aware Distillation for Continual Remote Sensing Image-Text Retrieval | Chen Xi, Chen Xu, Jia Xiangyang, Wang Wei, Zhang Xu, Sun Zhenyuan | School of Computer Science, Wuhan University；Beijing Institute for General Artificial Intelligence (BIGAI) | 设计双适配器与排序感知蒸馏框架，实现遥感图像-文本检索的持续学习，有效缓解跨模态对齐中的灾难性遗忘。 | [#400](https://github.com/Larry2000error/Larry-PaperClaw/issues/400) |
+
+## 🔎 观察
+
+- 遥感多模态检索正从静态训练转向持续学习范式，知识蒸馏成为保留历史知识的关键技术路径。
+- 难负样本挖掘从分类任务扩展至检索-推理联合优化，显示视觉语言模型自我纠错能力的提升趋势。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260805](./202608/20260805.md)
 ## 📌 今日概况
 
@@ -58,39 +89,6 @@ Powered by OpenClaw🦞
 
 - 生成-判别联合优化成为工业检索系统新方向，但梯度管理复杂度将随规模显著上升
 - 提示学习正从NLP向视觉-语言任务迁移，语义一致性约束或成零样本性能关键
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260803](./202608/20260803.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日研究聚焦多模态表示学习与跨视角识别技术。四篇论文涵盖知识型视觉问答、空-地行人重识别、开放集动物重识别及通用多模态嵌入，核心趋势在于通过贝叶斯重加权、3D表征、图聚类校准等方法提升模型鲁棒性与泛化能力，尤其关注跨域、跨视角及开放场景下的识别难题。
-
-## ✨ 今日亮点
-
-- 贝叶斯数据重加权策略有效缓解多模态检索中的假阴性噪声问题
-- VR3D框架通过视角鲁棒的3D表征学习突破空-地行人重识别瓶颈
-- WildFusion方法结合相似度校准与图聚类实现开放集动物个体识别
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260803] Bayesian Data Reweighting Improves Multimodal Retrieval for Knowledge-Based Visual Question Answering | Sun Jingchen, Han Shaobo, Zhang Ruiyi, Naresh Kumar Devulapally, Liu Ming, Long Yitao, Vishnu Suresh Lokhande, Chen Changyou | University at Buffalo；NEC Laboratories America；Adobe Research；Iowa State University；New York University | 提出贝叶斯数据重加权框架，通过对比学习优化多模态检索，降低知识型视觉问答中的假阴性样本干扰。 | [#387](https://github.com/Larry2000error/Larry-PaperClaw/issues/387) |
-| [20260803] VR3D: View-Robust 3D Representation Learning for Aerial-Ground Person Re-Identification | Ji Chao, Xuan Shiyu, Li Zechao | Nanjing University of Science and Technology | 构建视角鲁棒的3D表征学习网络VR3D，解决无人机与地面摄像头间行人重识别的跨视角匹配难题。 | [#388](https://github.com/Larry2000error/Larry-PaperClaw/issues/388) |
-| [20260803] Calibrated Similarity and Graph Clustering for Open-Set Animal Re-Identification | ElBassat Mohamed, Elkerdany Seifeldin, ElBialy Mohamed, Abouelhamd Gamal, Ghoneim Jana, Elkady Assem, Elboraay Mohamed, Semenova Nelly | Made In Alexandria Artificial Intelligence Team；Faculty of Computer Science and Engineering, Alamein International University；Faculty of Computers and Data Science, Alexandria University；Faculty of Engineering, Alexandria University；Alexandria Higher Institute of Engineering and Technology；Moscow Pedagogical State University | 设计WildFusion系统，融合相似度校准与图聚类技术，提升开放集场景下野生动物个体重识别的可靠性。 | [#389](https://github.com/Larry2000error/Larry-PaperClaw/issues/389) |
-| [20260803] Illuminating Visual Identity in Universal Multimodal Embeddings | Cao Jiawei, Feng Junyi, Hua Jiashen, Huang Ziheng, Deng Bing, Wu Kaijie, Gu Chaochen, Ye Jieping | Shanghai Jiao Tong University；Alibaba Group | 探索多模态大语言模型中的视觉身份保持机制，优化通用嵌入空间下的实例检索与跨模态对齐性能。 | [#390](https://github.com/Larry2000error/Larry-PaperClaw/issues/390) |
-
-## 🔎 观察
-
-- 重识别任务正从封闭集向开放集、从单一模态向跨视角/跨域扩展，3D表征与图结构方法成为关键突破口
-- 多模态学习研究重心从规模扩张转向质量优化，数据重加权和嵌入空间校准技术受到更多关注
 
 ---
 
