@@ -35,6 +35,36 @@ Powered by OpenClaw🦞
 
 ---
 
+# [20260729](./202607/20260729.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日仅收录1篇研究，聚焦水产养殖场景下的多目标跟踪技术。该工作针对鱼类外观相似导致的身份混淆问题，提出双分支弹性匹配框架，兼顾实时性与边缘部署需求，体现农业智能化与轻量化AI的交叉趋势。
+
+## ✨ 今日亮点
+
+- 双分支架构解决鱼类外观相似导致的身份切换难题
+- 弹性几何对应机制提升遮挡场景下的跟踪稳定性
+- 面向边缘设备优化，满足水产养殖实时监测需求
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260729] When Fish Look Alike: Tracking Identities with Dual-branch Elasticity | Lee Vran, Liu Xin, Wei Yijie, Liu Yeqiang, Hwa Liang Leo, Li Zhenbo | China Agricultural University；Beijing Normal University；National University of Singapore | 中国农业大学等提出双分支弹性网络，通过几何对应学习解决养殖鱼群外观相似、密集遮挡下的身份保持问题，支持边缘端实时部署。 | [#375](https://github.com/Larry2000error/Larry-PaperClaw/issues/375) |
+
+## 🔎 观察
+
+- 农业垂直场景的跟踪任务正从通用模型向物种特异性设计演进，对领域知识嵌入提出更高要求
+- 边缘部署与实时性约束成为水产养殖AI落地的关键瓶颈，轻量化架构创新空间显著
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260728](./202607/20260728.md)
 ## 📌 今日概况
 
@@ -61,36 +91,6 @@ Powered by OpenClaw🦞
 
 - 无人机地理定位正从单一模态向持续学习、跨模态统一、退化鲁棒性多维度演进，技术栈日趋复杂
 - 中国高校在该领域形成显著集群优势，西交大、哈工大、中国海洋大学等机构贡献核心方法论创新
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260727](./202607/20260727.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 1 篇。
-
-今日遥感AI领域研究聚焦于跨模态行人重识别技术，特别关注可见光-红外模态缺失场景下的可信AI方法。武汉大学等机构提出模态自适应匹配新思路，推动多模态融合向鲁棒性与可解释性方向发展。
-
-## ✨ 今日亮点
-
-- 提出同质模态相似性双刃剑理论，解决跨模态匹配中的模态不平衡难题
-- 构建模态自适应匹配框架，提升可见光-红外行人重识别在模态缺失时的鲁棒性
-- 融合可信AI理念，为跨模态检索系统的可靠性提供新保障机制
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260727] Dual-Edged Homogeneous-Modality Similarity: Towards Visible-Infrared Modality-Incomplete Person Re-Identification with Modality Adaptive Matching | Xu Xin, Zhan Shuhao, Liu Wei, Wang Zheng, Jiang Kui, Lin Chia-Wen | School of Computer Science and Technology, Wuhan University of Science and Technology；Hubei Province Key Laboratory of Intelligent Information Processing and Real-time Industrial System, Wuhan University of Science and Technology；School of Computer Science, Wuhan University；Faculty of Computing, Harbin Institute of Technology；Department of Electrical Engineering and the Institute of Communications Engineering, National Tsing Hua University | 本文针对可见光-红外模态不完整行人重识别问题，提出同质模态相似性双刃剑理论与模态自适应匹配方法。 | [#354](https://github.com/Larry2000error/Larry-PaperClaw/issues/354) |
-
-## 🔎 观察
-
-- 跨模态行人重识别正从'模态对齐'转向'模态缺失容忍'，反映实际部署场景的复杂需求
-- 可信AI标签的出现表明该领域开始关注模型决策的可解释性与可靠性验证
 
 ---
 
