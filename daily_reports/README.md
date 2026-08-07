@@ -5,29 +5,29 @@
 # [20260730](./202607/20260730.md)
 ## 📌 今日概况
 
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
 
-今日研究聚焦于视觉-语言模型在检索任务中的优化，涵盖稀疏Token选择、细粒度上下文学习及医学影像检索等方向。多模态大语言模型与视觉检索的融合成为核心趋势，同时人脸超分辨率与重识别技术取得进展。
+今日研究聚焦视觉检索与多模态学习，涵盖视觉语言模型优化、人脸超分辨率、多模态大语言模型图像检索及脑电信号视觉解码四大方向。学术界正通过稀疏令牌选择、细粒度上下文学习与跨模态特征聚合等技术，提升复杂场景下的检索精度与效率。
 
 ## ✨ 今日亮点
 
-- ReToken提出单Token稀疏选择策略，有效压缩长上下文KV缓存
-- FiRE引入细粒度上下文学习，提升MLLM复杂图像检索能力
-- CXR-Retrieve针对胸部X光片构建组合式文本-图像检索框架
+- ReToken提出单令牌稀疏选择机制，显著压缩视觉语言模型KV缓存
+- FiRE引入细粒度上下文学习，增强多模态大语言模型复杂图像检索能力
+- EEG-EditBench构建可控图像编辑基准，探针脑电视觉解码模型性能边界
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260730] ReToken: One Token to Improve Vision-Language Models for Visual Retrieval | Xiao Yao, Tan Reuben, Zhu Zhen, Wu Yuqun, Gao Jianfeng, Hoiem Derek | University of Illinois at Urbana-Champaign；Microsoft Research；Google DeepMind | ReToken通过稀疏Token选择机制，以单Token优化视觉-语言模型的长上下文视觉检索效率。 | [#376](https://github.com/Larry2000error/Larry-PaperClaw/issues/376) |
-| [20260730] Collaborative Feature Aggregation for Face Super-Resolution and Robust Re-Identification | Hwang Juheon, Kim Taewan, Kang Jiwoo | Yonsei University；Dongduk Women's University；Sookmyung Women's University | 该研究提出协作特征聚合方法，联合优化人脸超分辨率与鲁棒重识别任务性能。 | [#377](https://github.com/Larry2000error/Larry-PaperClaw/issues/377) |
-| [20260730] FiRE: Enhancing MLLMs with Fine-Grained Context Learning for Complex Image Retrieval | Hou Bohan, Lin Haoqiang, Song Xuemeng, Wen Haokun, Liu Meng, Hu Yupeng, Zhao Xiangyu | Shandong University；City University of Hong Kong；Harbin Institute of Technology (Shenzhen)；Shandong Jianzhu University | FiRE为MLLM设计细粒度上下文学习模块，增强复杂组合图像检索的语义对齐能力。 | [#378](https://github.com/Larry2000error/Larry-PaperClaw/issues/378) |
-| [20260730] CXR-Retrieve: Compositional Text-to-Image Retrieval in Chest Radiography | Erez Tomer, Kimhi Moshe, Baskin Chaim, Rivlin Ehud | Technion – Israel Institute of Technology；Ben-Gurion University of the Negev | CXR-Retrieve构建胸部X光片组合式检索基准，推动医学视觉-语言模型的临床适用性。 | [#379](https://github.com/Larry2000error/Larry-PaperClaw/issues/379) |
+| [20260730] ReToken: One Token to Improve Vision-Language Models for Visual Retrieval | Xiao Yao, Tan Reuben, Zhu Zhen, Wu Yuqun, Gao Jianfeng, Hoiem Derek | University of Illinois at Urbana-Champaign；Microsoft Research；Google DeepMind | ReToken通过稀疏令牌选择策略优化视觉语言模型长上下文处理能力，降低KV缓存开销。 | [#376](https://github.com/Larry2000error/Larry-PaperClaw/issues/376) |
+| [20260730] Collaborative Feature Aggregation for Face Super-Resolution and Robust Re-Identification | Hwang Juheon, Kim Taewan, Kang Jiwoo | Yonsei University；Dongduk Women's University；Sookmyung Women's University | 该研究提出协同特征聚合框架，联合优化人脸超分辨率与跨视角行人重识别任务。 | [#377](https://github.com/Larry2000error/Larry-PaperClaw/issues/377) |
+| [20260730] FiRE: Enhancing MLLMs with Fine-Grained Context Learning for Complex Image Retrieval | Hou Bohan, Lin Haoqiang, Song Xuemeng, Wen Haokun, Liu Meng, Hu Yupeng, Zhao Xiangyu | Shandong University；City University of Hong Kong；Harbin Institute of Technology (Shenzhen)；Shandong Jianzhu University | FiRE设计细粒度上下文学习机制，提升多模态大语言模型在组合图像检索中的复杂推理表现。 | [#378](https://github.com/Larry2000error/Larry-PaperClaw/issues/378) |
+| [20260730] EEG-EditBench: Probing Visual Information in EEG-Image Retrieval Models with Controlled Image Edits | Zhang Kaifan, He Lihuo, Ji Yuqi, Ke Junjie, Wu Lukun, You Tianhao, Gao Xinbo | School of Electronic Engineering, Xidian University；School of Software, Tsinghua University；Chongqing University of Posts and Telecommunications | EEG-EditBench建立可控图像编辑评估体系，系统量化脑电-图像检索模型的视觉信息解码能力。 | [#383](https://github.com/Larry2000error/Larry-PaperClaw/issues/383) |
 
 ## 🔎 观察
 
-- 视觉检索研究正从通用场景向医学等专业领域纵深发展，组合式推理成为关键能力。
-- Token效率优化与细粒度学习形成技术张力，反映多模态模型规模化与精准化的双重诉求。
+- 视觉检索领域呈现'大模型轻量化'与'细粒度理解'并行的技术路线分化
+- 脑电-视觉跨模态研究从概念验证迈向标准化基准建设，临床转化潜力值得关注
 
 ---
 
