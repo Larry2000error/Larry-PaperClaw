@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260805](./202608/20260805.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI领域聚焦多模态检索与视觉语言理解。三项研究分别探索上下文组合图像检索、长文本监督的视觉语言对齐，以及视频时序预测检索，体现出从静态匹配向动态推理、从短文本向长文本扩展的技术演进趋势。
+
+## ✨ 今日亮点
+
+- CoCo-IR提出上下文组合图像检索新范式，融合多模态大模型与交互推理
+- 长段落文本监督取代传统短标题，重塑视觉语言对比学习框架
+- 视频前缀预测未来状态，实现跨实例时序检索新机制
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260805] CoCo-IR: Contextual Composed Image Retrieval | Cao Shengcao, Tanmaya Shekhar Dabral, Ding Zhongli, Shanbhogue Madhuri, Chen Kaifeng, Li Zhe, Seyedhosseini Mojtaba, Wang Yu-Xiong, Gui Liang-Yan | University of Illinois Urbana-Champaign；Google DeepMind；OpenAI | CoCo-IR构建上下文组合图像检索基准，利用多模态大模型实现参考图像、修改文本与视觉上下文的联合推理。 | [#395](https://github.com/Larry2000error/Larry-PaperClaw/issues/395) |
+| [20260805] A Paragraph is Worth a Thousand Captions: Rethinking Text Supervision for Vision-Language Retrieval | Ghazanfari Mahyar, Tabrizian Amin, Aziz Arsyi, Wang Binshuai, Wei Peng | The George Washington University | 该研究以段落级长文本替代短标题监督，重新评估对比学习在视觉语言检索中的文本粒度效应。 | [#396](https://github.com/Larry2000error/Larry-PaperClaw/issues/396) |
+| [20260805] Predict, Then Retrieve: Cross-Instance Future-State Retrieval from Video Prefixes | Vo Quynh, Nguyen Thong, Do Vinh-Hien, Nguyen Cong-Duy, Luu Anh-Tuan | Centre for AI Research, VinUniversity；National University of Singapore | 提出先预测未来状态再检索的范式，从视频前缀推断跨实例的后续视觉内容。 | [#397](https://github.com/Larry2000error/Larry-PaperClaw/issues/397) |
+
+## 🔎 观察
+
+- 视觉语言检索正从单一模态对齐转向复杂上下文推理，长文本与交互式查询成为新焦点
+- 时序预测与检索的结合预示视频理解任务向因果推理和前瞻性建模深化
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260804](./202608/20260804.md)
 ## 📌 今日概况
 
@@ -59,39 +91,6 @@ Powered by OpenClaw🦞
 
 - 重识别任务正从封闭集向开放集、从单一模态向跨视角/跨域扩展，3D表征与图结构方法成为关键突破口
 - 多模态学习研究重心从规模扩张转向质量优化，数据重加权和嵌入空间校准技术受到更多关注
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260730](./202607/20260730.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日研究聚焦视觉检索与多模态学习，涵盖视觉语言模型优化、人脸超分辨率、多模态大语言模型图像检索及脑电信号视觉解码四大方向。学术界正通过稀疏令牌选择、细粒度上下文学习与跨模态特征聚合等技术，提升复杂场景下的检索精度与效率。
-
-## ✨ 今日亮点
-
-- ReToken提出单令牌稀疏选择机制，显著压缩视觉语言模型KV缓存
-- FiRE引入细粒度上下文学习，增强多模态大语言模型复杂图像检索能力
-- EEG-EditBench构建可控图像编辑基准，探针脑电视觉解码模型性能边界
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260730] ReToken: One Token to Improve Vision-Language Models for Visual Retrieval | Xiao Yao, Tan Reuben, Zhu Zhen, Wu Yuqun, Gao Jianfeng, Hoiem Derek | University of Illinois at Urbana-Champaign；Microsoft Research；Google DeepMind | ReToken通过稀疏令牌选择策略优化视觉语言模型长上下文处理能力，降低KV缓存开销。 | [#376](https://github.com/Larry2000error/Larry-PaperClaw/issues/376) |
-| [20260730] Collaborative Feature Aggregation for Face Super-Resolution and Robust Re-Identification | Hwang Juheon, Kim Taewan, Kang Jiwoo | Yonsei University；Dongduk Women's University；Sookmyung Women's University | 该研究提出协同特征聚合框架，联合优化人脸超分辨率与跨视角行人重识别任务。 | [#377](https://github.com/Larry2000error/Larry-PaperClaw/issues/377) |
-| [20260730] FiRE: Enhancing MLLMs with Fine-Grained Context Learning for Complex Image Retrieval | Hou Bohan, Lin Haoqiang, Song Xuemeng, Wen Haokun, Liu Meng, Hu Yupeng, Zhao Xiangyu | Shandong University；City University of Hong Kong；Harbin Institute of Technology (Shenzhen)；Shandong Jianzhu University | FiRE设计细粒度上下文学习机制，提升多模态大语言模型在组合图像检索中的复杂推理表现。 | [#378](https://github.com/Larry2000error/Larry-PaperClaw/issues/378) |
-| [20260730] EEG-EditBench: Probing Visual Information in EEG-Image Retrieval Models with Controlled Image Edits | Zhang Kaifan, He Lihuo, Ji Yuqi, Ke Junjie, Wu Lukun, You Tianhao, Gao Xinbo | School of Electronic Engineering, Xidian University；School of Software, Tsinghua University；Chongqing University of Posts and Telecommunications | EEG-EditBench建立可控图像编辑评估体系，系统量化脑电-图像检索模型的视觉信息解码能力。 | [#383](https://github.com/Larry2000error/Larry-PaperClaw/issues/383) |
-
-## 🔎 观察
-
-- 视觉检索领域呈现'大模型轻量化'与'细粒度理解'并行的技术路线分化
-- 脑电-视觉跨模态研究从概念验证迈向标准化基准建设，临床转化潜力值得关注
 
 ---
 
