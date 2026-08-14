@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260811](./202608/20260811.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦多模态检索领域，两篇论文分别从通用大模型能力与垂直领域应用两个维度展开探索。前者评估前沿LLM在文本-图像检索中的零样本表现，后者针对特定场景（如安防监控）重新审视检索范式，体现从通用基准向实际落地的研究转向。
+
+## ✨ 今日亮点
+
+- 前沿LLM原生多模态嵌入能力获系统评估，Gemini等模型在难负样本检索中表现受关注
+- 垂直领域文本图像检索提出新框架，解决安防监控等场景的多匹配与域适应难题
+- 研究呈现从通用基准测试向特定场景实用化迁移的趋势
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260811] Can Frontier LLMs Match Natively Multimodal Embeddings? A Comparison on Hard-Negative Text-to-Image Retrieval | Dutta Archan, Kanungo Vyanktesh | Westcliff University | 该研究对比前沿大语言模型与原生多模态嵌入在难负样本文本-图像检索任务中的零样本排序性能。 | [#414](https://github.com/Larry2000error/Larry-PaperClaw/issues/414) |
+| [20260811] Rethinking Text-Based Image Retrieval in Specific Domain | Tan Jingyang, Yang Sheng, Chen Yuanpeng, Wang Jian, Ye Nianjin, Xing Chen, Jia Lanpeng | Department of Electronic and Communication Engineering, Harbin Institute of Technology；School of Data Science, Fudan University；Changhong Intelligent Robot | 该工作针对安防监控等特定领域，重新思考文本图像检索范式，提出多匹配检索的新解决方案。 | [#415](https://github.com/Larry2000error/Larry-PaperClaw/issues/415) |
+
+## 🔎 观察
+
+- 多模态检索正从通用数据集基准测试向垂直领域深度适配演进，实际部署需求驱动研究范式转变
+- 大模型零样本能力与专用嵌入模型的性能边界尚待厘清，评估方法论本身成为关键研究问题
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260810](./202608/20260810.md)
 ## 📌 今日概况
 
@@ -56,37 +87,6 @@ Powered by OpenClaw🦞
 
 - 时序信息利用正成为跨视角定位的新趋势，单帧方法面临性能瓶颈
 - 测试时自适应与开放地图数据结合，或成提升模型泛化性的关键路径
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260807](./202608/20260807.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦于细粒度图像检索与跨模态重识别两大方向。前者针对执法场景中的刀具识别提出结构化局部表征方法，后者探索双空间模态一致性学习以实现通用跨模态匹配，均体现视觉理解任务向精细化、鲁棒化发展的趋势。
-
-## ✨ 今日亮点
-
-- KnifeHunter提出CoRe-Net网络，通过结构化局部表征提升刀具细粒度检索精度
-- 双空间模态一致性学习框架，联合优化空间嵌入与频域特征实现跨模态统一
-- 两研究分别面向执法取证与通用重识别场景，推动视觉检索技术实用化
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260807] KnifeHunter: Structured Local Representation Learning for Fine-Grained Knife Image Retrieval in Law Enforcement | Syed Sameed Husain, Ong Eng-Jon, Simpson Stephen, Hamshere Trevor, Turner Matt, Bober Miroslaw | JOURNAL OF LATEX CLASS FILES | KnifeHunter提出结构化局部表征学习方法CoRe-Net，用于执法场景中的细粒度刀具图像检索与取证识别。 | [#405](https://github.com/Larry2000error/Larry-PaperClaw/issues/405) |
-| [20260807] Dual-Space Modality Consistency Learning for Universal Cross-Modal Re-Identification | Zhao Yujian, Zhao Yukang, Liu Hankun, Xu Haoxuan, Li Bo, Wan Hanzi, Niu Guanglin | Harbin Institute of Technology | 提出双空间模态一致性学习框架，联合空间嵌入与频域特征实现通用跨模态重识别。 | [#406](https://github.com/Larry2000error/Larry-PaperClaw/issues/406) |
-
-## 🔎 观察
-
-- 细粒度检索与跨模态匹配正成为视觉识别核心挑战，局部结构与多域融合是关键技术路径
-- 应用场景驱动明显：执法安全需求推动刀具识别研究，智能监控需求催生跨模态统一框架
 
 ---
 
