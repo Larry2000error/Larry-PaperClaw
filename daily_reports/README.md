@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260808](./202608/20260808.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日研究聚焦跨视角地理定位的时序建模创新。SeqLoc突破单帧限制，针对特征稀疏场景提出序列聚合机制，结合测试时自适应技术提升定位鲁棒性，为卫星-地面图像匹配开辟新路径。
+
+## ✨ 今日亮点
+
+- SeqLoc提出序列聚合策略，解决特征稀疏场景下的跨视角定位难题
+- 融合测试时自适应技术，增强模型对未知环境的泛化能力
+- 基于OpenStreetMap构建验证框架，推动实际场景应用落地
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260808] SeqLoc: Beyond the Single Frame for Cross-View Geo-Localization in Feature-Sparse Scenes | Zheng Junwei, Huang Yun, Dai Ruize, Liu Ruiping, Chen Yufan, Peng Kunyu, Yang Kailun, Zhang Jiaming, Wang Guangming, Wysocki Olaf, Stiefelhagen Rainer | Karlsruhe Institute of Technology；Hunan University；University of Cambridge | SeqLoc通过序列聚合与测试时自适应，突破单帧限制，显著提升特征稀疏场景下的跨视角地理定位精度。 | [#408](https://github.com/Larry2000error/Larry-PaperClaw/issues/408) |
+
+## 🔎 观察
+
+- 时序信息利用正成为跨视角定位的新趋势，单帧方法面临性能瓶颈
+- 测试时自适应与开放地图数据结合，或成提升模型泛化性的关键路径
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260807](./202608/20260807.md)
 ## 📌 今日概况
 
@@ -57,38 +87,6 @@ Powered by OpenClaw🦞
 
 - 遥感多模态检索正从静态任务转向动态持续学习，增量场景下的跨模态对齐稳定性成为关键瓶颈
 - 硬负样本挖掘与思维链推理的结合，或为提升检索模型失败案例学习能力提供通用范式
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260805](./202608/20260805.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦多模态检索与视觉-语言理解，涵盖图像检索中的上下文推理、长文本监督学习及视频时序预测检索三大方向。学术界正从单一模态匹配转向复杂语义理解与跨实例推理，大模型技术持续渗透检索任务。
-
-## ✨ 今日亮点
-
-- CoCo-IR提出上下文组合图像检索，支持多条件交互式图像搜索
-- 长段落文本监督取代短标题，重塑视觉-语言检索范式
-- 视频前缀预测未来状态，实现跨实例时序检索新任务
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260805] CoCo-IR: Contextual Composed Image Retrieval | Cao Shengcao, Tanmaya Shekhar Dabral, Ding Zhongli, Shanbhogue Madhuri, Chen Kaifeng, Li Zhe, Seyedhosseini Mojtaba, Wang Yu-Xiong, Gui Liang-Yan | University of Illinois Urbana-Champaign；Google DeepMind；OpenAI | CoCo-IR构建上下文组合图像检索基准，利用大多模态模型实现复杂条件交互式图像搜索。 | [#395](https://github.com/Larry2000error/Larry-PaperClaw/issues/395) |
-| [20260805] A Paragraph is Worth a Thousand Captions: Rethinking Text Supervision for Vision-Language Retrieval | Ghazanfari Mahyar, Tabrizian Amin, Aziz Arsyi, Wang Binshuai, Wei Peng | The George Washington University | 该研究以段落级长文本替代传统短标题监督，显著提升视觉-语言检索的语义对齐能力。 | [#396](https://github.com/Larry2000error/Larry-PaperClaw/issues/396) |
-| [20260805] Predict, Then Retrieve: Cross-Instance Future-State Retrieval from Video Prefixes | Vo Quynh, Nguyen Thong, Do Vinh-Hien, Nguyen Cong-Duy, Luu Anh-Tuan | Centre for AI Research, VinUniversity；National University of Singapore | 提出跨实例未来状态检索任务，通过视频前缀预测并检索目标未来帧，拓展时序推理应用。 | [#397](https://github.com/Larry2000error/Larry-PaperClaw/issues/397) |
-
-## 🔎 观察
-
-- 检索任务正从静态匹配向动态推理演进，时序预测与上下文组合成为新增长点
-- 长文本监督趋势明显，短标题数据瓶颈或推动视觉-语言预训练数据范式变革
 
 ---
 
