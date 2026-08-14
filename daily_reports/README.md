@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260810](./202608/20260810.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究聚焦跨视角地理定位与无人机视觉理解两大方向。前者致力于消除卫星-地面图像间的几何形变干扰，后者探索细粒度跨模态对齐技术。两项工作均体现特征空间学习与多源数据融合的持续深化趋势。
+
+## ✨ 今日亮点
+
+- 无变形跨视角地理定位：在特征空间共识挖掘替代传统几何校正
+- 无人机细粒度理解：粒度感知区域对齐联合语义原型学习
+- 中科院空天院主导无人机视觉-语言导航新框架
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260810] Warp-free Cross-view Geo-localization via Feature-space Consensus Mining | Song Zhuo, Xu Lian, Jiang Runqing, Zhang Yongjian, Li Kunhong, Zhang Ye, Guo Yulan | Sun Yat-sen University；The University of Western Australia | 中山大学团队提出特征空间共识挖掘方法，无需显式几何变形校正即可实现跨视角地理定位。 | [#411](https://github.com/Larry2000error/Larry-PaperClaw/issues/411) |
+| [20260810] GRASP: Granularity-Aware Region Alignment and Semantic Prototype Learning for Fine-Grained Cross-Modal Understanding in Drone Views | Cui Jiahui, Zhao Yan, Wei Kan, Zhu Enze, Zhang Peirong, Wang Lei, Wang Yiru | Aerospace Information Research Institute, Chinese Academy of Sciences；Key Laboratory of Target Cognition and Application Technology (TCAT)；University of Chinese Academy of Sciences；School of Electronic, Electrical and Communication Engineering, University of Chinese Academy of Sciences | 中科院空天院提出GRASP框架，通过粒度感知区域对齐与语义原型学习提升无人机细粒度跨模态理解能力。 | [#412](https://github.com/Larry2000error/Larry-PaperClaw/issues/412) |
+
+## 🔎 观察
+
+- 跨视角任务正从几何显式建模转向特征隐式对齐，降低对先验配准精度的依赖
+- 无人机视觉-语言研究向细粒度区域级理解演进，支撑更复杂的导航与交互应用
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260808](./202608/20260808.md)
 ## 📌 今日概况
 
@@ -56,37 +87,6 @@ Powered by OpenClaw🦞
 
 - 细粒度检索与跨模态匹配正成为视觉识别核心挑战，局部结构与多域融合是关键技术路径
 - 应用场景驱动明显：执法安全需求推动刀具识别研究，智能监控需求催生跨模态统一框架
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260806](./202608/20260806.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦多模态检索的鲁棒性与持续学习能力。一方面，通过硬负样本与思维链机制提升检索失败案例的学习效率；另一方面，针对遥感图像-文本检索的增量场景，探索双适配器架构与排序感知蒸馏的结合，以缓解灾难性遗忘。
-
-## ✨ 今日亮点
-
-- 硬负样本驱动的检索中心思维链，统一多模态检索框架
-- 双适配器架构服务遥感图像-文本持续检索任务
-- 排序感知蒸馏机制缓解跨模态对齐中的知识遗忘
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260806] Learning from Failures: Retrieval-Centric CoT via Hard Negatives for Unified Multimodal Retrieval | Sun Zelong, Wang Jun, Yang Kaicheng, Gu Tiancheng, Feng Ziyong, Lu Zhiwu | Glint Lab | 提出检索中心思维链方法，利用硬负样本构建失败感知反馈机制，增强多模态检索的统一性与鲁棒性。 | [#399](https://github.com/Larry2000error/Larry-PaperClaw/issues/399) |
-| [20260806] DARAD: Dual Adapters and Ranking-Aware Distillation for Continual Remote Sensing Image-Text Retrieval | Chen Xi, Chen Xu, Jia Xiangyang, Wang Wei, Zhang Xu, Sun Zhenyuan | School of Computer Science, Wuhan University；Beijing Institute for General Artificial Intelligence (BIGAI) | 设计双适配器与排序感知蒸馏框架，解决遥感图像-文本检索在持续学习场景下的灾难性遗忘问题。 | [#400](https://github.com/Larry2000error/Larry-PaperClaw/issues/400) |
-
-## 🔎 观察
-
-- 遥感多模态检索正从静态任务转向动态持续学习，增量场景下的跨模态对齐稳定性成为关键瓶颈
-- 硬负样本挖掘与思维链推理的结合，或为提升检索模型失败案例学习能力提供通用范式
 
 ---
 
