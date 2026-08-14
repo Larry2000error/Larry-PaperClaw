@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260807](./202608/20260807.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦于细粒度图像检索与跨模态重识别两大方向。前者针对执法场景中的刀具识别提出结构化局部表征方法，后者探索双空间模态一致性学习以实现通用跨模态匹配，均体现视觉理解任务向精细化、鲁棒化发展的趋势。
+
+## ✨ 今日亮点
+
+- KnifeHunter提出CoRe-Net网络，通过结构化局部表征提升刀具细粒度检索精度
+- 双空间模态一致性学习框架，联合优化空间嵌入与频域特征实现跨模态统一
+- 两研究分别面向执法取证与通用重识别场景，推动视觉检索技术实用化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260807] KnifeHunter: Structured Local Representation Learning for Fine-Grained Knife Image Retrieval in Law Enforcement | Syed Sameed Husain, Ong Eng-Jon, Simpson Stephen, Hamshere Trevor, Turner Matt, Bober Miroslaw | JOURNAL OF LATEX CLASS FILES | KnifeHunter提出结构化局部表征学习方法CoRe-Net，用于执法场景中的细粒度刀具图像检索与取证识别。 | [#405](https://github.com/Larry2000error/Larry-PaperClaw/issues/405) |
+| [20260807] Dual-Space Modality Consistency Learning for Universal Cross-Modal Re-Identification | Zhao Yujian, Zhao Yukang, Liu Hankun, Xu Haoxuan, Li Bo, Wan Hanzi, Niu Guanglin | Harbin Institute of Technology | 提出双空间模态一致性学习框架，联合空间嵌入与频域特征实现通用跨模态重识别。 | [#406](https://github.com/Larry2000error/Larry-PaperClaw/issues/406) |
+
+## 🔎 观察
+
+- 细粒度检索与跨模态匹配正成为视觉识别核心挑战，局部结构与多域融合是关键技术路径
+- 应用场景驱动明显：执法安全需求推动刀具识别研究，智能监控需求催生跨模态统一框架
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260806](./202608/20260806.md)
 ## 📌 今日概况
 
@@ -58,36 +89,6 @@ Powered by OpenClaw🦞
 
 - 检索任务正从静态匹配向动态推理演进，时序预测与上下文组合成为新增长点
 - 长文本监督趋势明显，短标题数据瓶颈或推动视觉-语言预训练数据范式变革
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260804](./202608/20260804.md)
-## 📌 今日概况
-
-今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日仅收录1篇论文，聚焦多模态学习领域。该研究探索零样本草图图像检索任务，通过语义一致的提示学习方法优化CLIP模型，解决草图与图像跨模态对齐难题，为视觉-语言预训练模型的下游适配提供新思路。
-
-## ✨ 今日亮点
-
-- 提出语义一致提示学习框架，提升零样本草图检索性能
-- 基于CLIP架构优化提示工程，实现跨模态语义对齐
-- 无需训练数据即可适配新类别，拓展零样本学习边界
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260804] SeCo-SBIR: Semantically Consistent Prompt Learning for Zero-Shot Sketch-Based Image Retrieval | Long Hoang Dang, Tuan Nguyen Huu, Nguyen Minh Hieu, Tu Minh Phuong | Posts and Telecommunications Institute of Technology | SeCo-SBIR提出语义一致提示学习方法，优化CLIP实现零样本草图图像检索，解决跨模态语义鸿沟问题。 | [#393](https://github.com/Larry2000error/Larry-PaperClaw/issues/393) |
-
-## 🔎 观察
-
-- 提示学习正成为CLIP微调的主流范式，但语义一致性约束的设计仍缺乏系统性理论指导
-- 草图检索任务对细粒度跨模态对齐要求较高，提示学习相比全参数微调更具实用价值
 
 ---
 
