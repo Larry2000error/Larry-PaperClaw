@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260812](./202608/20260812.md)
+## 📌 今日概况
+
+今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI领域聚焦视觉-语言模型的跨模态检索与图像地理定位。MASCOT提出模型感知的子模覆盖方法优化多属性文本到图像检索，GeoBridge则通过解耦语义条件与黎曼流匹配实现生成式图像地理定位，体现生成式AI与几何约束结合的趋势。
+
+## ✨ 今日亮点
+
+- MASCOT引入模型感知子模函数，解决复合属性查询的检索多样性与覆盖性平衡问题
+- GeoBridge创新采用黎曼流匹配框架，实现语义条件与几何生成的解耦控制
+- 两篇论文均体现视觉-语言模型向精细化属性操控与结构化空间推理的演进
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260812] MASCOT: Model-Aware Submodular Coverage for Composite-Attribute Text-to-Image Retrieval | Sharma Aaryan, Vishak Prasad C, Singh Virendra, Ramakrishnan Ganesh | Indian Institute of Technology Bombay | MASCOT提出模型感知子模覆盖框架，通过复合属性文本实现多样化图像检索，优化结果覆盖性与相关性权衡。 | [#417](https://github.com/Larry2000error/Larry-PaperClaw/issues/417) |
+| [20260812] GeoBridge: Decoupled Semantic Conditioning for Generative Image Geolocalization | Dou Zhiyang, Han Xumeng, Peng Fengde, Wang Zipeng, Zhao Moxuan, Huang Zhipei, Han Zhenjun | University of Chinese Academy of Sciences；School of Advanced Interdisciplinary Sciences；School of Electronic, Electrical and Communication Engineering；Shenzhen Institutes of Advanced Technology | GeoBridge基于黎曼流匹配构建解耦语义条件生成模型，实现图像地理定位中语义与几何空间的独立可控生成。 | [#418](https://github.com/Larry2000error/Larry-PaperClaw/issues/418) |
+
+## 🔎 观察
+
+- 子模优化与流匹配等数学工具正深度融入遥感视觉任务，提升模型可解释性与可控性
+- 图像地理定位从判别式向生成式范式迁移，或推动卫星图像合成与定位联合建模新方向
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260811](./202608/20260811.md)
 ## 📌 今日概况
 
@@ -57,36 +88,6 @@ Powered by OpenClaw🦞
 
 - 跨视角任务正从几何显式建模转向特征隐式对齐，降低对先验配准精度的依赖
 - 无人机视觉-语言研究向细粒度区域级理解演进，支撑更复杂的导航与交互应用
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260808](./202608/20260808.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日研究聚焦跨视角地理定位的时序建模创新。SeqLoc突破单帧限制，针对特征稀疏场景提出序列聚合机制，结合测试时自适应技术提升定位鲁棒性，为卫星-地面图像匹配开辟新路径。
-
-## ✨ 今日亮点
-
-- SeqLoc提出序列聚合策略，解决特征稀疏场景下的跨视角定位难题
-- 融合测试时自适应技术，增强模型对未知环境的泛化能力
-- 基于OpenStreetMap构建验证框架，推动实际场景应用落地
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260808] SeqLoc: Beyond the Single Frame for Cross-View Geo-Localization in Feature-Sparse Scenes | Zheng Junwei, Huang Yun, Dai Ruize, Liu Ruiping, Chen Yufan, Peng Kunyu, Yang Kailun, Zhang Jiaming, Wang Guangming, Wysocki Olaf, Stiefelhagen Rainer | Karlsruhe Institute of Technology；Hunan University；University of Cambridge | SeqLoc通过序列聚合与测试时自适应，突破单帧限制，显著提升特征稀疏场景下的跨视角地理定位精度。 | [#408](https://github.com/Larry2000error/Larry-PaperClaw/issues/408) |
-
-## 🔎 观察
-
-- 时序信息利用正成为跨视角定位的新趋势，单帧方法面临性能瓶颈
-- 测试时自适应与开放地图数据结合，或成提升模型泛化性的关键路径
 
 ---
 
