@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260813](./202608/20260813.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日遥感AI领域研究聚焦于多模态时空建模，大连理工大学团队提出PATHS框架，融合RGB-事件相机数据进行行人重识别。该工作通过分层多模态融合与提示感知时空Transformer，解决低光照场景下的视觉识别难题，体现了事件相机在遥感监控应用中的潜力。
+
+## ✨ 今日亮点
+
+- 首创RGB-事件双模态行人重识别框架，突破低光照性能瓶颈
+- 设计分层多模态融合机制，实现异构数据互补对齐
+- 引入提示感知时空Transformer，增强时序特征动态建模能力
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260813] Paths: Prompt-aware Spatio-temporal Transformer with Hierarchical Multi-modal Fusion for RGB-Event Video Person Re-Identification | Huo Yakun, Wang Yingquan, Liu Yangyang, Yan Tianyu, Zhuge Yunzhi, Zhang Pingping, Lu Huchuan | Dalian University of Technology | PATHS框架通过提示感知时空Transformer与分层多模态融合，首次实现RGB-事件视频的行人重识别，显著提升低光照场景识别精度。 | [#420](https://github.com/Larry2000error/Larry-PaperClaw/issues/420) |
+
+## 🔎 观察
+
+- 事件相机与RGB融合正成为解决极端光照遥感监控的新范式，但硬件同步与标注成本仍是规模化瓶颈
+- 提示学习机制从NLP向视觉迁移，在跨模态遥感任务中展现出少样本适应潜力
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260812](./202608/20260812.md)
 ## 📌 今日概况
 
@@ -57,37 +87,6 @@ Powered by OpenClaw🦞
 
 - 多模态检索正从通用数据集基准测试向垂直领域深度适配演进，实际部署需求驱动研究范式转变
 - 大模型零样本能力与专用嵌入模型的性能边界尚待厘清，评估方法论本身成为关键研究问题
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260810](./202608/20260810.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究聚焦跨视角地理定位与无人机视觉理解两大方向。前者致力于消除卫星-地面图像间的几何形变干扰，后者探索细粒度跨模态对齐技术。两项工作均体现特征空间学习与多源数据融合的持续深化趋势。
-
-## ✨ 今日亮点
-
-- 无变形跨视角地理定位：在特征空间共识挖掘替代传统几何校正
-- 无人机细粒度理解：粒度感知区域对齐联合语义原型学习
-- 中科院空天院主导无人机视觉-语言导航新框架
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260810] Warp-free Cross-view Geo-localization via Feature-space Consensus Mining | Song Zhuo, Xu Lian, Jiang Runqing, Zhang Yongjian, Li Kunhong, Zhang Ye, Guo Yulan | Sun Yat-sen University；The University of Western Australia | 中山大学团队提出特征空间共识挖掘方法，无需显式几何变形校正即可实现跨视角地理定位。 | [#411](https://github.com/Larry2000error/Larry-PaperClaw/issues/411) |
-| [20260810] GRASP: Granularity-Aware Region Alignment and Semantic Prototype Learning for Fine-Grained Cross-Modal Understanding in Drone Views | Cui Jiahui, Zhao Yan, Wei Kan, Zhu Enze, Zhang Peirong, Wang Lei, Wang Yiru | Aerospace Information Research Institute, Chinese Academy of Sciences；Key Laboratory of Target Cognition and Application Technology (TCAT)；University of Chinese Academy of Sciences；School of Electronic, Electrical and Communication Engineering, University of Chinese Academy of Sciences | 中科院空天院提出GRASP框架，通过粒度感知区域对齐与语义原型学习提升无人机细粒度跨模态理解能力。 | [#412](https://github.com/Larry2000error/Larry-PaperClaw/issues/412) |
-
-## 🔎 观察
-
-- 跨视角任务正从几何显式建模转向特征隐式对齐，降低对先验配准精度的依赖
-- 无人机视觉-语言研究向细粒度区域级理解演进，支撑更复杂的导航与交互应用
 
 ---
 
