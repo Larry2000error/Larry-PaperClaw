@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260815](./202608/20260815.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日遥感AI领域研究聚焦于跨模态学习技术，国防科技大学等机构提出MODAL框架，通过模型驱动的稀疏解耦与文本-图像差分滤波实现多模态目标重识别，推动特征解耦与稀疏编码在遥感场景中的应用。
+
+## ✨ 今日亮点
+
+- MODAL框架实现多模态目标重识别，融合稀疏编码与模型驱动深度学习
+- 提出文本-图像差分滤波机制，优化跨模态特征对齐与判别
+- 国防科大、湖南大学、合工大联合攻关特征解耦技术
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260815] MODAL: Multi-Modal Object Re-ID via Model-Driven Sparse Decoupling and Text-Image Differential Filtering | Huang Chengbo, Huang Jun-Jie, Lan Long, Liu Tianrui, Li Xueqiong, Peng Yuanxi, Liu Xinwang, Wang Meng | National University of Defense Technology；Hunan University；Hefei University of Technology | MODAL通过模型驱动稀疏解耦与文本-图像差分滤波，实现多模态目标重识别中的特征分离与噪声抑制。 | [#422](https://github.com/Larry2000error/Larry-PaperClaw/issues/422) |
+
+## 🔎 观察
+
+- 稀疏编码与深度学习的模型驱动结合成为跨模态Re-ID的新范式
+- 多机构联合研究反映该方向在国防与民用遥感应用中的战略价值
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260813](./202608/20260813.md)
 ## 📌 今日概况
 
@@ -56,37 +86,6 @@ Powered by OpenClaw🦞
 
 - 图文检索正从相似度匹配转向结构化覆盖优化，子模函数与模型内部知识的结合值得遥感领域借鉴。
 - 生成式范式开始渗透图像定位任务，流匹配等连续建模方法可能重塑地理坐标预测的技术路线。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260811](./202608/20260811.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦多模态检索领域，两篇论文分别从通用大模型能力与垂直领域应用两个维度展开探索。前者评估前沿LLM在文本-图像检索中的零样本表现，后者针对特定场景（如安防监控）重新审视检索范式，体现从通用基准向实际落地的研究转向。
-
-## ✨ 今日亮点
-
-- 前沿LLM原生多模态嵌入能力获系统评估，Gemini等模型在难负样本检索中表现受关注
-- 垂直领域文本图像检索提出新框架，解决安防监控等场景的多匹配与域适应难题
-- 研究呈现从通用基准测试向特定场景实用化迁移的趋势
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260811] Can Frontier LLMs Match Natively Multimodal Embeddings? A Comparison on Hard-Negative Text-to-Image Retrieval | Dutta Archan, Kanungo Vyanktesh | Westcliff University | 该研究对比前沿大语言模型与原生多模态嵌入在难负样本文本-图像检索任务中的零样本排序性能。 | [#414](https://github.com/Larry2000error/Larry-PaperClaw/issues/414) |
-| [20260811] Rethinking Text-Based Image Retrieval in Specific Domain | Tan Jingyang, Yang Sheng, Chen Yuanpeng, Wang Jian, Ye Nianjin, Xing Chen, Jia Lanpeng | Department of Electronic and Communication Engineering, Harbin Institute of Technology；School of Data Science, Fudan University；Changhong Intelligent Robot | 该工作针对安防监控等特定领域，重新思考文本图像检索范式，提出多匹配检索的新解决方案。 | [#415](https://github.com/Larry2000error/Larry-PaperClaw/issues/415) |
-
-## 🔎 观察
-
-- 多模态检索正从通用数据集基准测试向垂直领域深度适配演进，实际部署需求驱动研究范式转变
-- 大模型零样本能力与专用嵌入模型的性能边界尚待厘清，评估方法论本身成为关键研究问题
 
 ---
 
