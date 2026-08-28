@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260827](./202608/20260827.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究聚焦视觉-语言模型的可解释性与跨模态检索。KAIST团队揭示VLM视觉检索头的因果机制；UniGeo探索文本引导的跨视角地理定位；阿里团队提出生成式图像检索新范式。多模态对齐与可解释性成为核心趋势。
+
+## ✨ 今日亮点
+
+- 首次定位VLM中的视觉检索头，揭示注意力机制的因果可解释性
+- 文本引导跨视角地理定位，融合无人机影像与大语言模型
+- 生成式图像检索新框架，以隐式思维链实现视觉搜索
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260827] Retrieval Heads Meet Vision: Uncovering How VLMs Locate and Extract Visual Information | Park Chanho, Choi Daehyeon, Lee Jihyun, Sung Minhyuk | KAIST；Independent Researcher | KAIST等通过因果干预识别VLM中的视觉检索头，揭示模型如何定位并提取视觉信息。 | [#447](https://github.com/Larry2000error/Larry-PaperClaw/issues/447) |
+| [20260827] UniGeo: A Multi-modal Large Language Model for Text-Guided Cross-View Geo-Localization | Wen Jiahao, Yu Hang, Zheng Zhedong | Institution unavailable | UniGeo提出多模态大语言模型，以自然语言描述实现卫星图与无人机影像的跨视角地理定位。 | [#448](https://github.com/Larry2000error/Larry-PaperClaw/issues/448) |
+| [20260827] PailitaoGR: Latent Think-with-Images for Generative Image Retrieval | Fan Xiaomeng, Liu Yueran, Zhou Shengyu, Fu Chenghan, Guan Wanxian, Li Feng, Yu Chuan, Xu Jian, Zheng Bo | Alibaba Group | 阿里团队提出PailitaoGR，以隐式思维链机制实现生成式图像检索，革新电商视觉搜索范式。 | [#449](https://github.com/Larry2000error/Larry-PaperClaw/issues/449) |
+
+## 🔎 观察
+
+- 视觉-语言模型的可解释性研究从NLP向视觉领域延伸，因果分析方法成为新工具
+- 生成式检索范式兴起，从判别式相似度匹配转向隐式推理生成，或重塑图像搜索架构
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260826](./202608/20260826.md)
 ## 📌 今日概况
 
@@ -56,37 +88,6 @@ Powered by OpenClaw🦞
 
 - 样本级权重学习取代全局策略，反映检索任务向细粒度优化的发展趋势
 - 产学研机构联合发文，显示多模态检索技术正加速从学术走向产业应用
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260821](./202608/20260821.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦视觉-语言模型在遥感领域的规模化应用。DamageScope探索卫星影像灾害评估的检索增强生成范式，EviRank则针对多模态图像重排序提出结构化证据框架。两研究均体现大模型时代遥感智能分析从单一任务向复杂推理演进，跨模态检索与可解释性成为关键方向。
-
-## ✨ 今日亮点
-
-- DamageScope首次将RAG范式引入卫星灾害评估，实现百万级影像高效检索
-- EviRank构建结构化证据网络，解决多模态查询中的组合约束满足难题
-- 产学研深度融合：港科广与腾讯合作推动多模态检索技术落地
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260821] DamageScope: Vision-Language Retrieval at Scale for Disaster Damage Assessment from Satellite Imagery | Ravi K. Rajendran, Debnath Biplob, Sankaradas Murugan, Srimat T. Chakradhar | NEC Laboratories America | DamageScale提出面向卫星影像灾害评估的视觉-语言检索增强生成框架，支持大规模灾害场景下的高效损害评估。 | [#437](https://github.com/Larry2000error/Larry-PaperClaw/issues/437) |
-| [20260821] EviRank: Structured Relevance Evidence for Multimodal Image Re-ranking | Du Enjun, Liu Siyi, Chen Zirong, Zuo Xinyu, Luo Jinwen, Tao Ruiwen, Duan Lisheng, Liang Haijin, Ma Jin, Pu Junfu, Zhang Yongqi | The Hong Kong University of Science and Technology (Guangzhou)；Tencent Yuanbao；The University of Hong Kong | EviRank针对多模态图像重排序任务，引入结构化相关性证据机制，有效处理组合查询中的复杂约束关系。 | [#438](https://github.com/Larry2000error/Larry-PaperClaw/issues/438) |
-
-## 🔎 观察
-
-- 遥感AI正从专用小模型向通用大模型迁移，检索增强成为平衡精度与效率的关键技术路径
-- 多模态检索研究开始关注查询的结构性表达，反映实际应用对复杂语义理解的迫切需求
 
 ---
 
