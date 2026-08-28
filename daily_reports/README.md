@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260816](./202608/20260816.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI研究呈现两大方向：一是视觉语言基础模型的对齐优化，AlignJEPA提出预测式对齐新范式；二是面向体育视频的无训练多目标跟踪，强调相机运动补偿与重识别技术。整体趋势显示基础模型架构创新与特定场景高效推理并重。
+
+## ✨ 今日亮点
+
+- AlignJEPA融合JEPA预测架构与对比学习，实现遥感视觉语言基础模型的高效对齐
+- 无训练长期多目标跟踪方案，通过相机运动补偿降低体育场景标注依赖
+- ISRO与IIT Bombay等机构联合推进遥感大模型，强化印度空间技术自主能力
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260816] Training-Free Long-Term Multi-Object Tracking for Sports Video Analytics | Stanczyk Tomasz, Yoon Seongro, Bremond Francois | Inria；Université Côte d'Azur | 提出无需训练的长期多目标跟踪框架，结合相机运动补偿与重识别技术，专为体育视频分析设计。 | [#424](https://github.com/Larry2000error/Larry-PaperClaw/issues/424) |
+| [20260816] AlignJEPA: Predictive Vision-Language Alignment for Remote Sensing Foundation Models | Md Aminur Hossain, Vaghasiya Omkumar, Rajeev Ranjan Dwivedi, Kurmi Vinod, Banerjee Biplab | Space Applications Centre, ISRO；CSRE, Indian Institute of Technology Bombay；Indian Institute of Science Education and Research (IISER) Bhopal | AlignJEPA将JEPA预测机制引入遥感视觉语言对齐，通过掩码预测与对比学习联合优化基础模型表征。 | [#425](https://github.com/Larry2000error/Larry-PaperClaw/issues/425) |
+
+## 🔎 观察
+
+- JEPA架构正从自然图像向遥感领域迁移，预测式学习或成为多模态遥感模型的新基线范式
+- 无训练跟踪方案虽降低标注成本，但体育场景的剧烈相机运动对补偿算法鲁棒性提出更高要求
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260815](./202608/20260815.md)
 ## 📌 今日概况
 
@@ -55,37 +86,6 @@ Powered by OpenClaw🦞
 
 - 事件相机与RGB融合正成为解决极端光照遥感监控的新范式，但硬件同步与标注成本仍是规模化瓶颈
 - 提示学习机制从NLP向视觉迁移，在跨模态遥感任务中展现出少样本适应潜力
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260812](./202608/20260812.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦视觉-语言模型的检索与定位任务。MASCOT提出模型感知的子模覆盖方法优化多属性图文检索；GeoBridge探索生成式图像地理定位，通过解耦语义条件与黎曼流匹配提升定位精度。两工作均体现多模态融合与结构化推理的前沿趋势。
-
-## ✨ 今日亮点
-
-- MASCOT将子模优化引入图文检索，实现模型感知的多属性覆盖与结果多样化
-- GeoBridge提出解耦语义条件机制，结合黎曼流匹配生成地理坐标分布
-- 两研究分别来自印度理工学院孟买分校与中国科学院系统，体现国际合作格局
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260812] MASCOT: Model-Aware Submodular Coverage for Composite-Attribute Text-to-Image Retrieval | Sharma Aaryan, Vishak Prasad C, Singh Virendra, Ramakrishnan Ganesh | Indian Institute of Technology Bombay | MASCOT提出模型感知的子模覆盖框架，通过复合属性优化实现多样化图文检索，解决传统方法忽视模型内部表征的问题。 | [#417](https://github.com/Larry2000error/Larry-PaperClaw/issues/417) |
-| [20260812] GeoBridge: Decoupled Semantic Conditioning for Generative Image Geolocalization | Dou Zhiyang, Han Xumeng, Peng Fengde, Wang Zipeng, Zhao Moxuan, Huang Zhipei, Han Zhenjun | University of Chinese Academy of Sciences；School of Advanced Interdisciplinary Sciences；School of Electronic, Electrical and Communication Engineering；Shenzhen Institutes of Advanced Technology | GeoBridge采用解耦语义条件与黎曼流匹配，构建生成式图像地理定位新范式，将坐标预测转化为连续分布生成任务。 | [#418](https://github.com/Larry2000error/Larry-PaperClaw/issues/418) |
-
-## 🔎 观察
-
-- 图文检索正从相似度匹配转向结构化覆盖优化，子模函数与模型内部知识的结合值得遥感领域借鉴。
-- 生成式范式开始渗透图像定位任务，流匹配等连续建模方法可能重塑地理坐标预测的技术路线。
 
 ---
 
