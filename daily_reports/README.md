@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260823](./202608/20260823.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日仅收录1篇论文，聚焦多模态视觉数据检索领域。该研究提出样本级排序感知插值权重学习方法，通过硬负样本挖掘与嵌入空间插值优化组合检索性能，体现了视觉-语言跨模态检索向精细化样本权重学习的演进趋势。
+
+## ✨ 今日亮点
+
+- 提出样本级排序感知插值权重，突破传统全局插值策略局限
+- 融合硬负样本挖掘与嵌入插值，优化组合视觉数据检索
+- 三星电子与POSTECH等产学研合作，推动多模态检索实用化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260823] Learning Sample-wise Rank-aware Interpolation Weights for Composed Visual Data Retrieval | Jeong Boseung, Park Taegyu, Kwon Donghyeon, Cho Hyunsouk, Kwak Suha | AI Center, Samsung Electronics；Dept. of CSE, POSTECH；Dept. of AI, Ajou University；Graduate School of AI, POSTECH | 该文提出样本级排序感知插值权重学习方法，通过硬负样本挖掘优化嵌入空间插值，提升组合视觉数据检索的排序准确性。 | [#441](https://github.com/Larry2000error/Larry-PaperClaw/issues/441) |
+
+## 🔎 观察
+
+- 样本级权重学习取代全局策略，反映检索任务向细粒度优化的发展趋势
+- 产学研机构联合发文，显示多模态检索技术正加速从学术走向产业应用
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260821](./202608/20260821.md)
 ## 📌 今日概况
 
@@ -59,38 +89,6 @@ Powered by OpenClaw🦞
 
 - 多模态检索正从表征对齐迈向推理增强，链式思维与判别式学习的引入标志着检索任务认知深度的提升。
 - 无人机主动地理定位与好奇心机制的结合，反映出遥感智能体研究从被动感知向主动决策的范式转变。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260817](./202608/20260817.md)
-## 📌 今日概况
-
-今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦视觉定位与跨模态识别两大方向。视觉定位领域呈现从静态图像向视频序列、从粗粒度匹配向渐进式细粒度对齐的发展趋势；跨模态学习则关注可见光-红外场景下的行人重识别，强调多尺度特征分解与注意力机制的结合。数据集构建与真实环境适应性仍是关键挑战。
-
-## ✨ 今日亮点
-
-- YILDIZ-VPR发布密集覆盖、多环境条件的行人视角视觉定位数据集
-- X²Localizer提出跨粒度渐进式跨视角视频地理定位框架
-- 多尺度分解卷积网络优化可见光-红外跨模态行人重识别性能
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260817] YILDIZ-VPR: A Novel Dataset with Dense Coverage Under Diverse Environmental Conditions for Visual Place Recognition | Yildiz Serdar, Memiş Abbas, Varli Songül | Yildiz Technical University；Istanbul University；BILGEM, TUBITAK | YILDIZ-VPR构建了涵盖多样环境条件的密集覆盖行人视角视觉定位数据集，为VPR研究提供更贴近实际应用的基准。 | [#427](https://github.com/Larry2000error/Larry-PaperClaw/issues/427) |
-| [20260817] X$^2$Localizer: Cross-grained Alignment for Progressive Cross-view Video Geo-localization | Zeng Zichao, Fan Weijia, Chen Yufan, June Moh Goo, Zheng Junwei, Liu Ruiping, Peng Kunyu, Zhang Jiaming, Stiefelhagen Rainer, Boehm Jan | University College London；Karlsruhe Institute of Technology；Hunan University；University of Alberta；Shenzhen University | X²Localizer通过跨粒度对齐机制实现渐进式跨视角视频地理定位，在有限时间预算下平衡检索效率与定位精度。 | [#428](https://github.com/Larry2000error/Larry-PaperClaw/issues/428) |
-| [20260817] Multi-scale Decomposed Convolution Refinement Network for Visible-Infrared Person Re-Identification | Zheng Mingsheng, Jiang Zirui, Liu Bo, Chen Yupeng, Zhang Jun, Zhao Kai | School of Computer Science and Technology, Xinjiang University；Joint International Research Laboratory of Silk Road Multilingual Cognitive Computing, Xinjiang University | 多尺度分解卷积细化网络针对可见光-红外行人重识别任务，利用注意力机制与度量学习缓解模态差异问题。 | [#429](https://github.com/Larry2000error/Larry-PaperClaw/issues/429) |
-
-## 🔎 观察
-
-- 视觉定位研究正从单帧图像检索向时序视频理解演进，时间信息与渐进式推理成为提升定位精度的关键路径
-- 跨模态行人重识别持续依赖多尺度特征学习与注意力机制，但现有方法在极端光照变化下的鲁棒性仍需验证
 
 ---
 
