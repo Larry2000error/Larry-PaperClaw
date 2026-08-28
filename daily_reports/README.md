@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260819](./202608/20260819.md)
+## 📌 今日概况
+
+今日共检索候选论文 8 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日研究聚焦多模态检索与智能体决策两大方向。检索任务呈现从单一视觉匹配向知识增强、时序建模、判别推理演进的趋势；同时，强化学习驱动的主动地理定位探索了无人机场景下的好奇心奖励机制，体现遥感智能体研究的深化。
+
+## ✨ 今日亮点
+
+- 实体对齐检索突破视觉相似性局限，融合外部知识提升视觉问答能力
+- 正交子空间建模实现历史图像时序表征，支持组合式跨时段检索
+- 好奇心驱动奖励塑形优化无人机主动地理定位的探索效率
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260819] Beyond Visual Similarity: Entity-Aligned Retrieval for Knowledge-Based Visual Question Answering | Xu Hangrui, Wu Zhengxian, Yu Yunyao, Chen Zhuohong, Cong Rui, Deng Xiangwen, Liu Zhifang, Jiao Peng, Wang Haoqian | Shenzhen International Graduate School, Tsinghua University；University of Arizona | 提出实体对齐检索框架，通过知识图谱实体关联替代纯视觉匹配，解决知识型视觉问答中的语义鸿沟问题。 | [#432](https://github.com/Larry2000error/Larry-PaperClaw/issues/432) |
+| [20260819] Composed Historical Image Retrieval by Modeling Temporal Representations | Adrià Molina Rodríguez, Oriol Ramos Terrades, Josep Lladós Canet | Centre de Visió per Computador；Universitat Autònoma de Barcelona；Computer Science Department | 构建时序正交子空间分解历史图像表征，实现时间条件与视觉内容的组合式检索，支持灵活的历史图像查询。 | [#433](https://github.com/Larry2000error/Larry-PaperClaw/issues/433) |
+| [20260819] DynCur-Geo: Dynamic Curiosity Reward Shaping for Multimodal Active Geo-Localization | Sun Yiming, Zhang Yang, Zhu Pengfei | School of Automation, Southeast University | 设计动态好奇心奖励机制，引导无人机在主动地理定位中高效探索未知区域，提升定位成功率与效率。 | [#434](https://github.com/Larry2000error/Larry-PaperClaw/issues/434) |
+| [20260819] UMER: Unifying Embedding and Ranking via Pair-Aware Discriminative Reasoning for Universal Multimodal Retrieval | Chen Libiao, Liu Xiyang, Wei Yanheng, Wang Tao, Tang Zhenyu | Beihang University | 统一嵌入学习与排序任务，通过成对判别推理与思维链增强多模态检索的泛化性与可解释性。 | [#435](https://github.com/Larry2000error/Larry-PaperClaw/issues/435) |
+
+## 🔎 观察
+
+- 多模态检索正从表征对齐迈向推理增强，链式思维与判别式学习的引入标志着检索任务认知深度的提升。
+- 无人机主动地理定位与好奇心机制的结合，反映出遥感智能体研究从被动感知向主动决策的范式转变。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260817](./202608/20260817.md)
 ## 📌 今日概况
 
@@ -58,36 +91,6 @@ Powered by OpenClaw🦞
 
 - JEPA架构正从自然图像向遥感领域迁移，预测式学习或成为多模态遥感模型的新基线范式
 - 无训练跟踪方案虽降低标注成本，但体育场景的剧烈相机运动对补偿算法鲁棒性提出更高要求
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260815](./202608/20260815.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI领域研究聚焦于跨模态学习技术，国防科技大学等机构提出MODAL框架，通过模型驱动的稀疏解耦与文本-图像差分滤波实现多模态目标重识别，推动特征解耦与稀疏编码在遥感场景中的应用。
-
-## ✨ 今日亮点
-
-- MODAL框架实现多模态目标重识别，融合稀疏编码与模型驱动深度学习
-- 提出文本-图像差分滤波机制，优化跨模态特征对齐与判别
-- 国防科大、湖南大学、合工大联合攻关特征解耦技术
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260815] MODAL: Multi-Modal Object Re-ID via Model-Driven Sparse Decoupling and Text-Image Differential Filtering | Huang Chengbo, Huang Jun-Jie, Lan Long, Liu Tianrui, Li Xueqiong, Peng Yuanxi, Liu Xinwang, Wang Meng | National University of Defense Technology；Hunan University；Hefei University of Technology | MODAL通过模型驱动稀疏解耦与文本-图像差分滤波，实现多模态目标重识别中的特征分离与噪声抑制。 | [#422](https://github.com/Larry2000error/Larry-PaperClaw/issues/422) |
-
-## 🔎 观察
-
-- 稀疏编码与深度学习的模型驱动结合成为跨模态Re-ID的新范式
-- 多机构联合研究反映该方向在国防与民用遥感应用中的战略价值
 
 ---
 
