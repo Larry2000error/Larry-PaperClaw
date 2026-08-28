@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260821](./202608/20260821.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦视觉-语言模型在遥感领域的规模化应用。DamageScope探索卫星影像灾害评估的检索增强生成范式，EviRank则针对多模态图像重排序提出结构化证据框架。两研究均体现大模型时代遥感智能分析从单一任务向复杂推理演进，跨模态检索与可解释性成为关键方向。
+
+## ✨ 今日亮点
+
+- DamageScope首次将RAG范式引入卫星灾害评估，实现百万级影像高效检索
+- EviRank构建结构化证据网络，解决多模态查询中的组合约束满足难题
+- 产学研深度融合：港科广与腾讯合作推动多模态检索技术落地
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260821] DamageScope: Vision-Language Retrieval at Scale for Disaster Damage Assessment from Satellite Imagery | Ravi K. Rajendran, Debnath Biplob, Sankaradas Murugan, Srimat T. Chakradhar | NEC Laboratories America | DamageScale提出面向卫星影像灾害评估的视觉-语言检索增强生成框架，支持大规模灾害场景下的高效损害评估。 | [#437](https://github.com/Larry2000error/Larry-PaperClaw/issues/437) |
+| [20260821] EviRank: Structured Relevance Evidence for Multimodal Image Re-ranking | Du Enjun, Liu Siyi, Chen Zirong, Zuo Xinyu, Luo Jinwen, Tao Ruiwen, Duan Lisheng, Liang Haijin, Ma Jin, Pu Junfu, Zhang Yongqi | The Hong Kong University of Science and Technology (Guangzhou)；Tencent Yuanbao；The University of Hong Kong | EviRank针对多模态图像重排序任务，引入结构化相关性证据机制，有效处理组合查询中的复杂约束关系。 | [#438](https://github.com/Larry2000error/Larry-PaperClaw/issues/438) |
+
+## 🔎 观察
+
+- 遥感AI正从专用小模型向通用大模型迁移，检索增强成为平衡精度与效率的关键技术路径
+- 多模态检索研究开始关注查询的结构性表达，反映实际应用对复杂语义理解的迫切需求
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260819](./202608/20260819.md)
 ## 📌 今日概况
 
@@ -60,37 +91,6 @@ Powered by OpenClaw🦞
 
 - 视觉定位研究正从单帧图像检索向时序视频理解演进，时间信息与渐进式推理成为提升定位精度的关键路径
 - 跨模态行人重识别持续依赖多尺度特征学习与注意力机制，但现有方法在极端光照变化下的鲁棒性仍需验证
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260816](./202608/20260816.md)
-## 📌 今日概况
-
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日遥感AI研究呈现两大方向：一是视觉语言基础模型的对齐优化，AlignJEPA提出预测式对齐新范式；二是面向体育视频的无训练多目标跟踪，强调相机运动补偿与重识别技术。整体趋势显示基础模型架构创新与特定场景高效推理并重。
-
-## ✨ 今日亮点
-
-- AlignJEPA融合JEPA预测架构与对比学习，实现遥感视觉语言基础模型的高效对齐
-- 无训练长期多目标跟踪方案，通过相机运动补偿降低体育场景标注依赖
-- ISRO与IIT Bombay等机构联合推进遥感大模型，强化印度空间技术自主能力
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260816] Training-Free Long-Term Multi-Object Tracking for Sports Video Analytics | Stanczyk Tomasz, Yoon Seongro, Bremond Francois | Inria；Université Côte d'Azur | 提出无需训练的长期多目标跟踪框架，结合相机运动补偿与重识别技术，专为体育视频分析设计。 | [#424](https://github.com/Larry2000error/Larry-PaperClaw/issues/424) |
-| [20260816] AlignJEPA: Predictive Vision-Language Alignment for Remote Sensing Foundation Models | Md Aminur Hossain, Vaghasiya Omkumar, Rajeev Ranjan Dwivedi, Kurmi Vinod, Banerjee Biplab | Space Applications Centre, ISRO；CSRE, Indian Institute of Technology Bombay；Indian Institute of Science Education and Research (IISER) Bhopal | AlignJEPA将JEPA预测机制引入遥感视觉语言对齐，通过掩码预测与对比学习联合优化基础模型表征。 | [#425](https://github.com/Larry2000error/Larry-PaperClaw/issues/425) |
-
-## 🔎 观察
-
-- JEPA架构正从自然图像向遥感领域迁移，预测式学习或成为多模态遥感模型的新基线范式
-- 无训练跟踪方案虽降低标注成本，但体育场景的剧烈相机运动对补偿算法鲁棒性提出更高要求
 
 ---
 
