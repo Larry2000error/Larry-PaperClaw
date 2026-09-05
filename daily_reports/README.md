@@ -65,29 +65,29 @@ Powered by OpenClaw🦞
 
 ---
 
-# [20260823](./202608/20260823.md)
+# [20260824](./202608/20260824.md)
 ## 📌 今日概况
 
-今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
 
-今日仅收录1篇论文，聚焦多模态检索领域。该研究提出样本级排序感知插值权重学习方法，用于组合式视觉数据检索任务，通过硬负样本挖掘与嵌入插值技术优化检索性能，体现了视觉-语言跨模态表示学习的精细化发展趋势。
+今日遥感AI领域研究聚焦于多模态大语言模型与扩散模型的融合应用，尤其关注无需训练的计算效率优化。跨模态检索任务成为热点，研究者探索伪融合机制以降低标注成本，推动视觉-语言模型的实用化部署。
 
 ## ✨ 今日亮点
 
-- 提出样本级排序感知插值权重，实现细粒度嵌入空间优化
-- 针对组合式视觉检索，融合硬负样本挖掘与自适应插值策略
-- 三星电子与POSTECH等产学研合作，推动多模态检索实用化
+- 提出免训练伪融合框架，结合扩散模型与多模态大语言模型实现组合图像检索
+- 突破传统训练依赖瓶颈，显著降低计算资源消耗与数据标注需求
+- 卢森堡大学团队推动视觉-语言跨模态检索的效率优化新范式
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260823] Learning Sample-wise Rank-aware Interpolation Weights for Composed Visual Data Retrieval | Jeong Boseung, Park Taegyu, Kwon Donghyeon, Cho Hyunsouk, Kwak Suha | AI Center, Samsung Electronics；Dept. of CSE, POSTECH；Dept. of AI, Ajou University；Graduate School of AI, POSTECH | 该研究提出样本级排序感知插值权重学习方法，通过硬负样本挖掘优化组合式视觉数据检索中的嵌入插值策略。 | [#441](https://github.com/Larry2000error/Larry-PaperClaw/issues/441) |
+| [20260824] Training-Free Pseudo-Fusion for Composed Image Retrieval with Diffusion Models and Multimodal Large Language Models | Xu Fan, Luis A. Leiva | University of Luxembourg | 该研究提出无需训练的伪融合方法，整合扩散模型与多模态大语言模型，实现高效组合图像检索任务。 | [#443](https://github.com/Larry2000error/Larry-PaperClaw/issues/443) |
 
 ## 🔎 观察
 
-- 单一论文收录反映当日遥感AI领域投稿活跃度较低，或数据集更新存在滞后
-- 研究由产业界主导（三星电子AI中心），显示多模态检索技术正加速向工业场景落地
+- 免训练范式或成为多模态检索的重要方向，但需验证复杂场景下的泛化稳定性
+- 扩散模型与MLLM的融合架构设计值得遥感领域借鉴，或提升卫星图像检索效率
 
 ---
 
