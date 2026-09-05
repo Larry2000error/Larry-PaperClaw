@@ -2,32 +2,64 @@
 
 最近三天日报（最新在前）：
 
-# [20260827](./202608/20260827.md)
+# [20260830](./202608/20260830.md)
 ## 📌 今日概况
 
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日研究聚焦视觉-语言模型的可解释性与检索能力。学界关注VLM内部机制解析、跨模态地理定位、生成式图像检索及智能体驱动的图像组合，体现从模型机理理解到复杂视觉任务求解的纵深发展。
+今日遥感AI研究聚焦视觉语言模型在地理定位任务中的智能化升级。三篇论文分别从代理推理、困难样本挖掘和具身导航评估三个维度推进开放世界地理定位技术，体现出从静态感知向动态交互、从单一检索向多步验证的发展趋势。
 
 ## ✨ 今日亮点
 
-- KAIST团队揭示VLM视觉检索头机制，为模型可解释性提供新视角
-- UniGeo实现文本引导跨视角地理定位，融合无人机影像与大语言模型
-- 阿里团队提出隐式图像思考检索框架，推动生成式图像检索落地
+- 港科广团队提出感知-假设-验证的代理推理框架，实现多跳地理定位
+- RePair方法通过反事实生成将检索失败转化为困难训练样本
+- GeoAgent构建具身导航环境，系统评估VLM地理定位能力
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260827] Retrieval Heads Meet Vision: Uncovering How VLMs Locate and Extract Visual Information | Park Chanho, Choi Daehyeon, Lee Jihyun, Sung Minhyuk | KAIST；Independent Researcher | KAIST等提出视觉检索头概念，通过因果干预揭示VLM如何定位提取视觉信息，为视觉语言模型可解释性研究提供新工具。 | [#447](https://github.com/Larry2000error/Larry-PaperClaw/issues/447) |
-| [20260827] UniGeo: A Multi-modal Large Language Model for Text-Guided Cross-View Geo-Localization | Wen Jiahao, Yu Hang, Zheng Zhedong | Institution unavailable | UniGeo构建多模态大语言模型，支持文本引导的跨视角地理定位，实现无人机影像与卫星图的双向检索匹配。 | [#448](https://github.com/Larry2000error/Larry-PaperClaw/issues/448) |
-| [20260827] PailitaoGR: Latent Think-with-Images for Generative Image Retrieval | Fan Xiaomeng, Liu Yueran, Zhou Shengyu, Fu Chenghan, Guan Wanxian, Li Feng, Yu Chuan, Xu Jian, Zheng Bo | Alibaba Group | 阿里团队提出PailitaoGR框架，采用隐式图像思考机制进行生成式图像检索，优化电商场景下的视觉搜索体验。 | [#449](https://github.com/Larry2000error/Larry-PaperClaw/issues/449) |
-| [20260827] Weaving Visual Narratives: Agentic Image Bundle Composition Beyond Atomic Visual Matching | Shan Rong, Xu Tianyi, Zheng Congmin, Chen Wenteng, Zhu Jiachen, Wu Junjie, Wang Teng, Liu Weiwen, Zhang Changwang, Zhang Weinan, Wang Jun, Lin Jianghao | Shanghai Jiao Tong University；Shanghai Innovation Institute；OPPO | 上海交大等提出智能体驱动的图像组合方法，超越原子级视觉匹配，实现个人照片集合中的视觉叙事自动构建。 | [#457](https://github.com/Larry2000error/Larry-PaperClaw/issues/457) |
+| [20260830] Perceive to Hypothesize, Verify to Ground: An Agentic Reasoning Framework for Open-World Geo-Localization | Jiang Yutian, Li Ruijie, Lyu Sisuo, Hao Xixuan, Liu Qingxiang, Yu Yongzi, Liang Yuxuan | The Hong Kong University of Science and Technology (Guangzhou)；The Hong Kong University of Science and Technology | 提出代理推理框架，通过感知假设与验证 grounding 实现开放世界地理定位的多跳推理。 | [#459](https://github.com/Larry2000error/Larry-PaperClaw/issues/459) |
+| [20260830] RePair: Turning Retrieval Failures into Counterfactual Hard Pairs | Liu Siyi, Zhu Xiaorong, Du Enjun, Zuo Xinyu, Duan Lisheng, Liang Haijin, Ma Jin, Pu Junfu, Zhang Yongqi | The Hong Kong University of Science and Technology (Guangzhou)；Tencent Yuanbao；The University of Hong Kong；ARC Lab, Tencent | 设计反事实样本生成机制，将跨模态检索失败案例转化为有效困难训练对。 | [#460](https://github.com/Larry2000error/Larry-PaperClaw/issues/460) |
+| [20260830] GeoAgent: Evaluating VLM Geolocalization Through Embodied Navigation | Mukherjee Arka, Roy Soham, Trivedi Kartikeya, Ghosh Shreya | KIIT Bhubaneswar；IIT Bhubaneswar | 构建基于具身导航的评估基准，检验视觉语言模型在动态街景中的地理定位性能。 | [#461](https://github.com/Larry2000error/Larry-PaperClaw/issues/461) |
 
 ## 🔎 观察
 
-- 视觉检索正从单图匹配向生成式、叙事化方向演进，任务复杂度显著提升
-- 工业界（阿里、OPPO）与学术界协同紧密，技术落地场景明确指向电商与智能终端
+- 地理定位研究正从静态图像匹配转向具备环境交互能力的代理系统，技术路线与具身智能深度融合
+- 困难样本挖掘与反事实学习成为跨模态检索的新方向，数据工程与模型训练形成闭环优化
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
+# [20260827](./202608/20260827.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日遥感AI研究聚焦视觉-语言模型的可解释性与检索能力。四项工作分别探索视觉检索头的因果机制、跨视角地理定位的多模态融合、生成式图像检索的隐式推理，以及基于智能体的图像叙事组合，体现出从单模态匹配向复杂视觉推理演进的趋势。
+
+## ✨ 今日亮点
+
+- KAIST团队揭示VLM中视觉检索头的因果可解释机制
+- UniGeo实现文本引导的无人机跨视角地理定位
+- 阿里提出隐式图像思维机制用于生成式商品检索
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260827] Retrieval Heads Meet Vision: Uncovering How VLMs Locate and Extract Visual Information | Park Chanho, Choi Daehyeon, Lee Jihyun, Sung Minhyuk | KAIST；Independent Researcher | 首次在视觉-语言模型中识别并验证视觉检索头，揭示其定位与提取视觉信息的因果机制。 | [#447](https://github.com/Larry2000error/Larry-PaperClaw/issues/447) |
+| [20260827] UniGeo: A Multi-modal Large Language Model for Text-Guided Cross-View Geo-Localization | Wen Jiahao, Yu Hang, Zheng Zhedong | Institution unavailable | 提出多模态大语言模型UniGeo，通过文本引导实现无人机与地面视角的跨模态地理定位。 | [#448](https://github.com/Larry2000error/Larry-PaperClaw/issues/448) |
+| [20260827] PailitaoGR: Latent Think-with-Images for Generative Image Retrieval | Fan Xiaomeng, Liu Yueran, Zhou Shengyu, Fu Chenghan, Guan Wanxian, Li Feng, Yu Chuan, Xu Jian, Zheng Bo | Alibaba Group | 设计隐式图像思维框架，使模型在生成式图像检索中模拟人类视觉推理过程。 | [#449](https://github.com/Larry2000error/Larry-PaperClaw/issues/449) |
+| [20260827] Weaving Visual Narratives: Agentic Image Bundle Composition Beyond Atomic Visual Matching | Shan Rong, Xu Tianyi, Zheng Congmin, Chen Wenteng, Zhu Jiachen, Wu Junjie, Wang Teng, Liu Weiwen, Zhang Changwang, Zhang Weinan, Wang Jun, Lin Jianghao | Shanghai Jiao Tong University；Shanghai Innovation Institute；OPPO | 构建智能体驱动的图像组合系统，超越原子级视觉匹配实现叙事性图像集生成。 | [#457](https://github.com/Larry2000error/Larry-PaperClaw/issues/457) |
+
+## 🔎 观察
+
+- 视觉检索头的因果分析为VLM黑箱机制研究开辟新路径，或可迁移至遥感图像理解任务。
+- 生成式检索与智能体组合成为视觉搜索新范式，传统相似度匹配方法面临范式转换压力。
 
 ---
 
@@ -62,36 +94,6 @@ Powered by OpenClaw🦞
 
 - 多模态检索正深度垂直化，医疗与基础设施等专业领域成为技术落地的重要场景
 - 训练无关与后验优化方法涌现，反映学界对检索系统部署效率与成本的关注提升
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260824](./202608/20260824.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI领域研究聚焦于多模态大语言模型与扩散模型的融合应用，尤其关注无需训练的计算效率优化。跨模态检索任务成为热点，研究者探索伪融合机制以降低标注成本，推动视觉-语言模型的实用化部署。
-
-## ✨ 今日亮点
-
-- 提出免训练伪融合框架，结合扩散模型与多模态大语言模型实现组合图像检索
-- 突破传统训练依赖瓶颈，显著降低计算资源消耗与数据标注需求
-- 卢森堡大学团队推动视觉-语言跨模态检索的效率优化新范式
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260824] Training-Free Pseudo-Fusion for Composed Image Retrieval with Diffusion Models and Multimodal Large Language Models | Xu Fan, Luis A. Leiva | University of Luxembourg | 该研究提出无需训练的伪融合方法，整合扩散模型与多模态大语言模型，实现高效组合图像检索任务。 | [#443](https://github.com/Larry2000error/Larry-PaperClaw/issues/443) |
-
-## 🔎 观察
-
-- 免训练范式或成为多模态检索的重要方向，但需验证复杂场景下的泛化稳定性
-- 扩散模型与MLLM的融合架构设计值得遥感领域借鉴，或提升卫星图像检索效率
 
 ---
 
