@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260903](./202609/20260903.md)
+## 📌 今日概况
+
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究呈现跨模态检索与农业智能监测两大方向。跨模态生成式检索通过动态扩展策略优化信息不对称为核心创新；农业领域聚焦牲畜个体识别，利用背部标记解决养殖场景下的重识别与追踪难题，体现AI技术向垂直场景的深度渗透。
+
+## ✨ 今日亮点
+
+- 跨模态生成检索引入动态通配符推理，缓解自回归解码中的信息瓶颈
+- 猪只重识别创新采用背部标记分类，适配侧视摄像头养殖场景
+- 农业计算机视觉研究融合多机构资源，推动精准畜牧业发展
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260903] WIDE: Wildcard Inference with Dynamic Expansion for Cross-Modal Generative Retrieval | Guo Teng, Wang Xin, Xu Jiayou, Zhou Keying, Shen Jifeng, Ruan Haoxin | Jilin University；Jiangsu University | WIDE提出动态扩展通配符推理机制，通过优化束搜索策略解决跨模态生成检索中的信息非对称问题。 | [#471](https://github.com/Larry2000error/Larry-PaperClaw/issues/471) |
+| [20260905] BMCTrack-d: Pig re-identification and tracking via back marks in challenging camera settings | Brunner David, Oczak Maciej, Bordes Marie, Rault Jean-Loup, Stephan M. Winkler, Dorfer Viktoria | Bioinformatics Research Group, PLFDoc, University of Applied Sciences Upper Austria；Computer Vision Lab, TU Wien；Precision Livestock Farming Hub, The University of Veterinary Medicine Vienna；Animal Welfare Science Unit, The University of Veterinary Medicine Vienna | BMCTrack-d开发基于背部标记的猪只重识别与跟踪系统，针对挑战性相机设置下的养殖场景实现个体精准辨识。 | [#472](https://github.com/Larry2000error/Larry-PaperClaw/issues/472) |
+
+## 🔎 观察
+
+- 生成式检索正从静态编码向动态推理演进，自回归模型的信息损耗问题成为优化焦点
+- 农业AI研究呈现精细化趋势，牲畜个体识别从群体分析迈向单只追踪，标记辅助策略降低环境干扰
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260902](./202609/20260902.md)
 ## 📌 今日概况
 
@@ -57,38 +88,6 @@ Powered by OpenClaw🦞
 
 - 训练-free方法成为检索任务新趋势，降低部署成本同时提升可解释性
 - 难负样本合成技术从NLP向视觉迁移，自监督学习正经历精细化设计阶段
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260830](./202608/20260830.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI研究聚焦视觉语言模型在地理定位任务中的能力拓展，核心趋势为引入智能体推理与反事实学习机制。三篇论文分别从假设验证框架、困难样本挖掘及具身导航评估三个维度，推动开放世界地理定位的鲁棒性与泛化性研究。
-
-## ✨ 今日亮点
-
-- 智能体推理框架实现感知-假设-验证的多跳地理定位，突破传统端到端局限
-- 反事实困难样本生成策略RePair，将检索失败转化为有效训练信号
-- GeoAgent构建具身导航基准，系统评估VLM在真实环境连续决策能力
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260830] Perceive to Hypothesize, Verify to Ground: An Agentic Reasoning Framework for Open-World Geo-Localization | Jiang Yutian, Li Ruijie, Lyu Sisuo, Hao Xixuan, Liu Qingxiang, Yu Yongzi, Liang Yuxuan | The Hong Kong University of Science and Technology (Guangzhou)；The Hong Kong University of Science and Technology | 提出感知假设验证的智能体推理框架，通过多跳推理实现开放世界地理定位，突破传统模型直接预测模式。 | [#459](https://github.com/Larry2000error/Larry-PaperClaw/issues/459) |
-| [20260830] RePair: Turning Retrieval Failures into Counterfactual Hard Pairs | Liu Siyi, Zhu Xiaorong, Du Enjun, Zuo Xinyu, Duan Lisheng, Liang Haijin, Ma Jin, Pu Junfu, Zhang Yongqi | The Hong Kong University of Science and Technology (Guangzhou)；Tencent Yuanbao；The University of Hong Kong；ARC Lab, Tencent | 设计RePair方法将跨模态检索失败样本转化为反事实困难对，增强CLIP类模型对易混淆样本的判别能力。 | [#460](https://github.com/Larry2000error/Larry-PaperClaw/issues/460) |
-| [20260830] GeoAgent: Evaluating VLM Geolocalization Through Embodied Navigation | Mukherjee Arka, Roy Soham, Trivedi Kartikeya, Ghosh Shreya | KIIT Bhubaneswar；IIT Bhubaneswar | 构建GeoAgent评估基准，通过具身导航任务检验视觉语言模型在街景环境中的连续地理定位决策表现。 | [#461](https://github.com/Larry2000error/Larry-PaperClaw/issues/461) |
-
-## 🔎 观察
-
-- 地理定位研究正从静态图像匹配转向动态交互推理，智能体范式或成为下一代技术路线。
-- 困难样本挖掘与反事实学习结合，显示社区对检索模型鲁棒性瓶颈的针对性攻关。
 
 ---
 
