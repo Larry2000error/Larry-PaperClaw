@@ -34,6 +34,36 @@ Powered by OpenClaw🦞
 
 ---
 
+# [20260829](./202608/20260829.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 1 篇。
+
+今日遥感AI领域研究聚焦于表示学习与可解释性的融合，巴西UNESP团队提出上下文感知可解释表示方法，将检索任务与图卷积网络分类相结合，体现了无监督学习、流形学习与图嵌入技术的交叉发展趋势，为遥感数据的语义理解与模型透明性提供新思路。
+
+## ✨ 今日亮点
+
+- 提出上下文感知可解释表示框架，兼顾检索精度与分类可解释性
+- 融合流形学习与图卷积网络，实现无监督场景下的表征优化
+- 针对遥感数据特点，平衡表示学习能力与模型决策透明度
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260829] Context-Aware Interpretable Representations for Retrieval and Graph Convolutional Network Classification | Thiago César Castilho Almeida, Gustavo Rosseto Letício, Vinicius Atsushi Sato Kawai, Daniel Carlos Guimarães Pedronette | State University of São Paulo (UNESP) | UNESP团队提出上下文感知可解释表示方法，联合优化检索任务与图卷积网络分类，提升无监督学习下的模型可解释性与流形结构保持能力。 | [#458](https://github.com/Larry2000error/Larry-PaperClaw/issues/458) |
+
+## 🔎 观察
+
+- 可解释性与表示学习的结合正成为遥感AI关键方向，模型透明度需求推动方法论创新
+- 图神经网络与流形学习的融合架构，或成为处理高维遥感数据的有效范式
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260827](./202608/20260827.md)
 ## 📌 今日概况
 
@@ -60,40 +90,6 @@ Powered by OpenClaw🦞
 
 - 视觉检索头的因果分析为VLM黑箱机制研究开辟新路径，或可迁移至遥感图像理解任务。
 - 生成式检索与智能体组合成为视觉搜索新范式，传统相似度匹配方法面临范式转换压力。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260826](./202608/20260826.md)
-## 📌 今日概况
-
-今日共检索候选论文 9 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日研究聚焦于多模态检索与视觉理解技术，涵盖文档级视觉检索、组合图像检索、医疗多模态检索及基础设施合规检查等方向。研究趋势显示，领域特定应用（医疗、土木）与高效检索方法（稀疏化、训练无关）成为热点，跨模态对齐与RAG架构持续演进。
-
-## ✨ 今日亮点
-
-- DocPC提出文档级视觉检索新范式，通过代表性页面选择解决多页文档检索难题
-- MulVec实现无需训练的零样本组合图像检索，采用细粒度角色感知匹配机制
-- PlanSightRAG面向土木标准图纸，构建视觉优先的多模态RAG系统实现自动合规检查
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260826] DocPC: Document-Level Visual Retrieval via Representative Page Composition | You Chengsong, Zhou Junwei, Cao Xiaoyu, Wang Weiyao, Xu Yiwei, Zhao Ziyan, Sun Zhen, Zhu Qicheng, Fu Xuanyi, Chen Yufan, Li Yilun, Xiong Rongkang, Hu Yunhai, Du Nan | East China Normal University；Matter Innovation Inc.；Shandong University of Science and Technology；Thin Red Line；UC Berkeley；New York University | DocPC通过代表性页面组合策略，实现多页文档的高效视觉检索，无需处理全部页面。 | [#444](https://github.com/Larry2000error/Larry-PaperClaw/issues/444) |
-| [20260826] MulVec: Fine-Grained Role-Aware Matching for Training-Free Zero-Shot Composed Image Retrieval | Zhang Zihao, Wu Dayan, Liu Xinze, Zhu Hengjie, Zhu Yiliang, Wang Ding, Fu Peng, Lin Zheng, Wang Weiping | Chinese Academy of Sciences | MulVec提出训练无关的零样本组合图像检索方法，利用细粒度角色感知匹配提升检索精度。 | [#445](https://github.com/Larry2000error/Larry-PaperClaw/issues/445) |
-| [20260826] Case2Flow: Bridging Patient Cases and Guideline Flowcharts through Multimodal Retrieval | Wei Jiale, Chen Yufan, Jaus Alexander, Marinov Zdravko, Friedrich Julian, Reiß Simon, Kleesiek Jens, Stiefelhagen Rainer | Karlsruhe Institute of Technology；Helmholtz Information and Data Science School for Health (HIDSS4Health)；University Hospital Essen | Case2Flow构建多模态检索桥梁，连接患者病例与医疗指南流程图以支持临床决策。 | [#454](https://github.com/Larry2000error/Larry-PaperClaw/issues/454) |
-| [20260826] PlanSightRAG: A Visual-First Multimodal RAG for Automating Question Answering and Compliance Checking for Civil Standard Plans | Subedi Nabaraj, Shuvo Dip Datta, Abdelaty Ahmed, Shivanand Venkanna Sheshappanavar | Institution unavailable | PlanSightRAG采用视觉优先架构，针对土木标准图纸实现自动化问答与合规性检查。 | [#455](https://github.com/Larry2000error/Larry-PaperClaw/issues/455) |
-| [20260826] PUMA: Post-Hoc Sparsification of Universal Multimodal Embeddings for Efficient Retrieval | Attimonelli Matteo, Alessandro De Bellis, Franco Maria Nardini, Pomo Claudio, Rulli Cosimo, Venturini Rossano, Tommaso Di Noia | Politecnico di Bari；Sapienza University of Rome；ISTI–CNR；University of Pisa | PUMA通过后验稀疏化技术压缩通用多模态嵌入，在保持检索性能的同时提升效率。 | [#456](https://github.com/Larry2000error/Larry-PaperClaw/issues/456) |
-
-## 🔎 观察
-
-- 多模态检索正深度垂直化，医疗与基础设施等专业领域成为技术落地的重要场景
-- 训练无关与后验优化方法涌现，反映学界对检索系统部署效率与成本的关注提升
 
 ---
 
