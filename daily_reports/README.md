@@ -5,28 +5,29 @@
 # [20260827](./202608/20260827.md)
 ## 📌 今日概况
 
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
 
-今日遥感AI研究聚焦视觉-语言模型的可解释性与跨模态检索。KAIST团队揭示VLM视觉检索头的因果机制；UniGeo探索文本引导的跨视角地理定位；阿里团队提出生成式图像检索新范式。多模态对齐与可解释性成为核心趋势。
+今日研究聚焦视觉-语言模型的可解释性与多模态检索任务。学界关注注意力机制的内部工作机制（如视觉检索头），并探索文本引导的跨视角地理定位、生成式图像检索及智能体驱动的图像组合等新兴应用方向，工业界参与度显著。
 
 ## ✨ 今日亮点
 
-- 首次定位VLM中的视觉检索头，揭示注意力机制的因果可解释性
-- 文本引导跨视角地理定位，融合无人机影像与大语言模型
-- 生成式图像检索新框架，以隐式思维链实现视觉搜索
+- KAIST团队揭示VLM中视觉检索头的因果可解释机制
+- UniGeo实现文本引导的无人机跨视角地理定位
+- 阿里提出隐式图像思维生成式检索框架PailitaoGR
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260827] Retrieval Heads Meet Vision: Uncovering How VLMs Locate and Extract Visual Information | Park Chanho, Choi Daehyeon, Lee Jihyun, Sung Minhyuk | KAIST；Independent Researcher | KAIST等通过因果干预识别VLM中的视觉检索头，揭示模型如何定位并提取视觉信息。 | [#447](https://github.com/Larry2000error/Larry-PaperClaw/issues/447) |
-| [20260827] UniGeo: A Multi-modal Large Language Model for Text-Guided Cross-View Geo-Localization | Wen Jiahao, Yu Hang, Zheng Zhedong | Institution unavailable | UniGeo提出多模态大语言模型，以自然语言描述实现卫星图与无人机影像的跨视角地理定位。 | [#448](https://github.com/Larry2000error/Larry-PaperClaw/issues/448) |
-| [20260827] PailitaoGR: Latent Think-with-Images for Generative Image Retrieval | Fan Xiaomeng, Liu Yueran, Zhou Shengyu, Fu Chenghan, Guan Wanxian, Li Feng, Yu Chuan, Xu Jian, Zheng Bo | Alibaba Group | 阿里团队提出PailitaoGR，以隐式思维链机制实现生成式图像检索，革新电商视觉搜索范式。 | [#449](https://github.com/Larry2000error/Larry-PaperClaw/issues/449) |
+| [20260827] Retrieval Heads Meet Vision: Uncovering How VLMs Locate and Extract Visual Information | Park Chanho, Choi Daehyeon, Lee Jihyun, Sung Minhyuk | KAIST；Independent Researcher | 通过因果干预识别VLM中的视觉检索头，揭示其定位与提取视觉信息的内在机制。 | [#447](https://github.com/Larry2000error/Larry-PaperClaw/issues/447) |
+| [20260827] UniGeo: A Multi-modal Large Language Model for Text-Guided Cross-View Geo-Localization | Wen Jiahao, Yu Hang, Zheng Zhedong | Institution unavailable | 面向无人机影像的文本引导跨视角地理定位多模态大语言模型。 | [#448](https://github.com/Larry2000error/Larry-PaperClaw/issues/448) |
+| [20260827] PailitaoGR: Latent Think-with-Images for Generative Image Retrieval | Fan Xiaomeng, Liu Yueran, Zhou Shengyu, Fu Chenghan, Guan Wanxian, Li Feng, Yu Chuan, Xu Jian, Zheng Bo | Alibaba Group | 基于潜在图像思维的生成式图像检索方法，应用于电商视觉搜索场景。 | [#449](https://github.com/Larry2000error/Larry-PaperClaw/issues/449) |
+| [20260827] Weaving Visual Narratives: Agentic Image Bundle Composition Beyond Atomic Visual Matching | Shan Rong, Xu Tianyi, Zheng Congmin, Chen Wenteng, Zhu Jiachen, Wu Junjie, Wang Teng, Liu Weiwen, Zhang Changwang, Zhang Weinan, Wang Jun, Lin Jianghao | Shanghai Jiao Tong University；Shanghai Innovation Institute；OPPO | 智能体驱动的图像 bundle 组合框架，超越原子级视觉匹配构建视觉叙事。 | [#457](https://github.com/Larry2000error/Larry-PaperClaw/issues/457) |
 
 ## 🔎 观察
 
-- 视觉-语言模型的可解释性研究从NLP向视觉领域延伸，因果分析方法成为新工具
-- 生成式检索范式兴起，从判别式相似度匹配转向隐式推理生成，或重塑图像搜索架构
+- 视觉检索头的因果可解释性研究为VLM黑箱机制提供了新分析视角，但实验范围限于特定任务。
+- 生成式检索与智能体组合成为图像搜索新范式，工业界（阿里、OPPO）主导应用落地研究。
 
 ---
 
