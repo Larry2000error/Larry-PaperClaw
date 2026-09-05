@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260902](./202609/20260902.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦于视觉语言模型幻觉抑制与图像检索优化两大方向。前者通过稀疏解码与跨模态检索机制提升大模型可靠性，后者融合流形学习与排序聚合改进检索精度，均体现多技术融合趋势。
+
+## ✨ 今日亮点
+
+- RVSD提出检索视觉稀疏解码，有效缓解大视觉语言模型幻觉问题
+- 邻居嵌入投影与基于排序的流形学习结合，优化图像检索性能
+- 跨模态语义空间对齐与UMAP降维技术成为关键方法支撑
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260902] RVSD: Retrieval Vision Sparse Decoding for Mitigating Visual Hallucinations in Large Vision-Language Models | Liu Canjie, Kang Jiawen, Wen Jinbo, Zhong Zishao | School of Automation, Guangdong University of Technology；Department of Computer Science, City University of Hong Kong；The Second Affiliated Hospital of Guangzhou University of Chinese Medicine | RVSD通过检索增强的稀疏解码机制，在生成阶段抑制大视觉语言模型的视觉幻觉现象。 | [#468](https://github.com/Larry2000error/Larry-PaperClaw/issues/468) |
+| [20260902] Aggregating Neighbor Embedding Projection and Rank-Based Manifold Learning for Image Retrieval | Vinicius Atsushi Sato Kawai, Gustavo Rosseto Leticio, Lucas Pascotti Valem, Daniel Carlos Guimarães Pedronette | São Paulo State University (UNESP)；University of São Paulo (USP) | 提出邻居嵌入投影与排序流形学习融合方法，提升基于内容的图像检索准确性。 | [#469](https://github.com/Larry2000error/Larry-PaperClaw/issues/469) |
+
+## 🔎 观察
+
+- 视觉语言模型幻觉治理从训练后干预转向生成过程控制，稀疏解码成为新范式
+- 传统流形学习方法与排序聚合结合，显示经典算法在深度学习时代的重构价值
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260901](./202609/20260901.md)
 ## 📌 今日概况
 
@@ -58,36 +89,6 @@ Powered by OpenClaw🦞
 
 - 地理定位研究正从静态图像匹配转向动态交互推理，智能体范式或成为下一代技术路线。
 - 困难样本挖掘与反事实学习结合，显示社区对检索模型鲁棒性瓶颈的针对性攻关。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260829](./202608/20260829.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 1 篇。
-
-今日遥感AI领域研究聚焦于表示学习与可解释性的融合，巴西UNESP团队提出上下文感知可解释表示方法，将检索任务与图卷积网络分类相结合，体现了无监督学习、流形学习与图嵌入技术的交叉发展趋势，为遥感数据的语义理解与模型透明性提供新思路。
-
-## ✨ 今日亮点
-
-- 提出上下文感知可解释表示框架，兼顾检索精度与分类可解释性
-- 融合流形学习与图卷积网络，实现无监督场景下的表征优化
-- 针对遥感数据特点，平衡表示学习能力与模型决策透明度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260829] Context-Aware Interpretable Representations for Retrieval and Graph Convolutional Network Classification | Thiago César Castilho Almeida, Gustavo Rosseto Letício, Vinicius Atsushi Sato Kawai, Daniel Carlos Guimarães Pedronette | State University of São Paulo (UNESP) | UNESP团队提出上下文感知可解释表示方法，联合优化检索任务与图卷积网络分类，提升无监督学习下的模型可解释性与流形结构保持能力。 | [#458](https://github.com/Larry2000error/Larry-PaperClaw/issues/458) |
-
-## 🔎 观察
-
-- 可解释性与表示学习的结合正成为遥感AI关键方向，模型透明度需求推动方法论创新
-- 图神经网络与流形学习的融合架构，或成为处理高维遥感数据的有效范式
 
 ---
 
