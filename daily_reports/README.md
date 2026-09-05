@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260901](./202609/20260901.md)
+## 📌 今日概况
+
+今日共检索候选论文 3 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日两篇论文聚焦视觉表征学习新范式。AutoConcept提出无需训练的概念引导重排序方法，解决组合图像检索中元数据利用不足问题；ViTAMINS则系统探索合成难负样本在自监督Vision Transformer训练中的作用，为对比学习优化提供实证依据。
+
+## ✨ 今日亮点
+
+- AutoConcept首创训练-free概念引导重排序，突破组合图像检索后处理瓶颈
+- ViTAMINS揭示合成难负样本对ViT自监督学习的增益机制与边界条件
+- 两研究分别从检索系统优化与表征学习基础角度推进视觉AI发展
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260901] AutoConcept: Training-Free Concept-Guided Reranking for Metadata-Available Composed Image Retrieval | Wang Tianyu, Wu Tianjiao | School of Computer Science and Technology, Soochow University；INSTITUT NATIONAL DES SCIENCES APPLIQUEES DE LYON | AutoConcept提出无需训练的概念引导重排序框架，利用元数据概念实现组合图像检索的精准后处理，在FashionIQ数据集验证有效性。 | [#465](https://github.com/Larry2000error/Larry-PaperClaw/issues/465) |
+| [20260901] ViTAMINS: An Empirical Study of Training Self-Supervised Vision Transformers with Synthetic Hard Negatives | Giakoumoglou Nikos, Floros Andreas, Papadopoulos Kleanthis-Marios, Stathaki Tania | Imperial College London | ViTAMINS系统实证合成难负样本对自监督Vision Transformer训练的影响，为对比学习中的负样本选择策略提供指导。 | [#466](https://github.com/Larry2000error/Larry-PaperClaw/issues/466) |
+
+## 🔎 观察
+
+- 训练-free方法成为检索任务新趋势，降低部署成本同时提升可解释性
+- 难负样本合成技术从NLP向视觉迁移，自监督学习正经历精细化设计阶段
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260830](./202608/20260830.md)
 ## 📌 今日概况
 
@@ -57,39 +88,6 @@ Powered by OpenClaw🦞
 
 - 可解释性与表示学习的结合正成为遥感AI关键方向，模型透明度需求推动方法论创新
 - 图神经网络与流形学习的融合架构，或成为处理高维遥感数据的有效范式
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260827](./202608/20260827.md)
-## 📌 今日概况
-
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦视觉-语言模型的可解释性与检索能力。四项工作分别探索视觉检索头的因果机制、跨视角地理定位的多模态融合、生成式图像检索的隐式推理，以及基于智能体的图像叙事组合，体现出从单模态匹配向复杂视觉推理演进的趋势。
-
-## ✨ 今日亮点
-
-- KAIST团队揭示VLM中视觉检索头的因果可解释机制
-- UniGeo实现文本引导的无人机跨视角地理定位
-- 阿里提出隐式图像思维机制用于生成式商品检索
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260827] Retrieval Heads Meet Vision: Uncovering How VLMs Locate and Extract Visual Information | Park Chanho, Choi Daehyeon, Lee Jihyun, Sung Minhyuk | KAIST；Independent Researcher | 首次在视觉-语言模型中识别并验证视觉检索头，揭示其定位与提取视觉信息的因果机制。 | [#447](https://github.com/Larry2000error/Larry-PaperClaw/issues/447) |
-| [20260827] UniGeo: A Multi-modal Large Language Model for Text-Guided Cross-View Geo-Localization | Wen Jiahao, Yu Hang, Zheng Zhedong | Institution unavailable | 提出多模态大语言模型UniGeo，通过文本引导实现无人机与地面视角的跨模态地理定位。 | [#448](https://github.com/Larry2000error/Larry-PaperClaw/issues/448) |
-| [20260827] PailitaoGR: Latent Think-with-Images for Generative Image Retrieval | Fan Xiaomeng, Liu Yueran, Zhou Shengyu, Fu Chenghan, Guan Wanxian, Li Feng, Yu Chuan, Xu Jian, Zheng Bo | Alibaba Group | 设计隐式图像思维框架，使模型在生成式图像检索中模拟人类视觉推理过程。 | [#449](https://github.com/Larry2000error/Larry-PaperClaw/issues/449) |
-| [20260827] Weaving Visual Narratives: Agentic Image Bundle Composition Beyond Atomic Visual Matching | Shan Rong, Xu Tianyi, Zheng Congmin, Chen Wenteng, Zhu Jiachen, Wu Junjie, Wang Teng, Liu Weiwen, Zhang Changwang, Zhang Weinan, Wang Jun, Lin Jianghao | Shanghai Jiao Tong University；Shanghai Innovation Institute；OPPO | 构建智能体驱动的图像组合系统，超越原子级视觉匹配实现叙事性图像集生成。 | [#457](https://github.com/Larry2000error/Larry-PaperClaw/issues/457) |
-
-## 🔎 观察
-
-- 视觉检索头的因果分析为VLM黑箱机制研究开辟新路径，或可迁移至遥感图像理解任务。
-- 生成式检索与智能体组合成为视觉搜索新范式，传统相似度匹配方法面临范式转换压力。
 
 ---
 
