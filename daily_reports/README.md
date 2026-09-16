@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260913](./202609/20260913.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦多模态安全与高效推理两大方向。ViTeGate揭示视觉-语言检索增强生成中的知识投毒攻击风险，而多相机行人重识别框架则探索生成式AI与早退级联结合的低延迟方案。两者分别关注VLM的安全漏洞与实时性能优化，体现该领域攻防并进的发展态势。
+
+## ✨ 今日亮点
+
+- ViTeGate首次针对VLM检索增强生成场景设计视觉-文本触发式知识投毒攻击
+- 多相机行人重识别框架整合生成式AI与早退级联机制实现低延迟推理
+- 两篇论文均涉及视觉-语言模型，分别聚焦安全性与效率优化两个维度
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260913] ViTeGate: Visual-Textual Triggered Knowledge Poisoning for Vision-Language Retrieval-Augmented Generation | Tan Xue, Zeng Xuandi, Shao Yu, Fang Zhongli, Luo Mingyu, Sun Xiaoyan, Chen Ping, Dai Jun | Fudan University；Guangdong University of Technology；Worcester Polytechnic Institute | ViTeGate提出视觉-文本触发知识投毒方法，揭示VLM检索增强生成系统在多模态对抗攻击下的安全漏洞。 | [#499](https://github.com/Larry2000error/Larry-PaperClaw/issues/499) |
+| [20260913] A Generative AI Integrated Multimodal Framework for Low-Latency Multi-Camera Person Re-Identification | Fernando Leon, Dombawala C, Hettigoda P., Vanodhya G. Warnasooriya, Neranjana Ishara, Nawaratne Rashmika | University of Moratuwa；Zone24x7 (Pvt) Ltd；Chulalongkorn University；University of Colombo；La Trobe University | 该框架融合生成式AI与早退级联架构，构建面向多相机场景的低开销行人重识别系统。 | [#500](https://github.com/Larry2000error/Larry-PaperClaw/issues/500) |
+
+## 🔎 观察
+
+- VLM安全研究从传统对抗样本向检索增强生成等复杂场景延伸，知识投毒成为新兴威胁向量。
+- 生成式AI与早退机制的跨架构整合，反映边缘实时应用对效率与精度的双重诉求。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260907](./202609/20260907.md)
 ## 📌 今日概况
 
@@ -57,36 +88,6 @@ Powered by OpenClaw🦞
 
 - 多模态不变性联合建模正成为遥感图像匹配的主流技术路线，单一不变性已难以满足复杂应用场景需求
 - 高校间跨机构合作频繁，特征描述子等基础算法研究需持续投入以支撑下游遥感智能解译应用
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260905](./202609/20260905.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日仅收录一篇动物重识别研究，聚焦表示学习可解释性。该工作通过线性探测方法解析视觉模型中的生物学概念来源，为野生动物保护AI系统的透明化提供新思路，反映遥感与生态交叉领域对模型可解释性的关注升温。
-
-## ✨ 今日亮点
-
-- 提出线性生物概念分析方法，揭示动物重识别模型的表示机制
-- 追踪视觉表征中生物学特征的习得来源，增强模型可解释性
-- 连接计算机视觉与野生动物保护，推动可信AI在生态监测中的应用
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260905] What Does Animal Re-Identification Learn? Linear Biological Concepts and Their Origins in Visual Representations | Nolting Robert, Schild Alexandra, Weckbecker Moritz, Schall Maximilian, Gerard de Melo | Hasso-Plattner Institute；University of Potsdam；Department of Artificial Intelligence, Fraunhofer Heinrich Hertz Institute | 该研究运用线性探测技术解析动物重识别模型所学视觉表征中的生物学概念及其来源，提升模型可解释性以支持野生动物保护应用。 | [#488](https://github.com/Larry2000error/Larry-PaperClaw/issues/488) |
-
-## 🔎 观察
-
-- 单一论文收录显示当日遥感AI领域产出稀疏，或反映学术周期波动，需关注后续研究密度变化。
-- 动物重识别作为生态遥感的重要下游任务，其可解释性研究尚处早期，该方法或成为该细分领域的基准工作。
 
 ---
 
