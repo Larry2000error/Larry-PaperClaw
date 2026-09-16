@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20260907](./202609/20260907.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦多模态文档智能与水下声学感知两大方向。文档理解领域呈现检索效率与长上下文建模并重的趋势，两篇工作分别从能力路由检索和查询感知令牌预算切入优化视觉文档问答与检索系统。水下声学识别则探索开放集场景下的船舶再识别，采用原始波形与选择性核注意力机制提升鲁棒性。
+
+## ✨ 今日亮点
+
+- 能力路由视觉检索与证据链构建，突破长文档问答的上下文瓶颈
+- 原始波形选择性核网络SKANN，实现开放集水下船舶噪声再识别
+- 查询感知令牌预算策略，优化Late-Interaction视觉文档检索效率
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260907] Capability-Routed Visual Retrieval and Evidence Threading for Long-Context Document Question Answering | Rahman Amirul, Karim Aisha, Nakamura Kenji, Ng Yi-Fan | University of Malaya | 提出能力路由视觉检索与证据线索方法，通过动态能力分配与视觉证据链构建处理长文档问答中的多模态长上下文挑战。 | [#492](https://github.com/Larry2000error/Larry-PaperClaw/issues/492) |
+| [20260907] Open-Set Vessel Re-Identification from Underwater Ship-Radiated Noise with a Raw-Waveform Selective-Kernel Acoustic Neural Network (SKANN) and a Cross-Passage Evaluation Protocol | Tyagi Sunil | Institution unavailable | 设计原始波形选择性核声学神经网络SKANN，建立跨航道评估协议，解决开放集场景下水下船舶辐射噪声的再识别问题。 | [#493](https://github.com/Larry2000error/Larry-PaperClaw/issues/493) |
+| [20260907] Query-Aware Token Budgeting for Efficient Late-Interaction Visual Document Retrieval | Rishi PS, Rajeev Ranjan Dwivedi, Vinod K Kurmi | Indian Institute of Science Education and Research Bhopal | 引入查询感知令牌预算机制，在Late-Interaction视觉文档检索中动态分配计算资源，平衡检索精度与推理效率。 | [#494](https://github.com/Larry2000error/Larry-PaperClaw/issues/494) |
+
+## 🔎 观察
+
+- Late-Interaction架构（如ColBERT系列）正成为视觉文档检索的主流范式，令牌级优化成为效率提升的关键突破口。
+- 水下声学识别从封闭集向开放集演进，原始波形端到端学习取代传统手工特征，但跨域泛化仍是待解难题。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260906](./202609/20260906.md)
 ## 📌 今日概况
 
@@ -55,37 +87,6 @@ Powered by OpenClaw🦞
 
 - 单一论文收录显示当日遥感AI领域产出稀疏，或反映学术周期波动，需关注后续研究密度变化。
 - 动物重识别作为生态遥感的重要下游任务，其可解释性研究尚处早期，该方法或成为该细分领域的基准工作。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260904](./202609/20260904.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦跨模态感知与几何定位两大方向。3D视觉语言模型综述梳理了跨模态检索与开放词汇识别进展；ARC-Loc则提出方位射线收敛几何线索，实现地面到卫星图像的直接匹配定位，为遥感导航提供新思路。
-
-## ✨ 今日亮点
-
-- 3D视觉语言模型综述系统梳理跨模态检索、零样本分类与开放词汇识别技术脉络
-- ARC-Loc创新引入方位射线收敛几何约束，突破传统跨视角定位依赖特征匹配的局限
-- 两项研究分别覆盖模型方法综述与具体定位应用，体现遥感AI理论与实践的并进
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260904] An overview of 3D Vision-Language Models | Lobo Márcus, Matias Vitor, Paiva Afonso, Farias Jeová, Novello Tiago, Ponti Moacir | ICMC-USP；IMPA；Bowdoin College | Lobo等综述3D视觉语言模型，涵盖CLIP架构下的跨模态检索、零样本分类与开放词汇识别方法。 | [#485](https://github.com/Larry2000error/Larry-PaperClaw/issues/485) |
-| [20260904] ARC-Loc: Leveraging Azimuthal Ray Convergence as a Geometric Cue for Direct Cross-View Localization | Kim Hyeongsik, Kim Mincheol, Moon Heejoon, Je Hyeong Hong | Hanyang University | Kim等提出ARC-Loc，利用方位射线收敛几何线索实现地面到卫星图像的直接跨视角定位。 | [#486](https://github.com/Larry2000error/Larry-PaperClaw/issues/486) |
-
-## 🔎 观察
-
-- 跨视角定位从特征匹配转向几何约束，反映遥感定位对可解释性与精度的双重追求
-- 3D视觉语言模型综述未明确涉及遥感数据，提示该领域跨模态方法向三维空间扩展的潜在空间
 
 ---
 
