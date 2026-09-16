@@ -5,27 +5,27 @@
 # [20260903](./202609/20260903.md)
 ## 📌 今日概况
 
-今日共检索候选论文 6 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
 
-今日研究呈现跨模态检索与农业智能监测两大方向。跨模态生成式检索通过动态扩展策略优化信息不对称为核心创新；农业领域聚焦牲畜个体识别，利用背部标记解决养殖场景下的重识别与追踪难题，体现AI技术向垂直场景的深度渗透。
+今日研究呈现跨模态检索与农业智能监测两大主线。跨模态生成式检索通过动态扩展机制突破信息不对称为核心创新；畜禽精准养殖领域则聚焦侧视相机下的个体再识别技术，体现AI向垂直场景的深度渗透。
 
 ## ✨ 今日亮点
 
-- 跨模态生成检索引入动态通配符推理，缓解自回归解码中的信息瓶颈
-- 猪只重识别创新采用背部标记分类，适配侧视摄像头养殖场景
-- 农业计算机视觉研究融合多机构资源，推动精准畜牧业发展
+- 跨模态生成式检索引入动态通配符推理，缓解自回归解码中的信息不对称为题
+- 生猪个体追踪创新采用背部标记分类，解决侧视相机视角下的再识别难题
+- 农业计算机视觉研究凸显产学研医跨界协作，覆盖从算法到动物福利全链条
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260903] WIDE: Wildcard Inference with Dynamic Expansion for Cross-Modal Generative Retrieval | Guo Teng, Wang Xin, Xu Jiayou, Zhou Keying, Shen Jifeng, Ruan Haoxin | Jilin University；Jiangsu University | WIDE提出动态扩展通配符推理机制，通过优化束搜索策略解决跨模态生成检索中的信息非对称问题。 | [#471](https://github.com/Larry2000error/Larry-PaperClaw/issues/471) |
-| [20260905] BMCTrack-d: Pig re-identification and tracking via back marks in challenging camera settings | Brunner David, Oczak Maciej, Bordes Marie, Rault Jean-Loup, Stephan M. Winkler, Dorfer Viktoria | Bioinformatics Research Group, PLFDoc, University of Applied Sciences Upper Austria；Computer Vision Lab, TU Wien；Precision Livestock Farming Hub, The University of Veterinary Medicine Vienna；Animal Welfare Science Unit, The University of Veterinary Medicine Vienna | BMCTrack-d开发基于背部标记的猪只重识别与跟踪系统，针对挑战性相机设置下的养殖场景实现个体精准辨识。 | [#472](https://github.com/Larry2000error/Larry-PaperClaw/issues/472) |
+| [20260903] WIDE: Wildcard Inference with Dynamic Expansion for Cross-Modal Generative Retrieval | Guo Teng, Wang Xin, Xu Jiayou, Zhou Keying, Shen Jifeng, Ruan Haoxin | Jilin University；Jiangsu University | WIDE提出动态扩展的通配符推理机制，优化跨模态生成式检索中的束搜索策略，应对自回归解码的信息不对称瓶颈。 | [#471](https://github.com/Larry2000error/Larry-PaperClaw/issues/471) |
+| [20260905] BMCTrack-d: Pig re-identification and tracking via back marks in challenging camera settings | Brunner David, Oczak Maciej, Bordes Marie, Rault Jean-Loup, Stephan M. Winkler, Dorfer Viktoria | Bioinformatics Research Group, PLFDoc, University of Applied Sciences Upper Austria；Computer Vision Lab, TU Wien；Precision Livestock Farming Hub, The University of Veterinary Medicine Vienna；Animal Welfare Science Unit, The University of Veterinary Medicine Vienna | BMCTrack-d开发基于背部标记分类的生猪再识别与跟踪系统，专为侧视相机等挑战性养殖场景设计。 | [#472](https://github.com/Larry2000error/Larry-PaperClaw/issues/472) |
 
 ## 🔎 观察
 
-- 生成式检索正从静态编码向动态推理演进，自回归模型的信息损耗问题成为优化焦点
-- 农业AI研究呈现精细化趋势，牲畜个体识别从群体分析迈向单只追踪，标记辅助策略降低环境干扰
+- 生成式检索正从静态编码向动态推理演进，WIDE的通配符扩展机制或成跨模态对齐新范式
+- 农业AI研究呈现精细化转向，畜禽个体识别从群体监测下沉至标记级特征，技术落地性显著增强
 
 ---
 
