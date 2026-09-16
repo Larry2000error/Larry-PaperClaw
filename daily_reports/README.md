@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260904](./202609/20260904.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦跨模态感知与几何定位两大方向。3D视觉语言模型综述梳理了跨模态检索与开放词汇识别进展；ARC-Loc则提出方位射线收敛几何线索，实现地面到卫星图像的直接匹配定位，为遥感导航提供新思路。
+
+## ✨ 今日亮点
+
+- 3D视觉语言模型综述系统梳理跨模态检索、零样本分类与开放词汇识别技术脉络
+- ARC-Loc创新引入方位射线收敛几何约束，突破传统跨视角定位依赖特征匹配的局限
+- 两项研究分别覆盖模型方法综述与具体定位应用，体现遥感AI理论与实践的并进
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260904] An overview of 3D Vision-Language Models | Lobo Márcus, Matias Vitor, Paiva Afonso, Farias Jeová, Novello Tiago, Ponti Moacir | ICMC-USP；IMPA；Bowdoin College | Lobo等综述3D视觉语言模型，涵盖CLIP架构下的跨模态检索、零样本分类与开放词汇识别方法。 | [#485](https://github.com/Larry2000error/Larry-PaperClaw/issues/485) |
+| [20260904] ARC-Loc: Leveraging Azimuthal Ray Convergence as a Geometric Cue for Direct Cross-View Localization | Kim Hyeongsik, Kim Mincheol, Moon Heejoon, Je Hyeong Hong | Hanyang University | Kim等提出ARC-Loc，利用方位射线收敛几何线索实现地面到卫星图像的直接跨视角定位。 | [#486](https://github.com/Larry2000error/Larry-PaperClaw/issues/486) |
+
+## 🔎 观察
+
+- 跨视角定位从特征匹配转向几何约束，反映遥感定位对可解释性与精度的双重追求
+- 3D视觉语言模型综述未明确涉及遥感数据，提示该领域跨模态方法向三维空间扩展的潜在空间
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260903](./202609/20260903.md)
 ## 📌 今日概况
 
@@ -58,39 +89,6 @@ Powered by OpenClaw🦞
 
 - 视觉-语言模型幻觉问题仍是研究热点，稀疏解码与检索增强结合成为新思路，但工程落地复杂度需关注。
 - 地理空间AI从粗粒度场景识别向细粒度POI定位演进，非对称匹配设计反映实际应用中视角与尺度差异的建模需求。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260901](./202609/20260901.md)
-## 📌 今日概况
-
-今日共检索候选论文 7 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日遥感AI研究聚焦视觉检索与表征学习两大方向。组合图像检索、自监督学习与细粒度视觉理解成为热点，跨域监控场景下的车辆属性分类获得新基准支持，语义图结构方法推动多实体检索发展。
-
-## ✨ 今日亮点
-
-- AutoConcept提出无训练概念引导重排序，突破组合图像检索依赖训练数据瓶颈
-- ViTAMINS系统研究合成难负样本对自监督ViT表征学习的影响机制
-- SAGE构建语义属性图实现多实体视觉检索，拓展文档理解应用场景
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260901] AutoConcept: Training-Free Concept-Guided Reranking for Metadata-Available Composed Image Retrieval | Wang Tianyu, Wu Tianjiao | School of Computer Science and Technology, Soochow University；INSTITUT NATIONAL DES SCIENCES APPLIQUEES DE LYON | AutoConcept提出无需训练的概念引导重排序框架，利用元数据实现组合图像检索的零样本优化。 | [#465](https://github.com/Larry2000error/Larry-PaperClaw/issues/465) |
-| [20260901] ViTAMINS: An Empirical Study of Training Self-Supervised Vision Transformers with Synthetic Hard Negatives | Giakoumoglou Nikos, Floros Andreas, Papadopoulos Kleanthis-Marios, Stathaki Tania | Imperial College London | ViTAMINS通过合成难负样本实证研究自监督Vision Transformer的训练特性与表征质量。 | [#466](https://github.com/Larry2000error/Larry-PaperClaw/issues/466) |
-| [20260901] A Benchmark for Vehicle Attribute Classification in Cross-Domain Surveillance Scenarios | Sergio M. Silva, Otavio T. Remer, Gabriel E. Lima, Wojcik Lucas, Laroca Rayson, Menotti David | Department of Informatics, Federal University of Paraná；Graduate Program in Informatics, Pontifical Catholic University of Paraná | 发布跨域监控场景车辆属性分类基准，为智能交通系统提供标准化评估体系。 | [#482](https://github.com/Larry2000error/Larry-PaperClaw/issues/482) |
-| [20260901] SAGE: Semantic Attribute Graphs for Multi-Entity Visual Retrieval | Kim Yongjoo, Kwon Mincheol, Choi Seonga, Lee Minseung, Oh Kyeong-Jin, Lee Hyunyoung, Choi Yunsu, Lee Jungbeom | Korea University；KT Corporation | SAGE引入语义属性图结构，解决多实体视觉检索中的细粒度匹配与文档理解难题。 | [#483](https://github.com/Larry2000error/Larry-PaperClaw/issues/483) |
-
-## 🔎 观察
-
-- 无训练/零样本方法在检索任务中持续受到关注，反映领域对数据效率与部署成本的现实考量
-- 自监督学习与难样本挖掘的结合仍是表征学习核心议题，合成数据策略或成降低标注依赖的关键路径
 
 ---
 
