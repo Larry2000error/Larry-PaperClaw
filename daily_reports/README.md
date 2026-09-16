@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260906](./202609/20260906.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日遥感AI研究聚焦多模态图像匹配的核心挑战，西南交通大学与武汉大学联合团队提出辐射-旋转-尺度三重不变特征描述子。该工作针对异源传感器成像差异导致的匹配困难，通过几何与辐射联合建模提升跨模态配准鲁棒性，为遥感图像融合与变化检测提供基础支撑。
+
+## ✨ 今日亮点
+
+- 提出辐射-旋转-尺度三重不变特征描述子，突破多模态图像匹配瓶颈
+- 联合几何变换与辐射畸变建模，增强异源遥感数据配准稳定性
+- 西南交大与武大跨校合作，产学研结合推动遥感基础算法创新
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260906] Radiation, Rotation and Scale Invariant Feature Descriptor for Multimodal Image Matching | Ye Yuanxin, Tang Tengfeng, Peng Tao, Han Zhiqiang, Li Jiayuan, Wang Mi | Faculty of Geosciences and Engineering, Southwest Jiaotong University；School of Remote Sensing and Information Engineering, Wuhan University；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University | Ye等提出辐射-旋转-尺度三重不变特征描述子，解决多模态遥感图像因传感器差异导致的匹配失效问题。 | [#490](https://github.com/Larry2000error/Larry-PaperClaw/issues/490) |
+
+## 🔎 观察
+
+- 多模态不变性联合建模正成为遥感图像匹配的主流技术路线，单一不变性已难以满足复杂应用场景需求
+- 高校间跨机构合作频繁，特征描述子等基础算法研究需持续投入以支撑下游遥感智能解译应用
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260905](./202609/20260905.md)
 ## 📌 今日概况
 
@@ -56,37 +86,6 @@ Powered by OpenClaw🦞
 
 - 跨视角定位从特征匹配转向几何约束，反映遥感定位对可解释性与精度的双重追求
 - 3D视觉语言模型综述未明确涉及遥感数据，提示该领域跨模态方法向三维空间扩展的潜在空间
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260903](./202609/20260903.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究呈现跨模态检索与农业智能监测两大主线。跨模态生成式检索通过动态扩展机制突破信息不对称为核心创新；畜禽精准养殖领域则聚焦侧视相机下的个体再识别技术，体现AI向垂直场景的深度渗透。
-
-## ✨ 今日亮点
-
-- 跨模态生成式检索引入动态通配符推理，缓解自回归解码中的信息不对称为题
-- 生猪个体追踪创新采用背部标记分类，解决侧视相机视角下的再识别难题
-- 农业计算机视觉研究凸显产学研医跨界协作，覆盖从算法到动物福利全链条
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260903] WIDE: Wildcard Inference with Dynamic Expansion for Cross-Modal Generative Retrieval | Guo Teng, Wang Xin, Xu Jiayou, Zhou Keying, Shen Jifeng, Ruan Haoxin | Jilin University；Jiangsu University | WIDE提出动态扩展的通配符推理机制，优化跨模态生成式检索中的束搜索策略，应对自回归解码的信息不对称瓶颈。 | [#471](https://github.com/Larry2000error/Larry-PaperClaw/issues/471) |
-| [20260905] BMCTrack-d: Pig re-identification and tracking via back marks in challenging camera settings | Brunner David, Oczak Maciej, Bordes Marie, Rault Jean-Loup, Stephan M. Winkler, Dorfer Viktoria | Bioinformatics Research Group, PLFDoc, University of Applied Sciences Upper Austria；Computer Vision Lab, TU Wien；Precision Livestock Farming Hub, The University of Veterinary Medicine Vienna；Animal Welfare Science Unit, The University of Veterinary Medicine Vienna | BMCTrack-d开发基于背部标记分类的生猪再识别与跟踪系统，专为侧视相机等挑战性养殖场景设计。 | [#472](https://github.com/Larry2000error/Larry-PaperClaw/issues/472) |
-
-## 🔎 观察
-
-- 生成式检索正从静态编码向动态推理演进，WIDE的通配符扩展机制或成跨模态对齐新范式
-- 农业AI研究呈现精细化转向，畜禽个体识别从群体监测下沉至标记级特征，技术落地性显著增强
 
 ---
 
