@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260905](./202609/20260905.md)
+## 📌 今日概况
+
+今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日仅收录一篇动物重识别研究，聚焦表示学习可解释性。该工作通过线性探测方法解析视觉模型中的生物学概念来源，为野生动物保护AI系统的透明化提供新思路，反映遥感与生态交叉领域对模型可解释性的关注升温。
+
+## ✨ 今日亮点
+
+- 提出线性生物概念分析方法，揭示动物重识别模型的表示机制
+- 追踪视觉表征中生物学特征的习得来源，增强模型可解释性
+- 连接计算机视觉与野生动物保护，推动可信AI在生态监测中的应用
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260905] What Does Animal Re-Identification Learn? Linear Biological Concepts and Their Origins in Visual Representations | Nolting Robert, Schild Alexandra, Weckbecker Moritz, Schall Maximilian, Gerard de Melo | Hasso-Plattner Institute；University of Potsdam；Department of Artificial Intelligence, Fraunhofer Heinrich Hertz Institute | 该研究运用线性探测技术解析动物重识别模型所学视觉表征中的生物学概念及其来源，提升模型可解释性以支持野生动物保护应用。 | [#488](https://github.com/Larry2000error/Larry-PaperClaw/issues/488) |
+
+## 🔎 观察
+
+- 单一论文收录显示当日遥感AI领域产出稀疏，或反映学术周期波动，需关注后续研究密度变化。
+- 动物重识别作为生态遥感的重要下游任务，其可解释性研究尚处早期，该方法或成为该细分领域的基准工作。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260904](./202609/20260904.md)
 ## 📌 今日概况
 
@@ -57,38 +87,6 @@ Powered by OpenClaw🦞
 
 - 生成式检索正从静态编码向动态推理演进，WIDE的通配符扩展机制或成跨模态对齐新范式
 - 农业AI研究呈现精细化转向，畜禽个体识别从群体监测下沉至标记级特征，技术落地性显著增强
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260902](./202609/20260902.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦视觉-语言模型优化与地理空间智能两大方向。一方面，学者致力于缓解大模型视觉幻觉问题，并改进图像检索的流形学习方法；另一方面，面向实际应用场景，出现了细粒度POI定位的新基准数据集，体现遥感与地理信息领域对高精度、实用化技术的持续追求。
-
-## ✨ 今日亮点
-
-- 稀疏解码机制有效抑制大视觉语言模型的视觉幻觉现象
-- 邻居嵌入投影与秩聚合结合提升流形学习图像检索性能
-- 全球-局部非对称匹配实现大规模街景中细粒度店铺定位
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260902] RVSD: Retrieval Vision Sparse Decoding for Mitigating Visual Hallucinations in Large Vision-Language Models | Liu Canjie, Kang Jiawen, Wen Jinbo, Zhong Zishao | School of Automation, Guangdong University of Technology；Department of Computer Science, City University of Hong Kong；The Second Affiliated Hospital of Guangzhou University of Chinese Medicine | RVSD提出检索视觉稀疏解码方法，通过跨模态检索引导稀疏解码以缓解大视觉语言模型的视觉幻觉。 | [#468](https://github.com/Larry2000error/Larry-PaperClaw/issues/468) |
-| [20260902] Aggregating Neighbor Embedding Projection and Rank-Based Manifold Learning for Image Retrieval | Vinicius Atsushi Sato Kawai, Gustavo Rosseto Leticio, Lucas Pascotti Valem, Daniel Carlos Guimarães Pedronette | São Paulo State University (UNESP)；University of São Paulo (USP) | ANEPR融合邻居嵌入投影与基于秩的流形学习，优化内容图像检索中的相似度传播与结构保持。 | [#469](https://github.com/Larry2000error/Larry-PaperClaw/issues/469) |
-| [20260902] GeoStore: Finding Small Storefronts in Large Scenes -- A Fine-Grained POI Localization Benchmark with Global-to-Local Asymmetric Matching | Han Lu, Sun Xiting, Wang Hao, Cao Zhiqiang, Du Ruihuan, Zeng Ziquan, Lv Chunlong | Amap, Alibaba Group | GeoStore构建细粒度POI定位基准，采用全局到局部非对称匹配解决大场景中小目标检索难题。 | [#484](https://github.com/Larry2000error/Larry-PaperClaw/issues/484) |
-
-## 🔎 观察
-
-- 视觉-语言模型幻觉问题仍是研究热点，稀疏解码与检索增强结合成为新思路，但工程落地复杂度需关注。
-- 地理空间AI从粗粒度场景识别向细粒度POI定位演进，非对称匹配设计反映实际应用中视角与尺度差异的建模需求。
 
 ---
 
