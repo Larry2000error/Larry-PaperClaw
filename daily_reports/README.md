@@ -36,27 +36,28 @@ Powered by OpenClaw🦞
 # [20260902](./202609/20260902.md)
 ## 📌 今日概况
 
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日研究聚焦于视觉语言模型幻觉抑制与图像检索优化两大方向。前者通过稀疏解码与跨模态检索机制提升大模型可靠性，后者融合流形学习与排序聚合改进检索精度，均体现多技术融合趋势。
+今日研究聚焦视觉-语言模型优化与地理空间智能两大方向。一方面，学者致力于缓解大模型视觉幻觉问题，并改进图像检索的流形学习方法；另一方面，面向实际应用场景，出现了细粒度POI定位的新基准数据集，体现遥感与地理信息领域对高精度、实用化技术的持续追求。
 
 ## ✨ 今日亮点
 
-- RVSD提出检索视觉稀疏解码，有效缓解大视觉语言模型幻觉问题
-- 邻居嵌入投影与基于排序的流形学习结合，优化图像检索性能
-- 跨模态语义空间对齐与UMAP降维技术成为关键方法支撑
+- 稀疏解码机制有效抑制大视觉语言模型的视觉幻觉现象
+- 邻居嵌入投影与秩聚合结合提升流形学习图像检索性能
+- 全球-局部非对称匹配实现大规模街景中细粒度店铺定位
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260902] RVSD: Retrieval Vision Sparse Decoding for Mitigating Visual Hallucinations in Large Vision-Language Models | Liu Canjie, Kang Jiawen, Wen Jinbo, Zhong Zishao | School of Automation, Guangdong University of Technology；Department of Computer Science, City University of Hong Kong；The Second Affiliated Hospital of Guangzhou University of Chinese Medicine | RVSD通过检索增强的稀疏解码机制，在生成阶段抑制大视觉语言模型的视觉幻觉现象。 | [#468](https://github.com/Larry2000error/Larry-PaperClaw/issues/468) |
-| [20260902] Aggregating Neighbor Embedding Projection and Rank-Based Manifold Learning for Image Retrieval | Vinicius Atsushi Sato Kawai, Gustavo Rosseto Leticio, Lucas Pascotti Valem, Daniel Carlos Guimarães Pedronette | São Paulo State University (UNESP)；University of São Paulo (USP) | 提出邻居嵌入投影与排序流形学习融合方法，提升基于内容的图像检索准确性。 | [#469](https://github.com/Larry2000error/Larry-PaperClaw/issues/469) |
+| [20260902] RVSD: Retrieval Vision Sparse Decoding for Mitigating Visual Hallucinations in Large Vision-Language Models | Liu Canjie, Kang Jiawen, Wen Jinbo, Zhong Zishao | School of Automation, Guangdong University of Technology；Department of Computer Science, City University of Hong Kong；The Second Affiliated Hospital of Guangzhou University of Chinese Medicine | RVSD提出检索视觉稀疏解码方法，通过跨模态检索引导稀疏解码以缓解大视觉语言模型的视觉幻觉。 | [#468](https://github.com/Larry2000error/Larry-PaperClaw/issues/468) |
+| [20260902] Aggregating Neighbor Embedding Projection and Rank-Based Manifold Learning for Image Retrieval | Vinicius Atsushi Sato Kawai, Gustavo Rosseto Leticio, Lucas Pascotti Valem, Daniel Carlos Guimarães Pedronette | São Paulo State University (UNESP)；University of São Paulo (USP) | ANEPR融合邻居嵌入投影与基于秩的流形学习，优化内容图像检索中的相似度传播与结构保持。 | [#469](https://github.com/Larry2000error/Larry-PaperClaw/issues/469) |
+| [20260902] GeoStore: Finding Small Storefronts in Large Scenes -- A Fine-Grained POI Localization Benchmark with Global-to-Local Asymmetric Matching | Han Lu, Sun Xiting, Wang Hao, Cao Zhiqiang, Du Ruihuan, Zeng Ziquan, Lv Chunlong | Amap, Alibaba Group | GeoStore构建细粒度POI定位基准，采用全局到局部非对称匹配解决大场景中小目标检索难题。 | [#484](https://github.com/Larry2000error/Larry-PaperClaw/issues/484) |
 
 ## 🔎 观察
 
-- 视觉语言模型幻觉治理从训练后干预转向生成过程控制，稀疏解码成为新范式
-- 传统流形学习方法与排序聚合结合，显示经典算法在深度学习时代的重构价值
+- 视觉-语言模型幻觉问题仍是研究热点，稀疏解码与检索增强结合成为新思路，但工程落地复杂度需关注。
+- 地理空间AI从粗粒度场景识别向细粒度POI定位演进，非对称匹配设计反映实际应用中视角与尺度差异的建模需求。
 
 ---
 
