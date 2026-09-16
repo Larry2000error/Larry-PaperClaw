@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20260915](./202609/20260915.md)
+## 📌 今日概况
+
+今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日遥感AI领域聚焦多模态大模型的检索与生成能力优化。两项研究分别从区域级检索增强和跨模态对齐角度切入，探索视觉-语言模型的细粒度理解与高效表征，推动多模态系统在精准定位与灵活生成方面的技术边界。
+
+## ✨ 今日亮点
+
+- RegRet提出区域级检索框架，通过区域感知编码器增强大模型的细粒度定位能力
+- FLAT创新将图像文本重采样为1D可变长度对齐令牌，统一检索与生成任务
+- 两项研究均来自产业界与学术界合作，体现多模态技术向实用化迈进
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260915] RegRet: Enhancing Region-Level Retrieval in Large Multimodal Models | Liang Xun, Yang Honghui, Pan Weihang, Zhao Ruisi, Pan Boyuan, Hu Yao, Wang Wenxiao, Lin Binbin, Cai Deng | State Key Lab of CAD&CG, Zhejiang University；Xiaohongshu Inc.；School of Software Technology, Zhejiang University | RegRet通过区域感知编码器与对比学习，提升大模型在区域级视觉-语言检索中的细粒度定位能力。 | [#507](https://github.com/Larry2000error/Larry-PaperClaw/issues/507) |
+| [20260915] FLAT: Resampling Image and Text into 1D Flexible-Length Aligned Transmodal Tokens for Retrieval and Generation | Sun Guangyu, Shlok Kumar Mishra, Bao Wentao, Robert Zhenheng Yang, Wang Xiao, Wang Xiyuan, Ma Yujunrong, Yuan Chen, Max Xiangjun Fan, Xiao Jun, Cheng Jianpeng | Meta AI | FLAT将图像和文本重采样为1D灵活长度对齐令牌，实现跨模态检索与生成的统一高效框架。 | [#508](https://github.com/Larry2000error/Larry-PaperClaw/issues/508) |
+
+## 🔎 观察
+
+- 区域级检索成为多模态大模型的新焦点，反映应用层对空间细粒度理解的迫切需求
+- 1D令牌化与长度灵活设计或成为跨模态架构的新范式，兼顾效率与任务统一性
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260914](./202609/20260914.md)
 ## 📌 今日概况
 
@@ -59,38 +90,6 @@ Powered by OpenClaw🦞
 
 - VLM安全研究从传统对抗样本向检索增强生成等复杂场景延伸，知识投毒成为新兴威胁向量。
 - 生成式AI与早退机制的跨架构整合，反映边缘实时应用对效率与精度的双重诉求。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260907](./202609/20260907.md)
-## 📌 今日概况
-
-今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦多模态文档智能与水下声学感知两大方向。文档理解领域呈现检索效率与长上下文建模并重的趋势，两篇工作分别从能力路由检索和查询感知令牌预算切入优化视觉文档问答与检索系统。水下声学识别则探索开放集场景下的船舶再识别，采用原始波形与选择性核注意力机制提升鲁棒性。
-
-## ✨ 今日亮点
-
-- 能力路由视觉检索与证据链构建，突破长文档问答的上下文瓶颈
-- 原始波形选择性核网络SKANN，实现开放集水下船舶噪声再识别
-- 查询感知令牌预算策略，优化Late-Interaction视觉文档检索效率
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260907] Capability-Routed Visual Retrieval and Evidence Threading for Long-Context Document Question Answering | Rahman Amirul, Karim Aisha, Nakamura Kenji, Ng Yi-Fan | University of Malaya | 提出能力路由视觉检索与证据线索方法，通过动态能力分配与视觉证据链构建处理长文档问答中的多模态长上下文挑战。 | [#492](https://github.com/Larry2000error/Larry-PaperClaw/issues/492) |
-| [20260907] Open-Set Vessel Re-Identification from Underwater Ship-Radiated Noise with a Raw-Waveform Selective-Kernel Acoustic Neural Network (SKANN) and a Cross-Passage Evaluation Protocol | Tyagi Sunil | Institution unavailable | 设计原始波形选择性核声学神经网络SKANN，建立跨航道评估协议，解决开放集场景下水下船舶辐射噪声的再识别问题。 | [#493](https://github.com/Larry2000error/Larry-PaperClaw/issues/493) |
-| [20260907] Query-Aware Token Budgeting for Efficient Late-Interaction Visual Document Retrieval | Rishi PS, Rajeev Ranjan Dwivedi, Vinod K Kurmi | Indian Institute of Science Education and Research Bhopal | 引入查询感知令牌预算机制，在Late-Interaction视觉文档检索中动态分配计算资源，平衡检索精度与推理效率。 | [#494](https://github.com/Larry2000error/Larry-PaperClaw/issues/494) |
-
-## 🔎 观察
-
-- Late-Interaction架构（如ColBERT系列）正成为视觉文档检索的主流范式，令牌级优化成为效率提升的关键突破口。
-- 水下声学识别从封闭集向开放集演进，原始波形端到端学习取代传统手工特征，但跨域泛化仍是待解难题。
 
 ---
 
