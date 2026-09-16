@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260914](./202609/20260914.md)
+## 📌 今日概况
+
+今日共检索候选论文 5 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日研究聚焦多模态检索与智能体系统两大方向。多模态检索领域呈现几何表征创新，两篇论文分别提出球面质心聚合与超图正则化方法；智能体系统方面，视觉RAG通过显式证据选择机制提升稀疏场景下的检索生成能力。此外，土耳其语MMLU基准研究关注多选题评估的有效性边界。
+
+## ✨ 今日亮点
+
+- 多模态检索几何化：球面质心与超图正则化双路径探索嵌入空间结构优化
+- 智能体视觉RAG突破：显式上下文选择机制应对稀疏证据场景下的检索增强
+- 低资源语言评估反思：土耳其MMLU Pro揭示选项增强策略的有效性边界
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260914] Navigating Sparse Evidence: Agentic Visual RAG via Explicit Context Selection and Consolidation | Shen Yucheng, Yan Lingyong, Wu Jiulong, Wang Shuaiqiang, WU Jianmin, Yin Dawei, Cao Min | School of Computer Science and Technology, Soochow University；Baidu Inc. | 提出Agentic Visual RAG框架，通过显式上下文选择与整合机制，解决稀疏证据场景下视觉文档理解的检索增强问题。 | [#502](https://github.com/Larry2000error/Larry-PaperClaw/issues/502) |
+| [20260914] Turkish MMLU Pro: Traceable Option Augmentation and Its Validity Limits in Turkish Multiple-Choice Evaluation | M. Ali Bayram | Yıldız Technical University | 构建土耳其MMLU Pro基准，系统研究可追踪选项增强方法在多选题评估中的有效性及其局限边界。 | [#503](https://github.com/Larry2000error/Larry-PaperClaw/issues/503) |
+| [20260914] Query-Conditioned Spherical Centroid Aggregation for Multimodal Retrieval | Mehrish Ambuj, Nag Anindya, Vascon Sebastiano | Ca' Foscari University of Venice | 设计查询条件化球面质心聚合方法，利用LoRA适配器实现模态动态加权，提升多模态检索的表征对齐能力。 | [#504](https://github.com/Larry2000error/Larry-PaperClaw/issues/504) |
+| [20260914] Hypergraph-Regularized Gramian Volumes for Multimodal Retrieval | Nag Anindya, Mehrish Ambuj, Vascon Sebastiano | Ca' Foscari University of Venice | 引入超图正则化Gramian体积度量，通过高阶结构约束优化跨模态嵌入空间，增强多模态检索的判别性与鲁棒性。 | [#505](https://github.com/Larry2000error/Larry-PaperClaw/issues/505) |
+
+## 🔎 观察
+
+- 多模态检索正从简单对齐转向几何结构深度建模，球面流形与超图高阶关系成为新范式
+- RAG系统架构演进明显：从被动检索向主动证据选择的智能体范式迁移，稀疏场景成为关键挑战
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260913](./202609/20260913.md)
 ## 📌 今日概况
 
@@ -58,36 +91,6 @@ Powered by OpenClaw🦞
 
 - Late-Interaction架构（如ColBERT系列）正成为视觉文档检索的主流范式，令牌级优化成为效率提升的关键突破口。
 - 水下声学识别从封闭集向开放集演进，原始波形端到端学习取代传统手工特征，但跨域泛化仍是待解难题。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260906](./202609/20260906.md)
-## 📌 今日概况
-
-今日共检索候选论文 2 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI研究聚焦多模态图像匹配的核心挑战，西南交通大学与武汉大学联合团队提出辐射-旋转-尺度三重不变特征描述子。该工作针对异源传感器成像差异导致的匹配困难，通过几何与辐射联合建模提升跨模态配准鲁棒性，为遥感图像融合与变化检测提供基础支撑。
-
-## ✨ 今日亮点
-
-- 提出辐射-旋转-尺度三重不变特征描述子，突破多模态图像匹配瓶颈
-- 联合几何变换与辐射畸变建模，增强异源遥感数据配准稳定性
-- 西南交大与武大跨校合作，产学研结合推动遥感基础算法创新
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260906] Radiation, Rotation and Scale Invariant Feature Descriptor for Multimodal Image Matching | Ye Yuanxin, Tang Tengfeng, Peng Tao, Han Zhiqiang, Li Jiayuan, Wang Mi | Faculty of Geosciences and Engineering, Southwest Jiaotong University；School of Remote Sensing and Information Engineering, Wuhan University；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University | Ye等提出辐射-旋转-尺度三重不变特征描述子，解决多模态遥感图像因传感器差异导致的匹配失效问题。 | [#490](https://github.com/Larry2000error/Larry-PaperClaw/issues/490) |
-
-## 🔎 观察
-
-- 多模态不变性联合建模正成为遥感图像匹配的主流技术路线，单一不变性已难以满足复杂应用场景需求
-- 高校间跨机构合作频繁，特征描述子等基础算法研究需持续投入以支撑下游遥感智能解译应用
 
 ---
 
