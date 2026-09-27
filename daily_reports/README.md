@@ -68,27 +68,27 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 0 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 4 篇。
 
-今日研究聚焦多模态检索与智能体系统两大方向。多模态检索领域出现两项球面几何与超图正则化新方法，强调查询条件聚合与嵌入空间优化。文档理解方向探索视觉RAG的显式证据选择机制。此外，土耳其语大模型评测的选项增强有效性研究为低资源语言评估提供新视角。
+今日研究聚焦多模态检索与智能体系统两大方向。多模态检索领域出现两项球面几何与超图正则化新方法，强调查询条件聚合与嵌入空间优化。智能体系统方面，视觉RAG通过显式证据选择机制应对稀疏场景。此外，土耳其语评测基准的选项增强有效性研究为低资源语言评估提供方法论参考。
 
 ## ✨ 今日亮点
 
-- 球面质心聚合：通过查询条件动态加权实现多模态检索的模态自适应融合
-- 超图正则化：利用格拉姆体积约束优化跨模态嵌入空间的结构化关系
-- 显式证据选择：智能体视觉RAG通过上下文整合解决稀疏证据导航难题
+- 球面质心聚合：通过查询条件动态加权实现多模态特征融合
+- 超图正则化：利用格拉姆体积约束优化跨模态嵌入空间结构
+- 显式证据选择：智能体视觉RAG解决稀疏证据下的上下文整合难题
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260914] Navigating Sparse Evidence: Agentic Visual RAG via Explicit Context Selection and Consolidation | Shen Yucheng, Yan Lingyong, Wu Jiulong, Wang Shuaiqiang, WU Jianmin, Yin Dawei, Cao Min | School of Computer Science and Technology, Soochow University；Baidu Inc. | 提出显式上下文选择与整合机制，使智能体视觉RAG系统能够主动导航稀疏证据场景。 | [#502](https://github.com/Larry2000error/Larry-PaperClaw/issues/502) |
-| [20260914] Turkish MMLU Pro: Traceable Option Augmentation and Its Validity Limits in Turkish Multiple-Choice Evaluation | M. Ali Bayram | Yıldız Technical University | 构建土耳其语MMLU Pro基准，系统追踪选项增强方法的有效性及适用边界。 | [#503](https://github.com/Larry2000error/Larry-PaperClaw/issues/503) |
-| [20260914] Query-Conditioned Spherical Centroid Aggregation for Multimodal Retrieval | Mehrish Ambuj, Nag Anindya, Vascon Sebastiano | Ca' Foscari University of Venice | 设计查询条件球面质心聚合方法，通过LoRA适配器实现多模态检索的动态模态加权。 | [#504](https://github.com/Larry2000error/Larry-PaperClaw/issues/504) |
-| [20260914] Hypergraph-Regularized Gramian Volumes for Multimodal Retrieval | Nag Anindya, Mehrish Ambuj, Vascon Sebastiano | Ca' Foscari University of Venice | 引入超图正则化格拉姆体积约束，优化多模态检索中的跨模态嵌入空间结构。 | [#505](https://github.com/Larry2000error/Larry-PaperClaw/issues/505) |
+| [20260914] Navigating Sparse Evidence: Agentic Visual RAG via Explicit Context Selection and Consolidation | Shen Yucheng, Yan Lingyong, Wu Jiulong, Wang Shuaiqiang, WU Jianmin, Yin Dawei, Cao Min | School of Computer Science and Technology, Soochow University；Baidu Inc. | 提出Agentic Visual RAG框架，通过显式上下文选择与整合机制，解决视觉问答中证据稀疏导致的检索噪声问题。 | [#502](https://github.com/Larry2000error/Larry-PaperClaw/issues/502) |
+| [20260914] Turkish MMLU Pro: Traceable Option Augmentation and Its Validity Limits in Turkish Multiple-Choice Evaluation | M. Ali Bayram | Yıldız Technical University | 构建土耳其MMLU Pro基准，系统分析选项增强策略的有效性边界，揭示多选评测中干扰项设计的语言特异性约束。 | [#503](https://github.com/Larry2000error/Larry-PaperClaw/issues/503) |
+| [20260914] Query-Conditioned Spherical Centroid Aggregation for Multimodal Retrieval | Mehrish Ambuj, Nag Anindya, Vascon Sebastiano | Ca' Foscari University of Venice | 设计查询条件球面质心聚合方法，以LoRA适配器实现模态动态加权，提升多模态检索的查询适应性。 | [#504](https://github.com/Larry2000error/Larry-PaperClaw/issues/504) |
+| [20260914] Hypergraph-Regularized Gramian Volumes for Multimodal Retrieval | Nag Anindya, Mehrish Ambuj, Vascon Sebastiano | Ca' Foscari University of Venice | 引入超图正则化格拉姆体积目标，通过高阶关系约束优化跨模态嵌入，增强多模态检索的判别性与结构一致性。 | [#505](https://github.com/Larry2000error/Larry-PaperClaw/issues/505) |
 
 ## 🔎 观察
 
-- 多模态检索正从简单对齐转向几何结构约束与查询自适应的精细化建模，数学工具深度介入。
-- RAG系统研究重心后移，从检索增强本身转向智能体的主动证据选择与上下文整合策略。
+- 多模态检索正从简单对齐向几何感知、关系约束的精细化嵌入空间建模演进，球面流形与超图结构成为新工具。
+- RAG系统架构呈现明显分层趋势：检索层与推理层分离设计，显式证据选择机制或成为提升系统可解释性的关键路径。
 
 ---
 
