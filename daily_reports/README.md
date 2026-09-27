@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20260923](./202609/20260923.md)
+## 📌 今日概况
+
+今日共检索候选论文 1 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日仅收录1篇论文，聚焦SAM2在视频多目标跟踪中的内存优化。研究趋势显示，基础模型（如SAM2）的工业落地正从单纯性能提升转向生命周期管理与鲁棒性设计，汽车制造业（如Toyota）在视觉感知领域的投入值得关注。
+
+## ✨ 今日亮点
+
+- SAM2内存机制革新：引入生命周期感知设计解决视频跟踪中的记忆衰减问题
+- 工业级MOT方案：针对自动驾驶场景优化轨迹初始化与长期遮挡处理
+- 欧洲车企主导：Toyota Motor Europe推动基础模型在量产视觉系统的实用化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260923] LiAM-SAM: Lifecycle-Aware Memory for Robust SAM2-Based MOT | Francisco Grégoire, D'Amico Alessandro, Costantini Samuele, Francesca Gianpiero, Garattoni Lorenzo | Toyota Motor Europe | LiAM-SAM提出生命周期感知内存机制，增强SAM2在视频多目标跟踪中的时序一致性与鲁棒性，由Toyota Motor Europe团队开发。 | [#510](https://github.com/Larry2000error/Larry-PaperClaw/issues/510) |
+
+## 🔎 观察
+
+- SAM2生态快速向垂直场景渗透，内存管理成为视频理解任务的新优化维度
+- 传统车企正积极布局视觉基础模型研发，学术机构与工业界的合作模式值得观察
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260915](./202609/20260915.md)
 ## 📌 今日概况
 
@@ -59,37 +89,6 @@ Powered by OpenClaw🦞
 
 - 多模态检索正从简单对齐转向几何结构约束与查询自适应的精细化建模，数学工具深度介入。
 - RAG系统研究重心后移，从检索增强本身转向智能体的主动证据选择与上下文整合策略。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260913](./202609/20260913.md)
-## 📌 今日概况
-
-今日共检索候选论文 4 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦多模态安全与高效推理两大方向。ViTeGate揭示视觉-语言检索增强生成中的知识投毒攻击风险，而多相机行人重识别框架则探索生成式AI与早退级联结合的低延迟方案。两者分别关注VLM的安全漏洞与实时性能优化，体现该领域攻防并进的发展态势。
-
-## ✨ 今日亮点
-
-- ViTeGate首次针对VLM检索增强生成场景设计视觉-文本触发式知识投毒攻击
-- 多相机行人重识别框架整合生成式AI与早退级联机制实现低延迟推理
-- 两篇论文均涉及视觉-语言模型，分别聚焦安全性与效率优化两个维度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260913] ViTeGate: Visual-Textual Triggered Knowledge Poisoning for Vision-Language Retrieval-Augmented Generation | Tan Xue, Zeng Xuandi, Shao Yu, Fang Zhongli, Luo Mingyu, Sun Xiaoyan, Chen Ping, Dai Jun | Fudan University；Guangdong University of Technology；Worcester Polytechnic Institute | ViTeGate提出视觉-文本触发知识投毒方法，揭示VLM检索增强生成系统在多模态对抗攻击下的安全漏洞。 | [#499](https://github.com/Larry2000error/Larry-PaperClaw/issues/499) |
-| [20260913] A Generative AI Integrated Multimodal Framework for Low-Latency Multi-Camera Person Re-Identification | Fernando Leon, Dombawala C, Hettigoda P., Vanodhya G. Warnasooriya, Neranjana Ishara, Nawaratne Rashmika | University of Moratuwa；Zone24x7 (Pvt) Ltd；Chulalongkorn University；University of Colombo；La Trobe University | 该框架融合生成式AI与早退级联架构，构建面向多相机场景的低开销行人重识别系统。 | [#500](https://github.com/Larry2000error/Larry-PaperClaw/issues/500) |
-
-## 🔎 观察
-
-- VLM安全研究从传统对抗样本向检索增强生成等复杂场景延伸，知识投毒成为新兴威胁向量。
-- 生成式AI与早退机制的跨架构整合，反映边缘实时应用对效率与精度的双重诉求。
 
 ---
 
