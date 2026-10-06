@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20260930](./202609/20260930.md)
+## 📌 今日概况
+
+今日共检索候选论文 69 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日研究聚焦跨模态智能与时空推理，涵盖视觉-语言模型在车辆重识别、视频地理定位、文本-视频检索及视觉空间导航等方向。学界正探索层级化图注意力、多维度显著性评估与多步嵌入检索等技术，以提升复杂场景下的跨视角匹配与推理能力。
+
+## ✨ 今日亮点
+
+- GeoGAT提出双向时序采样与层级图注意力，实现全球视频地理定位
+- Front-to-Back构建非对称跨视角车辆重识别基准，评估视觉-语言模型零样本能力
+- 文本-视频检索引入多维度显著性评估，缓解视觉冗余问题
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20260930] Front-to-Back: Benchmarking Vision-Language Models for Asymmetric Cross-View Vehicle Re-Identification | Mots'oehli Moseli, Babeli Thulani | MindForge AI；University of Hawai'i at Mānoa | 该研究建立非对称跨视角车辆重识别基准，系统评估视觉-语言模型的零样本跨视角匹配性能。 | [#536](https://github.com/Larry2000error/Larry-PaperClaw/issues/536) |
+| [20260930] GeoGAT: Bidirectional Temporal Sampling Meets Hierarchical Graph Attention for Global Video Geo-localization | Cui Junchao, Ma Xuanzi, Shi Wenqi, Li Hangyu, Zhu Biru, Fu Chong, Luo Xiangyang | Information Engineering University；Zhengzhou University | GeoGAT融合双向时序采样与层级图注意力网络，实现基于时空特征的全局视频地理定位。 | [#537](https://github.com/Larry2000error/Larry-PaperClaw/issues/537) |
+| [20260930] Text-Video Retrieval via Multi-Dimensional Saliency Assessment and Granularity-Aware Query Decomposition | Wei Shuquan, Chen Xi, Chen Xu, Jia Xiangyang | School of Computer Science, Wuhan University | 通过多维度显著性评估与粒度感知查询分解，提升文本-视频跨模态检索的精准度。 | [#538](https://github.com/Larry2000error/Larry-PaperClaw/issues/538) |
+| [20260930] Learning to Route in Visual Space via Multi-Step Embedding Retrieval | Chen Tianyu, Zhou Mingyuan, Wu Jiaxing | The University of Texas at Austin；Google DeepMind | 基于强化学习的多步嵌入检索方法，使LLM智能体能够在视觉嵌入空间中自主导航寻路。 | [#539](https://github.com/Larry2000error/Larry-PaperClaw/issues/539) |
+
+## 🔎 观察
+
+- 跨模态对齐与时空推理成为核心趋势，图神经网络与注意力机制在地理定位任务中应用深化
+- 视觉-语言模型正从静态图像向动态视频与复杂空间导航拓展，零样本与强化学习成为关键使能技术
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260929](./202609/20260929.md)
 ## 📌 今日概况
 
@@ -59,39 +92,6 @@ Powered by OpenClaw🦞
 
 - 跨模态重识别研究正从配对数据向非配对、无监督设置迁移，降低标注成本成为核心诉求
 - 环境元数据与视觉模态的融合或将成为生态监测领域的新范式，但数据异质性挑战仍待解决
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260927](./202609/20260927.md)
-## 📌 今日概况
-
-今日共检索候选论文 33 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日研究呈现多模态表征与自监督学习的交叉趋势。漫画角色重识别、变分隐推理嵌入、几何视角合成检索及扩散Transformer结构优化等方向并进，工业界与学术界合作紧密，视觉-语言模型与生成式架构持续受到关注。
-
-## ✨ 今日亮点
-
-- 变分隐推理为多模态嵌入学习提供新范式
-- 几何视角合成助力细粒度商品图像检索
-- 结构化残差连接优化扩散Transformer性能
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260927] Re:Cognize -- Open-Set Comic Character Re-Identification | Baranwal Aaditya, Kataria Madhav, Yogesh S Rawat, Vyas Shruti | Institute of Artificial Intelligence, University of Central Florida | 提出开放集漫画角色重识别框架，结合自监督学习与序列建模解决跨场景角色匹配难题。 | [#519](https://github.com/Larry2000error/Larry-PaperClaw/issues/519) |
-| [20260927] VaME: Exploring Variational Latent Reasoning for Multimodal Embeddings | Wu Peixi, Jiang Mingzhou, Ma Feipeng, Yang Biao, Zhou Yunhao, Yuan Wei, Chai Bosong, Lin Huizu, Chen Jie, Hu Zhangchi, Yang Fan, Ou Wenwu, Li Hebei, Sun Xiaoyan | University of Science and Technology of China；Tsinghua University；Kuaishou；Zhejiang University | 探索变分隐推理机制，通过自回归模型学习多模态嵌入的潜在表征空间。 | [#520](https://github.com/Larry2000error/Larry-PaperClaw/issues/520) |
-| [20260927] When Does Geometric View Synthesis Help Wine Label Retrieval? A Public One-Shot Benchmark Across Self-Supervised and Vision-Language Backbones | Huang Yueh-Cheng | Department of Computer Science and Information Engineering, National Dong Hwa University | 构建葡萄酒标签检索基准，系统评估几何视角合成对自监督与视觉语言模型的增益。 | [#521](https://github.com/Larry2000error/Larry-PaperClaw/issues/521) |
-| [20260927] Structured Residual Connectivity Matters for Diffusion Transformers | Liu Yuhe, Ma Xinyin, Fang Gongfan, Liu Songhua, Wang Xinchao | National University of Singapore；Shanghai Jiao Tong University | 揭示结构化残差连接对扩散Transformer的关键作用，优化跳跃连接设计提升图像合成质量。 | [#523](https://github.com/Larry2000error/Larry-PaperClaw/issues/523) |
-
-## 🔎 观察
-
-- 自监督学习与视觉-语言模型的融合成为跨域检索的主流技术路线。
-- 生成模型架构研究从规模扩张转向结构精细化设计，残差连接重新受到重视。
 
 ---
 
