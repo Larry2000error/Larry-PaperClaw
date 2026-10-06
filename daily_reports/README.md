@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20261001](./202610/20261001.md)
+## 📌 今日概况
+
+今日共检索候选论文 56 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日两篇论文聚焦智能检索技术：一篇探索视觉语言模型驱动的多模态交互搜索，另一篇提出带召回率认证的度量空间近似最近邻搜索方法。研究趋势显示检索系统正向多模态融合与可量化性能保证方向发展。
+
+## ✨ 今日亮点
+
+- AiSearch实现图文视频统一交互检索，拓展VLM应用场景
+- SOLO首创召回率认证机制，解决近似搜索可靠性难题
+- 两篇工作分别从用户体验与理论保证角度推进检索技术
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261001] AiSearch: Interactive Multi-Modal Search with VLMs | Koksal Ali, Mei Chee Leong, Sintunata Vicky, Ching Ling Chin, Wee Teck Fong | Institute of Advanced Intelligence and Computing (IAIC)；Agency for Science, Technology and Research (A*STAR) | AiSearch提出基于视觉语言模型的交互式多模态搜索框架，支持图像、视频与文本的跨模态检索。 | [#541](https://github.com/Larry2000error/Larry-PaperClaw/issues/541) |
+| [20261001] SOLO: Certified-Recall Metric Similarity Search with Scan-Only Sampled Inverted Lists | Chávez Édgar | CICESE | SOLO设计带召回率认证的度量相似性搜索算法，通过采样倒排列表实现仅需扫描的高效查询。 | [#542](https://github.com/Larry2000error/Larry-PaperClaw/issues/542) |
+
+## 🔎 观察
+
+- 多模态检索与VLM结合成为热点，但两篇论文均未涉及遥感数据，领域迁移潜力待挖掘
+- 召回率认证机制对遥感大规模检索具有参考价值，可提升灾害应急等场景的可靠性
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20260930](./202609/20260930.md)
 ## 📌 今日概况
 
@@ -60,38 +91,6 @@ Powered by OpenClaw🦞
 
 - 目标重识别领域正加速融合视觉基础模型，从CLIP向DINOv3演进体现技术迭代
 - 多模态检索研究开始关注对齐质量的细粒度修正，而非仅追求模态间粗粒度对齐
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260928](./202609/20260928.md)
-## 📌 今日概况
-
-今日共检索候选论文 84 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦跨模态匹配与多模态学习，涵盖无监督可见光-红外行人重识别、野生动物保护中的多模态动物重识别，以及视觉文档重排序。研究趋势显示语义补偿、环境元数据融合与高效轻量模型成为关键方向。
-
-## ✨ 今日亮点
-
-- 无监督跨模态行人重识别提出语义模态补偿机制，缓解非配对场景下的模态差异
-- 野生动物保护研究整合视觉特征与环境元数据，推动多模态动物个体识别
-- RidgeRank以岭回归浅层读出实现高效视觉文档重排序，降低计算开销
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260928] Semantic Modality Compensation for Unsupervised Visible-Infrared Person Re-identification under Unpaired Settings | Chen Duanning, He Ke, Yang Bin, Yao Yongxiang | Wuhan University | 提出语义模态补偿网络，在无监督非配对设置下缩小可见光与红外图像的模态鸿沟。 | [#525](https://github.com/Larry2000error/Larry-PaperClaw/issues/525) |
-| [20260928] Advancing Wildlife Conservation through Multimodal Animal Re-Identification with Environmental Metadata | Li Yuzhuo, Zhao Di, Qiao Tingrui, Wu Yihao, Pang Bo, Yun Sing Koh | School of Computer Science, University of Auckland | 构建融合环境元数据的多模态框架，提升野外场景下动物重识别的鲁棒性与可解释性。 | [#526](https://github.com/Larry2000error/Larry-PaperClaw/issues/526) |
-| [20260928] RidgeRank: Efficient Visual Document Reranking via Score Fusion and a Shallow Linear Readout | Yang Shubing, Zhao Dongfang | University of Washington | 设计基于分数融合与岭回归浅层读出的轻量重排序方法，优化视觉文档检索效率。 | [#527](https://github.com/Larry2000error/Larry-PaperClaw/issues/527) |
-
-## 🔎 观察
-
-- 跨模态重识别研究正从配对数据向非配对、无监督设置迁移，降低标注成本成为核心诉求
-- 环境元数据与视觉模态的融合或将成为生态监测领域的新范式，但数据异质性挑战仍待解决
 
 ---
 
