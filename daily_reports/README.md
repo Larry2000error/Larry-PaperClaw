@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20261005](./202610/20261005.md)
+## 📌 今日概况
+
+今日共检索候选论文 27 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日仅收录一篇论文，聚焦视觉-语言模型在零样本组合图像检索中的创新。研究提出从"变换描述"转向"目标状态重建"的查询表示新范式，利用多模态大语言模型直接生成目标图像特征，突破传统方法依赖相对变换的局限，为跨模态检索任务提供新思路。
+
+## ✨ 今日亮点
+
+- 提出目标状态重建新范式，直接生成目标图像特征而非学习变换关系
+- 基于多模态大语言模型实现零样本组合图像检索，无需成对训练数据
+- 北京交通大学团队探索查询表示学习的新方向
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261005] From Transformation to Target State: Rethinking Query Representation for Zero-Shot Composed Image Retrieval | Zhao Yihe, Feng Songhe | School of Computer Science and Technology, Beijing Jiaotong University | 该研究重新思考零样本组合图像检索中的查询表示，提出直接重建目标状态而非建模变换关系，利用多模态大语言模型生成目标图像特征。 | [#553](https://github.com/Larry2000error/Larry-PaperClaw/issues/553) |
+
+## 🔎 观察
+
+- 单一论文收录反映当日遥感AI领域发文量较低，或该方向研究热度处于周期性调整阶段。
+- 目标状态重建范式若迁移至遥感领域，或可改善卫星图像变化检测中参考图像与目标图像的关联建模问题。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261004](./202610/20261004.md)
 ## 📌 今日概况
 
@@ -58,39 +88,6 @@ Powered by OpenClaw🦞
 
 - 多模态检索与VLM结合成为热点，但两篇论文均未涉及遥感数据，领域迁移潜力待挖掘
 - 召回率认证机制对遥感大规模检索具有参考价值，可提升灾害应急等场景的可靠性
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260930](./202609/20260930.md)
-## 📌 今日概况
-
-今日共检索候选论文 69 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日研究聚焦跨模态智能与时空推理，涵盖视觉-语言模型在车辆重识别、视频地理定位、文本-视频检索及视觉空间导航等方向。学界正探索层级化图注意力、多维度显著性评估与多步嵌入检索等技术，以提升复杂场景下的跨视角匹配与推理能力。
-
-## ✨ 今日亮点
-
-- GeoGAT提出双向时序采样与层级图注意力，实现全球视频地理定位
-- Front-to-Back构建非对称跨视角车辆重识别基准，评估视觉-语言模型零样本能力
-- 文本-视频检索引入多维度显著性评估，缓解视觉冗余问题
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260930] Front-to-Back: Benchmarking Vision-Language Models for Asymmetric Cross-View Vehicle Re-Identification | Mots'oehli Moseli, Babeli Thulani | MindForge AI；University of Hawai'i at Mānoa | 该研究建立非对称跨视角车辆重识别基准，系统评估视觉-语言模型的零样本跨视角匹配性能。 | [#536](https://github.com/Larry2000error/Larry-PaperClaw/issues/536) |
-| [20260930] GeoGAT: Bidirectional Temporal Sampling Meets Hierarchical Graph Attention for Global Video Geo-localization | Cui Junchao, Ma Xuanzi, Shi Wenqi, Li Hangyu, Zhu Biru, Fu Chong, Luo Xiangyang | Information Engineering University；Zhengzhou University | GeoGAT融合双向时序采样与层级图注意力网络，实现基于时空特征的全局视频地理定位。 | [#537](https://github.com/Larry2000error/Larry-PaperClaw/issues/537) |
-| [20260930] Text-Video Retrieval via Multi-Dimensional Saliency Assessment and Granularity-Aware Query Decomposition | Wei Shuquan, Chen Xi, Chen Xu, Jia Xiangyang | School of Computer Science, Wuhan University | 通过多维度显著性评估与粒度感知查询分解，提升文本-视频跨模态检索的精准度。 | [#538](https://github.com/Larry2000error/Larry-PaperClaw/issues/538) |
-| [20260930] Learning to Route in Visual Space via Multi-Step Embedding Retrieval | Chen Tianyu, Zhou Mingyuan, Wu Jiaxing | The University of Texas at Austin；Google DeepMind | 基于强化学习的多步嵌入检索方法，使LLM智能体能够在视觉嵌入空间中自主导航寻路。 | [#539](https://github.com/Larry2000error/Larry-PaperClaw/issues/539) |
-
-## 🔎 观察
-
-- 跨模态对齐与时空推理成为核心趋势，图神经网络与注意力机制在地理定位任务中应用深化
-- 视觉-语言模型正从静态图像向动态视频与复杂空间导航拓展，零样本与强化学习成为关键使能技术
 
 ---
 
