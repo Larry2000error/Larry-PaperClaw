@@ -5,26 +5,28 @@
 # [20261005](./202610/20261005.md)
 ## 📌 今日概况
 
-今日共检索候选论文 27 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+今日共检索候选论文 27 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日仅收录一篇论文，聚焦视觉-语言模型在零样本组合图像检索中的创新。研究提出从"变换描述"转向"目标状态重建"的查询表示新范式，利用多模态大语言模型直接生成目标图像特征，突破传统方法依赖相对变换的局限，为跨模态检索任务提供新思路。
+今日研究聚焦视觉生成与检索任务的前沿探索。4D世界生成领域提出相机控制新范式，通过时空线索与几何约束实现一致性建模；显微图像分析采用自监督补丁查询策略；零样本组合图像检索则重构查询表示，从变换描述转向目标状态重建。三篇工作均体现几何先验与语义理解深度融合的趋势。
 
 ## ✨ 今日亮点
 
-- 提出目标状态重建新范式，直接生成目标图像特征而非学习变换关系
-- 基于多模态大语言模型实现零样本组合图像检索，无需成对训练数据
-- 北京交通大学团队探索查询表示学习的新方向
+- ChronoWorld首创相机可控4D生成框架，融合极线约束与反射先验实现时空一致性
+- Patch-based Querying以自监督补丁学习突破电子显微图像结构检索瓶颈
+- 零样本组合检索新范式：用目标状态重构替代传统变换建模，提升跨模态对齐
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261005] From Transformation to Target State: Rethinking Query Representation for Zero-Shot Composed Image Retrieval | Zhao Yihe, Feng Songhe | School of Computer Science and Technology, Beijing Jiaotong University | 该研究重新思考零样本组合图像检索中的查询表示，提出直接重建目标状态而非建模变换关系，利用多模态大语言模型生成目标图像特征。 | [#553](https://github.com/Larry2000error/Larry-PaperClaw/issues/553) |
+| [20261005] ChronoWorld: Camera-Controlled Consistent 4D World Generation via Spatiotemporal Cues and Geometric Reflections | Zhou Xiaoyu, Xian Dingwei, Wang Zhenyu, Xiong Yajiao, Wang Yongtao, Yang Ming-Hsuan | Wangxuan Institute of Computer Technology, Peking University；University of California, Merced | ChronoWorld通过显式相机轨迹控制与几何反射约束，解决4D生成中的时空不一致难题。 | [#550](https://github.com/Larry2000error/Larry-PaperClaw/issues/550) |
+| [20261005] Patch-based Querying Identifies Structures of Interest in Electron Microscopy | Vyncke Niels, Nadisic Nicolas, Saeys Yvan, Pižurica Aleksandra | Department of Telecommunications and Information Processing；Royal Institute for Cultural Heritage (KIK-IRPA)；Department of Mathematics, Computer Science and Statistics；VIB-UGent Center for Inflammation Research | 基于补丁的自监督查询方法，无需标注即可在体电子显微数据中精准定位目标结构。 | [#552](https://github.com/Larry2000error/Larry-PaperClaw/issues/552) |
+| [20261005] From Transformation to Target State: Rethinking Query Representation for Zero-Shot Composed Image Retrieval | Zhao Yihe, Feng Songhe | School of Computer Science and Technology, Beijing Jiaotong University | 将组合检索重新定义为从文本描述直接重建目标视觉状态，规避变换建模的语义漂移。 | [#553](https://github.com/Larry2000error/Larry-PaperClaw/issues/553) |
 
 ## 🔎 观察
 
-- 单一论文收录反映当日遥感AI领域发文量较低，或该方向研究热度处于周期性调整阶段。
-- 目标状态重建范式若迁移至遥感领域，或可改善卫星图像变化检测中参考图像与目标图像的关联建模问题。
+- 几何约束正成为生成模型可控性的核心抓手：极线约束、反射先验等经典视觉原理被重新注入神经网络。
+- 检索任务呈现'由粗到细'的表示演进：从全局嵌入到局部补丁，再到显式状态重构，空间粒度持续细化。
 
 ---
 
