@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20261004](./202610/20261004.md)
+## 📌 今日概况
+
+今日共检索候选论文 25 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦跨模态智能融合与Agentic AI在视觉任务中的应用。推荐系统、红外目标检测及病理分析三大领域均呈现多模态深度结合趋势，视觉-语言表征学习与自主交互机制成为核心创新方向。
+
+## ✨ 今日亮点
+
+- OpticalRec构建统一光学视觉-语言表征，突破多模态推荐中模态对齐难题
+- IRSTD-Agent首创Agentic红外小目标检测框架，实现变焦引导的主动视觉搜索
+- 病理-分子跨模态对比学习，为免疫治疗分子标志物检索提供新范式
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261004] OpticalRec: Unified Optical Vision-Language Representation for Multimodal Recommendation | Wang Yueqi, Guo Zitian, Hou Yupeng, Wang Yifei, Kim Kibum, Yue Zhenrui, Xing Shuo, Li Haodong, Xia Heming, Zhang Renrui, Tu Zhengzhong, McAuley Julian | University of California, San Diego；Alibaba Group；University of Illinois Urbana-Champaign；The Hong Kong Polytechnic University；The Chinese University of Hong Kong；Texas A&M University | OpticalRec提出统一光学视觉-语言表征框架，通过跨模态融合提升多模态推荐系统的物品表征学习能力。 | [#546](https://github.com/Larry2000error/Larry-PaperClaw/issues/546) |
+| [20261004] IRSTD-Agent: Agentic Infrared Small Target Detection via Zoom-Guided Interaction Learning | Xi Jiawen, Zhang Yu, Zhao Tianyi, Liu Zhu, Yuan Maoxun, Wei Xingxing | Beihang University；Dalian University of Technology | IRSTD-Agent将Agentic AI引入红外小目标检测，设计变焦引导交互学习机制实现自适应视觉搜索。 | [#547](https://github.com/Larry2000error/Larry-PaperClaw/issues/547) |
+| [20261004] Cross-Modal Contrastive Learning for the Retrieval of Immunotherapy-Associated Molecular Signatures from Histopathology | Vila-Bagaria Sigrid, Teixidó Mar, Piñol Miquel, Vilardell Felip, Montal Robert, Vilaplana Veronica | Universitat Politècnica de Catalunya - BarcelonaTech (UPC)；IRB Lleida | 基于跨模态对比学习与多示例学习，实现从组织病理学图像检索免疫治疗相关分子特征。 | [#548](https://github.com/Larry2000error/Larry-PaperClaw/issues/548) |
+
+## 🔎 观察
+
+- Agentic AI正从通用领域向遥感、医学等专业视觉任务渗透，主动感知与决策闭环成为新范式
+- 跨模态对比学习在推荐、遥感、医学三大场景同步演进，显示基础方法的横向迁移潜力
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261001](./202610/20261001.md)
 ## 📌 今日概况
 
@@ -59,38 +91,6 @@ Powered by OpenClaw🦞
 
 - 跨模态对齐与时空推理成为核心趋势，图神经网络与注意力机制在地理定位任务中应用深化
 - 视觉-语言模型正从静态图像向动态视频与复杂空间导航拓展，零样本与强化学习成为关键使能技术
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20260929](./202609/20260929.md)
-## 📌 今日概况
-
-今日共检索候选论文 82 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日遥感AI日报候选论文聚焦视觉-语言预训练与目标重识别领域。三篇论文分别探索扩散模型特征学习、视觉基础模型令牌路由机制，以及多模态意图表示优化，体现基础模型与多模态融合的持续深化趋势。
-
-## ✨ 今日亮点
-
-- DiffReID将扩散模型引入目标重识别，通过判别式扩散过程增强特征判别性
-- FM-ReID基于DINOv3提出选择性竞争令牌路由，优化局部特征学习机制
-- 零样本组合图像检索研究聚焦视觉-语言对齐中的视觉实例化修正问题
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20260929] DiffReID: Discriminative Diffusion Model for Object Re-Identification | Wang Yingquan, Zhang Pingping, Wang Dong, Lu Huchuan | Institution unavailable | DiffReID提出判别式扩散模型，通过CLIP引导的提示调优与扩散过程实现目标重识别的判别性特征学习。 | [#532](https://github.com/Larry2000error/Larry-PaperClaw/issues/532) |
-| [20260929] FM-ReID: Selective Competitive Token Routing for Object Re-Identification | Li Zhiqi, Zhou Xiaowei, Sun Zeyuan, Gao Feng, Dong Junyu | Faculty of Information Science and Engineering, Ocean University of China；Sanya Oceanographic Institution, Ocean University of China | FM-ReID基于DINOv3视觉基础模型，设计选择性竞争令牌路由机制，动态筛选判别性局部令牌用于重识别。 | [#533](https://github.com/Larry2000error/Larry-PaperClaw/issues/533) |
-| [20260929] Optimizing VLP-aligned Multimodal Intent Representation with Correct Visual Instantiation for Zero-Shot Composed Image Retrieval | Ge Xuri, Wang Chunhao, Fu Junchen, Wen Haokun, Xu Zhiwei, Zhou Ying, Chen Zhumin, Ren Pengjie, Ren Zhaochun, Xin Xin | School of Artificial Intelligence, Shandong University；School of Computer Science and Technology, Shandong University；School of Computing Science, University of Glasgow；School of Computer Science and Technology, Harbin Institute of Technology (Shenzhen)；Leiden University | 该研究针对零样本组合图像检索，提出视觉实例化修正方法优化VLP对齐的多模态意图表示。 | [#534](https://github.com/Larry2000error/Larry-PaperClaw/issues/534) |
-
-## 🔎 观察
-
-- 目标重识别领域正加速融合视觉基础模型，从CLIP向DINOv3演进体现技术迭代
-- 多模态检索研究开始关注对齐质量的细粒度修正，而非仅追求模态间粗粒度对齐
 
 ---
 
