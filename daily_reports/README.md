@@ -7,24 +7,24 @@
 
 今日共检索候选论文 0 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 1 篇。
 
-今日仅收录1篇论文，聚焦多目标跟踪领域。研究将SAM2与生命周期感知记忆机制结合，解决视频分割中的轨迹初始化与长期稳定性问题，体现视觉基础模型在下游任务中的持续优化趋势。
+今日仅收录1篇论文，聚焦多目标跟踪领域。研究将SAM2与生命周期感知记忆机制结合，解决视频分割中的轨迹初始化与长期稳定性问题，体现基础模型在下游视觉任务中的持续优化趋势。
 
 ## ✨ 今日亮点
 
-- SAM2引入生命周期感知记忆，增强多目标跟踪鲁棒性
-- 针对视频分割中轨迹初始化难题提出新机制
-- 丰田欧洲团队推动视觉基础模型落地应用
+- 提出LiAM-SAM框架，为SAM2引入生命周期感知记忆机制
+- 优化多目标跟踪中的轨迹初始化与长期遮挡处理
+- 丰田欧洲团队推动自动驾驶感知技术落地
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260923] LiAM-SAM: Lifecycle-Aware Memory for Robust SAM2-Based MOT | Francisco Grégoire, D'Amico Alessandro, Costantini Samuele, Francesca Gianpiero, Garattoni Lorenzo | Toyota Motor Europe | LiAM-SAM提出生命周期感知记忆机制，改进SAM2在多目标跟踪中的轨迹初始化和长期稳定性。 | [#510](https://github.com/Larry2000error/Larry-PaperClaw/issues/510) |
+| [20260923] LiAM-SAM: Lifecycle-Aware Memory for Robust SAM2-Based MOT | Francisco Grégoire, D'Amico Alessandro, Costantini Samuele, Francesca Gianpiero, Garattoni Lorenzo | Toyota Motor Europe | LiAM-SAM为SAM2设计生命周期感知记忆模块，提升视频多目标跟踪的轨迹初始化鲁棒性与长期稳定性。 | [#510](https://github.com/Larry2000error/Larry-PaperClaw/issues/510) |
 
 ## 🔎 观察
 
-- 单一论文收录量反映该日期研究产出较少，或领域进入技术整合期
-- 工业界主导SAM2应用优化，显示基础模型工程化成为竞争焦点
+- SAM2作为视频分割基础模型正快速向MOT等下游任务渗透，记忆机制设计成为关键优化方向
+- 车企主导的研究反映自动驾驶场景对时序一致性与遮挡处理的刚性需求
 
 ---
 
