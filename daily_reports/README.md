@@ -5,26 +5,27 @@
 # [20260923](./202609/20260923.md)
 ## 📌 今日概况
 
-今日共检索候选论文 0 篇；关键词+LLM 智能匹配遥感交叉论文 0 篇；最终纳入日报 1 篇。
+今日共检索候选论文 32 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
 
-今日仅收录1篇论文，聚焦多目标跟踪领域。研究将SAM2与生命周期感知记忆机制结合，解决视频分割中的轨迹初始化与长期稳定性问题，体现基础模型在下游视觉任务中的持续优化趋势。
+今日研究聚焦视觉场景理解与文档检索的自适应优化。视觉地点识别领域探索几何条件约束与深度感知蒸馏，提升自然环境下定位鲁棒性；文档检索则关注测试时自适应与查询相关残差学习，增强低秩变换的检索精度。
 
 ## ✨ 今日亮点
 
-- 提出LiAM-SAM框架，为SAM2引入生命周期感知记忆机制
-- 优化多目标跟踪中的轨迹初始化与长期遮挡处理
-- 丰田欧洲团队推动自动驾驶感知技术落地
+- 几何条件视觉地点识别：融合深度感知蒸馏与几何基础模型，强化自然环境下的视觉定位能力
+- 查询相关残差学习：通过低秩变换实现测试时自适应，优化视觉文档检索的排序性能
+- 跨机构合作显著：CSIRO与昆士兰科技大学、华南理工与佛山大学分别推进机器人视觉与智能检索
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260923] LiAM-SAM: Lifecycle-Aware Memory for Robust SAM2-Based MOT | Francisco Grégoire, D'Amico Alessandro, Costantini Samuele, Francesca Gianpiero, Garattoni Lorenzo | Toyota Motor Europe | LiAM-SAM为SAM2设计生命周期感知记忆模块，提升视频多目标跟踪的轨迹初始化鲁棒性与长期稳定性。 | [#510](https://github.com/Larry2000error/Larry-PaperClaw/issues/510) |
+| [20260923] Geometry-Conditioned Visual Place Recognition in Natural Environments | Nedov Walter, Rahman Saimunur, Katuwandeniya Kavindie, Hall David, Roy Kaushik, Moghadam Peyman | CSIRO Robotics, CSIRO；Queensland University of Technology | 提出几何条件视觉地点识别方法，利用深度感知蒸馏与几何基础模型增强自然环境下的视觉定位鲁棒性。 | [#512](https://github.com/Larry2000error/Larry-PaperClaw/issues/512) |
+| [20260923] Test-Time Adaptation with Query-Dependent Residuals for Visual Document Retrieval | Li Zeliang, Xing Xiaofen, Guo Kailing, Xu Xiangmin | South China University of Technology；Foshan University | 设计查询相关残差与低秩变换机制，实现视觉文档检索的测试时自适应优化，提升检索排序精度。 | [#513](https://github.com/Larry2000error/Larry-PaperClaw/issues/513) |
 
 ## 🔎 观察
 
-- SAM2作为视频分割基础模型正快速向MOT等下游任务渗透，记忆机制设计成为关键优化方向
-- 车企主导的研究反映自动驾驶场景对时序一致性与遮挡处理的刚性需求
+- 视觉地点识别正从纯图像匹配转向几何-视觉联合建模，深度信息蒸馏成为提升泛化性的关键路径。
+- 测试时自适应技术向文档检索领域渗透，查询动态调制与低秩约束结合，反映高效适配的行业需求。
 
 ---
 
