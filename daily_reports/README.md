@@ -7,24 +7,24 @@
 
 今日共检索候选论文 13 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
 
-今日研究聚焦视频分割与多目标跟踪的融合创新。丰田欧洲团队提出LiAM-SAM，针对SAM2在动态场景中的时序一致性问题，引入生命周期感知记忆机制，优化跟踪初始化与长期遮挡处理，推动自动驾驶感知系统的鲁棒性提升。
+今日遥感AI领域聚焦视频分割与多目标跟踪的融合创新。丰田欧洲团队提出LiAM-SAM框架，针对SAM2在动态场景中的时序一致性难题，引入生命周期感知记忆机制，显著改善目标遮挡与轨迹初始化问题，推动自动驾驶感知系统的鲁棒性升级。
 
 ## ✨ 今日亮点
 
-- SAM2时序记忆瓶颈突破：生命周期感知机制解决长期遮挡下的身份保持难题
-- 跟踪初始化优化：动态管理记忆库，提升新目标出现时的响应速度与精度
-- 工业级落地导向：丰田汽车欧洲研发，面向自动驾驶多目标跟踪实际需求
+- LiAM-SAM为SAM2注入生命周期感知记忆，破解时序漂移难题
+- 创新轨迹初始化策略，提升遮挡场景下的目标保持能力
+- 丰田欧洲团队推动SAM2从静态分割向动态跟踪范式跃迁
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20260923] LiAM-SAM: Lifecycle-Aware Memory for Robust SAM2-Based MOT | Francisco Grégoire, D'Amico Alessandro, Costantini Samuele, Francesca Gianpiero, Garattoni Lorenzo | Toyota Motor Europe | LiAM-SAM为SAM2引入生命周期感知记忆机制，通过动态管理目标状态记忆提升视频多目标跟踪的鲁棒性，解决长期遮挡与初始化延迟问题。 | [#510](https://github.com/Larry2000error/Larry-PaperClaw/issues/510) |
+| [20260923] LiAM-SAM: Lifecycle-Aware Memory for Robust SAM2-Based MOT | Francisco Grégoire, D'Amico Alessandro, Costantini Samuele, Francesca Gianpiero, Garattoni Lorenzo | Toyota Motor Europe | LiAM-SAM提出生命周期感知记忆机制，增强SAM2在多目标跟踪中的时序鲁棒性，优化轨迹初始化与遮挡处理。 | [#510](https://github.com/Larry2000error/Larry-PaperClaw/issues/510) |
 
 ## 🔎 观察
 
-- SAM2的工业适配进入深水区：研究重心从静态分割转向时序一致性工程优化
-- 记忆机制设计成为视频基础模型竞争关键：显式生命周期管理或成新范式
+- SAM2的工业落地瓶颈正从分割精度转向时序一致性，记忆机制设计成为关键差异化方向
+- 汽车制造商主导视觉算法创新，预示端到端自动驾驶感知进入垂直整合深水区
 
 ---
 
