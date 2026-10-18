@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20261009](./202610/20261009.md)
+## 📌 今日概况
+
+今日共检索候选论文 48 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 2 篇。
+
+今日研究聚焦跨模态视觉定位与智能视频分析两大方向。UAV热红外-卫星图像跨模态匹配技术取得进展，通过结构感知方法提升无人机地理定位鲁棒性；体育场景下的行人重识别研究则探索上下文嵌入策略，突破单裁剪框特征表达的局限性。
+
+## ✨ 今日亮点
+
+- 结构感知匹配框架实现热红外与卫星图像的鲁棒跨模态定位
+- 上下文化嵌入策略突破体育视频中球员重识别的单帧限制
+- 广播视频分析场景推动行人重识别向复杂动态环境延伸
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261009] Beyond a Single Crop: Contextualized Embeddings for Player Re-Identification | Luo Ge, Yang Changhuo, Fan Weisi, Yang Rui, Wang Shaokai | Central South University；Iowa State University；Shandong University | 提出上下文化嵌入方法，利用多裁剪框时空关系增强体育广播视频中球员重识别性能。 | [#595](https://github.com/Larry2000error/Larry-PaperClaw/issues/595) |
+| [20261009] Structure-Aware Matching for Robust UAV Thermal-to-Satellite Geo-Localization | Liu Chun, Wang Yuxin, Huo Zhenxiang, Zhu Linlin, Xu Tao, Han Henggang | Institution unavailable | 设计结构感知匹配网络，通过几何结构约束实现无人机热红外图像与卫星地图的鲁棒地理定位。 | [#596](https://github.com/Larry2000error/Larry-PaperClaw/issues/596) |
+
+## 🔎 观察
+
+- 跨模态匹配正从可见光-卫星向热红外-卫星拓展，反映夜间/低光照场景应用需求增长。
+- 行人重识别研究向垂直领域深化，体育视频的动态视角与相似着装成为新的技术挑战。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261007](./202610/20261007.md)
 ## 📌 今日概况
 
@@ -61,40 +92,6 @@ Powered by OpenClaw🦞
 
 - 视频检索领域正从'训练密集'向'零样本高效'转型，时序理解成为免训练范式的关键瓶颈。
 - 垂直行业大模型基础设施进入密集建设期，电信等关键领域的开源生态将重塑产业AI竞争格局。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261005](./202610/20261005.md)
-## 📌 今日概况
-
-今日共检索候选论文 42 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
-
-今日研究聚焦视觉-语言模型在图像检索与匹配任务中的创新应用。零样本学习、跨视角地理定位与弱监督适应成为核心方向，涵盖遥感、野生动物监测、医学影像等多领域场景，体现多模态大模型向专业化垂直领域渗透的趋势。
-
-## ✨ 今日亮点
-
-- 跨视角地理定位引入语言推理，实现零样本场景下的文本-图像跨模态定位
-- 野生动物重识别提出弱监督图像匹配框架，降低相机陷阱数据标注成本
-- 神经影像检索系统结合对比学习与变分自编码器，支持全脑及区域特异性MRI检索
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261005] From Transformation to Target State: Rethinking Query Representation for Zero-Shot Composed Image Retrieval | Zhao Yihe, Feng Songhe | School of Computer Science and Technology, Beijing Jiaotong University | 提出目标状态重构范式，通过视觉-语言模型直接预测目标图像表征，优化零样本组合图像检索性能。 | [#553](https://github.com/Larry2000error/Larry-PaperClaw/issues/553) |
-| [20261005] WildMatch: Weakly Supervised Image Matcher Adaptation for Wildlife Re-Identification | Turhan Can Kargin, Kubaty Piotr, Rostovskaya Ekaterina, Wierzbowska Izabela, Zieliński Bartosz, Przewięźlikowski Marcin | Faculty of Mathematics and Computer Science, Jagiellonian University；Doctoral School of Exact and Natural Sciences, Jagiellonian University；Jagiellonian Center for Artificial Intelligence；NASK National Research Institute；Institute of Environmental Sciences, Faculty of Biology, Jagiellonian University | WildMatch框架以弱监督方式适配图像匹配器，解决野生动物重识别中相机陷阱图像的标注稀缺问题。 | [#573](https://github.com/Larry2000error/Larry-PaperClaw/issues/573) |
-| [20261005] Identity-Conditioned Score Fusion for Open-Set Person Re-Identification | Yao Manyi, Nazarovs Jurijs, Chong Eunji, Sharma Abhishek, Sarkar Rohan, Guo Yue, Christian R. Shelton, Amit K. Roy-Chowdhury, Pal Debashish | University of California, Riverside；Amazon | 设计身份条件化分数融合机制，在开放集场景下提升换衣行人重识别的判别鲁棒性。 | [#574](https://github.com/Larry2000error/Larry-PaperClaw/issues/574) |
-| [20261005] What Words Keep of a Place: Zero-Shot Language Reasoning for Cross-View Geo-Localization | Ayesh Abu Lehyeh, Jay Hwasung Jung, Wshah Safwan | Department of Computer Science, University of Vermont | 利用多模态大语言模型提取地点语义描述，实现跨视角地理定位的零样本语言推理。 | [#575](https://github.com/Larry2000error/Larry-PaperClaw/issues/575) |
-| [20261005] NeuroCBIR: A Fast and Accurate Image Retrieval System for Whole-Brain and Region-Specific MRI | Nieto-del-Amor Felix, Fu Jingru, J. -Sebastian Muehlboeck, Westman Eric, Ferreira Daniel, Moreno Rodrigo | Institution unavailable | NeuroCBIR系统整合对比学习与变分自编码器，为MRI影像提供快速精准的内容检索能力。 | [#576](https://github.com/Larry2000error/Larry-PaperClaw/issues/576) |
-
-## 🔎 观察
-
-- 视觉-语言模型正从通用理解向专业检索任务深化，零样本范式显著降低领域适配成本
-- 遥感与生态监测领域涌现弱监督与开放集解决方案，反映真实场景对低标注依赖技术的迫切需求
 
 ---
 
