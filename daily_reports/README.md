@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20261015](./202610/20261015.md)
+## 📌 今日概况
+
+今日共检索候选论文 33 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦多模态智能检索与嵌入学习。视觉检索强调精确性与可验证性，多模态RAG关注文档视觉证据的高效利用，而指令驱动的多模态嵌入则为聚类任务提供新思路。工业界与学术界合作紧密，GPU加速与对比学习成为关键技术支撑。
+
+## ✨ 今日亮点
+
+- CertEx提出可认证排除机制，实现大规模精确视觉检索的GPU加速
+- 多模态文档RAG优化视觉token预算分配，提升证据检索效率
+- 指令条件多模态嵌入学习，服务电商产品数据聚类场景
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261015] CertEx: Exact Visual Retrieval at Scale by Certified Exclusion | Zhao Dongfang | Tacoma School of Engineering & Technology and eScience Institute；University of Washington | CertEx通过可认证排除策略结合近似索引与精确验证，在GPU上实现大规模精确kNN视觉检索。 | [#612](https://github.com/Larry2000error/Larry-PaperClaw/issues/612) |
+| [20261015] Loud and Clear: Making Visual Evidence Count in Multimodal Document RAG | Jo Eunchan, Jang Seounghyun, Mo Sangwoo | POSTECH | 该研究针对多模态文档RAG设计视觉token预算机制，使视觉证据在检索增强生成中发挥更有效作用。 | [#613](https://github.com/Larry2000error/Larry-PaperClaw/issues/613) |
+| [20261015] CIM-Embed: Learning Instruction-Conditioned Multimodal Embeddings for Clustering | Xu Yinghua, Xie Pengyang, Zhou Yanxiang, Tong Chuanzhi, Xiao Xiao, Feng Chaoqun, Wang Xiaoqing | College of Control Science and Engineering, Zhejiang University；Alibaba International Digital Commerce | CIM-Embed提出指令条件多模态嵌入学习方法，利用对比学习提升电商产品数据的聚类性能。 | [#614](https://github.com/Larry2000error/Larry-PaperClaw/issues/614) |
+
+## 🔎 观察
+
+- 精确检索与近似方法的融合成为视觉搜索新范式，可认证性为结果可靠性提供理论保证
+- 多模态学习正从通用任务向垂直场景深化，电商文档理解与产品聚类体现产学研结合趋势
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261012](./202610/20261012.md)
 ## 📌 今日概况
 
@@ -57,37 +89,6 @@ Powered by OpenClaw🦞
 
 - 小语种与区域特色数据集建设加速，反映具身智能本土化需求上升，但需关注数据规模与模型泛化的平衡。
 - 众源数据与VLM结合正重塑灾害测绘范式，但长期时序分析揭示的模型性能波动提示地理空间推理的鲁棒性仍是关键瓶颈。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261010](./202610/20261010.md)
-## 📌 今日概况
-
-今日共检索候选论文 24 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦跨模态定位与多模态视频理解两大方向。ScalLoc探索热红外无人机与卫星地图的连续斜视角定位，EVISTA则提出证据感知时序路径优化实现统一多模态视频检索，均体现时空推理与异构数据融合的技术趋势。
-
-## ✨ 今日亮点
-
-- ScalLoc突破热成像无人机在卫星地图上的连续斜视角定位难题
-- EVISTA以证据感知时序优化实现多模态视频统一检索框架
-- 两研究均强调跨模态对齐与时空推理的协同设计
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261010] ScalLoc: Continuous Oblique Thermal UAV Geo-Localization with a 2D Satellite Map | Zhang Xiaoran, Liu Yu, Liang Jinyu, Xiao Huaxin | Institution unavailable | ScalLoc提出基于2D卫星地图的热红外无人机连续斜视角地理定位方法，解决跨模态视角差异与尺度变化问题。 | [#598](https://github.com/Larry2000error/Larry-PaperClaw/issues/598) |
-| [20261010] EVISTA: Unified Multimodal Video Search with Evidence-Aware Temporal Path Optimization | Tran Minh-Huy, Vo Van-Thinh, Nguyen Minh-Khoi, Nguyen Duy-Tan, Nguyen-Tran Anh-Quan, Loi Nguyen Khanh | HCMUT EE Machine Learning & IoT Lab；Ho Chi Minh University of Technology | EVISTA构建证据感知时序路径优化框架，实现文本、图像、视频的统一多模态检索与事件定位。 | [#599](https://github.com/Larry2000error/Larry-PaperClaw/issues/599) |
-
-## 🔎 观察
-
-- 无人机定位研究正从正射视角向斜视角扩展，热红外-可见光跨模态匹配成为新难点
-- 视频检索领域出现'证据驱动'新范式，时序推理与多模态融合的深度结合值得持续关注
 
 ---
 
