@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20261007](./202610/20261007.md)
+## 📌 今日概况
+
+今日共检索候选论文 47 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日研究聚焦于视觉基础模型在特定场景下的精细化应用。Vision Transformer的CLS token增强、DINOv3的多视角行李重识别、足球犯规视频语义检索，以及结合世界模型的UAV自主搜索成为主要方向，体现了从通用表征向任务自适应的演进趋势。
+
+## ✨ 今日亮点
+
+- 区域感知CLS token增强技术提升细粒度图像检索精度
+- DINOv3结合LoRA实现多视角行李重识别的高效适配
+- 世界模型驱动空间价值想象赋能UAV自主目标搜索
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261007] Region-Aware CLS Token Augmentation for Fine-Grained Image Retrieval | Ian de Holanda Cavalcanti Bezerra, Trivedy Vivek, Lucas Pascotti Valem, Longin Jan Latecki | Institute of Mathematics and Computer Science (ICMC), University of São Paulo (USP)；Department of Computer and Information Science, Temple University | 提出区域感知CLS token增强方法，通过Register Tokens扩展实现细粒度图像检索的判别性特征学习。 | [#582](https://github.com/Larry2000error/Larry-PaperClaw/issues/582) |
+| [20261007] BagDINO: Multi-View Baggage Re-Identification with DINOv3 | Vita Santa Barletta, Caivano Danilo, Margiotta Rebecca, Morga Massimiliano, Davide Pio Posa | University of Bari Aldo Moro；SER&Practices | 基于DINOv3构建多视角行李重识别框架BagDINO，采用LoRA微调策略适配机场安检场景。 | [#583](https://github.com/Larry2000error/Larry-PaperClaw/issues/583) |
+| [20261007] SoccerNet-FoulRet: Retrieving Semantically Similar Soccer Foul Videos | Arthur Jacobus, Sait Ahmad, Hani Batool, Ramazanova Merey, Held Jan, Marc Van Droogenbroeck, Ghanem Bernard, Cioppa Anthony, Giancola Silvio | University of Liège；KAUST；SpAItial | 构建足球犯规视频语义检索数据集SoccerNet-FoulRet，支持裁判决策辅助的相似犯规案例检索。 | [#584](https://github.com/Larry2000error/Larry-PaperClaw/issues/584) |
+| [20261007] SearchWorld: Spatial Value-Grounded Imagination for UAV Object Search via World Models | Ji Yatai, Zhu Zhengqiu, Zhao Yong, Hu Yue, Yao Fanglong, Gao Chen, Zhu Pengfei, Yin Quanjun | National Key Laboratory of Digital Intelligent Modeling and Simulation, National University of Defense Technology；College of Systems Engineering, National University of Defense Technology；Aerospace Information Research Institute, Chinese Academy of Sciences；BNRist, Tsinghua University；Southeast University | 提出SearchWorld框架，融合世界模型与空间价值想象机制实现UAV在未知环境中的高效目标搜索。 | [#585](https://github.com/Larry2000error/Larry-PaperClaw/issues/585) |
+
+## 🔎 观察
+
+- 基础模型微调范式正从通用适配转向场景化设计，LoRA与任务特定模块的结合成为主流。
+- 世界模型在具身智能中的应用加速扩展，空间记忆与价值想象机制为自主导航提供新思路。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261006](./202610/20261006.md)
 ## 📌 今日概况
 
@@ -62,41 +95,6 @@ Powered by OpenClaw🦞
 
 - 视觉-语言模型正从通用理解向专业检索任务深化，零样本范式显著降低领域适配成本
 - 遥感与生态监测领域涌现弱监督与开放集解决方案，反映真实场景对低标注依赖技术的迫切需求
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261004](./202610/20261004.md)
-## 📌 今日概况
-
-今日共检索候选论文 28 篇；关键词+LLM 智能匹配遥感交叉论文 6 篇；最终纳入日报 6 篇。
-
-今日研究聚焦于多模态智能系统的交互与检索能力优化。跨模态表征学习持续深化，涵盖推荐系统、医学病理与红外目标检测等垂直领域。Agentic AI架构成为新热点，强调动态交互与自主决策能力。边缘部署与隐私安全议题亦受关注，体现技术落地与伦理并重的趋势。
-
-## ✨ 今日亮点
-
-- 视觉-语言统一表征首次系统应用于多模态推荐场景，突破传统协同过滤瓶颈
-- Agentic架构引入红外小目标检测，通过变焦引导交互实现动态视觉搜索
-- 跨模态对比学习打通病理图像与免疫治疗分子标志物检索链路
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261004] OpticalRec: Unified Optical Vision-Language Representation for Multimodal Recommendation | Wang Yueqi, Guo Zitian, Hou Yupeng, Wang Yifei, Kim Kibum, Yue Zhenrui, Xing Shuo, Li Haodong, Xia Heming, Zhang Renrui, Tu Zhengzhong, McAuley Julian | University of California, San Diego；Alibaba Group；University of Illinois Urbana-Champaign；The Hong Kong Polytechnic University；The Chinese University of Hong Kong；Texas A&M University | 提出OpticalRec框架，以统一光学视觉-语言表征融合多模态推荐中的视觉语义与协同信号。 | [#546](https://github.com/Larry2000error/Larry-PaperClaw/issues/546) |
-| [20261004] IRSTD-Agent: Agentic Infrared Small Target Detection via Zoom-Guided Interaction Learning | Xi Jiawen, Zhang Yu, Zhao Tianyi, Liu Zhu, Yuan Maoxun, Wei Xingxing | Beihang University；Dalian University of Technology | IRSTD-Agent构建智能体驱动的红外小目标检测系统，通过变焦引导交互学习实现自适应视觉搜索。 | [#547](https://github.com/Larry2000error/Larry-PaperClaw/issues/547) |
-| [20261004] Cross-Modal Contrastive Learning for the Retrieval of Immunotherapy-Associated Molecular Signatures from Histopathology | Vila-Bagaria Sigrid, Teixidó Mar, Piñol Miquel, Vilardell Felip, Montal Robert, Vilaplana Veronica | Universitat Politècnica de Catalunya - BarcelonaTech (UPC)；IRB Lleida | 开发跨模态对比学习框架，从组织病理学图像中检索免疫治疗相关分子特征。 | [#548](https://github.com/Larry2000error/Larry-PaperClaw/issues/548) |
-| [20261004] An Edge-First Multimodal Asset Management Studio and Retrieval Engine for Heterogeneous AI-Generated Media | Lin Chaoyu | Independent Researcher | 设计边缘优先的多模态资产管理与检索引擎，面向异构AI生成媒体的元数据提取与高效管理。 | [#570](https://github.com/Larry2000error/Larry-PaperClaw/issues/570) |
-| [20261004] AgentDoxx: Agentic Re-identification of Anonymized Text with Web Search | Wen Jianing, Li Tianshi | Khoury College of Computer Sciences, Northeastern University | AgentDoxx揭示大模型结合网络搜索可对匿名化文本进行智能体重识别，凸显隐私风险。 | [#571](https://github.com/Larry2000error/Larry-PaperClaw/issues/571) |
-| [20261004] When Does Retrieval Help? A Study of In-Context Adaptation in Vision-Language-Action Models | Liu Zixuan, Köster Joris, Zheng Zizhan, Khajavi Siavash | Tulane University；Aalto University | 系统研究检索增强在视觉-语言-动作模型中的上下文适应机制，明确检索生效的关键条件。 | [#572](https://github.com/Larry2000error/Larry-PaperClaw/issues/572) |
-
-## 🔎 观察
-
-- Agentic AI正从通用对话向专用视觉任务渗透，交互式学习成为提升复杂场景感知的新范式
-- 跨模态检索技术加速向医疗、安防等高价值领域迁移，但隐私泄露风险同步放大需警惕
 
 ---
 
