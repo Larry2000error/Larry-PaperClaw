@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20261006](./202610/20261006.md)
+## 📌 今日概况
+
+今日共检索候选论文 41 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日研究呈现三大趋势：一是视觉-语言模型在检索任务中的高效应用，探索免训练与知识蒸馏路径；二是模型合并与参数优化技术持续演进，提升部署效率；三是垂直领域AI基础设施加速建设，电信行业开源数据集与评测体系首次系统性发布。
+
+## ✨ 今日亮点
+
+- 免训练视频检索新范式：TF-PRVR通过时序分割与多尺度分析实现零样本视频检索
+- VLM知识蒸馏深度解析：对比监督信号对视觉文档检索的迁移效果差异
+- 电信AI基础设施开源：OTel发布首个大规模电信领域语言模型评测基准与数据集
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261006] TF-PRVR: Training-Free Partially Relevant Video Retrieval | Kim Giyeol, Eom Chanho | Chung-Ang University | TF-PRVR提出免训练部分相关视频检索方法，利用时序分割与多尺度CLIP特征对齐，无需微调即可定位视频片段。 | [#577](https://github.com/Larry2000error/Larry-PaperClaw/issues/577) |
+| [20261006] What Transfers from a VLM Teacher? Comparing Supervision Signals for Visual Document Retrieval | Sturua Saba, Xiao Han | Jina AI by Elastic | 研究系统对比VLM教师模型的多种监督信号，发现对比学习结合难负样本挖掘对视觉文档检索蒸馏效果最优。 | [#578](https://github.com/Larry2000error/Larry-PaperClaw/issues/578) |
+| [20261006] $α$Transfer: Coefficient Transfer for Efficient Model Merging | Huang Shih-Cheng, Zhi Rui Tam, Lin Chieh-Yen, Chen Yun-Nung, Lee Hung-yi, Sun Shao-Hua | Appier AI Research；National Taiwan University | αTransfer创新系数迁移机制，通过参数算术实现视觉Transformer的高效模型合并与弹性扩展。 | [#579](https://github.com/Larry2000error/Larry-PaperClaw/issues/579) |
+| [20261006] OTel: Open Telco AI Datasets, Benchmarks, and Models | Tavakkoli Farbod, Diamos Gregory, Church Kenneth, Paulk Roderic, Terrazas Jorden, Kanter David, Austin Mark, Karim Imtiaz, Syed Ali Raza Zaidi, Bariah Lina, Merouane Abdelkader Debbah, Maatouk Ali, Powell Louis, Vasiloglou Nikolaos, Vaswani Ashish, Singla Somanshu, Chaluvaraju Adarsh | AT&T Chief Data Office；RelationalAI；Northeastern University；MLCommons；The University of Texas at Dallas；University of Leeds；Khalifa University；Yale University；GSMAOct；Essential AI | OTel开源电信AI全栈资源，涵盖多模态数据集、评测基准及专用语言模型，推动通信领域AI标准化。 | [#580](https://github.com/Larry2000error/Larry-PaperClaw/issues/580) |
+
+## 🔎 观察
+
+- 视频检索领域正从'训练密集'向'零样本高效'转型，时序理解成为免训练范式的关键瓶颈。
+- 垂直行业大模型基础设施进入密集建设期，电信等关键领域的开源生态将重塑产业AI竞争格局。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261005](./202610/20261005.md)
 ## 📌 今日概况
 
@@ -64,36 +97,6 @@ Powered by OpenClaw🦞
 
 - Agentic AI正从通用对话向专用视觉任务渗透，交互式学习成为提升复杂场景感知的新范式
 - 跨模态检索技术加速向医疗、安防等高价值领域迁移，但隐私泄露风险同步放大需警惕
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261003](./202610/20261003.md)
-## 📌 今日概况
-
-今日共检索候选论文 16 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-今日遥感AI领域聚焦多模态目标重识别技术，清华大学等机构联合提出TRIM-ReID框架，通过令牌冗余消除与模态对齐交互机制，解决红外-可见光跨模态匹配难题。研究趋势显示，高效Transformer架构与多模态融合仍是核心方向，尤其在复杂场景下的身份一致性保持方面取得进展。
-
-## ✨ 今日亮点
-
-- 提出重复感知令牌缩减策略，降低多模态Transformer计算开销
-- 构建模态对齐交互模块，缓解红外-可见光特征分布差异
-- 在行人重识别任务中实现跨模态特征高效融合与匹配
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261003] TRIM-ReID: Duplication-Aware Token Reduction and Modality-Aligned Interaction for Multi-Modal Object Re-Identification | Xia Wanke, Zhu Ruiding, Xu Xingguo, Zhang Zhengbo, Liu Dongxia, Jin Yuan, Zhu Taojie, Zhao Yiting, Ding Yihang | Tsinghua University；Anhui University；Dalian University of Technology；CASIA；SJTU | TRIM-ReID通过冗余令牌剪枝与模态交互对齐，提升红外-可见光跨模态行人重识别效率与精度。 | [#545](https://github.com/Larry2000error/Larry-PaperClaw/issues/545) |
-
-## 🔎 观察
-
-- 令牌缩减技术向多模态场景延伸，反映高效推理与精度平衡成为部署关键诉求
-- 红外-可见光对齐研究持续活跃，表明全天候监控与复杂环境感知需求日益迫切
 
 ---
 
