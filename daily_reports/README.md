@@ -2,6 +2,68 @@
 
 最近三天日报（最新在前）：
 
+# [20261011](./202610/20261011.md)
+## 📌 今日概况
+
+今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦视觉-语言模型与地理空间智能的交叉领域。一方面关注具身智能中的指令理解与歧义检测，另一方面探索众源灾害影像的跨视角地理定位，体现遥感AI向多模态推理和开放环境适应性的发展趋势。
+
+## ✨ 今日亮点
+
+- 首个波斯语视觉-语言-动作数据集发布，支持指令到规划的歧义与不可行性检测
+- 十年期众源灾害照片地理定位纵向研究，揭示VLM在跨视角定位中的演进规律
+- 多机构国际合作凸显地理空间智能与灾害应急响应的学科交叉重要性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261011] A Persian Vision-Language-Action Dataset and Benchmark for Ambiguity- and Infeasibility-Aware Instruction-to-Plan Grounding | Pourasghari Abdollah, Saeedeh Sadat Sadidpour, Roustaei Mohammad | Malek Ashtar University of Technology；Isfahan University of Technology | 该研究构建了波斯语视觉-语言-动作数据集，提出面向指令到规划任务的歧义与不可行性感知基准测试。 | [#601](https://github.com/Larry2000error/Larry-PaperClaw/issues/601) |
+| [20261011] A Decade of PhotoMappers: A Longitudinal Study of Crowdsourced Disaster Photos Geolocalization with Vision-Language Models and Geospatial Reasoning | Li Hao, Yin Wenping, Deuser Fabian, Jia Jia, Liu Ziqi, Juhász Levente, Zhang Fan, Biljecki Filip | Department of Geography, National University of Singapore；College of Geodesy and Geomatics, Shandong University of Science and Technology；University of the Bundeswehr Munich；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；School of Forest, Fisheries and Geomatics Sciences, University of Florida；Fort Lauderdale Research and Education Center, University of Florida；Institute of Remote Sensing and GIS, Peking University；Department of Architecture, National University of Singapore；Department of Real Estate, National University of Singapore | 该研究基于十年众源灾害照片数据，系统评估了视觉-语言模型结合地理空间推理的跨视角地理定位能力演变。 | [#602](https://github.com/Larry2000error/Larry-PaperClaw/issues/602) |
+
+## 🔎 观察
+
+- 小语种与区域特色数据集建设加速，反映具身智能本土化需求上升，但需关注数据规模与模型泛化的平衡。
+- 众源数据与VLM结合正重塑灾害测绘范式，但长期时序分析揭示的模型性能波动提示地理空间推理的鲁棒性仍是关键瓶颈。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
+# [20261010](./202610/20261010.md)
+## 📌 今日概况
+
+今日共检索候选论文 24 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦跨模态定位与多模态视频理解两大方向。ScalLoc探索热红外无人机与卫星地图的连续斜视角定位，EVISTA则提出证据感知时序路径优化实现统一多模态视频检索，均体现时空推理与异构数据融合的技术趋势。
+
+## ✨ 今日亮点
+
+- ScalLoc突破热成像无人机在卫星地图上的连续斜视角定位难题
+- EVISTA以证据感知时序优化实现多模态视频统一检索框架
+- 两研究均强调跨模态对齐与时空推理的协同设计
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261010] ScalLoc: Continuous Oblique Thermal UAV Geo-Localization with a 2D Satellite Map | Zhang Xiaoran, Liu Yu, Liang Jinyu, Xiao Huaxin | Institution unavailable | ScalLoc提出基于2D卫星地图的热红外无人机连续斜视角地理定位方法，解决跨模态视角差异与尺度变化问题。 | [#598](https://github.com/Larry2000error/Larry-PaperClaw/issues/598) |
+| [20261010] EVISTA: Unified Multimodal Video Search with Evidence-Aware Temporal Path Optimization | Tran Minh-Huy, Vo Van-Thinh, Nguyen Minh-Khoi, Nguyen Duy-Tan, Nguyen-Tran Anh-Quan, Loi Nguyen Khanh | HCMUT EE Machine Learning & IoT Lab；Ho Chi Minh University of Technology | EVISTA构建证据感知时序路径优化框架，实现文本、图像、视频的统一多模态检索与事件定位。 | [#599](https://github.com/Larry2000error/Larry-PaperClaw/issues/599) |
+
+## 🔎 观察
+
+- 无人机定位研究正从正射视角向斜视角扩展，热红外-可见光跨模态匹配成为新难点
+- 视频检索领域出现'证据驱动'新范式，时序推理与多模态融合的深度结合值得持续关注
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261009](./202610/20261009.md)
 ## 📌 今日概况
 
@@ -26,72 +88,6 @@
 
 - 跨模态匹配正从可见光-卫星向热红外-卫星拓展，反映夜间/低光照场景应用需求增长。
 - 行人重识别研究向垂直领域深化，体育视频的动态视角与相似着装成为新的技术挑战。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261007](./202610/20261007.md)
-## 📌 今日概况
-
-今日共检索候选论文 47 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日研究聚焦于视觉基础模型在特定场景下的精细化应用。Vision Transformer的CLS token增强、DINOv3的多视角行李重识别、足球犯规视频语义检索，以及结合世界模型的UAV自主搜索成为主要方向，体现了从通用表征向任务自适应的演进趋势。
-
-## ✨ 今日亮点
-
-- 区域感知CLS token增强技术提升细粒度图像检索精度
-- DINOv3结合LoRA实现多视角行李重识别的高效适配
-- 世界模型驱动空间价值想象赋能UAV自主目标搜索
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261007] Region-Aware CLS Token Augmentation for Fine-Grained Image Retrieval | Ian de Holanda Cavalcanti Bezerra, Trivedy Vivek, Lucas Pascotti Valem, Longin Jan Latecki | Institute of Mathematics and Computer Science (ICMC), University of São Paulo (USP)；Department of Computer and Information Science, Temple University | 提出区域感知CLS token增强方法，通过Register Tokens扩展实现细粒度图像检索的判别性特征学习。 | [#582](https://github.com/Larry2000error/Larry-PaperClaw/issues/582) |
-| [20261007] BagDINO: Multi-View Baggage Re-Identification with DINOv3 | Vita Santa Barletta, Caivano Danilo, Margiotta Rebecca, Morga Massimiliano, Davide Pio Posa | University of Bari Aldo Moro；SER&Practices | 基于DINOv3构建多视角行李重识别框架BagDINO，采用LoRA微调策略适配机场安检场景。 | [#583](https://github.com/Larry2000error/Larry-PaperClaw/issues/583) |
-| [20261007] SoccerNet-FoulRet: Retrieving Semantically Similar Soccer Foul Videos | Arthur Jacobus, Sait Ahmad, Hani Batool, Ramazanova Merey, Held Jan, Marc Van Droogenbroeck, Ghanem Bernard, Cioppa Anthony, Giancola Silvio | University of Liège；KAUST；SpAItial | 构建足球犯规视频语义检索数据集SoccerNet-FoulRet，支持裁判决策辅助的相似犯规案例检索。 | [#584](https://github.com/Larry2000error/Larry-PaperClaw/issues/584) |
-| [20261007] SearchWorld: Spatial Value-Grounded Imagination for UAV Object Search via World Models | Ji Yatai, Zhu Zhengqiu, Zhao Yong, Hu Yue, Yao Fanglong, Gao Chen, Zhu Pengfei, Yin Quanjun | National Key Laboratory of Digital Intelligent Modeling and Simulation, National University of Defense Technology；College of Systems Engineering, National University of Defense Technology；Aerospace Information Research Institute, Chinese Academy of Sciences；BNRist, Tsinghua University；Southeast University | 提出SearchWorld框架，融合世界模型与空间价值想象机制实现UAV在未知环境中的高效目标搜索。 | [#585](https://github.com/Larry2000error/Larry-PaperClaw/issues/585) |
-
-## 🔎 观察
-
-- 基础模型微调范式正从通用适配转向场景化设计，LoRA与任务特定模块的结合成为主流。
-- 世界模型在具身智能中的应用加速扩展，空间记忆与价值想象机制为自主导航提供新思路。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261006](./202610/20261006.md)
-## 📌 今日概况
-
-今日共检索候选论文 41 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-今日研究呈现三大趋势：一是视觉-语言模型在检索任务中的高效应用，探索免训练与知识蒸馏路径；二是模型合并与参数优化技术持续演进，提升部署效率；三是垂直领域AI基础设施加速建设，电信行业开源数据集与评测体系首次系统性发布。
-
-## ✨ 今日亮点
-
-- 免训练视频检索新范式：TF-PRVR通过时序分割与多尺度分析实现零样本视频检索
-- VLM知识蒸馏深度解析：对比监督信号对视觉文档检索的迁移效果差异
-- 电信AI基础设施开源：OTel发布首个大规模电信领域语言模型评测基准与数据集
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261006] TF-PRVR: Training-Free Partially Relevant Video Retrieval | Kim Giyeol, Eom Chanho | Chung-Ang University | TF-PRVR提出免训练部分相关视频检索方法，利用时序分割与多尺度CLIP特征对齐，无需微调即可定位视频片段。 | [#577](https://github.com/Larry2000error/Larry-PaperClaw/issues/577) |
-| [20261006] What Transfers from a VLM Teacher? Comparing Supervision Signals for Visual Document Retrieval | Sturua Saba, Xiao Han | Jina AI by Elastic | 研究系统对比VLM教师模型的多种监督信号，发现对比学习结合难负样本挖掘对视觉文档检索蒸馏效果最优。 | [#578](https://github.com/Larry2000error/Larry-PaperClaw/issues/578) |
-| [20261006] $α$Transfer: Coefficient Transfer for Efficient Model Merging | Huang Shih-Cheng, Zhi Rui Tam, Lin Chieh-Yen, Chen Yun-Nung, Lee Hung-yi, Sun Shao-Hua | Appier AI Research；National Taiwan University | αTransfer创新系数迁移机制，通过参数算术实现视觉Transformer的高效模型合并与弹性扩展。 | [#579](https://github.com/Larry2000error/Larry-PaperClaw/issues/579) |
-| [20261006] OTel: Open Telco AI Datasets, Benchmarks, and Models | Tavakkoli Farbod, Diamos Gregory, Church Kenneth, Paulk Roderic, Terrazas Jorden, Kanter David, Austin Mark, Karim Imtiaz, Syed Ali Raza Zaidi, Bariah Lina, Merouane Abdelkader Debbah, Maatouk Ali, Powell Louis, Vasiloglou Nikolaos, Vaswani Ashish, Singla Somanshu, Chaluvaraju Adarsh | AT&T Chief Data Office；RelationalAI；Northeastern University；MLCommons；The University of Texas at Dallas；University of Leeds；Khalifa University；Yale University；GSMAOct；Essential AI | OTel开源电信AI全栈资源，涵盖多模态数据集、评测基准及专用语言模型，推动通信领域AI标准化。 | [#580](https://github.com/Larry2000error/Larry-PaperClaw/issues/580) |
-
-## 🔎 观察
-
-- 视频检索领域正从'训练密集'向'零样本高效'转型，时序理解成为免训练范式的关键瓶颈。
-- 垂直行业大模型基础设施进入密集建设期，电信等关键领域的开源生态将重塑产业AI竞争格局。
 
 ---
 
