@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20261012](./202610/20261012.md)
+## 📌 今日概况
+
+今日共检索候选论文 38 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦跨视角感知与高效神经计算两大方向。3D重建与新颖视角合成技术持续推动跨视角目标重识别突破，同时事件相机与脉冲神经网络结合为视觉定位任务带来低功耗解决方案，体现遥感系统向三维理解与边缘智能演进趋势。
+
+## ✨ 今日亮点
+
+- 3D-VITAL提出可见性感知身份训练，解决单视图空-地跨视角重识别难题
+- 脉冲神经网络首次系统应用于事件视觉定位，突破传统计算瓶颈
+- 神经形态计算与遥感结合，为低功耗实时感知开辟新路径
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261012] 3D-VITAL: Visibility-aware Identity Training from Artificial Liftings of 3D Reconstruction model for Cross-View Object Re-Identification | Grolleau William, Sabourin Astrid, Lapouge Guillaume, Achard Catherine | Université Paris-Saclay, CEA, List；Sorbonne University, CNRS, Institute of Intelligent Systems and Robotics (ISIR) | 3D-VITAL通过3D重建模型的人工提升生成可见性感知身份训练数据，实现单视图空-地跨视角目标重识别。 | [#604](https://github.com/Larry2000error/Larry-PaperClaw/issues/604) |
+| [20261012] Removing the Compute Bottleneck for Event-based Visual Place Recognition with Spiking Neural Networks | Hussaini Somayeh, Fischer Tobias, Milford Michael | Queensland University of Technology | 该研究采用脉冲神经网络与STDP学习机制，显著降低事件视觉定位任务的计算开销，推动神经形态计算实用化。 | [#605](https://github.com/Larry2000error/Larry-PaperClaw/issues/605) |
+
+## 🔎 观察
+
+- 跨视角重识别正从二维特征对齐转向三维几何推理，可见性建模成为关键瓶颈
+- 事件相机与SNN的硬件-算法协同设计，预示遥感边缘设备能效比将迎来数量级提升
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261011](./202610/20261011.md)
 ## 📌 今日概况
 
@@ -57,37 +88,6 @@ Powered by OpenClaw🦞
 
 - 无人机定位研究正从正射视角向斜视角扩展，热红外-可见光跨模态匹配成为新难点
 - 视频检索领域出现'证据驱动'新范式，时序推理与多模态融合的深度结合值得持续关注
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261009](./202610/20261009.md)
-## 📌 今日概况
-
-今日共检索候选论文 48 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 2 篇。
-
-今日研究聚焦跨模态视觉定位与智能视频分析两大方向。UAV热红外-卫星图像跨模态匹配技术取得进展，通过结构感知方法提升无人机地理定位鲁棒性；体育场景下的行人重识别研究则探索上下文嵌入策略，突破单裁剪框特征表达的局限性。
-
-## ✨ 今日亮点
-
-- 结构感知匹配框架实现热红外与卫星图像的鲁棒跨模态定位
-- 上下文化嵌入策略突破体育视频中球员重识别的单帧限制
-- 广播视频分析场景推动行人重识别向复杂动态环境延伸
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261009] Beyond a Single Crop: Contextualized Embeddings for Player Re-Identification | Luo Ge, Yang Changhuo, Fan Weisi, Yang Rui, Wang Shaokai | Central South University；Iowa State University；Shandong University | 提出上下文化嵌入方法，利用多裁剪框时空关系增强体育广播视频中球员重识别性能。 | [#595](https://github.com/Larry2000error/Larry-PaperClaw/issues/595) |
-| [20261009] Structure-Aware Matching for Robust UAV Thermal-to-Satellite Geo-Localization | Liu Chun, Wang Yuxin, Huo Zhenxiang, Zhu Linlin, Xu Tao, Han Henggang | Institution unavailable | 设计结构感知匹配网络，通过几何结构约束实现无人机热红外图像与卫星地图的鲁棒地理定位。 | [#596](https://github.com/Larry2000error/Larry-PaperClaw/issues/596) |
-
-## 🔎 观察
-
-- 跨模态匹配正从可见光-卫星向热红外-卫星拓展，反映夜间/低光照场景应用需求增长。
-- 行人重识别研究向垂直领域深化，体育视频的动态视角与相似着装成为新的技术挑战。
 
 ---
 
