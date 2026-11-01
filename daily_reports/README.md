@@ -2,30 +2,32 @@
 
 最近三天日报（最新在前）：
 
-# [20261016](./202610/20261016.md)
+# [20261020](./202610/20261020.md)
 ## 📌 今日概况
 
-今日共检索候选论文 32 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+今日共检索候选论文 46 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
 
-今日研究聚焦多模态大语言模型在视频理解与检索中的应用，以及多模态表征学习的精细化设计。MLLM在视频问答与搜索重排序任务中展现潜力，同时正交解耦的共享-特定表征方法为跨模态目标重识别提供了新思路。
+今日研究聚焦视觉-语言模型在检索任务中的创新应用。行人重识别领域关注跨时段、换衣场景下的身份一致性建模；图像检索方向探索组合查询理解与重排序优化。多模态融合与测试时自适应成为提升检索精度的关键技术路径。
 
 ## ✨ 今日亮点
 
-- MLLM子集集成策略提升音视频问答性能，重排序优化视频搜索效果
-- 正交解耦网络分离模态共享与特有表征，增强多模态目标重识别能力
-- 跨模态对齐与特征解耦技术持续演进，推动多模态表征学习精细化
+- MINER提出人际与个体内方差联合建模，解决换衣行人重识别难题
+- PRAISE框架以属性为桥梁，实现查询条件子空间的几何约束检索
+- 多模态重排序被重新定义为系统一决策问题，提升检索效率
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261016] MLLM Frame Subset Ensembling for Audio-Visual Video QA and MLLM-based Reranking for Ad-hoc Video Search in TRECVID 2025 | Goulas Andreas, Galanopoulos Damianos, Patras Ioannis, Mezaris Vasileios | Information Technologies Institute (ITI), Centre of Research and Technology Hellas (CERTH)；Queen Mary University of London | 该研究提出MLLM帧子集集成方法用于音视频问答，并设计基于MLLM的重排序机制优化特定视频搜索任务。 | [#632](https://github.com/Larry2000error/Larry-PaperClaw/issues/632) |
-| [20261016] ODSS-Net: Orthogonally Decoupled Shared-Specific Representations for Multi-Modal Object Re-Identification | Ma Zhifeng, Feng Yuhong, Huang Chongyi, Zhou Mingyang, Deng Minwen | College of Computer Science and Software Engineering, Shenzhen University；Tencent | ODSS-Net通过正交投影将多模态特征解耦为共享与模态特有表征，提升多模态目标重识别性能。 | [#633](https://github.com/Larry2000error/Larry-PaperClaw/issues/633) |
+| [20261020] MINER: Modeling Inter- and Intra-Person Variance for Reidentification | Nir Oron, Strugo Eliyahu, Shamir Ariel | Reichman University；Microsoft | MINER通过显式建模人际差异与个体内变化，结合困难样本挖掘，提升换衣场景下的行人重识别性能。 | [#645](https://github.com/Larry2000error/Larry-PaperClaw/issues/645) |
+| [20261020] In PRAISE of Attributes: Grounding Retrieval Geometry with Query-Conditioned Subspaces for Person Re-Identification | Bhattacharya Rajarshi, Shukla Aryan, Murtaza Shakeeb, Desrosiers Christian, Dolz Jose, Heritier Maguelonne, Granger Eric | LIVIA, École de technologie supérieure；Genetec Inc. | PRAISE利用视觉-语言模型的属性语义，构建查询条件子空间，实现几何可解释的测试时自适应检索。 | [#646](https://github.com/Larry2000error/Larry-PaperClaw/issues/646) |
+| [20261020] Less is More: Concise Retrieval and Critic-based Re-ranking for Composed Image Retrieval | Zheng Yuqian, Ahn Hyoju, Ahn Hyeongjin, Park Eunil | Sungkyunkwan University；Jaume I University | 提出简洁检索与基于评论家的重排序策略，以更少计算开销实现零样本组合图像检索。 | [#647](https://github.com/Larry2000error/Larry-PaperClaw/issues/647) |
+| [20261020] Multimodal Reranking Is a System One Decision | Liu Zhuchenyang, Zhang Yao, Xiao Yu | Aalto University | 将多模态重排序形式化为系统一决策过程，揭示快速直觉判断在检索优化中的有效性。 | [#648](https://github.com/Larry2000error/Larry-PaperClaw/issues/648) |
 
 ## 🔎 观察
 
-- 多模态大模型正从通用理解向特定视频任务（搜索、问答）的精细化适配演进
-- 特征解耦与正交约束成为跨模态表征学习的重要技术路线，兼顾共享性与判别性
+- 行人重识别正从单一视觉特征向属性-语义联合表征演进，换衣鲁棒性成为核心挑战
+- 重排序环节的系统化设计（评论家机制、决策理论）成为提升检索质量的新突破口
 
 ---
 
@@ -33,33 +35,33 @@ Powered by OpenClaw🦞
 
 ---
 
-# [20261015](./202610/20261015.md)
+# [20261019](./202610/20261019.md)
 ## 📌 今日概况
 
-今日共检索候选论文 43 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+今日共检索候选论文 50 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
 
-今日研究聚焦于视觉检索效率与多模态理解两大主线。CertEx提出可认证排除机制实现精确kNN检索加速；病理基础模型探索零训练肿瘤病例检索；DINOv3向3D几何理解延伸；视频生成领域则通过稀疏注意力优化扩散Transformer效率。
+今日研究呈现多模态基础模型与高效检索技术的融合趋势。视觉语言模型向具身智能与3D场景理解延伸，同时训练无关方法与自适应表征优化成为降低计算成本的关键路径。跨域自适应与置信度引导策略持续推动无监督学习在视觉任务中的应用。
 
 ## ✨ 今日亮点
 
-- CertEx以可认证排除实现大规模精确视觉检索，兼顾精度与GPU加速
-- 病理基础模型首次实现唾液腺肿瘤零训练病例检索，助力罕见癌诊断
-- DINOv3引入自监督几何感知，突破部分3D形状匹配瓶颈
+- 基础模型驱动光流估计，DINOv2与Depth Anything V2实现密集预测Transformer架构
+- SpatialScout探索VLM智能体主动探索与3D场景建图的空间智能能力
+- FlexVDR提出俄罗斯套娃表征预算动态分配，优化视觉文档检索效率
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261015] CertEx: Exact Visual Retrieval at Scale by Certified Exclusion | Zhao Dongfang | Tacoma School of Engineering & Technology and eScience Institute；University of Washington | CertEx提出可认证排除框架，通过GPU加速近似索引实现精确kNN检索，解决大规模视觉检索中精度与效率的权衡难题。 | [#612](https://github.com/Larry2000error/Larry-PaperClaw/issues/612) |
-| [20261015] Stuck on Shuffle: On Attribute-Object Binding in Vision-Language Models | Netanel Y. Tamir, Green Michael, Tzachor Issar, Shimshi Or, Samuel Dvir, Patashnik Or, Ben-Ari Rami | OriginAI；NVIDIA；Tel Aviv University | 研究揭示视觉语言模型在属性-对象绑定任务中存在系统性缺陷，提出新基准测试评估组合理解能力。 | [#628](https://github.com/Larry2000error/Larry-PaperClaw/issues/628) |
-| [20261015] Pathology foundation models for training-free case retrieval in salivary gland tumors | Maximilian J. Roesel, Kiermeyer Niklas, Keyl Philipp, Klauschen Frederick | Institute of Pathology, Ludwig-Maximilians-Universität München；German Cancer Consortium (DKTK), German Cancer Research Center (DKFZ), Munich partner site；Institute of Pathology, Charité-Universitätsmedizin Berlin；BIFOLD-Berlin Institute for the Foundations of Learning and Data | 基于病理基础模型的零训练检索方法，可直接应用于唾液腺肿瘤全切片图像的相似病例检索。 | [#629](https://github.com/Larry2000error/Larry-PaperClaw/issues/629) |
-| [20261015] Teaching DINOv3 About Partial 3D Geometry: A Self-Supervised Geometry-Aware Approach | Ehm Viktoria, Cao Dongliang, Marin Riccardo, Scholz Daniel, Wang Weikang, Bernard Florian, Cremers Daniel | Technical University of Munich；Munich Center for Machine Learning；University of Bonn | 通过LoRA微调与自监督几何感知策略，赋予DINOv3部分3D形状匹配能力，无需3D标注数据。 | [#630](https://github.com/Larry2000error/Larry-PaperClaw/issues/630) |
-| [20261015] Sparse Attention for Video Generation Acceleration via Growing Sparsity and Reduced Search | Dai Yun, Chen Yuyun, Wen Jiarui, Zhuang Huiping, Chen Cen, Zeng Ziqian | South China University of Technology | 提出渐进稀疏注意力机制，通过动态增长稀疏性与减少搜索开销加速视频扩散Transformer生成。 | [#631](https://github.com/Larry2000error/Larry-PaperClaw/issues/631) |
+| [20261019] Foundation Model Driven Optical Flow | Chanda Praroop, Kumar Suryansh | Texas A&M University | 基于DINOv2与Depth Anything V2构建基础模型驱动的光流估计框架，采用密集预测Transformer实现端到端训练。 | [#639](https://github.com/Larry2000error/Larry-PaperClaw/issues/639) |
+| [20261019] SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes? | Zhang Zhaoxi, Liang Hao, Wu Linxuan, Xu Yiming, Yuan Yifu, Liang Kun, Tang Chenming, Qiang Meiyi, Zhang Wentao, Li Weikang | Peking University；Tianjin University | SpatialScout验证视觉语言模型智能体在主动探索与3D场景建图任务中的空间推理与规划能力。 | [#640](https://github.com/Larry2000error/Larry-PaperClaw/issues/640) |
+| [20261019] DCR-TSF: Dual-Level Compositional Reasoning with Triadic Spherical Fusion for Training-Free Zero-Shot Composed Image Retrieval | Na Gwang-Ho, Kim Ho-Joong, Lee Seong-Whan | Korea University | DCR-TSF通过三元球面融合与双层组合推理，实现无需训练的零样本组合图像检索。 | [#641](https://github.com/Larry2000error/Larry-PaperClaw/issues/641) |
+| [20261019] Confidence-Guided Pseudo-Label Refinement for Unsupervised Cross-Domain Person Re-Identification | Iqbal Sundas, Ali Danish, Tian Qing, Zheng Yuhui, Gou Jianping, Ou Weihua | Tsinghua University；Chinese Academy of Sciences | 提出置信度引导的伪标签精修方法，提升无监督跨域行人重识别在目标域的适应性能。 | [#642](https://github.com/Larry2000error/Larry-PaperClaw/issues/642) |
+| [20261019] FlexVDR: Learning to Allocate Matryoshka Representation Budgets for Visual Document Retrieval | Xiang Haowen, Yan Yibo, Zou Xin, Liu Shuliang, Cao Yi, Ou Mingdong, Hu Xuming | The Hong Kong University of Science and Technology (Guangzhou)；Alibaba Group；The Hong Kong University of Science and Technology | FlexVDR学习查询自适应的俄罗斯套娃表征预算分配策略，实现视觉文档检索的效率与精度权衡。 | [#643](https://github.com/Larry2000error/Larry-PaperClaw/issues/643) |
 
 ## 🔎 观察
 
-- 视觉基础模型正从通用表征向垂直领域（病理诊断、3D几何）深度渗透，零训练或少训练迁移成为新范式
-- 检索任务呈现两极分化：既追求CertEx的精确性保障，又探索病理领域的语义相似性，反映应用场景对确定性的差异化需求
+- 训练无关（training-free）方法在检索与理解任务中快速涌现，反映领域对降低微调成本的迫切需求
+- 视觉语言模型正从被动感知向主动交互演进，具身智能与空间智能成为下一代多模态系统的核心能力方向
 
 ---
 
@@ -67,32 +69,30 @@ Powered by OpenClaw🦞
 
 ---
 
-# [20261014](./202610/20261014.md)
+# [20261018](./202610/20261018.md)
 ## 📌 今日概况
 
-今日共检索候选论文 33 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+今日共检索候选论文 18 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
 
-今日研究聚焦多模态智能体与机器人学习，涵盖视觉-语言-动作统一嵌入、多模态知识图谱构建及上下文学习优化。强化学习与知识蒸馏成为提升智能体推理能力的关键技术路径，跨机构合作特征显著。
+今日研究聚焦高效视觉定位与多模态检索两大方向。LateMatch通过可缓存匹配机制突破交互瓶颈，推动边缘计算场景下的视觉定位效率；MEMORA则引入记忆增强的多模态委员会重排序架构，应对推理密集型检索任务。两者均体现模型架构创新与效率优化的双重追求。
 
 ## ✨ 今日亮点
 
-- Robota-Embed提出统一VLA嵌入框架，实现机器人上下文学习与进化
-- ActICL探索后训练优化策略，提升多模态智能体上下文学习能力
-- MMKG-R1以强化学习驱动多模态知识图谱自动构建
+- LateMatch提出可缓存匹配策略，显著降低视觉定位计算开销
+- MEMORA构建记忆增强的多模态委员会，提升复杂推理检索精度
+- 两篇论文均关注检索系统效率与精度的协同优化
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261014] Robota-Embed: Unified VLA Embeddings for Robot In-Context Learning and Evolution | Liu Yunze, Wang Jing, Wu Shenrui, He Wenkun, Zhan Guanqi, Ma Xianzheng, Chen Junyu, Ge Wenhang, Tang Haozhan, Gu Yuchao, Zhang Zhuoyang, Wang Zekai, Niu Dantong, Dong Zhen, Zhu Yuke, Darrell Trevor, Linxi "Jim" Fan, Han Song, Cai Han | NVIDIA；MIT；UCB；Oxford；CMU | NVIDIA等提出Robota-Embed统一嵌入模型，将视觉-语言-动作映射至共享空间，支持机器人上下文学习与跨任务迁移。 | [#623](https://github.com/Larry2000error/Larry-PaperClaw/issues/623) |
-| [20261014] ActICL: Post-Training for Agentic Multimodal In-Context Learning | Li Yanshu, Tang Ruixiang, Junyi Jessy Li, Stengel-Eskin Elias | University of Texas at Austin；Rutgers University | UT Austin等提出ActICL后训练框架，通过智能体检索与工具增强推理优化多模态上下文学习中的示例选择策略。 | [#624](https://github.com/Larry2000error/Larry-PaperClaw/issues/624) |
-| [20261014] MMKG-R1: Constructing Multimodal Knowledge Graphs via Reinforcement Learning | Wu Zongyu, Wang Yilong, Wang Xiaochen, Lin Minhua, Zhong Yuan, Ma Fenglong, Zhang Xiang, Wang Suhang | The Pennsylvania State University | Penn State提出MMKG-R1方法，以强化学习自动化构建多模态知识图谱，提升图检索增强生成质量。 | [#625](https://github.com/Larry2000error/Larry-PaperClaw/issues/625) |
-| [20261014] Information-Gain Calibrated On-Policy Distillation for Deep Search Agents | Li Chenxi, Feng Xueyang, Liu Songyang, Wang Chenxu, Tang Xiaoying, Li Chaozhuo, Zhang Litian | The Chinese University of Hong Kong, Shenzhen；Renmin University of China；Beijing University of Posts and Telecommunications；Beijing Academy of Artificial Intelligence (BAAI) | 港中深等提出信息增益校准的在线策略蒸馏方法，解决深度搜索智能体中证据盲监督导致的知识迁移低效问题。 | [#626](https://github.com/Larry2000error/Larry-PaperClaw/issues/626) |
+| [20261018] LateMatch: Breaking the Interaction Bottleneck via Cacheable Matching for Efficient Visual Localization | Omama Mohammad, Ashraf Aeyan, Chinchali Sandeep | The University of Texas at Austin；University of Massachusetts Amherst | LateMatch设计可缓存匹配机制，打破视觉定位中的交互瓶颈，实现边缘计算场景下的高效特征匹配。 | [#636](https://github.com/Larry2000error/Larry-PaperClaw/issues/636) |
+| [20261018] MEMORA: A Memory-Enhanced Multimodal Committee Reranking Agent for Reasoning-Intensive Retrieval | Mahmoud Mohamed, Mostafa Farouk Senussi, Abdalla Mahmoud, Mahmoud SalahEldin Kasem, Abdallah Abdelrahman, Hyun Soo Kang | Chungbuk National University；University of Innsbruck | MEMORA提出记忆增强的多模态委员会重排序智能体，通过多专家协作与记忆机制强化推理密集型检索性能。 | [#637](https://github.com/Larry2000error/Larry-PaperClaw/issues/637) |
 
 ## 🔎 观察
 
-- 上下文学习正从NLP向机器人与智能体领域深度渗透，VLA统一表征成为关键瓶颈
-- 强化学习在知识图谱构建中的应用显示结构化知识获取正从人工设计转向自动化生成
+- 特征匹配领域正从精度竞争转向效率与部署友好性并重，边缘计算需求驱动架构创新
+- 多模态检索系统趋向引入显式记忆模块与委员会机制，以应对复杂推理场景的可解释性与稳定性挑战
 
 ---
 
