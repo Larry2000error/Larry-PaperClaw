@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20261026](./202610/20261026.md)
+## 📌 今日概况
+
+今日共检索候选论文 36 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日遥感AI研究呈现多模态融合与空间智能两大主线。三篇论文分别探索渐进式多模态表征学习、脑电信号驱动的视觉注意力预测，以及生成式AI辅助历史地图语义重建，体现出从通用多模态技术向垂直领域（地理空间、认知科学）深度渗透的趋势。
+
+## ✨ 今日亮点
+
+- 多模态融合顺序研究揭示渐进式表征学习对跨模态检索的关键影响
+- 脑电-眼动联合建模开辟视觉注意力预测的神经生理新路径
+- 生成式空间知识框架实现历史地图的自动化语义重建与矢量化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261026] When Fusion Order Matters: Insights on Progressive Multimodal Representation Learning for Cross-modal Retrieval | Zhao Haoxiang, Wang Bin, Wang Yaofei, Lan Xiao, Diao Yunfeng, Wang Xu | University of Science and Technology of China；Hefei University of Technology；Sichuan University | 中国科学技术大学团队提出渐进式多模态表征学习方法，系统论证融合顺序对跨模态视频检索性能具有显著影响。 | [#668](https://github.com/Larry2000error/Larry-PaperClaw/issues/668) |
+| [20261026] EEGaze: Multimodal Attention Prediction in Visual Search via EEG-Based Saliency Refinement | Sharma Mansi, Orazgaliyev Dinar, Krüger Antonio, Müller Philipp | Max-Planck-Institute for Intelligent Systems；Saarland University；DFKI | 德国研究团队构建EEGaze数据集，通过脑电信号细化显著性预测，实现视觉搜索任务中多模态注意力机制的神经级建模。 | [#669](https://github.com/Larry2000error/Larry-PaperClaw/issues/669) |
+| [20261026] ArchiveLens: A Generative Spatial Knowledge Framework for Semantic Reconstruction of Historical Maps | Wu Yanan, Yang Yalin, Deng Chengbin | Department of Geography, The University of Central Arkansas；Department of Geology and Geography, West Virginia University；Center for Spatial Analysis；Department of Geography and Environmental Sustainability, University of Oklahoma | 美国地理学界联合开发ArchiveLens生成式框架，整合空间知识实现历史地图的语义重建与建筑物轮廓自动提取。 | [#670](https://github.com/Larry2000error/Larry-PaperClaw/issues/670) |
+
+## 🔎 观察
+
+- 多模态学习正从简单特征拼接转向时序化、渐进式的深度融合策略，融合顺序成为新的优化维度。
+- 历史地图数字化需求推动生成式AI与空间知识图谱结合，地理人文领域成为遥感AI落地的新蓝海。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261024](./202610/20261024.md)
 ## 📌 今日概况
 
@@ -61,38 +93,6 @@ Powered by OpenClaw🦞
 
 - 双曲几何正从NLP向视觉-语言任务渗透，其层次化特性对遥感地物尺度差异建模具潜在价值
 - 稀疏表征与流形外知识挖掘成为视觉编码器优化新方向，或推动遥感预训练模型效率提升
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261022](./202610/20261022.md)
-## 📌 今日概况
-
-今日共检索候选论文 35 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦跨模态检索与对齐技术，涵盖文本驱动行人异常搜索、细粒度跨模态对齐及显著性感知长文本图像对齐三大方向。核心趋势为：多模型融合与最优传输理论在跨模态匹配中的应用深化，以及对长文本理解与细粒度对齐鲁棒性的关注提升。
-
-## ✨ 今日亮点
-
-- 多模型检索融合与交叉编码器重排序提升合成到真实场景的迁移能力
-- 动态粒度发现与最优传输实现层次化细粒度跨模态对齐
-- 针对显著性崩溃问题提出鲁棒的长文本图像-文本对齐方法
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261022] Synthetic-to-Real Text-Based Person Anomaly Search via Multi-Model Retrieval Fusion and Cross-Encoder Reranking | Denteh Eugene, Blessing Agyei Kyem, Danyo Andrews, Joshua Kofi Asamoah, Dzinyela Richard, Owusu-Ansah Solomon, Dickson G. Asiedu, Aboah Armstrong | North Dakota State University；Texas A&M University；Sustainable Mobility and Advanced Research in Transportation (SMART) Lab；Ghana Institute of Management and Public Administration | 提出基于多模型检索融合与交叉编码器重排序的文本驱动行人异常搜索框架，解决合成到真实场景迁移难题。 | [#654](https://github.com/Larry2000error/Larry-PaperClaw/issues/654) |
-| [20261022] Hierarchical Fine-Grained Cross-Modal Alignment via Dynamic Granularity Discovery and Optimal Transport | Song Pengfeng, Zhang Shaozhong, Shao Pengfei | Zhejiang Wanli University | 通过动态粒度发现与最优传输理论，实现层次化细粒度跨模态对齐，提升图像-文本匹配精度。 | [#655](https://github.com/Larry2000error/Larry-PaperClaw/issues/655) |
-| [20261022] Mitigating Saliency Collapse: Robust Saliency-Aware Long-Text Image-Text Alignment | Kong Qiuyu, Ruan Zanxi, Cristani Marco, Wang Yiming | Sapienza University of Rome；University of Verona；Fondazione Bruno Kessler；Reykjavik University | 针对视觉-语言模型中的显著性崩溃现象，提出鲁棒的长文本图像-文本对齐方法以增强细粒度检索性能。 | [#656](https://github.com/Larry2000error/Larry-PaperClaw/issues/656) |
-
-## 🔎 观察
-
-- 跨模态检索正从粗粒度向细粒度演进，最优传输与动态粒度成为新兴技术路线。
-- 长文本理解与显著性建模的结合，反映出实际应用对复杂场景描述能力的迫切需求。
 
 ---
 
