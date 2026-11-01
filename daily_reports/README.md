@@ -5,28 +5,30 @@
 # [20261015](./202610/20261015.md)
 ## 📌 今日概况
 
-今日共检索候选论文 33 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+今日共检索候选论文 43 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
 
-今日研究聚焦多模态智能检索与嵌入学习。视觉检索强调精确性与可验证性，多模态RAG关注文档视觉证据的高效利用，而指令驱动的多模态嵌入则为聚类任务提供新思路。工业界与学术界合作紧密，GPU加速与对比学习成为关键技术支撑。
+今日研究聚焦于视觉检索效率与多模态理解两大主线。CertEx提出可认证排除机制实现精确kNN检索加速；病理基础模型探索零训练肿瘤病例检索；DINOv3向3D几何理解延伸；视频生成领域则通过稀疏注意力优化扩散Transformer效率。
 
 ## ✨ 今日亮点
 
-- CertEx提出可认证排除机制，实现大规模精确视觉检索的GPU加速
-- 多模态文档RAG优化视觉token预算分配，提升证据检索效率
-- 指令条件多模态嵌入学习，服务电商产品数据聚类场景
+- CertEx以可认证排除实现大规模精确视觉检索，兼顾精度与GPU加速
+- 病理基础模型首次实现唾液腺肿瘤零训练病例检索，助力罕见癌诊断
+- DINOv3引入自监督几何感知，突破部分3D形状匹配瓶颈
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261015] CertEx: Exact Visual Retrieval at Scale by Certified Exclusion | Zhao Dongfang | Tacoma School of Engineering & Technology and eScience Institute；University of Washington | CertEx通过可认证排除策略结合近似索引与精确验证，在GPU上实现大规模精确kNN视觉检索。 | [#612](https://github.com/Larry2000error/Larry-PaperClaw/issues/612) |
-| [20261015] Loud and Clear: Making Visual Evidence Count in Multimodal Document RAG | Jo Eunchan, Jang Seounghyun, Mo Sangwoo | POSTECH | 该研究针对多模态文档RAG设计视觉token预算机制，使视觉证据在检索增强生成中发挥更有效作用。 | [#613](https://github.com/Larry2000error/Larry-PaperClaw/issues/613) |
-| [20261015] CIM-Embed: Learning Instruction-Conditioned Multimodal Embeddings for Clustering | Xu Yinghua, Xie Pengyang, Zhou Yanxiang, Tong Chuanzhi, Xiao Xiao, Feng Chaoqun, Wang Xiaoqing | College of Control Science and Engineering, Zhejiang University；Alibaba International Digital Commerce | CIM-Embed提出指令条件多模态嵌入学习方法，利用对比学习提升电商产品数据的聚类性能。 | [#614](https://github.com/Larry2000error/Larry-PaperClaw/issues/614) |
+| [20261015] CertEx: Exact Visual Retrieval at Scale by Certified Exclusion | Zhao Dongfang | Tacoma School of Engineering & Technology and eScience Institute；University of Washington | CertEx提出可认证排除框架，通过GPU加速近似索引实现精确kNN检索，解决大规模视觉检索中精度与效率的权衡难题。 | [#612](https://github.com/Larry2000error/Larry-PaperClaw/issues/612) |
+| [20261015] Stuck on Shuffle: On Attribute-Object Binding in Vision-Language Models | Netanel Y. Tamir, Green Michael, Tzachor Issar, Shimshi Or, Samuel Dvir, Patashnik Or, Ben-Ari Rami | OriginAI；NVIDIA；Tel Aviv University | 研究揭示视觉语言模型在属性-对象绑定任务中存在系统性缺陷，提出新基准测试评估组合理解能力。 | [#628](https://github.com/Larry2000error/Larry-PaperClaw/issues/628) |
+| [20261015] Pathology foundation models for training-free case retrieval in salivary gland tumors | Maximilian J. Roesel, Kiermeyer Niklas, Keyl Philipp, Klauschen Frederick | Institute of Pathology, Ludwig-Maximilians-Universität München；German Cancer Consortium (DKTK), German Cancer Research Center (DKFZ), Munich partner site；Institute of Pathology, Charité-Universitätsmedizin Berlin；BIFOLD-Berlin Institute for the Foundations of Learning and Data | 基于病理基础模型的零训练检索方法，可直接应用于唾液腺肿瘤全切片图像的相似病例检索。 | [#629](https://github.com/Larry2000error/Larry-PaperClaw/issues/629) |
+| [20261015] Teaching DINOv3 About Partial 3D Geometry: A Self-Supervised Geometry-Aware Approach | Ehm Viktoria, Cao Dongliang, Marin Riccardo, Scholz Daniel, Wang Weikang, Bernard Florian, Cremers Daniel | Technical University of Munich；Munich Center for Machine Learning；University of Bonn | 通过LoRA微调与自监督几何感知策略，赋予DINOv3部分3D形状匹配能力，无需3D标注数据。 | [#630](https://github.com/Larry2000error/Larry-PaperClaw/issues/630) |
+| [20261015] Sparse Attention for Video Generation Acceleration via Growing Sparsity and Reduced Search | Dai Yun, Chen Yuyun, Wen Jiarui, Zhuang Huiping, Chen Cen, Zeng Ziqian | South China University of Technology | 提出渐进稀疏注意力机制，通过动态增长稀疏性与减少搜索开销加速视频扩散Transformer生成。 | [#631](https://github.com/Larry2000error/Larry-PaperClaw/issues/631) |
 
 ## 🔎 观察
 
-- 精确检索与近似方法的融合成为视觉搜索新范式，可认证性为结果可靠性提供理论保证
-- 多模态学习正从通用任务向垂直场景深化，电商文档理解与产品聚类体现产学研结合趋势
+- 视觉基础模型正从通用表征向垂直领域（病理诊断、3D几何）深度渗透，零训练或少训练迁移成为新范式
+- 检索任务呈现两极分化：既追求CertEx的精确性保障，又探索病理领域的语义相似性，反映应用场景对确定性的差异化需求
 
 ---
 
@@ -34,30 +36,32 @@ Powered by OpenClaw🦞
 
 ---
 
-# [20261012](./202610/20261012.md)
+# [20261014](./202610/20261014.md)
 ## 📌 今日概况
 
-今日共检索候选论文 38 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+今日共检索候选论文 33 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
 
-今日研究聚焦跨视角感知与高效神经计算两大方向。3D重建与新颖视角合成技术持续推动跨视角目标重识别突破，同时事件相机与脉冲神经网络结合为视觉定位任务带来低功耗解决方案，体现遥感系统向三维理解与边缘智能演进趋势。
+今日研究聚焦多模态智能体与机器人学习，涵盖视觉-语言-动作统一嵌入、多模态知识图谱构建及上下文学习优化。强化学习与知识蒸馏成为提升智能体推理能力的关键技术路径，跨机构合作特征显著。
 
 ## ✨ 今日亮点
 
-- 3D-VITAL提出可见性感知身份训练，解决单视图空-地跨视角重识别难题
-- 脉冲神经网络首次系统应用于事件视觉定位，突破传统计算瓶颈
-- 神经形态计算与遥感结合，为低功耗实时感知开辟新路径
+- Robota-Embed提出统一VLA嵌入框架，实现机器人上下文学习与进化
+- ActICL探索后训练优化策略，提升多模态智能体上下文学习能力
+- MMKG-R1以强化学习驱动多模态知识图谱自动构建
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261012] 3D-VITAL: Visibility-aware Identity Training from Artificial Liftings of 3D Reconstruction model for Cross-View Object Re-Identification | Grolleau William, Sabourin Astrid, Lapouge Guillaume, Achard Catherine | Université Paris-Saclay, CEA, List；Sorbonne University, CNRS, Institute of Intelligent Systems and Robotics (ISIR) | 3D-VITAL通过3D重建模型的人工提升生成可见性感知身份训练数据，实现单视图空-地跨视角目标重识别。 | [#604](https://github.com/Larry2000error/Larry-PaperClaw/issues/604) |
-| [20261012] Removing the Compute Bottleneck for Event-based Visual Place Recognition with Spiking Neural Networks | Hussaini Somayeh, Fischer Tobias, Milford Michael | Queensland University of Technology | 该研究采用脉冲神经网络与STDP学习机制，显著降低事件视觉定位任务的计算开销，推动神经形态计算实用化。 | [#605](https://github.com/Larry2000error/Larry-PaperClaw/issues/605) |
+| [20261014] Robota-Embed: Unified VLA Embeddings for Robot In-Context Learning and Evolution | Liu Yunze, Wang Jing, Wu Shenrui, He Wenkun, Zhan Guanqi, Ma Xianzheng, Chen Junyu, Ge Wenhang, Tang Haozhan, Gu Yuchao, Zhang Zhuoyang, Wang Zekai, Niu Dantong, Dong Zhen, Zhu Yuke, Darrell Trevor, Linxi "Jim" Fan, Han Song, Cai Han | NVIDIA；MIT；UCB；Oxford；CMU | NVIDIA等提出Robota-Embed统一嵌入模型，将视觉-语言-动作映射至共享空间，支持机器人上下文学习与跨任务迁移。 | [#623](https://github.com/Larry2000error/Larry-PaperClaw/issues/623) |
+| [20261014] ActICL: Post-Training for Agentic Multimodal In-Context Learning | Li Yanshu, Tang Ruixiang, Junyi Jessy Li, Stengel-Eskin Elias | University of Texas at Austin；Rutgers University | UT Austin等提出ActICL后训练框架，通过智能体检索与工具增强推理优化多模态上下文学习中的示例选择策略。 | [#624](https://github.com/Larry2000error/Larry-PaperClaw/issues/624) |
+| [20261014] MMKG-R1: Constructing Multimodal Knowledge Graphs via Reinforcement Learning | Wu Zongyu, Wang Yilong, Wang Xiaochen, Lin Minhua, Zhong Yuan, Ma Fenglong, Zhang Xiang, Wang Suhang | The Pennsylvania State University | Penn State提出MMKG-R1方法，以强化学习自动化构建多模态知识图谱，提升图检索增强生成质量。 | [#625](https://github.com/Larry2000error/Larry-PaperClaw/issues/625) |
+| [20261014] Information-Gain Calibrated On-Policy Distillation for Deep Search Agents | Li Chenxi, Feng Xueyang, Liu Songyang, Wang Chenxu, Tang Xiaoying, Li Chaozhuo, Zhang Litian | The Chinese University of Hong Kong, Shenzhen；Renmin University of China；Beijing University of Posts and Telecommunications；Beijing Academy of Artificial Intelligence (BAAI) | 港中深等提出信息增益校准的在线策略蒸馏方法，解决深度搜索智能体中证据盲监督导致的知识迁移低效问题。 | [#626](https://github.com/Larry2000error/Larry-PaperClaw/issues/626) |
 
 ## 🔎 观察
 
-- 跨视角重识别正从二维特征对齐转向三维几何推理，可见性建模成为关键瓶颈
-- 事件相机与SNN的硬件-算法协同设计，预示遥感边缘设备能效比将迎来数量级提升
+- 上下文学习正从NLP向机器人与智能体领域深度渗透，VLA统一表征成为关键瓶颈
+- 强化学习在知识图谱构建中的应用显示结构化知识获取正从人工设计转向自动化生成
 
 ---
 
@@ -65,30 +69,31 @@ Powered by OpenClaw🦞
 
 ---
 
-# [20261011](./202610/20261011.md)
+# [20261013](./202610/20261013.md)
 ## 📌 今日概况
 
-今日共检索候选论文 15 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+今日共检索候选论文 50 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日研究聚焦视觉-语言模型与地理空间智能的交叉领域。一方面关注具身智能中的指令理解与歧义检测，另一方面探索众源灾害影像的跨视角地理定位，体现遥感AI向多模态推理和开放环境适应性的发展趋势。
+今日研究聚焦高效评估与多模态推理两大方向。实例检索领域探索低成本大规模评估方法，视频理解方向强调可验证的时空推理能力，通信感知一体化则关注跨图像注意力机制在V2I波束预测中的应用。
 
 ## ✨ 今日亮点
 
-- 首个波斯语视觉-语言-动作数据集发布，支持指令到规划的歧义与不可行性检测
-- 十年期众源灾害照片地理定位纵向研究，揭示VLM在跨视角定位中的演进规律
-- 多机构国际合作凸显地理空间智能与灾害应急响应的学科交叉重要性
+- 提出尾部感知采样策略，实现网络规模检索的高效评估
+- 构建具备空间-时间证据验证能力的开放式视频推理框架
+- 设计跨图像路由注意力机制，提升双端V2I波束功率预测精度
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261011] A Persian Vision-Language-Action Dataset and Benchmark for Ambiguity- and Infeasibility-Aware Instruction-to-Plan Grounding | Pourasghari Abdollah, Saeedeh Sadat Sadidpour, Roustaei Mohammad | Malek Ashtar University of Technology；Isfahan University of Technology | 该研究构建了波斯语视觉-语言-动作数据集，提出面向指令到规划任务的歧义与不可行性感知基准测试。 | [#601](https://github.com/Larry2000error/Larry-PaperClaw/issues/601) |
-| [20261011] A Decade of PhotoMappers: A Longitudinal Study of Crowdsourced Disaster Photos Geolocalization with Vision-Language Models and Geospatial Reasoning | Li Hao, Yin Wenping, Deuser Fabian, Jia Jia, Liu Ziqi, Juhász Levente, Zhang Fan, Biljecki Filip | Department of Geography, National University of Singapore；College of Geodesy and Geomatics, Shandong University of Science and Technology；University of the Bundeswehr Munich；State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing, Wuhan University；School of Forest, Fisheries and Geomatics Sciences, University of Florida；Fort Lauderdale Research and Education Center, University of Florida；Institute of Remote Sensing and GIS, Peking University；Department of Architecture, National University of Singapore；Department of Real Estate, National University of Singapore | 该研究基于十年众源灾害照片数据，系统评估了视觉-语言模型结合地理空间推理的跨视角地理定位能力演变。 | [#602](https://github.com/Larry2000error/Larry-PaperClaw/issues/602) |
+| [20261013] Web Scale on a Budget: Tail-Aware Retrieval Evaluation | Meivar Boaz, Avidan Shai | Tel Aviv University | 针对大规模实例检索评估成本高昂问题，提出尾部感知采样方法，在保证评估准确性的同时显著降低计算开销。 | [#608](https://github.com/Larry2000error/Larry-PaperClaw/issues/608) |
+| [20261013] Open-o3-Video-v2: Seek, Ground, and Reason with Verifiable Spatio-Temporal Evidence | Meng Jiahao, Bao Zhongyuan, Tan Yue, Wen Haiquan, Zhang Renrui, Wang Anna, Li Jason, Fu Yanwei, Tong Yunhai, Yang Ming-Hsuan | PKU；FDU；NTU；UC Merced | Open-o3-Video-v2通过多轮推理与可验证的时空证据定位，实现复杂视频内容的开放式理解与问答。 | [#610](https://github.com/Larry2000error/Larry-PaperClaw/issues/610) |
+| [20261013] Link Both Views: Cross-Image Routing Attention for Dual-Endpoint V2I Beam-Pair Power Prediction | Lu Shiliang, Bai Lu, Huang Ziwei, Cheng Xiang | Institution unavailable | 利用跨图像路由注意力机制融合双视角信息，解决车路协同通信中毫米波波束对功率预测难题。 | [#621](https://github.com/Larry2000error/Larry-PaperClaw/issues/621) |
 
 ## 🔎 观察
 
-- 小语种与区域特色数据集建设加速，反映具身智能本土化需求上升，但需关注数据规模与模型泛化的平衡。
-- 众源数据与VLM结合正重塑灾害测绘范式，但长期时序分析揭示的模型性能波动提示地理空间推理的鲁棒性仍是关键瓶颈。
+- 检索评估研究从追求全量测试转向智能采样，反映大模型时代对效率与成本的重新权衡
+- 视频推理强调'可验证性'与'空间-时间定位'，表明领域正从黑箱生成向可解释决策演进
 
 ---
 
