@@ -2,31 +2,31 @@
 
 最近三天日报（最新在前）：
 
-# [20261021](./202610/20261021.md)
+# [20261024](./202610/20261024.md)
 ## 📌 今日概况
 
-今日共检索候选论文 38 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+今日共检索候选论文 18 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日研究聚焦多模态大模型的精细化理解与检索能力。LocalAgent探索实例级一致性验证的协作智能体框架；ERCLIP针对小数据场景优化CLIP的长文本图像检索；pplx-embed-v2-late则推进多语言视觉文档嵌入与延迟交互建模，显示视觉-语言融合正从粗粒度对齐向细粒度、长上下文、多语言方向深化。
+今日遥感AI研究聚焦视觉-语言检索与行人属性识别两大方向。研究趋势显示，推理时证据聚合与跨域泛化成为核心挑战，越南AI团队表现活跃，在域泛化行人检索与多编码器融合方面贡献显著。
 
 ## ✨ 今日亮点
 
-- LocalAgent提出协作式智能体验证框架，实现细粒度实例级多模态一致性判别
-- ERCLIP突破CLIP小数据适配瓶颈，支持任意长度图文检索的对比学习优化
-- pplx-embed-v2-late发布多语言视觉文档嵌入技术报告，强化延迟交互检索性能
+- 提出标题共识作为推理时证据，革新视觉-语言检索范式
+- LENS方法结合似然评估与邻域平滑，解决跨相机行人检索域泛化难题
+- UniQuery统一视觉模型查询头，实现跨域行人属性识别
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261021] LocalAgent: Collaborative Agentic Verification for Fine-Grained Instance-Level Consistency | Guo Jiachen, Zhu Xinshan, Wang Boyun, Liang Yanyan, Wan Jun, Lin Feng, Liu Ajian | Tianjin University；Chinese Academy of Sciences；Macau University of Science and Technology；Zhejiang University；University of Macau | LocalAgent通过多智能体协作验证机制，解决细粒度实例级跨模态一致性判断问题。 | [#650](https://github.com/Larry2000error/Larry-PaperClaw/issues/650) |
-| [20261021] ERCLIP: Small-Data Adaptation of CLIP for Free-Length Image-Text Retrieval | Le Hoang-Bao, Tran Allie, Binh T. Nguyen, Zhou Liting, Gurrin Cathal | ADAPT Centre, School of Computing, Dublin City University；Ho Chi Minh University of Science, Vietnam National University | ERCLIP提出小数据场景下CLIP自适应方法，实现自由长度图文检索的对比学习优化。 | [#651](https://github.com/Larry2000error/Larry-PaperClaw/issues/651) |
-| [20261021] pplx-embed-v2-late Technical Report | Krimmel Markus, Milliken Louis, Glazkova Ekaterina, Schall Maximilian, Chaffin Antoine, Eslami Sedigheh, Golde Jonas, Bykov Denis, Beamer Claire, Yang Jeremy, Wang Bo | Perplexity AI | pplx-embed-v2-late技术报告详述多语言视觉文档嵌入模型与延迟交互检索架构设计。 | [#652](https://github.com/Larry2000error/Larry-PaperClaw/issues/652) |
+| [20261024] Whispers from the Neighbors: Rethinking Caption Consensus as Inference-Time Evidence for Vision-Language Retrieval | Khang Nhat Hoang Vo, Shoer Belal, Abhirama Subramanyam Penamakuri | Mohamed bin Zayed University of Artificial Intelligence (MBZUAI) | 该研究将标题共识重新定义为推理时证据，通过邻居样本的语义一致性优化双编码器视觉-语言检索。 | [#663](https://github.com/Larry2000error/Larry-PaperClaw/issues/663) |
+| [20261024] LENS: Likelihood Evaluation and Neighbor Smoothing for Attribute-Based Person Retrieval on Unseen Cameras | Nguyen Dang Duy Tan, Vo Thanh Nguyen, Linh T. T. Tran, Huynh Nguyen Phat | AI VIET NAM；Ho Chi Minh City University of Technology and Engineering；University of Information Technology, VNU-HCM；University of Science, VNU-HCM | LENS方法融合对数似然评分与邻域平滑技术，提升未见相机场景下基于属性的行人检索泛化能力。 | [#664](https://github.com/Larry2000error/Larry-PaperClaw/issues/664) |
+| [20261024] UniQuery: Unifying Vision Models with a Joint Query Head for Cross-Domain Pedestrian Attribute Recognition | Nguyen Dang Duy Tan, Linh T. T. Tran, Huynh Nguyen Phat, Vo Thanh Nguyen | AI VIET NAM；University of Information Technology, VNU-HCM；University of Science, VNU-HCM；Ho Chi Minh City University of Technology and Engineering | UniQuery设计联合查询头统一多视觉基础模型，以查询驱动机制实现跨域行人属性识别的特征融合。 | [#665](https://github.com/Larry2000error/Larry-PaperClaw/issues/665) |
 
 ## 🔎 观察
 
-- 细粒度实例级验证成为多模态大模型新焦点，协作智能体架构或成突破幻觉问题的关键路径
-- 长文本理解与视觉文档检索同步演进，显示产业界对复杂场景多模态检索的工程化需求迫切
+- 越南高校与AI VIET NAM机构在行人分析领域形成研究集群，两篇工作均聚焦跨域泛化，显示该区域计算机视觉研究实力提升。
+- 推理时优化（Inference-Time）成为视觉-语言模型新热点，从训练时对齐转向测试时证据聚合，反映对开放场景鲁棒性的迫切需求。
 
 ---
 
@@ -34,32 +34,33 @@ Powered by OpenClaw🦞
 
 ---
 
-# [20261020](./202610/20261020.md)
+# [20261023](./202610/20261023.md)
 ## 📌 今日概况
 
-今日共检索候选论文 46 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+今日共检索候选论文 31 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
 
-今日研究聚焦视觉-语言模型在检索任务中的创新应用。行人重识别领域关注跨时段、换衣场景下的身份一致性建模；图像检索方向探索组合查询理解与重排序优化。多模态融合与测试时自适应成为提升检索精度的关键技术路径。
+今日遥感AI研究呈现多模态融合与几何表征两大主线。GeoLEON-CLIP将图神经网络与对比学习结合用于地理区域表示；同时，超几何空间（双曲空间）在视频时序建模中的创新应用值得关注。视觉编码器的稀疏优化与跨模态行人重识别亦体现表征学习的精细化趋势。
 
 ## ✨ 今日亮点
 
-- MINER提出人际与个体内方差联合建模，解决换衣行人重识别难题
-- PRAISE框架以属性为桥梁，实现查询条件子空间的几何约束检索
-- 多模态重排序被重新定义为系统一决策问题，提升检索效率
+- GeoLEON-CLIP提出图锚定多模态对比学习，融合遥感图像与地理文本实现区域级表示
+- SPOOK通过稀疏像素优化挖掘视觉编码器的流形外知识，提升自监督表征质量
+- 双曲空间视频时刻检索方法，以庞加莱球组织时序证据优化视频-文本对齐
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261020] MINER: Modeling Inter- and Intra-Person Variance for Reidentification | Nir Oron, Strugo Eliyahu, Shamir Ariel | Reichman University；Microsoft | MINER通过显式建模人际差异与个体内变化，结合困难样本挖掘，提升换衣场景下的行人重识别性能。 | [#645](https://github.com/Larry2000error/Larry-PaperClaw/issues/645) |
-| [20261020] In PRAISE of Attributes: Grounding Retrieval Geometry with Query-Conditioned Subspaces for Person Re-Identification | Bhattacharya Rajarshi, Shukla Aryan, Murtaza Shakeeb, Desrosiers Christian, Dolz Jose, Heritier Maguelonne, Granger Eric | LIVIA, École de technologie supérieure；Genetec Inc. | PRAISE利用视觉-语言模型的属性语义，构建查询条件子空间，实现几何可解释的测试时自适应检索。 | [#646](https://github.com/Larry2000error/Larry-PaperClaw/issues/646) |
-| [20261020] Less is More: Concise Retrieval and Critic-based Re-ranking for Composed Image Retrieval | Zheng Yuqian, Ahn Hyoju, Ahn Hyeongjin, Park Eunil | Sungkyunkwan University；Jaume I University | 提出简洁检索与基于评论家的重排序策略，以更少计算开销实现零样本组合图像检索。 | [#647](https://github.com/Larry2000error/Larry-PaperClaw/issues/647) |
-| [20261020] Multimodal Reranking Is a System One Decision | Liu Zhuchenyang, Zhang Yao, Xiao Yu | Aalto University | 将多模态重排序形式化为系统一决策过程，揭示快速直觉判断在检索优化中的有效性。 | [#648](https://github.com/Larry2000error/Larry-PaperClaw/issues/648) |
+| [20261023] Are Textual Residuals Truly Complementary? Learning Visual Complements under Semantic Superposition for Visible-Infrared Person Re-Identification | Li Xiaoyang, Lu Mingming, Zhou Wei, Li Hao, Zhang Canhui | School of Computer Science and Engineering, Central South University | 该文质疑文本残差在可见光-红外行人重识别中的互补性，提出语义叠加下的视觉补全学习框架。 | [#616](https://github.com/Larry2000error/Larry-PaperClaw/issues/616) |
+| [20261023] SPOOK: Sparse Pixel Optimization for Off-Manifold Knowledge in Vision Encoders | Gupta Ankit, Pandya Akshat, Adami Christoph, Dolson Emily | Department of Computer Science & Engineering；Coco Robotics；Program in Evolution, Ecology, & Behavior；Department of Physics & Astronomy；Department of Microbiology, Genetics, & Immunology；Michigan State University | SPOOK通过稀疏像素优化策略，显式挖掘视觉编码器中分布于数据流形之外的知识。 | [#658](https://github.com/Larry2000error/Larry-PaperClaw/issues/658) |
+| [20261023] Organizing Temporal Evidence in Hyperbolic Space for Video Moment Retrieval | Liu Mengnan, Zhou Sanping, Xia Kun, Lin Jiaxuan, Hua Gang, Wang Le | Institution unavailable | 将视频时刻检索的时序证据组织嵌入双曲空间，利用庞加莱球层次特性优化长视频理解。 | [#659](https://github.com/Larry2000error/Larry-PaperClaw/issues/659) |
+| [20261023] GeoLEON-CLIP: Graph-Anchored Multimodal Contrastive Learning for Geographic Region Representation | Malek Radoslaw, Soltysiak Szymon, Kawala-Sterniuk Aleksandra, Szymanski Piotr | Wrocław University of Science and Technology | GeoLEON-CLIP以图神经网络锚定地理实体，通过多模态对比学习构建可迁移的区域表征。 | [#660](https://github.com/Larry2000error/Larry-PaperClaw/issues/660) |
+| [20261023] Beyond Post-Hoc Rewards: Privileged Reasoning Exploration for Multimodal Embeddings | Yang Tianyu, Tian Yijun, Lars Benedikt Kaesberg, Jan Philip Wahle, Gipp Bela, Ruas Terry, Kurzawe Daniel | University of Göttingen；University of Notre Dame；State and University Library of Göttingen | 针对多模态嵌入的特权推理探索框架，突破事后奖励机制以优化检索增强生成任务。 | [#661](https://github.com/Larry2000error/Larry-PaperClaw/issues/661) |
 
 ## 🔎 观察
 
-- 行人重识别正从单一视觉特征向属性-语义联合表征演进，换衣鲁棒性成为核心挑战
-- 重排序环节的系统化设计（评论家机制、决策理论）成为提升检索质量的新突破口
+- 双曲几何正从NLP向视觉-语言任务渗透，其层次化特性对遥感地物尺度差异建模具潜在价值
+- 稀疏表征与流形外知识挖掘成为视觉编码器优化新方向，或推动遥感预训练模型效率提升
 
 ---
 
@@ -67,33 +68,31 @@ Powered by OpenClaw🦞
 
 ---
 
-# [20261019](./202610/20261019.md)
+# [20261022](./202610/20261022.md)
 ## 📌 今日概况
 
-今日共检索候选论文 50 篇；关键词+LLM 智能匹配遥感交叉论文 5 篇；最终纳入日报 5 篇。
+今日共检索候选论文 35 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-今日研究呈现多模态基础模型与高效检索技术的融合趋势。视觉语言模型向具身智能与3D场景理解延伸，同时训练无关方法与自适应表征优化成为降低计算成本的关键路径。跨域自适应与置信度引导策略持续推动无监督学习在视觉任务中的应用。
+今日研究聚焦跨模态检索与对齐技术，涵盖文本驱动行人异常搜索、细粒度跨模态对齐及显著性感知长文本图像对齐三大方向。核心趋势为：多模型融合与最优传输理论在跨模态匹配中的应用深化，以及对长文本理解与细粒度对齐鲁棒性的关注提升。
 
 ## ✨ 今日亮点
 
-- 基础模型驱动光流估计，DINOv2与Depth Anything V2实现密集预测Transformer架构
-- SpatialScout探索VLM智能体主动探索与3D场景建图的空间智能能力
-- FlexVDR提出俄罗斯套娃表征预算动态分配，优化视觉文档检索效率
+- 多模型检索融合与交叉编码器重排序提升合成到真实场景的迁移能力
+- 动态粒度发现与最优传输实现层次化细粒度跨模态对齐
+- 针对显著性崩溃问题提出鲁棒的长文本图像-文本对齐方法
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261019] Foundation Model Driven Optical Flow | Chanda Praroop, Kumar Suryansh | Texas A&M University | 基于DINOv2与Depth Anything V2构建基础模型驱动的光流估计框架，采用密集预测Transformer实现端到端训练。 | [#639](https://github.com/Larry2000error/Larry-PaperClaw/issues/639) |
-| [20261019] SpatialScout: Can VLM Agents Actively Explore and Map 3D Scenes? | Zhang Zhaoxi, Liang Hao, Wu Linxuan, Xu Yiming, Yuan Yifu, Liang Kun, Tang Chenming, Qiang Meiyi, Zhang Wentao, Li Weikang | Peking University；Tianjin University | SpatialScout验证视觉语言模型智能体在主动探索与3D场景建图任务中的空间推理与规划能力。 | [#640](https://github.com/Larry2000error/Larry-PaperClaw/issues/640) |
-| [20261019] DCR-TSF: Dual-Level Compositional Reasoning with Triadic Spherical Fusion for Training-Free Zero-Shot Composed Image Retrieval | Na Gwang-Ho, Kim Ho-Joong, Lee Seong-Whan | Korea University | DCR-TSF通过三元球面融合与双层组合推理，实现无需训练的零样本组合图像检索。 | [#641](https://github.com/Larry2000error/Larry-PaperClaw/issues/641) |
-| [20261019] Confidence-Guided Pseudo-Label Refinement for Unsupervised Cross-Domain Person Re-Identification | Iqbal Sundas, Ali Danish, Tian Qing, Zheng Yuhui, Gou Jianping, Ou Weihua | Tsinghua University；Chinese Academy of Sciences | 提出置信度引导的伪标签精修方法，提升无监督跨域行人重识别在目标域的适应性能。 | [#642](https://github.com/Larry2000error/Larry-PaperClaw/issues/642) |
-| [20261019] FlexVDR: Learning to Allocate Matryoshka Representation Budgets for Visual Document Retrieval | Xiang Haowen, Yan Yibo, Zou Xin, Liu Shuliang, Cao Yi, Ou Mingdong, Hu Xuming | The Hong Kong University of Science and Technology (Guangzhou)；Alibaba Group；The Hong Kong University of Science and Technology | FlexVDR学习查询自适应的俄罗斯套娃表征预算分配策略，实现视觉文档检索的效率与精度权衡。 | [#643](https://github.com/Larry2000error/Larry-PaperClaw/issues/643) |
+| [20261022] Synthetic-to-Real Text-Based Person Anomaly Search via Multi-Model Retrieval Fusion and Cross-Encoder Reranking | Denteh Eugene, Blessing Agyei Kyem, Danyo Andrews, Joshua Kofi Asamoah, Dzinyela Richard, Owusu-Ansah Solomon, Dickson G. Asiedu, Aboah Armstrong | North Dakota State University；Texas A&M University；Sustainable Mobility and Advanced Research in Transportation (SMART) Lab；Ghana Institute of Management and Public Administration | 提出基于多模型检索融合与交叉编码器重排序的文本驱动行人异常搜索框架，解决合成到真实场景迁移难题。 | [#654](https://github.com/Larry2000error/Larry-PaperClaw/issues/654) |
+| [20261022] Hierarchical Fine-Grained Cross-Modal Alignment via Dynamic Granularity Discovery and Optimal Transport | Song Pengfeng, Zhang Shaozhong, Shao Pengfei | Zhejiang Wanli University | 通过动态粒度发现与最优传输理论，实现层次化细粒度跨模态对齐，提升图像-文本匹配精度。 | [#655](https://github.com/Larry2000error/Larry-PaperClaw/issues/655) |
+| [20261022] Mitigating Saliency Collapse: Robust Saliency-Aware Long-Text Image-Text Alignment | Kong Qiuyu, Ruan Zanxi, Cristani Marco, Wang Yiming | Sapienza University of Rome；University of Verona；Fondazione Bruno Kessler；Reykjavik University | 针对视觉-语言模型中的显著性崩溃现象，提出鲁棒的长文本图像-文本对齐方法以增强细粒度检索性能。 | [#656](https://github.com/Larry2000error/Larry-PaperClaw/issues/656) |
 
 ## 🔎 观察
 
-- 训练无关（training-free）方法在检索与理解任务中快速涌现，反映领域对降低微调成本的迫切需求
-- 视觉语言模型正从被动感知向主动交互演进，具身智能与空间智能成为下一代多模态系统的核心能力方向
+- 跨模态检索正从粗粒度向细粒度演进，最优传输与动态粒度成为新兴技术路线。
+- 长文本理解与显著性建模的结合，反映出实际应用对复杂场景描述能力的迫切需求。
 
 ---
 
