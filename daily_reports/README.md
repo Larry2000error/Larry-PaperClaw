@@ -2,6 +2,38 @@
 
 最近三天日报（最新在前）：
 
+# [20261021](./202610/20261021.md)
+## 📌 今日概况
+
+今日共检索候选论文 38 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日研究聚焦多模态大模型的精细化理解与检索能力。LocalAgent探索实例级一致性验证的协作智能体框架；ERCLIP针对小数据场景优化CLIP的长文本图像检索；pplx-embed-v2-late则推进多语言视觉文档嵌入与延迟交互建模，显示视觉-语言融合正从粗粒度对齐向细粒度、长上下文、多语言方向深化。
+
+## ✨ 今日亮点
+
+- LocalAgent提出协作式智能体验证框架，实现细粒度实例级多模态一致性判别
+- ERCLIP突破CLIP小数据适配瓶颈，支持任意长度图文检索的对比学习优化
+- pplx-embed-v2-late发布多语言视觉文档嵌入技术报告，强化延迟交互检索性能
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261021] LocalAgent: Collaborative Agentic Verification for Fine-Grained Instance-Level Consistency | Guo Jiachen, Zhu Xinshan, Wang Boyun, Liang Yanyan, Wan Jun, Lin Feng, Liu Ajian | Tianjin University；Chinese Academy of Sciences；Macau University of Science and Technology；Zhejiang University；University of Macau | LocalAgent通过多智能体协作验证机制，解决细粒度实例级跨模态一致性判断问题。 | [#650](https://github.com/Larry2000error/Larry-PaperClaw/issues/650) |
+| [20261021] ERCLIP: Small-Data Adaptation of CLIP for Free-Length Image-Text Retrieval | Le Hoang-Bao, Tran Allie, Binh T. Nguyen, Zhou Liting, Gurrin Cathal | ADAPT Centre, School of Computing, Dublin City University；Ho Chi Minh University of Science, Vietnam National University | ERCLIP提出小数据场景下CLIP自适应方法，实现自由长度图文检索的对比学习优化。 | [#651](https://github.com/Larry2000error/Larry-PaperClaw/issues/651) |
+| [20261021] pplx-embed-v2-late Technical Report | Krimmel Markus, Milliken Louis, Glazkova Ekaterina, Schall Maximilian, Chaffin Antoine, Eslami Sedigheh, Golde Jonas, Bykov Denis, Beamer Claire, Yang Jeremy, Wang Bo | Perplexity AI | pplx-embed-v2-late技术报告详述多语言视觉文档嵌入模型与延迟交互检索架构设计。 | [#652](https://github.com/Larry2000error/Larry-PaperClaw/issues/652) |
+
+## 🔎 观察
+
+- 细粒度实例级验证成为多模态大模型新焦点，协作智能体架构或成突破幻觉问题的关键路径
+- 长文本理解与视觉文档检索同步演进，显示产业界对复杂场景多模态检索的工程化需求迫切
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261020](./202610/20261020.md)
 ## 📌 今日概况
 
@@ -62,37 +94,6 @@ Powered by OpenClaw🦞
 
 - 训练无关（training-free）方法在检索与理解任务中快速涌现，反映领域对降低微调成本的迫切需求
 - 视觉语言模型正从被动感知向主动交互演进，具身智能与空间智能成为下一代多模态系统的核心能力方向
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261018](./202610/20261018.md)
-## 📌 今日概况
-
-今日共检索候选论文 18 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
-
-今日研究聚焦高效视觉定位与多模态检索两大方向。LateMatch通过可缓存匹配机制突破交互瓶颈，推动边缘计算场景下的视觉定位效率；MEMORA则引入记忆增强的多模态委员会重排序架构，应对推理密集型检索任务。两者均体现模型架构创新与效率优化的双重追求。
-
-## ✨ 今日亮点
-
-- LateMatch提出可缓存匹配策略，显著降低视觉定位计算开销
-- MEMORA构建记忆增强的多模态委员会，提升复杂推理检索精度
-- 两篇论文均关注检索系统效率与精度的协同优化
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261018] LateMatch: Breaking the Interaction Bottleneck via Cacheable Matching for Efficient Visual Localization | Omama Mohammad, Ashraf Aeyan, Chinchali Sandeep | The University of Texas at Austin；University of Massachusetts Amherst | LateMatch设计可缓存匹配机制，打破视觉定位中的交互瓶颈，实现边缘计算场景下的高效特征匹配。 | [#636](https://github.com/Larry2000error/Larry-PaperClaw/issues/636) |
-| [20261018] MEMORA: A Memory-Enhanced Multimodal Committee Reranking Agent for Reasoning-Intensive Retrieval | Mahmoud Mohamed, Mostafa Farouk Senussi, Abdalla Mahmoud, Mahmoud SalahEldin Kasem, Abdallah Abdelrahman, Hyun Soo Kang | Chungbuk National University；University of Innsbruck | MEMORA提出记忆增强的多模态委员会重排序智能体，通过多专家协作与记忆机制强化推理密集型检索性能。 | [#637](https://github.com/Larry2000error/Larry-PaperClaw/issues/637) |
-
-## 🔎 观察
-
-- 特征匹配领域正从精度竞争转向效率与部署友好性并重，边缘计算需求驱动架构创新
-- 多模态检索系统趋向引入显式记忆模块与委员会机制，以应对复杂推理场景的可解释性与稳定性挑战
 
 ---
 
