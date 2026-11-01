@@ -2,6 +2,37 @@
 
 最近三天日报（最新在前）：
 
+# [20261016](./202610/20261016.md)
+## 📌 今日概况
+
+今日共检索候选论文 32 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+
+今日研究聚焦多模态大语言模型在视频理解与检索中的应用，以及多模态表征学习的精细化设计。MLLM在视频问答与搜索重排序任务中展现潜力，同时正交解耦的共享-特定表征方法为跨模态目标重识别提供了新思路。
+
+## ✨ 今日亮点
+
+- MLLM子集集成策略提升音视频问答性能，重排序优化视频搜索效果
+- 正交解耦网络分离模态共享与特有表征，增强多模态目标重识别能力
+- 跨模态对齐与特征解耦技术持续演进，推动多模态表征学习精细化
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261016] MLLM Frame Subset Ensembling for Audio-Visual Video QA and MLLM-based Reranking for Ad-hoc Video Search in TRECVID 2025 | Goulas Andreas, Galanopoulos Damianos, Patras Ioannis, Mezaris Vasileios | Information Technologies Institute (ITI), Centre of Research and Technology Hellas (CERTH)；Queen Mary University of London | 该研究提出MLLM帧子集集成方法用于音视频问答，并设计基于MLLM的重排序机制优化特定视频搜索任务。 | [#632](https://github.com/Larry2000error/Larry-PaperClaw/issues/632) |
+| [20261016] ODSS-Net: Orthogonally Decoupled Shared-Specific Representations for Multi-Modal Object Re-Identification | Ma Zhifeng, Feng Yuhong, Huang Chongyi, Zhou Mingyang, Deng Minwen | College of Computer Science and Software Engineering, Shenzhen University；Tencent | ODSS-Net通过正交投影将多模态特征解耦为共享与模态特有表征，提升多模态目标重识别性能。 | [#633](https://github.com/Larry2000error/Larry-PaperClaw/issues/633) |
+
+## 🔎 观察
+
+- 多模态大模型正从通用理解向特定视频任务（搜索、问答）的精细化适配演进
+- 特征解耦与正交约束成为跨模态表征学习的重要技术路线，兼顾共享性与判别性
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261015](./202610/20261015.md)
 ## 📌 今日概况
 
@@ -62,38 +93,6 @@ Powered by OpenClaw🦞
 
 - 上下文学习正从NLP向机器人与智能体领域深度渗透，VLA统一表征成为关键瓶颈
 - 强化学习在知识图谱构建中的应用显示结构化知识获取正从人工设计转向自动化生成
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261013](./202610/20261013.md)
-## 📌 今日概况
-
-今日共检索候选论文 50 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日研究聚焦高效评估与多模态推理两大方向。实例检索领域探索低成本大规模评估方法，视频理解方向强调可验证的时空推理能力，通信感知一体化则关注跨图像注意力机制在V2I波束预测中的应用。
-
-## ✨ 今日亮点
-
-- 提出尾部感知采样策略，实现网络规模检索的高效评估
-- 构建具备空间-时间证据验证能力的开放式视频推理框架
-- 设计跨图像路由注意力机制，提升双端V2I波束功率预测精度
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261013] Web Scale on a Budget: Tail-Aware Retrieval Evaluation | Meivar Boaz, Avidan Shai | Tel Aviv University | 针对大规模实例检索评估成本高昂问题，提出尾部感知采样方法，在保证评估准确性的同时显著降低计算开销。 | [#608](https://github.com/Larry2000error/Larry-PaperClaw/issues/608) |
-| [20261013] Open-o3-Video-v2: Seek, Ground, and Reason with Verifiable Spatio-Temporal Evidence | Meng Jiahao, Bao Zhongyuan, Tan Yue, Wen Haiquan, Zhang Renrui, Wang Anna, Li Jason, Fu Yanwei, Tong Yunhai, Yang Ming-Hsuan | PKU；FDU；NTU；UC Merced | Open-o3-Video-v2通过多轮推理与可验证的时空证据定位，实现复杂视频内容的开放式理解与问答。 | [#610](https://github.com/Larry2000error/Larry-PaperClaw/issues/610) |
-| [20261013] Link Both Views: Cross-Image Routing Attention for Dual-Endpoint V2I Beam-Pair Power Prediction | Lu Shiliang, Bai Lu, Huang Ziwei, Cheng Xiang | Institution unavailable | 利用跨图像路由注意力机制融合双视角信息，解决车路协同通信中毫米波波束对功率预测难题。 | [#621](https://github.com/Larry2000error/Larry-PaperClaw/issues/621) |
-
-## 🔎 观察
-
-- 检索评估研究从追求全量测试转向智能采样，反映大模型时代对效率与成本的重新权衡
-- 视频推理强调'可验证性'与'空间-时间定位'，表明领域正从黑箱生成向可解释决策演进
 
 ---
 
