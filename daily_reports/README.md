@@ -38,27 +38,27 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 51 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
 
-11月18日入选的四项研究涵盖跨视角视频理解、视觉检索、神经信号到图像检索和无地图视觉定位。前三项分别从多视角预测、结构与细节的迭代聚合、频域先验与自适应监督入手，探讨如何学习或对齐表征。定位研究则关注参考图像位姿已知时，学习式三维模型能提供哪些额外信息。这些研究可为遥感中的多视角分析与检索提供方法参考，但候选信息未报告遥感场景的验证结果。
+十一月十八日的四篇候选论文集中讨论如何利用不同来源的信息完成视觉理解、检索与定位。视频研究通过后训练探索跨视角理解，视觉检索研究尝试兼顾整体结构与局部细节，神经信号检索引入频域先验和自适应监督，定位研究则考察已知参考图像位姿时，学习式三维模型还能提供什么。对遥感而言，多视角影像匹配和影像检索是值得验证的方向，但候选条目未提供遥感验证结果。
 
 ## ✨ 今日亮点
 
-- 多视角预测用于视频编码器后训练，面向跨视角理解。
-- 两项检索研究分别关注结构与细节聚合、神经信号与图像对齐。
-- 定位研究考察已知参考图像位姿时，学习式三维模型的额外作用。
+- 视频编码器以后训练为切入点，探索如何理解不同视角下的内容。
+- 两项检索研究分别关注图像特征融合与神经信号到图像的匹配。
+- 无地图视觉定位研究聚焦学习式三维模型在已有位姿参考时的额外作用。
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261118] MV-JEPA: Post-Training Video Encoders for Cross-View Understanding | Zhao Yangchen, Payani Ali, Ding Caiwen | University of Minnesota, Twin Cities；Cisco | 通过多视角预测开展视频编码器后训练，以掩码潜在表征预测支持跨视角理解。 | [#706](https://github.com/Larry2000error/Larry-PaperClaw/issues/706) |
-| [20261118] One Affinity, Two Axes: Bidirectional Slot Attention for Iterative Aggregation across the Structure--Detail Spectrum in Visual Retrieval | Wang Zihang, Zhu Wenkai, Kong Lingdong, Yan Teng, Liang Alan, Li Shuyuan, Chen Xieyuanli, Kong Dong, Zong Guanyu | Southeast University；National University of Singapore；The Hong Kong University of Science and Technology (Guangzhou)；Shanghai Innovation Institute；Shandong University of Science and Technology；National University of Defense Technology | 采用双向槽注意力迭代聚合结构与细节特征，构建用于视觉检索的全局描述符。 | [#707](https://github.com/Larry2000error/Larry-PaperClaw/issues/707) |
-| [20261118] Stabilizing Neural-to-Image Retrieval with Frequency-Domain Priors and Adaptive Supervision | Liu YaoYang, Tang ZhuoShi, Lai Haopeng, Sun Weijun, Fang Xiaozhao, Wen Jie | Institution unavailable | 结合频域先验与自适应监督，旨在提高从神经信号到图像检索的稳定性。 | [#708](https://github.com/Larry2000error/Larry-PaperClaw/issues/708) |
-| [20261118] What Do Learned 3D Models Add to Localization from Posed References? | Kim Jaehyun, Kang Wonseok, Lee Jeongmin, Kim Tae-Wan | Seoul National University；DeepFine Co., Ltd. | 考察在参考图像位姿已知时，学习式三维模型能为无地图视觉定位提供什么。 | [#709](https://github.com/Larry2000error/Larry-PaperClaw/issues/709) |
+| [20261118] MV-JEPA: Post-Training Video Encoders for Cross-View Understanding | Zhao Yangchen, Payani Ali, Ding Caiwen | University of Minnesota, Twin Cities；Cisco | 该研究以掩码潜表示预测对视频编码器进行多视角后训练，旨在改善跨视角理解。 | [#706](https://github.com/Larry2000error/Larry-PaperClaw/issues/706) |
+| [20261118] One Affinity, Two Axes: Bidirectional Slot Attention for Iterative Aggregation across the Structure--Detail Spectrum in Visual Retrieval | Wang Zihang, Zhu Wenkai, Kong Lingdong, Yan Teng, Liang Alan, Li Shuyuan, Chen Xieyuanli, Kong Dong, Zong Guanyu | Southeast University；National University of Singapore；The Hong Kong University of Science and Technology (Guangzhou)；Shanghai Innovation Institute；Shandong University of Science and Technology；National University of Defense Technology | 该研究用双向槽注意力迭代聚合整体结构和局部细节，构建用于视觉检索的全局描述符。 | [#707](https://github.com/Larry2000error/Larry-PaperClaw/issues/707) |
+| [20261118] Stabilizing Neural-to-Image Retrieval with Frequency-Domain Priors and Adaptive Supervision | Liu YaoYang, Tang ZhuoShi, Lai Haopeng, Sun Weijun, Fang Xiaozhao, Wen Jie | Institution unavailable | 该研究引入频域先验和自适应监督，旨在提高从脑电或脑磁信号检索图像的稳定性。 | [#708](https://github.com/Larry2000error/Larry-PaperClaw/issues/708) |
+| [20261118] What Do Learned 3D Models Add to Localization from Posed References? | Kim Jaehyun, Kang Wonseok, Lee Jeongmin, Kim Tae-Wan | Seoul National University；DeepFine Co., Ltd. | 该研究考察参考图像位姿已知时，学习式三维模型能为无地图视觉定位提供哪些额外信息。 | [#709](https://github.com/Larry2000error/Larry-PaperClaw/issues/709) |
 
 ## 🔎 观察
 
-- 跨视角理解与无地图定位都涉及视角变化，但前者关注视频表征，后者关注几何位姿估计。
-- 两项检索研究处理的问题不同：一项要兼顾图像结构与细节，另一项要对齐神经信号与图像。
+- 跨视角视频理解与视觉定位都涉及视角变化，但理解同一场景不等于能准确估计相机位姿。
+- 遥感可先验证这些方法能否用于同一传感器的多视角影像，再检验其能否跨传感器迁移。
 
 ---
 
