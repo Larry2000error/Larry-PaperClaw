@@ -5,27 +5,29 @@
 # [20261119](./202611/20261119.md)
 ## 📌 今日概况
 
-今日共检索候选论文 54 篇；关键词+LLM 智能匹配遥感交叉论文 2 篇；最终纳入日报 2 篇。
+今日共检索候选论文 54 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
 
-11月19日的两篇候选都关注视觉检索，但考察的问题不同。第一篇聚焦第一视角视频与文本检索，考察预训练接触的影响，指出检索表现改善并不意味着模型更能正确匹配动作与对象。第二篇面向文化遗产场景，从任务层面梳理历史图像检索中的偏差，议题涉及元数据补充。两篇均未直接研究遥感，不能据此概括遥感领域的整体趋势。
+11月19日的四篇候选主要关注视觉内容的检索与探索，没有直接面向遥感场景的论文。三篇检索研究分别考察预训练接触与动作和物体匹配的关系，梳理历史图像检索中的任务级偏差，以及学习更具区分性的通用多模态表示。另一篇从交互入手，用分层可视化支持视频探索。这组研究不只关注能否找得准，也关注模型理解了什么、检索存在哪些偏差，以及用户如何找到所需内容。
 
 ## ✨ 今日亮点
 
-- 第一视角视频与文本检索表现改善，不代表动词与名词的绑定能力增强。
-- 历史图像检索研究以任务为单位梳理偏差，涉及文化遗产场景。
-- 两篇分别关注预训练接触与任务偏差，均未直接研究遥感影像。
+- 第一视角视频检索表现提升，不代表模型更懂得动作与物体的搭配。
+- 历史图像检索按任务梳理偏差，通用多模态检索则关注表示的区分能力。
+- 分层可视化用于交互式视频探索，帮助用户浏览并定位感兴趣的内容。
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261119] Better Retrieval, Not Better Binding: Pretraining Exposure in Egocentric Video Retrieval | Guo Yuqi, Wray Michael | University of Bristol | 研究考察预训练接触对第一视角视频与文本检索的影响，发现检索改善未伴随动词与名词绑定能力提升。 | [#711](https://github.com/Larry2000error/Larry-PaperClaw/issues/711) |
-| [20261119] A Task-Level Bias Taxonomy for Historical Image Retrieval | Gavali Omkar, Sebastian Ratan, Rippe Christoph, Ewerth Ralph, Hoppe Anett | Philipps-Universität Marburg；TIB – Leibniz Information Centre for Science and Technology；L3S Research Center, Leibniz University Hannover；Goethe University Frankfurt, University Library；Hessian Center for Artificial Intelligence (hessian.AI) | 研究为文化遗产场景中的历史图像检索提出任务层面的偏差分类，议题涉及元数据补充。 | [#712](https://github.com/Larry2000error/Larry-PaperClaw/issues/712) |
+| [20261119] Better Retrieval, Not Better Binding: Pretraining Exposure in Egocentric Video Retrieval | Guo Yuqi, Wray Michael | University of Bristol | 考察预训练接触对第一视角视频文本检索的影响，发现检索改善不等于动词与名词绑定能力提升。 | [#711](https://github.com/Larry2000error/Larry-PaperClaw/issues/711) |
+| [20261119] A Task-Level Bias Taxonomy for Historical Image Retrieval | Gavali Omkar, Sebastian Ratan, Rippe Christoph, Ewerth Ralph, Hoppe Anett | Philipps-Universität Marburg；TIB – Leibniz Information Centre for Science and Technology；L3S Research Center, Leibniz University Hannover；Goethe University Frankfurt, University Library；Hessian Center for Artificial Intelligence (hessian.AI) | 提出历史图像检索的任务级偏差分类框架，用于梳理不同检索任务中可能出现的偏差。 | [#712](https://github.com/Larry2000error/Larry-PaperClaw/issues/712) |
+| [20261119] DiLE: Discrimination-Aware Latent-Space Learning for Universal Multimodal Embeddings | Kang Ben, Wang Junda, Yuan Yuxuan, Li Hang, Liu Yuhan, Chen Xin, Geng Wanting, Lin Tong, Fu Pei, Wang Dong, Luan Jian, Lu Huchuan | Dalian University of Technology；Peking University；Xiaomi Inc；City University of Hong Kong | 提出注重区分能力的潜在空间学习方法，旨在构建适用于多种检索任务的通用多模态嵌入。 | [#722](https://github.com/Larry2000error/Larry-PaperClaw/issues/722) |
+| [20261119] VideoTrail: Interactive Video Foraging Through Hierarchical Visualization | Yeh Catherine, Wang Bryan, Viégas Fernanda, Wattenberg Martin | Harvard University；Adobe Research | 提出基于分层可视化的交互系统，帮助用户在视频中浏览并寻找相关内容。 | [#724](https://github.com/Larry2000error/Larry-PaperClaw/issues/724) |
 
 ## 🔎 观察
 
-- 整体检索指标不足以判断模型能否正确匹配动作与对象，组合语义理解应单独评估。
-- 遥感检索评估可借鉴任务级偏差分类，但元数据偏差是否影响结果，仍需用遥感数据验证。
+- 整体检索得分不能替代对组合语义的专项评估，找对视频不等于理解其中的动作与物体关系。
+- 历史图像检索的偏差分类可为遥感检索提供参考，但哪些偏差会重现仍需在遥感任务中验证。
 
 ---
 
