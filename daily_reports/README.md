@@ -5,29 +5,28 @@
 # [20261122](./202611/20261122.md)
 ## 📌 今日概况
 
-今日共检索候选论文 31 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+今日共检索候选论文 31 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
 
-11月22日的四篇候选中，两篇直接涉及遥感定位：一篇关注改变点击位置后，跨视角物体定位能否保持一致；另一篇利用语义神经场连续估计无人机位姿。其余两篇分别研究多物种动物个体重识别和病理全切片图像的跨倍率来源核验。就这批候选而言，值得关注的是视角、提示或放大倍率变化后，模型如何判断自己是否仍指向同一目标或位置。
+今日论文集中于跨视角定位与细粒度识别两条主线。地理定位方向出现两项工作：一项针对点击点提示的跨视角目标地理定位，关注提示一致性与捷径学习问题；另一项将语义神经场引入无人机跨视角定位，实现连续4自由度位姿推断。此外，ApexID将层次化学习与度量损失用于多物种动物重识别，体现识别方法向生态监测场景的延伸。整体看，检索式定位正从离散匹配走向连续位姿优化，提示鲁棒性与跨域泛化成为共同关注点。
 
 ## ✨ 今日亮点
 
-- 跨视角物体定位关注点击位置变化时，结果能否保持一致。
-- 无人机地理定位利用语义神经场连续估计位置和姿态。
-- 病理切片的跨倍率核验关注放大图像在原图中的来源位置。
+- 跨视角地理定位占今日论文三分之二，成为明显热点
+- 神经场被用于无人机定位的连续位姿推断而非离散检索
+- 多物种动物重识别引入层次化学习，扩展生态监测应用
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261122] ApexID: Hierarchical Learning for Multi-Species Animal Re-Identification | Elkerdany Seifeldin, ElBassat Mohamed, Abouelhamd Gamal, Elkady Assem, Ghoneim Jana, Mahmood Matin, Abigail Allen Martin, Gerard de Melo, Rueda-Toicen Antonio | Made In Alexandria AI Team (M.I.A Robotics)；Alamein International University；Alexandria University；hyper3labs；Universidade Federal de Mato Grosso；Hasso Plattner Institute | 通过分层学习开展多物种动物个体重识别，并在检索时考虑观测信息。 | [#783](https://github.com/Larry2000error/Larry-PaperClaw/issues/783) |
-| [20261122] Prompt-Consistent Cross-View Object Geo-Localization | Xing Lingyun, Hao Wenning, Jiang Kai, Jin Dawei, Zhang Xiaohan, Zhang Xiaoxiong | Institution unavailable | 研究跨视角物体地理定位中的点击提示一致性，关注提示敏感性与捷径学习。 | [#784](https://github.com/Larry2000error/Larry-PaperClaw/issues/784) |
-| [20261122] ContinuLoc: Continuous Pose Inference over Neural Fields for UAV Geo-Localization | Zhou Weikun, Lin Jinliang, Zang Yu, Xie Lin, Fu Haiqing, Ao Sheng, Yu Shangshu, Luo Zhiming, Wang Cheng | Xiamen University；Northeastern University | 利用语义神经场连续估计无人机位姿，并进行四自由度位姿优化。 | [#785](https://github.com/Larry2000error/Larry-PaperClaw/issues/785) |
-| [20261122] Can an Agent Trust Its Own Zoom? Cross-Magnification Provenance Verification for Whole-Slide Images | Wang Yan, Song Yiran, Gong Zizhuo, Qi Jianxiang, Xu Zhongxing, Qian Lingfei, Lin Minquan | Yale University；University of Minnesota – Twin Cities；Monash University | 研究视觉智能体如何跨倍率核验病理全切片图像中放大区域的来源位置。 | [#786](https://github.com/Larry2000error/Larry-PaperClaw/issues/786) |
+| [20261122] ApexID: Hierarchical Learning for Multi-Species Animal Re-Identification | Elkerdany Seifeldin, ElBassat Mohamed, Abouelhamd Gamal, Elkady Assem, Ghoneim Jana, Mahmood Matin, Abigail Allen Martin, Gerard de Melo, Rueda-Toicen Antonio | Made In Alexandria AI Team (M.I.A Robotics)；Alamein International University；Alexandria University；hyper3labs；Universidade Federal de Mato Grosso；Hasso Plattner Institute | ApexID以层次化学习与SphereFace2损失实现多物种动物重识别，并结合观测感知检索提升精度 | [#783](https://github.com/Larry2000error/Larry-PaperClaw/issues/783) |
+| [20261122] Prompt-Consistent Cross-View Object Geo-Localization | Xing Lingyun, Hao Wenning, Jiang Kai, Jin Dawei, Zhang Xiaohan, Zhang Xiaoxiong | Institution unavailable | 研究点击点提示下的跨视角目标地理定位，强调提示一致性并分析提示敏感性与捷径学习 | [#784](https://github.com/Larry2000error/Larry-PaperClaw/issues/784) |
+| [20261122] ContinuLoc: Continuous Pose Inference over Neural Fields for UAV Geo-Localization | Zhou Weikun, Lin Jinliang, Zang Yu, Xie Lin, Fu Haiqing, Ao Sheng, Yu Shangshu, Luo Zhiming, Wang Cheng | Xiamen University；Northeastern University | ContinuLoc在语义神经场上做连续位姿推断，结合全局描述子完成无人机4自由度跨视角定位 | [#785](https://github.com/Larry2000error/Larry-PaperClaw/issues/785) |
 
 ## 🔎 观察
 
-- 单次定位正确不代表结果对点击位置的变化不敏感，准确性和提示一致性值得分开评估。
-- 病理图像的跨倍率核验与遥感图像的尺度对齐有相似之处，但方法能否迁移仍需验证。
+- 地理定位研究正从图像级检索转向位姿级精细化估计，更贴近无人机实际导航需求
+- 提示敏感性被明确列为问题，说明交互式定位方法仍以鲁棒性为代价换取灵活性
 
 ---
 
