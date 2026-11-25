@@ -2,6 +2,69 @@
 
 最近三天日报（最新在前）：
 
+# [20261122](./202611/20261122.md)
+## 📌 今日概况
+
+今日共检索候选论文 31 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+11月22日的四篇候选中，两篇直接涉及遥感定位：一篇关注改变点击位置后，跨视角物体定位能否保持一致；另一篇利用语义神经场连续估计无人机位姿。其余两篇分别研究多物种动物个体重识别和病理全切片图像的跨倍率来源核验。就这批候选而言，值得关注的是视角、提示或放大倍率变化后，模型如何判断自己是否仍指向同一目标或位置。
+
+## ✨ 今日亮点
+
+- 跨视角物体定位关注点击位置变化时，结果能否保持一致。
+- 无人机地理定位利用语义神经场连续估计位置和姿态。
+- 病理切片的跨倍率核验关注放大图像在原图中的来源位置。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261122] ApexID: Hierarchical Learning for Multi-Species Animal Re-Identification | Elkerdany Seifeldin, ElBassat Mohamed, Abouelhamd Gamal, Elkady Assem, Ghoneim Jana, Mahmood Matin, Abigail Allen Martin, Gerard de Melo, Rueda-Toicen Antonio | Made In Alexandria AI Team (M.I.A Robotics)；Alamein International University；Alexandria University；hyper3labs；Universidade Federal de Mato Grosso；Hasso Plattner Institute | 通过分层学习开展多物种动物个体重识别，并在检索时考虑观测信息。 | [#783](https://github.com/Larry2000error/Larry-PaperClaw/issues/783) |
+| [20261122] Prompt-Consistent Cross-View Object Geo-Localization | Xing Lingyun, Hao Wenning, Jiang Kai, Jin Dawei, Zhang Xiaohan, Zhang Xiaoxiong | Institution unavailable | 研究跨视角物体地理定位中的点击提示一致性，关注提示敏感性与捷径学习。 | [#784](https://github.com/Larry2000error/Larry-PaperClaw/issues/784) |
+| [20261122] ContinuLoc: Continuous Pose Inference over Neural Fields for UAV Geo-Localization | Zhou Weikun, Lin Jinliang, Zang Yu, Xie Lin, Fu Haiqing, Ao Sheng, Yu Shangshu, Luo Zhiming, Wang Cheng | Xiamen University；Northeastern University | 利用语义神经场连续估计无人机位姿，并进行四自由度位姿优化。 | [#785](https://github.com/Larry2000error/Larry-PaperClaw/issues/785) |
+| [20261122] Can an Agent Trust Its Own Zoom? Cross-Magnification Provenance Verification for Whole-Slide Images | Wang Yan, Song Yiran, Gong Zizhuo, Qi Jianxiang, Xu Zhongxing, Qian Lingfei, Lin Minquan | Yale University；University of Minnesota – Twin Cities；Monash University | 研究视觉智能体如何跨倍率核验病理全切片图像中放大区域的来源位置。 | [#786](https://github.com/Larry2000error/Larry-PaperClaw/issues/786) |
+
+## 🔎 观察
+
+- 单次定位正确不代表结果对点击位置的变化不敏感，准确性和提示一致性值得分开评估。
+- 病理图像的跨倍率核验与遥感图像的尺度对齐有相似之处，但方法能否迁移仍需验证。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
+# [20261121](./202611/20261121.md)
+## 📌 今日概况
+
+今日共检索候选论文 25 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+2026年11月21日候选论文仅一篇，来自悉尼大学计算机学院，聚焦无配对视觉-语言对齐问题。该研究提出ConsensusAlign思路，以编码器集合替代单一编码器，借助集体共识与共享嵌入空间中的特征几何结构，提升跨模态对齐的可靠性。该方向与遥感场景相关：遥感图文配对数据稀缺，降低对成对监督的依赖具有实际价值。单日样本量有限，不足以判断更宏观的趋势走向。
+
+## ✨ 今日亮点
+
+- 提出ConsensusAlign：编码器集合支撑无配对视觉-语言对齐
+- 从成对监督转向集体共识，缓解跨模态对齐对配对数据的依赖
+- 利用共享嵌入空间的特征几何结构，提升无配对对齐可靠性
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261121] From Pairwise to Collective: Encoder Collections Make Unpaired Vision-Language Alignment Reliable | Yin Xuanhua, Mao Shunqi, Xu Chuanzhi, Wei Boyu, Guo Wei, Cai Weidong | School of Computer Science, The University of Sydney | 提出ConsensusAlign，以编码器集合共识替代成对监督，实现可靠的无配对视觉-语言对齐 | [#780](https://github.com/Larry2000error/Larry-PaperClaw/issues/780) |
+
+## 🔎 观察
+
+- 今日候选仅一篇且偏基础方法研究，样本量过小，趋势性结论需谨慎对待
+- 遥感图文配对天然稀缺，无配对对齐若可靠落地，可降低跨模态检索与解译的标注成本
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261120](./202611/20261120.md)
 ## 📌 今日概况
 
@@ -27,69 +90,6 @@
 
 - 片段和区域检索重在找对位置，近似实例检索重在找对对象，评估时应区分这两类错误。
 - 文档区域检索可为大幅遥感影像的局部查询提供思路，但能否迁移仍需用遥感数据验证。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261110](./202611/20261110.md)
-## 📌 今日概况
-
-今日共检索候选论文 27 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-11月10日的候选列表仅收录一篇论文，聚焦如何在不同传感器拍摄的遥感影像中找出同一场景。RS-JEPA将自监督学习与联合嵌入预测结合，通过改变同一图像中各图像块的读取顺序来构造训练视图，并让不同传感器共用同一个编码器。这项研究展示了如何利用读取顺序设计训练任务，但单篇论文不足以判断整个领域的研究走向。 ([arxiv.org](https://arxiv.org/abs/2611.14496?utm_source=openai))
-
-## ✨ 今日亮点
-
-- 研究聚焦跨传感器检索，目标是在不同遥感影像中找出同一场景。
-- 同一图像保留原有像素，通过改变图像块的读取顺序构造不同视图。
-- 不同传感器的影像共用视觉编码器，并以联合嵌入预测进行自监督训练。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261110] RS-JEPA: Remote Sensing Joint-Embedding Predictive Architecture with Scan-Path Views for Cross-Sensor Image Retrieval | Rachamalla Tanishq, Kaushik Srishti, Muhammad Attique Khan, Camps-Valls Gustau, Swalpa Kumar Roy | Prince Mohammad Bin Fahd University；Universitat de València；Tezpur University | RS-JEPA利用扫描路径视图进行自监督联合嵌入预测，用于跨传感器遥感影像检索。 | [#772](https://github.com/Larry2000error/Larry-PaperClaw/issues/772) |
-
-## 🔎 观察
-
-- 改变读取顺序就能构造不同视图，值得通过对照实验检验扫描路径本身的贡献。
-- 无需人工标签不等于无需成对数据，训练仍依赖已配准的跨传感器影像。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261109](./202611/20261109.md)
-## 📌 今日概况
-
-今日共检索候选论文 38 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
-
-本期四篇候选中，两篇聚焦图像地理定位：一篇用位置表征和扩散模型预测坐标，另一篇融合图像序列特征，通过度量学习匹配不同视角。其余两篇分别研究零样本脑电到图像检索与无监督行人重识别，关注如何对齐不同模态的表征、如何缩小不同数据域的差异。就本期样本而言，地理定位是遥感相关主线，另外两篇可作为方法参考。
-
-## ✨ 今日亮点
-
-- 扩散定位研究将地理位置编码为潜空间表征，用于坐标预测。
-- 跨视角定位结合注意力引导的序列特征融合与混合空间度量学习。
-- 脑电检索与行人重识别分别关注跨模态对齐与跨域适应。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261109] X Marks the Spot: Diffusion for Image Geolocalization with Location Representations | Wei Brian, Hsu Chih-Chuan, Gao Tianyi, Cher Daniel, Xing Eric, Beaulieu Danielle, Jacobs Nathan | Washington University in St. Louis | 该研究将位置自编码器与潜空间扩散模型结合，用于从图像预测地理坐标。 | [#765](https://github.com/Larry2000error/Larry-PaperClaw/issues/765) |
-| [20261109] Complementarity-Driven Dual-Teacher Hierarchical Alignment for Zero-Shot EEG-to-Image Retrieval | Wu Lukun, Li Jie, Ren Ziqi, Xia Ruiyang, Gao Yan, Gao Xinbo | p EncoderImage to combine their complementary visual representations for zero- EncoderTeacher centering softmax sg | 该研究通过双教师分层对齐利用互补视觉表征，用于零样本脑电到图像检索。 | [#766](https://github.com/Larry2000error/Larry-PaperClaw/issues/766) |
-| [20261109] Attention-Guided Sequence Feature Fusion and Mixed-Space Metric Learning for Cross-View Image Sequence Geo-Localization | Wu Nan, Yang Chunfang, Li Jiangshan, Luo Xiangyang | Institution unavailable | 该研究以注意力融合序列特征，并在混合空间中学习匹配度量，用于跨视角图像序列地理定位。 | [#767](https://github.com/Larry2000error/Larry-PaperClaw/issues/767) |
-| [20261109] MDA framework: multi-architecture domain adaptation for unsupervised person re-identification | Zhang Wei, Ye Peijun, Chen Dihu, Su Tao | School of Electronics and Information Technology, Sun Yat-sen University；Peng Cheng Laboratory；School of Integrated Circuits, Sun Yat-sen University | 该研究提出多架构域适应框架，旨在缩小无监督行人重识别中的域间差异。 | [#768](https://github.com/Larry2000error/Larry-PaperClaw/issues/768) |
-
-## 🔎 观察
-
-- 坐标预测与跨视角序列匹配的任务设定不同，比较两条路线前应先明确评估口径。
-- 脑电检索与行人重识别可提供方法参考，但本期材料不足以判断这些方法能否迁移到遥感任务。
 
 ---
 
