@@ -5,33 +5,35 @@
 # [20261123](./202611/20261123.md)
 ## 📌 今日概况
 
-今日共检索候选论文 23 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
+今日共检索候选论文 62 篇；关键词+LLM 智能匹配遥感交叉论文 10 篇；最终纳入日报 10 篇。
 
-今日8篇论文集中于检索与定位主题：无人机视频-文本数据集、跨视角地理定位、行人重识别重排序与视频时刻检索占据主要篇幅。方法层面呈现证据对齐趋势，如查询自适应证据对齐、语义验证渐进细化，以及将评测协议效应与时空证据分离的反思性研究。同时，训练自由的智能体式检索和像素级统一嵌入表明多模态检索范式仍在快速演化。
+今日候选研究以“检索与对齐”为主线，覆盖无人机视频文本检索、跨视角地理定位、视频时刻检索、多模态行人重识别及医学图像检索。方法层面集中于查询自适应证据、候选条件重排序、渐进式语义验证、时空先验与表示去干扰；同时，多项工作关注评测协议、身份冲突、证据忠实性和组合泛化，显示研究正从提升匹配精度转向增强可靠性与真实场景适应能力。
 
 ## ✨ 今日亮点
 
-- AirVT-15k发布万级无人机双语视频-文本数据集并配套查询自适应对齐网络
-- RigidAnchor以迭代平面刚性对齐实现GNSS拒止下无人机跨视角定位
-- 训练自由的智能体框架将视频语料时刻检索交给VLM与LLM协同规划
+- 无人机研究兼顾跨模态视频检索与无卫星导航条件下的跨视角定位。
+- 行人重识别工作聚焦身份冲突、时空先验及类内表示多样性。
+- 视频时刻检索开始引入语义验证、推理蒸馏与智能体式检索流程。
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261123] AirVT-15k: A Query-Diverse UAV Video-Text Dataset and Query-Adaptive Evidence Alignment Network for Retrieval | Chen Xi, Chen Xu, Jia Xiangyang, Gan Ting, Zhang Xu, Wei Shuquan | Institution unavailable | 提出AirVT-15k无人机视频-文本数据集，含多样查询双语描述，并用查询自适应证据对齐网络改进检索 | [#788](https://github.com/Larry2000error/Larry-PaperClaw/issues/788) |
-| [20261123] SafeRank-ReID: Candidate-Conditioned Re-Ranking under Identity Conflicts for Multimodal Person Re-Identification | Wang Yizhi, Li Zixuan, Chen Zhuwen, Qin Feiwei | Hangzhou Dianzi University | 针对多模态行人重识别的身份冲突，用候选条件化重排序做证据仲裁并评估模态可靠性 | [#789](https://github.com/Larry2000error/Larry-PaperClaw/issues/789) |
-| [20261123] RigidAnchor: Cross-View Geo-Localization for UAV via Iterative Planar Rigid Alignment | Wang Bo, Zhu Dekang, Li Jian, Meng Zhipeng, Wang Bo, Hu Dewen | National Innovation Institute of Defense Technology；College of Intelligence Science and Technology, National University of Defense Technology；School of Future Technology, National University of Defense Technology | 面向GNSS拒止的无人机导航，以迭代平面刚性对齐完成卫星影像跨视角地理定位 | [#790](https://github.com/Larry2000error/Larry-PaperClaw/issues/790) |
-| [20261123] Separating Protocol Effects from Spatio-Temporal Evidence in Person Re-Identification Re-Ranking | Mochamad Rizal Fauzan, Doan Pham Thao Nhu, Konthoujam Jeslin, Hongjirakul Purit, Chawla Lakshay | National Taipei University of Technology | 将评估协议效应与时空证据分离，分析重排序中同摄像头惩罚等先验的真实贡献 | [#791](https://github.com/Larry2000error/Larry-PaperClaw/issues/791) |
-| [20261123] Pixel as the Common Language: Unified Multimodal Embedding via Visual Rendering | Yuan Xu, Wu Pangjing, Fan Wenqi, Li Qing | The Hong Kong Polytechnic University | 以像素为通用语言，通过视觉渲染把多模态输入统一编码为共享嵌入用于检索 | [#792](https://github.com/Larry2000error/Larry-PaperClaw/issues/792) |
-| [20261123] Bi-Refine: Semantic Verification-Guided Progressive Refinement for Moment Retrieval | Liu Mengnan, Zhou Sanping, Xia Kun, Lin Jiaxuan, Wu Yuxuan, Hua Gang | National Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Xi'an Jiaotong University；School of Artificial Intelligence, Xi'an Jiaotong University；School of Computer Science and Technology, Xi'an Jiaotong University；Amazon Alexa AI | 用语义验证引导的渐进细化做视频时刻检索，双向迭代精化时序定位结果 | [#793](https://github.com/Larry2000error/Larry-PaperClaw/issues/793) |
-| [20261123] Teaching How to Reason, Beyond What to Answer: Evidence-Faithful On-Policy Distillation for streaming video understanding | Liu Mengnan, Zhou Sanping, Xia Kun, Lin Jiaxuan, Hua Gang, Wang Le | Institution unavailable | 面向流式视频理解的在线策略蒸馏，强调证据忠实的推理过程而非仅答案本身 | [#794](https://github.com/Larry2000error/Larry-PaperClaw/issues/794) |
-| [20261123] Towards Agentic Video Corpus Moment Retrieval | Xu Chenwei, Wu Shang, Pan Zhenyu, Zhang Jianshu, Maneriker Pranav, Lu Lie, Du Fan, Li Manling, Liu Han | Northwestern University；Dolby | 提出训练自由的智能体视频语料时刻检索框架，由VLM与LLM协同完成库级检索 | [#795](https://github.com/Larry2000error/Larry-PaperClaw/issues/795) |
+| [20261123] AirVT-15k: A Query-Diverse UAV Video-Text Dataset and Query-Adaptive Evidence Alignment Network for Retrieval | Chen Xi, Chen Xu, Jia Xiangyang, Gan Ting, Zhang Xu, Wei Shuquan | Institution unavailable | 构建查询多样的双语无人机视频文本数据集，并研究查询自适应证据对齐。 | [#788](https://github.com/Larry2000error/Larry-PaperClaw/issues/788) |
+| [20261123] SafeRank-ReID: Candidate-Conditioned Re-Ranking under Identity Conflicts for Multimodal Person Re-Identification | Wang Yizhi, Li Zixuan, Chen Zhuwen, Qin Feiwei | Hangzhou Dianzi University | 面向多模态行人重识别中的身份冲突，探索候选条件重排序与证据仲裁。 | [#789](https://github.com/Larry2000error/Larry-PaperClaw/issues/789) |
+| [20261123] RigidAnchor: Cross-View Geo-Localization for UAV via Iterative Planar Rigid Alignment | Wang Bo, Zhu Dekang, Li Jian, Meng Zhipeng, Wang Bo, Hu Dewen | National Innovation Institute of Defense Technology；College of Intelligence Science and Technology, National University of Defense Technology；School of Future Technology, National University of Defense Technology | 通过迭代平面刚性对齐实现无人机跨视角地理定位与位姿估计。 | [#790](https://github.com/Larry2000error/Larry-PaperClaw/issues/790) |
+| [20261123] Separating Protocol Effects from Spatio-Temporal Evidence in Person Re-Identification Re-Ranking | Mochamad Rizal Fauzan, Doan Pham Thao Nhu, Konthoujam Jeslin, Hongjirakul Purit, Chawla Lakshay | National Taipei University of Technology | 区分评测协议效应与真实时空证据，分析行人重识别重排序的影响来源。 | [#791](https://github.com/Larry2000error/Larry-PaperClaw/issues/791) |
+| [20261123] Bi-Refine: Semantic Verification-Guided Progressive Refinement for Moment Retrieval | Liu Mengnan, Zhou Sanping, Xia Kun, Lin Jiaxuan, Wu Yuxuan, Hua Gang | National Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Xi'an Jiaotong University；School of Artificial Intelligence, Xi'an Jiaotong University；School of Computer Science and Technology, Xi'an Jiaotong University；Amazon Alexa AI | 利用语义验证引导渐进式细化，以改进视频时刻检索与时间定位。 | [#793](https://github.com/Larry2000error/Larry-PaperClaw/issues/793) |
+| [20261123] Teaching How to Reason, Beyond What to Answer: Evidence-Faithful On-Policy Distillation for streaming video understanding | Liu Mengnan, Zhou Sanping, Xia Kun, Lin Jiaxuan, Hua Gang, Wang Le | Institution unavailable | 以证据忠实的在线策略蒸馏训练流式视频理解模型的推理过程。 | [#794](https://github.com/Larry2000error/Larry-PaperClaw/issues/794) |
+| [20261123] Towards Agentic Video Corpus Moment Retrieval | Xu Chenwei, Wu Shang, Pan Zhenyu, Zhang Jianshu, Maneriker Pranav, Lu Lie, Du Fan, Li Manling, Liu Han | Northwestern University；Dolby | 探索结合视觉语言模型与大语言模型的免训练智能体式视频语料时刻检索。 | [#795](https://github.com/Larry2000error/Larry-PaperClaw/issues/795) |
+| [20261123] A dataset of clinically similar image pairs from citation-linked case reports for medical image retrieval | Shmueli Guy, Keno K. Bressem, Hope Tom | School of Computer Science and Engineering, The Hebrew University of Jerusalem；National Center for Tumor Diseases West；Institute of Artificial Intelligence in Medicine, University Hospital Essen；Department of Diagnostic and Interventional Radiology, School of Medicine and Health, Technical University of Munich；Department of Diagnostic and Interventional Radiology and Neuroradiology, University Hospital Essen；Allen Institute for AI | 从引用关联病例报告中整理临床相似图像对，支持医学图像检索研究。 | [#797](https://github.com/Larry2000error/Larry-PaperClaw/issues/797) |
+| [20261123] Intra-Class Diversity Loss for Person Re-Identification | Zhou Wei, Chen BaXian | Department of Artificial Intelligence, Guangzhou Huashang College | 引入类内多样性损失，研究行人重识别表示学习中的差异性保持。 | [#798](https://github.com/Larry2000error/Larry-PaperClaw/issues/798) |
+| [20261123] Where Compositionality Hides: Shared-Content Interference in Vision-Language Retrieval | Anudeep Chimata, Harsh Vardhan Poddar | BITS Pilani, K. K. Birla Goa Campus | 分析共享内容对视觉语言组合检索的干扰，并探索嵌入投影处理方法。 | [#799](https://github.com/Larry2000error/Larry-PaperClaw/issues/799) |
 
 ## 🔎 观察
 
-- 重排序研究开始反思评测协议本身，提示部分提升可能源于设定差异而非方法创新
-- 无人机方向集中于图文检索与地理定位两条线，但机构信息与数据可复现性披露仍偏弱
+- 候选论文虽以检索任务居多，但核心问题正由相似度学习扩展到证据质量与决策可靠性。
+- 遥感相关工作主要集中于无人机视频和跨视角定位，其余成果可提供跨模态检索方法借鉴。
 
 ---
 
