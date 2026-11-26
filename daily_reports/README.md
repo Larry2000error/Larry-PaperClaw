@@ -2,6 +2,39 @@
 
 最近三天日报（最新在前）：
 
+# [20261124](./202611/20261124.md)
+## 📌 今日概况
+
+今日共检索候选论文 61 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
+
+今日4篇工作集中于多模态与跨模态检索，重点从单纯提升匹配能力转向处理时间敏感性、噪声对应、证据定位和编码器迭代兼容。研究路线覆盖时间困难负样本、组合可靠性学习、多向量嵌入与压缩索引，以及分阶段重编码，反映检索系统正同时关注语义精度、索引效率和持续升级成本。
+
+## ✨ 今日亮点
+
+- 时间感知检索强调增强时序区分，同时维持通用检索能力。
+- 可靠性建模被用于缓解组合图像检索中的噪声对应问题。
+- 多向量证据表示与兼容编码成为检索系统演进的新方向。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261124] Teaching Time Without Losing General Retrieval: Adapting Multimodal Embeddings for Time-Sensitive Video Retrieval | Oyama Toya, Lienhart Rainer, Satoh Shin'ichi | The University of Tokyo；National Institute of Informatics；University of Augsburg | 通过时间困难负样本适配多模态嵌入，兼顾时序视频检索与通用检索。 | [#800](https://github.com/Larry2000error/Larry-PaperClaw/issues/800) |
+| [20261124] CREDIT: Compositional Reliability Learning for Noisy Composed Image Retrieval | Zhou Tiancai, Li Yongxiang, Liu Suimei, Yuan Zhong, Peng Dezhong, Peng Xi, Wang Xu | College of Computer Science, Sichuan University；School of Computing and Artificial Intelligence, Southwest Jiaotong University；School of Artificial Intelligence, Sichuan University | 面向含噪组合图像检索，以组合可靠性学习评估语义对应关系。 | [#801](https://github.com/Larry2000error/Larry-PaperClaw/issues/801) |
+| [20261124] OmniEVIE: Evidence-Vector-Informed Embedding for Multi-modal Retrieval | Wang Zifei, Wen Wei, Ji Qiang, Zhang Qian-Wen, Qiao Ruizhi, Liu He, Sun Xing, Lin Qiang | Tencent IMA Product Center；Tencent Youtu Lab | 利用证据向量、多向量嵌入和压缩索引支持分阶段多模态检索。 | [#802](https://github.com/Larry2000error/Larry-PaperClaw/issues/802) |
+| [20261124] RELAY: Learning Compatible Representations One Encoder at a Time | Wang Yu, Qin Chuan, Zhang Qiang | Qwen Business Unit of Alibaba | 探索逐个更新编码器的兼容表示学习，降低跨模态系统重编码压力。 | [#803](https://github.com/Larry2000error/Larry-PaperClaw/issues/803) |
+
+## 🔎 观察
+
+- 今日候选主要属于通用多模态检索，对遥感的价值更偏方法迁移而非直接应用。
+- 研究重心已从统一嵌入扩展至可靠性、局部证据和系统增量维护等工程约束。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261123](./202611/20261123.md)
 ## 📌 今日概况
 
@@ -66,36 +99,6 @@ Powered by OpenClaw🦞
 
 - 三项工作均在削弱离散标签或单一匹配带来的脆弱性，强调结构化条件与连续推理。
 - 跨视角定位正由描述子检索延伸至提示鲁棒性和可优化空间表示，但效果仍需实验数据验证。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261121](./202611/20261121.md)
-## 📌 今日概况
-
-今日共检索候选论文 25 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
-
-2026年11月21日候选论文仅一篇，来自悉尼大学计算机学院，聚焦无配对视觉-语言对齐问题。该研究提出ConsensusAlign思路，以编码器集合替代单一编码器，借助集体共识与共享嵌入空间中的特征几何结构，提升跨模态对齐的可靠性。该方向与遥感场景相关：遥感图文配对数据稀缺，降低对成对监督的依赖具有实际价值。单日样本量有限，不足以判断更宏观的趋势走向。
-
-## ✨ 今日亮点
-
-- 提出ConsensusAlign：编码器集合支撑无配对视觉-语言对齐
-- 从成对监督转向集体共识，缓解跨模态对齐对配对数据的依赖
-- 利用共享嵌入空间的特征几何结构，提升无配对对齐可靠性
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261121] From Pairwise to Collective: Encoder Collections Make Unpaired Vision-Language Alignment Reliable | Yin Xuanhua, Mao Shunqi, Xu Chuanzhi, Wei Boyu, Guo Wei, Cai Weidong | School of Computer Science, The University of Sydney | 提出ConsensusAlign，以编码器集合共识替代成对监督，实现可靠的无配对视觉-语言对齐 | [#780](https://github.com/Larry2000error/Larry-PaperClaw/issues/780) |
-
-## 🔎 观察
-
-- 今日候选仅一篇且偏基础方法研究，样本量过小，趋势性结论需谨慎对待
-- 遥感图文配对天然稀缺，无配对对齐若可靠落地，可降低跨模态检索与解译的标注成本
 
 ---
 
