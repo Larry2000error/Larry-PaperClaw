@@ -2,6 +2,36 @@
 
 最近三天日报（最新在前）：
 
+# [20261125](./202611/20261125.md)
+## 📌 今日概况
+
+今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
+
+今日候选研究聚焦数据稀缺、隐私约束与域外内容条件下的多模态检索，强调将结构信息引入检索过程。研究主题同时涉及图像检索与文档版面分析，反映出多模态系统正从单纯依赖内容特征，转向结合文档组织结构与视觉布局。由于仅有一篇候选论文，当前信息主要呈现问题设定与研究方向，尚不足以判断具体方法、实验效果及相对优势。
+
+## ✨ 今日亮点
+
+- 关注数据稀缺与隐私约束下的多模态检索问题
+- 以结构感知为核心，连接图像检索与版面分析
+- 将域外内容纳入研究场景，突出系统泛化挑战
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261125] Structure-Aware Multimodal Retrieval Under Data Scarcity, Privacy Constraints and Out-of-Domain Content | Zafeiriou Argyrios, Koulouris Dionysios, Maglogiannis Ilias | University of Piraeus | 该研究探索在数据稀缺、隐私受限和域外内容场景中，利用结构信息改进多模态检索。 | [#805](https://github.com/Larry2000error/Larry-PaperClaw/issues/805) |
+
+## 🔎 观察
+
+- 结构信息可能成为低数据条件下补充内容特征的重要线索，但实际收益仍需实验验证。
+- 隐私、数据规模与跨域泛化被同时纳入问题设定，显示检索研究正面向更现实的部署约束。
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
 # [20261124](./202611/20261124.md)
 ## 📌 今日概况
 
@@ -67,38 +97,6 @@ Powered by OpenClaw🦞
 
 - 候选论文虽以检索任务居多，但核心问题正由相似度学习扩展到证据质量与决策可靠性。
 - 遥感相关工作主要集中于无人机视频和跨视角定位，其余成果可提供跨模态检索方法借鉴。
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261122](./202611/20261122.md)
-## 📌 今日概况
-
-今日共检索候选论文 32 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-今日候选研究集中于细粒度识别与跨视角地理定位。ApexID以层次学习处理多物种动物重识别，并结合观测感知检索；另两项工作面向跨视角目标与无人机定位，分别关注提示一致性、点击点敏感性与捷径学习，以及基于语义神经场的连续位姿推断和四自由度优化。整体趋势是从单次匹配走向更稳健的条件建模与连续空间推理。
-
-## ✨ 今日亮点
-
-- 层次学习被用于统一多物种动物重识别与观测感知检索。
-- 跨视角目标定位开始显式约束提示一致性并审视捷径学习。
-- 语义神经场支持无人机定位中的连续位姿推断与四自由度优化。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261122] ApexID: Hierarchical Learning for Multi-Species Animal Re-Identification | Elkerdany Seifeldin, ElBassat Mohamed, Abouelhamd Gamal, Elkady Assem, Ghoneim Jana, Mahmood Matin, Abigail Allen Martin, Gerard de Melo, Rueda-Toicen Antonio | Made In Alexandria AI Team (M.I.A Robotics)；Alamein International University；Alexandria University；hyper3labs；Universidade Federal de Mato Grosso；Hasso Plattner Institute | ApexID通过层次学习与SphereFace2损失，探索多物种动物重识别及观测感知检索。 | [#783](https://github.com/Larry2000error/Larry-PaperClaw/issues/783) |
-| [20261122] Prompt-Consistent Cross-View Object Geo-Localization | Xing Lingyun, Hao Wenning, Jiang Kai, Jin Dawei, Zhang Xiaohan, Zhang Xiaoxiong | Institution unavailable | 该研究面向跨视角目标地理定位，重点缓解点击点提示敏感性与捷径学习问题。 | [#784](https://github.com/Larry2000error/Larry-PaperClaw/issues/784) |
-| [20261122] ContinuLoc: Continuous Pose Inference over Neural Fields for UAV Geo-Localization | Zhou Weikun, Lin Jinliang, Zang Yu, Xie Lin, Fu Haiqing, Ao Sheng, Yu Shangshu, Luo Zhiming, Wang Cheng | Xiamen University；Northeastern University | ContinuLoc结合语义神经场和全局视觉描述子，实现无人机四自由度连续位姿推断。 | [#785](https://github.com/Larry2000error/Larry-PaperClaw/issues/785) |
-
-## 🔎 观察
-
-- 三项工作均在削弱离散标签或单一匹配带来的脆弱性，强调结构化条件与连续推理。
-- 跨视角定位正由描述子检索延伸至提示鲁棒性和可优化空间表示，但效果仍需实验数据验证。
 
 ---
 
