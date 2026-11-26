@@ -2,31 +2,68 @@
 
 最近三天日报（最新在前）：
 
-# [20261122](./202611/20261122.md)
+# [20261123](./202611/20261123.md)
 ## 📌 今日概况
 
-今日共检索候选论文 31 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+今日共检索候选论文 23 篇；关键词+LLM 智能匹配遥感交叉论文 8 篇；最终纳入日报 8 篇。
 
-今日论文集中于跨视角定位与细粒度识别两条主线。地理定位方向出现两项工作：一项针对点击点提示的跨视角目标地理定位，关注提示一致性与捷径学习问题；另一项将语义神经场引入无人机跨视角定位，实现连续4自由度位姿推断。此外，ApexID将层次化学习与度量损失用于多物种动物重识别，体现识别方法向生态监测场景的延伸。整体看，检索式定位正从离散匹配走向连续位姿优化，提示鲁棒性与跨域泛化成为共同关注点。
+今日8篇论文集中于检索与定位主题：无人机视频-文本数据集、跨视角地理定位、行人重识别重排序与视频时刻检索占据主要篇幅。方法层面呈现证据对齐趋势，如查询自适应证据对齐、语义验证渐进细化，以及将评测协议效应与时空证据分离的反思性研究。同时，训练自由的智能体式检索和像素级统一嵌入表明多模态检索范式仍在快速演化。
 
 ## ✨ 今日亮点
 
-- 跨视角地理定位占今日论文三分之二，成为明显热点
-- 神经场被用于无人机定位的连续位姿推断而非离散检索
-- 多物种动物重识别引入层次化学习，扩展生态监测应用
+- AirVT-15k发布万级无人机双语视频-文本数据集并配套查询自适应对齐网络
+- RigidAnchor以迭代平面刚性对齐实现GNSS拒止下无人机跨视角定位
+- 训练自由的智能体框架将视频语料时刻检索交给VLM与LLM协同规划
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261122] ApexID: Hierarchical Learning for Multi-Species Animal Re-Identification | Elkerdany Seifeldin, ElBassat Mohamed, Abouelhamd Gamal, Elkady Assem, Ghoneim Jana, Mahmood Matin, Abigail Allen Martin, Gerard de Melo, Rueda-Toicen Antonio | Made In Alexandria AI Team (M.I.A Robotics)；Alamein International University；Alexandria University；hyper3labs；Universidade Federal de Mato Grosso；Hasso Plattner Institute | ApexID以层次化学习与SphereFace2损失实现多物种动物重识别，并结合观测感知检索提升精度 | [#783](https://github.com/Larry2000error/Larry-PaperClaw/issues/783) |
-| [20261122] Prompt-Consistent Cross-View Object Geo-Localization | Xing Lingyun, Hao Wenning, Jiang Kai, Jin Dawei, Zhang Xiaohan, Zhang Xiaoxiong | Institution unavailable | 研究点击点提示下的跨视角目标地理定位，强调提示一致性并分析提示敏感性与捷径学习 | [#784](https://github.com/Larry2000error/Larry-PaperClaw/issues/784) |
-| [20261122] ContinuLoc: Continuous Pose Inference over Neural Fields for UAV Geo-Localization | Zhou Weikun, Lin Jinliang, Zang Yu, Xie Lin, Fu Haiqing, Ao Sheng, Yu Shangshu, Luo Zhiming, Wang Cheng | Xiamen University；Northeastern University | ContinuLoc在语义神经场上做连续位姿推断，结合全局描述子完成无人机4自由度跨视角定位 | [#785](https://github.com/Larry2000error/Larry-PaperClaw/issues/785) |
+| [20261123] AirVT-15k: A Query-Diverse UAV Video-Text Dataset and Query-Adaptive Evidence Alignment Network for Retrieval | Chen Xi, Chen Xu, Jia Xiangyang, Gan Ting, Zhang Xu, Wei Shuquan | Institution unavailable | 提出AirVT-15k无人机视频-文本数据集，含多样查询双语描述，并用查询自适应证据对齐网络改进检索 | [#788](https://github.com/Larry2000error/Larry-PaperClaw/issues/788) |
+| [20261123] SafeRank-ReID: Candidate-Conditioned Re-Ranking under Identity Conflicts for Multimodal Person Re-Identification | Wang Yizhi, Li Zixuan, Chen Zhuwen, Qin Feiwei | Hangzhou Dianzi University | 针对多模态行人重识别的身份冲突，用候选条件化重排序做证据仲裁并评估模态可靠性 | [#789](https://github.com/Larry2000error/Larry-PaperClaw/issues/789) |
+| [20261123] RigidAnchor: Cross-View Geo-Localization for UAV via Iterative Planar Rigid Alignment | Wang Bo, Zhu Dekang, Li Jian, Meng Zhipeng, Wang Bo, Hu Dewen | National Innovation Institute of Defense Technology；College of Intelligence Science and Technology, National University of Defense Technology；School of Future Technology, National University of Defense Technology | 面向GNSS拒止的无人机导航，以迭代平面刚性对齐完成卫星影像跨视角地理定位 | [#790](https://github.com/Larry2000error/Larry-PaperClaw/issues/790) |
+| [20261123] Separating Protocol Effects from Spatio-Temporal Evidence in Person Re-Identification Re-Ranking | Mochamad Rizal Fauzan, Doan Pham Thao Nhu, Konthoujam Jeslin, Hongjirakul Purit, Chawla Lakshay | National Taipei University of Technology | 将评估协议效应与时空证据分离，分析重排序中同摄像头惩罚等先验的真实贡献 | [#791](https://github.com/Larry2000error/Larry-PaperClaw/issues/791) |
+| [20261123] Pixel as the Common Language: Unified Multimodal Embedding via Visual Rendering | Yuan Xu, Wu Pangjing, Fan Wenqi, Li Qing | The Hong Kong Polytechnic University | 以像素为通用语言，通过视觉渲染把多模态输入统一编码为共享嵌入用于检索 | [#792](https://github.com/Larry2000error/Larry-PaperClaw/issues/792) |
+| [20261123] Bi-Refine: Semantic Verification-Guided Progressive Refinement for Moment Retrieval | Liu Mengnan, Zhou Sanping, Xia Kun, Lin Jiaxuan, Wu Yuxuan, Hua Gang | National Key Laboratory of Human-Machine Hybrid Augmented Intelligence, Xi'an Jiaotong University；School of Artificial Intelligence, Xi'an Jiaotong University；School of Computer Science and Technology, Xi'an Jiaotong University；Amazon Alexa AI | 用语义验证引导的渐进细化做视频时刻检索，双向迭代精化时序定位结果 | [#793](https://github.com/Larry2000error/Larry-PaperClaw/issues/793) |
+| [20261123] Teaching How to Reason, Beyond What to Answer: Evidence-Faithful On-Policy Distillation for streaming video understanding | Liu Mengnan, Zhou Sanping, Xia Kun, Lin Jiaxuan, Hua Gang, Wang Le | Institution unavailable | 面向流式视频理解的在线策略蒸馏，强调证据忠实的推理过程而非仅答案本身 | [#794](https://github.com/Larry2000error/Larry-PaperClaw/issues/794) |
+| [20261123] Towards Agentic Video Corpus Moment Retrieval | Xu Chenwei, Wu Shang, Pan Zhenyu, Zhang Jianshu, Maneriker Pranav, Lu Lie, Du Fan, Li Manling, Liu Han | Northwestern University；Dolby | 提出训练自由的智能体视频语料时刻检索框架，由VLM与LLM协同完成库级检索 | [#795](https://github.com/Larry2000error/Larry-PaperClaw/issues/795) |
 
 ## 🔎 观察
 
-- 地理定位研究正从图像级检索转向位姿级精细化估计，更贴近无人机实际导航需求
-- 提示敏感性被明确列为问题，说明交互式定位方法仍以鲁棒性为代价换取灵活性
+- 重排序研究开始反思评测协议本身，提示部分提升可能源于设定差异而非方法创新
+- 无人机方向集中于图文检索与地理定位两条线，但机构信息与数据可复现性披露仍偏弱
+
+---
+
+Powered by OpenClaw🦞
+
+---
+
+# [20261122](./202611/20261122.md)
+## 📌 今日概况
+
+今日共检索候选论文 32 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
+
+今日候选研究集中于细粒度识别与跨视角地理定位。ApexID以层次学习处理多物种动物重识别，并结合观测感知检索；另两项工作面向跨视角目标与无人机定位，分别关注提示一致性、点击点敏感性与捷径学习，以及基于语义神经场的连续位姿推断和四自由度优化。整体趋势是从单次匹配走向更稳健的条件建模与连续空间推理。
+
+## ✨ 今日亮点
+
+- 层次学习被用于统一多物种动物重识别与观测感知检索。
+- 跨视角目标定位开始显式约束提示一致性并审视捷径学习。
+- 语义神经场支持无人机定位中的连续位姿推断与四自由度优化。
+
+## 🗂 今日文章列表
+
+| 标题 | 作者 | 单位 | 一句话概括 | Issue |
+|---|---|---|---|---|
+| [20261122] ApexID: Hierarchical Learning for Multi-Species Animal Re-Identification | Elkerdany Seifeldin, ElBassat Mohamed, Abouelhamd Gamal, Elkady Assem, Ghoneim Jana, Mahmood Matin, Abigail Allen Martin, Gerard de Melo, Rueda-Toicen Antonio | Made In Alexandria AI Team (M.I.A Robotics)；Alamein International University；Alexandria University；hyper3labs；Universidade Federal de Mato Grosso；Hasso Plattner Institute | ApexID通过层次学习与SphereFace2损失，探索多物种动物重识别及观测感知检索。 | [#783](https://github.com/Larry2000error/Larry-PaperClaw/issues/783) |
+| [20261122] Prompt-Consistent Cross-View Object Geo-Localization | Xing Lingyun, Hao Wenning, Jiang Kai, Jin Dawei, Zhang Xiaohan, Zhang Xiaoxiong | Institution unavailable | 该研究面向跨视角目标地理定位，重点缓解点击点提示敏感性与捷径学习问题。 | [#784](https://github.com/Larry2000error/Larry-PaperClaw/issues/784) |
+| [20261122] ContinuLoc: Continuous Pose Inference over Neural Fields for UAV Geo-Localization | Zhou Weikun, Lin Jinliang, Zang Yu, Xie Lin, Fu Haiqing, Ao Sheng, Yu Shangshu, Luo Zhiming, Wang Cheng | Xiamen University；Northeastern University | ContinuLoc结合语义神经场和全局视觉描述子，实现无人机四自由度连续位姿推断。 | [#785](https://github.com/Larry2000error/Larry-PaperClaw/issues/785) |
+
+## 🔎 观察
+
+- 三项工作均在削弱离散标签或单一匹配带来的脆弱性，强调结构化条件与连续推理。
+- 跨视角定位正由描述子检索延伸至提示鲁棒性和可优化空间表示，但效果仍需实验数据验证。
 
 ---
 
@@ -57,38 +94,6 @@ Powered by OpenClaw🦞
 
 - 今日候选仅一篇且偏基础方法研究，样本量过小，趋势性结论需谨慎对待
 - 遥感图文配对天然稀缺，无配对对齐若可靠落地，可降低跨模态检索与解译的标注成本
-
----
-
-Powered by OpenClaw🦞
-
----
-
-# [20261120](./202611/20261120.md)
-## 📌 今日概况
-
-今日共检索候选论文 31 篇；关键词+LLM 智能匹配遥感交叉论文 3 篇；最终纳入日报 3 篇。
-
-11月20日的三篇候选论文均聚焦细粒度视觉检索，分别研究如何从视频库中定位片段、从版面丰富的文档中检索相关区域，以及从外观近似的雕塑中找出同一实例。三篇论文的共同点是把匹配目标细化到片段、区域或实例，而不只判断整段视频、整页文档或物体类别是否相关。候选中没有明确面向遥感的研究，因此不能据此概括当天的遥感研究趋势。
-
-## ✨ 今日亮点
-
-- 视频片段检索结合多种评分方法，并用转录文本引导重排序。
-- 版面丰富的文档按内容划分区域，再用多向量检索寻找相关区域。
-- 雕塑检索以外观近似的对象为重点，关注能否识别同一实例。
-
-## 🗂 今日文章列表
-
-| 标题 | 作者 | 单位 | 一句话概括 | Issue |
-|---|---|---|---|---|
-| [20261120] DiTraR: Diverse Scorers and Transcript-Guided Re-ranking for Video Corpus Moment Retrieval | Mohammad Alijanpour Shalmani, Alale Rezvani Boroujeni, Amini Ali | University of Central Florida；Kaunas University of Technology | 该研究结合查询拆解、多种评分方法和转录文本引导的重排序，从视频库中定位相关片段。 | [#770](https://github.com/Larry2000error/Larry-PaperClaw/issues/770) |
-| [20261120] When Visually Rich Documents Meet Multi-Vector Retrieval for Region-level Retrieval-Augmented Generation | Yuan Xu, Ning Liangbo, Ding Yujuan, Li Qing, Fan Wenqi | The Hong Kong Polytechnic University | 该研究结合按内容划分区域与多向量检索，为版面丰富的文档开展区域级检索增强生成。 | [#771](https://github.com/Larry2000error/Larry-PaperClaw/issues/771) |
-| [20261120] Which Dwarf Is This? Doppeldwarf-306 and Near-Identical Instance Retrieval | Turhan Can Kargin | Institution unavailable | 该研究使用视觉特征和近邻搜索，考察能否从外观近似的雕塑中检索到同一实例。 | [#773](https://github.com/Larry2000error/Larry-PaperClaw/issues/773) |
-
-## 🔎 观察
-
-- 片段和区域检索重在找对位置，近似实例检索重在找对对象，评估时应区分这两类错误。
-- 文档区域检索可为大幅遥感影像的局部查询提供思路，但能否迁移仍需用遥感数据验证。
 
 ---
 
