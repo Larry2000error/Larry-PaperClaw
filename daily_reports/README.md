@@ -7,24 +7,24 @@
 
 今日共检索候选论文 10 篇；关键词+LLM 智能匹配遥感交叉论文 1 篇；最终纳入日报 1 篇。
 
-今日候选研究聚焦数据稀缺、隐私约束与域外内容条件下的多模态检索，强调将结构信息引入检索过程。研究主题同时涉及图像检索与文档版面分析，反映出多模态系统正从单纯依赖内容特征，转向结合文档组织结构与视觉布局。由于仅有一篇候选论文，当前信息主要呈现问题设定与研究方向，尚不足以判断具体方法、实验效果及相对优势。
+今日候选论文聚焦数据稀缺、隐私约束与域外内容条件下的多模态检索，强调利用结构信息提升检索适应性。研究对象涵盖图表检索与文档版面分析，显示多模态系统正从依赖大规模同分布数据，转向关注有限数据、受限数据使用和分布变化下的稳健检索。不过今日仅有一篇候选，趋势判断仍需谨慎。
 
 ## ✨ 今日亮点
 
-- 关注数据稀缺与隐私约束下的多模态检索问题
-- 以结构感知为核心，连接图像检索与版面分析
-- 将域外内容纳入研究场景，突出系统泛化挑战
+- 以结构感知方法回应多模态检索中的数据稀缺挑战
+- 将隐私约束纳入检索问题，关注受限数据的可用边界
+- 面向域外内容与文档版面，拓展图表检索研究场景
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261125] Structure-Aware Multimodal Retrieval Under Data Scarcity, Privacy Constraints and Out-of-Domain Content | Zafeiriou Argyrios, Koulouris Dionysios, Maglogiannis Ilias | University of Piraeus | 该研究探索在数据稀缺、隐私受限和域外内容场景中，利用结构信息改进多模态检索。 | [#805](https://github.com/Larry2000error/Larry-PaperClaw/issues/805) |
+| [20261125] Structure-Aware Multimodal Retrieval Under Data Scarcity, Privacy Constraints and Out-of-Domain Content | Zafeiriou Argyrios, Koulouris Dionysios, Maglogiannis Ilias | University of Piraeus | 论文以结构信息增强多模态检索，集中讨论数据稀缺、隐私约束与域外内容带来的挑战。 | [#805](https://github.com/Larry2000error/Larry-PaperClaw/issues/805) |
 
 ## 🔎 观察
 
-- 结构信息可能成为低数据条件下补充内容特征的重要线索，但实际收益仍需实验验证。
-- 隐私、数据规模与跨域泛化被同时纳入问题设定，显示检索研究正面向更现实的部署约束。
+- 结构信息可作为低数据条件下的重要线索，但有效性仍需由具体实验结果验证。
+- 同时考虑隐私与域外分布，说明检索研究正更重视真实部署中的约束。
 
 ---
 
