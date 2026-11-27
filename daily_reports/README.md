@@ -37,27 +37,27 @@ Powered by OpenClaw🦞
 
 今日共检索候选论文 61 篇；关键词+LLM 智能匹配遥感交叉论文 4 篇；最终纳入日报 4 篇。
 
-今日4篇工作集中于多模态与跨模态检索，重点从单纯提升匹配能力转向处理时间敏感性、噪声对应、证据定位和编码器迭代兼容。研究路线覆盖时间困难负样本、组合可靠性学习、多向量嵌入与压缩索引，以及分阶段重编码，反映检索系统正同时关注语义精度、索引效率和持续升级成本。
+今日论文集中于多模态检索的可靠性、时序感知与系统演进：一类通过时序难负样本或组合可靠性学习，增强模型对时间约束和噪声对应的辨别；另一类以多向量证据表示、压缩索引和分阶段检索兼顾定位与效率；同时，兼容表示与增量重编码反映出检索系统持续升级、降低全量重建成本的工程需求。整体趋势是从单纯追求匹配精度，转向精度、鲁棒性、可解释证据与部署成本的协同优化。
 
 ## ✨ 今日亮点
 
-- 时间感知检索强调增强时序区分，同时维持通用检索能力。
-- 可靠性建模被用于缓解组合图像检索中的噪声对应问题。
-- 多向量证据表示与兼容编码成为检索系统演进的新方向。
+- 时序难负样本用于强化视频检索的时间敏感性，同时保留通用能力
+- CREDIT面向噪声三元组对应，学习组合语义与样本可靠性
+- 多向量证据表示与兼容编码，分别回应可定位性和系统演进成本
 
 ## 🗂 今日文章列表
 
 | 标题 | 作者 | 单位 | 一句话概括 | Issue |
 |---|---|---|---|---|
-| [20261124] Teaching Time Without Losing General Retrieval: Adapting Multimodal Embeddings for Time-Sensitive Video Retrieval | Oyama Toya, Lienhart Rainer, Satoh Shin'ichi | The University of Tokyo；National Institute of Informatics；University of Augsburg | 通过时间困难负样本适配多模态嵌入，兼顾时序视频检索与通用检索。 | [#800](https://github.com/Larry2000error/Larry-PaperClaw/issues/800) |
-| [20261124] CREDIT: Compositional Reliability Learning for Noisy Composed Image Retrieval | Zhou Tiancai, Li Yongxiang, Liu Suimei, Yuan Zhong, Peng Dezhong, Peng Xi, Wang Xu | College of Computer Science, Sichuan University；School of Computing and Artificial Intelligence, Southwest Jiaotong University；School of Artificial Intelligence, Sichuan University | 面向含噪组合图像检索，以组合可靠性学习评估语义对应关系。 | [#801](https://github.com/Larry2000error/Larry-PaperClaw/issues/801) |
-| [20261124] OmniEVIE: Evidence-Vector-Informed Embedding for Multi-modal Retrieval | Wang Zifei, Wen Wei, Ji Qiang, Zhang Qian-Wen, Qiao Ruizhi, Liu He, Sun Xing, Lin Qiang | Tencent IMA Product Center；Tencent Youtu Lab | 利用证据向量、多向量嵌入和压缩索引支持分阶段多模态检索。 | [#802](https://github.com/Larry2000error/Larry-PaperClaw/issues/802) |
-| [20261124] RELAY: Learning Compatible Representations One Encoder at a Time | Wang Yu, Qin Chuan, Zhang Qiang | Qwen Business Unit of Alibaba | 探索逐个更新编码器的兼容表示学习，降低跨模态系统重编码压力。 | [#803](https://github.com/Larry2000error/Larry-PaperClaw/issues/803) |
+| [20261124] Teaching Time Without Losing General Retrieval: Adapting Multimodal Embeddings for Time-Sensitive Video Retrieval | Oyama Toya, Lienhart Rainer, Satoh Shin'ichi | The University of Tokyo；National Institute of Informatics；University of Augsburg | 通过时序难负样本适配多模态嵌入，使视频检索理解时间条件并尽量保持通用检索能力。 | [#800](https://github.com/Larry2000error/Larry-PaperClaw/issues/800) |
+| [20261124] CREDIT: Compositional Reliability Learning for Noisy Composed Image Retrieval | Zhou Tiancai, Li Yongxiang, Liu Suimei, Yuan Zhong, Peng Dezhong, Peng Xi, Wang Xu | College of Computer Science, Sichuan University；School of Computing and Artificial Intelligence, Southwest Jiaotong University；School of Artificial Intelligence, Sichuan University | CREDIT针对带噪组合图像检索，联合学习组合语义与对应关系的可靠性。 | [#801](https://github.com/Larry2000error/Larry-PaperClaw/issues/801) |
+| [20261124] OmniEVIE: Evidence-Vector-Informed Embedding for Multi-modal Retrieval | Wang Zifei, Wen Wei, Ji Qiang, Zhang Qian-Wen, Qiao Ruizhi, Liu He, Sun Xing, Lin Qiang | Tencent IMA Product Center；Tencent Youtu Lab | OmniEVIE以证据向量丰富多模态嵌入，并结合压缩索引与三阶段检索。 | [#802](https://github.com/Larry2000error/Larry-PaperClaw/issues/802) |
+| [20261124] RELAY: Learning Compatible Representations One Encoder at a Time | Wang Yu, Qin Chuan, Zhang Qiang | Qwen Business Unit of Alibaba | RELAY逐个训练兼容编码器，支持查询侧升级与文档表示的增量重编码。 | [#803](https://github.com/Larry2000error/Larry-PaperClaw/issues/803) |
 
 ## 🔎 观察
 
-- 今日候选主要属于通用多模态检索，对遥感的价值更偏方法迁移而非直接应用。
-- 研究重心已从统一嵌入扩展至可靠性、局部证据和系统增量维护等工程约束。
+- 四篇工作均围绕检索表示展开，说明当前重点正由统一向量转向任务约束、证据粒度与表示兼容性。
+- 候选论文未直接面向遥感场景，其方法价值主要在于为时序影像、噪声标注和大规模索引提供可迁移思路。
 
 ---
 
